@@ -11,9 +11,11 @@ moonfly
 Screenshots
 -----------
 
-Ruby
+#### Ruby
+![Ruby](ruby_moonfly.png)
 
-JavaScript
+#### JavaScript
+![JavaScript](javascript_moonfly.png)
 
 Installation
 ------------
