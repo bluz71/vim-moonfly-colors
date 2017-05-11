@@ -12,10 +12,10 @@ Screenshots
 -----------
 
 #### Ruby
-<img src="ruby_moonfly.png" alt="ruby_moonfly" width="693px" height="710px">
+![Ruby](ruby_moonfly.png)
 
 #### JavaScript
-<img src="javascript_moonfly.png" alt="ruby_moonfly" width="693px" height="710px">
+![Ruby](javascript_moonfly.png)
 
 Installation
 ------------
