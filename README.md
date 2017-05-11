@@ -17,11 +17,25 @@ Screenshots
 #### JavaScript
 ![Ruby](javascript_moonfly.png)
 
+Languages supported
+-------------------
+
+* C/C++
+* Shell 
+* Python
+* Ruby
+* Elixir
+* JavaScript/ES6
+* CoffeeScript
+* Go
+* Rust
+* Java 
+
 Installation
 ------------
 
-Use your favorite plugin manager to install **bluz71/vim-moonfly-colors** then
-set the colorscheme in your **vimrc**.
+Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
+set the colorscheme in your *vimrc* file.
 
 If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
 
