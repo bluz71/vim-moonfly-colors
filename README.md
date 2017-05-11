@@ -39,9 +39,9 @@ set the colorscheme in your *vimrc* file.
 
 If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
 
-1. Add `Plug 'bluz71/vim-moonfly-colors'` to your *~/.vimrc*
+1. Add `Plug 'bluz71/vim-moonfly-colors'` to your *vimrc*
 2. Run `:PlugInstall`
-3. Add `colorscheme moonfly` and your *~/.vimrc*, make sure this line appears
+3. Add `colorscheme moonfly` to your *vimrc*, make sure this line appears
    **after** the *Plug* declaration.
 
 Terminal Configuration
