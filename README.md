@@ -12,10 +12,10 @@ Screenshots
 -----------
 
 #### Ruby
-![Ruby](ruby_moonfly.png)
+<img src="ruby_moonfly.png" alt="ruby_moonfly" width="693px" height="710px">
 
 #### JavaScript
-![JavaScript](javascript_moonfly.png)
+<img src="javascript_moonfly.png" alt="ruby_moonfly" width="693px" height="710px">
 
 Installation
 ------------
@@ -38,7 +38,7 @@ host terminal be setup with the *moonfly* color palette.
 
 Note, the host terminal should also be configured for 256 colors, this usually
 means setting the terminal type to **xterm-256color** or **screen-256color**
-when using [tmux](https://tmux.github.io/).
+when used with [tmux](https://tmux.github.io/).
 
 *iterm2* users on macOS can import
 [this](https://github.com/bluz71/dotfiles/blob/master/moonfly.itermcolors)
