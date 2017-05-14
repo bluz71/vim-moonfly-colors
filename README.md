@@ -17,11 +17,11 @@ Screenshots
 #### JavaScript
 ![Ruby](javascript_moonfly.png)
 
-Languages supported
--------------------
+Languages explicitly styled
+----------------------------
 
 * C/C++
-* Shell 
+* Shell
 * Python
 * Ruby
 * Elixir
@@ -29,7 +29,7 @@ Languages supported
 * CoffeeScript
 * Go
 * Rust
-* Java 
+* Java
 
 Installation
 ------------
