@@ -192,6 +192,7 @@ exec "highlight SpecialKey ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
 exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson
 exec "highlight Ignore ctermfg=12 guifg=" . s:light_blue
 exec "highlight Underlined ctermfg=10 guifg=" . s:emerald . " cterm=none gui=none"
+exec "highlight QuickFixLine ctermbg=237 guibg=" . s:grey237 . " cterm=none"
 
 " Neovim only highlight groups.
 exec "highlight Whitespace ctermfg=235 guifg=" . s:grey235
