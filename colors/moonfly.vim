@@ -266,7 +266,7 @@ exec "highlight elixirPrivateDefine ctermfg=2 guifg=" . s:green
 exec "highlight elixirStringDelimiter ctermfg=11 guifg=" . s:wheat
 exec "highlight elixirVariable ctermfg=8 guifg=" . s:coral
 
-" For JavaScript 'pangloss/vim-javascript' Plugin.
+" For JavaScript 'pangloss/vim-javascript' plugin.
 exec "highlight jsClassDefinition ctermfg=10 guifg=" . s:emerald
 exec "highlight jsClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight jsFuncBlock ctermfg=12 guifg=" . s:light_blue
@@ -349,6 +349,10 @@ exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=2
 exec "highlight xmlTag ctermfg=14 guifg=" . s:light_green
 exec "highlight xmlTagName ctermfg=4 guifg=" . s:blue
 exec "highlight xmlEndTag ctermfg=12 guifg=" . s:light_blue
+
+" For Markdown 'plasticboy/vim-markdown' plugin.
+exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
+exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
 
 " For vimdiff.
 exec "highlight DiffAdd ctermbg=10 guibg=" . s:emerald . " ctermfg=bg guifg=bg"
