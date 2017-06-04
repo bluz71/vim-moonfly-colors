@@ -85,6 +85,8 @@ if exists("syntax_on")
 endif
 let g:colors_name="moonfly"
 
+" Default to non-highlighted cursor line numbers.
+let g:moonflyCursorLineNr = get(g:, "moonflyCursorLineNr", 0)
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white
@@ -182,7 +184,11 @@ exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
 exec "highlight LineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247
 exec "highlight Cursor guifg=bg guibg=" . s:grey247
 exec "highlight lCursor guifg=bg guibg=" . s:white
-exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " gui=none"
+if g:moonflyCursorLineNr
+    exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " gui=none"
+else
+    exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247 . " gui=none"
+endif
 exec "highlight CursorLine ctermbg=237 guibg=" . s:grey237 . " cterm=none"
 exec "highlight Folded ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=". s:light_green
 exec "highlight FoldColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=" . s:light_green

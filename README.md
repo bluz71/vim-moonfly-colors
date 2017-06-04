@@ -1,6 +1,5 @@
 moonfly
 =======
-
 *moonfly* is a dark theme for Vim and Neovim that has taken inspiration from:
 
 * [monokai](https://atom.io/themes/monokai)
@@ -10,7 +9,6 @@ moonfly
 
 Screenshots
 -----------
-
 #### Ruby
 ![Ruby](ruby_moonfly.png)
 
@@ -19,7 +17,6 @@ Screenshots
 
 Languages explicitly styled
 ----------------------------
-
 * C/C++
 * Shell
 * Python
@@ -33,7 +30,6 @@ Languages explicitly styled
 
 Installation
 ------------
-
 Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
 set the colorscheme in your *vimrc* file.
 
@@ -44,9 +40,23 @@ If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
 3. Add `colorscheme moonfly` to your *vimrc*, make sure this line appears
    **after** the *Plug* declaration.
 
+Options
+-------
+The `g:moonflyCursorLineNr` option specifies whether to highlight the cursor
+line, as blue, in the number column if the `relativenumber` or `cursorline`
+settings are in effect. By default the cursor line will not be highlighted. 
+
+Note, I do recommend enabling this option.
+
+To highlight the current cursor line in the number column please add the
+following to your *vimrc*:
+
+```
+let g:moonflyCursorLineNr = 1
+```
+
 Terminal Configuration
 ----------------------
-
 The *moonfly* Vim color scheme when used with Vim in a terminal, as against a
 GUI Vim, **requires** the host terminal be setup with the *moonfly* color
 palette.
@@ -102,5 +112,4 @@ Other terminals should be setup with the following color configuration:
 
 License
 -------
-
 [MIT](https://opensource.org/licenses/MIT)
