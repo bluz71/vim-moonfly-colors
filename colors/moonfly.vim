@@ -85,8 +85,8 @@ if exists("syntax_on")
 endif
 let g:colors_name="moonfly"
 
-" Default to non-highlighted cursor line numbers.
-let g:moonflyCursorLineNr = get(g:, "moonflyCursorLineNr", 0)
+" Default to highlighted cursor line numbers.
+let g:moonflyCursorLineNr = get(g:, "moonflyCursorLineNr", 1)
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white

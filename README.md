@@ -44,15 +44,13 @@ Options
 -------
 The `g:moonflyCursorLineNr` option specifies whether to highlight the cursor
 line, as blue, in the number column if the `relativenumber` or `cursorline`
-settings are in effect. By default the cursor line will not be highlighted. 
+settings are in effect. By default the cursor line will be highlighted as such.
 
-Note, I do recommend enabling this option.
-
-To highlight the current cursor line in the number column please add the
-following to your *vimrc*:
+To disable highlighting of the current cursor line in the number column please
+add the following to your *vimrc*:
 
 ```
-let g:moonflyCursorLineNr = 1
+let g:moonflyCursorLineNr = 0
 ```
 
 Terminal Configuration
