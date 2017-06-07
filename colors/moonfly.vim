@@ -357,8 +357,9 @@ exec "highlight xmlTagName ctermfg=4 guifg=" . s:blue
 exec "highlight xmlEndTag ctermfg=12 guifg=" . s:light_blue
 
 " For Markdown 'plasticboy/vim-markdown' plugin.
-exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
+exec "highlight mkdLineBreak ctermbg=bg guibg=bg"
 exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
+exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
 
 " For vimdiff.
 exec "highlight DiffAdd ctermbg=10 guibg=" . s:emerald . " ctermfg=bg guifg=bg"
