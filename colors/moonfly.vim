@@ -395,13 +395,13 @@ exec "highlight NERDTreeGitStatusRenamed ctermfg=3 guifg=" . s:khaki
 
 " For Neomake.
 exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
-exec "highlight NeomakeErrorSign ctermfg=1 guifg=" . s:red
+exec "highlight NeomakeErrorSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=1 guifg=" . s:red
 exec "highlight NeomakeWarning ctermfg=3 guifg=" . s:khaki
-exec "highlight NeomakeWarningSign ctermfg=3 guifg=" . s:khaki
+exec "highlight NeomakeWarningSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=3 guifg=" . s:khaki
 exec "highlight NeomakeInfo ctermfg=7 guifg=" . s:orange
-exec "highlight NeomakeInfoSign ctermfg=7 guifg=" . s:orange
+exec "highlight NeomakeInfoSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=7 guifg=" . s:orange
 exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
-exec "highlight NeomakeMessageSign ctermfg=13 guifg=" . s:purple
+exec "highlight NeomakeMessageSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=13 guifg=" . s:purple
 
 " Misc.
 exec "highlight Directory ctermfg=10 guifg=" . s:emerald
