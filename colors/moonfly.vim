@@ -393,6 +393,12 @@ exec "highlight NERDTreeHelp ctermfg=247 guifg=" . s:grey247
 exec "highlight NERDTreeGitStatusDirDirty ctermfg=13 guifg=" . s:purple
 exec "highlight NERDTreeGitStatusRenamed ctermfg=3 guifg=" . s:khaki
 
+" For Neomake.
+exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
+exec "highlight NeomakeWarning ctermfg=3 guifg=" . s:khaki
+exec "highlight NeomakeInfo ctermfg=7 guifg=" . s:orange
+exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
+
 " Misc.
 exec "highlight Directory ctermfg=10 guifg=" . s:emerald
 exec "highlight jsonKeyword ctermfg=12 guifg=" . s:light_blue
