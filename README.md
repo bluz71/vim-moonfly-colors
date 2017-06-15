@@ -59,28 +59,27 @@ add the following to your *vimrc*:
 let g:moonflyCursorLineNr = 0
 ```
 
-True Color Terminal
--------------------
+True Color Terminals
+--------------------
 
 Many terminals, like [iTerm2](http://www.iterm2.com) and
 [st](http://st.suckless.org), support
-[24-bit true colors](https://gist.github.com/XVilka/8346728).
-
-Modern versions of Vim and Neovim support true colors when `set termguicolors`
-is enabled.
+[24-bit true colors](https://gist.github.com/XVilka/8346728). Modern versions
+of Vim and Neovim, on such terminals, support true colors when `set
+termguicolors` is enabled.
 
 Hence, on terminals that support true colors, and when `termguicolors` is set,
 the *moonfly* color scheme will not require any terminal configuration to emit
 the correct *moonfly* colors.
 
 However, even on such terminals I still recommend proceeding with the 256-color
-configuations listed in the next section for consistency between command line
+configuation listed in the next section for consistency between command line
 `$SHELL` colors and Vim colors.
 
-256 Color Terminal Configuration
---------------------------------
+256 Color Terminals
+-------------------
 
-The *moonfly* Vim color scheme when used with Vim in a 256-color terminal,
+The *moonfly* Vim color scheme when used with Vim in a 256-color terminal
 **requires** the host terminal be setup with the *moonfly* color palette.
 
 Also note, the host terminal should be configured for 256 colors, this usually
