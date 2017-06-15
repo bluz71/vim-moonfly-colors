@@ -122,7 +122,7 @@ exec "highlight Constant ctermfg=13 guifg=" . s:purple
 exec "highlight PreProc ctermfg=15 guifg=" . s:violet
 
 " Status, split and tab lines.
-exec "highlight StatusLine ctermbg=11 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:wheat . " gui=none"
+exec "highlight StatusLine ctermbg=251 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:white . " gui=none"
 exec "highlight StatusLineNC ctermbg=247 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:grey247 . " gui=none"
 exec "highlight VertSplit ctermbg=236 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:grey236
 exec "highlight Tabline ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
