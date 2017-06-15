@@ -1,5 +1,6 @@
 moonfly
 =======
+
 *moonfly* is a dark theme for Vim and Neovim that has taken inspiration from:
 
 * [monokai](https://atom.io/themes/monokai)
@@ -9,14 +10,17 @@ moonfly
 
 Screenshots
 -----------
+
 #### Ruby
 ![Ruby](ruby_moonfly.png)
 
 #### JavaScript
+
 ![Ruby](javascript_moonfly.png)
 
 Languages explicitly styled
 ----------------------------
+
 * C/C++
 * Shell
 * Python
@@ -30,6 +34,7 @@ Languages explicitly styled
 
 Installation
 ------------
+
 Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
 set the colorscheme in your *vimrc* file.
 
@@ -42,6 +47,7 @@ If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
 
 Options
 -------
+
 The `g:moonflyCursorLineNr` option specifies whether to highlight the cursor
 line, as blue, in the number column if the `relativenumber` or `cursorline`
 settings are in effect. By default the cursor line will be highlighted as such.
@@ -53,11 +59,29 @@ add the following to your *vimrc*:
 let g:moonflyCursorLineNr = 0
 ```
 
-Terminal Configuration
-----------------------
-The *moonfly* Vim color scheme when used with Vim in a terminal, as against a
-GUI Vim, **requires** the host terminal be setup with the *moonfly* color
-palette.
+True Color Terminal
+-------------------
+
+Many terminals, like [iTerm2](http://www.iterm2.com) and
+[st](http://st.suckless.org), support
+[24-bit true colors](https://gist.github.com/XVilka/8346728).
+
+Modern versions of Vim and Neovim support true colors when `set termguicolors`
+is enabled.
+
+Hence, on terminals that support true colors, and when `termguicolors` is set,
+the *moonfly* color scheme will not require any terminal configuration to emit
+the correct *moonfly* colors.
+
+However, even on such terminals I still recommend proceeding with the 256-color
+configuations listed in the next section for consistency between command line
+`$SHELL` colors and Vim colors.
+
+256 Color Terminal Configuration
+--------------------------------
+
+The *moonfly* Vim color scheme when used with Vim in a 256-color terminal,
+**requires** the host terminal be setup with the *moonfly* color palette.
 
 Also note, the host terminal should be configured for 256 colors, this usually
 means setting the terminal's type to **xterm-256color** or **screen-256color**
@@ -110,4 +134,5 @@ Other terminals should be setup with the following color configuration:
 
 License
 -------
+
 [MIT](https://opensource.org/licenses/MIT)
