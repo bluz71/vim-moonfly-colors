@@ -380,20 +380,20 @@ exec "highlight TagbarVisibilityPrivate ctermfg=14 guifg=" . s:light_green
 exec "highlight TagbarKind ctermfg=10 guifg=" . s:emerald
 
 " For NERDTree.
-exec "highlight NERDTreePart ctermfg=0 guifg=" . s:grey0
-exec "highlight NERDTreePartFile ctermfg=0 guifg=" . s:grey0
+exec "highlight NERDTreeClosable ctermfg=8 guifg=" . s:coral
+exec "highlight NERDTreeCWD ctermfg=5 guifg=" . s:magenta
 exec "highlight NERDTreeDir ctermfg=12 guifg=" . s:light_blue
 exec "highlight NERDTreeDirSlash ctermfg=15 guifg=" . s:violet
-exec "highlight NERDTreeUp ctermfg=8 guifg=" . s:coral
-exec "highlight NERDTreeLinkFile ctermfg=4 guifg=" . s:blue
-exec "highlight NERDTreeLinkDir ctermfg=4 guifg=" . s:blue
 exec "highlight NERDTreeExecFile ctermfg=11 guifg=" . s:wheat
-exec "highlight NERDTreeOpenable ctermfg=2 guifg=" . s:green
-exec "highlight NERDTreeClosable ctermfg=8 guifg=" . s:coral
-exec "highlight NERDTreeCWD ctermfg=14 guifg=" . s:light_green
-exec "highlight NERDTreeHelp ctermfg=247 guifg=" . s:grey247
 exec "highlight NERDTreeGitStatusDirDirty ctermfg=13 guifg=" . s:purple
 exec "highlight NERDTreeGitStatusRenamed ctermfg=3 guifg=" . s:khaki
+exec "highlight NERDTreeHelp ctermfg=247 guifg=" . s:grey247
+exec "highlight NERDTreeLinkDir ctermfg=4 guifg=" . s:blue
+exec "highlight NERDTreeLinkFile ctermfg=4 guifg=" . s:blue
+exec "highlight NERDTreeOpenable ctermfg=2 guifg=" . s:green
+exec "highlight NERDTreePart ctermfg=0 guifg=" . s:grey0
+exec "highlight NERDTreePartFile ctermfg=0 guifg=" . s:grey0
+exec "highlight NERDTreeUp ctermfg=8 guifg=" . s:coral
 
 " For Neomake.
 exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
