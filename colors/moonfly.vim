@@ -249,6 +249,7 @@ exec "highlight rubyBlockParameter ctermfg=2 guifg=" . s:green
 exec "highlight rubyBoolean ctermfg=6 guifg=" . s:turquoise
 exec "highlight rubyClass ctermfg=7 guifg=" . s:orange
 exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
+exec "highlight rubyDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight rubyException ctermfg=9 guifg=" . s:crimson
 exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
 exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:light_green
@@ -261,14 +262,14 @@ exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 exec "highlight eelixirDelimiter ctermfg=9 guifg=" . s:crimson
 exec "highlight elixirBlockDefinition ctermfg=7 guifg=" . s:orange
 exec "highlight elixirBoolean ctermfg=6 guifg=" . s:turquoise
-exec "highlight elixirDefine ctermfg=14 guifg=" . s:light_green
+exec "highlight elixirDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirDocTest ctermfg=247 guifg=" . s:grey247
 exec "highlight elixirExUnitAssert ctermfg=14 guifg=" . s:light_green
 exec "highlight elixirExUnitMacro ctermfg=12 guifg=" . s:light_blue
 exec "highlight elixirKernelFunction ctermfg=2 guifg=" . s:green
 exec "highlight elixirKeyword ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirModuleDefine ctermfg=4 guifg=" . s:blue
-exec "highlight elixirPrivateDefine ctermfg=2 guifg=" . s:green
+exec "highlight elixirPrivateDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirStringDelimiter ctermfg=11 guifg=" . s:wheat
 exec "highlight elixirVariable ctermfg=8 guifg=" . s:coral
 
