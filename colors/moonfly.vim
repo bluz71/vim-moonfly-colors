@@ -382,6 +382,7 @@ exec "highlight TagbarKind ctermfg=10 guifg=" . s:emerald
 exec "highlight NERDTreePart ctermfg=0 guifg=" . s:grey0
 exec "highlight NERDTreePartFile ctermfg=0 guifg=" . s:grey0
 exec "highlight NERDTreeDir ctermfg=12 guifg=" . s:light_blue
+exec "highlight NERDTreeDirSlash ctermfg=15 guifg=" . s:violet
 exec "highlight NERDTreeUp ctermfg=8 guifg=" . s:coral
 exec "highlight NERDTreeLinkFile ctermfg=4 guifg=" . s:blue
 exec "highlight NERDTreeLinkDir ctermfg=4 guifg=" . s:blue
