@@ -243,6 +243,7 @@ exec "highlight pythonStatement ctermfg=14 guifg=" s:light_green
 
 " For Ruby.
 exec "highlight erubyDelimiter ctermfg=9 guifg=" . s:crimson
+exec "highlight rspecGroupMethods ctermfg=4 guifg=" . s:blue
 exec "highlight rubyAccess ctermfg=3 guifg=" . s:khaki
 exec "highlight rubyAttribute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyBlockParameter ctermfg=2 guifg=" . s:green
@@ -307,7 +308,7 @@ exec "highlight goMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight goMethodCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight goRepeat ctermfg=7 guifg=" . s:orange
 exec "highlight goSignedInts ctermfg=13 guifg=" . s:purple
-exec "highlight goStatement ctermfg=6 guifg=" . s:turquoise
+exec "highlight goStatement ctermfg=3 guifg=" . s:khaki
 exec "highlight goStruct ctermfg=8 guifg=" . s:coral
 exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
 exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
