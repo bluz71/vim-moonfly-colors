@@ -301,8 +301,10 @@ exec "highlight goDeclType ctermfg=2 guifg=" . s:green
 exec "highlight goDirective ctermfg=15 guifg=" . s:violet
 exec "highlight goFloats ctermfg=13 guifg=" . s:purple
 exec "highlight goFunction ctermfg=4 guifg=" . s:blue
+exec "highlight goFunctionCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight goLabel ctermfg=3 guifg=" . s:khaki
 exec "highlight goMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight goMethodCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight goRepeat ctermfg=7 guifg=" . s:orange
 exec "highlight goSignedInts ctermfg=13 guifg=" . s:purple
 exec "highlight goStatement ctermfg=6 guifg=" . s:turquoise
