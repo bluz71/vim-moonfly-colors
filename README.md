@@ -89,7 +89,8 @@ On terminals that do support true colors, and when `termguicolors` is set,
 the *moonfly* color scheme will not require any terminal configuration to emit
 the correct *moonfly* colors.
 
-When run on *tmux* the following setting needs to be added to *~/.tmux.conf*:
+When run under *tmux* the following setting needs to be added to
+*~/.tmux.conf*:
 
 ```
 set -ga terminal-overrides ',xterm-256color:Tc'
@@ -116,7 +117,7 @@ when used with [tmux](https://tmux.github.io/).
 *iterm2* users on macOS can import [this](moonfly.itermcolors) color scheme.
 
 *xterm* users on Linux can add the following snippet to their *~/.Xresources*
-file and launch xterm via **xterm -name xterm-moonfly**. A complete
+file and launch xterm with `xterm -name xterm-moonfly`. A complete
 *Xresources* file is available
 [here](https://github.com/bluz71/dotfiles/blob/master/Xresources)
 
