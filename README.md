@@ -1,12 +1,18 @@
 moonfly
 =======
 
-*moonfly* is a dark theme for Vim and Neovim that has taken inspiration from:
+*moonfly* is a dark color scheme for Vim and Neovim that has taken inspiration
+from:
 
-* [monokai](https://atom.io/themes/monokai)
 * [sunburst](http://colorsublime.com/theme/Sunburst)
 * [xoria256](https://github.com/vim-scripts/xoria256.vim)
 * [One Dark](https://github.com/atom/one-dark-syntax)
+* [One](https://github.com/rakr/vim-one)
+* [monokai](https://atom.io/themes/monokai)
+
+Note, the *moonfly* color scheme does incrementally change from time to time,
+primarily in regards to language and plugin theming. However, the core color
+palette will not change.
 
 Screenshots
 -----------
@@ -19,7 +25,7 @@ Screenshots
 ![Ruby](javascript_moonfly.png)
 
 Languages explicitly styled
-----------------------------
+---------------------------
 
 * C/C++
 * Shell
@@ -28,9 +34,20 @@ Languages explicitly styled
 * Elixir
 * JavaScript/ES6
 * CoffeeScript
+* Markdown
 * Go
 * Rust
 * Java
+
+Plugins explicity styled
+------------------------
+
+* NERDTree
+* Tagbar
+* Neomake
+* CtrlP
+* clever-f
+* BufExplorer
 
 Installation
 ------------
@@ -62,19 +79,29 @@ let g:moonflyCursorLineNr = 0
 True Color Terminals
 --------------------
 
-Many terminals, like [iTerm2](http://www.iterm2.com) and
+Quite a few modern terminal programs, like [iTerm2](http://www.iterm2.com) and
 [st](http://st.suckless.org), support
 [24-bit true colors](https://gist.github.com/XVilka/8346728). Modern versions
 of Vim and Neovim, on such terminals, support true colors when `set
 termguicolors` is enabled.
 
-Hence, on terminals that support true colors, and when `termguicolors` is set,
+On terminals that do support true colors, and when `termguicolors` is set,
 the *moonfly* color scheme will not require any terminal configuration to emit
 the correct *moonfly* colors.
 
-However, even on such terminals I still recommend proceeding with the 256-color
-configuation listed in the next section for consistency between command line
-`$SHELL` colors and Vim colors.
+When run on *tmux* the following setting needs to be added to *~/.tmux.conf*:
+
+```
+set -ga terminal-overrides ',xterm-256color:Tc'
+```
+
+If consistency between Vim colors and `$SHELL` colors is important then I
+recommend proceeding with the 256-color configurations listed in the next
+section.
+
+Caveat, *Terminal.app* on macOS and *xterm* on Unix do **not** support true
+colors. Also, true color support, in my experience, seems more stable in Neovim
+than it does in Vim.
 
 256 Color Terminals
 -------------------
