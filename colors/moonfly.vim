@@ -261,14 +261,14 @@ exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 
 " For Elixir.
 exec "highlight eelixirDelimiter ctermfg=9 guifg=" . s:crimson
-exec "highlight elixirBlockDefinition ctermfg=7 guifg=" . s:orange
+exec "highlight elixirBlockDefinition ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirBoolean ctermfg=6 guifg=" . s:turquoise
 exec "highlight elixirDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirDocTest ctermfg=247 guifg=" . s:grey247
 exec "highlight elixirExUnitAssert ctermfg=14 guifg=" . s:light_green
 exec "highlight elixirExUnitMacro ctermfg=12 guifg=" . s:light_blue
 exec "highlight elixirKernelFunction ctermfg=2 guifg=" . s:green
-exec "highlight elixirKeyword ctermfg=5 guifg=" . s:magenta
+exec "highlight elixirKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight elixirModuleDefine ctermfg=4 guifg=" . s:blue
 exec "highlight elixirPrivateDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirStringDelimiter ctermfg=11 guifg=" . s:wheat
