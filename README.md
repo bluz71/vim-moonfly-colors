@@ -14,6 +14,10 @@ Note, the *moonfly* color scheme does incrementally change from time to time,
 primarily in regards to language and plugin theming. However, the core color
 palette will not change.
 
+A simple companion statusline,
+[vim-moonfly-statuline](https://github.com/bluz71/vim-moonfly-statusline), is
+also available.
+
 Screenshots
 -----------
 
