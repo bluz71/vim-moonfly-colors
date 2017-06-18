@@ -312,11 +312,6 @@ exec "highlight goStatement ctermfg=3 guifg=" . s:khaki
 exec "highlight goStruct ctermfg=8 guifg=" . s:coral
 exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
 exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
 
 " For Rust.
 exec "highlight rustCommentBlockDoc ctermfg=247 guifg=" . s:grey247
@@ -340,8 +335,6 @@ exec "highlight javaMethodDecl ctermfg=3 guifg=" . s:khaki
 exec "highlight javaOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight javaScopeDecl ctermfg=4 guifg=" . s:blue
 exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
-let java_highlight_java_lang_ids = 1
-let java_highlight_debug = 1
 
 " For HTML.
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
