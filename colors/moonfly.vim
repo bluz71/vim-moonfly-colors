@@ -85,8 +85,11 @@ if exists("syntax_on")
 endif
 let g:colors_name="moonfly"
 
-" Default to highlighted cursor line numbers.
-let g:moonflyCursorLineNr = get(g:, "moonflyCursorLineNr", 1)
+" By default highlight cursor line numbers in 'blue'.
+" By default don't highlight spelling errors in reversed colors.
+"
+let g:moonflyCursorLineNr   = get(g:, "moonflyCursorLineNr", 1)
+let g:moonflySpellReversed = get(g:, "moonflySpellReversed", 0)
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white
@@ -173,10 +176,17 @@ exec "highlight PmenuThumb ctermbg=3 guibg=" . s:khaki
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
-exec "highlight SpellBad ctermbg=1 guibg=" . s:red . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
-exec "highlight SpellCap ctermbg=4 guibg=" . s:blue . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
-exec "highlight SpellRare ctermbg=15 guibg=" . s:violet . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
-exec "highlight SpellLocal ctermbg=12 guibg=" . s:light_blue . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
+if g:moonflySpellReversed
+    exec "highlight SpellBad ctermbg=1 guibg=" . s:red . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
+    exec "highlight SpellCap ctermbg=4 guibg=" . s:blue . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
+    exec "highlight SpellRare ctermbg=15 guibg=" . s:violet . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
+    exec "highlight SpellLocal ctermbg=12 guibg=" . s:light_blue . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
+else
+    exec "highlight SpellBad ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:red
+    exec "highlight SpellCap ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:blue
+    exec "highlight SpellRare ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:violet
+    exec "highlight SpellLocal ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:light_blue
+endif
 
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
