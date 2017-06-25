@@ -412,10 +412,12 @@ exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
 exec "highlight NeomakeMessageSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=13 guifg=" . s:purple
 
 " Misc.
-exec "highlight Directory ctermfg=10 guifg=" . s:emerald
-exec "highlight jsonKeyword ctermfg=12 guifg=" . s:light_blue
-exec "highlight CtrlPMatch ctermfg=13 guifg=" . s:purple
-exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
 exec "highlight bufExplorerHelp ctermfg=247 guifg=" . s:grey247
 exec "highlight bufExplorerSortBy ctermfg=247 guifg=" . s:grey247
 exec "highlight CleverFDefaultLabel ctermfg=9 guifg=" . s:crimson
+exec "highlight CtrlPMatch ctermfg=13 guifg=" . s:purple
+exec "highlight Directory ctermfg=10 guifg=" . s:emerald
+exec "highlight jsonKeyword ctermfg=12 guifg=" . s:light_blue
+exec "highlight netrwClassify ctermfg=15 guifg=" . s:violet
+exec "highlight netrwDir ctermfg=12 guifg=" . s:light_blue
+exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
