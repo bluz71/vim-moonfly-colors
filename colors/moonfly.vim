@@ -125,8 +125,8 @@ exec "highlight Constant ctermfg=13 guifg=" . s:purple
 exec "highlight PreProc ctermfg=15 guifg=" . s:violet
 
 " Status, split and tab lines.
-exec "highlight StatusLine ctermbg=251 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:white . " gui=none"
-exec "highlight StatusLineNC ctermbg=247 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:grey247 . " gui=none"
+exec "highlight StatusLine ctermbg=236 guibg=" . s:grey236 . " ctermfg=251 guifg=" . s:white . " cterm=none gui=none"
+exec "highlight StatusLineNC ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
 exec "highlight VertSplit ctermbg=236 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:grey236
 exec "highlight Tabline ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
 exec "highlight TablineSel ctermbg=236 guibg=" . s:grey236 . " ctermfg=4 guifg=" . s:blue . " cterm=none gui=none"
@@ -375,8 +375,17 @@ exec "highlight DiffDelete ctermbg=236 guibg=" . s:grey236 . " ctermfg=251 guifg
 exec "highlight DiffText ctermbg=4 guibg=" . s:blue . " ctermfg=bg guifg=bg gui=none"
 
 " For vim files.
+exec "highlight vimBracket ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimCommand ctermfg=7 guifg=" . s:orange
+exec "highlight vimEnvvar ctermfg=3 guifg=" . s:khaki
+exec "highlight vimFuncName ctermfg=4 guifg=" . s:blue
+exec "highlight vimFuncSID ctermfg=12 guifg=" . s:light_blue
+exec "highlight vimFunction ctermfg=12 guifg=" . s:light_blue
+exec "highlight vimNotation ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimOption ctermfg=10 guifg=" . s:emerald
+exec "highlight vimParenSep ctermfg=251 guifg=" . s:white
+exec "highlight vimSep ctermfg=251 guifg=" . s:white
+exec "highlight vimUserFunc ctermfg=12 guifg=" . s:light_blue
 
 " For Tagbar.
 exec "highlight TagbarFoldIcon ctermfg=247 guifg=" . s:grey247
