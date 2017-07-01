@@ -12,7 +12,8 @@ from:
 
 Note, the *moonfly* color scheme does incrementally change from time to time,
 primarily in regards to language and plugin theming. However, the core color
-palette will not change.
+palette will not change; **except** the time I changed crimson (July 1 2017),
+sorry.
 
 A simple companion statusline,
 [vim-moonfly-statuline](https://github.com/bluz71/vim-moonfly-statusline), is
@@ -97,30 +98,41 @@ let g:moonflySpellReversed = 1
 True Color Terminals
 --------------------
 
-Quite a few modern terminal programs, like [iTerm2](http://www.iterm2.com) and
-[st](http://st.suckless.org), support
+Many modern terminal programs, such as [iTerm2](http://www.iterm2.com) and
+[termite](https://github.com/thestinger/termite), support
 [24-bit true colors](https://gist.github.com/XVilka/8346728). Modern versions
 of Vim and Neovim, on such terminals, support true colors when `set
 termguicolors` is enabled.
+
+Caveat, *Terminal.app* on macOS and *xterm* on Unix do **not** support true
+colors.
 
 On terminals that do support true colors, and when `termguicolors` is set,
 the *moonfly* color scheme will not require any terminal configuration to emit
 the correct *moonfly* colors.
 
-When run under *tmux* the following setting needs to be added to
-*~/.tmux.conf*:
+For the true colors *moonfly* color scheme to run correctly in *tmux* the
+following setting will be required in *~/.tmux.conf*:
 
 ```
 set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
+Also for Vim, as against Neovim, inside *tmux*, please add the following to
+your *vimrc*:
+
+```viml
+set t_8b=^[[48;2;%lu;%lu;%lum
+set t_8f=^[[38;2;%lu;%lu;%lum
+```
+
+Note: the `^[` in the above snippet is a real escape character, to insert it,
+enter `Ctrl-v` followed by `Esc`. Repeating, the above `t_8*` settings are
+**not** required for Neovim.
+
 If consistency between Vim colors and `$SHELL` colors is important then I
 recommend proceeding with the 256-color configurations listed in the next
 section.
-
-Caveat, *Terminal.app* on macOS and *xterm* on Unix do **not** support true
-colors. Also, true color support, in my experience, seems more stable in Neovim
-than it does in Vim.
 
 256 Color Terminals
 -------------------
@@ -149,7 +161,7 @@ xterm-moonfly*color5:  #ce76e8
 xterm-moonfly*color6:  #7ee0ce
 xterm-moonfly*color7:  #de935f
 xterm-moonfly*color8:  #f09479
-xterm-moonfly*color9:  #fe3b7b
+xterm-moonfly*color9:  #f74782
 xterm-moonfly*color10: #42cf89
 xterm-moonfly*color11: #cfcfb0
 xterm-moonfly*color12: #78c2ff
@@ -169,7 +181,7 @@ Other terminals should be setup with the following color configuration:
 * color6  / Palette 7  / Cyan:         `#7ee0ce`
 * color7  / Palette 8  / White:        `#de935f`
 * color8  / Palette 9  / Bold Black:   `#f09479`
-* color9  / Palette 10 / Bold Red:     `#fe3b7b`
+* color9  / Palette 10 / Bold Red:     `#f74782`
 * color10 / Palette 11 / Bold Green:   `#42cf89`
 * color11 / Palette 12 / Bold Yellow:  `#cfcfb0`
 * color12 / Palette 13 / Bold Blue:    `#78c2ff`

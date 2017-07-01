@@ -27,7 +27,7 @@ let s:turquoise   = "#7ee0ce"
 let s:purple      = "#ae81ff"
 let s:violet      = "#e2637f"
 let s:magenta     = "#ce76e8"
-let s:crimson     = "#fe3b7b"
+let s:crimson     = "#f74782"
 let s:red         = "#ff5454"
 
 " For 256-color terminal colors.
@@ -44,7 +44,7 @@ let s:red         = "#ff5454"
 " xterm-moonfly*color6: #7ee0ce
 " xterm-moonfly*color7: #de935f
 " xterm-moonfly*color8: #f09479
-" xterm-moonfly*color9: #fe3b7b
+" xterm-moonfly*color9: #f74782
 " xterm-moonfly*color10: #42cf89
 " xterm-moonfly*color11: #cfcfb0
 " xterm-moonfly*color12: #78c2ff
@@ -377,7 +377,7 @@ exec "highlight DiffText ctermbg=4 guibg=" . s:blue . " ctermfg=bg guifg=bg gui=
 " For vim files.
 exec "highlight vimBracket ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimCommand ctermfg=7 guifg=" . s:orange
-exec "highlight vimEnvvar ctermfg=3 guifg=" . s:khaki
+exec "highlight vimEnvvar ctermfg=9 guifg=" . s:crimson
 exec "highlight vimFuncName ctermfg=4 guifg=" . s:blue
 exec "highlight vimFuncSID ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimFunction ctermfg=12 guifg=" . s:light_blue
