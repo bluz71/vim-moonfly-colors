@@ -98,7 +98,7 @@ let g:moonflySpellReversed = 1
 True Color Terminals
 --------------------
 
-Many modern terminal programs, such as [iTerm2](http://www.iterm2.com) and
+Many terminal programs, such as [iTerm2](http://www.iterm2.com) and
 [termite](https://github.com/thestinger/termite), support
 [24-bit true colors](https://gist.github.com/XVilka/8346728). Modern versions
 of Vim and Neovim, on such terminals, support true colors when `set
@@ -111,22 +111,22 @@ On terminals that do support true colors, and when `termguicolors` is set,
 the *moonfly* color scheme will not require any terminal configuration to emit
 the correct *moonfly* colors.
 
-For the true colors *moonfly* color scheme to run correctly in *tmux* the
-following setting will be required in *~/.tmux.conf*:
+For the true colors *moonfly* color scheme to display correctly inside *tmux*
+the following setting will be required in *~/.tmux.conf*:
 
 ```
 set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
-Also for Vim, as against Neovim, inside *tmux*, please add the following to
-your *vimrc*:
+Vim, as against Neovim, inside *tmux*, will also require the following setting
+be added to *vimrc:*
 
 ```viml
 set t_8b=^[[48;2;%lu;%lu;%lum
 set t_8f=^[[38;2;%lu;%lu;%lum
 ```
 
-Note: the `^[` in the above snippet is a real escape character, to insert it,
+Note: `^[` in the above snippet is a real escape character; to insert it,
 enter `Ctrl-v` followed by `Esc`. Repeating, the above `t_8*` settings are
 **not** required for Neovim.
 
@@ -140,9 +140,9 @@ section.
 The *moonfly* Vim color scheme when used with Vim in a 256-color terminal
 **requires** the host terminal be setup with the *moonfly* color palette.
 
-Also note, the host terminal should be configured for 256 colors, this usually
-means setting the terminal's type to **xterm-256color** or **screen-256color**
-when used with [tmux](https://tmux.github.io/).
+The host terminal must be configured for 256 colors, this usually means setting
+the terminal's type to **xterm-256color** or **screen-256color** when used
+inside [tmux](https://tmux.github.io/).
 
 *iterm2* users on macOS can import [this](moonfly.itermcolors) color scheme.
 
