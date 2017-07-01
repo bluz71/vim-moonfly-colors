@@ -258,6 +258,7 @@ exec "highlight rubyAccess ctermfg=3 guifg=" . s:khaki
 exec "highlight rubyAttribute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyBlockParameter ctermfg=2 guifg=" . s:green
 exec "highlight rubyBoolean ctermfg=6 guifg=" . s:turquoise
+exec "highlight rubyCallback ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyClass ctermfg=7 guifg=" . s:orange
 exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
 exec "highlight rubyDefine ctermfg=5 guifg=" . s:magenta
@@ -266,6 +267,7 @@ exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
 exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:light_green
 exec "highlight rubyModule ctermfg=4 guifg=" . s:blue
 exec "highlight rubyPseudoVariable ctermfg=2 guifg=" . s:green
+exec "highlight rubyResponse ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 
