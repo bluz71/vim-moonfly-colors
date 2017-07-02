@@ -262,9 +262,12 @@ exec "highlight rubyCallback ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyClass ctermfg=7 guifg=" . s:orange
 exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
 exec "highlight rubyDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight rubyEntities ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyException ctermfg=9 guifg=" . s:crimson
 exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
+exec "highlight rubyHelper ctermfg=6 guifg=" . s:turquoise
 exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:light_green
+exec "highlight rubyMacro ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyModule ctermfg=4 guifg=" . s:blue
 exec "highlight rubyPseudoVariable ctermfg=2 guifg=" . s:green
 exec "highlight rubyResponse ctermfg=12 guifg=" . s:light_blue
