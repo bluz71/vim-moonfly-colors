@@ -292,7 +292,7 @@ exec "highlight elixirVariable ctermfg=8 guifg=" . s:coral
 " For JavaScript 'pangloss/vim-javascript' plugin.
 exec "highlight jsClassDefinition ctermfg=10 guifg=" . s:emerald
 exec "highlight jsClassKeyword ctermfg=7 guifg=" . s:orange
-exec "highlight jsFuncBlock ctermfg=12 guifg=" . s:light_blue
+exec "highlight jsFuncBlock ctermfg=10 guifg=" . s:emerald
 exec "highlight jsFuncCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight jsGlobalObjects ctermfg=10 guifg=" . s:emerald
 exec "highlight jsObjectKey ctermfg=4 guifg=" . s:blue
