@@ -364,9 +364,10 @@ exec "highlight htmlTagName ctermfg=4 guifg=" . s:blue
 exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247
 
 " For XML.
+exec "highlight xmlAttrib ctermfg=14 guifg=" . s:light_green
+exec "highlight xmlEndTag ctermfg=4 guifg=" . s:blue
 exec "highlight xmlTag ctermfg=14 guifg=" . s:light_green
 exec "highlight xmlTagName ctermfg=4 guifg=" . s:blue
-exec "highlight xmlEndTag ctermfg=12 guifg=" . s:light_blue
 
 " For Markdown 'plasticboy/vim-markdown' plugin.
 exec "highlight mkdLineBreak ctermbg=bg guibg=bg"
