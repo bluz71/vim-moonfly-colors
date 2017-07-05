@@ -5,30 +5,30 @@
 " URL:          github.com/bluz71/vim-moonfly-colors
 " License:      MIT (https://opensource.org/licenses/MIT)
 
-let s:black       = "#080808"
-let s:white       = "#c6c6c6"
-let s:grey247     = "#9e9e9e"
-let s:grey0       = "#373c40"
-let s:grey237     = "#3a3a3a"
-let s:grey236     = "#303030"
-let s:grey235     = "#262626"
-let s:grey234     = "#1c1c1c"
-let s:grey233     = "#121212"
-let s:wheat       = "#cfcfb0"
-let s:khaki       = "#e3c78a"
-let s:orange      = "#de935f"
-let s:coral       = "#f09479"
-let s:light_green = "#85dc85"
-let s:green       = "#8cc85f"
-let s:emerald     = "#42cf89"
-let s:blue        = "#80a0ff"
-let s:light_blue  = "#78c2ff"
-let s:turquoise   = "#7ee0ce"
-let s:purple      = "#ae81ff"
-let s:violet      = "#e2637f"
-let s:magenta     = "#ce76e8"
-let s:crimson     = "#f74782"
-let s:red         = "#ff5454"
+let s:black       = "#080808"  " black       = 232
+let s:white       = "#c6c6c6"  " white       = 251
+let s:grey247     = "#9e9e9e"  " grey247     = 247
+let s:grey0       = "#373c40"  " grey0       = 0
+let s:grey237     = "#3a3a3a"  " grey237     = 237
+let s:grey236     = "#303030"  " grey236     = 236
+let s:grey235     = "#262626"  " grey235     = 235
+let s:grey234     = "#1c1c1c"  " grey234     = 234
+let s:grey233     = "#121212"  " grey233     = 233
+let s:wheat       = "#cfcfb0"  " wheat       = 11
+let s:khaki       = "#e3c78a"  " khaki       = 3
+let s:orange      = "#de935f"  " orange      = 7
+let s:coral       = "#f09479"  " coral       = 8
+let s:light_green = "#85dc85"  " light_green = 14
+let s:green       = "#8cc85f"  " green       = 2
+let s:emerald     = "#42cf89"  " emerald     = 10
+let s:blue        = "#80a0ff"  " blue        = 4
+let s:light_blue  = "#78c2ff"  " light_blue  = 12
+let s:turquoise   = "#7ee0ce"  " turquoise   = 6
+let s:purple      = "#ae81ff"  " purple      = 13
+let s:violet      = "#e2637f"  " violet      = 15
+let s:magenta     = "#ce76e8"  " magenta     = 5
+let s:crimson     = "#f74782"  " crimson     = 9
+let s:red         = "#ff5454"  " red         = 1
 
 " For 256-color terminal colors.
 "
@@ -51,31 +51,6 @@ let s:red         = "#ff5454"
 " xterm-moonfly*color13: #ae81ff
 " xterm-moonfly*color14: #85dc85
 " xterm-moonfly*color15: #e2637f
-"
-" black       = 232
-" white       = 251
-" grey247     = 247
-" grey0       = 0
-" grey237     = 237
-" grey236     = 236
-" grey235     = 235
-" grey234     = 234
-" grey233     = 233
-" wheat       = 11
-" khaki       = 3
-" orange      = 7
-" coral       = 8
-" light_green = 14
-" green       = 2
-" emerald     = 10
-" blue        = 4
-" light_blue  = 12
-" turquoise   = 6
-" purple      = 13
-" violet      = 15
-" magenta     = 5
-" crimson     = 9
-" red         = 1
 
 
 highlight clear
@@ -293,8 +268,9 @@ exec "highlight jsClassDefinition ctermfg=10 guifg=" . s:emerald
 exec "highlight jsClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight jsFuncBlock ctermfg=10 guifg=" . s:emerald
 exec "highlight jsFuncCall ctermfg=12 guifg=" . s:light_blue
+exec "highlight jsFunction ctermfg=14 guifg=" . s:light_green
 exec "highlight jsGlobalObjects ctermfg=10 guifg=" . s:emerald
-exec "highlight jsObjectKey ctermfg=4 guifg=" . s:blue
+exec "highlight jsObjectKey ctermfg=12 guifg=" . s:light_blue
 exec "highlight jsObjectValue ctermfg=10 guifg=" . s:emerald
 exec "highlight jsStorageClass ctermfg=14 guifg=" . s:light_green
 exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:violet
