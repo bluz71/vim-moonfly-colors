@@ -62,9 +62,11 @@ let g:colors_name="moonfly"
 
 " By default highlight cursor line numbers in 'blue'.
 " By default don't highlight spelling errors in reversed colors.
+" By default don't color the cursor.
 "
-let g:moonflyCursorLineNr   = get(g:, "moonflyCursorLineNr", 1)
+let g:moonflyCursorLineNr  = get(g:, "moonflyCursorLineNr", 1)
 let g:moonflySpellReversed = get(g:, "moonflySpellReversed", 0)
+let g:moonflyCursorColored = get(g:, "moonflyCursorColored", 0)
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white
@@ -167,8 +169,12 @@ endif
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
 exec "highlight LineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247
-exec "highlight Cursor guifg=bg guibg=" . s:grey247
-exec "highlight lCursor guifg=bg guibg=" . s:white
+if g:moonflyCursorColored
+    exec "highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=" . s:blue
+else
+    exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
+endif
+exec "highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 if g:moonflyCursorLineNr
     exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " gui=none"
 else

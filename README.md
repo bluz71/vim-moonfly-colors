@@ -95,6 +95,14 @@ your *vimrc*:
 let g:moonflySpellReversed = 1
 ```
 
+The `g:moonflyCursorColored` option specifies whether to color the cursor or
+not. By default the cursor will **NOT** be colored, if however you prefer a
+colored cursor then add the following to your *vimrc*:
+
+```
+let g:moonflyCursorColored = 1
+```
+
 True Color Terminals
 --------------------
 
@@ -152,26 +160,30 @@ file and launch xterm with `xterm -name xterm-moonfly`. A complete
 [here](https://github.com/bluz71/dotfiles/blob/master/Xresources)
 
 ```
-xterm-moonfly*color0:  #373c40
-xterm-moonfly*color1:  #ff5454
-xterm-moonfly*color2:  #8cc85f
-xterm-moonfly*color3:  #e3c78a
-xterm-moonfly*color4:  #80a0ff
-xterm-moonfly*color5:  #ce76e8
-xterm-moonfly*color6:  #7ee0ce
-xterm-moonfly*color7:  #de935f
-xterm-moonfly*color8:  #f09479
-xterm-moonfly*color9:  #f74782
-xterm-moonfly*color10: #42cf89
-xterm-moonfly*color11: #cfcfb0
-xterm-moonfly*color12: #78c2ff
-xterm-moonfly*color13: #ae81ff
-xterm-moonfly*color14: #85dc85
-xterm-moonfly*color15: #e2637f
+xterm-moonfly*background:  #080808
+xterm-moonfly*foreground:  #b2b2b2
+xterm-moonfly*color0:      #373c40
+xterm-moonfly*color1:      #ff5454
+xterm-moonfly*color2:      #8cc85f
+xterm-moonfly*color3:      #e3c78a
+xterm-moonfly*color4:      #80a0ff
+xterm-moonfly*color5:      #ce76e8
+xterm-moonfly*color6:      #7ee0ce
+xterm-moonfly*color7:      #de935f
+xterm-moonfly*color8:      #f09479
+xterm-moonfly*color9:      #f74782
+xterm-moonfly*color10:     #42cf89
+xterm-moonfly*color11:     #cfcfb0
+xterm-moonfly*color12:     #78c2ff
+xterm-moonfly*color13:     #ae81ff
+xterm-moonfly*color14:     #85dc85
+xterm-moonfly*color15:     #e2637f
 ```
 
 Other terminals should be setup with the following color configuration:
 
+* background `080808`
+* foreground `b2b2b2`
 * color0  / Palette 1  / Black:        `#373c40`
 * color1  / Palette 2  / Red:          `#ff5454`
 * color2  / Palette 3  / Green:        `#8cc85f`
