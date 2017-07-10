@@ -5,30 +5,31 @@
 " URL:          github.com/bluz71/vim-moonfly-colors
 " License:      MIT (https://opensource.org/licenses/MIT)
 
-let s:black       = "#080808"  " black       = 232
-let s:white       = "#c6c6c6"  " white       = 251
-let s:grey247     = "#9e9e9e"  " grey247     = 247
-let s:grey0       = "#373c40"  " grey0       = 0
-let s:grey237     = "#3a3a3a"  " grey237     = 237
-let s:grey236     = "#303030"  " grey236     = 236
-let s:grey235     = "#262626"  " grey235     = 235
-let s:grey234     = "#1c1c1c"  " grey234     = 234
-let s:grey233     = "#121212"  " grey233     = 233
-let s:wheat       = "#cfcfb0"  " wheat       = 11
-let s:khaki       = "#e3c78a"  " khaki       = 3
-let s:orange      = "#de935f"  " orange      = 7
-let s:coral       = "#f09479"  " coral       = 8
-let s:light_green = "#85dc85"  " light_green = 14
-let s:green       = "#8cc85f"  " green       = 2
-let s:emerald     = "#42cf89"  " emerald     = 10
-let s:blue        = "#80a0ff"  " blue        = 4
-let s:light_blue  = "#78c2ff"  " light_blue  = 12
-let s:turquoise   = "#7ee0ce"  " turquoise   = 6
-let s:purple      = "#ae81ff"  " purple      = 13
-let s:violet      = "#e2637f"  " violet      = 15
-let s:magenta     = "#ce76e8"  " magenta     = 5
-let s:crimson     = "#f74782"  " crimson     = 9
-let s:red         = "#ff5454"  " red         = 1
+let s:black       = "#080808" " black       = 232
+let s:white       = "#c6c6c6" " white       = 251
+let s:grey247     = "#9e9e9e" " grey247     = 247
+let s:grey0       = "#373c40" " grey0       = 0
+let s:grey237     = "#3a3a3a" " grey237     = 237
+let s:grey236     = "#303030" " grey236     = 236
+let s:grey235     = "#262626" " grey235     = 235
+let s:grey234     = "#1c1c1c" " grey234     = 234
+let s:grey233     = "#121212" " grey233     = 233
+let s:wheat       = "#cfcfb0" " wheat       = 11
+let s:khaki       = "#e3c78a" " khaki       = 3
+let s:orange      = "#de935f" " orange      = 7
+let s:coral       = "#f09479" " coral       = 8
+let s:light_green = "#85dc85" " light_green = 14
+let s:green       = "#8cc85f" " green       = 2
+let s:emerald     = "#42cf89" " emerald     = 10
+let s:blue        = "#80a0ff" " blue        = 4
+let s:blue69      = "#528bff" " blue69      = 69
+let s:light_blue  = "#78c2ff" " light_blue  = 12
+let s:turquoise   = "#7ee0ce" " turquoise   = 6
+let s:purple      = "#ae81ff" " purple      = 13
+let s:violet      = "#e2637f" " violet      = 15
+let s:magenta     = "#ce76e8" " magenta     = 5
+let s:crimson     = "#f74782" " crimson     = 9
+let s:red         = "#ff5454" " red         = 1
 
 " For 256-color terminal colors.
 "
@@ -61,12 +62,12 @@ endif
 let g:colors_name="moonfly"
 
 " By default highlight cursor line numbers in 'blue'.
-" By default don't highlight spelling errors in reversed colors.
+" By default don't highlight spelling errors in inversed colors.
 " By default don't color the cursor.
 "
-let g:moonflyCursorLineNr  = get(g:, "moonflyCursorLineNr", 1)
-let g:moonflySpellReversed = get(g:, "moonflySpellReversed", 0)
-let g:moonflyCursorColored = get(g:, "moonflyCursorColored", 0)
+let g:moonflyCursorLineNr = get(g:, "moonflyCursorLineNr", 1)
+let g:moonflySpellInverse = get(g:, "moonflySpellReversed", 0)
+let g:moonflyCursorColor  = get(g:, "moonflyCursorColored", 0)
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white
@@ -153,7 +154,7 @@ exec "highlight PmenuThumb ctermbg=3 guibg=" . s:khaki
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
-if g:moonflySpellReversed
+if g:moonflySpellInverse
     exec "highlight SpellBad ctermbg=1 guibg=" . s:red . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
     exec "highlight SpellCap ctermbg=4 guibg=" . s:blue . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
     exec "highlight SpellRare ctermbg=15 guibg=" . s:violet . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
@@ -169,8 +170,8 @@ endif
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
 exec "highlight LineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247
-if g:moonflyCursorColored
-    exec "highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=" . s:blue
+if g:moonflyCursorColor
+    exec "highlight Cursor ctermfg=bg ctermbg=69 guifg=bg guibg=" . s:blue69
 else
     exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 endif

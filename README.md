@@ -81,26 +81,26 @@ add the following to your *vimrc*:
 let g:moonflyCursorLineNr = 0
 ```
 
-The `g:moonflySpellReversed` option specifies whether to highlight spelling
+The `g:moonflySpellInverse` option specifies whether to highlight spelling
 errors in bold reversed colors. By default spelling errors will be highlighted
 using colored undercurls. However, most (all?) terminals do not appear to
 support *undercurls* let alone colored *undercurls*, simple underlines are
 usually displayed. Note, GUI-based Vim's, such as *gVim* and *Macvim*, do
 correctly display colored undercurls.
 
-To highlight spelling errors in bold reverse colors please add the following to
+To highlight spelling errors in bold inverse colors please add the following to
 your *vimrc*:
 
 ```
-let g:moonflySpellReversed = 1
+let g:moonflySpellInverse = 1
 ```
 
-The `g:moonflyCursorColored` option specifies whether to color the cursor or
+The `g:moonflyCursorColor` option specifies whether to color the cursor or
 not. By default the cursor will **NOT** be colored, if however you prefer a
 colored cursor then add the following to your *vimrc*:
 
 ```
-let g:moonflyCursorColored = 1
+let g:moonflyCursorColor = 1
 ```
 
 True Color Terminals
