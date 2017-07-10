@@ -36,23 +36,24 @@ let s:red         = "#ff5454" " red         = 1
 " .Xdefaults/.Xresources need to be setup with the following definitions; then
 " launch xterm via 'xterm -name xterm-moonfly':
 "
-" xterm-moonfly*color0: #373c40
-" xterm-moonfly*color1: #ff5454
-" xterm-moonfly*color2: #8cc85f
-" xterm-moonfly*color3: #e3c78a
-" xterm-moonfly*color4: #80a0ff
-" xterm-moonfly*color5: #ce76e8
-" xterm-moonfly*color6: #7ee0ce
-" xterm-moonfly*color7: #de935f
-" xterm-moonfly*color8: #f09479
-" xterm-moonfly*color9: #f74782
-" xterm-moonfly*color10: #42cf89
-" xterm-moonfly*color11: #cfcfb0
-" xterm-moonfly*color12: #78c2ff
-" xterm-moonfly*color13: #ae81ff
-" xterm-moonfly*color14: #85dc85
-" xterm-moonfly*color15: #e2637f
-
+" xterm-moonfly*background: #080808
+" xterm-moonfly*foreground: #b2b2b2
+" xterm-moonfly*color0:     #373c40
+" xterm-moonfly*color1:     #ff5454
+" xterm-moonfly*color2:     #8cc85f
+" xterm-moonfly*color3:     #e3c78a
+" xterm-moonfly*color4:     #80a0ff
+" xterm-moonfly*color5:     #ce76e8
+" xterm-moonfly*color6:     #7ee0ce
+" xterm-moonfly*color7:     #de935f
+" xterm-moonfly*color8:     #f09479
+" xterm-moonfly*color9:     #f74782
+" xterm-moonfly*color10:    #42cf89
+" xterm-moonfly*color11:    #cfcfb0
+" xterm-moonfly*color12:    #78c2ff
+" xterm-moonfly*color13:    #ae81ff
+" xterm-moonfly*color14:    #85dc85
+" xterm-moonfly*color15:    #e2637f
 
 highlight clear
 set background=dark
@@ -66,8 +67,8 @@ let g:colors_name="moonfly"
 " By default don't color the cursor.
 "
 let g:moonflyCursorLineNr = get(g:, "moonflyCursorLineNr", 1)
-let g:moonflySpellInverse = get(g:, "moonflySpellReversed", 0)
-let g:moonflyCursorColor  = get(g:, "moonflyCursorColored", 0)
+let g:moonflySpellInverse = get(g:, "moonflySpellInverse", 0)
+let g:moonflyCursorColor  = get(g:, "moonflyCursorColor", 0)
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white
