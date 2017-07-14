@@ -5,6 +5,22 @@
 " URL:          github.com/bluz71/vim-moonfly-colors
 " License:      MIT (https://opensource.org/licenses/MIT)
 
+highlight clear
+set background=dark
+if exists("syntax_on")
+    syntax reset
+endif
+let g:colors_name="moonfly"
+
+" By default highlight cursor line numbers in 'blue'.
+" By default don't highlight spelling errors in inversed colors.
+" By default don't color the cursor.
+" By default don't use the moonfly color palette in ":terminal".
+let g:moonflyCursorLineNr   = get(g:, "moonflyCursorLineNr", 1)
+let g:moonflySpellInverse   = get(g:, "moonflySpellInverse", 0)
+let g:moonflyCursorColor    = get(g:, "moonflyCursorColor", 0)
+let g:moonflyTerminalColors = get(g:, "moonflyTerminalColors", 0)
+
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
 let s:grey247     = "#9e9e9e" " grey247     = 247
@@ -32,43 +48,24 @@ let s:crimson     = "#f74782" " crimson     = 9
 let s:red         = "#ff5454" " red         = 1
 
 " For 256-color terminal colors.
-"
-" .Xdefaults/.Xresources need to be setup with the following definitions; then
-" launch xterm via 'xterm -name xterm-moonfly':
-"
-" xterm-moonfly*background: #080808
-" xterm-moonfly*foreground: #b2b2b2
-" xterm-moonfly*color0:     #373c40
-" xterm-moonfly*color1:     #ff5454
-" xterm-moonfly*color2:     #8cc85f
-" xterm-moonfly*color3:     #e3c78a
-" xterm-moonfly*color4:     #80a0ff
-" xterm-moonfly*color5:     #ce76e8
-" xterm-moonfly*color6:     #7ee0ce
-" xterm-moonfly*color7:     #de935f
-" xterm-moonfly*color8:     #f09479
-" xterm-moonfly*color9:     #f74782
-" xterm-moonfly*color10:    #42cf89
-" xterm-moonfly*color11:    #cfcfb0
-" xterm-moonfly*color12:    #78c2ff
-" xterm-moonfly*color13:    #ae81ff
-" xterm-moonfly*color14:    #85dc85
-" xterm-moonfly*color15:    #e2637f
-
-highlight clear
-set background=dark
-if exists("syntax_on")
-    syntax reset
+if g:moonflyTerminalColors
+    let g:terminal_color_0  = "#373c40"
+    let g:terminal_color_1  = "#ff5454"
+    let g:terminal_color_2  = "#8cc85f"
+    let g:terminal_color_3  = "#e3c78a"
+    let g:terminal_color_4  = "#80a0ff"
+    let g:terminal_color_5  = "#ce76e8"
+    let g:terminal_color_6  = "#7ee0ce"
+    let g:terminal_color_7  = "#de935f"
+    let g:terminal_color_8  = "#f09479"
+    let g:terminal_color_9  = "#f74782"
+    let g:terminal_color_10 = "#42cf89"
+    let g:terminal_color_11 = "#cfcfb0"
+    let g:terminal_color_12 = "#78c2ff"
+    let g:terminal_color_13 = "#ae81ff"
+    let g:terminal_color_14 = "#85dc85"
+    let g:terminal_color_15 = "#e2637f"
 endif
-let g:colors_name="moonfly"
-
-" By default highlight cursor line numbers in 'blue'.
-" By default don't highlight spelling errors in inversed colors.
-" By default don't color the cursor.
-"
-let g:moonflyCursorLineNr = get(g:, "moonflyCursorLineNr", 1)
-let g:moonflySpellInverse = get(g:, "moonflySpellInverse", 0)
-let g:moonflyCursorColor  = get(g:, "moonflyCursorColor", 0)
 
 " Background and text.
 exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white

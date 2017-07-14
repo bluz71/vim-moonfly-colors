@@ -95,12 +95,21 @@ your *vimrc*:
 let g:moonflySpellInverse = 1
 ```
 
-The `g:moonflyCursorColor` option specifies whether to color the cursor or
-not. By default the cursor will **NOT** be colored, if however you prefer a
-colored cursor then add the following to your *vimrc*:
+The `g:moonflyCursorColor` option specifies whether to color the cursor or not.
+By default the cursor will **NOT** be colored, if you prefer a colored cursor
+then add the following to your *vimrc*:
 
 ```
 let g:moonflyCursorColor = 1
+```
+
+The `g:moonflyTerminalColors` option specifies whether to use the moonfly color
+palette in `:terminal` windows when `termguicolors` is set. By default this
+option is disabled, if you prefer to use the moonfly color palette for the
+first 16 colors then add the following to your *vimrc*:
+
+```
+let g:moonflyTerminalColors = 1
 ```
 
 True Color Terminals
