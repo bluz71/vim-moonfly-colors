@@ -280,6 +280,7 @@ exec "highlight jsGlobalObjects ctermfg=10 guifg=" . s:emerald
 exec "highlight jsModuleAs ctermfg=8 guifg=" . s:coral
 exec "highlight jsObjectKey ctermfg=12 guifg=" . s:light_blue
 exec "highlight jsObjectValue ctermfg=10 guifg=" . s:emerald
+exec "highlight jsOperator ctermfg=5 guifg=" . s:magenta
 exec "highlight jsStorageClass ctermfg=14 guifg=" . s:light_green
 exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:violet
 exec "highlight jsTemplateExpression ctermfg=6 guifg=" . s:turquoise
