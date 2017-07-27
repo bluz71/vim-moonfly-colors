@@ -317,13 +317,21 @@ exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
 
 " For Rust.
 exec "highlight rustCommentBlockDoc ctermfg=247 guifg=" . s:grey247
+exec "highlight rustCommentBlockDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentLineDoc ctermfg=247 guifg=" . s:grey247
+exec "highlight rustCommentLineDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustConstant ctermfg=7 guifg=" . s:orange
 exec "highlight rustFuncName ctermfg=4 guifg=" . s:blue
+exec "highlight rustIdentifier ctermfg=4 guifg=" . s:blue
+exec "highlight rustInvalidBareKeyword ctermfg=15 guifg=" . s:violet
 exec "highlight rustKeyword ctermfg=14 guifg=" . s:light_green
 exec "highlight rustLifetime ctermfg=2 guifg=" . s:green
-exec "highlight rustMacro ctermfg=12 guifg=" . s:light_blue
-exec "highlight rustSelf ctermfg=9 guifg=" . s:crimson
+exec "highlight rustMacro ctermfg=4 guifg=" . s:blue
+exec "highlight rustMacroVariable ctermfg=5 guifg=" . s:magenta
+exec "highlight rustModPath ctermfg=12 guifg=" . s:light_blue
+exec "highlight rustReservedKeyword ctermfg=15 guifg=" . s:violet
+exec "highlight rustSelf ctermfg=2 guifg=" . s:green
+exec "highlight rustStructure ctermfg=7 guifg=" . s:orange
 exec "highlight rustTrait ctermfg=10 guifg=" . s:emerald
 exec "highlight rustType ctermfg=8 guifg=" . s:coral
 
