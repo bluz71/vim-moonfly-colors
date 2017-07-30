@@ -254,6 +254,22 @@ exec "highlight rubyResponse ctermfg=6 guifg=" . s:turquoise
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 
+" For Crystal.
+exec "highlight crystalAccess ctermfg=3 guifg=" . s:khaki
+exec "highlight crystalAttribute ctermfg=12 guifg=" . s:light_blue
+exec "highlight crystalBlockParameter ctermfg=2 guifg=" . s:green
+exec "highlight crystalBoolean ctermfg=6 guifg=" . s:turquoise
+exec "highlight crystalClass ctermfg=7 guifg=" . s:orange
+exec "highlight crystalControl ctermfg=8 guifg=" . s:coral
+exec "highlight crystalDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight crystalException ctermfg=9 guifg=" . s:crimson
+exec "highlight crystalExceptional ctermfg=8 guifg=" . s:coral
+exec "highlight crystalInstanceVariable ctermfg=14 guifg=" . s:light_green
+exec "highlight crystalModule ctermfg=4 guifg=" . s:blue
+exec "highlight crystalPseudoVariable ctermfg=2 guifg=" . s:green
+exec "highlight crystalSharpBang ctermfg=247 guifg=" . s:grey247
+exec "highlight crystalStringDelimiter ctermfg=11 guifg=" . s:wheat
+
 " For Elixir.
 exec "highlight eelixirDelimiter ctermfg=9 guifg=" . s:crimson
 exec "highlight elixirBlockDefinition ctermfg=5 guifg=" . s:magenta
@@ -316,11 +332,14 @@ exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
 exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
 
 " For Rust.
+exec "highlight rustCharacterInvalid ctermfg=15 guifg=" . s:violet
+exec "highlight rustCharacterInvalidUnicode ctermfg=15 guifg=" . s:violet
 exec "highlight rustCommentBlockDoc ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentBlockDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentLineDoc ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentLineDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustConstant ctermfg=7 guifg=" . s:orange
+exec "highlight rustEscapeError ctermfg=15 guifg=" . s:violet
 exec "highlight rustFuncName ctermfg=4 guifg=" . s:blue
 exec "highlight rustIdentifier ctermfg=4 guifg=" . s:blue
 exec "highlight rustInvalidBareKeyword ctermfg=15 guifg=" . s:violet
@@ -329,6 +348,8 @@ exec "highlight rustLifetime ctermfg=2 guifg=" . s:green
 exec "highlight rustMacro ctermfg=4 guifg=" . s:blue
 exec "highlight rustMacroVariable ctermfg=5 guifg=" . s:magenta
 exec "highlight rustModPath ctermfg=12 guifg=" . s:light_blue
+exec "highlight rustObsoleteExternMod ctermfg=15 guifg=" . s:violet
+exec "highlight rustObsoleteStorage ctermfg=15 guifg=" . s:violet
 exec "highlight rustReservedKeyword ctermfg=15 guifg=" . s:violet
 exec "highlight rustSelf ctermfg=2 guifg=" . s:green
 exec "highlight rustStructure ctermfg=7 guifg=" . s:orange

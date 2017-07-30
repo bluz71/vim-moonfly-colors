@@ -36,6 +36,7 @@ Languages explicitly styled
 * Shell
 * Python
 * Ruby
+* Crystal
 * Elixir
 * JavaScript/ES6
 * CoffeeScript
