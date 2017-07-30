@@ -228,9 +228,13 @@ exec "highlight shSetList ctermfg=6 guifg=" . s:turquoise
 
 " For Python.
 exec "highlight pythonBuiltin ctermfg=4 guifg=" . s:blue
+exec "highlight pythonCoding ctermfg=12 guifg=" . s:light_blue
 exec "highlight pythonException ctermfg=9 guifg=" . s:crimson
+exec "highlight pythonImport ctermfg=15 guifg=" . s:violet
+exec "highlight pythonOperator ctermfg=7 guifg=" . s:orange
 exec "highlight pythonRepeat ctermfg=7 guifg=" . s:orange
-exec "highlight pythonStatement ctermfg=14 guifg=" s:light_green
+exec "highlight pythonRun ctermfg=12 guifg=" . s:light_blue
+exec "highlight pythonStatement ctermfg=5 guifg=" s:magenta
 
 " For Ruby.
 exec "highlight erubyDelimiter ctermfg=9 guifg=" . s:crimson
