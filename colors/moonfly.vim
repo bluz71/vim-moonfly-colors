@@ -400,6 +400,14 @@ exec "highlight DiffChange ctermbg=236 guibg=" . s:grey236
 exec "highlight DiffDelete ctermbg=236 guibg=" . s:grey236 . " ctermfg=251 guifg=fg gui=none"
 exec "highlight DiffText ctermbg=4 guibg=" . s:blue . " ctermfg=bg guifg=bg gui=none"
 
+" For Git Commits.
+exec "highlight gitCommitBranch ctermfg=12 guifg=" . s:light_blue
+exec "highlight gitCommitHeader ctermfg=13 guifg=" . s:purple
+exec "highlight gitCommitSelectedFile ctermfg=10 guifg=" . s:emerald
+exec "highlight gitCommitSelectedType ctermfg=12 guifg=" . s:light_blue
+exec "highlight gitCommitDiscardedFile ctermfg=9 guifg=" . s:crimson
+exec "highlight gitCommitDiscardedType ctermfg=12 guifg=" . s:light_blue
+
 " For vim files.
 exec "highlight vimBracket ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimCommand ctermfg=7 guifg=" . s:orange
