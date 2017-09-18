@@ -255,6 +255,7 @@ exec "highlight rubyMacro ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyModule ctermfg=4 guifg=" . s:blue
 exec "highlight rubyPseudoVariable ctermfg=2 guifg=" . s:green
 exec "highlight rubyResponse ctermfg=6 guifg=" . s:turquoise
+exec "highlight rubyRoute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 
