@@ -179,6 +179,7 @@ if g:moonflyCursorLineNr
 else
     exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247 . " gui=none"
 endif
+exec "highlight CursorColumn ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight CursorLine ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight Folded ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=". s:light_green
 exec "highlight FoldColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=" . s:light_green
