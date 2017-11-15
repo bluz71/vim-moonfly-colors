@@ -466,3 +466,4 @@ exec "highlight jsonKeyword ctermfg=12 guifg=" . s:light_blue
 exec "highlight netrwClassify ctermfg=15 guifg=" . s:violet
 exec "highlight netrwDir ctermfg=12 guifg=" . s:light_blue
 exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
+exec "highlight HighlightedyankRegion ctermbg=0 guibg=" . s:grey0
