@@ -4,7 +4,7 @@ moonfly
 *moonfly* is a dark color scheme for Vim and Neovim that has taken inspiration
 from:
 
-* [sunburst](http://colorsublime.com/theme/Sunburst)
+* [sunburst](http://vimcolors.com/177/Sunburst/dark)
 * [xoria256](https://github.com/vim-scripts/xoria256.vim)
 * [One Dark](https://github.com/atom/one-dark-syntax)
 * [One](https://github.com/rakr/vim-one)
@@ -38,7 +38,7 @@ Languages explicitly styled
 * Ruby
 * Crystal
 * Elixir
-* JavaScript/ES6
+* JavaScript
 * CoffeeScript
 * Markdown
 * Go
