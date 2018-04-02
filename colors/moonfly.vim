@@ -39,6 +39,7 @@ let s:green       = "#8cc85f" " green       = 2
 let s:emerald     = "#42cf89" " emerald     = 10
 let s:blue        = "#80a0ff" " blue        = 4
 let s:blue69      = "#528bff" " blue69      = 69
+let s:blue111     = "#87afff" " blue111     = 111
 let s:light_blue  = "#78c2ff" " light_blue  = 12
 let s:turquoise   = "#7ee0ce" " turquoise   = 6
 let s:purple      = "#ae81ff" " purple      = 13
@@ -457,6 +458,11 @@ exec "highlight NeomakeInfo ctermfg=7 guifg=" . s:orange
 exec "highlight NeomakeInfoSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=7 guifg=" . s:orange
 exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
 exec "highlight NeomakeMessageSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=13 guifg=" . s:purple
+
+" For FZF.
+exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:grey236
+exec "highlight fzf2 ctermfg=111 guifg=" . s:blue111 . " ctermbg=236 guibg=" . s:grey236
+exec "highlight fzf3 ctermfg=10 guifg=" . s:emerald . " ctermbg=236 guibg=" . s:grey236
 
 " Misc.
 exec "highlight bufExplorerHelp ctermfg=247 guifg=" . s:grey247
