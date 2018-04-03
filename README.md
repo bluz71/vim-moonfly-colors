@@ -48,12 +48,13 @@ Languages explicitly styled
 Plugins explicity styled
 ------------------------
 
-* NERDTree
-* Tagbar
-* Neomake
-* CtrlP
-* clever-f
-* BufExplorer
+* [NERDTree](https://github.com/scrooloose/nerdtree)
+* [FZF](https://github.com/junegunn/fzf.vim)
+* [Neomake](https://github.com/neomake/neomake)
+* [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+* [clever-f](https://github.com/rhysd/clever-f.vim)
+* [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
+* [Tagbar](https://github.com/majutsushi/tagbar)
 
 Installation
 ------------

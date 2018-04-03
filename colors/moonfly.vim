@@ -108,6 +108,8 @@ exec "highlight VertSplit ctermbg=236 guibg=" . s:grey236 . " ctermfg=236 guifg=
 exec "highlight Tabline ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
 exec "highlight TablineSel ctermbg=236 guibg=" . s:grey236 . " ctermfg=4 guifg=" . s:blue . " cterm=none gui=none"
 exec "highlight TablineFill ctermbg=236 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:grey236
+exec "highlight StatusLineTerm ctermbg=236 guibg=" . s:grey236 . " ctermfg=251 guifg=" . s:white . " cterm=none gui=none"
+exec "highlight StatusLineTermNC ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
 
 " case in switch statement.
 exec "highlight Label ctermfg=6 guifg=" . s:turquoise
