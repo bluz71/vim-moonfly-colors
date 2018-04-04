@@ -23,8 +23,9 @@ let g:moonflyTerminalColors = get(g:, "moonflyTerminalColors", 0)
 
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
-let s:grey247     = "#9e9e9e" " grey247     = 247
 let s:grey0       = "#373c40" " grey0       = 0
+let s:grey249     = "#b2b2b2" " grey249     = 249
+let s:grey247     = "#9e9e9e" " grey247     = 247
 let s:grey237     = "#3a3a3a" " grey237     = 237
 let s:grey236     = "#303030" " grey236     = 236
 let s:grey235     = "#262626" " grey235     = 235
@@ -465,6 +466,22 @@ exec "highlight NeomakeMessageSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=1
 exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzf2 ctermfg=111 guifg=" . s:blue111 . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzf3 ctermfg=10 guifg=" . s:emerald . " ctermbg=236 guibg=" . s:grey236
+exec "highlight fzfNormal ctermfg=249 guifg=" . s:grey249
+let g:fzf_colors = {
+  \  'fg':      ['fg', 'fzfNormal'],
+  \  'bg':      ['bg', 'Normal'],
+  \  'hl':      ['fg', 'Number'],
+  \  'fg+':     ['fg', 'Normal'],
+  \  'bg+':     ['bg', 'LineNr'],
+  \  'hl+':     ['fg', 'Number'],
+  \  'info':    ['fg', 'Type'],
+  \  'border':  ['fg', 'CursorLineNr'],
+  \  'prompt':  ['fg', 'fzf2'],
+  \  'pointer': ['fg', 'MatchParen'],
+  \  'marker':  ['fg', 'StorageClass'],
+  \  'spinner': ['fg', 'Type'],
+  \  'header':  ['fg', 'CursorLineNr']
+  \}
 
 " Misc.
 exec "highlight bufExplorerHelp ctermfg=247 guifg=" . s:grey247
