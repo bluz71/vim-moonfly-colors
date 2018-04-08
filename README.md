@@ -107,11 +107,11 @@ let g:moonflyCursorColor = 1
 
 The `g:moonflyTerminalColors` option specifies whether to use the moonfly color
 palette in `:terminal` windows when `termguicolors` is set. By default this
-option is disabled, if you prefer to use the moonfly color palette for the
-first 16 colors then add the following to your *vimrc*:
+option is **enabled**, if you prefer not to use the moonfly color palette for
+the first 16 terminal colors then add the following to your *vimrc*:
 
 ```
-let g:moonflyTerminalColors = 1
+let g:moonflyTerminalColors = 0
 ```
 
 True Color Terminals

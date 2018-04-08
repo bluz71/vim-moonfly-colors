@@ -15,11 +15,11 @@ let g:colors_name="moonfly"
 " By default highlight cursor line numbers in 'blue'.
 " By default don't highlight spelling errors in inversed colors.
 " By default don't color the cursor.
-" By default don't use the moonfly color palette in ":terminal".
+" By default use the moonfly color palette in the `:terminal`.
 let g:moonflyCursorLineNr   = get(g:, "moonflyCursorLineNr", 1)
 let g:moonflySpellInverse   = get(g:, "moonflySpellInverse", 0)
 let g:moonflyCursorColor    = get(g:, "moonflyCursorColor", 0)
-let g:moonflyTerminalColors = get(g:, "moonflyTerminalColors", 0)
+let g:moonflyTerminalColors = get(g:, "moonflyTerminalColors", 1)
 
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
@@ -49,24 +49,33 @@ let s:magenta     = "#ce76e8" " magenta     = 5
 let s:crimson     = "#f74782" " crimson     = 9
 let s:red         = "#ff5454" " red         = 1
 
-" For 256-color terminal colors.
+" Specify the the colors used by the inbuilt terminal of Neovim and Vim.
 if g:moonflyTerminalColors
-    let g:terminal_color_0  = "#373c40"
-    let g:terminal_color_1  = "#ff5454"
-    let g:terminal_color_2  = "#8cc85f"
-    let g:terminal_color_3  = "#e3c78a"
-    let g:terminal_color_4  = "#80a0ff"
-    let g:terminal_color_5  = "#ce76e8"
-    let g:terminal_color_6  = "#7ee0ce"
-    let g:terminal_color_7  = "#de935f"
-    let g:terminal_color_8  = "#f09479"
-    let g:terminal_color_9  = "#f74782"
-    let g:terminal_color_10 = "#42cf89"
-    let g:terminal_color_11 = "#cfcfb0"
-    let g:terminal_color_12 = "#78c2ff"
-    let g:terminal_color_13 = "#ae81ff"
-    let g:terminal_color_14 = "#85dc85"
-    let g:terminal_color_15 = "#e2637f"
+    if has("nvim")
+        let g:terminal_color_0  = "#373c40"
+        let g:terminal_color_1  = "#ff5454"
+        let g:terminal_color_2  = "#8cc85f"
+        let g:terminal_color_3  = "#e3c78a"
+        let g:terminal_color_4  = "#80a0ff"
+        let g:terminal_color_5  = "#ce76e8"
+        let g:terminal_color_6  = "#7ee0ce"
+        let g:terminal_color_7  = "#de935f"
+        let g:terminal_color_8  = "#f09479"
+        let g:terminal_color_9  = "#f74782"
+        let g:terminal_color_10 = "#42cf89"
+        let g:terminal_color_11 = "#cfcfb0"
+        let g:terminal_color_12 = "#78c2ff"
+        let g:terminal_color_13 = "#ae81ff"
+        let g:terminal_color_14 = "#85dc85"
+        let g:terminal_color_15 = "#e2637f"
+    else
+        let g:terminal_ansi_colors = [
+                    \ "#373c40", "#ff5454", "#8cc85f", "#e3c78a",
+                    \ "#80a0ff", "#ce76e8", "#7ee0ce", "#de935f",
+                    \ "#f09479", "#f74782", "#42cf89", "#cfcfb0",
+                    \ "#78c2ff", "#ae81ff", "#85dc85", "#e2637f"
+                    \]
+    endif
 endif
 
 " Background and text.
