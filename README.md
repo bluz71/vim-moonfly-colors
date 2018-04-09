@@ -49,12 +49,14 @@ Plugins explicity styled
 ------------------------
 
 * [NERDTree](https://github.com/scrooloose/nerdtree)
-* [FZF](https://github.com/junegunn/fzf.vim)
 * [Neomake](https://github.com/neomake/neomake)
 * [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 * [clever-f](https://github.com/rhysd/clever-f.vim)
 * [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 * [Tagbar](https://github.com/majutsushi/tagbar)
+* [fzf.vim](https://github.com/junegunn/fzf.vim) (consider using the forked
+    [fzf-moonfly.vim](https://github.com/bluz71/fzf-moonfly.vim) plugin which
+    contains a few moonfly specific color tweaks)
 
 Installation
 ------------
