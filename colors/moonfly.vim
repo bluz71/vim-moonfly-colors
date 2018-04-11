@@ -414,7 +414,7 @@ exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
 " For vimdiff.
 exec "highlight DiffAdd ctermbg=10 guibg=" . s:emerald . " ctermfg=bg guifg=bg"
 exec "highlight DiffChange ctermbg=236 guibg=" . s:grey236
-exec "highlight DiffDelete ctermbg=236 guibg=" . s:grey236 . " ctermfg=251 guifg=fg gui=none"
+exec "highlight DiffDelete ctermbg=236 guibg=" . s:grey236 . " ctermfg=9 guifg=" . s:crimson " gui=none"
 exec "highlight DiffText ctermbg=4 guibg=" . s:blue . " ctermfg=bg guifg=bg gui=none"
 
 " For Git Commits.
