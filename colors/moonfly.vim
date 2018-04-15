@@ -13,11 +13,9 @@ endif
 let g:colors_name="moonfly"
 
 " By default highlight cursor line numbers in 'blue'.
-" By default don't highlight spelling errors in inversed colors.
 " By default don't color the cursor.
 " By default use the moonfly color palette in the `:terminal`.
 let g:moonflyCursorLineNr   = get(g:, "moonflyCursorLineNr", 1)
-let g:moonflySpellInverse   = get(g:, "moonflySpellInverse", 0)
 let g:moonflyCursorColor    = get(g:, "moonflyCursorColor", 0)
 let g:moonflyTerminalColors = get(g:, "moonflyTerminalColors", 1)
 
@@ -165,17 +163,10 @@ exec "highlight PmenuThumb ctermbg=3 guibg=" . s:khaki
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
-if g:moonflySpellInverse
-    exec "highlight SpellBad ctermbg=1 guibg=" . s:red . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
-    exec "highlight SpellCap ctermbg=4 guibg=" . s:blue . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
-    exec "highlight SpellRare ctermbg=15 guibg=" . s:violet . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
-    exec "highlight SpellLocal ctermbg=12 guibg=" . s:light_blue . " ctermfg=236 guifg=" . s:grey236 . " gui=none"
-else
-    exec "highlight SpellBad ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:red
-    exec "highlight SpellCap ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:blue
-    exec "highlight SpellRare ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:violet
-    exec "highlight SpellLocal ctermbg=bg guibg=bg cterm=undercurl gui=undercurl guisp=" . s:light_blue
-endif
+exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=undercurl guisp=" . s:red
+exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=undercurl guisp=" . s:blue
+exec "highlight SpellRare ctermbg=bg ctermfg=15 cterm=underline guibg=bg guifg=" . s:violet . " gui=undercurl guisp=" . s:violet
+exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=undercurl guisp=" . s:light_blue
 
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
