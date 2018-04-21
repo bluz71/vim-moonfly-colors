@@ -163,10 +163,10 @@ exec "highlight PmenuThumb ctermbg=3 guibg=" . s:khaki
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
-exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=undercurl guisp=" . s:red
-exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=undercurl guisp=" . s:blue
-exec "highlight SpellRare ctermbg=bg ctermfg=15 cterm=underline guibg=bg guifg=" . s:violet . " gui=undercurl guisp=" . s:violet
-exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=undercurl guisp=" . s:light_blue
+exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=underline guisp=" . s:red
+exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=underline guisp=" . s:blue
+exec "highlight SpellRare ctermbg=bg ctermfg=15 cterm=underline guibg=bg guifg=" . s:violet . " gui=underline guisp=" . s:violet
+exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=underline guisp=" . s:light_blue
 
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
