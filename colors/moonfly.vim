@@ -15,9 +15,11 @@ let g:colors_name="moonfly"
 " By default highlight cursor line numbers in 'blue'.
 " By default don't color the cursor.
 " By default use the moonfly color palette in the `:terminal`.
-let g:moonflyCursorLineNr   = get(g:, "moonflyCursorLineNr", 1)
-let g:moonflyCursorColor    = get(g:, "moonflyCursorColor", 0)
-let g:moonflyTerminalColors = get(g:, "moonflyTerminalColors", 1)
+" By default don't underline matching parentheses.
+let g:moonflyCursorLineNr        = get(g:, "moonflyCursorLineNr", 1)
+let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
+let g:moonflyTerminalColors      = get(g:, "moonflyTerminalColors", 1)
+let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
 
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
@@ -190,7 +192,11 @@ exec "highlight FoldColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=
 exec "highlight SignColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=" . s:light_green
 exec "highlight Todo ctermbg=3 guibg=" . s:khaki . " ctermfg=bg guifg=bg"
 exec "highlight SpecialKey ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
-exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson . " cterm=underline gui=underline"
+if g:moonflyUnderlineMatchParen
+    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson . " cterm=underline gui=underline"
+else
+    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson
+endif
 exec "highlight Ignore ctermfg=12 guifg=" . s:light_blue
 exec "highlight Underlined ctermfg=10 guifg=" . s:emerald . " cterm=none gui=none"
 exec "highlight QuickFixLine ctermbg=237 guibg=" . s:grey237 . " cterm=none"

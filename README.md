@@ -79,15 +79,15 @@ settings are in effect. By default the cursor line will be highlighted as such.
 To disable highlighting of the current cursor line in the number column please
 add the following to your *vimrc*:
 
-```
+```viml
 let g:moonflyCursorLineNr = 0
 ```
 
 The `g:moonflyCursorColor` option specifies whether to color the cursor or not.
-By default the cursor will **NOT** be colored, if you prefer a colored cursor
+By default the cursor will **NOT** be colored. If you prefer a colored cursor
 then add the following to your *vimrc*:
 
-```
+```viml
 let g:moonflyCursorColor = 1
 ```
 
@@ -96,8 +96,16 @@ palette in `:terminal` windows when `termguicolors` is set. By default this
 option is **enabled**, if you prefer not to use the moonfly color palette for
 the first 16 terminal colors then add the following to your *vimrc*:
 
-```
+```viml
 let g:moonflyTerminalColors = 0
+```
+
+The `g:moonflyUnderlineMatchParen` options specifies whether to underline
+matching parentheses. By default this option is **disabled**. If you want to
+underline matching parentheses then add the following to your *vimrc*:
+
+```viml
+let g:moonflyUnderlineMatchParen = 1
 ```
 
 True Color Terminals
