@@ -55,6 +55,8 @@ Plugins explicity styled
 * [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
+* [indentLine](https://github.com/Yggdroot/indentLine) (please set `let
+    g:indentLine_setColors = 0` in your *vimrc*)
 
 Installation
 ------------

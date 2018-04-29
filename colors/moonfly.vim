@@ -209,6 +209,9 @@ exec "highlight TermCursor ctermbg=247 guibg=" . s:grey247 . "  ctermfg=bg guifg
 " Color column (after line 80).
 exec "highlight ColorColumn ctermbg=233 guibg=" . s:grey233
 
+" Conceal color, as used by indentLine plugin.
+exec "highlight Conceal ctermbg=bg guibg=bg ctermfg=235 guifg=" . s:grey235
+
 " For C/C++.
 "
 " goto, break, return, continue.
