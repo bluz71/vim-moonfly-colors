@@ -146,6 +146,7 @@ exec "highlight Statement ctermfg=5 guifg=" . s:magenta . " gui=none"
 " Visual selection.
 exec "highlight Visual ctermbg=0 guibg=" . s:grey0
 exec "highlight VisualNOS ctermbg=0 guibg=" . s:grey0 . " ctermfg=fg guifg=fg cterm=none gui=none"
+exec "highlight VisualInDiff ctermbg=0 guibg=" . s:grey0 . " ctermfg=251 guifg=" . s:white
 
 " Exceptions.
 exec "highlight Exception ctermfg=14 guifg=" . s:light_green
