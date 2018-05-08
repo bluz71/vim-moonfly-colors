@@ -454,6 +454,7 @@ exec "highlight NERDTreeDirSlash ctermfg=15 guifg=" . s:violet
 exec "highlight NERDTreeExecFile ctermfg=11 guifg=" . s:wheat
 exec "highlight NERDTreeGitStatusDirDirty ctermfg=13 guifg=" . s:purple
 exec "highlight NERDTreeGitStatusRenamed ctermfg=3 guifg=" . s:khaki
+exec "highlight NERDTreeGitStatusUntracked ctermfg=9 guifg=" . s:crimson
 exec "highlight NERDTreeHelp ctermfg=247 guifg=" . s:grey247
 exec "highlight NERDTreeLinkDir ctermfg=4 guifg=" . s:blue
 exec "highlight NERDTreeLinkFile ctermfg=4 guifg=" . s:blue
