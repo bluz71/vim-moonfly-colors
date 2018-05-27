@@ -503,8 +503,9 @@ exec "highlight bufExplorerSortBy ctermfg=247 guifg=" . s:grey247
 exec "highlight CleverFDefaultLabel ctermfg=9 guifg=" . s:crimson
 exec "highlight CtrlPMatch ctermfg=13 guifg=" . s:purple
 exec "highlight Directory ctermfg=10 guifg=" . s:emerald
+exec "highlight HighlightedyankRegion ctermbg=0 guibg=" . s:grey0
 exec "highlight jsonKeyword ctermfg=12 guifg=" . s:light_blue
 exec "highlight netrwClassify ctermfg=15 guifg=" . s:violet
 exec "highlight netrwDir ctermfg=12 guifg=" . s:light_blue
+exec "highlight snipLeadingSpaces ctermbg=bg guibg=bg ctermfg=fg guifg=fg"
 exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
-exec "highlight HighlightedyankRegion ctermbg=0 guibg=" . s:grey0
