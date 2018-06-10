@@ -421,11 +421,12 @@ exec "highlight DiffText ctermbg=4 guibg=" . s:blue . " ctermfg=bg guifg=bg gui=
 
 " For Git Commits.
 exec "highlight gitCommitBranch ctermfg=12 guifg=" . s:light_blue
+exec "highlight gitCommitDiscardedFile ctermfg=9 guifg=" . s:crimson
+exec "highlight gitCommitDiscardedType ctermfg=12 guifg=" . s:light_blue
 exec "highlight gitCommitHeader ctermfg=13 guifg=" . s:purple
 exec "highlight gitCommitSelectedFile ctermfg=10 guifg=" . s:emerald
 exec "highlight gitCommitSelectedType ctermfg=12 guifg=" . s:light_blue
-exec "highlight gitCommitDiscardedFile ctermfg=9 guifg=" . s:crimson
-exec "highlight gitCommitDiscardedType ctermfg=12 guifg=" . s:light_blue
+exec "highlight gitCommitUntrackedFile ctermfg=15 guifg=" . s:violet
 
 " For vim files.
 exec "highlight vimBracket ctermfg=12 guifg=" . s:light_blue
