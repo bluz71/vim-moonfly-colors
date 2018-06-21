@@ -25,9 +25,9 @@ Primary Colors
 | | | | | | | | |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |Black | Red | Green | Khaki | Blue | Magenta | Turquoise | Orange
-|![#373c40](https://placehold.it/56/373c40/000000?text=+) | ![#ff5454](https://placehold.it/56/ff5454/000000?text=+) | ![#8cc85f](https://placehold.it/56/8cc85f/000000?text=+) | ![#e3c78a](https://placehold.it/56/e3c78a/000000?text=+) | ![#80a0ff](https://placehold.it/56/80a0ff/000000?text=+) | ![#ce76e8](https://placehold.it/56/ce76e8/000000?text=+) | ![#7ee0ce](https://placehold.it/56/7ee0ce/000000?text=+) | ![#de935f](https://placehold.it/56/de935f/000000?text=+)
+|![#373c40](https://placehold.it/64/373c40/000000?text=+) | ![#ff5454](https://placehold.it/64/ff5454/000000?text=+) | ![#8cc85f](https://placehold.it/64/8cc85f/000000?text=+) | ![#e3c78a](https://placehold.it/64/e3c78a/000000?text=+) | ![#80a0ff](https://placehold.it/64/80a0ff/000000?text=+) | ![#ce76e8](https://placehold.it/64/ce76e8/000000?text=+) | ![#7ee0ce](https://placehold.it/64/7ee0ce/000000?text=+) | ![#de935f](https://placehold.it/64/de935f/000000?text=+)
 |Coral | Crimson | Emerald | Wheat | Light Blue | Purple | Light Green | Violet
-|![#f09479](https://placehold.it/56/f09479/000000?text=+) | ![#f74782](https://placehold.it/56/f74782/000000?text=+) | ![#42cf89](https://placehold.it/56/42cf89/000000?text=+) | ![#cfcfb0](https://placehold.it/56/cfcfb0/000000?text=+) | ![#78c2ff](https://placehold.it/56/78c2ff/000000?text=+) | ![#ae81ff](https://placehold.it/56/ae81ff/000000?text=+) | ![#85dc85](https://placehold.it/56/85dc85/000000?text=+) | ![#e2637f](https://placehold.it/56/e2637f/000000?text=+)
+|![#f09479](https://placehold.it/64/f09479/000000?text=+) | ![#f74782](https://placehold.it/64/f74782/000000?text=+) | ![#42cf89](https://placehold.it/64/42cf89/000000?text=+) | ![#cfcfb0](https://placehold.it/64/cfcfb0/000000?text=+) | ![#78c2ff](https://placehold.it/64/78c2ff/000000?text=+) | ![#ae81ff](https://placehold.it/64/ae81ff/000000?text=+) | ![#85dc85](https://placehold.it/64/85dc85/000000?text=+) | ![#e2637f](https://placehold.it/64/e2637f/000000?text=+)
 | | | | | | | |
 
 Screenshots
