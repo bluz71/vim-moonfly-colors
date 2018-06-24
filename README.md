@@ -22,23 +22,30 @@ also available.
 Primary Colors
 --------------
 
-| | | | | | | | |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|Black | Red | Green | Khaki | Blue | Magenta | Turquoise | Orange
-|![#373c40](https://placehold.it/64/373c40/000000?text=+) | ![#ff5454](https://placehold.it/64/ff5454/000000?text=+) | ![#8cc85f](https://placehold.it/64/8cc85f/000000?text=+) | ![#e3c78a](https://placehold.it/64/e3c78a/000000?text=+) | ![#80a0ff](https://placehold.it/64/80a0ff/000000?text=+) | ![#ce76e8](https://placehold.it/64/ce76e8/000000?text=+) | ![#7ee0ce](https://placehold.it/64/7ee0ce/000000?text=+) | ![#de935f](https://placehold.it/64/de935f/000000?text=+)
-|Coral | Crimson | Emerald | Wheat | Light Blue | Purple | Light Green | Violet
-|![#f09479](https://placehold.it/64/f09479/000000?text=+) | ![#f74782](https://placehold.it/64/f74782/000000?text=+) | ![#42cf89](https://placehold.it/64/42cf89/000000?text=+) | ![#cfcfb0](https://placehold.it/64/cfcfb0/000000?text=+) | ![#78c2ff](https://placehold.it/64/78c2ff/000000?text=+) | ![#ae81ff](https://placehold.it/64/ae81ff/000000?text=+) | ![#85dc85](https://placehold.it/64/85dc85/000000?text=+) | ![#e2637f](https://placehold.it/64/e2637f/000000?text=+)
-| | | | | | | |
+| Normal | Color | Bright | Color
+|--------|-------|--------|------
+| Background | ![background](https://placehold.it/64/080808/000000?text=+) | Foreground  | ![foreground](https://placehold.it/64/b2b2b2/000000?text=+)
+| Grey       | ![grey](https://placehold.it/64/373c40/000000?text=+)       | Coral       | ![coral](https://placehold.it/64/f09479/000000?text=+)
+| Red        | ![red](https://placehold.it/64/ff5454/000000?text=+)        | Crimson     | ![crimson](https://placehold.it/64/f74782/000000?text=+)
+| Green      | ![green](https://placehold.it/64/8cc85f/000000?text=+)      | Emerald     | ![emerald](https://placehold.it/64/42cf89/000000?text=+)
+| Khaki      | ![khaki](https://placehold.it/64/e3c78a/000000?text=+)      | Wheat       | ![wheat](https://placehold.it/64/cfcfb0/000000?text=+)
+| Blue       | ![blue](https://placehold.it/64/80a0ff/000000?text=+)       | Light Blue  | ![light-blue](https://placehold.it/64/78c2ff/000000?text=+)
+| Magenta    | ![magenta](https://placehold.it/64/ce76e8/000000?text=+)    | Purple      | ![purple](https://placehold.it/64/ae81ff/000000?text=+)
+| Turquoise  | ![turquoise](https://placehold.it/64/7ee0ce/000000?text=+)  | Light Green | ![light-green](https://placehold.it/64/85dc85/000000?text=+)
+| Orange     | ![orange](https://placehold.it/64/de935f/000000?text=+)     | Violet      | ![violet](https://placehold.it/64/e2637f/000000?text=+)
 
 Screenshots
 -----------
 
 #### Ruby
-![Ruby](ruby_moonfly.png)
+
+<img width="800" alt="ruby" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/ruby_moonfly.png">
 
 #### JavaScript
 
-![Ruby](javascript_moonfly.png)
+<img width="800" alt="javascript" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/javascript_moonfly.png">
+
+The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 
 Languages explicitly styled
 ---------------------------
@@ -163,23 +170,48 @@ section.
 256 Color Terminals
 -------------------
 
-The *moonfly* Vim color scheme when used with Vim in a 256-color terminal
-**requires** the host terminal be setup with the *moonfly* color palette.
+The *moonfly* color scheme, when used with Vim absent `termguicolors`,
+**requires** the host terminal be configured with a specific color palette.
 
-The host terminal must be configured for 256 colors, this usually means setting
-the terminal's type to **xterm-256color** or **screen-256color** when used
-inside [tmux](https://tmux.github.io/).
+Firstly, the [terminal
+emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
+for 256 colors, which usually means setting the terminal's type to
+**xterm-256color** or **screen-256color** when used inside
+[tmux](https://tmux.github.io/).
+
+The terminal can now be configured with the following *moonfly* colors:
+
+| Type | Category | Value | Color
+|------|----------|-------|------
+| Background | Background       | `080808` | ![background](https://placehold.it/32/080808/000000?text=+)
+| Foreground | Forground        | `b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+)
+| Cursor     | Cursor           | `9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+)
+| Color 1    | Black (normal)   | `373c40` | ![background](https://placehold.it/32/373c40/000000?text=+)
+| Color 2    | Red (normal)     | `ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+)
+| Color 3    | Green (normal)   | `8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+)
+| Color 4    | Yellow (normal)  | `e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+)
+| Color 5    | Blue (normal)    | `80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+)
+| Color 6    | Magenta (normal) | `ce76e8` | ![background](https://placehold.it/32/ce76e8/000000?text=+)
+| Color 7    | Cyan (normal)    | `7ee0ce` | ![background](https://placehold.it/32/7ee0ce/000000?text=+)
+| Color 8    | White (normal)   | `de935f` | ![background](https://placehold.it/32/de935f/000000?text=+)
+| Color 9    | Black (bright)   | `f09479` | ![background](https://placehold.it/32/f09479/000000?text=+)
+| Color 10   | Red (bright)     | `f74782` | ![background](https://placehold.it/32/f74782/000000?text=+)
+| Color 11   | Green (bright)   | `42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+)
+| Color 12   | Yellow (bright)  | `cfcfb0` | ![background](https://placehold.it/32/cfcfb0/000000?text=+)
+| Color 13   | Blue (bright)    | `78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+)
+| Color 14   | Magenta (bright) | `ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+)
+| Color 15   | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+)
+| Color 16   | White (bright)   | `e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+)
 
 *iterm2* users on macOS can import [this](moonfly.itermcolors) color scheme.
 
 *xterm* users on Linux can add the following snippet to their *~/.Xresources*
-file and launch xterm with `xterm -name xterm-moonfly`. A complete
-*Xresources* file is available
-[here](https://github.com/bluz71/dotfiles/blob/master/Xresources)
+file and launch xterm with `xterm -name xterm-moonfly`.
 
 ```
 xterm-moonfly*background:  #080808
 xterm-moonfly*foreground:  #b2b2b2
+xterm-moonfly*cursorColor: #9e9e9e
 xterm-moonfly*color0:      #373c40
 xterm-moonfly*color1:      #ff5454
 xterm-moonfly*color2:      #8cc85f
@@ -198,26 +230,8 @@ xterm-moonfly*color14:     #85dc85
 xterm-moonfly*color15:     #e2637f
 ```
 
-Other terminals should be setup with the following color configuration:
-
-* background `080808`
-* foreground `b2b2b2`
-* color0  / Palette 1  / Black:        `#373c40`
-* color1  / Palette 2  / Red:          `#ff5454`
-* color2  / Palette 3  / Green:        `#8cc85f`
-* color3  / Palette 4  / Yellow:       `#e3c78a`
-* color4  / Palette 5  / Blue:         `#80a0ff`
-* color5  / Palette 6  / Magenta:      `#ce76e8`
-* color6  / Palette 7  / Cyan:         `#7ee0ce`
-* color7  / Palette 8  / White:        `#de935f`
-* color8  / Palette 9  / Bold Black:   `#f09479`
-* color9  / Palette 10 / Bold Red:     `#f74782`
-* color10 / Palette 11 / Bold Green:   `#42cf89`
-* color11 / Palette 12 / Bold Yellow:  `#cfcfb0`
-* color12 / Palette 13 / Bold Blue:    `#78c2ff`
-* color13 / Palette 14 / Bold Magenta: `#ae81ff`
-* color14 / Palette 15 / Bold Cyan:    `#85dc85`
-* color15 / Palette 16 / Bold White:   `#e2637f`
+A complete *Xresources* file is available
+[here](https://github.com/bluz71/dotfiles/blob/master/Xresources).
 
 License
 -------
