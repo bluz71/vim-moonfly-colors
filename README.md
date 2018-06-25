@@ -15,10 +15,6 @@ primarily in regards to language and plugin theming. However, the core color
 palette will not change; **except** the time I changed crimson (July 1 2017),
 sorry.
 
-A simple companion statusline,
-[vim-moonfly-statuline](https://github.com/bluz71/vim-moonfly-statusline), is
-also available.
-
 Primary Colors
 --------------
 
@@ -75,6 +71,21 @@ Plugins explicity styled
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [indentLine](https://github.com/Yggdroot/indentLine) (please set `let
     g:indentLine_setColors = 0` in your *vimrc*)
+
+Status Lines
+------------
+
+*moonfly* supports [lightline.vim](https://github.com/itchyny/lightline.vim).
+To enable the *moonfly* lightline colorscheme please add the following to your
+*vimrc*:
+
+```viml
+let g:lightline = { 'colorscheme': 'moonfly' }
+```
+
+An alternate companion status line,
+[vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
+also available for those that want a simple and informative status line.
 
 Installation
 ------------
