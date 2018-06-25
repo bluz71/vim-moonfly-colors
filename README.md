@@ -143,7 +143,7 @@ True Color Terminals
 --------------------
 
 Many terminal programs, such as [iTerm2](http://www.iterm2.com) and
-[termite](https://github.com/thestinger/termite), support
+[GNOME Terminal](https://wiki.gnome.org/Apps/Terminal), support
 [24-bit true colors](https://gist.github.com/XVilka/8346728). Modern versions
 of Vim and Neovim, on such terminals, support true colors when `set
 termguicolors` is enabled.
