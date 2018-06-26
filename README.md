@@ -72,8 +72,8 @@ Plugins explicity styled
 * [indentLine](https://github.com/Yggdroot/indentLine) (please set `let
     g:indentLine_setColors = 0` in your *vimrc*)
 
-Status Lines
-------------
+Status Line
+-----------
 
 *moonfly* supports [lightline.vim](https://github.com/itchyny/lightline.vim).
 To enable the *moonfly* lightline colorscheme please add the following to your
@@ -85,7 +85,7 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 
 An alternate companion status line,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
-also available for those that want a simple and informative status line.
+also available for those that want a simple status line.
 
 Installation
 ------------
