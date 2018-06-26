@@ -1,16 +1,16 @@
-" Dark color scheme for lightline (github.com/itchyny/lightline.vim).
+" moonfly color scheme for lightline (github.com/itchyny/lightline.vim).
 "
 " URL:     github.com/bluz71/vim-moonfly-colors
 " License: MIT (https://opensource.org/licenses/MIT)
 
-let s:white       = [ '#c6c6c6', 251 ]
-let s:grey247     = [ '#9e9e9e', 247 ]
-let s:grey236     = [ '#303030', 236 ]
-let s:grey234     = [ '#1c1c1c', 234 ]
-let s:khaki       = [ '#e3c78a', 3 ]
-let s:blue        = [ '#80a0ff', 4 ]
-let s:purple      = [ '#ae81ff', 13 ]
-let s:crimson     = [ '#f74782', 9 ]
+let s:white   = [ '#c6c6c6', 251 ]
+let s:grey247 = [ '#9e9e9e', 247 ]
+let s:grey236 = [ '#303030', 236 ]
+let s:grey234 = [ '#1c1c1c', 234 ]
+let s:khaki   = [ '#e3c78a', 3 ]
+let s:blue    = [ '#80a0ff', 4 ]
+let s:purple  = [ '#ae81ff', 13 ]
+let s:crimson = [ '#f74782', 9 ]
 
 if exists('g:lightline')
     let s:p = {
