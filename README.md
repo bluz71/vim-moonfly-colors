@@ -83,9 +83,17 @@ To enable the *moonfly* lightline colorscheme please add the following to your
 let g:lightline = { 'colorscheme': 'moonfly' }
 ```
 
-An alternate companion status line,
+*moonfly* also supports
+[vim-airline](https://github.com/vim-airline/vim-airline). To enable the
+*moonfly* airline theme please add the following to your *vimrc*:
+
+```viml
+let g:airline_theme='moonfly'
+```
+
+Lastly, an alternate companion status line,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
-also available for those that want a simple status line.
+available for those that just want a simple status line.
 
 Installation
 ------------
