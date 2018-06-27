@@ -27,9 +27,9 @@ if exists('g:lightline')
     let s:p.normal.warning  = [[s:crimson, s:grey236]]
     let s:p.normal.error    = [[s:crimson, s:grey236]]
 
-    let s:p.inactive.left   = [[s:white, s:grey236],   [s:white, s:grey236]]
-    let s:p.inactive.middle = [[s:white, s:grey236]]
-    let s:p.inactive.right  = [[s:white, s:grey236],   [s:white, s:grey236]]
+    let s:p.inactive.left   = [[s:grey247, s:grey236], [s:grey247, s:grey236]]
+    let s:p.inactive.middle = [[s:grey247, s:grey236]]
+    let s:p.inactive.right  = [[s:grey247, s:grey236], [s:grey247, s:grey236]]
 
     let s:p.insert.left     = [[s:grey234, s:white],   [s:white, s:grey236]]
     let s:p.replace.left    = [[s:grey234, s:crimson], [s:white, s:grey236]]
@@ -41,4 +41,4 @@ if exists('g:lightline')
     let s:p.tabline.tabsel  = [[s:blue,    s:grey236]]
 
     let g:lightline#colorscheme#moonfly#palette = lightline#colorscheme#flatten(s:p)
-endif 
+endif
