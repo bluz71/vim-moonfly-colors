@@ -24,8 +24,8 @@ if exists('g:lightline')
     let s:p.normal.left     = [[s:grey234, s:blue],    [s:white, s:grey236]]
     let s:p.normal.middle   = [[s:white,   s:grey236]]
     let s:p.normal.right    = [[s:white,   s:grey236], [s:blue, s:grey236]]
-    let s:p.normal.warning  = [[s:crimson, s:grey236]]
-    let s:p.normal.error    = [[s:crimson, s:grey236]]
+    let s:p.normal.warning  = [[s:white,   s:grey236]]
+    let s:p.normal.error    = [[s:blue,    s:grey236]]
 
     let s:p.inactive.left   = [[s:grey247, s:grey236], [s:grey247, s:grey236]]
     let s:p.inactive.middle = [[s:grey247, s:grey236]]

@@ -26,8 +26,8 @@ let s:replace3  = [s:white[0],   s:grey236[0], s:white[1],   s:grey236[1]]
 let s:visual1   = [s:grey234[0], s:purple[0],  s:grey234[1], s:purple[1]]
 let s:visual2   = [s:white[0],   s:grey236[0], s:white[1],   s:grey236[1]]
 let s:visual3   = [s:white[0],   s:grey236[0], s:white[1],   s:grey236[1]]
-let s:warning   = [s:crimson[0], s:grey236[0], s:crimson[1], s:grey236[1]]
-let s:error     = [s:crimson[0], s:grey236[0], s:crimson[1], s:grey236[1]]
+let s:warning   = [s:white[0],   s:grey236[0], s:white[1],   s:grey236[1]]
+let s:error     = [s:blue[0],    s:grey236[0], s:blue[1],    s:grey236[1]]
 
 if exists('g:airline_theme')
     let g:airline#themes#moonfly#palette                          = {}
