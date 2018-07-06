@@ -226,6 +226,9 @@ The terminal can now be configured with the following *moonfly* colors:
 
 *iterm2* users on macOS can import [this](moonfly.itermcolors) color scheme.
 
+*Gnome Terminal* users can run [this](gnome-terminal-moonfly.sh) script to
+import the *moonfly* color scheme.
+
 *xterm* users on Linux can add the following snippet to their *~/.Xresources*
 file and launch xterm with `xterm -name xterm-moonfly`.
 
