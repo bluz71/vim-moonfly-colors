@@ -204,27 +204,29 @@ The terminal can now be configured with the following *moonfly* colors:
 
 | Type | Category | Value | Color
 |------|----------|-------|------
-| Background  | Background       | `080808` | ![background](https://placehold.it/32/080808/000000?text=+)
-| Foreground  | Forground        | `b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+)
-| Bold        | Bold             | `eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+)
-| Cursor      | Cursor           | `9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+)
-| Cursor Text | Cursor Text      | `080808` | ![background](https://placehold.it/32/080808/000000?text=+)
-| Color 1     | Black (normal)   | `373c40` | ![background](https://placehold.it/32/373c40/000000?text=+)
-| Color 2     | Red (normal)     | `ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+)
-| Color 3     | Green (normal)   | `8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+)
-| Color 4     | Yellow (normal)  | `e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+)
-| Color 5     | Blue (normal)    | `80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+)
-| Color 6     | Magenta (normal) | `ce76e8` | ![background](https://placehold.it/32/ce76e8/000000?text=+)
-| Color 7     | Cyan (normal)    | `7ee0ce` | ![background](https://placehold.it/32/7ee0ce/000000?text=+)
-| Color 8     | White (normal)   | `de935f` | ![background](https://placehold.it/32/de935f/000000?text=+)
-| Color 9     | Black (bright)   | `f09479` | ![background](https://placehold.it/32/f09479/000000?text=+)
-| Color 10    | Red (bright)     | `f74782` | ![background](https://placehold.it/32/f74782/000000?text=+)
-| Color 11    | Green (bright)   | `42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+)
-| Color 12    | Yellow (bright)  | `cfcfb0` | ![background](https://placehold.it/32/cfcfb0/000000?text=+)
-| Color 13    | Blue (bright)    | `78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+)
-| Color 14    | Magenta (bright) | `ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+)
-| Color 15    | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+)
-| Color 16    | White (bright)   | `e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+)
+| Background     | Background       | `080808` | ![background](https://placehold.it/32/080808/000000?text=+)
+| Foreground     | Forground        | `b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+)
+| Bold           | Bold             | `eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+)
+| Cursor         | Cursor           | `9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+)
+| Cursor Text    | Cursor Text      | `080808` | ![background](https://placehold.it/32/080808/000000?text=+)
+| Highlight      | Highlight        | `b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+)
+| Highlight Text | Highlight Text   | `080808` | ![background](https://placehold.it/32/080808/000000?text=+)
+| Color 1        | Black (normal)   | `373c40` | ![background](https://placehold.it/32/373c40/000000?text=+)
+| Color 2        | Red (normal)     | `ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+)
+| Color 3        | Green (normal)   | `8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+)
+| Color 4        | Yellow (normal)  | `e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+)
+| Color 5        | Blue (normal)    | `80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+)
+| Color 6        | Magenta (normal) | `ce76e8` | ![background](https://placehold.it/32/ce76e8/000000?text=+)
+| Color 7        | Cyan (normal)    | `7ee0ce` | ![background](https://placehold.it/32/7ee0ce/000000?text=+)
+| Color 8        | White (normal)   | `de935f` | ![background](https://placehold.it/32/de935f/000000?text=+)
+| Color 9        | Black (bright)   | `f09479` | ![background](https://placehold.it/32/f09479/000000?text=+)
+| Color 10       | Red (bright)     | `f74782` | ![background](https://placehold.it/32/f74782/000000?text=+)
+| Color 11       | Green (bright)   | `42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+)
+| Color 12       | Yellow (bright)  | `cfcfb0` | ![background](https://placehold.it/32/cfcfb0/000000?text=+)
+| Color 13       | Blue (bright)    | `78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+)
+| Color 14       | Magenta (bright) | `ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+)
+| Color 15       | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+)
+| Color 16       | White (bright)   | `e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+)
 
 *iterm2* users on macOS can import [this](moonfly.itermcolors) color scheme.
 
@@ -232,8 +234,8 @@ The terminal can now be configured with the following *moonfly* colors:
 create a *Moonfly* profile. Firstly before executing the script, please install
 the `dconf-cli` command line utility for modern versions of Gnome (3.28 and
 later), for example `sudo apt install dconf-cli`. Lastly after executing the
-script, please set the *cursor* color by hand, with the cursor color values
-listed above, in `Preferences` / `Moonfly` / `Colors` / `Cursor Color`.
+script, please set the *cursor* and *highlight* colors by hand, with the color
+values listed above, in `Preferences` / `Moonfly` / `Colors`.
 
 *xterm* users on Linux can add the following snippet to their *~/.Xresources*
 file and launch xterm with `xterm -name xterm-moonfly`.
