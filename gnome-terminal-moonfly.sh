@@ -65,7 +65,7 @@ if which "$DCONF" > /dev/null 2>&1; then
         dset bold-color-same-as-fg "false"
         # dset cursor-background-color "#9e9e9e"
         # dset cursor-colors-set "true"
-        # dset highlight-background-color "80a0ff"
+        # dset highlight-background-color "#b2ceee"
         # dset highlight-colors-set "true"
         dset use-theme-colors "false"
         dset use-theme-background "false"

@@ -233,7 +233,7 @@ create a *Moonfly* profile. Firstly before executing the script, please install
 the `dconf-cli` command line utility for modern versions of Gnome (3.28 and
 later), for example `sudo apt install dconf-cli`. Lastly after executing the
 script, please set the *cursor* color by hand, with the cursor color values
-above, in `Preferences` / `Moonfly` / `Colors` / `Cursor Color`.
+listed above, in `Preferences` / `Moonfly` / `Colors` / `Cursor Color`.
 
 *xterm* users on Linux can add the following snippet to their *~/.Xresources*
 file and launch xterm with `xterm -name xterm-moonfly`.

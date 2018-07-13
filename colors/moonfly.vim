@@ -39,7 +39,6 @@ let s:light_green = "#85dc85" " light_green = 14
 let s:green       = "#8cc85f" " green       = 2
 let s:emerald     = "#42cf89" " emerald     = 10
 let s:blue        = "#80a0ff" " blue        = 4
-let s:blue69      = "#528bff" " blue69      = 69
 let s:blue111     = "#87afff" " blue111     = 111
 let s:light_blue  = "#78c2ff" " light_blue  = 12
 let s:turquoise   = "#7ee0ce" " turquoise   = 6
@@ -176,7 +175,7 @@ exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
 exec "highlight LineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247
 if g:moonflyCursorColor
-    exec "highlight Cursor ctermfg=bg ctermbg=69 guifg=bg guibg=" . s:blue69
+    exec "highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=" . s:blue
 else
     exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 endif
