@@ -242,10 +242,11 @@ exec "highlight shSetList ctermfg=6 guifg=" . s:turquoise
 
 " For Python.
 exec "highlight pythonBuiltin ctermfg=4 guifg=" . s:blue
+exec "highlight pythonClassVar ctermfg=2 guifg=" . s:green
 exec "highlight pythonCoding ctermfg=12 guifg=" . s:light_blue
 exec "highlight pythonException ctermfg=9 guifg=" . s:crimson
 exec "highlight pythonImport ctermfg=15 guifg=" . s:violet
-exec "highlight pythonOperator ctermfg=7 guifg=" . s:orange
+exec "highlight pythonOperator ctermfg=5 guifg=" . s:magenta
 exec "highlight pythonRepeat ctermfg=7 guifg=" . s:orange
 exec "highlight pythonRun ctermfg=12 guifg=" . s:light_blue
 exec "highlight pythonStatement ctermfg=5 guifg=" s:magenta
