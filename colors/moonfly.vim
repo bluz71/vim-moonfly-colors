@@ -390,6 +390,14 @@ exec "highlight javaOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight javaScopeDecl ctermfg=4 guifg=" . s:blue
 exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
 
+" For Haskell
+exec "highlight haskellDecl ctermfg=7 guifg=" . s:orange
+exec "highlight haskellDeclKeyword ctermfg=7 guifg=" . s:orange
+exec "highlight haskellImportKeywords ctermfg=12 guifg=" . s:light_blue
+exec "highlight haskellLet ctermfg=12 guifg=" . s:light_blue
+exec "highlight haskellOperators ctermfg=15 guifg=" . s:violet
+exec "highlight haskellWhere ctermfg=4 guifg=" . s:blue
+
 " For HTML.
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
 exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"

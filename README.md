@@ -58,6 +58,7 @@ Languages explicitly styled
 * Go
 * Rust
 * Java
+* Haskell
 
 Plugins explicity styled
 ------------------------
