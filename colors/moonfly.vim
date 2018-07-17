@@ -409,6 +409,16 @@ exec "highlight haskellLet ctermfg=12 guifg=" . s:light_blue
 exec "highlight haskellOperators ctermfg=15 guifg=" . s:violet
 exec "highlight haskellWhere ctermfg=4 guifg=" . s:blue
 
+" For Elm
+exec "highlight elmLetBlockDefinition ctermfg=14 guifg=" . s:light_green
+exec "highlight elmType ctermfg=4 guifg=" . s:blue
+
+" For Lua
+exec "highlight luaBraces ctermfg=15 guifg=" . s:violet
+exec "highlight luaBuiltin ctermfg=2 guifg=" . s:green
+exec "highlight luaFuncCall ctermfg=12 guifg=" . s:light_blue
+exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:light_blue
+
 " For HTML.
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
 exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"

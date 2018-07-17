@@ -60,6 +60,8 @@ Languages explicitly styled
 * Java
 * Haskell
 * Clojure
+* Elm
+* Lua
 
 Plugins explicity styled
 ------------------------
