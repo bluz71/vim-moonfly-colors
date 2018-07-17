@@ -59,6 +59,7 @@ Languages explicitly styled
 * Rust
 * Java
 * Haskell
+* Clojure
 
 Plugins explicity styled
 ------------------------

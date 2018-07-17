@@ -323,6 +323,10 @@ exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:violet
 exec "highlight jsTemplateExpression ctermfg=6 guifg=" . s:turquoise
 exec "highlight jsThis ctermfg=2 guifg=" . s:green
 
+" For PureScript
+exec "highlight purescriptClass ctermfg=7 guifg=" . s:orange
+exec "highlight purescriptModuleParams ctermfg=8 guifg=" . s:coral
+
 " For CoffeeScript
 exec "highlight coffeeBoolean ctermfg=6 guifg=" . s:turquoise
 exec "highlight coffeeException ctermfg=9 guifg=" . s:crimson
@@ -389,6 +393,13 @@ exec "highlight javaMethodDecl ctermfg=3 guifg=" . s:khaki
 exec "highlight javaOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight javaScopeDecl ctermfg=4 guifg=" . s:blue
 exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
+
+" For Clojure
+exec "highlight clojureDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight clojureKeyword ctermfg=13 guifg=" . s:purple
+exec "highlight clojureMacro ctermfg=7 guifg=" . s:orange
+exec "highlight clojureParen ctermfg=4 guifg=" . s:blue
+exec "highlight clojureSpecial ctermfg=12 guifg=" . s:light_blue
 
 " For Haskell
 exec "highlight haskellDecl ctermfg=7 guifg=" . s:orange
