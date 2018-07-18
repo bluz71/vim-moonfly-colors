@@ -336,8 +336,8 @@ exec "highlight coffeeStatement ctermfg=8 guifg=" . s:coral
 " TypeScript
 exec "highlight typescriptDOMObjects ctermfg=4 guifg=" . s:blue
 exec "highlight typescriptGlobalObjects ctermfg=4 guifg=" . s:blue
-exec "highlight typescriptIdentifier ctermfg=12 guifg=" . s:light_blue
-exec "highlight typescriptIdentifier ctermfg=2 guifg=" . s:green
+exec "highlight typescriptIdentifier ctermfg=14 guifg=" . s:light_green
+exec "highlight typescriptNull ctermfg=3 guifg=" . s:khaki
 exec "highlight typescriptOperator ctermfg=9 guifg=" . s:crimson
 
 " PureScript
