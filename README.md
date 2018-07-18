@@ -54,6 +54,8 @@ Languages explicitly styled
 * Elixir
 * JavaScript
 * CoffeeScript
+* PureScript
+* TypeScript
 * Markdown
 * Go
 * Rust

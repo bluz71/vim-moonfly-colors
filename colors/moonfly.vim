@@ -212,7 +212,7 @@ exec "highlight ColorColumn ctermbg=233 guibg=" . s:grey233
 " Conceal color, as used by indentLine plugin.
 exec "highlight Conceal ctermbg=bg guibg=bg ctermfg=235 guifg=" . s:grey235
 
-" For C/C++.
+" C/C++
 "
 " goto, break, return, continue.
 exec "highlight cStatement ctermfg=6 guifg=" . s:turquoise
@@ -231,7 +231,7 @@ exec "highlight cppStructure ctermfg=4 guifg=" . s:blue
 " true or false.
 exec "highlight cppBoolean ctermfg=13 guifg=" . s:purple
 
-" For shell scripts.
+" Shell scripts
 exec "highlight shStatement ctermfg=fg guifg=fg"
 exec "highlight shCommandSub ctermfg=fg guifg=fg"
 exec "highlight shSet ctermfg=14 guifg=" . s:light_green
@@ -240,7 +240,7 @@ exec "highlight shVariable ctermfg=6 guifg=" . s:turquoise
 exec "highlight shAlias ctermfg=6 guifg=" . s:turquoise
 exec "highlight shSetList ctermfg=6 guifg=" . s:turquoise
 
-" For Python.
+" Python
 exec "highlight pythonBuiltin ctermfg=4 guifg=" . s:blue
 exec "highlight pythonClassVar ctermfg=2 guifg=" . s:green
 exec "highlight pythonCoding ctermfg=12 guifg=" . s:light_blue
@@ -251,7 +251,7 @@ exec "highlight pythonRepeat ctermfg=7 guifg=" . s:orange
 exec "highlight pythonRun ctermfg=12 guifg=" . s:light_blue
 exec "highlight pythonStatement ctermfg=5 guifg=" s:magenta
 
-" For Ruby.
+" Ruby
 exec "highlight erubyDelimiter ctermfg=9 guifg=" . s:crimson
 exec "highlight rspecGroupMethods ctermfg=4 guifg=" . s:blue
 exec "highlight rubyAccess ctermfg=3 guifg=" . s:khaki
@@ -275,7 +275,7 @@ exec "highlight rubyRoute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 
-" For Crystal.
+" Crystal
 exec "highlight crystalAccess ctermfg=3 guifg=" . s:khaki
 exec "highlight crystalAttribute ctermfg=12 guifg=" . s:light_blue
 exec "highlight crystalBlockParameter ctermfg=2 guifg=" . s:green
@@ -291,7 +291,7 @@ exec "highlight crystalPseudoVariable ctermfg=2 guifg=" . s:green
 exec "highlight crystalSharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight crystalStringDelimiter ctermfg=11 guifg=" . s:wheat
 
-" For Elixir.
+" Elixir
 exec "highlight eelixirDelimiter ctermfg=9 guifg=" . s:crimson
 exec "highlight elixirBlockDefinition ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirBoolean ctermfg=6 guifg=" . s:turquoise
@@ -306,7 +306,7 @@ exec "highlight elixirPrivateDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirStringDelimiter ctermfg=11 guifg=" . s:wheat
 exec "highlight elixirVariable ctermfg=8 guifg=" . s:coral
 
-" For JavaScript 'pangloss/vim-javascript' plugin.
+" JavaScript, 'pangloss/vim-javascript' plugin
 exec "highlight jsClassDefinition ctermfg=10 guifg=" . s:emerald
 exec "highlight jsClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight jsFrom ctermfg=8 guifg=" . s:coral
@@ -323,11 +323,7 @@ exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:violet
 exec "highlight jsTemplateExpression ctermfg=6 guifg=" . s:turquoise
 exec "highlight jsThis ctermfg=2 guifg=" . s:green
 
-" For PureScript
-exec "highlight purescriptClass ctermfg=7 guifg=" . s:orange
-exec "highlight purescriptModuleParams ctermfg=8 guifg=" . s:coral
-
-" For CoffeeScript
+" CoffeeScript
 exec "highlight coffeeBoolean ctermfg=6 guifg=" . s:turquoise
 exec "highlight coffeeException ctermfg=9 guifg=" . s:crimson
 exec "highlight coffeeGlobal ctermfg=6 guifg=" . s:turquoise
@@ -337,7 +333,18 @@ exec "highlight coffeeSpecialIdent ctermfg=14 guifg=" . s:light_green
 exec "highlight coffeeSpecialVar ctermfg=4 guifg=" . s:blue
 exec "highlight coffeeStatement ctermfg=8 guifg=" . s:coral
 
-" For Go.
+" TypeScript
+exec "highlight typescriptDOMObjects ctermfg=4 guifg=" . s:blue
+exec "highlight typescriptGlobalObjects ctermfg=4 guifg=" . s:blue
+exec "highlight typescriptIdentifier ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptIdentifier ctermfg=2 guifg=" . s:green
+exec "highlight typescriptOperator ctermfg=9 guifg=" . s:crimson
+
+" PureScript
+exec "highlight purescriptClass ctermfg=7 guifg=" . s:orange
+exec "highlight purescriptModuleParams ctermfg=8 guifg=" . s:coral
+
+" Go
 exec "highlight goBuiltins ctermfg=9 guifg=" . s:crimson
 exec "highlight goConditional ctermfg=5 guifg=" . s:magenta
 exec "highlight goDeclaration ctermfg=14 guifg=" . s:light_green
@@ -358,7 +365,7 @@ exec "highlight goStruct ctermfg=8 guifg=" . s:coral
 exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
 exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
 
-" For Rust.
+" Rust
 exec "highlight rustCharacterInvalid ctermfg=15 guifg=" . s:violet
 exec "highlight rustCharacterInvalidUnicode ctermfg=15 guifg=" . s:violet
 exec "highlight rustCommentBlockDoc ctermfg=247 guifg=" . s:grey247
@@ -383,7 +390,7 @@ exec "highlight rustStructure ctermfg=7 guifg=" . s:orange
 exec "highlight rustTrait ctermfg=10 guifg=" . s:emerald
 exec "highlight rustType ctermfg=8 guifg=" . s:coral
 
-" For Java.
+" Java
 exec "highlight javaBraces ctermfg=251 guifg=" . s:white
 exec "highlight javaClassDecl ctermfg=10 guifg=" . s:emerald
 exec "highlight javaCommentTitle ctermfg=247 guifg=" . s:grey247
@@ -394,14 +401,14 @@ exec "highlight javaOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight javaScopeDecl ctermfg=4 guifg=" . s:blue
 exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
 
-" For Clojure
+" Clojure
 exec "highlight clojureDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight clojureKeyword ctermfg=13 guifg=" . s:purple
 exec "highlight clojureMacro ctermfg=7 guifg=" . s:orange
 exec "highlight clojureParen ctermfg=4 guifg=" . s:blue
 exec "highlight clojureSpecial ctermfg=12 guifg=" . s:light_blue
 
-" For Haskell
+" Haskell
 exec "highlight haskellDecl ctermfg=7 guifg=" . s:orange
 exec "highlight haskellDeclKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight haskellImportKeywords ctermfg=12 guifg=" . s:light_blue
@@ -409,17 +416,17 @@ exec "highlight haskellLet ctermfg=12 guifg=" . s:light_blue
 exec "highlight haskellOperators ctermfg=15 guifg=" . s:violet
 exec "highlight haskellWhere ctermfg=4 guifg=" . s:blue
 
-" For Elm
+" Elm
 exec "highlight elmLetBlockDefinition ctermfg=14 guifg=" . s:light_green
 exec "highlight elmType ctermfg=4 guifg=" . s:blue
 
-" For Lua
+" Lua
 exec "highlight luaBraces ctermfg=15 guifg=" . s:violet
 exec "highlight luaBuiltin ctermfg=2 guifg=" . s:green
 exec "highlight luaFuncCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:light_blue
 
-" For HTML.
+" HTML
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
 exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"
 exec "highlight htmlBoldUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral
@@ -431,24 +438,24 @@ exec "highlight htmlTagN ctermfg=4 guifg=" . s:blue
 exec "highlight htmlTagName ctermfg=4 guifg=" . s:blue
 exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247
 
-" For XML.
+" XML
 exec "highlight xmlAttrib ctermfg=14 guifg=" . s:light_green
 exec "highlight xmlEndTag ctermfg=4 guifg=" . s:blue
 exec "highlight xmlTag ctermfg=14 guifg=" . s:light_green
 exec "highlight xmlTagName ctermfg=4 guifg=" . s:blue
 
-" For Markdown 'plasticboy/vim-markdown' plugin.
+" Markdown, 'plasticboy/vim-markdown' plugin
 exec "highlight mkdLineBreak ctermbg=bg guibg=bg"
 exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
 exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
 
-" For vimdiff.
+" vimdiff/nvim -d
 exec "highlight DiffAdd ctermbg=10 guibg=" . s:emerald . " ctermfg=bg guifg=bg"
 exec "highlight DiffChange ctermbg=236 guibg=" . s:grey236
 exec "highlight DiffDelete ctermbg=236 guibg=" . s:grey236 . " ctermfg=9 guifg=" . s:crimson " gui=none"
 exec "highlight DiffText ctermbg=4 guibg=" . s:blue . " ctermfg=bg guifg=bg gui=none"
 
-" For Git Commits.
+" Git commits
 exec "highlight gitCommitBranch ctermfg=12 guifg=" . s:light_blue
 exec "highlight gitCommitDiscardedFile ctermfg=9 guifg=" . s:crimson
 exec "highlight gitCommitDiscardedType ctermfg=12 guifg=" . s:light_blue
@@ -457,7 +464,7 @@ exec "highlight gitCommitSelectedFile ctermfg=10 guifg=" . s:emerald
 exec "highlight gitCommitSelectedType ctermfg=12 guifg=" . s:light_blue
 exec "highlight gitCommitUntrackedFile ctermfg=15 guifg=" . s:violet
 
-" For vim files.
+" Vimscript
 exec "highlight vimBracket ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimCommand ctermfg=7 guifg=" . s:orange
 exec "highlight vimEnvvar ctermfg=9 guifg=" . s:crimson
@@ -470,14 +477,14 @@ exec "highlight vimParenSep ctermfg=251 guifg=" . s:white
 exec "highlight vimSep ctermfg=251 guifg=" . s:white
 exec "highlight vimUserFunc ctermfg=12 guifg=" . s:light_blue
 
-" For Tagbar.
+" Tagbar plugin
 exec "highlight TagbarFoldIcon ctermfg=247 guifg=" . s:grey247
 exec "highlight TagbarVisibilityPublic ctermfg=14 guifg=" . s:light_green
 exec "highlight TagbarVisibilityProtected ctermfg=14 guifg=" . s:light_green
 exec "highlight TagbarVisibilityPrivate ctermfg=14 guifg=" . s:light_green
 exec "highlight TagbarKind ctermfg=10 guifg=" . s:emerald
 
-" For NERDTree.
+" NERDTree plugin
 exec "highlight NERDTreeClosable ctermfg=8 guifg=" . s:coral
 exec "highlight NERDTreeCWD ctermfg=5 guifg=" . s:magenta
 exec "highlight NERDTreeDir ctermfg=12 guifg=" . s:light_blue
@@ -496,7 +503,7 @@ exec "highlight NERDTreePart ctermfg=0 guifg=" . s:grey0
 exec "highlight NERDTreePartFile ctermfg=0 guifg=" . s:grey0
 exec "highlight NERDTreeUp ctermfg=8 guifg=" . s:coral
 
-" For Neomake.
+" Neomake plugin
 exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
 exec "highlight NeomakeErrorSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=1 guifg=" . s:red
 exec "highlight NeomakeWarning ctermfg=3 guifg=" . s:khaki
@@ -506,7 +513,7 @@ exec "highlight NeomakeInfoSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=7 gu
 exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
 exec "highlight NeomakeMessageSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=13 guifg=" . s:purple
 
-" For FZF.
+" FZF plugin
 exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzf2 ctermfg=111 guifg=" . s:blue111 . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzf3 ctermfg=10 guifg=" . s:emerald . " ctermbg=236 guibg=" . s:grey236
@@ -527,7 +534,7 @@ let g:fzf_colors = {
   \  'header':  ['fg', 'CursorLineNr']
   \}
 
-" Misc.
+" Misc
 exec "highlight bufExplorerHelp ctermfg=247 guifg=" . s:grey247
 exec "highlight bufExplorerSortBy ctermfg=247 guifg=" . s:grey247
 exec "highlight CleverFDefaultLabel ctermfg=9 guifg=" . s:crimson
