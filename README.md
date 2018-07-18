@@ -71,6 +71,7 @@ Plugins explicity styled
 
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Neomake](https://github.com/neomake/neomake)
+* [ALE](https://github.com/w0rp/ale)
 * [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 * [clever-f](https://github.com/rhysd/clever-f.vim)
 * [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
