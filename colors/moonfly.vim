@@ -408,6 +408,13 @@ exec "highlight clojureMacro ctermfg=7 guifg=" . s:orange
 exec "highlight clojureParen ctermfg=4 guifg=" . s:blue
 exec "highlight clojureSpecial ctermfg=12 guifg=" . s:light_blue
 
+" Scala
+exec "highlight scalaCapitalWord ctermfg=4 guifg=" . s:blue
+exec "highlight scalaCommentCodeBlock ctermfg=247 guifg=" . s:grey247
+exec "highlight scalaInstanceDeclaration ctermfg=7 guifg=" . s:orange
+exec "highlight scalaKeywordModifier ctermfg=14 guifg=" . s:light_green
+exec "highlight scalaSpecial ctermfg=6 guifg=" . s:turquoise
+
 " Haskell
 exec "highlight haskellDecl ctermfg=7 guifg=" . s:orange
 exec "highlight haskellDeclKeyword ctermfg=7 guifg=" . s:orange

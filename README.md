@@ -60,6 +60,7 @@ Languages explicitly styled
 * Go
 * Rust
 * Java
+* Scala
 * Haskell
 * Clojure
 * Elm
