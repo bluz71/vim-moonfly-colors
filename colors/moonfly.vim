@@ -433,6 +433,11 @@ exec "highlight luaBuiltin ctermfg=2 guifg=" . s:green
 exec "highlight luaFuncCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:light_blue
 
+" PHP
+exec "highlight phpClass ctermfg=7 guifg=" . s:orange
+exec "highlight phpClasses ctermfg=10 guifg=" . s:emerald
+exec "highlight phpType ctermfg=4 guifg=" . s:blue
+
 " HTML
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
 exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"

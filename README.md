@@ -61,6 +61,7 @@ Languages explicitly styled
 * Rust
 * Java
 * Scala
+* PHP
 * Haskell
 * Clojure
 * Elm
