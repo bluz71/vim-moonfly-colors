@@ -418,14 +418,16 @@ exec "highlight scalaSpecial ctermfg=6 guifg=" . s:turquoise
 " Haskell
 exec "highlight haskellDecl ctermfg=7 guifg=" . s:orange
 exec "highlight haskellDeclKeyword ctermfg=7 guifg=" . s:orange
-exec "highlight haskellImportKeywords ctermfg=12 guifg=" . s:light_blue
+exec "highlight haskellIdentifier ctermfg=14 guifg=" . s:light_green
 exec "highlight haskellLet ctermfg=12 guifg=" . s:light_blue
 exec "highlight haskellOperators ctermfg=15 guifg=" . s:violet
-exec "highlight haskellWhere ctermfg=4 guifg=" . s:blue
+exec "highlight haskellType ctermfg=12 guifg=" . s:light_blue
+exec "highlight haskellWhere ctermfg=5 guifg=" . s:magenta
 
 " Elm
 exec "highlight elmLetBlockDefinition ctermfg=14 guifg=" . s:light_green
-exec "highlight elmType ctermfg=4 guifg=" . s:blue
+exec "highlight elmTopLevelDecl ctermfg=8 guifg=" . s:coral
+exec "highlight elmType ctermfg=12 guifg=" . s:light_blue
 
 " Lua
 exec "highlight luaBraces ctermfg=15 guifg=" . s:violet
