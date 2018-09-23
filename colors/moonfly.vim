@@ -504,6 +504,7 @@ exec "highlight NERDTreeCWD ctermfg=5 guifg=" . s:magenta
 exec "highlight NERDTreeDir ctermfg=12 guifg=" . s:light_blue
 exec "highlight NERDTreeDirSlash ctermfg=15 guifg=" . s:violet
 exec "highlight NERDTreeExecFile ctermfg=11 guifg=" . s:wheat
+exec "highlight NERDTreeFile ctermfg=251 guifg=" . s:white
 exec "highlight NERDTreeGitStatusDirDirty ctermfg=13 guifg=" . s:purple
 exec "highlight NERDTreeGitStatusModified ctermfg=9 guifg=" . s:crimson
 exec "highlight NERDTreeGitStatusRenamed ctermfg=3 guifg=" . s:khaki
