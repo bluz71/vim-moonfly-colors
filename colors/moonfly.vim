@@ -334,11 +334,18 @@ exec "highlight coffeeSpecialVar ctermfg=4 guifg=" . s:blue
 exec "highlight coffeeStatement ctermfg=8 guifg=" . s:coral
 
 " TypeScript
+exec "highlight typescriptBraces ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptDOMObjects ctermfg=4 guifg=" . s:blue
+exec "highlight typescriptExceptions ctermfg=9 guifg=" . s:crimson
+exec "highlight typescriptFuncKeyword ctermfg=14 guifg=" . s:light_green
 exec "highlight typescriptGlobalObjects ctermfg=4 guifg=" . s:blue
-exec "highlight typescriptIdentifier ctermfg=14 guifg=" . s:light_green
+exec "highlight typescriptIdentifier ctermfg=2 guifg=" . s:green
 exec "highlight typescriptNull ctermfg=3 guifg=" . s:khaki
+exec "highlight typescriptOpSymbols ctermfg=5 guifg=" . s:magenta
 exec "highlight typescriptOperator ctermfg=9 guifg=" . s:crimson
+exec "highlight typescriptParens ctermfg=4 guifg=" . s:blue
+exec "highlight typescriptReserved ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptStorageClass ctermfg=14 guifg=" . s:light_green
 
 " PureScript
 exec "highlight purescriptClass ctermfg=7 guifg=" . s:orange
