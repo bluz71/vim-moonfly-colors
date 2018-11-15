@@ -52,11 +52,11 @@ Languages explicitly styled
 * Ruby
 * Crystal
 * Elixir
-* JavaScript
+* [JavaScript](https://github.com/pangloss/vim-javascript)
 * CoffeeScript
 * PureScript
-* TypeScript
-* Markdown
+* [TypeScript](https://github.com/leafgarland/typescript-vim)
+* [Markdown](https://github.com/plasticboy/vim-markdown)
 * Go
 * Rust
 * Java
