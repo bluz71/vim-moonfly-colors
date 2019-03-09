@@ -133,7 +133,7 @@ exec "highlight Operator ctermfg=15 guifg=" . s:violet
 exec "highlight Repeat ctermfg=7 guifg=" . s:orange
 
 " Search.
-exec "highlight Search cterm=reverse gui=reverse ctermbg=bg guibg=bg ctermfg=7 guifg=" . s:orange
+exec "highlight Search cterm=reverse gui=reverse ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
 exec "highlight IncSearch ctermbg=bg guibg=bg ctermfg=3 guifg=" . s:khaki
 
 " '\n' sequences.
