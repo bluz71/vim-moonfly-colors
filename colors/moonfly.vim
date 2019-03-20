@@ -92,8 +92,11 @@ exec "highlight Function ctermfg=12 guifg=" . s:light_blue
 " Strings.
 exec "highlight String ctermfg=11 guifg=" . s:wheat
 
+" Booleans.
+exec "highlight Boolean ctermfg=6 guifg=" . s:turquoise
+
 " Identifiers.
-exec "highlight Identifier ctermfg=116 guifg=" . s:turquoise
+exec "highlight Identifier ctermfg=6 guifg=" . s:turquoise
 
 " Color of titles, e.g in HTML files and Tagbar.
 exec "highlight Title ctermfg=7 guifg=" . s:orange . " gui=none"
@@ -106,6 +109,9 @@ exec "highlight Type ctermfg=10 guifg=" . s:emerald . " gui=none"
 
 " Numbers.
 exec "highlight Constant ctermfg=13 guifg=" . s:purple
+
+" Exceptions.
+exec "highlight Exception ctermfg=9 guifg=" . s:crimson
 
 " ifdef/endif.
 exec "highlight PreProc ctermfg=15 guifg=" . s:violet
@@ -147,16 +153,13 @@ exec "highlight Visual ctermbg=0 guibg=" . s:grey0
 exec "highlight VisualNOS ctermbg=0 guibg=" . s:grey0 . " ctermfg=fg guifg=fg cterm=none gui=none"
 exec "highlight VisualInDiff ctermbg=0 guibg=" . s:grey0 . " ctermfg=251 guifg=" . s:white
 
-" Exceptions.
-exec "highlight Exception ctermfg=14 guifg=" . s:light_green
-
 " Errors, warnings and whitespace-eol.
 exec "highlight Error ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
 exec "highlight ErrorMsg ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
 exec "highlight WarningMsg ctermbg=bg guibg=bg ctermfg=7 guifg=" . s:orange
 
 " struct, union, enum, typedef.
-exec "highlight Structure ctermfg=10 guifg=" . s:emerald
+exec "highlight Structure ctermfg=4 guifg=" . s:blue
 
 " Auto-text-completion menu.
 exec "highlight Pmenu ctermbg=236 guibg=" . s:grey236 . " ctermfg=fg guifg=fg"
@@ -226,10 +229,12 @@ exec "highlight cppAccess ctermfg=14 guifg=" . s:light_green
 exec "highlight cppOperator ctermfg=2 guifg=" . s:green
 " inline, virtual, explicit, export, bool.
 exec "highlight cppType ctermfg=3 guifg=" . s:khaki
-" class, typename, template, namespace.
-exec "highlight cppStructure ctermfg=4 guifg=" . s:blue
+" struct, union, enum, typedef.
+exec "highlight cStructure ctermfg=10 guifg=" . s:emerald
 " true or false.
 exec "highlight cppBoolean ctermfg=13 guifg=" . s:purple
+" throw, try, catch
+exec "highlight cppExceptions ctermfg=14 guifg=" . s:light_green
 
 " Shell scripts
 exec "highlight shStatement ctermfg=fg guifg=fg"
@@ -244,7 +249,6 @@ exec "highlight shSetList ctermfg=6 guifg=" . s:turquoise
 exec "highlight pythonBuiltin ctermfg=4 guifg=" . s:blue
 exec "highlight pythonClassVar ctermfg=2 guifg=" . s:green
 exec "highlight pythonCoding ctermfg=12 guifg=" . s:light_blue
-exec "highlight pythonException ctermfg=9 guifg=" . s:crimson
 exec "highlight pythonImport ctermfg=15 guifg=" . s:violet
 exec "highlight pythonOperator ctermfg=5 guifg=" . s:magenta
 exec "highlight pythonRepeat ctermfg=7 guifg=" . s:orange
@@ -257,13 +261,11 @@ exec "highlight rspecGroupMethods ctermfg=4 guifg=" . s:blue
 exec "highlight rubyAccess ctermfg=3 guifg=" . s:khaki
 exec "highlight rubyAttribute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyBlockParameter ctermfg=2 guifg=" . s:green
-exec "highlight rubyBoolean ctermfg=6 guifg=" . s:turquoise
 exec "highlight rubyCallback ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyClass ctermfg=7 guifg=" . s:orange
 exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
 exec "highlight rubyDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight rubyEntities ctermfg=12 guifg=" . s:light_blue
-exec "highlight rubyException ctermfg=9 guifg=" . s:crimson
 exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
 exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:light_green
 exec "highlight rubyInterpolationDelimiter ctermfg=15 guifg=" . s:violet
@@ -279,11 +281,9 @@ exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 exec "highlight crystalAccess ctermfg=3 guifg=" . s:khaki
 exec "highlight crystalAttribute ctermfg=12 guifg=" . s:light_blue
 exec "highlight crystalBlockParameter ctermfg=2 guifg=" . s:green
-exec "highlight crystalBoolean ctermfg=6 guifg=" . s:turquoise
 exec "highlight crystalClass ctermfg=7 guifg=" . s:orange
 exec "highlight crystalControl ctermfg=8 guifg=" . s:coral
 exec "highlight crystalDefine ctermfg=5 guifg=" . s:magenta
-exec "highlight crystalException ctermfg=9 guifg=" . s:crimson
 exec "highlight crystalExceptional ctermfg=8 guifg=" . s:coral
 exec "highlight crystalInstanceVariable ctermfg=14 guifg=" . s:light_green
 exec "highlight crystalModule ctermfg=4 guifg=" . s:blue
@@ -294,7 +294,6 @@ exec "highlight crystalStringDelimiter ctermfg=11 guifg=" . s:wheat
 " Elixir
 exec "highlight eelixirDelimiter ctermfg=9 guifg=" . s:crimson
 exec "highlight elixirBlockDefinition ctermfg=5 guifg=" . s:magenta
-exec "highlight elixirBoolean ctermfg=6 guifg=" . s:turquoise
 exec "highlight elixirDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight elixirDocTest ctermfg=247 guifg=" . s:grey247
 exec "highlight elixirExUnitAssert ctermfg=14 guifg=" . s:light_green
@@ -324,8 +323,6 @@ exec "highlight jsTemplateExpression ctermfg=6 guifg=" . s:turquoise
 exec "highlight jsThis ctermfg=2 guifg=" . s:green
 
 " CoffeeScript
-exec "highlight coffeeBoolean ctermfg=6 guifg=" . s:turquoise
-exec "highlight coffeeException ctermfg=9 guifg=" . s:crimson
 exec "highlight coffeeGlobal ctermfg=6 guifg=" . s:turquoise
 exec "highlight coffeeKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight coffeeObjAssign ctermfg=12 guifg=" . s:light_blue
@@ -336,7 +333,6 @@ exec "highlight coffeeStatement ctermfg=8 guifg=" . s:coral
 " TypeScript
 exec "highlight typescriptBraces ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptDOMObjects ctermfg=4 guifg=" . s:blue
-exec "highlight typescriptExceptions ctermfg=9 guifg=" . s:crimson
 exec "highlight typescriptFuncKeyword ctermfg=14 guifg=" . s:light_green
 exec "highlight typescriptGlobalObjects ctermfg=4 guifg=" . s:blue
 exec "highlight typescriptIdentifier ctermfg=2 guifg=" . s:green
