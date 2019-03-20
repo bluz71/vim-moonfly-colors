@@ -96,7 +96,7 @@ exec "highlight String ctermfg=11 guifg=" . s:wheat
 exec "highlight Boolean ctermfg=6 guifg=" . s:turquoise
 
 " Identifiers.
-exec "highlight Identifier ctermfg=6 guifg=" . s:turquoise
+exec "highlight Identifier ctermfg=116 guifg=" . s:turquoise
 
 " Color of titles, e.g in HTML files and Tagbar.
 exec "highlight Title ctermfg=7 guifg=" . s:orange . " gui=none"
