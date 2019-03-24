@@ -51,7 +51,7 @@ The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 -  [JavaScript](https://github.com/pangloss/vim-javascript)
 -  CoffeeScript
 -  PureScript
--  [TypeScript](https://github.com/leafgarland/typescript-vim)
+-  [TypeScript](https://github.com/HerringtonDarkholme/yats.vim)
 -  [Markdown](https://github.com/plasticboy/vim-markdown)
 -  Go
 -  Rust
