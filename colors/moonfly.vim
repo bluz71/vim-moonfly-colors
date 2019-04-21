@@ -164,7 +164,7 @@ exec "highlight Structure ctermfg=4 guifg=" . s:blue
 " Auto-text-completion menu.
 exec "highlight Pmenu ctermbg=236 guibg=" . s:grey236 . " ctermfg=fg guifg=fg"
 exec "highlight PmenuSel ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
-exec "highlight PmenuThumb ctermbg=3 guibg=" . s:khaki
+exec "highlight PmenuThumb ctermbg=249 guibg=" . s:grey249
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
