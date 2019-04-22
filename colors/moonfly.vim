@@ -26,6 +26,7 @@ let s:white       = "#c6c6c6" " white       = 251
 let s:grey0       = "#373c40" " grey0       = 0
 let s:grey249     = "#b2b2b2" " grey249     = 249
 let s:grey247     = "#9e9e9e" " grey247     = 247
+let s:grey244     = "#808080" " grey244     = 244
 let s:grey237     = "#3a3a3a" " grey237     = 237
 let s:grey236     = "#303030" " grey236     = 236
 let s:grey235     = "#262626" " grey235     = 235
@@ -164,7 +165,8 @@ exec "highlight Structure ctermfg=4 guifg=" . s:blue
 " Auto-text-completion menu.
 exec "highlight Pmenu ctermbg=236 guibg=" . s:grey236 . " ctermfg=fg guifg=fg"
 exec "highlight PmenuSel ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
-exec "highlight PmenuThumb ctermbg=249 guibg=" . s:grey249
+exec "highlight PmenuSbar ctermbg=236 guibg=" . s:grey236
+exec "highlight PmenuThumb ctermbg=244 guibg=" . s:grey244
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
