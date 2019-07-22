@@ -593,7 +593,7 @@ exec "highlight netrwClassify ctermfg=15 guifg=" . s:violet
 exec "highlight netrwDir ctermfg=12 guifg=" . s:light_blue
 exec "highlight snipLeadingSpaces ctermbg=bg guibg=bg ctermfg=fg guifg=fg"
 exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
-exec "highlight diffAdded ctermfg=12 guifg=" . s:light_blue
+exec "highlight diffAdded ctermfg=2 guifg=" . s:green
 exec "highlight diffChanged ctermfg=9 guifg=" . s:crimson
 exec "highlight diffIndexLine ctermfg=9 guifg=" . s:crimson
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
