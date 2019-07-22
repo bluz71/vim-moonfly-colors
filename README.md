@@ -66,13 +66,14 @@ The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 ## Plugins explicity styled
 
 -  [NERDTree](https://github.com/scrooloose/nerdtree)
--  [Neomake](https://github.com/neomake/neomake)
 -  [ALE](https://github.com/w0rp/ale)
--  [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
--  [clever-f](https://github.com/rhysd/clever-f.vim)
--  [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
--  [Tagbar](https://github.com/majutsushi/tagbar)
+-  [Neomake](https://github.com/neomake/neomake)
+-  [GitGutter](https://github.com/airblade/vim-gitgutter)
 -  [fzf.vim](https://github.com/junegunn/fzf.vim)
+-  [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+-  [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
+-  [clever-f](https://github.com/rhysd/clever-f.vim)
+-  [Tagbar](https://github.com/majutsushi/tagbar)
 -  [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 
 ## Statusline

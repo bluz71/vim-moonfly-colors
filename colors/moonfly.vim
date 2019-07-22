@@ -194,7 +194,7 @@ exec "highlight CursorColumn ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight CursorLine ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight Folded ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=". s:light_green
 exec "highlight FoldColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=" . s:light_green
-exec "highlight SignColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=" . s:light_green
+exec "highlight SignColumn ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=" . s:light_green
 exec "highlight Todo ctermbg=3 guibg=" . s:khaki . " ctermfg=bg guifg=bg"
 exec "highlight SpecialKey ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
 if g:moonflyUnderlineMatchParen
@@ -537,22 +537,28 @@ exec "highlight NERDTreePartFile ctermfg=0 guifg=" . s:grey0
 exec "highlight NERDTreeUp ctermfg=8 guifg=" . s:coral
 
 " Neomake plugin
-exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
-exec "highlight NeomakeErrorSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=1 guifg=" . s:red
-exec "highlight NeomakeWarning ctermfg=3 guifg=" . s:khaki
-exec "highlight NeomakeWarningSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=3 guifg=" . s:khaki
-exec "highlight NeomakeInfo ctermfg=7 guifg=" . s:orange
-exec "highlight NeomakeInfoSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=7 guifg=" . s:orange
-exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
-exec "highlight NeomakeMessageSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=13 guifg=" . s:purple
+exec "highlight NeomakeError ctermfg=247 guifg=" . s:grey247
+exec "highlight NeomakeErrorSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 guifg=" . s:red
+exec "highlight NeomakeWarning ctermfg=247 guifg=" . s:grey247
+exec "highlight NeomakeWarningSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=11 guifg=" . s:wheat
+exec "highlight NeomakeInfo ctermfg=247 guifg=" . s:grey247
+exec "highlight NeomakeInfoSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=" . s:coral
+exec "highlight NeomakeMessage ctermfg=247 guifg=" . s:grey247
+exec "highlight NeomakeMessageSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=13 guifg=" . s:purple
 
 " ALE plugin
-exec "highlight ALEError ctermfg=1 guifg=" . s:red
-exec "highlight ALEErrorSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=1 guifg=" . s:red
-exec "highlight ALEWarning ctermfg=3 guifg=" . s:khaki
-exec "highlight ALEWarningSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=3 guifg=" . s:khaki
-exec "highlight ALEInfo ctermfg=7 guifg=" . s:orange
-exec "highlight ALEInfoSign ctermbg=236 guibg=" . s:grey236 . " ctermfg=7 guifg=" . s:orange
+exec "highlight ALEError ctermfg=247 guifg=" . s:grey247
+exec "highlight ALEErrorSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 guifg=" . s:red
+exec "highlight ALEWarning ctermfg=247 guifg=" . s:grey247
+exec "highlight ALEWarningSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=11 guifg=" . s:wheat
+exec "highlight ALEInfo ctermfg=247 guifg=" . s:grey247
+exec "highlight ALEInfoSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=" . s:coral
+
+" GitGutter plugin
+exec "highlight GitGutterAdd ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=" . s:light_green
+exec "highlight GitGutterChange ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue
+exec "highlight GitGutterChangeDelete ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=" . s:coral
+exec "highlight GitGutterDelete ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 guifg=" . s:red
 
 " FZF plugin
 exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:grey236
