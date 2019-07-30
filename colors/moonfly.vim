@@ -324,6 +324,11 @@ exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:violet
 exec "highlight jsTemplateExpression ctermfg=6 guifg=" . s:turquoise
 exec "highlight jsThis ctermfg=2 guifg=" . s:green
 
+" JSX, 'MaxMEllon/vim-jsx-pretty' plugin
+exec "highlight jsxAttrib ctermfg=14 guifg=" . s:light_green
+exec "highlight jsxComponentName ctermfg=4 guifg=" . s:blue
+exec "highlight jsxTagName ctermfg=12 guifg=" . s:light_blue
+
 " CoffeeScript
 exec "highlight coffeeGlobal ctermfg=6 guifg=" . s:turquoise
 exec "highlight coffeeKeyword ctermfg=7 guifg=" . s:orange
