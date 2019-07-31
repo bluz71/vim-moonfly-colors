@@ -561,7 +561,7 @@ exec "highlight ALEInfoSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=
 
 " GitGutter plugin
 exec "highlight GitGutterAdd ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=" . s:light_green
-exec "highlight GitGutterChange ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue
+exec "highlight GitGutterChange ctermbg=234 guibg=" . s:grey234 . " ctermfg=13 guifg=" . s:purple
 exec "highlight GitGutterChangeDelete ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=" . s:coral
 exec "highlight GitGutterDelete ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 guifg=" . s:red
 
