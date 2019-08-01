@@ -602,5 +602,6 @@ exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
 exec "highlight diffAdded ctermfg=2 guifg=" . s:green
 exec "highlight diffChanged ctermfg=9 guifg=" . s:crimson
 exec "highlight diffIndexLine ctermfg=9 guifg=" . s:crimson
+exec "highlight diffLine ctermfg=12 guifg=" . s:light_blue
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
-exec "highlight diffSubname ctermfg=5 guifg=" . s:magenta
+exec "highlight diffSubname ctermfg=12 guifg=" . s:light_blue
