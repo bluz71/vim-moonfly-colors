@@ -330,7 +330,7 @@ exec "highlight jsxComponentName ctermfg=4 guifg=" . s:blue
 exec "highlight jsxTagName ctermfg=12 guifg=" . s:light_blue
 
 " CoffeeScript
-exec "highlight coffeeConstant ctermfg=11 guifg=" . s:emerald
+exec "highlight coffeeConstant ctermfg=10 guifg=" . s:emerald
 exec "highlight coffeeGlobal ctermfg=6 guifg=" . s:turquoise
 exec "highlight coffeeKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight coffeeObjAssign ctermfg=12 guifg=" . s:light_blue
