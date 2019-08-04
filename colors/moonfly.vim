@@ -535,7 +535,7 @@ exec "highlight NERDTreeLinkFile ctermfg=4 guifg=" . s:blue
 exec "highlight NERDTreeOpenable ctermfg=2 guifg=" . s:green
 exec "highlight NERDTreePart ctermfg=0 guifg=" . s:grey0
 exec "highlight NERDTreePartFile ctermfg=0 guifg=" . s:grey0
-exec "highlight NERDTreeUp ctermfg=8 guifg=" . s:coral
+exec "highlight NERDTreeUp ctermfg=2 guifg=" . s:green
 
 " NERDTree Git plugin
 exec "highlight NERDTreeGitStatusDirDirty ctermfg=11 guifg=" . s:wheat
