@@ -40,6 +40,7 @@ let s:light_green = "#85dc85" " light_green = 14
 let s:green       = "#8cc85f" " green       = 2
 let s:emerald     = "#42cf89" " emerald     = 10
 let s:blue        = "#80a0ff" " blue        = 4
+let s:blue111     = "#87afff" " blue111     = 111
 let s:light_blue  = "#78c2ff" " light_blue  = 12
 let s:turquoise   = "#7ee0ce" " turquoise   = 6
 let s:purple      = "#ae81ff" " purple      = 13
@@ -569,7 +570,7 @@ exec "highlight GitGutterDelete ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 gu
 
 " FZF plugin
 exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:grey236
-exec "highlight fzf2 ctermfg=4 guifg=" . s:blue . " ctermbg=236 guibg=" . s:grey236
+exec "highlight fzf2 ctermfg=111 guifg=" . s:blue111 . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzf3 ctermfg=10 guifg=" . s:emerald . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzfNormal ctermfg=249 guifg=" . s:grey249
 let g:fzf_colors = {
@@ -581,7 +582,7 @@ let g:fzf_colors = {
   \  'hl+':     ['fg', 'Number'],
   \  'info':    ['fg', 'String'],
   \  'border':  ['fg', 'LineNr'],
-  \  'prompt':  ['fg', 'Structure'],
+  \  'prompt':  ['fg', 'fzf2'],
   \  'pointer': ['fg', 'MatchParen'],
   \  'marker':  ['fg', 'StorageClass'],
   \  'spinner': ['fg', 'Type'],
