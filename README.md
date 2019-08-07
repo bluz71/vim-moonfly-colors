@@ -114,17 +114,6 @@ If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
 
 ## Options
 
-The `g:moonflyCursorLineNr` option specifies whether to highlight the cursor
-line, as blue, in the number column if the `relativenumber` or `cursorline`
-settings are in effect. By default the cursor line will be highlighted as such.
-
-To disable highlighting of the current cursor line in the number column please
-add the following to your _vimrc_:
-
-```viml
-let g:moonflyCursorLineNr = 0
-```
-
 The `g:moonflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
 then add the following to your _vimrc_:

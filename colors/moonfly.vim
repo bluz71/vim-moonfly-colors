@@ -12,11 +12,9 @@ if exists("syntax_on")
 endif
 let g:colors_name="moonfly"
 
-" By default highlight cursor line numbers in 'blue'.
-" By default don't color the cursor.
+" By default do not color the cursor.
 " By default use the moonfly color palette in the `:terminal`.
-" By default don't underline matching parentheses.
-let g:moonflyCursorLineNr        = get(g:, "moonflyCursorLineNr", 1)
+" By default do not underline matching parentheses.
 let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
 let g:moonflyTerminalColors      = get(g:, "moonflyTerminalColors", 1)
 let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
@@ -27,6 +25,7 @@ let s:grey0       = "#373c40" " grey0       = 0
 let s:grey249     = "#b2b2b2" " grey249     = 249
 let s:grey247     = "#9e9e9e" " grey247     = 247
 let s:grey244     = "#808080" " grey244     = 244
+let s:grey241     = "#626262" " grey241     = 241
 let s:grey237     = "#3a3a3a" " grey237     = 237
 let s:grey236     = "#303030" " grey236     = 236
 let s:grey235     = "#262626" " grey235     = 235
@@ -178,23 +177,19 @@ exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
-exec "highlight LineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247
+exec "highlight LineNr ctermbg=bg guibg=bg ctermfg=241 guifg=" . s:grey241
 if g:moonflyCursorColor
     exec "highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=" . s:blue
 else
     exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 endif
 exec "highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
-if g:moonflyCursorLineNr
-    exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " gui=none"
-else
-    exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=247 guifg=" . s:grey247 . " gui=none"
-endif
+exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " gui=none"
 exec "highlight CursorColumn ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight CursorLine ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight Folded ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=". s:light_green
 exec "highlight FoldColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=" . s:light_green
-exec "highlight SignColumn ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=" . s:light_green
+exec "highlight SignColumn ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_green
 exec "highlight Todo ctermbg=3 guibg=" . s:khaki . " ctermfg=bg guifg=bg"
 exec "highlight SpecialKey ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
 if g:moonflyUnderlineMatchParen
@@ -546,27 +541,27 @@ exec "highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=" . s:red
 
 " Neomake plugin
 exec "highlight NeomakeError ctermfg=247 guifg=" . s:grey247
-exec "highlight NeomakeErrorSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 guifg=" . s:red
+exec "highlight NeomakeErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
 exec "highlight NeomakeWarning ctermfg=247 guifg=" . s:grey247
-exec "highlight NeomakeWarningSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=11 guifg=" . s:wheat
+exec "highlight NeomakeWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
 exec "highlight NeomakeInfo ctermfg=247 guifg=" . s:grey247
-exec "highlight NeomakeInfoSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=" . s:coral
+exec "highlight NeomakeInfoSign ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
 exec "highlight NeomakeMessage ctermfg=247 guifg=" . s:grey247
-exec "highlight NeomakeMessageSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=13 guifg=" . s:purple
+exec "highlight NeomakeMessageSign ctermbg=bg guibg=bg ctermfg=13 guifg=" . s:purple
 
 " ALE plugin
 exec "highlight ALEError ctermfg=247 guifg=" . s:grey247
-exec "highlight ALEErrorSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 guifg=" . s:red
+exec "highlight ALEErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
 exec "highlight ALEWarning ctermfg=247 guifg=" . s:grey247
-exec "highlight ALEWarningSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=11 guifg=" . s:wheat
+exec "highlight ALEWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
 exec "highlight ALEInfo ctermfg=247 guifg=" . s:grey247
-exec "highlight ALEInfoSign ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=" . s:coral
+exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
 
 " GitGutter plugin
-exec "highlight GitGutterAdd ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=" . s:light_green
-exec "highlight GitGutterChange ctermbg=234 guibg=" . s:grey234 . " ctermfg=13 guifg=" . s:purple
-exec "highlight GitGutterChangeDelete ctermbg=234 guibg=" . s:grey234 . " ctermfg=8 guifg=" . s:coral
-exec "highlight GitGutterDelete ctermbg=234 guibg=" . s:grey234 . " ctermfg=1 guifg=" . s:red
+exec "highlight GitGutterAdd ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_green
+exec "highlight GitGutterChange ctermbg=bg guibg=bg ctermfg=13 guifg=" . s:purple
+exec "highlight GitGutterChangeDelete ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
+exec "highlight GitGutterDelete ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
 
 " FZF plugin
 exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:grey236
