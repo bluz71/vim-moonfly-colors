@@ -306,7 +306,7 @@ exec "highlight elixirVariable ctermfg=8 guifg=" . s:coral
 exec "highlight jsClassDefinition ctermfg=10 guifg=" . s:emerald
 exec "highlight jsClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight jsFrom ctermfg=8 guifg=" . s:coral
-exec "highlight jsFuncBlock ctermfg=10 guifg=" . s:emerald
+exec "highlight jsFuncBlock ctermfg=6 guifg=" . s:turquoise
 exec "highlight jsFuncCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight jsFunction ctermfg=14 guifg=" . s:light_green
 exec "highlight jsGlobalObjects ctermfg=10 guifg=" . s:emerald
@@ -321,7 +321,9 @@ exec "highlight jsThis ctermfg=2 guifg=" . s:green
 
 " JSX, 'MaxMEllon/vim-jsx-pretty' plugin
 exec "highlight jsxAttrib ctermfg=14 guifg=" . s:light_green
+exec "highlight jsxClosePunct ctermfg=13 guifg=" . s:purple
 exec "highlight jsxComponentName ctermfg=4 guifg=" . s:blue
+exec "highlight jsxOpenPunct ctermfg=14 guifg=" . s:light_green
 exec "highlight jsxTagName ctermfg=12 guifg=" . s:light_blue
 
 " CoffeeScript
