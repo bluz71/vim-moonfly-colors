@@ -22,6 +22,7 @@ let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
 let s:grey0       = "#373c40" " grey0       = 0
+let s:grey253     = "#dadada" " grey253     = 253
 let s:grey249     = "#b2b2b2" " grey249     = 249
 let s:grey247     = "#9e9e9e" " grey247     = 247
 let s:grey244     = "#808080" " grey244     = 244
@@ -570,12 +571,13 @@ exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:g
 exec "highlight fzf2 ctermfg=111 guifg=" . s:blue111 . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzf3 ctermfg=10 guifg=" . s:emerald . " ctermbg=236 guibg=" . s:grey236
 exec "highlight fzfNormal ctermfg=249 guifg=" . s:grey249
+exec "highlight fzfFgPlus ctermfg=253 guifg=" . s:grey253
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
   \  'bg':      ['bg', 'Normal'],
   \  'hl':      ['fg', 'Number'],
-  \  'fg+':     ['fg', 'Normal'],
-  \  'bg+':     ['bg', 'LineNr'],
+  \  'fg+':     ['fg', 'fzfFgPlus'],
+  \  'bg+':     ['bg', 'CursorLine'],
   \  'hl+':     ['fg', 'Number'],
   \  'info':    ['fg', 'String'],
   \  'border':  ['fg', 'Quickfixline'],
