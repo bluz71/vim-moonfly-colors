@@ -275,6 +275,13 @@ exec "highlight rubyRoute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 
+" Ruby constant
+augroup rubyEvents
+    autocmd!
+    autocmd FileType eruby exec "highlight rubyConstant ctermfg=6 guifg=" . s:turquoise
+    autocmd FileType ruby exec "highlight rubyConstant ctermfg=10 guifg=" . s:emerald
+augroup END
+
 " Crystal
 exec "highlight crystalAccess ctermfg=3 guifg=" . s:khaki
 exec "highlight crystalAttribute ctermfg=12 guifg=" . s:light_blue
