@@ -265,6 +265,7 @@ exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
 exec "highlight rubyDefine ctermfg=5 guifg=" . s:magenta
 exec "highlight rubyEntities ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
+exec "highlight rubyGemfileMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:light_green
 exec "highlight rubyInterpolationDelimiter ctermfg=15 guifg=" . s:violet
 exec "highlight rubyMacro ctermfg=12 guifg=" . s:light_blue
@@ -276,7 +277,7 @@ exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 augroup MoonflyRubyAutocmds
     autocmd!
-    " Ruby constant, use different colors when in Ruby and eRuby files.
+    " Use different colors when in Ruby and eRuby files for 'rubyConstant'.
     autocmd FileType eruby exec "highlight rubyConstant ctermfg=6 guifg=" . s:turquoise
     autocmd FileType ruby exec "highlight rubyConstant ctermfg=10 guifg=" . s:emerald
 augroup END
