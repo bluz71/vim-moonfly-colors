@@ -274,10 +274,9 @@ exec "highlight rubyResponse ctermfg=6 guifg=" . s:turquoise
 exec "highlight rubyRoute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
-
-" Ruby constant
-augroup rubyEvents
+augroup MoonflyRubyAutocmds
     autocmd!
+    " Ruby constant, use different colors when in Ruby and eRuby files.
     autocmd FileType eruby exec "highlight rubyConstant ctermfg=6 guifg=" . s:turquoise
     autocmd FileType ruby exec "highlight rubyConstant ctermfg=10 guifg=" . s:emerald
 augroup END
