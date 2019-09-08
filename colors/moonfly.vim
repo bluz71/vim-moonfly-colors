@@ -257,6 +257,7 @@ exec "highlight pythonStatement ctermfg=5 guifg=" s:magenta
 exec "highlight erubyDelimiter ctermfg=9 guifg=" . s:crimson
 exec "highlight rspecGroupMethods ctermfg=4 guifg=" . s:blue
 exec "highlight rubyAccess ctermfg=3 guifg=" . s:khaki
+exec "highlight rubyAssertion ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyAttribute ctermfg=12 guifg=" . s:light_blue
 exec "highlight rubyBlockParameter ctermfg=2 guifg=" . s:green
 exec "highlight rubyCallback ctermfg=12 guifg=" . s:light_blue
