@@ -349,7 +349,7 @@ exec "highlight typescriptFuncComma ctermfg=251 guifg=" . s:white
 exec "highlight typescriptFuncKeyword ctermfg=14 guifg=" . s:light_green
 exec "highlight typescriptGlobalObjects ctermfg=4 guifg=" . s:blue
 exec "highlight typescriptIdentifier ctermfg=2 guifg=" . s:green
-exec "highlight typescriptNull ctermfg=3 guifg=" . s:khaki
+exec "highlight typescriptNull ctermfg=2 guifg=" . s:green
 exec "highlight typescriptOpSymbols ctermfg=5 guifg=" . s:magenta
 exec "highlight typescriptOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight typescriptParens ctermfg=251 guifg=" . s:white
@@ -357,17 +357,27 @@ exec "highlight typescriptReserved ctermfg=5 guifg=" . s:magenta
 exec "highlight typescriptStorageClass ctermfg=14 guifg=" . s:light_green
 
 " TypeScript (HerringtonDarkholme/yats.vim)
+exec "highlight typeScriptModule ctermfg=4 guifg=" . s:blue
+exec "highlight typescriptAbstract ctermfg=8 guifg=" . s:coral
+exec "highlight typescriptArrayMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptArrowFuncArg ctermfg=251 guifg=" . s:white
 exec "highlight typescriptBOMLocationMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptBOMWindowProp ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptBraces ctermfg=251 guifg=" . s:white
-exec "highlight typescriptCall ctermfg=6 guifg=" . s:turquoise
+exec "highlight typescriptCall ctermfg=251 guifg=" . s:white
 exec "highlight typescriptClassHeritage ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight typescriptClassName ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptDOMDocMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptDOMNodeMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptExceptions ctermfg=9 guifg=" . s:crimson
+exec "highlight typescriptFuncType ctermfg=251 guifg=" . s:white
+exec "highlight typescriptMathStaticMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptMethodAccessor ctermfg=5 guifg=" . s:magenta
 exec "highlight typescriptObjectLabel ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptParamImpl ctermfg=251 guifg=" . s:white
 exec "highlight typescriptStringMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptTry ctermfg=9 guifg=" . s:crimson
 exec "highlight typescriptVariable ctermfg=14 guifg=" . s:light_green
 exec "highlight typescriptXHRMethod ctermfg=12 guifg=" . s:light_blue
 
