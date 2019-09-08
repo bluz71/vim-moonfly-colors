@@ -357,13 +357,16 @@ exec "highlight typescriptReserved ctermfg=5 guifg=" . s:magenta
 exec "highlight typescriptStorageClass ctermfg=14 guifg=" . s:light_green
 
 " TypeScript (HerringtonDarkholme/yats.vim)
-exec "highlight typescriptBraces ctermfg=251 guifg=" . s:white
 exec "highlight typescriptBOMLocationMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptBOMWindowProp ctermfg=10 guifg=" . s:emerald
+exec "highlight typescriptBraces ctermfg=251 guifg=" . s:white
 exec "highlight typescriptCall ctermfg=6 guifg=" . s:turquoise
+exec "highlight typescriptClassHeritage ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptClassKeyword ctermfg=7 guifg=" . s:orange
+exec "highlight typescriptClassName ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptDOMDocMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptDOMNodeMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptMember ctermfg=14 guifg=" . s:light_green
 exec "highlight typescriptObjectLabel ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptStringMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptVariable ctermfg=14 guifg=" . s:light_green
