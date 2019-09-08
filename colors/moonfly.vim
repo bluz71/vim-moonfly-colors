@@ -344,7 +344,6 @@ exec "highlight coffeeSpecialVar ctermfg=4 guifg=" . s:blue
 exec "highlight coffeeStatement ctermfg=8 guifg=" . s:coral
 
 " TypeScript (leafgarland/typescript-vim)
-exec "highlight typescriptBraces ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptDOMObjects ctermfg=4 guifg=" . s:blue
 exec "highlight typescriptFuncComma ctermfg=251 guifg=" . s:white
 exec "highlight typescriptFuncKeyword ctermfg=14 guifg=" . s:light_green
@@ -358,10 +357,11 @@ exec "highlight typescriptReserved ctermfg=5 guifg=" . s:magenta
 exec "highlight typescriptStorageClass ctermfg=14 guifg=" . s:light_green
 
 " TypeScript (HerringtonDarkholme/yats.vim)
-exec "highlight typeScriptBraces ctermfg=251 guifg=" . s:white
+exec "highlight typescriptBraces ctermfg=251 guifg=" . s:white
 exec "highlight typescriptBOMLocationMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptBOMWindowProp ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptCall ctermfg=6 guifg=" . s:turquoise
+exec "highlight typescriptClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight typescriptDOMDocMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptDOMNodeMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptObjectLabel ctermfg=12 guifg=" . s:light_blue
