@@ -366,7 +366,6 @@ exec "highlight typescriptClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight typescriptClassName ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptDOMDocMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptDOMNodeMethod ctermfg=12 guifg=" . s:light_blue
-exec "highlight typescriptMember ctermfg=14 guifg=" . s:light_green
 exec "highlight typescriptObjectLabel ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptStringMethod ctermfg=12 guifg=" . s:light_blue
 exec "highlight typescriptVariable ctermfg=14 guifg=" . s:light_green
