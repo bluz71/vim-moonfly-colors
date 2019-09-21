@@ -163,7 +163,7 @@ exec "highlight WarningMsg ctermbg=bg guibg=bg ctermfg=7 guifg=" . s:orange
 exec "highlight Structure ctermfg=4 guifg=" . s:blue
 
 " Auto-text-completion menu.
-exec "highlight Pmenu ctermbg=236 guibg=" . s:grey236 . " ctermfg=fg guifg=fg"
+exec "highlight Pmenu ctermbg=235 guibg=" . s:grey235 . " ctermfg=fg guifg=fg"
 exec "highlight PmenuSel ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 exec "highlight PmenuSbar ctermbg=236 guibg=" . s:grey236
 exec "highlight PmenuThumb ctermbg=244 guibg=" . s:grey244
