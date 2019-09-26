@@ -185,7 +185,7 @@ else
     exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 endif
 exec "highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
-exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " gui=none"
+exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " cterm=none gui=none"
 exec "highlight CursorColumn ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight CursorLine ctermbg=234 guibg=" . s:grey234 . " cterm=none"
 exec "highlight Folded ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=". s:light_green
