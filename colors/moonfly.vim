@@ -563,22 +563,22 @@ exec "highlight NERDTreeGitStatusStaged ctermfg=12 guifg=" . s:light_blue
 exec "highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=" . s:red
 
 " Neomake plugin
-exec "highlight NeomakeError ctermfg=247 guifg=" . s:grey247
+exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
 exec "highlight NeomakeErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight NeomakeWarning ctermfg=247 guifg=" . s:grey247
+exec "highlight NeomakeWarning ctermfg=11 guifg=" . s:wheat
 exec "highlight NeomakeWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
-exec "highlight NeomakeInfo ctermfg=247 guifg=" . s:grey247
-exec "highlight NeomakeInfoSign ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
-exec "highlight NeomakeMessage ctermfg=247 guifg=" . s:grey247
+exec "highlight NeomakeInfo ctermfg=2 guifg=" . s:green
+exec "highlight NeomakeInfoSign ctermbg=bg guibg=bg ctermfg=2 guifg=" . s:green
+exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
 exec "highlight NeomakeMessageSign ctermbg=bg guibg=bg ctermfg=13 guifg=" . s:purple
 
 " ALE plugin
-exec "highlight ALEError ctermfg=247 guifg=" . s:grey247
+exec "highlight ALEError ctermfg=1 guifg=" . s:red
 exec "highlight ALEErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight ALEWarning ctermfg=247 guifg=" . s:grey247
+exec "highlight ALEWarning ctermfg=11 guifg=" . s:wheat
 exec "highlight ALEWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
-exec "highlight ALEInfo ctermfg=247 guifg=" . s:grey247
-exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
+exec "highlight ALEInfo ctermfg=2 guifg=" . s:green
+exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=2 guifg=" . s:green
 
 " GitGutter plugin
 exec "highlight GitGutterAdd ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_green
