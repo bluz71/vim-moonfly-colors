@@ -170,10 +170,10 @@ exec "highlight PmenuThumb ctermbg=244 guibg=" . s:grey244
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
-exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=underline guisp=" . s:red
-exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=underline guisp=" . s:blue
-exec "highlight SpellRare ctermbg=bg ctermfg=15 cterm=underline guibg=bg guifg=" . s:violet . " gui=underline guisp=" . s:violet
-exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=underline guisp=" . s:light_blue
+exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg gui=undercurl guisp=" . s:red
+exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg gui=undercurl guisp=" . s:blue
+exec "highlight SpellRare ctermbg=bg ctermfg=15 cterm=underline guibg=bg gui=undercurl guisp=" . s:violet
+exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg gui=undercurl guisp=" . s:light_blue
 
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
@@ -563,21 +563,21 @@ exec "highlight NERDTreeGitStatusStaged ctermfg=12 guifg=" . s:light_blue
 exec "highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=" . s:red
 
 " Neomake plugin
-exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
+exec "highlight NeomakeError ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:red
 exec "highlight NeomakeErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight NeomakeWarning ctermfg=11 guifg=" . s:wheat
+exec "highlight NeomakeWarning ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:wheat
 exec "highlight NeomakeWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
-exec "highlight NeomakeInfo ctermfg=2 guifg=" . s:green
+exec "highlight NeomakeInfo ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:green
 exec "highlight NeomakeInfoSign ctermbg=bg guibg=bg ctermfg=2 guifg=" . s:green
-exec "highlight NeomakeMessage ctermfg=13 guifg=" . s:purple
+exec "highlight NeomakeMessage ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:purple
 exec "highlight NeomakeMessageSign ctermbg=bg guibg=bg ctermfg=13 guifg=" . s:purple
 
 " ALE plugin
-exec "highlight ALEError ctermfg=1 guifg=" . s:red
+exec "highlight ALEError ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:red
 exec "highlight ALEErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight ALEWarning ctermfg=11 guifg=" . s:wheat
+exec "highlight ALEWarning ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:wheat
 exec "highlight ALEWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
-exec "highlight ALEInfo ctermfg=2 guifg=" . s:green
+exec "highlight ALEInfo ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:green
 exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=2 guifg=" . s:green
 
 " GitGutter plugin
