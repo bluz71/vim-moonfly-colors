@@ -1,4 +1,5 @@
-# moonfly
+moonfly
+=======
 
 _moonfly_ is a dark color scheme for Vim and Neovim that has taken inspiration
 from:
@@ -14,7 +15,8 @@ primarily in regards to language and plugin theming. However, the core color
 palette will not change; **except** the time I changed crimson (July 1 2017),
 sorry.
 
-## Primary Colors
+Primary Colors
+--------------
 
 | Normal     | Color                                                       | Bright      | Color                                                        |
 | ---------- | ----------------------------------------------------------- | ----------- | ------------------------------------------------------------ |
@@ -28,19 +30,21 @@ sorry.
 | Turquoise  | ![turquoise](https://placehold.it/64/7ee0ce/000000?text=+)  | Light Green | ![light-green](https://placehold.it/64/85dc85/000000?text=+) |
 | Orange     | ![orange](https://placehold.it/64/de935f/000000?text=+)     | Violet      | ![violet](https://placehold.it/64/e2637f/000000?text=+)      |
 
-## Screenshots
+Screenshots
+-----------
 
-#### Ruby
+### Ruby
 
 <img width="800" alt="ruby" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/ruby_moonfly.png">
 
-#### JavaScript
+### JavaScript
 
 <img width="800" alt="javascript" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/javascript_moonfly.png">
 
 The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 
-## Languages explicitly styled
+Languages explicitly styled
+---------------------------
 
 -  C/C++
 -  Shell
@@ -63,7 +67,8 @@ The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 -  Elm
 -  Lua
 
-## Plugins explicity styled
+Plugins explicity styled
+------------------------
 
 -  [NERDTree](https://github.com/scrooloose/nerdtree)
 -  [ALE](https://github.com/w0rp/ale)
@@ -76,7 +81,8 @@ The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 -  [Tagbar](https://github.com/majutsushi/tagbar)
 -  [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 
-## Statusline
+Statusline
+----------
 
 The _moonfly_ color scheme supports
 [lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
@@ -100,7 +106,8 @@ Alternatively, a companion status line,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
 available for those that just want a simple _moonfly_ themed statusline.
 
-## Installation
+Installation
+------------
 
 Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
 set the colorscheme in your _vimrc_ file.
@@ -112,7 +119,8 @@ If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
 3. Add `colorscheme moonfly` to your _vimrc_, make sure this line appears
    **after** the _Plug_ declaration.
 
-## Options
+Options
+-------
 
 The `g:moonflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
@@ -139,7 +147,8 @@ underline matching parentheses then add the following to your _vimrc_:
 let g:moonflyUnderlineMatchParen = 1
 ```
 
-## True Color Terminals
+True Color Terminals
+--------------------
 
 Many terminal programs, such as [iTerm2](http://www.iterm2.com) and
 [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal), support
@@ -177,7 +186,8 @@ If consistency between Vim colors and `$SHELL` colors is important then I
 recommend proceeding with the 256-color configurations listed in the next
 section.
 
-## 256 Color Terminals
+256 Color Terminals
+-------------------
 
 The _moonfly_ color scheme, when used with Vim absent `termguicolors`,
 **requires** the host terminal be configured with a specific color palette.
@@ -254,6 +264,7 @@ xterm-moonfly*color15:     #e2637f
 A complete _Xresources_ file is available
 [here](https://github.com/bluz71/dotfiles/blob/master/Xresources).
 
-## License
+License
+-------
 
 [MIT](https://opensource.org/licenses/MIT)
