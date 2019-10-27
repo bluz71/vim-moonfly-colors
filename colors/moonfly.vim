@@ -482,6 +482,11 @@ exec "highlight phpClass ctermfg=7 guifg=" . s:orange
 exec "highlight phpClasses ctermfg=10 guifg=" . s:emerald
 exec "highlight phpType ctermfg=4 guifg=" . s:blue
 
+" Dart
+exec "highlight dartTypedef ctermfg=4 guifg=" . s:blue
+exec "highlight dartOperator ctermfg=12 guifg=" . s:light_blue
+exec "highlight dartMetadata ctermfg=13 guifg=" . s:purple
+
 " HTML
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
 exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"
