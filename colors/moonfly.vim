@@ -483,9 +483,10 @@ exec "highlight phpClasses ctermfg=10 guifg=" . s:emerald
 exec "highlight phpType ctermfg=4 guifg=" . s:blue
 
 " Dart
-exec "highlight dartTypedef ctermfg=4 guifg=" . s:blue
-exec "highlight dartOperator ctermfg=12 guifg=" . s:light_blue
 exec "highlight dartMetadata ctermfg=13 guifg=" . s:purple
+exec "highlight dartStorageClass ctermfg=8 guifg=" . s:coral
+exec "highlight dartTypeName ctermfg=12 guifg=" . s:light_blue
+exec "highlight dartTypedef ctermfg=7 guifg=" . s:orange
 
 " HTML
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
