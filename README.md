@@ -4,11 +4,11 @@ moonfly
 _moonfly_ is a dark color scheme for Vim and Neovim that has taken inspiration
 from:
 
--  [sunburst](http://vimcolors.com/177/Sunburst/dark)
--  [xoria256](https://github.com/vim-scripts/xoria256.vim)
--  [One Dark](https://github.com/atom/one-dark-syntax)
--  [One](https://github.com/rakr/vim-one)
--  [monokai](https://atom.io/themes/monokai)
+- [sunburst](http://vimcolors.com/177/Sunburst/dark)
+- [xoria256](https://github.com/vim-scripts/xoria256.vim)
+- [One Dark](https://github.com/atom/one-dark-syntax)
+- [One](https://github.com/rakr/vim-one)
+- [monokai](https://atom.io/themes/monokai)
 
 Note, the _moonfly_ color scheme does incrementally change from time to time,
 primarily in regards to language and plugin theming. However, the core color
@@ -46,40 +46,41 @@ The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 Languages explicitly styled
 ---------------------------
 
--  C/C++
--  Shell
--  Python
--  Ruby
--  Crystal
--  Elixir
--  [JavaScript](https://github.com/pangloss/vim-javascript)
--  CoffeeScript
--  PureScript
--  [TypeScript](https://github.com/HerringtonDarkholme/yats.vim)
--  [Markdown](https://github.com/plasticboy/vim-markdown)
--  Go
--  Rust
--  Java
--  Scala
--  PHP
--  Haskell
--  Clojure
--  Elm
--  Lua
+- C/C++
+- Clojure
+- CoffeeScript
+- Crystal
+- Elixir
+- Elm
+- Dart
+- Go
+- Haskell
+- Java
+- [JavaScript](https://github.com/pangloss/vim-javascript)
+- Lua
+- [Markdown](https://github.com/plasticboy/vim-markdown)
+- PHP
+- PureScript
+- Python
+- Ruby
+- Rust
+- Scala
+- Shell
+- [TypeScript](https://github.com/HerringtonDarkholme/yats.vim)
 
 Plugins explicity styled
 ------------------------
 
--  [NERDTree](https://github.com/scrooloose/nerdtree)
--  [ALE](https://github.com/w0rp/ale)
--  [Neomake](https://github.com/neomake/neomake)
--  [GitGutter](https://github.com/airblade/vim-gitgutter)
--  [fzf.vim](https://github.com/junegunn/fzf.vim)
--  [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
--  [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
--  [clever-f](https://github.com/rhysd/clever-f.vim)
--  [Tagbar](https://github.com/majutsushi/tagbar)
--  [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
+- [NERDTree](https://github.com/scrooloose/nerdtree)
+- [ALE](https://github.com/w0rp/ale)
+- [Neomake](https://github.com/neomake/neomake)
+- [GitGutter](https://github.com/airblade/vim-gitgutter)
+- [fzf.vim](https://github.com/junegunn/fzf.vim)
+- [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+- [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
+- [clever-f](https://github.com/rhysd/clever-f.vim)
+- [Tagbar](https://github.com/majutsushi/tagbar)
+- [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 
 Statusline
 ----------
