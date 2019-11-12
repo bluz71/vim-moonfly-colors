@@ -133,12 +133,17 @@ let g:moonflyCursorColor = 1
 
 The `g:moonflyTerminalColors` option specifies whether to use the moonfly color
 palette in `:terminal` windows when `termguicolors` is set. By default this
-option is **enabled**, if you prefer not to use the moonfly color palette for
-the first 16 terminal colors then add the following to your _vimrc_:
+option is **enabled** for most versions of Vim, if you prefer not to use the
+moonfly color palette for the first 16 terminal colors then add the following
+to your _vimrc_:
 
 ```viml
 let g:moonflyTerminalColors = 0
 ```
+
+:bell: Neovim 0.5.0 or later in a terminal with `termguicolors` [passes
+through](https://github.com/neovim/neovim/pull/10994) terminal palette colors,
+hence, *moonfly* will not enable terminal colors by default, they are not needed.
 
 The `g:moonflyUnderlineMatchParen` options specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to

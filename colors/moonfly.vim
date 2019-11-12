@@ -12,11 +12,23 @@ if exists("syntax_on")
 endif
 let g:colors_name="moonfly"
 
-" By default do not color the cursor.
-" By default use the moonfly color palette in the `:terminal`.
-" By default do not underline matching parentheses.
+" * By default do not color the cursor.
+" * By default use the moonfly color palette in the `:terminal`, but not if TUI
+"   Neovim can pass through terminal palette colors.
+" * By default do not underline matching parentheses.
 let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
-let g:moonflyTerminalColors      = get(g:, "moonflyTerminalColors", 1)
+if has("nvim-0.5.0") && &termguicolors && nvim_list_uis()[0]['ext_termcolors']
+    " Neovim 0.5.0 or later in a TUI with termguicolors set allows pass through
+    " of the terminal palette, so do NOT set terminal colors since it will
+    " cause certain problems.
+    "
+    " For reference:
+    "   https://github.com/neovim/neovim/pull/10994
+    "   https://github.com/neovim/neovim/issues/11335
+    let g:moonflyTerminalColors  = get(g:, "moonflyTerminalColors", 0)
+else
+    let g:moonflyTerminalColors  = get(g:, "moonflyTerminalColors", 1)
+endif
 let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
 
 let s:black       = "#080808" " black       = 232
