@@ -141,7 +141,7 @@ to your _vimrc_:
 let g:moonflyTerminalColors = 0
 ```
 
-:bell: Neovim 0.5.0 or later in a terminal with `termguicolors` [passes
+:bulb: Neovim 0.5.0 or later in a terminal with `termguicolors` [passes
 through](https://github.com/neovim/neovim/pull/10994) terminal palette colors,
 hence, *moonfly* will not enable terminal colors by default, they are not needed.
 
