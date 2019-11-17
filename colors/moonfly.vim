@@ -504,7 +504,7 @@ exec "highlight dartTypedef ctermfg=7 guifg=" . s:orange
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
 exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"
 exec "highlight htmlBoldUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral
-exec "highlight htmlItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247 " cterm=none gui=none"
+exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " cterm=none gui=none"
 exec "highlight htmlLink ctermfg=2 guifg=" . s:green
 exec "highlight htmlEndTag ctermfg=13 guifg=" . s:purple
 exec "highlight htmlTag ctermfg=14 guifg=" . s:light_green
@@ -519,7 +519,7 @@ exec "highlight xmlTag ctermfg=14 guifg=" . s:light_green
 exec "highlight xmlTagName ctermfg=4 guifg=" . s:blue
 
 " Markdown, 'plasticboy/vim-markdown' plugin
-exec "highlight mkdLineBreak ctermbg=bg guibg=bg"
+highlight link mkdLineBreak NormalNC
 exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
 exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
 
