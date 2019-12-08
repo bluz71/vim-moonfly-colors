@@ -592,10 +592,13 @@ exec "highlight NeomakeMessageSign ctermbg=bg guibg=bg ctermfg=13 guifg=" . s:pu
 
 " ALE plugin
 exec "highlight ALEError ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:red
+exec "highlight ALEVirtualTextError ctermbg=235 guibg=" . s:grey235 . " ctermfg=1 guifg=" . s:red
 exec "highlight ALEErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
 exec "highlight ALEWarning ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:wheat
+exec "highlight ALEVirtualTextWarning ctermbg=235 guibg=" . s:grey235 . " ctermfg=11 guifg=" . s:wheat
 exec "highlight ALEWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
 exec "highlight ALEInfo ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:green
+exec "highlight ALEVirtualTextInfo ctermbg=235 guibg=" . s:grey235 . " ctermfg=2 guifg=" . s:green
 exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=2 guifg=" . s:green
 
 " GitGutter plugin
