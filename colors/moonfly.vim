@@ -560,7 +560,7 @@ exec "highlight TagbarKind ctermfg=10 guifg=" . s:emerald
 
 " NERDTree plugin
 exec "highlight NERDTreeClosable ctermfg=2 guifg=" . s:green
-exec "highlight NERDTreeCWD ctermfg=5 guifg=" . s:magenta
+exec "highlight NERDTreeCWD ctermfg=13 guifg=" . s:purple
 exec "highlight NERDTreeDir ctermfg=12 guifg=" . s:light_blue
 exec "highlight NERDTreeDirSlash ctermfg=15 guifg=" . s:violet
 exec "highlight NERDTreeExecFile ctermfg=11 guifg=" . s:wheat
@@ -568,10 +568,11 @@ exec "highlight NERDTreeFile ctermfg=251 guifg=" . s:white
 exec "highlight NERDTreeHelp ctermfg=247 guifg=" . s:grey247
 exec "highlight NERDTreeLinkDir ctermfg=4 guifg=" . s:blue
 exec "highlight NERDTreeLinkFile ctermfg=4 guifg=" . s:blue
+exec "highlight NERDTreeLinkTarget ctermfg=6 guifg=" . s:turquoise
 exec "highlight NERDTreeOpenable ctermfg=2 guifg=" . s:green
 exec "highlight NERDTreePart ctermfg=0 guifg=" . s:grey0
 exec "highlight NERDTreePartFile ctermfg=0 guifg=" . s:grey0
-exec "highlight NERDTreeUp ctermfg=2 guifg=" . s:green
+exec "highlight NERDTreeUp ctermfg=4 guifg=" . s:blue
 
 " NERDTree Git plugin
 exec "highlight NERDTreeGitStatusDirDirty ctermfg=11 guifg=" . s:wheat
