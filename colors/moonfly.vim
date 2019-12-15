@@ -14,8 +14,10 @@ let g:colors_name="moonfly"
 
 " * By default do not color the cursor.
 " * By default use the moonfly color palette in the `:terminal`, but not if TUI
-"   Neovim can pass through terminal palette colors.
+"     Neovim can pass through terminal palette colors.
 " * By default do not underline matching parentheses.
+" * By default do use undercurls in GUI versions of Vim, that includes terminal
+"     Vim with termguicolors set.
 let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
 if has("nvim-0.5.0") && &termguicolors && nvim_list_uis()[0]['ext_termcolors']
     " Neovim 0.5.0 or later in a TUI with termguicolors set allows pass through
