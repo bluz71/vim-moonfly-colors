@@ -141,16 +141,26 @@ to your _vimrc_:
 let g:moonflyTerminalColors = 0
 ```
 
-:bulb: Neovim 0.5.0 or later in a terminal with `termguicolors` [passes
-through](https://github.com/neovim/neovim/pull/10994) terminal palette colors,
-hence, *moonfly* will not enable terminal colors by default, they are not needed.
+:bulb: Neovim 0.5.0 or later in a terminal with `termguicolors` set [passes
+through](https://github.com/neovim/neovim/pull/10994) the terminal palette
+colors, hence, *moonfly* will not enable terminal colors by default, they are
+not needed.
 
-The `g:moonflyUnderlineMatchParen` options specifies whether to underline
+The `g:moonflyUnderlineMatchParen` option specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to
 underline matching parentheses then add the following to your _vimrc_:
 
 ```viml
 let g:moonflyUnderlineMatchParen = 1
+```
+
+The `g:moonflyUndercurls` option specifies whether to use undercurls for
+spelling and linting errors in GUI versions of Vim, this includes terminal Vim
+with `termguicolors` set. By default this options is **enabled**. If you do not
+like the appearance of undercurls then add the following to your _vimrc_:
+
+```viml
+let g:moonflyUndercurls = 0
 ```
 
 True Color Terminals
@@ -209,7 +219,7 @@ The terminal can now be configured with the following _moonfly_ colors:
 | Type           | Category         | Value    | Color                                                       |
 | -------------- | ---------------- | -------- | ----------------------------------------------------------- |
 | Background     | Background       | `080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Foreground     | Forground        | `b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
+| Foreground     | Foreground       | `b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
 | Bold           | Bold             | `eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
 | Cursor         | Cursor           | `9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+) |
 | Cursor Text    | Cursor Text      | `080808` | ![background](https://placehold.it/32/080808/000000?text=+) |

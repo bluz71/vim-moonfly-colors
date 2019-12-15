@@ -30,6 +30,7 @@ else
     let g:moonflyTerminalColors  = get(g:, "moonflyTerminalColors", 1)
 endif
 let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
+let g:moonflyUndercurls          = get(g:, "moonflyUndercurls", 1)
 
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
@@ -182,10 +183,17 @@ exec "highlight PmenuThumb ctermbg=244 guibg=" . s:grey244
 exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
 
 " Spelling errors.
-exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg gui=undercurl guisp=" . s:red
-exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg gui=undercurl guisp=" . s:blue
-exec "highlight SpellRare ctermbg=bg ctermfg=15 cterm=underline guibg=bg gui=undercurl guisp=" . s:violet
-exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg gui=undercurl guisp=" . s:light_blue
+if g:moonflyUndercurls
+    exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg gui=undercurl guisp=" . s:red
+    exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg gui=undercurl guisp=" . s:blue
+    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg gui=undercurl guisp=" . s:khaki
+    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg gui=undercurl guisp=" . s:light_blue
+else
+    exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=underline"
+    exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=underline"
+    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg guifg=" . s:khaki . " gui=underline"
+    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=underline"
+endif
 
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
@@ -582,25 +590,38 @@ exec "highlight NERDTreeGitStatusStaged ctermfg=12 guifg=" . s:light_blue
 exec "highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=" . s:red
 
 " Neomake plugin
-exec "highlight NeomakeError ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:red
+if g:moonflyUndercurls
+    exec "highlight NeomakeError ctermfg=1 gui=undercurl guisp=" . s:red
+    exec "highlight NeomakeWarning ctermfg=3 gui=undercurl guisp=" . s:khaki
+    exec "highlight NeomakeInfo ctermfg=12 gui=undercurl guisp=" . s:light_blue
+    exec "highlight NeomakeMessage ctermfg=251 gui=undercurl guisp=" . s:white
+else
+    exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
+    exec "highlight NeomakeWarning ctermfg=3 guifg=" . s:khaki
+    exec "highlight NeomakeInfo ctermfg=12 guifg=" . s:light_blue
+    exec "highlight NeomakeMessage ctermfg=251 guifg=" . s:white
+endif
 exec "highlight NeomakeErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight NeomakeWarning ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:wheat
-exec "highlight NeomakeWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
-exec "highlight NeomakeInfo ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:green
-exec "highlight NeomakeInfoSign ctermbg=bg guibg=bg ctermfg=2 guifg=" . s:green
-exec "highlight NeomakeMessage ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:purple
-exec "highlight NeomakeMessageSign ctermbg=bg guibg=bg ctermfg=13 guifg=" . s:purple
+exec "highlight NeomakeWarningSign ctermbg=bg guibg=bg ctermfg=3 guifg=" . s:khaki
+exec "highlight NeomakeInfoSign ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
+exec "highlight NeomakeMessageSign ctermbg=bg guibg=bg ctermfg=251 guifg=" . s:white
 
 " ALE plugin
-exec "highlight ALEError ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:red
+if g:moonflyUndercurls
+    exec "highlight ALEError ctermfg=1 gui=undercurl guisp=" . s:red
+    exec "highlight ALEWarning ctermfg=3 gui=undercurl guisp=" . s:khaki
+    exec "highlight ALEInfo ctermfg=12 gui=undercurl guisp=" . s:light_blue
+else
+    exec "highlight ALEError ctermfg=1 guifg=" . s:red
+    exec "highlight ALEWarning ctermfg=3 guifg=" . s:khaki
+    exec "highlight ALEInfo ctermfg=12 guifg=" . s:light_blue
+endif
 exec "highlight ALEVirtualTextError ctermbg=235 guibg=" . s:grey235 . " ctermfg=1 guifg=" . s:red
 exec "highlight ALEErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight ALEWarning ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:wheat
-exec "highlight ALEVirtualTextWarning ctermbg=235 guibg=" . s:grey235 . " ctermfg=11 guifg=" . s:wheat
-exec "highlight ALEWarningSign ctermbg=bg guibg=bg ctermfg=11 guifg=" . s:wheat
-exec "highlight ALEInfo ctermfg=251 guifg=" . s:white . " gui=undercurl guisp=" . s:green
-exec "highlight ALEVirtualTextInfo ctermbg=235 guibg=" . s:grey235 . " ctermfg=2 guifg=" . s:green
-exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=2 guifg=" . s:green
+exec "highlight ALEVirtualTextWarning ctermbg=235 guibg=" . s:grey235 . " ctermfg=3 guifg=" . s:khaki
+exec "highlight ALEWarningSign ctermbg=bg guibg=bg ctermfg=3 guifg=" . s:khaki
+exec "highlight ALEVirtualTextInfo ctermbg=235 guibg=" . s:grey235 . " ctermfg=12 guifg=" . s:light_blue
+exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
 
 " GitGutter plugin
 exec "highlight GitGutterAdd ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_green
