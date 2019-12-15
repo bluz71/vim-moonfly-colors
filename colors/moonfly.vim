@@ -191,10 +191,10 @@ if g:moonflyUndercurls
     exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg gui=undercurl guisp=" . s:khaki
     exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg gui=undercurl guisp=" . s:light_blue
 else
-    exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=underline"
-    exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=underline"
-    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg guifg=" . s:khaki . " gui=underline"
-    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=underline"
+    exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=underline guisp=" . s:red
+    exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=underline guisp=" . s:blue
+    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg guifg=" . s:khaki . " gui=underline guisp=" . s:khaki
+    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=underline guisp=" . s:light_blue
 endif
 
 " Misc.
