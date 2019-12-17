@@ -82,8 +82,8 @@ Plugins explicity styled
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 
-Statusline
-----------
+Status line
+-----------
 
 The _moonfly_ color scheme supports
 [lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
@@ -105,7 +105,7 @@ let g:airline_theme = 'moonfly'
 
 Alternatively, a companion status line,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
-available for those that just want a simple _moonfly_ themed statusline.
+available for those that just want a simple _moonfly_ themed status line.
 
 Installation
 ------------
