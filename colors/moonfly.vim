@@ -648,7 +648,7 @@ let g:fzf_colors = {
   \  'info':    ['fg', 'String'],
   \  'border':  ['fg', 'Quickfixline'],
   \  'prompt':  ['fg', 'fzf2'],
-  \  'pointer': ['fg', 'MatchParen'],
+  \  'pointer': ['fg', 'Exception'],
   \  'marker':  ['fg', 'StorageClass'],
   \  'spinner': ['fg', 'Type'],
   \  'header':  ['fg', 'CursorLineNr']
