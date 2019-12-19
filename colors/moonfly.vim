@@ -673,4 +673,4 @@ exec "highlight diffLine ctermfg=12 guifg=" . s:light_blue
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
 exec "highlight diffSubname ctermfg=12 guifg=" . s:light_blue
 exec "highlight MatchWord ctermfg=8 guifg=" . s:coral
-exec "highlight MatchWordCur cterm=bold"
+exec "highlight MatchWordCur ctermbg=bg guibg=bg"
