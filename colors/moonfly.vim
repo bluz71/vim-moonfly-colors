@@ -216,9 +216,9 @@ exec "highlight SignColumn ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_gree
 exec "highlight Todo ctermbg=3 guibg=" . s:khaki . " ctermfg=bg guifg=bg"
 exec "highlight SpecialKey ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
 if g:moonflyUnderlineMatchParen
-    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson . " cterm=underline gui=underline"
+    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral . " cterm=underline gui=underline"
 else
-    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=9 guifg=" . s:crimson
+    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
 endif
 exec "highlight Ignore ctermfg=12 guifg=" . s:light_blue
 exec "highlight Underlined ctermfg=10 guifg=" . s:emerald . " cterm=none gui=none"
@@ -672,3 +672,5 @@ exec "highlight diffIndexLine ctermfg=9 guifg=" . s:crimson
 exec "highlight diffLine ctermfg=12 guifg=" . s:light_blue
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
 exec "highlight diffSubname ctermfg=12 guifg=" . s:light_blue
+exec "highlight MatchWord ctermfg=8 guifg=" . s:coral
+exec "highlight MatchWordCur cterm=bold"
