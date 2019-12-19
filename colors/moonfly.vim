@@ -551,8 +551,9 @@ exec "highlight gitCommitUntrackedFile ctermfg=15 guifg=" . s:violet
 " Vimscript
 exec "highlight vimBracket ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimCommand ctermfg=7 guifg=" . s:orange
+exec "highlight vimCommentTitle ctermfg=5 guifg=" . s:magenta
 exec "highlight vimEnvvar ctermfg=9 guifg=" . s:crimson
-exec "highlight vimFuncName ctermfg=4 guifg=" . s:blue
+exec "highlight vimFuncName ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimFuncSID ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimFunction ctermfg=12 guifg=" . s:light_blue
 exec "highlight vimNotation ctermfg=12 guifg=" . s:light_blue
