@@ -155,16 +155,17 @@ let g:moonflyUnderlineMatchParen = 1
 ```
 
 The `g:moonflyUndercurls` option specifies whether to use undercurls for
-spelling and linting errors in GUI versions of Vim, this includes terminal Vim
-with `termguicolors` set. By default this option is **enabled**. If you do not
-like the appearance of undercurls then add the following to your _vimrc_:
+spelling and linting errors in GUI versions of Vim, including terminal Vim with
+`termguicolors` set. By default this option is **enabled**. If you do not like
+the appearance of undercurls then add the following to your _vimrc_:
 
 ```viml
 let g:moonflyUndercurls = 0
 ```
 
 The `g:moonflyItalics` option specifies whether to use italics for comments and
-certain html elements. By default this option is **enabled**. If you do not like
+certain html elements in GUI versions of Vim, including terminal Vim with
+`termguicolors` set. By default this option is **enabled**. If you do not like
 the appearance of italics then add the following to your _vimrc_:
 
 ```viml
@@ -198,13 +199,11 @@ Vim, as against Neovim, inside _tmux_, will also require the following setting
 be added to _vimrc:_
 
 ```viml
-set t_8b=^[[48;2;%lu;%lu;%lum
-set t_8f=^[[38;2;%lu;%lu;%lum
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 ```
 
-Note: `^[` in the above snippet is a real escape character; to insert it,
-enter `Ctrl-v` followed by `Esc`. Repeating, the above `t_8*` settings are
-**not** required for Neovim.
+Repeating, the above `t_8*` settings are **not** required for Neovim.
 
 If consistency between Vim colors and `$SHELL` colors is important then I
 recommend proceeding with the 256-color configurations listed in the next

@@ -16,9 +16,10 @@ let g:colors_name="moonfly"
 " * By default use the moonfly color palette in the `:terminal`, but not if TUI
 "     Neovim can pass through terminal palette colors.
 " * By default do not underline matching parentheses.
-" * By default do use undercurls in GUI versions of Vim, that includes terminal
-"     Vim with termguicolors set.
-" * By default do use italics.
+" * By default do use undercurls in GUI versions of Vim, including terminal Vim
+"     with termguicolors set.
+" * By default do use italics in GUI versions of Vim, including terminal Vim
+"     with termguicolors set.
 let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
 if has("nvim-0.5.0") && &termguicolors && nvim_list_uis()[0]['ext_termcolors']
     " Neovim 0.5.0 or later in a TUI with termguicolors set allows pass through
@@ -104,7 +105,7 @@ exec "highlight ModeMsg ctermfg=247 guifg=" . s:grey247 . " gui=none"
 
 " Comments.
 if g:moonflyItalics
-    exec "highlight Comment ctermfg=246 cterm=italic guifg=" . s:grey246 . " gui=italic"
+    exec "highlight Comment ctermfg=246 guifg=" . s:grey246 . " gui=italic"
 else
     exec "highlight Comment ctermfg=246 guifg=" . s:grey246
 endif
@@ -525,10 +526,10 @@ exec "highlight htmlTag ctermfg=14 guifg=" . s:light_green
 exec "highlight htmlTagN ctermfg=4 guifg=" . s:blue
 exec "highlight htmlTagName ctermfg=4 guifg=" . s:blue
 if g:moonflyItalics
-    exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=italic guibg=" . s:black . " guifg=" . s:coral " gui=italic"
-    exec "highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 cterm=italic guibg=" . s:black . " guifg=" . s:coral . " gui=italic"
-    exec "highlight htmlItalic ctermfg=247 cterm=italic guifg=" . s:grey247 " gui=italic"
-    exec "highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 cterm=italic guibg=" . s:black . " guifg=" . s:grey247 . " gui=italic"
+    exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 guibg=" . s:black . " guifg=" . s:coral " gui=italic"
+    exec "highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=" . s:black . " guifg=" . s:coral . " gui=italic"
+    exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " gui=italic"
+    exec "highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=" . s:black . " guifg=" . s:grey247 . " gui=italic"
 else
     exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=none guibg=" . s:black . " guifg=" . s:coral " gui=none"
     exec "highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=" . s:black . " guifg=" . s:coral
