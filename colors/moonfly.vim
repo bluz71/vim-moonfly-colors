@@ -18,6 +18,7 @@ let g:colors_name="moonfly"
 " * By default do not underline matching parentheses.
 " * By default do use undercurls in GUI versions of Vim, that includes terminal
 "     Vim with termguicolors set.
+" * By default do use italics.
 let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
 if has("nvim-0.5.0") && &termguicolors && nvim_list_uis()[0]['ext_termcolors']
     " Neovim 0.5.0 or later in a TUI with termguicolors set allows pass through
@@ -96,7 +97,7 @@ if g:moonflyTerminalColors
 endif
 
 " Background and text.
-exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . s:white
+exec "highlight Normal ctermbg=232 ctermfg=251 guibg=" . s:black . " guifg=" . s:white
 
 " Color of mode text, -- INSERT --
 exec "highlight ModeMsg ctermfg=247 guifg=" . s:grey247 . " gui=none"
@@ -118,7 +119,7 @@ exec "highlight String ctermfg=11 guifg=" . s:wheat
 exec "highlight Boolean ctermfg=6 guifg=" . s:turquoise
 
 " Identifiers.
-exec "highlight Identifier ctermfg=6 guifg=" . s:turquoise . " cterm=none"
+exec "highlight Identifier ctermfg=6 cterm=none guifg=" . s:turquoise
 
 " Color of titles, e.g in HTML files and Tagbar.
 exec "highlight Title ctermfg=7 guifg=" . s:orange . " gui=none"
@@ -139,14 +140,14 @@ exec "highlight Exception ctermfg=9 guifg=" . s:crimson
 exec "highlight PreProc ctermfg=15 guifg=" . s:violet
 
 " Status, split and tab lines.
-exec "highlight StatusLine ctermbg=236 guibg=" . s:grey236 . " ctermfg=251 guifg=" . s:white . " cterm=none gui=none"
-exec "highlight StatusLineNC ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
-exec "highlight VertSplit ctermbg=236 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:grey236
-exec "highlight Tabline ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
-exec "highlight TablineSel ctermbg=236 guibg=" . s:grey236 . " ctermfg=4 guifg=" . s:blue . " cterm=none gui=none"
-exec "highlight TablineFill ctermbg=236 guibg=" . s:grey236 . " ctermfg=236 guifg=" . s:grey236
-exec "highlight StatusLineTerm ctermbg=236 guibg=" . s:grey236 . " ctermfg=251 guifg=" . s:white . " cterm=none gui=none"
-exec "highlight StatusLineTermNC ctermbg=236 guibg=" . s:grey236 . " ctermfg=247 guifg=" . s:grey247 . " cterm=none gui=none"
+exec "highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=" . s:grey236 . " guifg=" . s:white . " gui=none"
+exec "highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey247 . " gui=none"
+exec "highlight VertSplit ctermbg=236 ctermfg=236 guibg=" . s:grey236 . " guifg=" . s:grey236
+exec "highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey247 . " gui=none"
+exec "highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=" . s:grey236 . " guifg=" . s:blue . " gui=none"
+exec "highlight TablineFill ctermbg=236 ctermfg=236 guibg=" . s:grey236 . " guifg=" . s:grey236
+exec "highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=" . s:grey236 . " guifg=" . s:white . " gui=none"
+exec "highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey247 . " gui=none"
 
 " case in switch statement.
 exec "highlight Label ctermfg=6 guifg=" . s:turquoise
@@ -161,8 +162,8 @@ exec "highlight Operator ctermfg=15 guifg=" . s:violet
 exec "highlight Repeat ctermfg=7 guifg=" . s:orange
 
 " Search.
-exec "highlight Search cterm=reverse gui=reverse ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
-exec "highlight IncSearch ctermbg=bg guibg=bg ctermfg=3 guifg=" . s:khaki
+exec "highlight Search ctermbg=bg ctermfg=8 cterm=reverse guibg=bg guifg=" . s:coral . " gui=reverse"
+exec "highlight IncSearch ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:khaki
 
 " '\n' sequences.
 exec "highlight Special ctermfg=15 guifg=" . s:violet
@@ -172,23 +173,23 @@ exec "highlight Statement ctermfg=5 guifg=" . s:magenta . " gui=none"
 
 " Visual selection.
 exec "highlight Visual ctermbg=0 guibg=" . s:grey0
-exec "highlight VisualNOS ctermbg=0 guibg=" . s:grey0 . " ctermfg=fg guifg=fg cterm=none gui=none"
-exec "highlight VisualInDiff ctermbg=0 guibg=" . s:grey0 . " ctermfg=251 guifg=" . s:white
+exec "highlight VisualNOS ctermbg=0 ctermfg=fg cterm=none guibg=" . s:grey0 . " guifg=fg gui=none"
+exec "highlight VisualInDiff ctermbg=0 ctermfg=251 guibg=" . s:grey0 . " guifg=" . s:white
 
 " Errors, warnings and whitespace-eol.
-exec "highlight Error ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight ErrorMsg ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight WarningMsg ctermbg=bg guibg=bg ctermfg=7 guifg=" . s:orange
+exec "highlight Error ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
+exec "highlight ErrorMsg ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
+exec "highlight WarningMsg ctermbg=bg ctermfg=7 guibg=bg guifg=" . s:orange
 
 " struct, union, enum, typedef.
 exec "highlight Structure ctermfg=4 guifg=" . s:blue
 
 " Auto-text-completion menu.
-exec "highlight Pmenu ctermbg=235 guibg=" . s:grey235 . " ctermfg=fg guifg=fg"
-exec "highlight PmenuSel ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
+exec "highlight Pmenu ctermbg=235 ctermfg=fg guibg=" . s:grey235 . " guifg=fg"
+exec "highlight PmenuSel ctermbg=2 ctermfg=236 guibg=" . s:green . " guifg=" . s:grey236
 exec "highlight PmenuSbar ctermbg=235 guibg=" . s:grey235
 exec "highlight PmenuThumb ctermbg=244 guibg=" . s:grey244
-exec "highlight WildMenu ctermbg=2 guibg=" . s:green . " ctermfg=236 guifg=" . s:grey236
+exec "highlight WildMenu ctermbg=2 ctermfg=236 guibg=" . s:green . " guifg=" . s:grey236
 
 " Spelling errors.
 if g:moonflyUndercurls
@@ -206,40 +207,40 @@ endif
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
-exec "highlight LineNr ctermbg=bg guibg=bg ctermfg=241 guifg=" . s:grey241
+exec "highlight LineNr ctermbg=bg ctermfg=241 guibg=bg guifg=" . s:grey241
 if g:moonflyCursorColor
     exec "highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=" . s:blue
 else
     exec "highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 endif
 exec "highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
-exec "highlight CursorLineNr ctermbg=234 guibg=" . s:grey234 . " ctermfg=4 guifg=" . s:blue . " cterm=none gui=none"
-exec "highlight CursorColumn ctermbg=234 guibg=" . s:grey234 . " cterm=none"
-exec "highlight CursorLine ctermbg=234 guibg=" . s:grey234 . " cterm=none"
-exec "highlight Folded ctermbg=234 guibg=" . s:grey234 . " ctermfg=14 guifg=". s:light_green
-exec "highlight FoldColumn ctermbg=236 guibg=" . s:grey236 . " ctermfg=14 guifg=" . s:light_green
-exec "highlight SignColumn ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_green
-exec "highlight Todo ctermbg=3 guibg=" . s:khaki . " ctermfg=bg guifg=bg"
-exec "highlight SpecialKey ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
+exec "highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=" . s:grey234 . " guifg=" . s:blue . " gui=none"
+exec "highlight CursorColumn ctermbg=234 cterm=none guibg=" . s:grey234
+exec "highlight CursorLine ctermbg=234 cterm=none guibg=" . s:grey234
+exec "highlight Folded ctermbg=234 ctermfg=14 guibg=" . s:grey234 . " guifg=". s:light_green
+exec "highlight FoldColumn ctermbg=236 ctermfg=14 guibg=" . s:grey236 . " guifg=" . s:light_green
+exec "highlight SignColumn ctermbg=bg ctermfg=14 guibg=bg guifg=" . s:light_green
+exec "highlight Todo ctermbg=3 ctermfg=bg guibg=" . s:khaki . " guifg=bg"
+exec "highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:light_blue
 if g:moonflyUnderlineMatchParen
-    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral . " cterm=underline gui=underline"
+    exec "highlight MatchParen ctermbg=bg ctermfg=8 cterm=underline guibg=bg guifg=" . s:coral . " gui=underline"
 else
-    exec "highlight MatchParen ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
+    exec "highlight MatchParen ctermbg=bg ctermfg=8 guibg=bg guifg=" . s:coral
 endif
 exec "highlight Ignore ctermfg=12 guifg=" . s:light_blue
-exec "highlight Underlined ctermfg=10 guifg=" . s:emerald . " cterm=none gui=none"
-exec "highlight QuickFixLine ctermbg=237 guibg=" . s:grey237 . " cterm=none"
+exec "highlight Underlined ctermfg=10 cterm=none guifg=" . s:emerald . " gui=none"
+exec "highlight QuickFixLine ctermbg=237 cterm=none guibg=" . s:grey237
 exec "highlight Delimiter ctermfg=11 guifg=" . s:wheat
 
 " Neovim only highlight groups.
 exec "highlight Whitespace ctermfg=235 guifg=" . s:grey235
-exec "highlight TermCursor ctermbg=247 guibg=" . s:grey247 . "  ctermfg=bg guifg=bg cterm=none gui=none"
+exec "highlight TermCursor ctermbg=247 ctermfg=bg cterm=none guibg=" . s:grey247 . " guifg=bg gui=none"
 
 " Color column (after line 80).
 exec "highlight ColorColumn ctermbg=233 guibg=" . s:grey233
 
 " Conceal color, as used by indentLine plugin.
-exec "highlight Conceal ctermbg=bg guibg=bg ctermfg=235 guifg=" . s:grey235
+exec "highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=" . s:grey235
 
 " C/C++
 "
@@ -524,15 +525,15 @@ exec "highlight htmlTag ctermfg=14 guifg=" . s:light_green
 exec "highlight htmlTagN ctermfg=4 guifg=" . s:blue
 exec "highlight htmlTagName ctermfg=4 guifg=" . s:blue
 if g:moonflyItalics
-    exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . " ctermfg=8 guifg=" . s:coral " cterm=italic gui=italic"
-    exec "highlight htmlBoldUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral . " cterm=italic gui=italic"
-    exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " cterm=italic gui=italic"
-    exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247 . " cterm=italic gui=italic"
+    exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=italic guibg=" . s:black . " guifg=" . s:coral " gui=italic"
+    exec "highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 cterm=italic guibg=" . s:black . " guifg=" . s:coral . " gui=italic"
+    exec "highlight htmlItalic ctermfg=247 cterm=italic guifg=" . s:grey247 " gui=italic"
+    exec "highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 cterm=italic guibg=" . s:black . " guifg=" . s:grey247 . " gui=italic"
 else
-    exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"
-    exec "highlight htmlBoldUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral
-    exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " cterm=none gui=none"
-    exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247
+    exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=none guibg=" . s:black . " guifg=" . s:coral " gui=none"
+    exec "highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=" . s:black . " guifg=" . s:coral
+    exec "highlight htmlItalic ctermfg=247 cterm=none guifg=" . s:grey247 " gui=none"
+    exec "highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=" . s:black . " guifg=" . s:grey247
 endif
 
 " XML
@@ -547,10 +548,10 @@ exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
 exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
 
 " vimdiff/nvim -d
-exec "highlight DiffAdd ctermbg=10 guibg=" . s:emerald . " ctermfg=bg guifg=bg"
+exec "highlight DiffAdd ctermbg=10 ctermfg=bg guibg=" . s:emerald . " guifg=bg"
 exec "highlight DiffChange ctermbg=236 guibg=" . s:grey236
-exec "highlight DiffDelete ctermbg=236 guibg=" . s:grey236 . " ctermfg=9 guifg=" . s:crimson " gui=none"
-exec "highlight DiffText ctermbg=4 guibg=" . s:blue . " ctermfg=bg guifg=bg gui=none"
+exec "highlight DiffDelete ctermbg=236 ctermfg=9 guibg=" . s:grey236 . " guifg=" . s:crimson " gui=none"
+exec "highlight DiffText ctermbg=4 ctermfg=bg guibg=" . s:blue . " guifg=bg gui=none"
 
 " Git commits
 exec "highlight gitCommitBranch ctermfg=12 guifg=" . s:light_blue
@@ -617,10 +618,10 @@ else
     exec "highlight NeomakeInfo ctermfg=12 guifg=" . s:light_blue
     exec "highlight NeomakeMessage ctermfg=251 guifg=" . s:white
 endif
-exec "highlight NeomakeErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight NeomakeWarningSign ctermbg=bg guibg=bg ctermfg=3 guifg=" . s:khaki
-exec "highlight NeomakeInfoSign ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
-exec "highlight NeomakeMessageSign ctermbg=bg guibg=bg ctermfg=251 guifg=" . s:white
+exec "highlight NeomakeErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
+exec "highlight NeomakeWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:khaki
+exec "highlight NeomakeInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:light_blue
+exec "highlight NeomakeMessageSign ctermbg=bg ctermfg=251 guibg=bg guifg=" . s:white
 
 " ALE plugin
 if g:moonflyUndercurls
@@ -632,23 +633,23 @@ else
     exec "highlight ALEWarning ctermfg=3 guifg=" . s:khaki
     exec "highlight ALEInfo ctermfg=12 guifg=" . s:light_blue
 endif
-exec "highlight ALEVirtualTextError ctermbg=235 guibg=" . s:grey235 . " ctermfg=1 guifg=" . s:red
-exec "highlight ALEErrorSign ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
-exec "highlight ALEVirtualTextWarning ctermbg=235 guibg=" . s:grey235 . " ctermfg=3 guifg=" . s:khaki
-exec "highlight ALEWarningSign ctermbg=bg guibg=bg ctermfg=3 guifg=" . s:khaki
-exec "highlight ALEVirtualTextInfo ctermbg=235 guibg=" . s:grey235 . " ctermfg=12 guifg=" . s:light_blue
-exec "highlight ALEInfoSign ctermbg=bg guibg=bg ctermfg=12 guifg=" . s:light_blue
+exec "highlight ALEVirtualTextError ctermbg=235 ctermfg=1 guibg=" . s:grey235 . " guifg=" . s:red
+exec "highlight ALEErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
+exec "highlight ALEVirtualTextWarning ctermbg=235 ctermfg=3 guibg=" . s:grey235 . " guifg=" . s:khaki
+exec "highlight ALEWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:khaki
+exec "highlight ALEVirtualTextInfo ctermbg=235 ctermfg=12 guibg=" . s:grey235 . " guifg=" . s:light_blue
+exec "highlight ALEInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:light_blue
 
 " GitGutter plugin
-exec "highlight GitGutterAdd ctermbg=bg guibg=bg ctermfg=14 guifg=" . s:light_green
-exec "highlight GitGutterChange ctermbg=bg guibg=bg ctermfg=13 guifg=" . s:purple
-exec "highlight GitGutterChangeDelete ctermbg=bg guibg=bg ctermfg=8 guifg=" . s:coral
-exec "highlight GitGutterDelete ctermbg=bg guibg=bg ctermfg=1 guifg=" . s:red
+exec "highlight GitGutterAdd ctermbg=bg ctermfg=14 guibg=bg guifg=" . s:light_green
+exec "highlight GitGutterChange ctermbg=bg ctermfg=13 guibg=bg guifg=" . s:purple
+exec "highlight GitGutterChangeDelete ctermbg=bg ctermfg=8 guibg=bg guifg=" . s:coral
+exec "highlight GitGutterDelete ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
 
 " FZF plugin
-exec "highlight fzf1 ctermfg=9 guifg=" . s:crimson . " ctermbg=236 guibg=" . s:grey236
-exec "highlight fzf2 ctermfg=111 guifg=" . s:blue111 . " ctermbg=236 guibg=" . s:grey236
-exec "highlight fzf3 ctermfg=10 guifg=" . s:emerald . " ctermbg=236 guibg=" . s:grey236
+exec "highlight fzf1 ctermfg=9 ctermbg=236 guifg=" . s:crimson . " guibg=" . s:grey236
+exec "highlight fzf2 ctermfg=111 ctermbg=236 guifg=" . s:blue111 . " guibg=" . s:grey236
+exec "highlight fzf3 ctermfg=10 ctermbg=236 guifg=" . s:emerald . " guibg=" . s:grey236
 exec "highlight fzfNormal ctermfg=249 guifg=" . s:grey249
 exec "highlight fzfFgPlus ctermfg=253 guifg=" . s:grey253
 let g:fzf_colors = {
@@ -677,7 +678,7 @@ exec "highlight HighlightedyankRegion ctermbg=0 guibg=" . s:grey0
 exec "highlight jsonKeyword ctermfg=12 guifg=" . s:light_blue
 exec "highlight netrwClassify ctermfg=15 guifg=" . s:violet
 exec "highlight netrwDir ctermfg=12 guifg=" . s:light_blue
-exec "highlight snipLeadingSpaces ctermbg=bg guibg=bg ctermfg=fg guifg=fg"
+exec "highlight snipLeadingSpaces ctermbg=bg ctermfg=fg guibg=bg guifg=fg"
 exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
 exec "highlight diffAdded ctermfg=2 guifg=" . s:green
 exec "highlight diffChanged ctermfg=9 guifg=" . s:crimson
