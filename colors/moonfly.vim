@@ -33,6 +33,7 @@ else
 endif
 let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
 let g:moonflyUndercurls          = get(g:, "moonflyUndercurls", 1)
+let g:moonflyItalics             = get(g:, "moonflyItalics", 1)
 
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
@@ -40,6 +41,7 @@ let s:grey0       = "#373c40" " grey0       = 0
 let s:grey253     = "#dadada" " grey253     = 253
 let s:grey249     = "#b2b2b2" " grey249     = 249
 let s:grey247     = "#9e9e9e" " grey247     = 247
+let s:grey246     = "#949494" " grey246     = 246
 let s:grey244     = "#808080" " grey244     = 244
 let s:grey241     = "#626262" " grey241     = 241
 let s:grey237     = "#3a3a3a" " grey237     = 237
@@ -100,7 +102,11 @@ exec "highlight Normal ctermbg=232 guibg=" . s:black . "  ctermfg=251 guifg=" . 
 exec "highlight ModeMsg ctermfg=247 guifg=" . s:grey247 . " gui=none"
 
 " Comments.
-exec "highlight Comment ctermfg=247 guifg=" . s:grey247
+if g:moonflyItalics
+    exec "highlight Comment ctermfg=246 cterm=italic guifg=" . s:grey246 . " gui=italic"
+else
+    exec "highlight Comment ctermfg=246 guifg=" . s:grey246
+endif
 
 " Functions.
 exec "highlight Function ctermfg=12 guifg=" . s:light_blue
@@ -512,15 +518,22 @@ exec "highlight dartUserType ctermfg=4 guifg=" . s:blue
 
 " HTML
 exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
-exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"
-exec "highlight htmlBoldUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral
-exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " cterm=none gui=none"
 exec "highlight htmlLink ctermfg=2 guifg=" . s:green
 exec "highlight htmlEndTag ctermfg=13 guifg=" . s:purple
 exec "highlight htmlTag ctermfg=14 guifg=" . s:light_green
 exec "highlight htmlTagN ctermfg=4 guifg=" . s:blue
 exec "highlight htmlTagName ctermfg=4 guifg=" . s:blue
-exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247
+if g:moonflyItalics
+    exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . " ctermfg=8 guifg=" . s:coral " cterm=italic gui=italic"
+    exec "highlight htmlBoldUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral . " cterm=italic gui=italic"
+    exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " cterm=italic gui=italic"
+    exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247 . " cterm=italic gui=italic"
+else
+    exec "highlight htmlBoldItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral " cterm=none gui=none"
+    exec "highlight htmlBoldUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=8 guifg=" . s:coral
+    exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " cterm=none gui=none"
+    exec "highlight htmlUnderlineItalic ctermbg=232 guibg=" . s:black . "  ctermfg=247 guifg=" . s:grey247
+endif
 
 " XML
 exec "highlight xmlAttrib ctermfg=14 guifg=" . s:light_green

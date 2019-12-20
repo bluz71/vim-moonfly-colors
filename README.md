@@ -156,11 +156,19 @@ let g:moonflyUnderlineMatchParen = 1
 
 The `g:moonflyUndercurls` option specifies whether to use undercurls for
 spelling and linting errors in GUI versions of Vim, this includes terminal Vim
-with `termguicolors` set. By default this options is **enabled**. If you do not
+with `termguicolors` set. By default this option is **enabled**. If you do not
 like the appearance of undercurls then add the following to your _vimrc_:
 
 ```viml
 let g:moonflyUndercurls = 0
+```
+
+The `g:moonflyItalics` option specifies whether to use italics for comments and
+certain html elements. By default this option is **enabled**. If you do not like
+the appearance of italics then add the following to your _vimrc_:
+
+```viml
+let g:moonflyItalics = 0
 ```
 
 True Color Terminals
