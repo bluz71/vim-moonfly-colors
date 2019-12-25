@@ -1,4 +1,5 @@
 ![moonfly](https://i.imgur.com/9ToICdx.png)
+==========
 
 _moonfly_ is a dark color scheme for Vim and Neovim that has taken inspiration
 from:
@@ -15,7 +16,7 @@ palette will not change; **except** the time I changed crimson (July 1 2017),
 sorry.
 
 Primary Colors
-==============
+--------------
 
 | Normal     | Color                                                       | Bright      | Color                                                        |
 | ---------- | ----------------------------------------------------------- | ----------- | ------------------------------------------------------------ |
