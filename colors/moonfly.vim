@@ -609,15 +609,15 @@ exec "highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=" . s:red
 
 " Neomake plugin
 if g:moonflyUndercurls
-    exec "highlight NeomakeError ctermfg=1 gui=undercurl guisp=" . s:red
-    exec "highlight NeomakeWarning ctermfg=3 gui=undercurl guisp=" . s:khaki
-    exec "highlight NeomakeInfo ctermfg=12 gui=undercurl guisp=" . s:light_blue
-    exec "highlight NeomakeMessage ctermfg=251 gui=undercurl guisp=" . s:white
+    exec "highlight NeomakeError ctermbg=bg guibg=bg gui=undercurl guisp=" . s:red
+    exec "highlight NeomakeWarning ctermbg=bg guibg=bg gui=undercurl guisp=" . s:khaki
+    exec "highlight NeomakeInfo ctermbg=bg guibg=bg gui=undercurl guisp=" . s:light_blue
+    exec "highlight NeomakeMessage ctermbg=bg guibg=bg gui=undercurl guisp=" . s:white
 else
-    exec "highlight NeomakeError ctermfg=1 guifg=" . s:red
-    exec "highlight NeomakeWarning ctermfg=3 guifg=" . s:khaki
-    exec "highlight NeomakeInfo ctermfg=12 guifg=" . s:light_blue
-    exec "highlight NeomakeMessage ctermfg=251 guifg=" . s:white
+    exec "highlight NeomakeError ctermbg=bg guibg=bg"
+    exec "highlight NeomakeWarning ctermbg=bg guibg=bg"
+    exec "highlight NeomakeInfo ctermbg=bg guibg=bg"
+    exec "highlight NeomakeMessage ctermbg=bg guibg=bg"
 endif
 exec "highlight NeomakeErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
 exec "highlight NeomakeWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:khaki
@@ -626,13 +626,13 @@ exec "highlight NeomakeMessageSign ctermbg=bg ctermfg=251 guibg=bg guifg=" . s:w
 
 " ALE plugin
 if g:moonflyUndercurls
-    exec "highlight ALEError ctermfg=1 gui=undercurl guisp=" . s:red
-    exec "highlight ALEWarning ctermfg=3 gui=undercurl guisp=" . s:khaki
-    exec "highlight ALEInfo ctermfg=12 gui=undercurl guisp=" . s:light_blue
+     exec "highlight ALEError ctermbg=bg guibg=bg gui=undercurl guisp=" . s:red
+     exec "highlight ALEWarning ctermbg=bg guibg=bg gui=undercurl guisp=" . s:khaki
+     exec "highlight ALEInfo ctermbg=bg guibg=bg gui=undercurl guisp=" . s:light_blue
 else
-    exec "highlight ALEError ctermfg=1 guifg=" . s:red
-    exec "highlight ALEWarning ctermfg=3 guifg=" . s:khaki
-    exec "highlight ALEInfo ctermfg=12 guifg=" . s:light_blue
+    exec "highlight ALEError ctermbg=bg guibg=bg"
+    exec "highlight ALEWarning ctermbg=bg guibg=bg"
+    exec "highlight ALEInfo ctermbg=bg guibg=bg"
 endif
 exec "highlight ALEVirtualTextError ctermbg=235 ctermfg=1 guibg=" . s:grey235 . " guifg=" . s:red
 exec "highlight ALEErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
