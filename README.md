@@ -1,4 +1,4 @@
-![moonfly](https://github.com/bluz71/misc-binaries/blob/master/headings/moonfly.png)
+![moonfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/moonfly.png)
 ==========
 
 _moonfly_ is a dark color scheme for Vim and Neovim that has taken inspiration
