@@ -663,7 +663,7 @@ let g:fzf_colors = {
   \  'bg+':     ['bg', 'CursorLine'],
   \  'hl+':     ['fg', 'Number'],
   \  'info':    ['fg', 'String'],
-  \  'border':  ['fg', 'QuickFixline'],
+  \  'border':  ['fg', 'QuickFixLine'],
   \  'prompt':  ['fg', 'fzf2'],
   \  'pointer': ['fg', 'Exception'],
   \  'marker':  ['fg', 'StorageClass'],
