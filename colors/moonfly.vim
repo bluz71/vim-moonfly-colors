@@ -37,7 +37,7 @@ endif
 let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
 let g:moonflyUndercurls          = get(g:, "moonflyUndercurls", 1)
 let g:moonflyItalics             = get(g:, "moonflyItalics", 1)
-let g:moonflyFloatingFZF         = get(g:, "moonflyFloatingFZF", 1)
+let g:moonflyFloatingFZF         = get(g:, "moonflyFloatingFZF", 0)
 
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
