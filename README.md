@@ -172,6 +172,16 @@ the appearance of italics then add the following to your _vimrc_:
 let g:moonflyItalics = 0
 ```
 
+The `g:moonflyFloatingFZF` option specifies whether to style the
+[fzf.vim](https://github.com/junegunn/fzf.vim) plugin for display in a floating
+window. By default this option is **disabled**, fzf will be styled for display
+in a split window in that case. If one configures fzf to display in a floating
+window then add the following to your _vimrc_:
+
+```viml
+let g:moonflyFloatingFZF = 1
+```
+
 True Color Terminals
 --------------------
 

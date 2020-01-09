@@ -20,6 +20,7 @@ let g:colors_name="moonfly"
 "     with termguicolors set.
 " * By default do use italics in GUI versions of Vim, including terminal Vim
 "     with termguicolors set.
+" * By default do not style fzf for display in floating window.
 let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
 if has("nvim-0.5.0") && &termguicolors && nvim_list_uis()[0]['ext_termcolors']
     " Neovim 0.5.0 or later in a TUI with termguicolors set allows pass through
@@ -36,6 +37,7 @@ endif
 let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
 let g:moonflyUndercurls          = get(g:, "moonflyUndercurls", 1)
 let g:moonflyItalics             = get(g:, "moonflyItalics", 1)
+let g:moonflyFloatingFZF         = get(g:, "moonflyFloatingFZF", 1)
 
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
@@ -668,6 +670,10 @@ let g:fzf_colors = {
   \  'spinner': ['fg', 'Type'],
   \  'header':  ['fg', 'CursorLineNr']
   \}
+if g:moonflyFloatingFZF
+    let g:fzf_colors['bg']  = ['bg', 'Pmenu']
+    let g:fzf_colors['bg+'] = ['bg', 'StatusLine']
+endif
 
 " Misc
 exec "highlight bufExplorerHelp ctermfg=247 guifg=" . s:grey247
