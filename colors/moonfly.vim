@@ -246,25 +246,19 @@ exec "highlight ColorColumn ctermbg=233 guibg=" . s:grey233
 exec "highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=" . s:grey235
 
 " C/C++
-"
-" goto, break, return, continue.
-exec "highlight cStatement ctermfg=6 guifg=" . s:turquoise
-" new, delete, this, using.
-exec "highlight cppStatement ctermfg=9 guifg=" . s:crimson
-" [static/const/dynamic]_cast.
-exec "highlight cppCast ctermfg=10 guifg=" . s:emerald
-" public, private.
+exec "highlight cDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight cPreCondit ctermfg=5 guifg=" . s:magenta
+exec "highlight cStatement ctermfg=5 guifg=" . s:magenta
+exec "highlight cStructure ctermfg=8 guifg=" . s:coral
 exec "highlight cppAccess ctermfg=14 guifg=" . s:light_green
-" operator.
-exec "highlight cppOperator ctermfg=2 guifg=" . s:green
-" inline, virtual, explicit, export, bool.
-exec "highlight cppType ctermfg=3 guifg=" . s:khaki
-" struct, union, enum, typedef.
-exec "highlight cStructure ctermfg=10 guifg=" . s:emerald
-" true or false.
 exec "highlight cppBoolean ctermfg=13 guifg=" . s:purple
-" throw, try, catch
+exec "highlight cppCast ctermfg=6 guifg=" . s:turquoise
+exec "highlight cppCustomClass ctermfg=4 guifg=" . s:blue
 exec "highlight cppExceptions ctermfg=14 guifg=" . s:light_green
+exec "highlight cppModifier ctermfg=5 guifg=" . s:magenta
+exec "highlight cppOperator ctermfg=2 guifg=" . s:green
+exec "highlight cppStatement ctermfg=6 guifg=" . s:turquoise
+exec "highlight cppStructure ctermfg=5 guifg=" . s:magenta
 
 " Shell scripts
 exec "highlight shStatement ctermfg=fg guifg=fg"
@@ -672,7 +666,7 @@ let g:fzf_colors = {
   \}
 if g:moonflyFloatingFZF
     let g:fzf_colors['bg']  = ['bg', 'Pmenu']
-    let g:fzf_colors['bg+'] = ['bg', 'StatusLine']
+    let g:fzf_colors['bg+'] = ['bg', 'QuickFixLine']
 endif
 
 " Misc
