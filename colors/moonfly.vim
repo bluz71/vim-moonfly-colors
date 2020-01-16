@@ -519,8 +519,8 @@ exec "highlight phpType ctermfg=4 guifg=" . s:blue
 
 " Dart
 exec "highlight dartMetadata ctermfg=14 guifg=" . s:light_green
-exec "highlight dartStorageClass ctermfg=8 guifg=" . s:coral
-exec "highlight dartTypedef ctermfg=7 guifg=" . s:orange
+exec "highlight dartStorageClass ctermfg=5 guifg=" . s:magenta
+exec "highlight dartTypedef ctermfg=5 guifg=" . s:magenta
 exec "highlight dartUserType ctermfg=4 guifg=" . s:blue
 
 " HTML
