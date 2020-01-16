@@ -434,6 +434,8 @@ exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
 exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
 
 " Rust
+exec "highlight rustAssert ctermfg=2 guifg=" . s:green
+exec "highlight rustAttribute guifg=fg"
 exec "highlight rustCharacterInvalid ctermfg=15 guifg=" . s:violet
 exec "highlight rustCharacterInvalidUnicode ctermfg=15 guifg=" . s:violet
 exec "highlight rustCommentBlockDoc ctermfg=247 guifg=" . s:grey247
@@ -441,22 +443,25 @@ exec "highlight rustCommentBlockDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentLineDoc ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentLineDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustConstant ctermfg=7 guifg=" . s:orange
+exec "highlight rustDerive ctermfg=2 guifg=" . s:green
 exec "highlight rustEscapeError ctermfg=15 guifg=" . s:violet
 exec "highlight rustFuncName ctermfg=4 guifg=" . s:blue
 exec "highlight rustIdentifier ctermfg=4 guifg=" . s:blue
 exec "highlight rustInvalidBareKeyword ctermfg=15 guifg=" . s:violet
-exec "highlight rustKeyword ctermfg=14 guifg=" . s:light_green
-exec "highlight rustLifetime ctermfg=2 guifg=" . s:green
-exec "highlight rustMacro ctermfg=4 guifg=" . s:blue
+exec "highlight rustKeyword ctermfg=5 guifg=" . s:magenta
+exec "highlight rustLifetime ctermfg=5 guifg=" . s:magenta
+exec "highlight rustMacro ctermfg=2 guifg=" . s:green
 exec "highlight rustMacroVariable ctermfg=5 guifg=" . s:magenta
 exec "highlight rustModPath ctermfg=12 guifg=" . s:light_blue
 exec "highlight rustObsoleteExternMod ctermfg=15 guifg=" . s:violet
 exec "highlight rustObsoleteStorage ctermfg=15 guifg=" . s:violet
 exec "highlight rustReservedKeyword ctermfg=15 guifg=" . s:violet
-exec "highlight rustSelf ctermfg=2 guifg=" . s:green
-exec "highlight rustStructure ctermfg=7 guifg=" . s:orange
+exec "highlight rustSelf ctermfg=6 guifg=" . s:turquoise
+exec "highlight rustSigil ctermfg=6 guifg=" . s:turquoise
+exec "highlight rustStorage ctermfg=5 guifg=" . s:magenta
+exec "highlight rustStructure ctermfg=5 guifg=" . s:magenta
 exec "highlight rustTrait ctermfg=10 guifg=" . s:emerald
-exec "highlight rustType ctermfg=8 guifg=" . s:coral
+exec "highlight rustType ctermfg=10 guifg=" . s:emerald
 
 " Java
 exec "highlight javaBraces ctermfg=251 guifg=" . s:white
@@ -468,6 +473,10 @@ exec "highlight javaMethodDecl ctermfg=3 guifg=" . s:khaki
 exec "highlight javaOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight javaScopeDecl ctermfg=4 guifg=" . s:blue
 exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
+
+" C#
+exec "highlight csModifier ctermfg=14 guifg=" . s:light_green
+exec "highlight csPrecondit ctermfg=5 guifg=" . s:magenta
 
 " Clojure
 exec "highlight clojureDefine ctermfg=5 guifg=" . s:magenta
