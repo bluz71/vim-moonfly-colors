@@ -415,7 +415,6 @@ exec "highlight purescriptModuleParams ctermfg=8 guifg=" . s:coral
 " Go
 exec "highlight goBuiltins ctermfg=9 guifg=" . s:crimson
 exec "highlight goConditional ctermfg=5 guifg=" . s:magenta
-exec "highlight goDeclaration ctermfg=14 guifg=" . s:light_green
 exec "highlight goDeclType ctermfg=2 guifg=" . s:green
 exec "highlight goDirective ctermfg=15 guifg=" . s:violet
 exec "highlight goFloats ctermfg=13 guifg=" . s:purple
@@ -428,7 +427,6 @@ exec "highlight goMethodCall ctermfg=12 guifg=" . s:light_blue
 exec "highlight goPackage ctermfg=15 guifg=" . s:violet
 exec "highlight goRepeat ctermfg=7 guifg=" . s:orange
 exec "highlight goSignedInts ctermfg=13 guifg=" . s:purple
-exec "highlight goStatement ctermfg=3 guifg=" . s:khaki
 exec "highlight goStruct ctermfg=8 guifg=" . s:coral
 exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
 exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
