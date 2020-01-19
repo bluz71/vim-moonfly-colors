@@ -24,11 +24,11 @@ Primary Colors
 | Grey       | ![grey](https://placehold.it/64/373c40/000000?text=+)       | Coral       | ![coral](https://placehold.it/64/f09479/000000?text=+)       |
 | Red        | ![red](https://placehold.it/64/ff5454/000000?text=+)        | Crimson     | ![crimson](https://placehold.it/64/f74782/000000?text=+)     |
 | Green      | ![green](https://placehold.it/64/8cc85f/000000?text=+)      | Emerald     | ![emerald](https://placehold.it/64/42cf89/000000?text=+)     |
-| Khaki      | ![khaki](https://placehold.it/64/e3c78a/000000?text=+)      | Wheat       | ![wheat](https://placehold.it/64/cfcfb0/000000?text=+)       |
-| Blue       | ![blue](https://placehold.it/64/80a0ff/000000?text=+)       | Light Blue  | ![light-blue](https://placehold.it/64/78c2ff/000000?text=+)  |
-| Magenta    | ![magenta](https://placehold.it/64/ce76e8/000000?text=+)    | Purple      | ![purple](https://placehold.it/64/ae81ff/000000?text=+)      |
-| Turquoise  | ![turquoise](https://placehold.it/64/7ee0ce/000000?text=+)  | Light Green | ![light-green](https://placehold.it/64/85dc85/000000?text=+) |
-| Orange     | ![orange](https://placehold.it/64/de935f/000000?text=+)     | Violet      | ![violet](https://placehold.it/64/e2637f/000000?text=+)      |
+| Yellow     | ![yellow](https://placehold.it/64/e3c78a/000000?text=+)     | Wheat       | ![wheat](https://placehold.it/64/cfcfb0/000000?text=+)       |
+| Blue       | ![blue](https://placehold.it/64/80a0ff/000000?text=+)       | Sky         | ![sky](https://placehold.it/64/78c2ff/000000?text=+)  |
+| Violet     | ![violet](https://placehold.it/64/ce76e8/000000?text=+)     | Purple      | ![purple](https://placehold.it/64/ae81ff/000000?text=+)      |
+| Turquoise  | ![turquoise](https://placehold.it/64/7ee0ce/000000?text=+)  | Lime        | ![lime](https://placehold.it/64/85dc85/000000?text=+) |
+| Orange     | ![orange](https://placehold.it/64/de935f/000000?text=+)     | Cranberry   | ![cranberry](https://placehold.it/64/e2637f/000000?text=+)      |
 
 Screenshots
 -----------

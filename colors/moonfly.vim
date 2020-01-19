@@ -39,8 +39,10 @@ let g:moonflyUndercurls          = get(g:, "moonflyUndercurls", 1)
 let g:moonflyItalics             = get(g:, "moonflyItalics", 1)
 let g:moonflyFloatingFZF         = get(g:, "moonflyFloatingFZF", 0)
 
+" Background and foreground.
 let s:black       = "#080808" " black       = 232
 let s:white       = "#c6c6c6" " white       = 251
+" Variations of charcoal-grey.
 let s:grey0       = "#373c40" " grey0       = 0
 let s:grey253     = "#dadada" " grey253     = 253
 let s:grey249     = "#b2b2b2" " grey249     = 249
@@ -53,20 +55,21 @@ let s:grey236     = "#303030" " grey236     = 236
 let s:grey235     = "#262626" " grey235     = 235
 let s:grey234     = "#1c1c1c" " grey234     = 234
 let s:grey233     = "#121212" " grey233     = 233
+" Core theme colors.
 let s:wheat       = "#cfcfb0" " wheat       = 11
-let s:khaki       = "#e3c78a" " khaki       = 3
+let s:yellow      = "#e3c78a" " yellow       = 3
 let s:orange      = "#de935f" " orange      = 7
 let s:coral       = "#f09479" " coral       = 8
-let s:light_green = "#85dc85" " light_green = 14
+let s:lime        = "#85dc85" " lime        = 14
 let s:green       = "#8cc85f" " green       = 2
 let s:emerald     = "#42cf89" " emerald     = 10
 let s:blue        = "#80a0ff" " blue        = 4
 let s:blue111     = "#87afff" " blue111     = 111
-let s:light_blue  = "#78c2ff" " light_blue  = 12
+let s:sky         = "#78c2ff" " sky         = 12
 let s:turquoise   = "#7ee0ce" " turquoise   = 6
 let s:purple      = "#ae81ff" " purple      = 13
-let s:violet      = "#e2637f" " violet      = 15
-let s:magenta     = "#ce76e8" " magenta     = 5
+let s:cranberry   = "#e2637f" " cranberry   = 15
+let s:violet      = "#ce76e8" " violet      = 5
 let s:crimson     = "#f74782" " crimson     = 9
 let s:red         = "#ff5454" " red         = 1
 
@@ -113,7 +116,7 @@ else
 endif
 
 " Functions.
-exec "highlight Function ctermfg=12 guifg=" . s:light_blue
+exec "highlight Function ctermfg=12 guifg=" . s:sky
 
 " Strings.
 exec "highlight String ctermfg=11 guifg=" . s:wheat
@@ -140,7 +143,7 @@ exec "highlight Constant ctermfg=13 guifg=" . s:purple
 exec "highlight Exception ctermfg=9 guifg=" . s:crimson
 
 " ifdef/endif.
-exec "highlight PreProc ctermfg=15 guifg=" . s:violet
+exec "highlight PreProc ctermfg=15 guifg=" . s:cranberry
 
 " Status, split and tab lines.
 exec "highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=" . s:grey236 . " guifg=" . s:white . " gui=none"
@@ -159,20 +162,20 @@ exec "highlight Label ctermfg=6 guifg=" . s:turquoise
 exec "highlight NonText ctermfg=7 guifg=" . s:orange . " gui=none"
 
 " sizeof
-exec "highlight Operator ctermfg=15 guifg=" . s:violet
+exec "highlight Operator ctermfg=15 guifg=" . s:cranberry
 
 " for, while.
 exec "highlight Repeat ctermfg=7 guifg=" . s:orange
 
 " Search.
 exec "highlight Search ctermbg=bg ctermfg=8 cterm=reverse guibg=bg guifg=" . s:coral . " gui=reverse"
-exec "highlight IncSearch ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:khaki
+exec "highlight IncSearch ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:yellow
 
 " '\n' sequences.
-exec "highlight Special ctermfg=15 guifg=" . s:violet
+exec "highlight Special ctermfg=15 guifg=" . s:cranberry
 
 " if, else.
-exec "highlight Statement ctermfg=5 guifg=" . s:magenta . " gui=none"
+exec "highlight Statement ctermfg=5 guifg=" . s:violet . " gui=none"
 
 " Visual selection.
 exec "highlight Visual ctermbg=0 guibg=" . s:grey0
@@ -198,17 +201,17 @@ exec "highlight WildMenu ctermbg=2 ctermfg=236 guibg=" . s:green . " guifg=" . s
 if g:moonflyUndercurls
     exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg gui=undercurl guisp=" . s:red
     exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg gui=undercurl guisp=" . s:blue
-    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg gui=undercurl guisp=" . s:khaki
-    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg gui=undercurl guisp=" . s:light_blue
+    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg gui=undercurl guisp=" . s:yellow
+    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg gui=undercurl guisp=" . s:sky
 else
     exec "highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=" . s:red . " gui=underline guisp=" . s:red
     exec "highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=" . s:blue . " gui=underline guisp=" . s:blue
-    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg guifg=" . s:khaki . " gui=underline guisp=" . s:khaki
-    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:light_blue . " gui=underline guisp=" . s:light_blue
+    exec "highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg guifg=" . s:yellow . " gui=underline guisp=" . s:yellow
+    exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:sky . " gui=underline guisp=" . s:sky
 endif
 
 " Misc.
-exec "highlight Question ctermfg=14 guifg=" . s:light_green . " gui=none"
+exec "highlight Question ctermfg=14 guifg=" . s:lime . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
 exec "highlight LineNr ctermbg=bg ctermfg=241 guibg=bg guifg=" . s:grey241
 if g:moonflyCursorColor
@@ -220,17 +223,17 @@ exec "highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=" . s:grey247
 exec "highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=" . s:grey234 . " guifg=" . s:blue . " gui=none"
 exec "highlight CursorColumn ctermbg=234 cterm=none guibg=" . s:grey234
 exec "highlight CursorLine ctermbg=234 cterm=none guibg=" . s:grey234
-exec "highlight Folded ctermbg=234 ctermfg=14 guibg=" . s:grey234 . " guifg=". s:light_green
-exec "highlight FoldColumn ctermbg=236 ctermfg=14 guibg=" . s:grey236 . " guifg=" . s:light_green
-exec "highlight SignColumn ctermbg=bg ctermfg=14 guibg=bg guifg=" . s:light_green
-exec "highlight Todo ctermbg=3 ctermfg=bg guibg=" . s:khaki . " guifg=bg"
-exec "highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:light_blue
+exec "highlight Folded ctermbg=234 ctermfg=14 guibg=" . s:grey234 . " guifg=". s:lime
+exec "highlight FoldColumn ctermbg=236 ctermfg=14 guibg=" . s:grey236 . " guifg=" . s:lime
+exec "highlight SignColumn ctermbg=bg ctermfg=14 guibg=bg guifg=" . s:lime
+exec "highlight Todo ctermbg=3 ctermfg=bg guibg=" . s:yellow . " guifg=bg"
+exec "highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:sky
 if g:moonflyUnderlineMatchParen
     exec "highlight MatchParen ctermbg=bg ctermfg=8 cterm=underline guibg=bg guifg=" . s:coral . " gui=underline"
 else
     exec "highlight MatchParen ctermbg=bg ctermfg=8 guibg=bg guifg=" . s:coral
 endif
-exec "highlight Ignore ctermfg=12 guifg=" . s:light_blue
+exec "highlight Ignore ctermfg=12 guifg=" . s:sky
 exec "highlight Underlined ctermfg=10 cterm=none guifg=" . s:emerald . " gui=none"
 exec "highlight QuickFixLine ctermbg=237 cterm=none guibg=" . s:grey237
 exec "highlight Delimiter ctermfg=11 guifg=" . s:wheat
@@ -246,24 +249,24 @@ exec "highlight ColorColumn ctermbg=233 guibg=" . s:grey233
 exec "highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=" . s:grey235
 
 " C/C++
-exec "highlight cDefine ctermfg=5 guifg=" . s:magenta
-exec "highlight cPreCondit ctermfg=5 guifg=" . s:magenta
-exec "highlight cStatement ctermfg=5 guifg=" . s:magenta
+exec "highlight cDefine ctermfg=5 guifg=" . s:violet
+exec "highlight cPreCondit ctermfg=5 guifg=" . s:violet
+exec "highlight cStatement ctermfg=5 guifg=" . s:violet
 exec "highlight cStructure ctermfg=8 guifg=" . s:coral
-exec "highlight cppAccess ctermfg=14 guifg=" . s:light_green
+exec "highlight cppAccess ctermfg=14 guifg=" . s:lime
 exec "highlight cppBoolean ctermfg=13 guifg=" . s:purple
 exec "highlight cppCast ctermfg=6 guifg=" . s:turquoise
 exec "highlight cppCustomClass ctermfg=4 guifg=" . s:blue
-exec "highlight cppExceptions ctermfg=14 guifg=" . s:light_green
-exec "highlight cppModifier ctermfg=5 guifg=" . s:magenta
+exec "highlight cppExceptions ctermfg=14 guifg=" . s:lime
+exec "highlight cppModifier ctermfg=5 guifg=" . s:violet
 exec "highlight cppOperator ctermfg=2 guifg=" . s:green
 exec "highlight cppStatement ctermfg=6 guifg=" . s:turquoise
-exec "highlight cppStructure ctermfg=5 guifg=" . s:magenta
+exec "highlight cppStructure ctermfg=5 guifg=" . s:violet
 
 " Shell scripts
 exec "highlight shStatement ctermfg=fg guifg=fg"
 exec "highlight shCommandSub ctermfg=fg guifg=fg"
-exec "highlight shSet ctermfg=14 guifg=" . s:light_green
+exec "highlight shSet ctermfg=14 guifg=" . s:lime
 exec "highlight shShellVariables ctermfg=8 guifg=" . s:coral
 exec "highlight shVariable ctermfg=6 guifg=" . s:turquoise
 exec "highlight shAlias ctermfg=6 guifg=" . s:turquoise
@@ -272,34 +275,34 @@ exec "highlight shSetList ctermfg=6 guifg=" . s:turquoise
 " Python
 exec "highlight pythonBuiltin ctermfg=4 guifg=" . s:blue
 exec "highlight pythonClassVar ctermfg=2 guifg=" . s:green
-exec "highlight pythonCoding ctermfg=12 guifg=" . s:light_blue
-exec "highlight pythonImport ctermfg=15 guifg=" . s:violet
-exec "highlight pythonOperator ctermfg=5 guifg=" . s:magenta
+exec "highlight pythonCoding ctermfg=12 guifg=" . s:sky
+exec "highlight pythonImport ctermfg=15 guifg=" . s:cranberry
+exec "highlight pythonOperator ctermfg=5 guifg=" . s:violet
 exec "highlight pythonRepeat ctermfg=7 guifg=" . s:orange
-exec "highlight pythonRun ctermfg=12 guifg=" . s:light_blue
-exec "highlight pythonStatement ctermfg=5 guifg=" s:magenta
+exec "highlight pythonRun ctermfg=12 guifg=" . s:sky
+exec "highlight pythonStatement ctermfg=5 guifg=" s:violet
 
 " Ruby
 exec "highlight erubyDelimiter ctermfg=9 guifg=" . s:crimson
 exec "highlight rspecGroupMethods ctermfg=4 guifg=" . s:blue
-exec "highlight rubyAccess ctermfg=3 guifg=" . s:khaki
-exec "highlight rubyAssertion ctermfg=12 guifg=" . s:light_blue
-exec "highlight rubyAttribute ctermfg=12 guifg=" . s:light_blue
+exec "highlight rubyAccess ctermfg=3 guifg=" . s:yellow
+exec "highlight rubyAssertion ctermfg=12 guifg=" . s:sky
+exec "highlight rubyAttribute ctermfg=12 guifg=" . s:sky
 exec "highlight rubyBlockParameter ctermfg=2 guifg=" . s:green
-exec "highlight rubyCallback ctermfg=12 guifg=" . s:light_blue
+exec "highlight rubyCallback ctermfg=12 guifg=" . s:sky
 exec "highlight rubyClass ctermfg=7 guifg=" . s:orange
 exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
-exec "highlight rubyDefine ctermfg=5 guifg=" . s:magenta
-exec "highlight rubyEntities ctermfg=12 guifg=" . s:light_blue
+exec "highlight rubyDefine ctermfg=5 guifg=" . s:violet
+exec "highlight rubyEntities ctermfg=12 guifg=" . s:sky
 exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
-exec "highlight rubyGemfileMethod ctermfg=12 guifg=" . s:light_blue
-exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:light_green
-exec "highlight rubyInterpolationDelimiter ctermfg=15 guifg=" . s:violet
-exec "highlight rubyMacro ctermfg=12 guifg=" . s:light_blue
+exec "highlight rubyGemfileMethod ctermfg=12 guifg=" . s:sky
+exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:lime
+exec "highlight rubyInterpolationDelimiter ctermfg=15 guifg=" . s:cranberry
+exec "highlight rubyMacro ctermfg=12 guifg=" . s:sky
 exec "highlight rubyModule ctermfg=4 guifg=" . s:blue
 exec "highlight rubyPseudoVariable ctermfg=2 guifg=" . s:green
 exec "highlight rubyResponse ctermfg=6 guifg=" . s:turquoise
-exec "highlight rubyRoute ctermfg=12 guifg=" . s:light_blue
+exec "highlight rubyRoute ctermfg=12 guifg=" . s:sky
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
 augroup MoonflyRubyAutocmds
@@ -310,14 +313,14 @@ augroup MoonflyRubyAutocmds
 augroup END
 
 " Crystal
-exec "highlight crystalAccess ctermfg=3 guifg=" . s:khaki
-exec "highlight crystalAttribute ctermfg=12 guifg=" . s:light_blue
+exec "highlight crystalAccess ctermfg=3 guifg=" . s:yellow
+exec "highlight crystalAttribute ctermfg=12 guifg=" . s:sky
 exec "highlight crystalBlockParameter ctermfg=2 guifg=" . s:green
 exec "highlight crystalClass ctermfg=7 guifg=" . s:orange
 exec "highlight crystalControl ctermfg=8 guifg=" . s:coral
-exec "highlight crystalDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight crystalDefine ctermfg=5 guifg=" . s:violet
 exec "highlight crystalExceptional ctermfg=8 guifg=" . s:coral
-exec "highlight crystalInstanceVariable ctermfg=14 guifg=" . s:light_green
+exec "highlight crystalInstanceVariable ctermfg=14 guifg=" . s:lime
 exec "highlight crystalModule ctermfg=4 guifg=" . s:blue
 exec "highlight crystalPseudoVariable ctermfg=2 guifg=" . s:green
 exec "highlight crystalSharpBang ctermfg=247 guifg=" . s:grey247
@@ -325,15 +328,15 @@ exec "highlight crystalStringDelimiter ctermfg=11 guifg=" . s:wheat
 
 " Elixir
 exec "highlight eelixirDelimiter ctermfg=9 guifg=" . s:crimson
-exec "highlight elixirBlockDefinition ctermfg=5 guifg=" . s:magenta
-exec "highlight elixirDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight elixirBlockDefinition ctermfg=5 guifg=" . s:violet
+exec "highlight elixirDefine ctermfg=5 guifg=" . s:violet
 exec "highlight elixirDocTest ctermfg=247 guifg=" . s:grey247
-exec "highlight elixirExUnitAssert ctermfg=14 guifg=" . s:light_green
-exec "highlight elixirExUnitMacro ctermfg=12 guifg=" . s:light_blue
+exec "highlight elixirExUnitAssert ctermfg=14 guifg=" . s:lime
+exec "highlight elixirExUnitMacro ctermfg=12 guifg=" . s:sky
 exec "highlight elixirKernelFunction ctermfg=2 guifg=" . s:green
 exec "highlight elixirKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight elixirModuleDefine ctermfg=4 guifg=" . s:blue
-exec "highlight elixirPrivateDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight elixirPrivateDefine ctermfg=5 guifg=" . s:violet
 exec "highlight elixirStringDelimiter ctermfg=11 guifg=" . s:wheat
 exec "highlight elixirVariable ctermfg=8 guifg=" . s:coral
 
@@ -342,71 +345,71 @@ exec "highlight jsClassDefinition ctermfg=10 guifg=" . s:emerald
 exec "highlight jsClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight jsFrom ctermfg=8 guifg=" . s:coral
 exec "highlight jsFuncBlock ctermfg=6 guifg=" . s:turquoise
-exec "highlight jsFuncCall ctermfg=12 guifg=" . s:light_blue
-exec "highlight jsFunction ctermfg=14 guifg=" . s:light_green
+exec "highlight jsFuncCall ctermfg=12 guifg=" . s:sky
+exec "highlight jsFunction ctermfg=14 guifg=" . s:lime
 exec "highlight jsGlobalObjects ctermfg=10 guifg=" . s:emerald
 exec "highlight jsModuleAs ctermfg=8 guifg=" . s:coral
-exec "highlight jsObjectKey ctermfg=12 guifg=" . s:light_blue
+exec "highlight jsObjectKey ctermfg=12 guifg=" . s:sky
 exec "highlight jsObjectValue ctermfg=10 guifg=" . s:emerald
-exec "highlight jsOperator ctermfg=5 guifg=" . s:magenta
-exec "highlight jsStorageClass ctermfg=14 guifg=" . s:light_green
-exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:violet
+exec "highlight jsOperator ctermfg=5 guifg=" . s:violet
+exec "highlight jsStorageClass ctermfg=14 guifg=" . s:lime
+exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:cranberry
 exec "highlight jsTemplateExpression ctermfg=6 guifg=" . s:turquoise
 exec "highlight jsThis ctermfg=2 guifg=" . s:green
 
 " JSX, 'MaxMEllon/vim-jsx-pretty' plugin
-exec "highlight jsxAttrib ctermfg=14 guifg=" . s:light_green
+exec "highlight jsxAttrib ctermfg=14 guifg=" . s:lime
 exec "highlight jsxClosePunct ctermfg=13 guifg=" . s:purple
 exec "highlight jsxComponentName ctermfg=4 guifg=" . s:blue
-exec "highlight jsxOpenPunct ctermfg=14 guifg=" . s:light_green
-exec "highlight jsxTagName ctermfg=12 guifg=" . s:light_blue
+exec "highlight jsxOpenPunct ctermfg=14 guifg=" . s:lime
+exec "highlight jsxTagName ctermfg=12 guifg=" . s:sky
 
 " CoffeeScript
 exec "highlight coffeeConstant ctermfg=10 guifg=" . s:emerald
 exec "highlight coffeeGlobal ctermfg=6 guifg=" . s:turquoise
 exec "highlight coffeeKeyword ctermfg=7 guifg=" . s:orange
-exec "highlight coffeeObjAssign ctermfg=12 guifg=" . s:light_blue
-exec "highlight coffeeSpecialIdent ctermfg=14 guifg=" . s:light_green
+exec "highlight coffeeObjAssign ctermfg=12 guifg=" . s:sky
+exec "highlight coffeeSpecialIdent ctermfg=14 guifg=" . s:lime
 exec "highlight coffeeSpecialVar ctermfg=4 guifg=" . s:blue
 exec "highlight coffeeStatement ctermfg=8 guifg=" . s:coral
 
 " TypeScript (leafgarland/typescript-vim)
 exec "highlight typescriptDOMObjects ctermfg=4 guifg=" . s:blue
 exec "highlight typescriptFuncComma ctermfg=251 guifg=" . s:white
-exec "highlight typescriptFuncKeyword ctermfg=14 guifg=" . s:light_green
+exec "highlight typescriptFuncKeyword ctermfg=14 guifg=" . s:lime
 exec "highlight typescriptGlobalObjects ctermfg=4 guifg=" . s:blue
 exec "highlight typescriptIdentifier ctermfg=2 guifg=" . s:green
 exec "highlight typescriptNull ctermfg=2 guifg=" . s:green
-exec "highlight typescriptOpSymbols ctermfg=5 guifg=" . s:magenta
+exec "highlight typescriptOpSymbols ctermfg=5 guifg=" . s:violet
 exec "highlight typescriptOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight typescriptParens ctermfg=251 guifg=" . s:white
-exec "highlight typescriptReserved ctermfg=5 guifg=" . s:magenta
-exec "highlight typescriptStorageClass ctermfg=14 guifg=" . s:light_green
+exec "highlight typescriptReserved ctermfg=5 guifg=" . s:violet
+exec "highlight typescriptStorageClass ctermfg=14 guifg=" . s:lime
 
 " TypeScript (HerringtonDarkholme/yats.vim)
 exec "highlight typeScriptModule ctermfg=4 guifg=" . s:blue
 exec "highlight typescriptAbstract ctermfg=8 guifg=" . s:coral
-exec "highlight typescriptArrayMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptArrayMethod ctermfg=12 guifg=" . s:sky
 exec "highlight typescriptArrowFuncArg ctermfg=251 guifg=" . s:white
-exec "highlight typescriptBOMLocationMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptBOMLocationMethod ctermfg=12 guifg=" . s:sky
 exec "highlight typescriptBOMWindowProp ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptBraces ctermfg=251 guifg=" . s:white
 exec "highlight typescriptCall ctermfg=251 guifg=" . s:white
 exec "highlight typescriptClassHeritage ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight typescriptClassName ctermfg=10 guifg=" . s:emerald
-exec "highlight typescriptDOMDocMethod ctermfg=12 guifg=" . s:light_blue
-exec "highlight typescriptDOMNodeMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptDOMDocMethod ctermfg=12 guifg=" . s:sky
+exec "highlight typescriptDOMNodeMethod ctermfg=12 guifg=" . s:sky
 exec "highlight typescriptExceptions ctermfg=9 guifg=" . s:crimson
 exec "highlight typescriptFuncType ctermfg=251 guifg=" . s:white
-exec "highlight typescriptMathStaticMethod ctermfg=12 guifg=" . s:light_blue
-exec "highlight typescriptMethodAccessor ctermfg=5 guifg=" . s:magenta
-exec "highlight typescriptObjectLabel ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptMathStaticMethod ctermfg=12 guifg=" . s:sky
+exec "highlight typescriptMethodAccessor ctermfg=5 guifg=" . s:violet
+exec "highlight typescriptObjectLabel ctermfg=12 guifg=" . s:sky
 exec "highlight typescriptParamImpl ctermfg=251 guifg=" . s:white
-exec "highlight typescriptStringMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptStringMethod ctermfg=12 guifg=" . s:sky
 exec "highlight typescriptTry ctermfg=9 guifg=" . s:crimson
-exec "highlight typescriptVariable ctermfg=14 guifg=" . s:light_green
-exec "highlight typescriptXHRMethod ctermfg=12 guifg=" . s:light_blue
+exec "highlight typescriptVariable ctermfg=14 guifg=" . s:lime
+exec "highlight typescriptXHRMethod ctermfg=12 guifg=" . s:sky
 
 " PureScript
 exec "highlight purescriptClass ctermfg=7 guifg=" . s:orange
@@ -414,17 +417,17 @@ exec "highlight purescriptModuleParams ctermfg=8 guifg=" . s:coral
 
 " Go
 exec "highlight goBuiltins ctermfg=9 guifg=" . s:crimson
-exec "highlight goConditional ctermfg=5 guifg=" . s:magenta
+exec "highlight goConditional ctermfg=5 guifg=" . s:violet
 exec "highlight goDeclType ctermfg=2 guifg=" . s:green
-exec "highlight goDirective ctermfg=15 guifg=" . s:violet
+exec "highlight goDirective ctermfg=15 guifg=" . s:cranberry
 exec "highlight goFloats ctermfg=13 guifg=" . s:purple
 exec "highlight goFunction ctermfg=4 guifg=" . s:blue
-exec "highlight goFunctionCall ctermfg=12 guifg=" . s:light_blue
-exec "highlight goImport ctermfg=15 guifg=" . s:violet
-exec "highlight goLabel ctermfg=3 guifg=" . s:khaki
-exec "highlight goMethod ctermfg=12 guifg=" . s:light_blue
-exec "highlight goMethodCall ctermfg=12 guifg=" . s:light_blue
-exec "highlight goPackage ctermfg=15 guifg=" . s:violet
+exec "highlight goFunctionCall ctermfg=12 guifg=" . s:sky
+exec "highlight goImport ctermfg=15 guifg=" . s:cranberry
+exec "highlight goLabel ctermfg=3 guifg=" . s:yellow
+exec "highlight goMethod ctermfg=12 guifg=" . s:sky
+exec "highlight goMethodCall ctermfg=12 guifg=" . s:sky
+exec "highlight goPackage ctermfg=15 guifg=" . s:cranberry
 exec "highlight goRepeat ctermfg=7 guifg=" . s:orange
 exec "highlight goSignedInts ctermfg=13 guifg=" . s:purple
 exec "highlight goStruct ctermfg=8 guifg=" . s:coral
@@ -434,30 +437,30 @@ exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
 " Rust
 exec "highlight rustAssert ctermfg=2 guifg=" . s:green
 exec "highlight rustAttribute guifg=fg"
-exec "highlight rustCharacterInvalid ctermfg=15 guifg=" . s:violet
-exec "highlight rustCharacterInvalidUnicode ctermfg=15 guifg=" . s:violet
+exec "highlight rustCharacterInvalid ctermfg=15 guifg=" . s:cranberry
+exec "highlight rustCharacterInvalidUnicode ctermfg=15 guifg=" . s:cranberry
 exec "highlight rustCommentBlockDoc ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentBlockDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentLineDoc ctermfg=247 guifg=" . s:grey247
 exec "highlight rustCommentLineDocError ctermfg=247 guifg=" . s:grey247
 exec "highlight rustConstant ctermfg=7 guifg=" . s:orange
 exec "highlight rustDerive ctermfg=2 guifg=" . s:green
-exec "highlight rustEscapeError ctermfg=15 guifg=" . s:violet
+exec "highlight rustEscapeError ctermfg=15 guifg=" . s:cranberry
 exec "highlight rustFuncName ctermfg=4 guifg=" . s:blue
 exec "highlight rustIdentifier ctermfg=4 guifg=" . s:blue
-exec "highlight rustInvalidBareKeyword ctermfg=15 guifg=" . s:violet
-exec "highlight rustKeyword ctermfg=5 guifg=" . s:magenta
-exec "highlight rustLifetime ctermfg=5 guifg=" . s:magenta
+exec "highlight rustInvalidBareKeyword ctermfg=15 guifg=" . s:cranberry
+exec "highlight rustKeyword ctermfg=5 guifg=" . s:violet
+exec "highlight rustLifetime ctermfg=5 guifg=" . s:violet
 exec "highlight rustMacro ctermfg=2 guifg=" . s:green
-exec "highlight rustMacroVariable ctermfg=5 guifg=" . s:magenta
-exec "highlight rustModPath ctermfg=12 guifg=" . s:light_blue
-exec "highlight rustObsoleteExternMod ctermfg=15 guifg=" . s:violet
-exec "highlight rustObsoleteStorage ctermfg=15 guifg=" . s:violet
-exec "highlight rustReservedKeyword ctermfg=15 guifg=" . s:violet
+exec "highlight rustMacroVariable ctermfg=5 guifg=" . s:violet
+exec "highlight rustModPath ctermfg=12 guifg=" . s:sky
+exec "highlight rustObsoleteExternMod ctermfg=15 guifg=" . s:cranberry
+exec "highlight rustObsoleteStorage ctermfg=15 guifg=" . s:cranberry
+exec "highlight rustReservedKeyword ctermfg=15 guifg=" . s:cranberry
 exec "highlight rustSelf ctermfg=6 guifg=" . s:turquoise
 exec "highlight rustSigil ctermfg=6 guifg=" . s:turquoise
-exec "highlight rustStorage ctermfg=5 guifg=" . s:magenta
-exec "highlight rustStructure ctermfg=5 guifg=" . s:magenta
+exec "highlight rustStorage ctermfg=5 guifg=" . s:violet
+exec "highlight rustStructure ctermfg=5 guifg=" . s:violet
 exec "highlight rustTrait ctermfg=10 guifg=" . s:emerald
 exec "highlight rustType ctermfg=10 guifg=" . s:emerald
 
@@ -465,50 +468,50 @@ exec "highlight rustType ctermfg=10 guifg=" . s:emerald
 exec "highlight javaBraces ctermfg=251 guifg=" . s:white
 exec "highlight javaClassDecl ctermfg=10 guifg=" . s:emerald
 exec "highlight javaCommentTitle ctermfg=247 guifg=" . s:grey247
-exec "highlight javaConstant ctermfg=12 guifg=" . s:light_blue
-exec "highlight javaDebug ctermfg=12 guifg=" . s:light_blue
-exec "highlight javaMethodDecl ctermfg=3 guifg=" . s:khaki
+exec "highlight javaConstant ctermfg=12 guifg=" . s:sky
+exec "highlight javaDebug ctermfg=12 guifg=" . s:sky
+exec "highlight javaMethodDecl ctermfg=3 guifg=" . s:yellow
 exec "highlight javaOperator ctermfg=9 guifg=" . s:crimson
 exec "highlight javaScopeDecl ctermfg=4 guifg=" . s:blue
 exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
 
 " C#
-exec "highlight csModifier ctermfg=14 guifg=" . s:light_green
-exec "highlight csPrecondit ctermfg=5 guifg=" . s:magenta
+exec "highlight csModifier ctermfg=14 guifg=" . s:lime
+exec "highlight csPrecondit ctermfg=5 guifg=" . s:violet
 
 " Clojure
-exec "highlight clojureDefine ctermfg=5 guifg=" . s:magenta
+exec "highlight clojureDefine ctermfg=5 guifg=" . s:violet
 exec "highlight clojureKeyword ctermfg=13 guifg=" . s:purple
 exec "highlight clojureMacro ctermfg=7 guifg=" . s:orange
 exec "highlight clojureParen ctermfg=4 guifg=" . s:blue
-exec "highlight clojureSpecial ctermfg=12 guifg=" . s:light_blue
+exec "highlight clojureSpecial ctermfg=12 guifg=" . s:sky
 
 " Scala
 exec "highlight scalaCapitalWord ctermfg=4 guifg=" . s:blue
 exec "highlight scalaCommentCodeBlock ctermfg=247 guifg=" . s:grey247
 exec "highlight scalaInstanceDeclaration ctermfg=7 guifg=" . s:orange
-exec "highlight scalaKeywordModifier ctermfg=14 guifg=" . s:light_green
+exec "highlight scalaKeywordModifier ctermfg=14 guifg=" . s:lime
 exec "highlight scalaSpecial ctermfg=6 guifg=" . s:turquoise
 
 " Haskell
 exec "highlight haskellDecl ctermfg=7 guifg=" . s:orange
 exec "highlight haskellDeclKeyword ctermfg=7 guifg=" . s:orange
-exec "highlight haskellIdentifier ctermfg=14 guifg=" . s:light_green
-exec "highlight haskellLet ctermfg=12 guifg=" . s:light_blue
-exec "highlight haskellOperators ctermfg=15 guifg=" . s:violet
-exec "highlight haskellType ctermfg=12 guifg=" . s:light_blue
-exec "highlight haskellWhere ctermfg=5 guifg=" . s:magenta
+exec "highlight haskellIdentifier ctermfg=14 guifg=" . s:lime
+exec "highlight haskellLet ctermfg=12 guifg=" . s:sky
+exec "highlight haskellOperators ctermfg=15 guifg=" . s:cranberry
+exec "highlight haskellType ctermfg=12 guifg=" . s:sky
+exec "highlight haskellWhere ctermfg=5 guifg=" . s:violet
 
 " Elm
-exec "highlight elmLetBlockDefinition ctermfg=14 guifg=" . s:light_green
+exec "highlight elmLetBlockDefinition ctermfg=14 guifg=" . s:lime
 exec "highlight elmTopLevelDecl ctermfg=8 guifg=" . s:coral
-exec "highlight elmType ctermfg=12 guifg=" . s:light_blue
+exec "highlight elmType ctermfg=12 guifg=" . s:sky
 
 " Lua
-exec "highlight luaBraces ctermfg=15 guifg=" . s:violet
+exec "highlight luaBraces ctermfg=15 guifg=" . s:cranberry
 exec "highlight luaBuiltin ctermfg=2 guifg=" . s:green
-exec "highlight luaFuncCall ctermfg=12 guifg=" . s:light_blue
-exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:light_blue
+exec "highlight luaFuncCall ctermfg=12 guifg=" . s:sky
+exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:sky
 
 " PHP
 exec "highlight phpClass ctermfg=7 guifg=" . s:orange
@@ -516,16 +519,16 @@ exec "highlight phpClasses ctermfg=10 guifg=" . s:emerald
 exec "highlight phpType ctermfg=4 guifg=" . s:blue
 
 " Dart
-exec "highlight dartMetadata ctermfg=14 guifg=" . s:light_green
-exec "highlight dartStorageClass ctermfg=5 guifg=" . s:magenta
-exec "highlight dartTypedef ctermfg=5 guifg=" . s:magenta
+exec "highlight dartMetadata ctermfg=14 guifg=" . s:lime
+exec "highlight dartStorageClass ctermfg=5 guifg=" . s:violet
+exec "highlight dartTypedef ctermfg=5 guifg=" . s:violet
 exec "highlight dartUserType ctermfg=4 guifg=" . s:blue
 
 " HTML
-exec "highlight htmlArg ctermfg=12 guifg=" . s:light_blue
+exec "highlight htmlArg ctermfg=12 guifg=" . s:sky
 exec "highlight htmlLink ctermfg=2 guifg=" . s:green
 exec "highlight htmlEndTag ctermfg=13 guifg=" . s:purple
-exec "highlight htmlTag ctermfg=14 guifg=" . s:light_green
+exec "highlight htmlTag ctermfg=14 guifg=" . s:lime
 exec "highlight htmlTagN ctermfg=4 guifg=" . s:blue
 exec "highlight htmlTagName ctermfg=4 guifg=" . s:blue
 if g:moonflyItalics
@@ -541,9 +544,9 @@ else
 endif
 
 " XML
-exec "highlight xmlAttrib ctermfg=14 guifg=" . s:light_green
+exec "highlight xmlAttrib ctermfg=14 guifg=" . s:lime
 exec "highlight xmlEndTag ctermfg=4 guifg=" . s:blue
-exec "highlight xmlTag ctermfg=14 guifg=" . s:light_green
+exec "highlight xmlTag ctermfg=14 guifg=" . s:lime
 exec "highlight xmlTagName ctermfg=4 guifg=" . s:blue
 
 " Markdown, 'plasticboy/vim-markdown' plugin
@@ -558,40 +561,40 @@ exec "highlight DiffDelete ctermbg=236 ctermfg=9 guibg=" . s:grey236 . " guifg="
 exec "highlight DiffText ctermbg=4 ctermfg=bg guibg=" . s:blue . " guifg=bg gui=none"
 
 " Git commits
-exec "highlight gitCommitBranch ctermfg=12 guifg=" . s:light_blue
+exec "highlight gitCommitBranch ctermfg=12 guifg=" . s:sky
 exec "highlight gitCommitDiscardedFile ctermfg=9 guifg=" . s:crimson
-exec "highlight gitCommitDiscardedType ctermfg=12 guifg=" . s:light_blue
+exec "highlight gitCommitDiscardedType ctermfg=12 guifg=" . s:sky
 exec "highlight gitCommitHeader ctermfg=13 guifg=" . s:purple
 exec "highlight gitCommitSelectedFile ctermfg=10 guifg=" . s:emerald
-exec "highlight gitCommitSelectedType ctermfg=12 guifg=" . s:light_blue
-exec "highlight gitCommitUntrackedFile ctermfg=15 guifg=" . s:violet
+exec "highlight gitCommitSelectedType ctermfg=12 guifg=" . s:sky
+exec "highlight gitCommitUntrackedFile ctermfg=15 guifg=" . s:cranberry
 
 " Vimscript
-exec "highlight vimBracket ctermfg=12 guifg=" . s:light_blue
+exec "highlight vimBracket ctermfg=12 guifg=" . s:sky
 exec "highlight vimCommand ctermfg=7 guifg=" . s:orange
-exec "highlight vimCommentTitle ctermfg=5 guifg=" . s:magenta
+exec "highlight vimCommentTitle ctermfg=5 guifg=" . s:violet
 exec "highlight vimEnvvar ctermfg=9 guifg=" . s:crimson
-exec "highlight vimFuncName ctermfg=12 guifg=" . s:light_blue
-exec "highlight vimFuncSID ctermfg=12 guifg=" . s:light_blue
-exec "highlight vimFunction ctermfg=12 guifg=" . s:light_blue
-exec "highlight vimNotation ctermfg=12 guifg=" . s:light_blue
+exec "highlight vimFuncName ctermfg=12 guifg=" . s:sky
+exec "highlight vimFuncSID ctermfg=12 guifg=" . s:sky
+exec "highlight vimFunction ctermfg=12 guifg=" . s:sky
+exec "highlight vimNotation ctermfg=12 guifg=" . s:sky
 exec "highlight vimOption ctermfg=10 guifg=" . s:emerald
 exec "highlight vimParenSep ctermfg=251 guifg=" . s:white
 exec "highlight vimSep ctermfg=251 guifg=" . s:white
-exec "highlight vimUserFunc ctermfg=12 guifg=" . s:light_blue
+exec "highlight vimUserFunc ctermfg=12 guifg=" . s:sky
 
 " Tagbar plugin
 exec "highlight TagbarFoldIcon ctermfg=247 guifg=" . s:grey247
-exec "highlight TagbarVisibilityPublic ctermfg=14 guifg=" . s:light_green
-exec "highlight TagbarVisibilityProtected ctermfg=14 guifg=" . s:light_green
-exec "highlight TagbarVisibilityPrivate ctermfg=14 guifg=" . s:light_green
+exec "highlight TagbarVisibilityPublic ctermfg=14 guifg=" . s:lime
+exec "highlight TagbarVisibilityProtected ctermfg=14 guifg=" . s:lime
+exec "highlight TagbarVisibilityPrivate ctermfg=14 guifg=" . s:lime
 exec "highlight TagbarKind ctermfg=10 guifg=" . s:emerald
 
 " NERDTree plugin
 exec "highlight NERDTreeClosable ctermfg=2 guifg=" . s:green
 exec "highlight NERDTreeCWD ctermfg=13 guifg=" . s:purple
-exec "highlight NERDTreeDir ctermfg=12 guifg=" . s:light_blue
-exec "highlight NERDTreeDirSlash ctermfg=15 guifg=" . s:violet
+exec "highlight NERDTreeDir ctermfg=12 guifg=" . s:sky
+exec "highlight NERDTreeDirSlash ctermfg=15 guifg=" . s:cranberry
 exec "highlight NERDTreeExecFile ctermfg=11 guifg=" . s:wheat
 exec "highlight NERDTreeFile ctermfg=251 guifg=" . s:white
 exec "highlight NERDTreeHelp ctermfg=247 guifg=" . s:grey247
@@ -606,15 +609,15 @@ exec "highlight NERDTreeUp ctermfg=4 guifg=" . s:blue
 " NERDTree Git plugin
 exec "highlight NERDTreeGitStatusDirDirty ctermfg=11 guifg=" . s:wheat
 exec "highlight NERDTreeGitStatusModified ctermfg=9 guifg=" . s:crimson
-exec "highlight NERDTreeGitStatusRenamed ctermfg=12 guifg=" . s:light_blue
-exec "highlight NERDTreeGitStatusStaged ctermfg=12 guifg=" . s:light_blue
+exec "highlight NERDTreeGitStatusRenamed ctermfg=12 guifg=" . s:sky
+exec "highlight NERDTreeGitStatusStaged ctermfg=12 guifg=" . s:sky
 exec "highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=" . s:red
 
 " Neomake plugin
 if g:moonflyUndercurls
     exec "highlight NeomakeError ctermbg=bg guibg=bg gui=undercurl guisp=" . s:red
-    exec "highlight NeomakeWarning ctermbg=bg guibg=bg gui=undercurl guisp=" . s:khaki
-    exec "highlight NeomakeInfo ctermbg=bg guibg=bg gui=undercurl guisp=" . s:light_blue
+    exec "highlight NeomakeWarning ctermbg=bg guibg=bg gui=undercurl guisp=" . s:yellow
+    exec "highlight NeomakeInfo ctermbg=bg guibg=bg gui=undercurl guisp=" . s:sky
     exec "highlight NeomakeMessage ctermbg=bg guibg=bg gui=undercurl guisp=" . s:white
 else
     exec "highlight NeomakeError ctermbg=bg guibg=bg"
@@ -623,15 +626,15 @@ else
     exec "highlight NeomakeMessage ctermbg=bg guibg=bg"
 endif
 exec "highlight NeomakeErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
-exec "highlight NeomakeWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:khaki
-exec "highlight NeomakeInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:light_blue
+exec "highlight NeomakeWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:yellow
+exec "highlight NeomakeInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:sky
 exec "highlight NeomakeMessageSign ctermbg=bg ctermfg=251 guibg=bg guifg=" . s:white
 
 " ALE plugin
 if g:moonflyUndercurls
      exec "highlight ALEError ctermbg=bg guibg=bg gui=undercurl guisp=" . s:red
-     exec "highlight ALEWarning ctermbg=bg guibg=bg gui=undercurl guisp=" . s:khaki
-     exec "highlight ALEInfo ctermbg=bg guibg=bg gui=undercurl guisp=" . s:light_blue
+     exec "highlight ALEWarning ctermbg=bg guibg=bg gui=undercurl guisp=" . s:yellow
+     exec "highlight ALEInfo ctermbg=bg guibg=bg gui=undercurl guisp=" . s:sky
 else
     exec "highlight ALEError ctermbg=bg guibg=bg"
     exec "highlight ALEWarning ctermbg=bg guibg=bg"
@@ -639,13 +642,13 @@ else
 endif
 exec "highlight ALEVirtualTextError ctermbg=235 ctermfg=1 guibg=" . s:grey235 . " guifg=" . s:red
 exec "highlight ALEErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
-exec "highlight ALEVirtualTextWarning ctermbg=235 ctermfg=3 guibg=" . s:grey235 . " guifg=" . s:khaki
-exec "highlight ALEWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:khaki
-exec "highlight ALEVirtualTextInfo ctermbg=235 ctermfg=12 guibg=" . s:grey235 . " guifg=" . s:light_blue
-exec "highlight ALEInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:light_blue
+exec "highlight ALEVirtualTextWarning ctermbg=235 ctermfg=3 guibg=" . s:grey235 . " guifg=" . s:yellow
+exec "highlight ALEWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:yellow
+exec "highlight ALEVirtualTextInfo ctermbg=235 ctermfg=12 guibg=" . s:grey235 . " guifg=" . s:sky
+exec "highlight ALEInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:sky
 
 " GitGutter plugin
-exec "highlight GitGutterAdd ctermbg=bg ctermfg=14 guibg=bg guifg=" . s:light_green
+exec "highlight GitGutterAdd ctermbg=bg ctermfg=14 guibg=bg guifg=" . s:lime
 exec "highlight GitGutterChange ctermbg=bg ctermfg=13 guibg=bg guifg=" . s:purple
 exec "highlight GitGutterChangeDelete ctermbg=bg ctermfg=8 guibg=bg guifg=" . s:coral
 exec "highlight GitGutterDelete ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
@@ -683,16 +686,16 @@ exec "highlight CleverFDefaultLabel ctermfg=9 guifg=" . s:crimson
 exec "highlight CtrlPMatch ctermfg=13 guifg=" . s:purple
 exec "highlight Directory ctermfg=10 guifg=" . s:emerald
 exec "highlight HighlightedyankRegion ctermbg=0 guibg=" . s:grey0
-exec "highlight jsonKeyword ctermfg=12 guifg=" . s:light_blue
-exec "highlight netrwClassify ctermfg=15 guifg=" . s:violet
-exec "highlight netrwDir ctermfg=12 guifg=" . s:light_blue
+exec "highlight jsonKeyword ctermfg=12 guifg=" . s:sky
+exec "highlight netrwClassify ctermfg=15 guifg=" . s:cranberry
+exec "highlight netrwDir ctermfg=12 guifg=" . s:sky
 exec "highlight snipLeadingSpaces ctermbg=bg ctermfg=fg guibg=bg guifg=fg"
 exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
 exec "highlight diffAdded ctermfg=2 guifg=" . s:green
 exec "highlight diffChanged ctermfg=9 guifg=" . s:crimson
 exec "highlight diffIndexLine ctermfg=9 guifg=" . s:crimson
-exec "highlight diffLine ctermfg=12 guifg=" . s:light_blue
+exec "highlight diffLine ctermfg=12 guifg=" . s:sky
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
-exec "highlight diffSubname ctermfg=12 guifg=" . s:light_blue
+exec "highlight diffSubname ctermfg=12 guifg=" . s:sky
 exec "highlight MatchWord ctermfg=8 guifg=" . s:coral
 exec "highlight MatchWordCur ctermbg=bg guibg=bg"
