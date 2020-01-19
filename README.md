@@ -182,6 +182,28 @@ window then add the following to your _vimrc_:
 let g:moonflyFloatingFZF = 1
 ```
 
+Here is an example user configuration that displays fzf in a Neovim floating
+window:
+
+```viml
+if has('nvim')
+    function! FloatingFZF()
+        let width = float2nr(&columns * 0.85)
+        let height = float2nr(&lines * 0.70)
+        let opts = { 'relative': 'editor',
+                    \ 'row': (&lines - height) / 2,
+                    \ 'col': (&columns - width) / 2,
+                    \ 'width': width,
+                    \ 'height': height,
+                    \ 'style': 'minimal'}
+
+        let win = nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
+    endfunction
+
+    let g:fzf_layout = { 'window': 'call FloatingFZF()' }
+endif
+```
+
 True Color Terminals
 --------------------
 
