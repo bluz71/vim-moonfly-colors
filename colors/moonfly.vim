@@ -261,12 +261,11 @@ exec "highlight cppExceptions ctermfg=14 guifg=" . s:lime
 exec "highlight cppModifier ctermfg=5 guifg=" . s:violet
 exec "highlight cppOperator ctermfg=2 guifg=" . s:green
 exec "highlight cppStatement ctermfg=6 guifg=" . s:turquoise
-exec "highlight cppStructure ctermfg=5 guifg=" . s:violet
+exec "highlight cppStructure ctermfg=8 guifg=" . s:coral
 
 " Shell scripts
 exec "highlight shStatement ctermfg=fg guifg=fg"
 exec "highlight shCommandSub ctermfg=fg guifg=fg"
-exec "highlight shSet ctermfg=14 guifg=" . s:lime
 exec "highlight shShellVariables ctermfg=8 guifg=" . s:coral
 exec "highlight shVariable ctermfg=6 guifg=" . s:turquoise
 exec "highlight shAlias ctermfg=6 guifg=" . s:turquoise
@@ -317,7 +316,6 @@ exec "highlight crystalAccess ctermfg=3 guifg=" . s:yellow
 exec "highlight crystalAttribute ctermfg=12 guifg=" . s:sky
 exec "highlight crystalBlockParameter ctermfg=2 guifg=" . s:green
 exec "highlight crystalClass ctermfg=7 guifg=" . s:orange
-exec "highlight crystalControl ctermfg=8 guifg=" . s:coral
 exec "highlight crystalDefine ctermfg=5 guifg=" . s:violet
 exec "highlight crystalExceptional ctermfg=8 guifg=" . s:coral
 exec "highlight crystalInstanceVariable ctermfg=14 guifg=" . s:lime
