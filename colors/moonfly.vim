@@ -57,7 +57,7 @@ let s:grey234     = "#1c1c1c" " grey234     = 234
 let s:grey233     = "#121212" " grey233     = 233
 " Core theme colors.
 let s:wheat       = "#cfcfb0" " wheat       = 11
-let s:yellow      = "#e3c78a" " yellow       = 3
+let s:yellow      = "#e3c78a" " yellow      = 3
 let s:orange      = "#de935f" " orange      = 7
 let s:coral       = "#f09479" " coral       = 8
 let s:lime        = "#85dc85" " lime        = 14
@@ -70,6 +70,7 @@ let s:turquoise   = "#7ee0ce" " turquoise   = 6
 let s:purple      = "#ae81ff" " purple      = 13
 let s:cranberry   = "#e2637f" " cranberry   = 15
 let s:violet      = "#ce76e8" " violet      = 5
+"let s:violet      = "#c387ec" " violet      = 5
 let s:crimson     = "#f74782" " crimson     = 9
 let s:red         = "#ff5454" " red         = 1
 
@@ -254,14 +255,14 @@ exec "highlight cPreCondit ctermfg=5 guifg=" . s:violet
 exec "highlight cStatement ctermfg=5 guifg=" . s:violet
 exec "highlight cStructure ctermfg=8 guifg=" . s:coral
 exec "highlight cppAccess ctermfg=14 guifg=" . s:lime
-exec "highlight cppBoolean ctermfg=13 guifg=" . s:purple
+exec "highlight cppBoolean ctermfg=4 guifg=" . s:blue
 exec "highlight cppCast ctermfg=6 guifg=" . s:turquoise
 exec "highlight cppCustomClass ctermfg=4 guifg=" . s:blue
 exec "highlight cppExceptions ctermfg=14 guifg=" . s:lime
 exec "highlight cppModifier ctermfg=5 guifg=" . s:violet
 exec "highlight cppOperator ctermfg=2 guifg=" . s:green
 exec "highlight cppStatement ctermfg=6 guifg=" . s:turquoise
-exec "highlight cppStructure ctermfg=8 guifg=" . s:coral
+exec "highlight cppStructure ctermfg=5 guifg=" . s:violet
 
 " Shell scripts
 exec "highlight shStatement ctermfg=fg guifg=fg"
@@ -336,7 +337,7 @@ exec "highlight elixirKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight elixirModuleDefine ctermfg=4 guifg=" . s:blue
 exec "highlight elixirPrivateDefine ctermfg=5 guifg=" . s:violet
 exec "highlight elixirStringDelimiter ctermfg=11 guifg=" . s:wheat
-exec "highlight elixirVariable ctermfg=8 guifg=" . s:coral
+exec "highlight elixirVariable ctermfg=6 guifg=" . s:turquoise
 
 " JavaScript, 'pangloss/vim-javascript' plugin
 exec "highlight jsClassDefinition ctermfg=10 guifg=" . s:emerald
@@ -354,6 +355,9 @@ exec "highlight jsStorageClass ctermfg=14 guifg=" . s:lime
 exec "highlight jsTemplateBraces ctermfg=15 guifg=" . s:cranberry
 exec "highlight jsTemplateExpression ctermfg=6 guifg=" . s:turquoise
 exec "highlight jsThis ctermfg=2 guifg=" . s:green
+
+" CSS
+exec "highlight cssIdentifier ctermfg=3 guifg=" . s:yellow
 
 " JSX, 'MaxMEllon/vim-jsx-pretty' plugin
 exec "highlight jsxAttrib ctermfg=14 guifg=" . s:lime
@@ -425,9 +429,9 @@ exec "highlight goImport ctermfg=15 guifg=" . s:cranberry
 exec "highlight goLabel ctermfg=3 guifg=" . s:yellow
 exec "highlight goMethod ctermfg=12 guifg=" . s:sky
 exec "highlight goMethodCall ctermfg=12 guifg=" . s:sky
-exec "highlight goPackage ctermfg=15 guifg=" . s:cranberry
+exec "highlight goPackage ctermfg=5 guifg=" . s:violet
 exec "highlight goRepeat ctermfg=7 guifg=" . s:orange
-exec "highlight goSignedInts ctermfg=13 guifg=" . s:purple
+exec "highlight goSignedInts ctermfg=10 guifg=" . s:emerald
 exec "highlight goStruct ctermfg=8 guifg=" . s:coral
 exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
 exec "highlight goUnsignedInts ctermfg=13 guifg=" . s:purple
@@ -476,6 +480,9 @@ exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
 " C#
 exec "highlight csModifier ctermfg=14 guifg=" . s:lime
 exec "highlight csPrecondit ctermfg=5 guifg=" . s:violet
+exec "highlight csRepeat ctermfg=5 guifg=" . s:violet
+exec "highlight csStorage ctermfg=5 guifg=" . s:violet
+exec "highlight csXmlTag ctermfg=4 guifg=" . s:blue
 
 " Clojure
 exec "highlight clojureDefine ctermfg=5 guifg=" . s:violet
@@ -494,7 +501,7 @@ exec "highlight scalaSpecial ctermfg=6 guifg=" . s:turquoise
 " Haskell
 exec "highlight haskellDecl ctermfg=7 guifg=" . s:orange
 exec "highlight haskellDeclKeyword ctermfg=7 guifg=" . s:orange
-exec "highlight haskellIdentifier ctermfg=14 guifg=" . s:lime
+exec "highlight haskellIdentifier ctermfg=6 guifg=" . s:turquoise
 exec "highlight haskellLet ctermfg=12 guifg=" . s:sky
 exec "highlight haskellOperators ctermfg=15 guifg=" . s:cranberry
 exec "highlight haskellType ctermfg=12 guifg=" . s:sky
