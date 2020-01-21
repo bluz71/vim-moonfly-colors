@@ -279,7 +279,7 @@ exec "highlight pythonClassVar ctermfg=2 guifg=" . s:green
 exec "highlight pythonCoding ctermfg=12 guifg=" . s:sky
 exec "highlight pythonImport ctermfg=15 guifg=" . s:cranberry
 exec "highlight pythonOperator ctermfg=5 guifg=" . s:violet
-exec "highlight pythonRepeat ctermfg=7 guifg=" . s:orange
+exec "highlight pythonRepeat ctermfg=5 guifg=" . s:violet
 exec "highlight pythonRun ctermfg=12 guifg=" . s:sky
 exec "highlight pythonStatement ctermfg=5 guifg=" s:violet
 
@@ -496,7 +496,7 @@ exec "highlight clojureSpecial ctermfg=12 guifg=" . s:sky
 " Scala
 exec "highlight scalaCapitalWord ctermfg=4 guifg=" . s:blue
 exec "highlight scalaCommentCodeBlock ctermfg=247 guifg=" . s:grey247
-exec "highlight scalaInstanceDeclaration ctermfg=7 guifg=" . s:orange
+exec "highlight scalaInstanceDeclaration ctermfg=6 guifg=" . s:turquoise
 exec "highlight scalaKeywordModifier ctermfg=14 guifg=" . s:lime
 exec "highlight scalaSpecial ctermfg=6 guifg=" . s:turquoise
 
@@ -521,9 +521,10 @@ exec "highlight luaFuncCall ctermfg=12 guifg=" . s:sky
 exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:sky
 
 " PHP
-exec "highlight phpClass ctermfg=7 guifg=" . s:orange
+exec "highlight phpClass ctermfg=3 guifg=" . s:yellow
 exec "highlight phpClasses ctermfg=10 guifg=" . s:emerald
-exec "highlight phpType ctermfg=4 guifg=" . s:blue
+exec "highlight phpFunction ctermfg=4 guifg=" . s:blue
+exec "highlight phpParent ctermfg=fg guifg=fg"
 
 " Dart
 exec "highlight dartMetadata ctermfg=14 guifg=" . s:lime
