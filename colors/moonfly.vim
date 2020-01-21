@@ -468,14 +468,15 @@ exec "highlight rustTrait ctermfg=10 guifg=" . s:emerald
 exec "highlight rustType ctermfg=10 guifg=" . s:emerald
 
 " Java
+exec "highlight javaAnnotation ctermfg=14 guifg=" . s:lime
 exec "highlight javaBraces ctermfg=251 guifg=" . s:white
-exec "highlight javaClassDecl ctermfg=10 guifg=" . s:emerald
+exec "highlight javaClassDecl ctermfg=3 guifg=" . s:yellow
 exec "highlight javaCommentTitle ctermfg=247 guifg=" . s:grey247
 exec "highlight javaConstant ctermfg=12 guifg=" . s:sky
 exec "highlight javaDebug ctermfg=12 guifg=" . s:sky
 exec "highlight javaMethodDecl ctermfg=3 guifg=" . s:yellow
 exec "highlight javaOperator ctermfg=9 guifg=" . s:crimson
-exec "highlight javaScopeDecl ctermfg=4 guifg=" . s:blue
+exec "highlight javaScopeDecl ctermfg=5 guifg=" . s:violet
 exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
 
 " C#
@@ -683,6 +684,8 @@ let g:fzf_colors = {
 if g:moonflyFloatingFZF
     let g:fzf_colors['bg']  = ['bg', 'Pmenu']
     let g:fzf_colors['bg+'] = ['bg', 'QuickFixLine']
+    let g:fzf_colors['hl']  = ['fg', 'Search']
+    let g:fzf_colors['hl+'] = ['fg', 'Search']
 endif
 
 " moonfly-statusline plugin
