@@ -70,7 +70,7 @@ let s:turquoise   = "#7ee0ce" " turquoise   = 6
 let s:purple      = "#ae81ff" " purple      = 13
 let s:cranberry   = "#e2637f" " cranberry   = 15
 let s:violet      = "#ce76e8" " violet      = 5
-"let s:violet      = "#c387ec" " violet      = 5
+"let s:violet     = "#d183e8" " violet      = 5
 let s:crimson     = "#f74782" " crimson     = 9
 let s:red         = "#ff5454" " red         = 1
 
@@ -255,13 +255,14 @@ exec "highlight cPreCondit ctermfg=5 guifg=" . s:violet
 exec "highlight cStatement ctermfg=5 guifg=" . s:violet
 exec "highlight cStructure ctermfg=8 guifg=" . s:coral
 exec "highlight cppAccess ctermfg=14 guifg=" . s:lime
-exec "highlight cppBoolean ctermfg=4 guifg=" . s:blue
+exec "highlight cppBoolean ctermfg=3 guifg=" . s:yellow
 exec "highlight cppCast ctermfg=6 guifg=" . s:turquoise
-exec "highlight cppCustomClass ctermfg=4 guifg=" . s:blue
+exec "highlight cppCustomClass ctermfg=6 guifg=" . s:turquoise
 exec "highlight cppExceptions ctermfg=14 guifg=" . s:lime
 exec "highlight cppModifier ctermfg=5 guifg=" . s:violet
 exec "highlight cppOperator ctermfg=2 guifg=" . s:green
 exec "highlight cppStatement ctermfg=6 guifg=" . s:turquoise
+exec "highlight cppSTLconstant ctermfg=12 guifg=" . s:sky
 exec "highlight cppStructure ctermfg=5 guifg=" . s:violet
 
 " Shell scripts
