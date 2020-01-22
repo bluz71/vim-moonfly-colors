@@ -166,7 +166,7 @@ exec "highlight NonText ctermfg=7 guifg=" . s:orange . " gui=none"
 exec "highlight Operator ctermfg=15 guifg=" . s:cranberry
 
 " for, while.
-exec "highlight Repeat ctermfg=7 guifg=" . s:orange
+exec "highlight Repeat ctermfg=5 guifg=" . s:violet
 
 " Search.
 exec "highlight Search ctermbg=bg ctermfg=8 cterm=reverse guibg=bg guifg=" . s:coral . " gui=reverse"
@@ -279,7 +279,6 @@ exec "highlight pythonClassVar ctermfg=2 guifg=" . s:green
 exec "highlight pythonCoding ctermfg=12 guifg=" . s:sky
 exec "highlight pythonImport ctermfg=15 guifg=" . s:cranberry
 exec "highlight pythonOperator ctermfg=5 guifg=" . s:violet
-exec "highlight pythonRepeat ctermfg=5 guifg=" . s:violet
 exec "highlight pythonRun ctermfg=12 guifg=" . s:sky
 exec "highlight pythonStatement ctermfg=5 guifg=" s:violet
 
@@ -292,7 +291,7 @@ exec "highlight rubyAttribute ctermfg=12 guifg=" . s:sky
 exec "highlight rubyBlockParameter ctermfg=2 guifg=" . s:green
 exec "highlight rubyCallback ctermfg=12 guifg=" . s:sky
 exec "highlight rubyClass ctermfg=7 guifg=" . s:orange
-exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
+"exec "highlight rubyControl ctermfg=8 guifg=" . s:coral
 exec "highlight rubyDefine ctermfg=5 guifg=" . s:violet
 exec "highlight rubyEntities ctermfg=12 guifg=" . s:sky
 exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
@@ -485,7 +484,6 @@ exec "highlight javaStatement ctermfg=6 guifg=" . s:turquoise
 " C#
 exec "highlight csModifier ctermfg=14 guifg=" . s:lime
 exec "highlight csPrecondit ctermfg=5 guifg=" . s:violet
-exec "highlight csRepeat ctermfg=5 guifg=" . s:violet
 exec "highlight csStorage ctermfg=5 guifg=" . s:violet
 exec "highlight csXmlTag ctermfg=4 guifg=" . s:blue
 
