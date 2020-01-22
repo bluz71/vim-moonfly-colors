@@ -64,15 +64,15 @@ let s:lime        = "#85dc85" " lime        = 14
 let s:green       = "#8cc85f" " green       = 2
 let s:emerald     = "#42cf89" " emerald     = 10
 let s:blue        = "#80a0ff" " blue        = 4
-let s:blue111     = "#87afff" " blue111     = 111
 let s:sky         = "#78c2ff" " sky         = 12
 let s:turquoise   = "#7ee0ce" " turquoise   = 6
 let s:purple      = "#ae81ff" " purple      = 13
 let s:cranberry   = "#e2637f" " cranberry   = 15
-let s:violet      = "#ce76e8" " violet      = 5
-"let s:violet     = "#d183e8" " violet      = 5
+let s:violet      = "#d183e8" " violet      = 5
 let s:crimson     = "#f74782" " crimson     = 9
 let s:red         = "#ff5454" " red         = 1
+" Extra colors
+let s:blue111     = "#87afff" " blue111     = 111
 
 " Specify the the colors used by the inbuilt terminal of Neovim and Vim.
 if g:moonflyTerminalColors
@@ -82,7 +82,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_2  = "#8cc85f"
         let g:terminal_color_3  = "#e3c78a"
         let g:terminal_color_4  = "#80a0ff"
-        let g:terminal_color_5  = "#ce76e8"
+        let g:terminal_color_5  = "#d183e8"
         let g:terminal_color_6  = "#7ee0ce"
         let g:terminal_color_7  = "#de935f"
         let g:terminal_color_8  = "#f09479"
@@ -96,7 +96,7 @@ if g:moonflyTerminalColors
     else
         let g:terminal_ansi_colors = [
                     \ "#373c40", "#ff5454", "#8cc85f", "#e3c78a",
-                    \ "#80a0ff", "#ce76e8", "#7ee0ce", "#de935f",
+                    \ "#80a0ff", "#d183e8", "#7ee0ce", "#de935f",
                     \ "#f09479", "#f74782", "#42cf89", "#cfcfb0",
                     \ "#78c2ff", "#ae81ff", "#85dc85", "#e2637f"
                     \]
