@@ -84,21 +84,21 @@ if g:moonflyTerminalColors
         let g:terminal_color_4  = "#80a0ff"
         let g:terminal_color_5  = "#d183e8"
         let g:terminal_color_6  = "#7ee0ce"
-        let g:terminal_color_7  = "#de935f"
-        let g:terminal_color_8  = "#f09479"
+        let g:terminal_color_7  = "#b2b2b2"
+        let g:terminal_color_8  = "#949494"
         let g:terminal_color_9  = "#f74782"
         let g:terminal_color_10 = "#42cf89"
         let g:terminal_color_11 = "#cfcfb0"
         let g:terminal_color_12 = "#78c2ff"
         let g:terminal_color_13 = "#ae81ff"
         let g:terminal_color_14 = "#85dc85"
-        let g:terminal_color_15 = "#e2637f"
+        let g:terminal_color_15 = "#dadada"
     else
         let g:terminal_ansi_colors = [
                     \ "#373c40", "#ff5454", "#8cc85f", "#e3c78a",
-                    \ "#80a0ff", "#d183e8", "#7ee0ce", "#de935f",
-                    \ "#f09479", "#f74782", "#42cf89", "#cfcfb0",
-                    \ "#78c2ff", "#ae81ff", "#85dc85", "#e2637f"
+                    \ "#80a0ff", "#d183e8", "#7ee0ce", "#b2b2b2",
+                    \ "#949494", "#f74782", "#42cf89", "#cfcfb0",
+                    \ "#78c2ff", "#ae81ff", "#85dc85", "#dadada"
                     \]
     endif
 endif
