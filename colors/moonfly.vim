@@ -364,9 +364,9 @@ exec "highlight htmlTag ctermfg=14 guifg=" . s:lime
 exec "highlight htmlTagN ctermfg=4 guifg=" . s:blue
 exec "highlight htmlTagName ctermfg=4 guifg=" . s:blue
 if g:moonflyItalics
-    exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 guibg=" . s:black . " guifg=" . s:coral " gui=italic"
+    exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 guibg=" . s:black . " guifg=" . s:coral . " gui=italic"
     exec "highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=" . s:black . " guifg=" . s:coral . " gui=italic"
-    exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 " gui=italic"
+    exec "highlight htmlItalic ctermfg=247 guifg=" . s:grey247 . " gui=italic"
     exec "highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=" . s:black . " guifg=" . s:grey247 . " gui=italic"
 else
     exec "highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=none guibg=" . s:black . " guifg=" . s:coral " gui=none"
