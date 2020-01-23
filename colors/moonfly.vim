@@ -423,10 +423,11 @@ exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
 exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
 
 " PHP
-exec "highlight phpClass ctermfg=3 guifg=" . s:yellow
-exec "highlight phpClasses ctermfg=10 guifg=" . s:emerald
-exec "highlight phpFunction ctermfg=4 guifg=" . s:blue
+exec "highlight phpClass ctermfg=10 guifg=" . s:emerald
+exec "highlight phpClasses ctermfg=4 guifg=" . s:blue
+exec "highlight phpFunction ctermfg=12 guifg=" . s:sky
 exec "highlight phpParent ctermfg=fg guifg=fg"
+exec "highlight phpType ctermfg=3 guifg=" . s:yellow
 
 " PureScript
 exec "highlight purescriptClass ctermfg=7 guifg=" . s:orange
@@ -505,7 +506,7 @@ exec "highlight scalaCapitalWord ctermfg=4 guifg=" . s:blue
 exec "highlight scalaCommentCodeBlock ctermfg=247 guifg=" . s:grey247
 exec "highlight scalaInstanceDeclaration ctermfg=6 guifg=" . s:turquoise
 exec "highlight scalaKeywordModifier ctermfg=14 guifg=" . s:lime
-exec "highlight scalaSpecial ctermfg=6 guifg=" . s:turquoise
+exec "highlight scalaSpecial ctermfg=9 guifg=" . s:crimson
 
 " Shell scripts
 exec "highlight shStatement ctermfg=fg guifg=fg"
@@ -542,6 +543,7 @@ exec "highlight typescriptCall ctermfg=251 guifg=" . s:white
 exec "highlight typescriptClassHeritage ctermfg=10 guifg=" . s:emerald
 exec "highlight typescriptClassKeyword ctermfg=7 guifg=" . s:orange
 exec "highlight typescriptClassName ctermfg=10 guifg=" . s:emerald
+exec "highlight typescriptDecorator ctermfg=14 guifg=" . s:lime
 exec "highlight typescriptDOMDocMethod ctermfg=12 guifg=" . s:sky
 exec "highlight typescriptDOMEventTargetMethod ctermfg=12 guifg=" . s:sky
 exec "highlight typescriptDOMNodeMethod ctermfg=12 guifg=" . s:sky
