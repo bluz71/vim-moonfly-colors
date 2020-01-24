@@ -112,13 +112,8 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 ```
 
 The _moonfly_ color scheme also supports
-[vim-airline](https://github.com/vim-airline/vim-airline). To enable the
-_moonfly_ airline theme, after the _vim-airline_ plugin has been installed,
-please add the following to your _vimrc_:
-
-```viml
-let g:airline_theme = 'moonfly'
-```
+[vim-airline](https://github.com/vim-airline/vim-airline). With modern versions
+of _vim-airline_ the _moonfly_ theme will be automatically loaded.
 
 Alternatively,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
