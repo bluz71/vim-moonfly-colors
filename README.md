@@ -10,10 +10,14 @@ from:
 - [One](https://github.com/rakr/vim-one)
 - [monokai](https://atom.io/themes/monokai)
 
-Note, the _moonfly_ color scheme does incrementally change from time to time,
-primarily in regards to language and plugin theming. However, the core color
-palette will not change; **except** the time I changed crimson (July 2017) and
-violet (January 2020), sorry.
+Be aware, the _moonfly_ color scheme does incrementally change from time to
+time, primarily with regard to language and plugin theming. However, the core
+color palette will not change; **except** the time I changed crimson (July 2017)
+and violet (January 2020), sorry.
+
+:point_right: I maintain another dark theme,
+[nightfly](https://github.com/bluz71/vim-nightfly-guicolors), please check it
+out, if you want.
 
 Primary Colors
 --------------
@@ -82,6 +86,19 @@ Plugins explicity styled
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 
+Installation
+------------
+
+Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
+set the colorscheme in your _vimrc_ file.
+
+If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
+
+1. Add `Plug 'bluz71/vim-moonfly-colors'` to your _vimrc_
+2. Run `:PlugInstall`
+3. Add `colorscheme moonfly` to your _vimrc_, make sure this line appears
+   **after** the _Plug_ declaration.
+
 Status line
 -----------
 
@@ -103,22 +120,10 @@ please add the following to your _vimrc_:
 let g:airline_theme = 'moonfly'
 ```
 
-Alternatively, a companion status line,
+Alternatively,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
-available for those that just want a simple _moonfly_ themed status line.
-
-Installation
-------------
-
-Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
-set the colorscheme in your _vimrc_ file.
-
-If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
-
-1. Add `Plug 'bluz71/vim-moonfly-colors'` to your _vimrc_
-2. Run `:PlugInstall`
-3. Add `colorscheme moonfly` to your _vimrc_, make sure this line appears
-   **after** the _Plug_ declaration.
+available for those that just want a simple yet informative _moonfly_ themed
+status line.
 
 Options
 -------
@@ -207,20 +212,30 @@ endif
 True Color Terminals
 --------------------
 
-Many terminal programs, such as [iTerm2](http://www.iterm2.com) and
-[GNOME Terminal](https://wiki.gnome.org/Apps/Terminal), support
-[24-bit true colors](https://gist.github.com/XVilka/8346728). Modern versions
-of Vim and Neovim, on such terminals, support true colors when
-`set termguicolors` is enabled.
+Many modern terminal programs support [24-bit true
+colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
+Neovim, on such terminals, support true colors when `set termguicolors` is
+enabled.
 
-Caveat, _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
+A list of common terminals that support true colors:
+
+- [iTerm2](http://www.iterm2.com)
+- [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
+- [Windows Terminal](https://github.com/microsoft/terminal)
+- [alacritty](https://github.com/alacritty/alacritty)
+- [kitty](https://sw.kovidgoyal.net/kitty/index.html)
+- [konsole](https://konsole.kde.org)
+- [PuTTY](https://putty.org)
+- [mintty](https://mintty.github.io)
+
+:bomb: _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
 colors.
 
-On terminals that do support true colors, and when `termguicolors` is set,
-the _moonfly_ color scheme will not require any terminal configuration to emit
-the correct _moonfly_ colors.
+On terminals that support true colors, and when `termguicolors` is set, the
+_moonfly_ color scheme will not require any terminal configuration to emit the
+correct _moonfly_ colors.
 
-For the true colors _moonfly_ color scheme to display correctly inside _tmux_
+For the true color _moonfly_ color scheme to display correctly inside _tmux_
 the following setting will be required in _~/.tmux.conf_:
 
 ```
