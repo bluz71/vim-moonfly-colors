@@ -15,9 +15,9 @@ time, primarily with regard to language and plugin theming. However, the core
 color palette will not change; **except** the time I changed crimson (July 2017)
 and violet (January 2020), sorry.
 
-:point_right: I maintain another dark theme,
-[nightfly](https://github.com/bluz71/vim-nightfly-guicolors), please check it
-out, if you want.
+:point_right: I maintain another dark Vim theme named
+[nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
+interest.
 
 Primary Colors
 --------------
