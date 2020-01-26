@@ -13,8 +13,7 @@ endif
 let g:colors_name="moonfly"
 
 " * By default do not color the cursor.
-" * By default use the moonfly color palette in the `:terminal`, but not if TUI
-"     Neovim can pass through terminal palette colors.
+" * By default use the moonfly color palette in the `:terminal`
 " * By default do not underline matching parentheses.
 " * By default do use undercurls in GUI versions of Vim, including terminal Vim
 "     with termguicolors set.
@@ -22,18 +21,7 @@ let g:colors_name="moonfly"
 "     with termguicolors set.
 " * By default do not style fzf for display in floating window.
 let g:moonflyCursorColor         = get(g:, "moonflyCursorColor", 0)
-if has("nvim-0.5.0") && &termguicolors && nvim_list_uis()[0]['ext_termcolors']
-    " Neovim 0.5.0 or later in a TUI with termguicolors set allows pass through
-    " of the terminal palette, so do NOT set terminal colors since it will
-    " cause certain problems.
-    "
-    " For reference:
-    "   https://github.com/neovim/neovim/pull/10994
-    "   https://github.com/neovim/neovim/issues/11335
-    let g:moonflyTerminalColors  = get(g:, "moonflyTerminalColors", 0)
-else
-    let g:moonflyTerminalColors  = get(g:, "moonflyTerminalColors", 1)
-endif
+let g:moonflyTerminalColors      = get(g:, "moonflyTerminalColors", 1)
 let g:moonflyUnderlineMatchParen = get(g:, "moonflyUnderlineMatchParen", 0)
 let g:moonflyUndercurls          = get(g:, "moonflyUndercurls", 1)
 let g:moonflyItalics             = get(g:, "moonflyItalics", 1)
