@@ -701,7 +701,7 @@ exec "highlight User6 ctermbg=236 ctermfg=251 guibg=" . s:grey236 . " guifg=" . 
 exec "highlight User7 ctermbg=236 ctermfg=4   guibg=" . s:grey236 . " guifg=" . s:blue    . " gui=none"
 exec "highlight User8 ctermbg=236 ctermfg=9   guibg=" . s:grey236 . " guifg=" . s:crimson . " gui=none"
 
-" Misc
+" Misc languages and plugins
 exec "highlight bufExplorerHelp ctermfg=247 guifg=" . s:grey247
 exec "highlight bufExplorerSortBy ctermfg=247 guifg=" . s:grey247
 exec "highlight CleverFDefaultLabel ctermfg=9 guifg=" . s:crimson
@@ -719,5 +719,9 @@ exec "highlight diffIndexLine ctermfg=9 guifg=" . s:crimson
 exec "highlight diffLine ctermfg=12 guifg=" . s:sky
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
 exec "highlight diffSubname ctermfg=12 guifg=" . s:sky
-exec "highlight MatchWord ctermfg=8 guifg=" . s:coral
+if g:moonflyUnderlineMatchParen
+    exec "highlight MatchWord cterm=underline gui=underline guisp" . s:coral
+else
+    exec "highlight MatchWord ctermfg=8 guifg=" . s:coral
+endif
 exec "highlight MatchWordCur ctermbg=bg guibg=bg"
