@@ -323,6 +323,59 @@ xterm-moonfly*color15:     #e2637f
 A complete _Xresources_ file is available
 [here](https://github.com/bluz71/dotfiles/blob/master/Xresources).
 
+Tip: Relative Number Column Highlighting only for the Active Window
+-------------------------------------------------------------------
+
+Historically, when `relativenumber` was set whilst `cursorline` was not set,
+Vim would automatically highlight the cursor line in the number column with
+the `CursorLineNR` highlight group. However, newer versions of Vim no longer
+do that by default unless `cursorline` is set and the new `cursorlineopt`
+option is also set accordingly.
+
+At the same time I also like disabling `relativenumber` for inactive windows.
+
+To achieve all that please add something similar to the following to your
+_vimrc_:
+
+```viml
+set relativenumber
+if exists('&cursorlineopt')
+    set cursorlineopt=number
+    set cursorline
+endif
+
+function! RelativeNumberActivity(mode)
+    if &diff
+        " For diffs, do nothing since we want relativenumbers in all windows.
+        return
+    endif
+    if &buftype == "nofile" || &buftype == "nowrite"
+        setlocal nonumber
+    elseif a:mode == "active"
+        setlocal relativenumber
+        if exists('&cursorlineopt')
+            setlocal cursorline
+        endif
+    else
+        setlocal norelativenumber
+        if exists('&cursorlineopt')
+            setlocal nocursorline
+        endif
+    endif
+endfunction
+
+augroup CustomWindowActivity
+    autocmd!
+    autocmd WinEnter * call RelativeNumberActivity("active")
+    autocmd WinLeave * call RelativeNumberActivity("inactive")
+    if exists('&cursorlineopt')
+        autocmd FileType nerdtree setlocal cursorlineopt=both
+    endif
+augroup END
+```
+
+Feel free to change, or ignore, per your needs.
+
 License
 -------
 
