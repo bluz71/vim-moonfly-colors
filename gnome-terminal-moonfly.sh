@@ -61,7 +61,7 @@ if which "$DCONF" > /dev/null 2>&1; then
         dset palette "['#373c40', '#ff5454', '#8cc85f', '#e3c78a', '#80a0ff', '#d183e8', '#7ee0ce', '#de935f', '#f09479', '#f74782', '#42cf89', '#cfcfb0', '#78c2ff', '#ae81ff', '#85dc85', '#e2637f']"
         dset background-color "'#080808'"
         dset foreground-color "'#b2b2b2'"
-        dset bold-color "'#eeeeee"
+        dset bold-color "'#eeeeee'"
         dset bold-color-same-as-fg "false"
         # dset cursor-background-color "#9e9e9e"
         # dset cursor-colors-set "true"
