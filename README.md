@@ -285,9 +285,9 @@ The terminal can now be configured with the following _moonfly_ colors:
 | Color 15       | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
 | Color 16       | White (bright)   | `e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
 
-_iterm2_ users on macOS can import [this](moonfly.itermcolors) color scheme.
+_iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors) color scheme.
 
-_Gnome Terminal_ users can run [this](gnome-terminal-moonfly.sh) script to
+_Gnome Terminal_ users can run [this](terminal_themes/gnome-terminal-moonfly.sh) script to
 create a _Moonfly_ profile. Firstly before executing the script, please install
 the `dconf-cli` command line utility for modern versions of Gnome (3.28 and
 later), for example `sudo apt install dconf-cli`. Lastly after executing the
