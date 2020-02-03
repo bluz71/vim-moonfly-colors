@@ -287,12 +287,12 @@ The terminal can now be configured with the following _moonfly_ colors:
 
 _iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors) color scheme.
 
-_Gnome Terminal_ users can run [this](terminal_themes/gnome-terminal-moonfly.sh) script to
-create a _Moonfly_ profile. Firstly before executing the script, please install
-the `dconf-cli` command line utility for modern versions of Gnome (3.28 and
-later), for example `sudo apt install dconf-cli`. Lastly after executing the
-script, please set the _cursor_ and _highlight_ colors by hand, with the color
-values listed above, in `Preferences` / `Moonfly` / `Colors`.
+_Gnome Terminal_ users can run [this](terminal_themes/gnome-terminal-moonfly.sh)
+script to create a _Moonfly_ profile. Before executing the script, please
+install the `dconf-cli` command line utility for modern versions of Gnome (3.28
+and later), for example `sudo apt install dconf-cli`. After executing the
+script, please set the _cursor_ and _highlight_ colors by hand, with the
+appropriate color values listed above, in `Preferences` / `Moonfly` / `Colors`.
 
 _xterm_ users on Linux can add the following snippet to their _~/.Xresources_
 file and launch xterm with `xterm -name xterm-moonfly`.
