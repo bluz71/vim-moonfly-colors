@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Base16 - Gnome Terminal color scheme install script
+# Base16 - GNOME Terminal color scheme install script
 
 [[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Moonfly"
 [[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="Moonfly"
@@ -117,7 +117,7 @@ gset string palette "#373c40:#ff5454:#8cc85f:#e3c78a:#80a0ff:#d183e8:#7ee0ce:#de
 
 gset string background_color "#080808"
 gset string foreground_color "#c6c6c6"
-gset string bold_color "#f09479"
+gset string bold_color "#eeeeee"
 gset bool   bold_color_same_as_fg "false"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"
