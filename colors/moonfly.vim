@@ -659,27 +659,22 @@ exec "highlight fzf2 ctermfg=111 ctermbg=236 guifg=" . s:blue111 . " guibg=" . s
 exec "highlight fzf3 ctermfg=10 ctermbg=236 guifg=" . s:emerald . " guibg=" . s:grey236
 exec "highlight fzfNormal ctermfg=249 guifg=" . s:grey249
 exec "highlight fzfFgPlus ctermfg=253 guifg=" . s:grey253
+exec "highlight fzfBorder ctermfg=236 guifg=" . s:grey236
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
   \  'bg':      ['bg', 'Normal'],
   \  'hl':      ['fg', 'Number'],
   \  'fg+':     ['fg', 'fzfFgPlus'],
-  \  'bg+':     ['bg', 'CursorLine'],
+  \  'bg+':     ['bg', 'Pmenu'],
   \  'hl+':     ['fg', 'Number'],
   \  'info':    ['fg', 'String'],
-  \  'border':  ['fg', 'Conceal'],
+  \  'border':  ['fg', 'fzfBorder'],
   \  'prompt':  ['fg', 'fzf2'],
   \  'pointer': ['fg', 'Exception'],
   \  'marker':  ['fg', 'StorageClass'],
   \  'spinner': ['fg', 'Type'],
   \  'header':  ['fg', 'CursorLineNr']
   \}
-if g:moonflyFloatingFZF
-    let g:fzf_colors['bg']  = ['bg', 'Pmenu']
-    let g:fzf_colors['bg+'] = ['bg', 'QuickFixLine']
-    let g:fzf_colors['hl']  = ['fg', 'Search']
-    let g:fzf_colors['hl+'] = ['fg', 'Search']
-endif
 
 " moonfly-statusline plugin
 exec "highlight User1 ctermbg=4   ctermfg=234 guibg=" . s:blue    . " guifg=" . s:grey234

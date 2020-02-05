@@ -166,38 +166,6 @@ the appearance of italics then add the following to your _vimrc_:
 let g:moonflyItalics = 0
 ```
 
-The `g:moonflyFloatingFZF` option specifies whether to style the
-[fzf.vim](https://github.com/junegunn/fzf.vim) plugin for display in a floating
-window. By default this option is **disabled**, fzf will be styled for display
-in a split window in that case. If one configures fzf to display in a floating
-window then add the following to your _vimrc_:
-
-```viml
-let g:moonflyFloatingFZF = 1
-```
-
-Here is an example user configuration that displays fzf in a Neovim floating
-window:
-
-```viml
-if has('nvim')
-    function! FloatingFZF()
-        let width = float2nr(&columns * 0.85)
-        let height = float2nr(&lines * 0.70)
-        let opts = { 'relative': 'editor',
-                    \ 'row': (&lines - height) / 2,
-                    \ 'col': (&columns - width) / 2,
-                    \ 'width': width,
-                    \ 'height': height,
-                    \ 'style': 'minimal'}
-
-        let win = nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
-    endfunction
-
-    let g:fzf_layout = { 'window': 'call FloatingFZF()' }
-endif
-```
-
 True Color Terminals
 --------------------
 
