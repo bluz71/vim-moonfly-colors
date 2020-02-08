@@ -640,11 +640,11 @@ else
     exec "highlight ALEWarning ctermbg=bg guibg=bg"
     exec "highlight ALEInfo ctermbg=bg guibg=bg"
 endif
-exec "highlight ALEVirtualTextError ctermbg=235 ctermfg=1 guibg=" . s:grey235 . " guifg=" . s:red
+exec "highlight ALEVirtualTextError ctermfg=241 guifg=" . s:grey241
 exec "highlight ALEErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
-exec "highlight ALEVirtualTextWarning ctermbg=235 ctermfg=3 guibg=" . s:grey235 . " guifg=" . s:yellow
+exec "highlight ALEVirtualTextWarning ctermfg=241 guifg=" . s:grey241
 exec "highlight ALEWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=" . s:yellow
-exec "highlight ALEVirtualTextInfo ctermbg=235 ctermfg=12 guibg=" . s:grey235 . " guifg=" . s:sky
+exec "highlight ALEVirtualTextInfo ctermfg=241 guifg=" . s:grey241
 exec "highlight ALEInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=" . s:sky
 
 " GitGutter plugin
