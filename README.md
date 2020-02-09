@@ -253,7 +253,8 @@ The terminal can now be configured with the following _moonfly_ colors:
 | Color 15       | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
 | Color 16       | White (bright)   | `e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
 
-_iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors) color scheme.
+_iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
+color scheme.
 
 _Gnome Terminal_ users can run [this](terminal_themes/gnome-terminal-moonfly.sh)
 script to create a _Moonfly_ profile. Before executing the script, please
@@ -262,8 +263,11 @@ and later), for example `sudo apt install dconf-cli`. After executing the
 script, please set the _cursor_ and _highlight_ colors by hand, with the
 appropriate color values listed above, in `Preferences` / `Moonfly` / `Colors`.
 
+[kitty](https://sw.kovidgoyal.net/kitty) users can use
+[this](terminal_themes/kitty-theme.conf) theme.
+
 _xterm_ users on Linux can add the following snippet to their _~/.Xresources_
-file and launch xterm with `xterm -name xterm-moonfly`.
+file and launch xterm with `xterm -name xterm-moonfly`:
 
 ```
 xterm-moonfly*background:  #080808
