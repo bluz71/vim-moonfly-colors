@@ -705,7 +705,7 @@ exec "highlight diffLine ctermfg=12 guifg=" . s:sky
 exec "highlight diffRemoved ctermfg=1 guifg=" . s:red
 exec "highlight diffSubname ctermfg=12 guifg=" . s:sky
 if g:moonflyUnderlineMatchParen
-    exec "highlight MatchWord cterm=underline gui=underline guisp" . s:coral
+    exec "highlight MatchWord cterm=underline gui=underline guisp=" . s:coral
 else
     exec "highlight MatchWord ctermfg=8 guifg=" . s:coral
 endif
