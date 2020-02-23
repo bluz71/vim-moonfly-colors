@@ -696,6 +696,7 @@ exec "highlight HighlightedyankRegion ctermbg=0 guibg=" . s:grey0
 exec "highlight jsonKeyword ctermfg=12 guifg=" . s:sky
 exec "highlight netrwClassify ctermfg=15 guifg=" . s:cranberry
 exec "highlight netrwDir ctermfg=12 guifg=" . s:sky
+exec "highlight netrwExe ctermfg=11 guifg=" . s:wheat
 exec "highlight snipLeadingSpaces ctermbg=bg ctermfg=fg guibg=bg guifg=fg"
 exec "highlight tagName ctermfg=6 guifg=" . s:turquoise
 exec "highlight diffAdded ctermfg=2 guifg=" . s:green
