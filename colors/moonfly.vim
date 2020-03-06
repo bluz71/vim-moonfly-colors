@@ -498,12 +498,13 @@ exec "highlight scalaKeywordModifier ctermfg=14 guifg=" . s:lime
 exec "highlight scalaSpecial ctermfg=9 guifg=" . s:crimson
 
 " Shell scripts
-exec "highlight shStatement ctermfg=fg guifg=fg"
-exec "highlight shCommandSub ctermfg=fg guifg=fg"
-exec "highlight shShellVariables ctermfg=8 guifg=" . s:coral
-exec "highlight shVariable ctermfg=6 guifg=" . s:turquoise
 exec "highlight shAlias ctermfg=6 guifg=" . s:turquoise
+exec "highlight shCommandSub ctermfg=fg guifg=fg"
+exec "highlight shLoop ctermfg=5 guifg=" . s:violet
 exec "highlight shSetList ctermfg=6 guifg=" . s:turquoise
+exec "highlight shShellVariables ctermfg=8 guifg=" . s:coral
+exec "highlight shStatement ctermfg=fg guifg=fg"
+exec "highlight shVariable ctermfg=6 guifg=" . s:turquoise
 
 " TypeScript (leafgarland/typescript-vim)
 exec "highlight typescriptDOMObjects ctermfg=4 guifg=" . s:blue
