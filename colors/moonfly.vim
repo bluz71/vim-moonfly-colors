@@ -502,7 +502,7 @@ exec "highlight shAlias ctermfg=6 guifg=" . s:turquoise
 exec "highlight shCommandSub ctermfg=fg guifg=fg"
 exec "highlight shLoop ctermfg=5 guifg=" . s:violet
 exec "highlight shSetList ctermfg=6 guifg=" . s:turquoise
-exec "highlight shShellVariables ctermfg=8 guifg=" . s:coral
+exec "highlight shShellVariables ctermfg=14 guifg=" . s:lime
 exec "highlight shStatement ctermfg=fg guifg=fg"
 exec "highlight shVariable ctermfg=6 guifg=" . s:turquoise
 
