@@ -614,6 +614,12 @@ exec "highlight NERDTreeGitStatusRenamed ctermfg=12 guifg=" . s:sky
 exec "highlight NERDTreeGitStatusStaged ctermfg=12 guifg=" . s:sky
 exec "highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=" . s:red
 
+" vimfiler plugin
+exec "highlight vimfilerClosedFile ctermfg=4 guifg=" . s:blue
+exec "highlight vimfilerNonMark ctermfg=2 guifg=" . s:green
+exec "highlight vimfilerOpenedFile ctermfg=4 guifg=" . s:blue
+exec "highlight vimfilerNormalFile ctermfg=251 guifg=" . s:white
+
 " Neomake plugin
 if g:moonflyUndercurls
     exec "highlight NeomakeError ctermbg=bg guibg=bg gui=undercurl guisp=" . s:red

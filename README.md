@@ -84,6 +84,7 @@ Plugins explicity styled
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 - [clever-f](https://github.com/rhysd/clever-f.vim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
+- [vimfiler](https://github.com/Shougo/vimfiler.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 
 Installation
