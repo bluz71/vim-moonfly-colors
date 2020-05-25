@@ -719,3 +719,4 @@ else
     exec "highlight MatchWord ctermfg=8 guifg=" . s:coral
 endif
 exec "highlight MatchWordCur ctermbg=bg guibg=bg"
+exec "highlight Cheat40Header ctermfg=4 guifg=" . s:blue
