@@ -721,3 +721,4 @@ else
 endif
 exec "highlight MatchWordCur ctermbg=bg guibg=bg"
 exec "highlight Cheat40Header ctermfg=4 guifg=" . s:blue
+exec "highlight Beacon ctermbg=251 guibg=" . s:white
