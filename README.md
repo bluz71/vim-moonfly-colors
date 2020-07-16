@@ -12,8 +12,8 @@ from:
 
 Be aware, the _moonfly_ color scheme does incrementally change from time to
 time, primarily with regard to language and plugin theming. However, the core
-color palette will not change; **except** the time I changed crimson (July 2017)
-and violet (January 2020), sorry.
+color palette will not change; **except** the time I changed crimson (July
+2017), violet (January 2020) and wheat (July 2020), sorry.
 
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
@@ -28,7 +28,7 @@ Primary Colors
 | Grey       | ![grey](https://placehold.it/64/373c40/000000?text=+)       | Coral       | ![coral](https://placehold.it/64/f09479/000000?text=+)       |
 | Red        | ![red](https://placehold.it/64/ff5454/000000?text=+)        | Crimson     | ![crimson](https://placehold.it/64/f74782/000000?text=+)     |
 | Green      | ![green](https://placehold.it/64/8cc85f/000000?text=+)      | Emerald     | ![emerald](https://placehold.it/64/42cf89/000000?text=+)     |
-| Yellow     | ![yellow](https://placehold.it/64/e3c78a/000000?text=+)     | Wheat       | ![wheat](https://placehold.it/64/cfcfb0/000000?text=+)       |
+| Yellow     | ![yellow](https://placehold.it/64/e3c78a/000000?text=+)     | Wheat       | ![wheat](https://placehold.it/64/bfbf97/000000?text=+)       |
 | Blue       | ![blue](https://placehold.it/64/80a0ff/000000?text=+)       | Sky         | ![sky](https://placehold.it/64/78c2ff/000000?text=+)  |
 | Violet     | ![violet](https://placehold.it/64/d183e8/000000?text=+)     | Purple      | ![purple](https://placehold.it/64/ae81ff/000000?text=+)      |
 | Turquoise  | ![turquoise](https://placehold.it/64/7ee0ce/000000?text=+)  | Lime        | ![lime](https://placehold.it/64/85dc85/000000?text=+) |
@@ -248,7 +248,7 @@ The terminal can now be configured with the following _moonfly_ colors:
 | Color 9        | Black (bright)   | `f09479` | ![background](https://placehold.it/32/f09479/000000?text=+) |
 | Color 10       | Red (bright)     | `f74782` | ![background](https://placehold.it/32/f74782/000000?text=+) |
 | Color 11       | Green (bright)   | `42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+) |
-| Color 12       | Yellow (bright)  | `cfcfb0` | ![background](https://placehold.it/32/cfcfb0/000000?text=+) |
+| Color 12       | Yellow (bright)  | `bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
 | Color 13       | Blue (bright)    | `78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |
 | Color 14       | Purple (bright)  | `ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
 | Color 15       | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
@@ -286,7 +286,7 @@ xterm-moonfly*color7:      #de935f
 xterm-moonfly*color8:      #f09479
 xterm-moonfly*color9:      #f74782
 xterm-moonfly*color10:     #42cf89
-xterm-moonfly*color11:     #cfcfb0
+xterm-moonfly*color11:     #bfbf97
 xterm-moonfly*color12:     #78c2ff
 xterm-moonfly*color13:     #ae81ff
 xterm-moonfly*color14:     #85dc85

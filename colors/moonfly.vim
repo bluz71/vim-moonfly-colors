@@ -44,7 +44,7 @@ let s:grey235     = "#262626" " grey235     = 235
 let s:grey234     = "#1c1c1c" " grey234     = 234
 let s:grey233     = "#121212" " grey233     = 233
 " Core theme colors.
-let s:wheat       = "#cfcfb0" " wheat       = 11
+let s:wheat       = "#bfbf97" " wheat       = 11
 let s:yellow      = "#e3c78a" " yellow      = 3
 let s:orange      = "#de935f" " orange      = 7
 let s:coral       = "#f09479" " coral       = 8
@@ -76,7 +76,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_8  = "#949494"
         let g:terminal_color_9  = "#f74782"
         let g:terminal_color_10 = "#42cf89"
-        let g:terminal_color_11 = "#cfcfb0"
+        let g:terminal_color_11 = "#bfbf97"
         let g:terminal_color_12 = "#78c2ff"
         let g:terminal_color_13 = "#ae81ff"
         let g:terminal_color_14 = "#85dc85"
@@ -85,7 +85,7 @@ if g:moonflyTerminalColors
         let g:terminal_ansi_colors = [
                     \ "#373c40", "#ff5454", "#8cc85f", "#e3c78a",
                     \ "#80a0ff", "#d183e8", "#7ee0ce", "#b2b2b2",
-                    \ "#949494", "#f74782", "#42cf89", "#cfcfb0",
+                    \ "#949494", "#f74782", "#42cf89", "#bfbf97",
                     \ "#78c2ff", "#ae81ff", "#85dc85", "#dadada"
                     \]
     endif
@@ -225,7 +225,7 @@ endif
 exec "highlight Ignore ctermfg=12 guifg=" . s:sky
 exec "highlight Underlined ctermfg=10 cterm=none guifg=" . s:emerald . " gui=none"
 exec "highlight QuickFixLine ctermbg=237 cterm=none guibg=" . s:grey237
-exec "highlight Delimiter ctermfg=11 guifg=" . s:wheat
+exec "highlight Delimiter ctermfg=251 guifg=" . s:white
 
 " Neovim only highlight groups.
 exec "highlight Whitespace ctermfg=235 guifg=" . s:grey235
