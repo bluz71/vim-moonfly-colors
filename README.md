@@ -317,14 +317,14 @@ if exists('&cursorlineopt')
     set cursorline
 endif
 
-function! RelativeNumberActivity(mode)
+function! RelativeNumberActivity(active)
     if &diff
         " For diffs, do nothing since we want relativenumbers in all windows.
         return
     endif
     if &buftype == "nofile" || &buftype == "nowrite"
         setlocal nonumber
-    elseif a:mode == "active"
+    elseif a:active == v:true
         setlocal relativenumber
         if exists('&cursorlineopt')
             setlocal cursorline
@@ -339,8 +339,8 @@ endfunction
 
 augroup CustomWindowActivity
     autocmd!
-    autocmd WinEnter * call RelativeNumberActivity("active")
-    autocmd WinLeave * call RelativeNumberActivity("inactive")
+    autocmd WinEnter * call RelativeNumberActivity(v:true)
+    autocmd WinLeave * call RelativeNumberActivity(v:false)
 augroup END
 ```
 
