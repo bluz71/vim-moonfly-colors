@@ -53,7 +53,7 @@ let s:green       = "#8cc85f" " green       = 2
 let s:emerald     = "#42cf89" " emerald     = 10
 let s:blue        = "#80a0ff" " blue        = 4
 let s:sky         = "#78c2ff" " sky         = 12
-let s:turquoise   = "#7ee0ce" " turquoise   = 6
+let s:turquoise   = "#79dac8" " turquoise   = 6
 let s:purple      = "#ae81ff" " purple      = 13
 let s:cranberry   = "#e2637f" " cranberry   = 15
 let s:violet      = "#d183e8" " violet      = 5
@@ -71,7 +71,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_3  = "#e3c78a"
         let g:terminal_color_4  = "#80a0ff"
         let g:terminal_color_5  = "#d183e8"
-        let g:terminal_color_6  = "#7ee0ce"
+        let g:terminal_color_7  = "#79dac8"
         let g:terminal_color_7  = "#b2b2b2"
         let g:terminal_color_8  = "#949494"
         let g:terminal_color_9  = "#f74782"
@@ -84,7 +84,7 @@ if g:moonflyTerminalColors
     else
         let g:terminal_ansi_colors = [
                     \ "#373c40", "#ff5454", "#8cc85f", "#e3c78a",
-                    \ "#80a0ff", "#d183e8", "#7ee0ce", "#b2b2b2",
+                    \ "#80a0ff", "#d183e8", "#79dac8", "#b2b2b2",
                     \ "#949494", "#f74782", "#42cf89", "#bfbf97",
                     \ "#78c2ff", "#ae81ff", "#85dc85", "#dadada"
                     \]
