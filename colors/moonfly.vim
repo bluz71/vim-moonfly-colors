@@ -137,10 +137,10 @@ exec "highlight PreProc ctermfg=15 guifg=" . s:cranberry
 " Status, split and tab lines.
 exec "highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=" . s:grey236 . " guifg=" . s:white . " gui=none"
 exec "highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey247 . " gui=none"
-exec "highlight VertSplit ctermbg=236 ctermfg=236 guibg=" . s:grey236 . " guifg=" . s:grey236
+exec "highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey236 . " gui=none"
 exec "highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey247 . " gui=none"
 exec "highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=" . s:grey236 . " guifg=" . s:blue . " gui=none"
-exec "highlight TablineFill ctermbg=236 ctermfg=236 guibg=" . s:grey236 . " guifg=" . s:grey236
+exec "highlight TablineFill ctermbg=236 ctermfg=236 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey236 . " gui=none"
 exec "highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=" . s:grey236 . " guifg=" . s:white . " gui=none"
 exec "highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=" . s:grey236 . " guifg=" . s:grey247 . " gui=none"
 
