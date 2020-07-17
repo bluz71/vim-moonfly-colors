@@ -416,7 +416,7 @@ exec "highlight phpClass ctermfg=10 guifg=" . s:emerald
 exec "highlight phpClasses ctermfg=4 guifg=" . s:blue
 exec "highlight phpFunction ctermfg=12 guifg=" . s:sky
 exec "highlight phpParent ctermfg=fg guifg=fg"
-exec "highlight phpType ctermfg=3 guifg=" . s:yellow
+exec "highlight phpType ctermfg=5 guifg=" . s:violet
 
 " PureScript
 exec "highlight purescriptClass ctermfg=7 guifg=" . s:orange
