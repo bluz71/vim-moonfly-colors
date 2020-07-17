@@ -444,21 +444,15 @@ exec "highlight rubyDefine ctermfg=5 guifg=" . s:violet
 exec "highlight rubyEntities ctermfg=12 guifg=" . s:sky
 exec "highlight rubyExceptional ctermfg=8 guifg=" . s:coral
 exec "highlight rubyGemfileMethod ctermfg=12 guifg=" . s:sky
-exec "highlight rubyInstanceVariable ctermfg=14 guifg=" . s:lime
+exec "highlight rubyInstanceVariable ctermfg=6 guifg=" . s:turquoise
 exec "highlight rubyInterpolationDelimiter ctermfg=15 guifg=" . s:cranberry
 exec "highlight rubyMacro ctermfg=12 guifg=" . s:sky
 exec "highlight rubyModule ctermfg=4 guifg=" . s:blue
 exec "highlight rubyPseudoVariable ctermfg=2 guifg=" . s:green
-exec "highlight rubyResponse ctermfg=6 guifg=" . s:turquoise
+exec "highlight rubyResponse ctermfg=12 guifg=" . s:sky
 exec "highlight rubyRoute ctermfg=12 guifg=" . s:sky
 exec "highlight rubySharpBang ctermfg=247 guifg=" . s:grey247
 exec "highlight rubyStringDelimiter ctermfg=11 guifg=" . s:wheat
-augroup MoonflyRubyAutocmds
-    autocmd!
-    " Use different colors when in Ruby and eRuby files for 'rubyConstant'.
-    autocmd FileType eruby exec "highlight rubyConstant ctermfg=6 guifg=" . s:turquoise
-    autocmd FileType ruby exec "highlight rubyConstant ctermfg=10 guifg=" . s:emerald
-augroup END
 
 " Rust
 exec "highlight rustAssert ctermfg=2 guifg=" . s:green
