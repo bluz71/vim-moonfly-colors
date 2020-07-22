@@ -217,10 +217,14 @@ section.
 256 Color Terminals
 -------------------
 
-The _moonfly_ color scheme, when used with Vim absent `termguicolors`,
-**requires** the host terminal be configured with a specific color palette.
+The _moonfly_ color scheme, when used absent `termguicolors`, **requires** the
+host terminal be configured with a specific color palette. In that case the
+legacy _moonfly_ `cterm` (color terminal) theme will be used.
 
-Firstly, the [terminal
+:bell: Nowadays it is strongly recommened to use a true color terminal with a
+modern version of Vim or Neovim with `termguicolors` set.
+
+If that is not possible, then the [terminal
 emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
 for 256 colors, which usually means setting the terminal's type to
 **xterm-256color** or **screen-256color** when used inside
@@ -254,47 +258,29 @@ The terminal can now be configured with the following _moonfly_ colors:
 | Color 15       | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
 | Color 16       | White (bright)   | `e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
 
-_iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
-color scheme.
+Terminal Themes
+---------------
 
-_Gnome Terminal_ users can run [this](terminal_themes/gnome-terminal-moonfly.sh)
-script to create a _Moonfly_ profile. Before executing the script, please
-install the `dconf-cli` command line utility for modern versions of Gnome (3.28
-and later), for example `sudo apt install dconf-cli`. After executing the
-script, please set the _cursor_ and _highlight_ colors by hand, with the
-appropriate color values listed above, in `Preferences` / `Moonfly` / `Colors`.
+A collection of moonfly_ terminal themes are provided for those using the
+_moonfly_ `termguicolors` GUI theme:
 
-[kitty](https://sw.kovidgoyal.net/kitty) users can use
-[this](terminal_themes/kitty-theme.conf) theme.
+- _iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
+  color scheme.
 
-_xterm_ users on Linux can add the following snippet to their _~/.Xresources_
-file and launch xterm with `xterm -name xterm-moonfly`:
+- _Gnome Terminal_ users can run
+  [this](terminal_themes/gnome-terminal-moonfly.sh) script to create a _Moonfly_
+  profile. Before executing the script, please install the `dconf-cli` command
+  line utility for modern versions of Gnome (3.28 and later), for example `sudo
+  apt install dconf-cli`. After executing the script, please set the _cursor_
+  and _highlight_ colors by hand, with the appropriate color values listed
+  above, in `Preferences` / `Moonfly` / `Colors`.
 
-```
-xterm-moonfly*background:  #080808
-xterm-moonfly*foreground:  #b2b2b2
-xterm-moonfly*cursorColor: #9e9e9e
-xterm-moonfly*colorBD:     #eeeeee
-xterm-moonfly*color0:      #373c40
-xterm-moonfly*color1:      #ff5454
-xterm-moonfly*color2:      #8cc85f
-xterm-moonfly*color3:      #e3c78a
-xterm-moonfly*color4:      #80a0ff
-xterm-moonfly*color5:      #d183e8
-xterm-moonfly*color6:      #79dac8
-xterm-moonfly*color7:      #de935f
-xterm-moonfly*color8:      #f09479
-xterm-moonfly*color9:      #f74782
-xterm-moonfly*color10:     #42cf89
-xterm-moonfly*color11:     #bfbf97
-xterm-moonfly*color12:     #78c2ff
-xterm-moonfly*color13:     #ae81ff
-xterm-moonfly*color14:     #85dc85
-xterm-moonfly*color15:     #e2637f
-```
+- [kitty](https://sw.kovidgoyal.net/kitty) users can use
+  [this](terminal_themes/kitty-theme.conf) theme.
 
-A complete _Xresources_ file is available
-[here](https://github.com/bluz71/dotfiles/blob/master/Xresources).
+- [alacritty](https://github.com/alacritty/alacritty) users can copy
+  [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
+  configuration.
 
 Tip: Relative Number Column Highlighting only for the Active Window
 -------------------------------------------------------------------
