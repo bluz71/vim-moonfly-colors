@@ -232,31 +232,31 @@ for 256 colors, which usually means setting the terminal's type to
 
 The terminal can now be configured with the following _moonfly_ colors:
 
-| Type           | Category         | Value    | Color                                                       |
-| -------------- | ---------------- | -------- | ----------------------------------------------------------- |
-| Background     | Background       | `080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Foreground     | Foreground       | `b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
-| Bold           | Bold             | `eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
-| Cursor         | Cursor           | `9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+) |
-| Cursor Text    | Cursor Text      | `080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Highlight      | Highlight        | `b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
-| Highlight Text | Highlight Text   | `080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Color 1        | Black (normal)   | `373c40` | ![background](https://placehold.it/32/373c40/000000?text=+) |
-| Color 2        | Red (normal)     | `ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+) |
-| Color 3        | Green (normal)   | `8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+) |
-| Color 4        | Yellow (normal)  | `e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+) |
-| Color 5        | Blue (normal)    | `80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+) |
-| Color 6        | Purple (normal)  | `d183e8` | ![background](https://placehold.it/32/d183e8/000000?text=+) |
-| Color 7        | Cyan (normal)    | `79dac8` | ![background](https://placehold.it/32/79dac8/000000?text=+) |
-| Color 8        | White (normal)   | `de935f` | ![background](https://placehold.it/32/de935f/000000?text=+) |
-| Color 9        | Black (bright)   | `f09479` | ![background](https://placehold.it/32/f09479/000000?text=+) |
-| Color 10       | Red (bright)     | `f74782` | ![background](https://placehold.it/32/f74782/000000?text=+) |
-| Color 11       | Green (bright)   | `42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+) |
-| Color 12       | Yellow (bright)  | `bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
-| Color 13       | Blue (bright)    | `78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |
-| Color 14       | Purple (bright)  | `ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
-| Color 15       | Cyan (bright)    | `85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
-| Color 16       | White (bright)   | `e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
+| Type           | Category        | Value     | Color                                                       |
+|----------------|-----------------|-----------|-------------------------------------------------------------|
+| Background     | Background      | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Foreground     | Foreground      | `#b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
+| Bold           | Bold            | `#eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
+| Cursor         | Cursor          | `#9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+) |
+| Cursor Text    | Cursor Text     | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Selection      | Highlight       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
+| Selection Text | Highlight Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Color 1        | Black (normal)  | `#373c40` | ![background](https://placehold.it/32/373c40/000000?text=+) |
+| Color 2        | Red (normal)    | `#ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+) |
+| Color 3        | Green (normal)  | `#8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+) |
+| Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+) |
+| Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+) |
+| Color 6        | Purple (normal) | `#d183e8` | ![background](https://placehold.it/32/d183e8/000000?text=+) |
+| Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://placehold.it/32/79dac8/000000?text=+) |
+| Color 8        | White (normal)  | `#de935f` | ![background](https://placehold.it/32/de935f/000000?text=+) |
+| Color 9        | Black (bright)  | `#f09479` | ![background](https://placehold.it/32/f09479/000000?text=+) |
+| Color 10       | Red (bright)    | `#f74782` | ![background](https://placehold.it/32/f74782/000000?text=+) |
+| Color 11       | Green (bright)  | `#42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+) |
+| Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
+| Color 13       | Blue (bright)   | `#78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |
+| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
+| Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
+| Color 16       | White (bright)  | `#e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
 
 Terminal Themes
 ---------------
