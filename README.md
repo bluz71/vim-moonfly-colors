@@ -261,7 +261,7 @@ The terminal can now be configured with the following _moonfly_ colors:
 Terminal Themes
 ---------------
 
-A collection of moonfly_ terminal themes are provided for those using the
+A collection of _moonfly_ terminal themes are provided for those using the
 _moonfly_ `termguicolors` GUI theme:
 
 - _iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
