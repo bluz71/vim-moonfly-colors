@@ -11,9 +11,9 @@ from:
 - [monokai](https://atom.io/themes/monokai)
 
 Be aware, the _moonfly_ color scheme does incrementally change from time to
-time, primarily with regard to language and plugin theming. However, the core
-color palette rarely changes; **except** the times I changed `crimson` (July
-2017), `violet` (January 2020) and `wheat` / `turquoise` (July 2020), sorry.
+time, primarily with regard to language and plugin theming. The core color
+palette rarely changes; **except** the times I changed `crimson` (July 2017),
+`violet` (January 2020) and `wheat` / `turquoise` (July 2020), sorry.
 
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
@@ -179,13 +179,12 @@ A list of common terminals that support true colors:
 
 - [iTerm2](http://www.iterm2.com)
 - [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
-- [Windows Terminal](https://github.com/microsoft/terminal)
+- [Windows Terminal](https://github.com/Microsoft/Terminal)
 - [Alacritty](https://github.com/alacritty/alacritty)
 - [kitty](https://sw.kovidgoyal.net/kitty/index.html)
 - [konsole](https://konsole.kde.org)
 - [PuTTY](https://putty.org)
 - [mintty](https://mintty.github.io)
-- [Windows Terminal](https://github.com/Microsoft/Terminal)
 
 :bomb: _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
 colors.
@@ -226,12 +225,12 @@ _moonfly_ `termguicolors` GUI theme:
   and _highlight_ colors by hand, with the appropriate color values listed
   above, in `Preferences` / `Moonfly` / `Colors`.
 
-- [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](terminal_themes/kitty-theme.conf) theme.
-
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
   configuration.
+
+- [kitty](https://sw.kovidgoyal.net/kitty) users can use
+  [this](terminal_themes/kitty-theme.conf) theme.
 
 256 Color Terminals
 -------------------
@@ -249,7 +248,7 @@ for 256 colors, which usually means setting the terminal's type to
 **xterm-256color** or **screen-256color** when used inside
 [tmux](https://tmux.github.io/).
 
-The terminal can now be configured with the following _moonfly_ colors:
+The terminal should be configured with the following _moonfly_ colors:
 
 | Type           | Category        | Value     | Color                                                       |
 |----------------|-----------------|-----------|-------------------------------------------------------------|
