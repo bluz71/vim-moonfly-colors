@@ -12,8 +12,8 @@ from:
 
 Be aware, the _moonfly_ color scheme does incrementally change from time to
 time, primarily with regard to language and plugin theming. However, the core
-color palette will rarely change; **except** the times I changed crimson (July
-2017), violet (January 2020) and wheat / turquoise (July 2020), sorry.
+color palette rarely changes; **except** the times I changed `crimson` (July
+2017), `violet` (January 2020) and `wheat` / `turquoise` (July 2020), sorry.
 
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
@@ -180,18 +180,19 @@ A list of common terminals that support true colors:
 - [iTerm2](http://www.iterm2.com)
 - [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
 - [Windows Terminal](https://github.com/microsoft/terminal)
-- [alacritty](https://github.com/alacritty/alacritty)
+- [Alacritty](https://github.com/alacritty/alacritty)
 - [kitty](https://sw.kovidgoyal.net/kitty/index.html)
 - [konsole](https://konsole.kde.org)
 - [PuTTY](https://putty.org)
 - [mintty](https://mintty.github.io)
+- [Windows Terminal](https://github.com/Microsoft/Terminal)
 
 :bomb: _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
 colors.
 
 On terminals that support true colors, and when `termguicolors` is set, the
 _moonfly_ color scheme will not require any terminal configuration to emit the
-correct _moonfly_ colors.
+correct theme colors.
 
 For the true color _moonfly_ color scheme to display correctly inside _tmux_
 the following setting will be required in _~/.tmux.conf_:
@@ -207,56 +208,6 @@ be added to _vimrc:_
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 ```
-
-Repeating, the above `t_8*` settings are **not** required for Neovim.
-
-If consistency between Vim colors and `$SHELL` colors is important then I
-recommend proceeding with the 256-color configurations listed in the next
-section.
-
-256 Color Terminals
--------------------
-
-The _moonfly_ color scheme, when used absent `termguicolors`, **requires** the
-host terminal be configured with a specific color palette. In that case the
-legacy _moonfly_ `cterm` (color terminal) theme will be used.
-
-:bell: Nowadays it is strongly recommened to use a true color terminal with a
-modern version of Vim or Neovim with `termguicolors` set.
-
-If that is not possible, then the [terminal
-emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
-for 256 colors, which usually means setting the terminal's type to
-**xterm-256color** or **screen-256color** when used inside
-[tmux](https://tmux.github.io/).
-
-The terminal can now be configured with the following _moonfly_ colors:
-
-| Type           | Category        | Value     | Color                                                       |
-|----------------|-----------------|-----------|-------------------------------------------------------------|
-| Background     | Background      | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Foreground     | Foreground      | `#b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
-| Bold           | Bold            | `#eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
-| Cursor         | Cursor          | `#9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+) |
-| Cursor Text    | Cursor Text     | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Selection      | Highlight       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
-| Selection Text | Highlight Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Color 1        | Black (normal)  | `#373c40` | ![background](https://placehold.it/32/373c40/000000?text=+) |
-| Color 2        | Red (normal)    | `#ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+) |
-| Color 3        | Green (normal)  | `#8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+) |
-| Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+) |
-| Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+) |
-| Color 6        | Purple (normal) | `#d183e8` | ![background](https://placehold.it/32/d183e8/000000?text=+) |
-| Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://placehold.it/32/79dac8/000000?text=+) |
-| Color 8        | White (normal)  | `#de935f` | ![background](https://placehold.it/32/de935f/000000?text=+) |
-| Color 9        | Black (bright)  | `#f09479` | ![background](https://placehold.it/32/f09479/000000?text=+) |
-| Color 10       | Red (bright)    | `#f74782` | ![background](https://placehold.it/32/f74782/000000?text=+) |
-| Color 11       | Green (bright)  | `#42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+) |
-| Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
-| Color 13       | Blue (bright)   | `#78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |
-| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
-| Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
-| Color 16       | White (bright)  | `#e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
 
 Terminal Themes
 ---------------
@@ -278,9 +229,53 @@ _moonfly_ `termguicolors` GUI theme:
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
   [this](terminal_themes/kitty-theme.conf) theme.
 
-- [alacritty](https://github.com/alacritty/alacritty) users can copy
+- [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
   configuration.
+
+256 Color Terminals
+-------------------
+
+The _moonfly_ color scheme, when used absent `termguicolors`, **requires** the
+host terminal be configured with a specific color palette. In that case the
+legacy _moonfly_ `cterm` 256 color terminal theme will be used.
+
+:bell: Nowadays it is strongly recommened to use a true color terminal with a
+modern version of Vim or Neovim with `termguicolors` set.
+
+If that is not possible, then the [terminal
+emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
+for 256 colors, which usually means setting the terminal's type to
+**xterm-256color** or **screen-256color** when used inside
+[tmux](https://tmux.github.io/).
+
+The terminal can now be configured with the following _moonfly_ colors:
+
+| Type           | Category        | Value     | Color                                                       |
+|----------------|-----------------|-----------|-------------------------------------------------------------|
+| Background     | Background      | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Foreground     | Foreground      | `#b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
+| Bold           | Bold            | `#eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
+| Cursor         | Cursor          | `#9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+) |
+| Cursor Text    | Cursor Text     | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Selection      | Selection       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
+| Selection Text | Selection Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Color 1        | Black (normal)  | `#373c40` | ![background](https://placehold.it/32/373c40/000000?text=+) |
+| Color 2        | Red (normal)    | `#ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+) |
+| Color 3        | Green (normal)  | `#8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+) |
+| Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+) |
+| Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+) |
+| Color 6        | Purple (normal) | `#d183e8` | ![background](https://placehold.it/32/d183e8/000000?text=+) |
+| Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://placehold.it/32/79dac8/000000?text=+) |
+| Color 8        | White (normal)  | `#de935f` | ![background](https://placehold.it/32/de935f/000000?text=+) |
+| Color 9        | Black (bright)  | `#f09479` | ![background](https://placehold.it/32/f09479/000000?text=+) |
+| Color 10       | Red (bright)    | `#f74782` | ![background](https://placehold.it/32/f74782/000000?text=+) |
+| Color 11       | Green (bright)  | `#42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+) |
+| Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
+| Color 13       | Blue (bright)   | `#78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |
+| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
+| Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
+| Color 16       | White (bright)  | `#e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
 
 Tip: Relative Number Column Highlighting only for the Active Window
 -------------------------------------------------------------------
