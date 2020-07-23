@@ -214,7 +214,7 @@ Terminal Themes
 A collection of _moonfly_ terminal themes are provided for those using the
 _moonfly_ `termguicolors` GUI theme:
 
-- _iterm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
+- _iTerm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
   color scheme.
 
 - _Gnome Terminal_ users can run
