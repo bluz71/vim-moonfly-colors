@@ -11,9 +11,7 @@ from:
 - [monokai](https://atom.io/themes/monokai)
 
 Be aware, the _moonfly_ color scheme does incrementally change from time to
-time, primarily with regard to language and plugin theming. The core color
-palette rarely changes; **except** the times I changed `crimson` (July 2017),
-`violet` (January 2020) and `wheat` / `turquoise` (July 2020), sorry.
+time, primarily with regard to language and plugin theming.
 
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
@@ -212,8 +210,8 @@ Terminal Themes
 ---------------
 
 A collection of _moonfly_-flavoured terminal themes are provided for those using
-_moonfly_ with `termguicolors` (`cterm` however users should refer to the next
-section and not use these terminal themes):
+_moonfly_ with `termguicolors` (`cterm` users should refer to the next section
+and not use these terminal themes):
 
 - _iTerm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
   color scheme.
@@ -246,7 +244,7 @@ modern version of Vim or Neovim with `termguicolors` set.
 If that is not possible, then the [terminal
 emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
 for 256 colors, which usually means setting the terminal's type to
-**xterm-256color** or **screen-256color** when used inside
+**xterm-256color**, or **screen-256color** when used inside
 [tmux](https://tmux.github.io/).
 
 The terminal should then be configured with the following _moonfly_ colors:
