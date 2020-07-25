@@ -170,7 +170,7 @@ let g:moonflyItalics = 0
 True Color Terminals
 --------------------
 
-Many modern terminal programs support [24-bit true
+Many modern terminals support [24-bit true
 colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
 Neovim, on such terminals, support true colors when `set termguicolors` is
 enabled.
@@ -211,8 +211,9 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 Terminal Themes
 ---------------
 
-A collection of _moonfly_ terminal themes are provided for those using the
-_moonfly_ `termguicolors` GUI theme:
+A collection of _moonfly_-flavoured terminal themes are provided for those using
+_moonfly_ with `termguicolors` (`cterm` however users should refer to the next
+section and not use these terminal themes):
 
 - _iTerm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
   color scheme.
@@ -222,7 +223,7 @@ _moonfly_ `termguicolors` GUI theme:
   profile. Before executing the script, please install the `dconf-cli` command
   line utility for modern versions of Gnome (3.28 and later), for example `sudo
   apt install dconf-cli`. After executing the script, please set the _cursor_
-  and _highlight_ colors by hand, with the appropriate color values listed
+  and _selection_ colors by hand, with the appropriate color values listed
   above, in `Preferences` / `Moonfly` / `Colors`.
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
@@ -248,7 +249,7 @@ for 256 colors, which usually means setting the terminal's type to
 **xterm-256color** or **screen-256color** when used inside
 [tmux](https://tmux.github.io/).
 
-The terminal should be configured with the following _moonfly_ colors:
+The terminal should then be configured with the following _moonfly_ colors:
 
 | Type           | Category        | Value     | Color                                                       |
 |----------------|-----------------|-----------|-------------------------------------------------------------|
