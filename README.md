@@ -76,6 +76,7 @@ Plugins explicity styled
 - [ALE](https://github.com/w0rp/ale)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+- [fern.vim](https://github.com/lambdalisue/fern.vim)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [Neomake](https://github.com/neomake/neomake)
