@@ -617,8 +617,10 @@ exec "highlight vimfilerOpenedFile ctermfg=4 guifg=" . s:blue
 exec "highlight vimfilerROFile ctermfg=246 guifg=" . s:grey246
 
 " fern.vim plugin
-exec "highlight FernBranch ctermfg=4 guifg=" . s:blue
-exec "highlight FernRoot ctermfg=13 guifg=" . s:purple
+exec "highlight FernBranchSymbol ctermfg=2 guifg=" . s:green
+exec "highlight FernBranchText ctermfg=4 guifg=" . s:blue
+exec "highlight FernRootSymbol ctermfg=13 guifg=" . s:purple
+exec "highlight FernRootText ctermfg=13 guifg=" . s:purple
 
 " Neomake plugin
 if g:moonflyUndercurls
