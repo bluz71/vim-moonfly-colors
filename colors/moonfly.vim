@@ -329,7 +329,6 @@ exec "highlight goLabel ctermfg=3 guifg=" . s:yellow
 exec "highlight goMethod ctermfg=12 guifg=" . s:sky
 exec "highlight goMethodCall ctermfg=12 guifg=" . s:sky
 exec "highlight goPackage ctermfg=5 guifg=" . s:violet
-exec "highlight goRepeat ctermfg=7 guifg=" . s:orange
 exec "highlight goSignedInts ctermfg=10 guifg=" . s:emerald
 exec "highlight goStruct ctermfg=8 guifg=" . s:coral
 exec "highlight goStructDef ctermfg=8 guifg=" . s:coral
