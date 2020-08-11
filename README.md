@@ -24,7 +24,7 @@ Primary Colors
 | ---------- | ----------------------------------------------------------- | ----------- | ------------------------------------------------------------ |
 | Background | ![background](https://placehold.it/64/080808/000000?text=+) | Foreground  | ![foreground](https://placehold.it/64/b2b2b2/000000?text=+)  |
 | Grey       | ![grey](https://placehold.it/64/373c40/000000?text=+)       | Coral       | ![coral](https://placehold.it/64/f09479/000000?text=+)       |
-| Red        | ![red](https://placehold.it/64/ff5454/000000?text=+)        | Crimson     | ![crimson](https://placehold.it/64/f74782/000000?text=+)     |
+| Red        | ![red](https://placehold.it/64/ff5454/000000?text=+)        | Crimson     | ![crimson](https://placehold.it/64/ff5189/000000?text=+)     |
 | Green      | ![green](https://placehold.it/64/8cc85f/000000?text=+)      | Emerald     | ![emerald](https://placehold.it/64/42cf89/000000?text=+)     |
 | Yellow     | ![yellow](https://placehold.it/64/e3c78a/000000?text=+)     | Wheat       | ![wheat](https://placehold.it/64/bfbf97/000000?text=+)       |
 | Blue       | ![blue](https://placehold.it/64/80a0ff/000000?text=+)       | Sky         | ![sky](https://placehold.it/64/78c2ff/000000?text=+)  |
@@ -268,7 +268,7 @@ The terminal should then be configured with the following _moonfly_ colors:
 | Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://placehold.it/32/79dac8/000000?text=+) |
 | Color 8        | White (normal)  | `#de935f` | ![background](https://placehold.it/32/de935f/000000?text=+) |
 | Color 9        | Black (bright)  | `#f09479` | ![background](https://placehold.it/32/f09479/000000?text=+) |
-| Color 10       | Red (bright)    | `#f74782` | ![background](https://placehold.it/32/f74782/000000?text=+) |
+| Color 10       | Red (bright)    | `#ff5189` | ![background](https://placehold.it/32/ff5189/000000?text=+) |
 | Color 11       | Green (bright)  | `#42cf89` | ![background](https://placehold.it/32/42cf89/000000?text=+) |
 | Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
 | Color 13       | Blue (bright)   | `#78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |

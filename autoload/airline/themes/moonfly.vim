@@ -9,7 +9,7 @@ let s:grey236 = ['#303030', 236]
 let s:grey234 = ['#1c1c1c', 234]
 let s:blue    = ['#80a0ff', 4]
 let s:purple  = ['#ae81ff', 13]
-let s:crimson = ['#f74782', 9]
+let s:crimson = ['#ff5189', 9]
 
 let s:normal1   = [s:grey234[0], s:blue[0],    s:grey234[1], s:blue[1]]
 let s:normal2   = [s:white[0],   s:grey236[0], s:white[1],   s:grey236[1]]
