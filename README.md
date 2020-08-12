@@ -282,7 +282,7 @@ Tip: Relative Number Column Highlighting only for the Active Window
 Historically, when `relativenumber` was set whilst `cursorline` was not set,
 Vim would automatically highlight the cursor line in the number column with
 the `CursorLineNR` highlight group. However, newer versions of Vim no longer
-do that by default unless `cursorline` is set and the new `cursorlineopt`
+do that by default, not unless `cursorline` is set and the new `cursorlineopt`
 option is also set accordingly.
 
 At the same time I also like disabling `relativenumber` for inactive windows.
@@ -298,13 +298,7 @@ if exists('&cursorlineopt')
 endif
 
 function! RelativeNumberActivity(active)
-    if &diff
-        " For diffs, do nothing since we want relativenumbers in all windows.
-        return
-    endif
-    if &buftype == "nofile" || &buftype == "nowrite"
-        setlocal nonumber
-    elseif a:active == v:true
+    if a:active == v:true
         setlocal relativenumber
         if exists('&cursorlineopt')
             setlocal cursorline
