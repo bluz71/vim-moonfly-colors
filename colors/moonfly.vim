@@ -621,6 +621,11 @@ exec "highlight FernBranchText ctermfg=4 guifg=" . s:blue
 exec "highlight FernRootSymbol ctermfg=13 guifg=" . s:purple
 exec "highlight FernRootText ctermfg=13 guifg=" . s:purple
 
+" fern-git-status.vim plugin
+exec "highlight FernGitStatusBracket ctermfg=246 guifg=" . s:grey246
+exec "highlight FernGitStatusIndex ctermfg=10 guifg=" . s:emerald
+exec "highlight FernGitStatusWorktree ctermfg=9 guifg=" . s:crimson
+
 " Neomake plugin
 if g:moonflyUndercurls
     exec "highlight NeomakeError ctermbg=bg guibg=bg gui=undercurl guisp=" . s:red
