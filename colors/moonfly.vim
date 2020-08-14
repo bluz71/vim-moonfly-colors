@@ -415,6 +415,15 @@ exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:sky
 highlight link mkdLineBreak NormalNC
 exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
 exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
+augroup MoonflyMarkdown
+    autocmd!
+    autocmd FileType markdown exec "highlight htmlH1 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH2 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH3 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH4 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH5 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH6 ctermfg=7 guifg=" . s:orange
+augroup END
 
 " PHP
 exec "highlight phpClass ctermfg=10 guifg=" . s:emerald
