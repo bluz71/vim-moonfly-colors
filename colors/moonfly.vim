@@ -116,7 +116,7 @@ exec "highlight Boolean ctermfg=6 guifg=" . s:turquoise
 " Identifiers.
 exec "highlight Identifier ctermfg=6 cterm=none guifg=" . s:turquoise
 
-" Color of titles, e.g in HTML files and Tagbar.
+" Color of titles.
 exec "highlight Title ctermfg=7 guifg=" . s:orange . " gui=none"
 
 " const, static.
@@ -344,6 +344,12 @@ exec "highlight haskellType ctermfg=12 guifg=" . s:sky
 exec "highlight haskellWhere ctermfg=5 guifg=" . s:violet
 
 " HTML
+exec "highlight htmlH1 ctermfg=5 guifg=" . s:violet
+exec "highlight htmlH2 ctermfg=5 guifg=" . s:violet
+exec "highlight htmlH3 ctermfg=5 guifg=" . s:violet
+exec "highlight htmlH4 ctermfg=5 guifg=" . s:violet
+exec "highlight htmlH5 ctermfg=5 guifg=" . s:violet
+exec "highlight htmlH6 ctermfg=5 guifg=" . s:violet
 exec "highlight htmlArg ctermfg=12 guifg=" . s:sky
 exec "highlight htmlLink ctermfg=2 guifg=" . s:green
 exec "highlight htmlEndTag ctermfg=13 guifg=" . s:purple
@@ -618,6 +624,8 @@ exec "highlight vimfilerROFile ctermfg=246 guifg=" . s:grey246
 " fern.vim plugin
 exec "highlight FernBranchSymbol ctermfg=2 guifg=" . s:green
 exec "highlight FernBranchText ctermfg=4 guifg=" . s:blue
+exec "highlight FernMarkedLine ctermfg=8 guifg=" . s:coral
+exec "highlight FernMarkedText ctermfg=8 guifg=" . s:coral
 exec "highlight FernRootSymbol ctermfg=13 guifg=" . s:purple
 exec "highlight FernRootText ctermfg=13 guifg=" . s:purple
 
