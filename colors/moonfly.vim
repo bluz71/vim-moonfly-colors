@@ -59,8 +59,6 @@ let s:cranberry   = "#e2637f" " cranberry   = 15
 let s:violet      = "#d183e8" " violet      = 5
 let s:crimson     = "#ff5189" " crimson     = 9
 let s:red         = "#ff5454" " red         = 1
-" Extra colors
-let s:blue111     = "#87afff" " blue111     = 111
 
 " Specify the the colors used by the inbuilt terminal of Neovim and Vim.
 if g:moonflyTerminalColors
@@ -685,7 +683,7 @@ exec "highlight GitGutterDelete ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
 
 " FZF plugin
 exec "highlight fzf1 ctermfg=9 ctermbg=236 guifg=" . s:crimson . " guibg=" . s:grey236
-exec "highlight fzf2 ctermfg=111 ctermbg=236 guifg=" . s:blue111 . " guibg=" . s:grey236
+exec "highlight fzf2 ctermfg=111 ctermbg=236 guifg=" . s:blue . " guibg=" . s:grey236
 exec "highlight fzf3 ctermfg=10 ctermbg=236 guifg=" . s:emerald . " guibg=" . s:grey236
 exec "highlight fzfNormal ctermfg=249 guifg=" . s:grey249
 exec "highlight fzfFgPlus ctermfg=253 guifg=" . s:grey253
