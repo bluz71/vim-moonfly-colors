@@ -709,7 +709,7 @@ exec "highlight User1 ctermbg=4   ctermfg=234 guibg=" . s:blue    . " guifg=" . 
 exec "highlight User2 ctermbg=251 ctermfg=234 guibg=" . s:white   . " guifg=" . s:grey234
 exec "highlight User3 ctermbg=13  ctermfg=234 guibg=" . s:purple  . " guifg=" . s:grey234
 exec "highlight User4 ctermbg=9   ctermfg=234 guibg=" . s:crimson . " guifg=" . s:grey234
-exec "highlight User5 ctermbg=236 ctermfg=10  guibg=" . s:grey236 . " guifg=" . s:emerald . " gui=none"
+exec "highlight User5 ctermbg=236 ctermfg=4   guibg=" . s:grey236 . " guifg=" . s:blue    . " gui=none"
 exec "highlight User6 ctermbg=236 ctermfg=251 guibg=" . s:grey236 . " guifg=" . s:white   . " gui=none"
 exec "highlight User7 ctermbg=236 ctermfg=4   guibg=" . s:grey236 . " guifg=" . s:blue    . " gui=none"
 exec "highlight User8 ctermbg=236 ctermfg=9   guibg=" . s:grey236 . " guifg=" . s:crimson . " gui=none"
