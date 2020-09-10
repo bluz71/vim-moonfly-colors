@@ -197,6 +197,15 @@ else
     exec "highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=" . s:sky . " gui=underline guisp=" . s:sky
 endif
 
+" Neovim Treesitter.
+exec "highlight TSAnnotation ctermfg=4 guifg=" . s:blue
+exec "highlight TSBoolean ctermfg=13 guifg=" . s:purple
+exec "highlight TSConstant ctermfg=10 guifg=" . s:emerald
+exec "highlight TSConstructor ctermfg=10 guifg=" . s:emerald
+exec "highlight TSFuncBuiltin ctermfg=12 guifg=" . s:sky
+exec "highlight TSFuncMacro ctermfg=12 guifg=" . s:sky
+exec "highlight TSVariableBuiltin ctermfg=14 guifg=" . s:lime
+
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:lime . " gui=none"
 exec "highlight MoreMsg ctermfg=1 guifg=" . s:red . " gui=none"
