@@ -329,7 +329,7 @@ exec "highlight elmTopLevelDecl ctermfg=8 guifg=" . s:coral
 exec "highlight elmType ctermfg=12 guifg=" . s:sky
 
 " Go
-exec "highlight goBuiltins ctermfg=9 guifg=" . s:crimson
+exec "highlight goBuiltins ctermfg=12 guifg=" . s:sky
 exec "highlight goConditional ctermfg=5 guifg=" . s:violet
 exec "highlight goDeclType ctermfg=2 guifg=" . s:green
 exec "highlight goDirective ctermfg=15 guifg=" . s:cranberry
