@@ -204,12 +204,18 @@ exec "highlight TSConstBuiltin ctermfg=2 guifg=" . s:green
 exec "highlight TSConstMacro ctermfg=5 guifg=" . s:violet
 exec "highlight TSConstant ctermfg=13 guifg=" . s:purple
 exec "highlight TSConstructor ctermfg=10 guifg=" . s:emerald
+exec "highlight TSError ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
 exec "highlight TSFuncBuiltin ctermfg=12 guifg=" . s:sky
 exec "highlight TSFuncMacro ctermfg=12 guifg=" . s:sky
 exec "highlight TSInclude ctermfg=15 guifg=" . s:cranberry
 exec "highlight TSParameter ctermfg=251 guifg=" . s:white
 exec "highlight TSPunctSpecial ctermfg=15 guifg=" . s:cranberry
 exec "highlight TSVariableBuiltin ctermfg=14 guifg=" . s:lime
+augroup MoonflyTreesitter
+    autocmd!
+    autocmd FileType html exec "highlight TSType ctermfg=4 guifg=" . s:blue
+    autocmd FileType html exec "highlight TSPunctBracket ctermfg=14 guifg=" . s:lime
+augroup END
 
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:lime . " gui=none"
