@@ -109,7 +109,7 @@ exec "highlight Function ctermfg=12 guifg=" . s:sky
 exec "highlight String ctermfg=11 guifg=" . s:wheat
 
 " Booleans.
-exec "highlight Boolean ctermfg=6 guifg=" . s:turquoise
+exec "highlight Boolean ctermfg=8 guifg=" . s:coral
 
 " Identifiers.
 exec "highlight Identifier ctermfg=6 cterm=none guifg=" . s:turquoise
@@ -267,7 +267,6 @@ exec "highlight cPreCondit ctermfg=5 guifg=" . s:violet
 exec "highlight cStatement ctermfg=5 guifg=" . s:violet
 exec "highlight cStructure ctermfg=8 guifg=" . s:coral
 exec "highlight cppAccess ctermfg=14 guifg=" . s:lime
-exec "highlight cppBoolean ctermfg=3 guifg=" . s:yellow
 exec "highlight cppCast ctermfg=6 guifg=" . s:turquoise
 exec "highlight cppCustomClass ctermfg=6 guifg=" . s:turquoise
 exec "highlight cppExceptions ctermfg=14 guifg=" . s:lime
