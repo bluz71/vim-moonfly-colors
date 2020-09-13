@@ -199,10 +199,8 @@ endif
 
 " Neovim Treesitter.
 exec "highlight TSAnnotation ctermfg=5 guifg=" . s:violet
-exec "highlight TSBoolean ctermfg=13 guifg=" . s:purple
 exec "highlight TSConstBuiltin ctermfg=2 guifg=" . s:green
 exec "highlight TSConstMacro ctermfg=5 guifg=" . s:violet
-exec "highlight TSConstant ctermfg=13 guifg=" . s:purple
 exec "highlight TSConstructor ctermfg=10 guifg=" . s:emerald
 exec "highlight TSError ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
 exec "highlight TSFuncBuiltin ctermfg=12 guifg=" . s:sky
@@ -213,8 +211,16 @@ exec "highlight TSPunctSpecial ctermfg=15 guifg=" . s:cranberry
 exec "highlight TSVariableBuiltin ctermfg=14 guifg=" . s:lime
 augroup MoonflyTreesitter
     autocmd!
-    autocmd FileType html exec "highlight TSType ctermfg=4 guifg=" . s:blue
+    " Defaults.
+    autocmd FileType *    exec "highlight TSConstant ctermfg=13 guifg=" . s:purple
+    autocmd FileType *    exec "highlight TSPunctBracket ctermfg=251 guifg=" . s:white
+    autocmd FileType *    exec "highlight TSType ctermfg=10 guifg=" . s:emerald
+    autocmd FileType *    exec "highlight TSVariable ctermfg=251 guifg=" . s:white
+    " File type overrides.
+    autocmd FileType sh   exec "highlight TSConstant ctermfg=6 guifg=" . s:turquoise
     autocmd FileType html exec "highlight TSPunctBracket ctermfg=14 guifg=" . s:lime
+    autocmd FileType html exec "highlight TSType ctermfg=4 guifg=" . s:blue
+    autocmd FileType sh   exec "highlight TSVariable ctermfg=6 guifg=" . s:turquoise
 augroup END
 
 " Misc.
@@ -362,12 +368,6 @@ exec "highlight haskellType ctermfg=12 guifg=" . s:sky
 exec "highlight haskellWhere ctermfg=5 guifg=" . s:violet
 
 " HTML
-exec "highlight htmlH1 ctermfg=5 guifg=" . s:violet
-exec "highlight htmlH2 ctermfg=5 guifg=" . s:violet
-exec "highlight htmlH3 ctermfg=5 guifg=" . s:violet
-exec "highlight htmlH4 ctermfg=5 guifg=" . s:violet
-exec "highlight htmlH5 ctermfg=5 guifg=" . s:violet
-exec "highlight htmlH6 ctermfg=5 guifg=" . s:violet
 exec "highlight htmlArg ctermfg=12 guifg=" . s:sky
 exec "highlight htmlLink ctermfg=2 guifg=" . s:green
 exec "highlight htmlEndTag ctermfg=13 guifg=" . s:purple
@@ -386,6 +386,23 @@ else
     exec "highlight htmlItalic ctermfg=247 cterm=none guifg=" . s:grey247 " gui=none"
     exec "highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=" . s:black . " guifg=" . s:grey247
 endif
+augroup MoonflyHTML
+    autocmd!
+    " Defaults.
+    autocmd FileType *        exec "highlight htmlH1 ctermfg=5 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH2 ctermfg=5 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH3 ctermfg=5 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH4 ctermfg=5 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH5 ctermfg=5 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH6 ctermfg=5 guifg=" . s:violet
+    " File type overrides.
+    autocmd FileType markdown exec "highlight htmlH1 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH2 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH3 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH4 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH5 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH6 ctermfg=7 guifg=" . s:orange
+augroup END
 
 " Java
 exec "highlight javaAnnotation ctermfg=14 guifg=" . s:lime
@@ -433,15 +450,6 @@ exec "highlight luaSpecialTable ctermfg=12 guifg=" . s:sky
 highlight link mkdLineBreak NormalNC
 exec "highlight mkdListItem ctermfg=4 guifg=" . s:blue
 exec "highlight mkdURL ctermfg=13 guifg=" . s:purple
-augroup MoonflyMarkdown
-    autocmd!
-    autocmd FileType markdown exec "highlight htmlH1 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH2 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH3 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH4 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH5 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH6 ctermfg=7 guifg=" . s:orange
-augroup END
 
 " PHP
 exec "highlight phpClass ctermfg=10 guifg=" . s:emerald
