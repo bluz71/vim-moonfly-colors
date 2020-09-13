@@ -212,18 +212,18 @@ exec "highlight TSInclude ctermfg=15 guifg=" . s:cranberry
 exec "highlight TSParameter ctermfg=251 guifg=" . s:white
 exec "highlight TSPunctSpecial ctermfg=15 guifg=" . s:cranberry
 exec "highlight TSVariableBuiltin ctermfg=14 guifg=" . s:lime
-augroup MoonflyTreesitter
+augroup MoonflyColorsTreesitter
     autocmd!
     " Defaults.
-    autocmd FileType * highlight! link TSConstant Character
-    autocmd FileType * highlight! link TSPunctBracket Normal
-    autocmd FileType * highlight! link TSType Type
-    autocmd FileType * highlight! link TSVariable Normal
+    autocmd FileType * exec "highlight TSConstant ctermfg=13 guifg=" . s:purple
+    autocmd FileType * exec "highlight TSPunctBracket ctermfg=251 guifg=" . s:white
+    autocmd FileType * exec "highlight TSType ctermfg=10 guifg=" . s:emerald
+    autocmd FileType * exec "highlight TSVariable ctermfg=251 guifg=" . s:white
     " File type overrides.
-    autocmd FileType sh   highlight! link TSConstant Identifier
-    autocmd FileType html highlight! link TSPunctBracket TSVariableBuiltin
-    autocmd FileType html highlight! link TSType htmlTagName
-    autocmd FileType sh   highlight! link TSVariable Identifier
+    autocmd FileType sh   exec "highlight TSConstant ctermfg=6 guifg=" . s:turquoise
+    autocmd FileType html exec "highlight TSPunctBracket ctermfg=14 guifg=" . s:lime
+    autocmd FileType html exec "highlight TSType ctermfg=4 guifg=" . s:blue
+    autocmd FileType sh   exec "highlight TSVariable ctermfg=6 guifg=" . s:turquoise
 augroup END
 
 " Misc.
@@ -388,7 +388,7 @@ else
     exec "highlight htmlItalic ctermfg=247 cterm=none guifg=" . s:grey247 " gui=none"
     exec "highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=" . s:black . " guifg=" . s:grey247
 endif
-augroup MoonflyHTML
+augroup MoonflyColorsHTML
     autocmd!
     " Defaults.
     autocmd FileType html highlight! link htmlH1 Statement
@@ -771,3 +771,8 @@ endif
 exec "highlight MatchWordCur ctermbg=bg guibg=bg"
 exec "highlight Cheat40Header ctermfg=4 guifg=" . s:blue
 exec "highlight Beacon ctermbg=251 guibg=" . s:white
+
+augroup MoonflyColorsEvents
+    autocmd!
+    autocmd ColorScheme * if g:colors_name != "moonfly" | silent augroup! MoonflyColorsTreesitter  | silent augroup! MoonflyColorsHTML | endif
+augroup END
