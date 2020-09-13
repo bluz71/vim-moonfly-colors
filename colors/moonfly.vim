@@ -126,6 +126,9 @@ exec "highlight Type ctermfg=10 guifg=" . s:emerald . " gui=none"
 " Numbers.
 exec "highlight Constant ctermfg=13 guifg=" . s:purple
 
+" Character constants.
+exec "highlight Character ctermfg=13 guifg=" . s:purple
+
 " Exceptions.
 exec "highlight Exception ctermfg=9 guifg=" . s:crimson
 
@@ -212,15 +215,15 @@ exec "highlight TSVariableBuiltin ctermfg=14 guifg=" . s:lime
 augroup MoonflyTreesitter
     autocmd!
     " Defaults.
-    autocmd FileType *    exec "highlight TSConstant ctermfg=13 guifg=" . s:purple
-    autocmd FileType *    exec "highlight TSPunctBracket ctermfg=251 guifg=" . s:white
-    autocmd FileType *    exec "highlight TSType ctermfg=10 guifg=" . s:emerald
-    autocmd FileType *    exec "highlight TSVariable ctermfg=251 guifg=" . s:white
+    autocmd FileType * highlight! link TSConstant Character
+    autocmd FileType * highlight! link TSPunctBracket Normal
+    autocmd FileType * highlight! link TSType Type
+    autocmd FileType * highlight! link TSVariable Normal
     " File type overrides.
-    autocmd FileType sh   exec "highlight TSConstant ctermfg=6 guifg=" . s:turquoise
-    autocmd FileType html exec "highlight TSPunctBracket ctermfg=14 guifg=" . s:lime
-    autocmd FileType html exec "highlight TSType ctermfg=4 guifg=" . s:blue
-    autocmd FileType sh   exec "highlight TSVariable ctermfg=6 guifg=" . s:turquoise
+    autocmd FileType sh   highlight! link TSConstant Identifier
+    autocmd FileType html highlight! link TSPunctBracket TSVariableBuiltin
+    autocmd FileType html highlight! link TSType htmlTagName
+    autocmd FileType sh   highlight! link TSVariable Identifier
 augroup END
 
 " Misc.
@@ -388,19 +391,19 @@ endif
 augroup MoonflyHTML
     autocmd!
     " Defaults.
-    autocmd FileType *        exec "highlight htmlH1 ctermfg=5 guifg=" . s:violet
-    autocmd FileType *        exec "highlight htmlH2 ctermfg=5 guifg=" . s:violet
-    autocmd FileType *        exec "highlight htmlH3 ctermfg=5 guifg=" . s:violet
-    autocmd FileType *        exec "highlight htmlH4 ctermfg=5 guifg=" . s:violet
-    autocmd FileType *        exec "highlight htmlH5 ctermfg=5 guifg=" . s:violet
-    autocmd FileType *        exec "highlight htmlH6 ctermfg=5 guifg=" . s:violet
+    autocmd FileType html highlight! link htmlH1 Statement
+    autocmd FileType html highlight! link htmlH2 Statement
+    autocmd FileType html highlight! link htmlH3 Statement
+    autocmd FileType html highlight! link htmlH4 Statement
+    autocmd FileType html highlight! link htmlH5 Statement
+    autocmd FileType html highlight! link htmlH5 Statement
     " File type overrides.
-    autocmd FileType markdown exec "highlight htmlH1 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH2 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH3 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH4 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH5 ctermfg=7 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH6 ctermfg=7 guifg=" . s:orange
+    autocmd FileType markdown highlight! link htmlH1 Title
+    autocmd FileType markdown highlight! link htmlH2 Title
+    autocmd FileType markdown highlight! link htmlH3 Title
+    autocmd FileType markdown highlight! link htmlH4 Title
+    autocmd FileType markdown highlight! link htmlH5 Title
+    autocmd FileType markdown highlight! link htmlH6 Title
 augroup END
 
 " Java
