@@ -213,19 +213,6 @@ exec "highlight TSKeywordOperator ctermfg=5 guifg=" . s:violet
 exec "highlight TSParameter ctermfg=251 guifg=" . s:white
 exec "highlight TSPunctSpecial ctermfg=15 guifg=" . s:cranberry
 exec "highlight TSVariableBuiltin ctermfg=14 guifg=" . s:lime
-augroup MoonflyColorsTreesitter
-    autocmd!
-    " Defaults.
-    autocmd FileType * exec "highlight TSConstant ctermfg=13 guifg=" . s:purple
-    autocmd FileType * exec "highlight TSPunctBracket ctermfg=251 guifg=" . s:white
-    autocmd FileType * exec "highlight TSType ctermfg=10 guifg=" . s:emerald
-    autocmd FileType * exec "highlight TSVariable ctermfg=251 guifg=" . s:white
-    " File type overrides.
-    autocmd FileType sh   exec "highlight TSConstant ctermfg=6 guifg=" . s:turquoise
-    autocmd FileType html exec "highlight TSPunctBracket ctermfg=14 guifg=" . s:lime
-    autocmd FileType html exec "highlight TSType ctermfg=4 guifg=" . s:blue
-    autocmd FileType sh   exec "highlight TSVariable ctermfg=6 guifg=" . s:turquoise
-augroup END
 
 " Misc.
 exec "highlight Question ctermfg=14 guifg=" . s:lime . " gui=none"
@@ -772,8 +759,3 @@ endif
 exec "highlight MatchWordCur ctermbg=bg guibg=bg"
 exec "highlight Cheat40Header ctermfg=4 guifg=" . s:blue
 exec "highlight Beacon ctermbg=251 guibg=" . s:white
-
-augroup MoonflyColorsEvents
-    autocmd!
-    autocmd ColorScheme * if g:colors_name != "moonfly" | silent augroup! MoonflyColorsTreesitter  | silent augroup! MoonflyColorsHTML | endif
-augroup END
