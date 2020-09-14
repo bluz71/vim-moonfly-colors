@@ -209,6 +209,7 @@ exec "highlight TSError ctermbg=bg ctermfg=1 guibg=bg guifg=" . s:red
 exec "highlight TSFuncBuiltin ctermfg=12 guifg=" . s:sky
 exec "highlight TSFuncMacro ctermfg=12 guifg=" . s:sky
 exec "highlight TSInclude ctermfg=15 guifg=" . s:cranberry
+exec "highlight TSKeywordOperator ctermfg=5 guifg=" . s:violet
 exec "highlight TSParameter ctermfg=251 guifg=" . s:white
 exec "highlight TSPunctSpecial ctermfg=15 guifg=" . s:cranberry
 exec "highlight TSVariableBuiltin ctermfg=14 guifg=" . s:lime
