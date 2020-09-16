@@ -609,6 +609,14 @@ highlight! link gitCommitSelectedType MoonflySky
 highlight! link gitCommitUntrackedFile MoonflyCranberry
 highlight! link gitEmail MoonflyBlue
 
+" Git commit diffs
+highlight! link diffAdded MoonflyGreen
+highlight! link diffChanged MoonflyCrimson
+highlight! link diffIndexLine MoonflyCrimson
+highlight! link diffLine MoonflySky
+highlight! link diffRemoved MoonflyRed
+highlight! link diffSubname MoonflySky
+
 " Tagbar plugin
 highlight! link TagbarFoldIcon MoonflyGrey247
 highlight! link TagbarVisibilityPublic MoonflyLime
@@ -660,14 +668,6 @@ highlight! link FernGitStatusBracket MoonflyGrey246
 highlight! link FernGitStatusIndex MoonflyEmerald
 highlight! link FernGitStatusWorktree MoonflyCrimson
 
-" Git commit diffs
-highlight! link diffAdded MoonflyGreen
-highlight! link diffChanged MoonflyCrimson
-highlight! link diffIndexLine MoonflyCrimson
-highlight! link diffLine MoonflySky
-highlight! link diffRemoved MoonflyRed
-highlight! link diffSubname MoonflySky
-
 " Misc stylings
 highlight! link bufExplorerHelp MoonflyGrey247
 highlight! link bufExplorerSortBy MoonflyGrey247
@@ -676,6 +676,7 @@ highlight! link CtrlPMatch MoonflyPurple
 highlight! link Directory MoonflyEmerald
 highlight! link HighlightedyankRegion MoonflyGrey0
 highlight! link jsonKeyword MoonflySky
+highlight! link jsonQuote MoonflyWhite
 highlight! link netrwClassify MoonflyCranberry
 highlight! link netrwDir MoonflySky
 highlight! link netrwExe MoonflyWheat
