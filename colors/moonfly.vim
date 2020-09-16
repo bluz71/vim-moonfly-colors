@@ -200,20 +200,6 @@ else
     exec 'highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=' . s:sky . ' gui=underline guisp=' . s:sky
 endif
 
-" Neovim Treesitter.
-exec 'highlight TSAnnotation ctermfg=5 guifg=' . s:violet
-exec 'highlight TSConstBuiltin ctermfg=2 guifg=' . s:green
-exec 'highlight TSConstMacro ctermfg=5 guifg=' . s:violet
-exec 'highlight TSConstructor ctermfg=10 guifg=' . s:emerald
-exec 'highlight TSError ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
-exec 'highlight TSFuncBuiltin ctermfg=12 guifg=' . s:sky
-exec 'highlight TSFuncMacro ctermfg=12 guifg=' . s:sky
-exec 'highlight TSInclude ctermfg=15 guifg=' . s:cranberry
-exec 'highlight TSKeywordOperator ctermfg=5 guifg=' . s:violet
-exec 'highlight TSParameter ctermfg=251 guifg=' . s:white
-exec 'highlight TSPunctSpecial ctermfg=15 guifg=' . s:cranberry
-exec 'highlight TSVariableBuiltin ctermfg=14 guifg=' . s:lime
-
 " Misc.
 exec 'highlight Question ctermfg=14 guifg=' . s:lime . ' gui=none'
 exec 'highlight MoreMsg ctermfg=1 guifg=' . s:red . ' gui=none'
@@ -252,119 +238,157 @@ exec 'highlight ColorColumn ctermbg=233 guibg=' . s:grey233
 " Conceal color, as used by indentLine plugin.
 exec 'highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=' . s:grey235
 
+" Custom moonfly highlight groups.
+exec 'highlight MoonflyReset ctermfg=fg guifg=fg'
+exec 'highlight MoonflyWhite ctermfg=251 guifg=' . s:white
+exec 'highlight MoonflyGrey0 ctermfg=0 guifg=' . s:grey0
+exec 'highlight MoonflyGrey247 ctermfg=247 guifg=' . s:grey247
+exec 'highlight MoonflyGrey246 ctermfg=246 guifg=' . s:grey246
+exec 'highlight MoonflyWheat ctermfg=11 guifg=' . s:wheat
+exec 'highlight MoonflyYellow ctermfg=3 guifg=' . s:yellow
+exec 'highlight MoonflyOrange ctermfg=7 guifg=' . s:orange
+exec 'highlight MoonflyCoral ctermfg=8 guifg=' . s:coral
+exec 'highlight MoonflyLime ctermfg=14 guifg=' . s:lime
+exec 'highlight MoonflyGreen ctermfg=2 guifg=' . s:green
+exec 'highlight MoonflyEmerald ctermfg=10 guifg=' . s:emerald
+exec 'highlight MoonflyBlue ctermfg=4 guifg=' . s:blue
+exec 'highlight MoonflySky ctermfg=12 guifg=' . s:sky
+exec 'highlight MoonflyTurquoise ctermfg=6 guifg=' . s:turquoise
+exec 'highlight MoonflyPurple ctermfg=13 guifg=' . s:purple
+exec 'highlight MoonflyCranberry ctermfg=15 guifg=' . s:cranberry
+exec 'highlight MoonflyViolet ctermfg=5 guifg=' . s:violet
+exec 'highlight MoonflyCrimson ctermfg=9 guifg=' . s:crimson
+exec 'highlight MoonflyRed ctermfg=1 guifg=' . s:red
+
+" Neovim Treesitter.
+highlight! link TSAnnotation MoonflyViolet
+highlight! link TSConstBuiltin MoonflyGreen
+highlight! link TSConstMacro MoonflyViolet
+highlight! link TSConstructor MoonflyEmerald
+highlight! link TSError MoonflyRed
+highlight! link TSFuncBuiltin MoonflySky
+highlight! link TSFuncMacro MoonflySky
+highlight! link TSInclude MoonflyCranberry
+highlight! link TSKeywordOperator MoonflyViolet
+highlight! link TSParameter MoonflyWhite
+highlight! link TSPunctSpecial MoonflyCranberry
+highlight! link TSVariableBuiltin MoonflyLime
+
 " C/C++
-exec 'highlight cDefine ctermfg=5 guifg=' . s:violet
-exec 'highlight cPreCondit ctermfg=5 guifg=' . s:violet
-exec 'highlight cStatement ctermfg=5 guifg=' . s:violet
-exec 'highlight cStructure ctermfg=8 guifg=' . s:coral
-exec 'highlight cppAccess ctermfg=14 guifg=' . s:lime
-exec 'highlight cppCast ctermfg=6 guifg=' . s:turquoise
-exec 'highlight cppCustomClass ctermfg=6 guifg=' . s:turquoise
-exec 'highlight cppExceptions ctermfg=14 guifg=' . s:lime
-exec 'highlight cppModifier ctermfg=5 guifg=' . s:violet
-exec 'highlight cppOperator ctermfg=2 guifg=' . s:green
-exec 'highlight cppStatement ctermfg=6 guifg=' . s:turquoise
-exec 'highlight cppSTLconstant ctermfg=12 guifg=' . s:sky
-exec 'highlight cppStructure ctermfg=5 guifg=' . s:violet
+highlight! link cDefine MoonflyViolet
+highlight! link cPreCondit MoonflyViolet
+highlight! link cStatement MoonflyViolet
+highlight! link cStructure MoonflyCoral
+highlight! link cppAccess MoonflyLime
+highlight! link cppCast MoonflyTurquoise
+highlight! link cppCustomClass MoonflyTurquoise
+highlight! link cppExceptions MoonflyLime
+highlight! link cppModifier MoonflyViolet
+highlight! link cppOperator MoonflyGreen
+highlight! link cppStatement MoonflyTurquoise
+highlight! link cppSTLconstant MoonflySky
+highlight! link cppStructure MoonflyViolet
 
 " C#
-exec 'highlight csModifier ctermfg=14 guifg=' . s:lime
-exec 'highlight csPrecondit ctermfg=5 guifg=' . s:violet
-exec 'highlight csStorage ctermfg=5 guifg=' . s:violet
-exec 'highlight csXmlTag ctermfg=4 guifg=' . s:blue
+highlight! link csModifier MoonflyLime
+highlight! link csPrecondit MoonflyViolet
+highlight! link csStorage MoonflyViolet
+highlight! link csXmlTag MoonflyBlue
 
 " Clojure
-exec 'highlight clojureDefine ctermfg=5 guifg=' . s:violet
-exec 'highlight clojureKeyword ctermfg=13 guifg=' . s:purple
-exec 'highlight clojureMacro ctermfg=7 guifg=' . s:orange
-exec 'highlight clojureParen ctermfg=4 guifg=' . s:blue
-exec 'highlight clojureSpecial ctermfg=12 guifg=' . s:sky
+highlight! link clojureDefine MoonflyViolet
+highlight! link clojureKeyword MoonflyPurple
+highlight! link clojureMacro MoonflyOrange
+highlight! link clojureParen MoonflyBlue
+highlight! link clojureSpecial MoonflySky
 
 " CoffeeScript
-exec 'highlight coffeeConstant ctermfg=10 guifg=' . s:emerald
-exec 'highlight coffeeGlobal ctermfg=6 guifg=' . s:turquoise
-exec 'highlight coffeeKeyword ctermfg=7 guifg=' . s:orange
-exec 'highlight coffeeObjAssign ctermfg=12 guifg=' . s:sky
-exec 'highlight coffeeSpecialIdent ctermfg=14 guifg=' . s:lime
-exec 'highlight coffeeSpecialVar ctermfg=4 guifg=' . s:blue
-exec 'highlight coffeeStatement ctermfg=8 guifg=' . s:coral
+highlight! link coffeeConstant MoonflyEmerald
+highlight! link coffeeGlobal MoonflyTurquoise
+highlight! link coffeeKeyword MoonflyOrange
+highlight! link coffeeObjAssign MoonflySky
+highlight! link coffeeSpecialIdent MoonflyLime
+highlight! link coffeeSpecialVar MoonflyBlue
+highlight! link coffeeStatement MoonflyCoral
 
 " Crystal
-exec 'highlight crystalAccess ctermfg=3 guifg=' . s:yellow
-exec 'highlight crystalAttribute ctermfg=12 guifg=' . s:sky
-exec 'highlight crystalBlockParameter ctermfg=2 guifg=' . s:green
-exec 'highlight crystalClass ctermfg=7 guifg=' . s:orange
-exec 'highlight crystalDefine ctermfg=5 guifg=' . s:violet
-exec 'highlight crystalExceptional ctermfg=8 guifg=' . s:coral
-exec 'highlight crystalInstanceVariable ctermfg=14 guifg=' . s:lime
-exec 'highlight crystalModule ctermfg=4 guifg=' . s:blue
-exec 'highlight crystalPseudoVariable ctermfg=2 guifg=' . s:green
-exec 'highlight crystalSharpBang ctermfg=247 guifg=' . s:grey247
-exec 'highlight crystalStringDelimiter ctermfg=11 guifg=' . s:wheat
+highlight! link crystalAccess MoonflyYellow
+highlight! link crystalAttribute MoonflySky
+highlight! link crystalBlockParameter MoonflyGreen
+highlight! link crystalClass MoonflyOrange
+highlight! link crystalDefine MoonflyViolet
+highlight! link crystalExceptional MoonflyCoral
+highlight! link crystalInstanceVariable MoonflyLime
+highlight! link crystalModule MoonflyBlue
+highlight! link crystalPseudoVariable MoonflyGreen
+highlight! link crystalSharpBang MoonflyGrey247
+highlight! link crystalStringDelimiter MoonflyWheat
 
 " CSS
-exec 'highlight cssIdentifier ctermfg=3 guifg=' . s:yellow
+highlight! link cssIdentifier MoonflyYellow
 
 " Dart
-exec 'highlight dartMetadata ctermfg=14 guifg=' . s:lime
-exec 'highlight dartStorageClass ctermfg=5 guifg=' . s:violet
-exec 'highlight dartTypedef ctermfg=5 guifg=' . s:violet
-exec 'highlight dartUserType ctermfg=4 guifg=' . s:blue
+highlight! link dartMetadata MoonflyLime
+highlight! link dartStorageClass MoonflyViolet
+highlight! link dartTypedef MoonflyViolet
+highlight! link dartUserType MoonflyBlue
 
 " Elixir
-exec 'highlight eelixirDelimiter ctermfg=9 guifg=' . s:crimson
-exec 'highlight elixirBlockDefinition ctermfg=5 guifg=' . s:violet
-exec 'highlight elixirDefine ctermfg=5 guifg=' . s:violet
-exec 'highlight elixirDocTest ctermfg=247 guifg=' . s:grey247
-exec 'highlight elixirExUnitAssert ctermfg=14 guifg=' . s:lime
-exec 'highlight elixirExUnitMacro ctermfg=12 guifg=' . s:sky
-exec 'highlight elixirKernelFunction ctermfg=2 guifg=' . s:green
-exec 'highlight elixirKeyword ctermfg=7 guifg=' . s:orange
-exec 'highlight elixirModuleDefine ctermfg=4 guifg=' . s:blue
-exec 'highlight elixirPrivateDefine ctermfg=5 guifg=' . s:violet
-exec 'highlight elixirStringDelimiter ctermfg=11 guifg=' . s:wheat
-exec 'highlight elixirVariable ctermfg=6 guifg=' . s:turquoise
+highlight! link eelixirDelimiter MoonflyCrimson
+highlight! link elixirBlockDefinition MoonflyViolet
+highlight! link elixirDefine MoonflyViolet
+highlight! link elixirDocTest MoonflyGrey247
+highlight! link elixirExUnitAssert MoonflyLime
+highlight! link elixirExUnitMacro MoonflySky
+highlight! link elixirKernelFunction MoonflyGreen
+highlight! link elixirKeyword MoonflyOrange
+highlight! link elixirModuleDefine MoonflyBlue
+highlight! link elixirPrivateDefine MoonflyViolet
+highlight! link elixirStringDelimiter MoonflyWheat
+highlight! link elixirVariable MoonflyTurquoise
 
 " Elm
-exec 'highlight elmLetBlockDefinition ctermfg=14 guifg=' . s:lime
-exec 'highlight elmTopLevelDecl ctermfg=8 guifg=' . s:coral
-exec 'highlight elmType ctermfg=12 guifg=' . s:sky
+highlight! link elmLetBlockDefinition MoonflyLime
+highlight! link elmTopLevelDecl MoonflyCoral
+highlight! link elmType MoonflySky
 
 " Go
-exec 'highlight goBuiltins ctermfg=12 guifg=' . s:sky
-exec 'highlight goConditional ctermfg=5 guifg=' . s:violet
-exec 'highlight goDeclType ctermfg=2 guifg=' . s:green
-exec 'highlight goDirective ctermfg=15 guifg=' . s:cranberry
-exec 'highlight goFloats ctermfg=13 guifg=' . s:purple
-exec 'highlight goFunction ctermfg=4 guifg=' . s:blue
-exec 'highlight goFunctionCall ctermfg=12 guifg=' . s:sky
-exec 'highlight goImport ctermfg=15 guifg=' . s:cranberry
-exec 'highlight goLabel ctermfg=3 guifg=' . s:yellow
-exec 'highlight goMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight goMethodCall ctermfg=12 guifg=' . s:sky
-exec 'highlight goPackage ctermfg=5 guifg=' . s:violet
-exec 'highlight goSignedInts ctermfg=10 guifg=' . s:emerald
-exec 'highlight goStruct ctermfg=8 guifg=' . s:coral
-exec 'highlight goStructDef ctermfg=8 guifg=' . s:coral
-exec 'highlight goUnsignedInts ctermfg=13 guifg=' . s:purple
+highlight! link goBuiltins MoonflySky
+highlight! link goConditional MoonflyViolet
+highlight! link goDeclType MoonflyGreen
+highlight! link goDirective MoonflyCranberry
+highlight! link goFloats MoonflyPurple
+highlight! link goFunction MoonflyBlue
+highlight! link goFunctionCall MoonflySky
+highlight! link goImport MoonflyCranberry
+highlight! link goLabel MoonflyYellow
+highlight! link goMethod MoonflySky
+highlight! link goMethodCall MoonflySky
+highlight! link goPackage MoonflyViolet
+highlight! link goSignedInts MoonflyEmerald
+highlight! link goStruct MoonflyCoral
+highlight! link goStructDef MoonflyCoral
+highlight! link goUnsignedInts MoonflyPurple
 
 " Haskell
-exec 'highlight haskellDecl ctermfg=7 guifg=' . s:orange
-exec 'highlight haskellDeclKeyword ctermfg=7 guifg=' . s:orange
-exec 'highlight haskellIdentifier ctermfg=6 guifg=' . s:turquoise
-exec 'highlight haskellLet ctermfg=12 guifg=' . s:sky
-exec 'highlight haskellOperators ctermfg=15 guifg=' . s:cranberry
-exec 'highlight haskellType ctermfg=12 guifg=' . s:sky
-exec 'highlight haskellWhere ctermfg=5 guifg=' . s:violet
+highlight! link haskellDecl MoonflyOrange
+highlight! link haskellDeclKeyword MoonflyOrange
+highlight! link haskellIdentifier MoonflyTurquoise
+highlight! link haskellLet MoonflySky
+highlight! link haskellOperators MoonflyCranberry
+highlight! link haskellType MoonflySky
+highlight! link haskellWhere MoonflyViolet
 
 " HTML
-exec 'highlight htmlArg ctermfg=12 guifg=' . s:sky
-exec 'highlight htmlLink ctermfg=2 guifg=' . s:green
-exec 'highlight htmlEndTag ctermfg=13 guifg=' . s:purple
-exec 'highlight htmlTag ctermfg=14 guifg=' . s:lime
-exec 'highlight htmlTagN ctermfg=4 guifg=' . s:blue
-exec 'highlight htmlTagName ctermfg=4 guifg=' . s:blue
-exec 'highlight htmlUnderline ctermfg=251 guifg=' . s:white
+highlight! link htmlArg MoonflySky
+highlight! link htmlLink MoonflyGreen
+highlight! link htmlH1 MoonflyCranberry
+highlight! link htmlH2 MoonflyOrange
+highlight! link htmlEndTag MoonflyPurple
+highlight! link htmlTag MoonflyLime
+highlight! link htmlTagN MoonflyBlue
+highlight! link htmlTagName MoonflyBlue
+highlight! link htmlUnderline MoonflyWhite
 if g:moonflyItalics
     exec 'highlight htmlBoldItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
     exec 'highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
@@ -376,143 +400,126 @@ else
     exec 'highlight htmlItalic ctermfg=247 cterm=none guifg=' . s:grey247 ' gui=none'
     exec 'highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=' . s:black . ' guifg=' . s:grey247
 endif
-augroup MoonflyColorsHTML
-    autocmd!
-    " Defaults.
-    autocmd FileType html highlight! link htmlH1 Statement
-    autocmd FileType html highlight! link htmlH2 Statement
-    autocmd FileType html highlight! link htmlH3 Statement
-    autocmd FileType html highlight! link htmlH4 Statement
-    autocmd FileType html highlight! link htmlH5 Statement
-    autocmd FileType html highlight! link htmlH5 Statement
-    " File type overrides.
-    autocmd FileType markdown highlight! link htmlH1 Title
-    autocmd FileType markdown highlight! link htmlH2 Title
-    autocmd FileType markdown highlight! link htmlH3 Title
-    autocmd FileType markdown highlight! link htmlH4 Title
-    autocmd FileType markdown highlight! link htmlH5 Title
-    autocmd FileType markdown highlight! link htmlH6 Title
-augroup END
 
 " Java
-exec 'highlight javaAnnotation ctermfg=14 guifg=' . s:lime
-exec 'highlight javaBraces ctermfg=251 guifg=' . s:white
-exec 'highlight javaClassDecl ctermfg=3 guifg=' . s:yellow
-exec 'highlight javaCommentTitle ctermfg=247 guifg=' . s:grey247
-exec 'highlight javaConstant ctermfg=12 guifg=' . s:sky
-exec 'highlight javaDebug ctermfg=12 guifg=' . s:sky
-exec 'highlight javaMethodDecl ctermfg=3 guifg=' . s:yellow
-exec 'highlight javaOperator ctermfg=9 guifg=' . s:crimson
-exec 'highlight javaScopeDecl ctermfg=5 guifg=' . s:violet
-exec 'highlight javaStatement ctermfg=6 guifg=' . s:turquoise
+highlight! link javaAnnotation MoonflyLime
+highlight! link javaBraces MoonflyWhite
+highlight! link javaClassDecl MoonflyYellow
+highlight! link javaCommentTitle MoonflyGrey247
+highlight! link javaConstant MoonflySky
+highlight! link javaDebug MoonflySky
+highlight! link javaMethodDecl MoonflyYellow
+highlight! link javaOperator MoonflyCrimson
+highlight! link javaScopeDecl MoonflyViolet
+highlight! link javaStatement MoonflyTurquoise
 
 " JavaScript, 'pangloss/vim-javascript' plugin
-exec 'highlight jsClassDefinition ctermfg=10 guifg=' . s:emerald
-exec 'highlight jsClassKeyword ctermfg=7 guifg=' . s:orange
-exec 'highlight jsFrom ctermfg=8 guifg=' . s:coral
-exec 'highlight jsFuncBlock ctermfg=6 guifg=' . s:turquoise
-exec 'highlight jsFuncCall ctermfg=12 guifg=' . s:sky
-exec 'highlight jsFunction ctermfg=14 guifg=' . s:lime
-exec 'highlight jsGlobalObjects ctermfg=10 guifg=' . s:emerald
-exec 'highlight jsModuleAs ctermfg=8 guifg=' . s:coral
-exec 'highlight jsObjectKey ctermfg=12 guifg=' . s:sky
-exec 'highlight jsObjectValue ctermfg=10 guifg=' . s:emerald
-exec 'highlight jsOperator ctermfg=5 guifg=' . s:violet
-exec 'highlight jsStorageClass ctermfg=14 guifg=' . s:lime
-exec 'highlight jsTemplateBraces ctermfg=15 guifg=' . s:cranberry
-exec 'highlight jsTemplateExpression ctermfg=6 guifg=' . s:turquoise
-exec 'highlight jsThis ctermfg=2 guifg=' . s:green
+highlight! link jsClassDefinition MoonflyEmerald
+highlight! link jsClassKeyword MoonflyOrange
+highlight! link jsFrom MoonflyCoral
+highlight! link jsFuncBlock MoonflyTurquoise
+highlight! link jsFuncCall MoonflySky
+highlight! link jsFunction MoonflyLime
+highlight! link jsGlobalObjects MoonflyEmerald
+highlight! link jsModuleAs MoonflyCoral
+highlight! link jsObjectKey MoonflySky
+highlight! link jsObjectValue MoonflyEmerald
+highlight! link jsOperator MoonflyViolet
+highlight! link jsStorageClass MoonflyLime
+highlight! link jsTemplateBraces MoonflyCranberry
+highlight! link jsTemplateExpression MoonflyTurquoise
+highlight! link jsThis MoonflyGreen
 
 " JSX, 'MaxMEllon/vim-jsx-pretty' plugin
-exec 'highlight jsxAttrib ctermfg=14 guifg=' . s:lime
-exec 'highlight jsxClosePunct ctermfg=13 guifg=' . s:purple
-exec 'highlight jsxComponentName ctermfg=4 guifg=' . s:blue
-exec 'highlight jsxOpenPunct ctermfg=14 guifg=' . s:lime
-exec 'highlight jsxTagName ctermfg=12 guifg=' . s:sky
+highlight! link jsxAttrib MoonflyLime
+highlight! link jsxClosePunct MoonflyPurple
+highlight! link jsxComponentName MoonflyBlue
+highlight! link jsxOpenPunct MoonflyLime
+highlight! link jsxTagName MoonflySky
 
 " Lua
-exec 'highlight luaBraces ctermfg=15 guifg=' . s:cranberry
-exec 'highlight luaBuiltin ctermfg=2 guifg=' . s:green
-exec 'highlight luaFuncCall ctermfg=12 guifg=' . s:sky
-exec 'highlight luaSpecialTable ctermfg=12 guifg=' . s:sky
+highlight! link luaBraces MoonflyCranberry
+highlight! link luaBuiltin MoonflyGreen
+highlight! link luaFuncCall MoonflySky
+highlight! link luaSpecialTable MoonflySky
 
 " Markdown, 'plasticboy/vim-markdown' plugin
-highlight link mkdLineBreak NormalNC
-exec 'highlight mkdListItem ctermfg=4 guifg=' . s:blue
-exec 'highlight mkdURL ctermfg=13 guifg=' . s:purple
+highlight! link mkdLineBreak NormalNC
+highlight! link mkdListItem MoonflyBlue
+highlight! link mkdURL MoonflyPurple
 
 " PHP
-exec 'highlight phpClass ctermfg=10 guifg=' . s:emerald
-exec 'highlight phpClasses ctermfg=4 guifg=' . s:blue
-exec 'highlight phpFunction ctermfg=12 guifg=' . s:sky
-exec 'highlight phpParent ctermfg=fg guifg=fg'
-exec 'highlight phpType ctermfg=5 guifg=' . s:violet
+highlight! link phpClass MoonflyEmerald
+highlight! link phpClasses MoonflyBlue
+highlight! link phpFunction MoonflySky
+highlight! link phpParent MoonflyReset
+highlight! link phpType MoonflyViolet
 
 " PureScript
-exec 'highlight purescriptClass ctermfg=7 guifg=' . s:orange
-exec 'highlight purescriptModuleParams ctermfg=8 guifg=' . s:coral
+highlight! link purescriptClass MoonflyOrange
+highlight! link purescriptModuleParams MoonflyCoral
 
 " Python
-exec 'highlight pythonBuiltin ctermfg=4 guifg=' . s:blue
-exec 'highlight pythonClassVar ctermfg=2 guifg=' . s:green
-exec 'highlight pythonCoding ctermfg=12 guifg=' . s:sky
-exec 'highlight pythonImport ctermfg=15 guifg=' . s:cranberry
-exec 'highlight pythonOperator ctermfg=5 guifg=' . s:violet
-exec 'highlight pythonRun ctermfg=12 guifg=' . s:sky
-exec 'highlight pythonStatement ctermfg=5 guifg=' s:violet
+highlight! link pythonBuiltin MoonflyBlue
+highlight! link pythonClassVar MoonflyGreen
+highlight! link pythonCoding MoonflySky
+highlight! link pythonImport MoonflyCranberry
+highlight! link pythonOperator MoonflyViolet
+highlight! link pythonRun MoonflySky
+highlight! link pythonStatement MoonflyViolet
 
 " Ruby
-exec 'highlight erubyDelimiter ctermfg=9 guifg=' . s:crimson
-exec 'highlight rspecGroupMethods ctermfg=4 guifg=' . s:blue
-exec 'highlight rubyAccess ctermfg=3 guifg=' . s:yellow
-exec 'highlight rubyAssertion ctermfg=12 guifg=' . s:sky
-exec 'highlight rubyAttribute ctermfg=12 guifg=' . s:sky
-exec 'highlight rubyBlockParameter ctermfg=2 guifg=' . s:green
-exec 'highlight rubyCallback ctermfg=12 guifg=' . s:sky
-exec 'highlight rubyClass ctermfg=7 guifg=' . s:orange
-exec 'highlight rubyDefine ctermfg=5 guifg=' . s:violet
-exec 'highlight rubyEntities ctermfg=12 guifg=' . s:sky
-exec 'highlight rubyExceptional ctermfg=8 guifg=' . s:coral
-exec 'highlight rubyGemfileMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight rubyInstanceVariable ctermfg=6 guifg=' . s:turquoise
-exec 'highlight rubyInterpolationDelimiter ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rubyMacro ctermfg=12 guifg=' . s:sky
-exec 'highlight rubyModule ctermfg=4 guifg=' . s:blue
-exec 'highlight rubyPseudoVariable ctermfg=2 guifg=' . s:green
-exec 'highlight rubyResponse ctermfg=12 guifg=' . s:sky
-exec 'highlight rubyRoute ctermfg=12 guifg=' . s:sky
-exec 'highlight rubySharpBang ctermfg=247 guifg=' . s:grey247
-exec 'highlight rubyStringDelimiter ctermfg=11 guifg=' . s:wheat
+highlight! link erubyDelimiter MoonflyCrimson
+highlight! link rspecGroupMethods MoonflyBlue
+highlight! link rubyAccess MoonflyYellow
+highlight! link rubyAssertion MoonflySky
+highlight! link rubyAttribute MoonflySky
+highlight! link rubyBlockParameter MoonflyGreen
+highlight! link rubyCallback MoonflySky
+highlight! link rubyClass MoonflyOrange
+highlight! link rubyDefine MoonflyViolet
+highlight! link rubyEntities MoonflySky
+highlight! link rubyExceptional MoonflyCoral
+highlight! link rubyGemfileMethod MoonflySky
+highlight! link rubyInstanceVariable MoonflyTurquoise
+highlight! link rubyInterpolationDelimiter MoonflyCranberry
+highlight! link rubyMacro MoonflySky
+highlight! link rubyModule MoonflyBlue
+highlight! link rubyPseudoVariable MoonflyGreen
+highlight! link rubyResponse MoonflySky
+highlight! link rubyRoute MoonflySky
+highlight! link rubySharpBang MoonflyGrey247
+highlight! link rubyStringDelimiter MoonflyWheat
 
 " Rust
-exec 'highlight rustAssert ctermfg=2 guifg=' . s:green
-exec 'highlight rustAttribute guifg=fg'
-exec 'highlight rustCharacterInvalid ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rustCharacterInvalidUnicode ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rustCommentBlockDoc ctermfg=247 guifg=' . s:grey247
-exec 'highlight rustCommentBlockDocError ctermfg=247 guifg=' . s:grey247
-exec 'highlight rustCommentLineDoc ctermfg=247 guifg=' . s:grey247
-exec 'highlight rustCommentLineDocError ctermfg=247 guifg=' . s:grey247
-exec 'highlight rustConstant ctermfg=7 guifg=' . s:orange
-exec 'highlight rustDerive ctermfg=2 guifg=' . s:green
-exec 'highlight rustEscapeError ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rustFuncName ctermfg=4 guifg=' . s:blue
-exec 'highlight rustIdentifier ctermfg=4 guifg=' . s:blue
-exec 'highlight rustInvalidBareKeyword ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rustKeyword ctermfg=5 guifg=' . s:violet
-exec 'highlight rustLifetime ctermfg=5 guifg=' . s:violet
-exec 'highlight rustMacro ctermfg=2 guifg=' . s:green
-exec 'highlight rustMacroVariable ctermfg=5 guifg=' . s:violet
-exec 'highlight rustModPath ctermfg=12 guifg=' . s:sky
-exec 'highlight rustObsoleteExternMod ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rustObsoleteStorage ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rustReservedKeyword ctermfg=15 guifg=' . s:cranberry
-exec 'highlight rustSelf ctermfg=6 guifg=' . s:turquoise
-exec 'highlight rustSigil ctermfg=6 guifg=' . s:turquoise
-exec 'highlight rustStorage ctermfg=5 guifg=' . s:violet
-exec 'highlight rustStructure ctermfg=5 guifg=' . s:violet
-exec 'highlight rustTrait ctermfg=10 guifg=' . s:emerald
-exec 'highlight rustType ctermfg=10 guifg=' . s:emerald
+highlight! link rustAssert MoonflyGreen
+highlight! link rustAttribute MoonflyReset
+highlight! link rustCharacterInvalid MoonflyCranberry
+highlight! link rustCharacterInvalidUnicode MoonflyCranberry
+highlight! link rustCommentBlockDoc MoonflyGrey247
+highlight! link rustCommentBlockDocError MoonflyGrey247
+highlight! link rustCommentLineDoc MoonflyGrey247
+highlight! link rustCommentLineDocError MoonflyGrey247
+highlight! link rustConstant MoonflyOrange
+highlight! link rustDerive MoonflyGreen
+highlight! link rustEscapeError MoonflyCranberry
+highlight! link rustFuncName MoonflyBlue
+highlight! link rustIdentifier MoonflyBlue
+highlight! link rustInvalidBareKeyword MoonflyCranberry
+highlight! link rustKeyword MoonflyViolet
+highlight! link rustLifetime MoonflyViolet
+highlight! link rustMacro MoonflyGreen
+highlight! link rustMacroVariable MoonflyViolet
+highlight! link rustModPath MoonflySky
+highlight! link rustObsoleteExternMod MoonflyCranberry
+highlight! link rustObsoleteStorage MoonflyCranberry
+highlight! link rustReservedKeyword MoonflyCranberry
+highlight! link rustSelf MoonflyTurquoise
+highlight! link rustSigil MoonflyTurquoise
+highlight! link rustStorage MoonflyViolet
+highlight! link rustStructure MoonflyViolet
+highlight! link rustTrait MoonflyEmerald
+highlight! link rustType MoonflyEmerald
 
 " Scala
 exec 'highlight scalaCapitalWord ctermfg=4 guifg=' . s:blue
@@ -522,142 +529,172 @@ exec 'highlight scalaKeywordModifier ctermfg=14 guifg=' . s:lime
 exec 'highlight scalaSpecial ctermfg=9 guifg=' . s:crimson
 
 " Shell scripts
-exec 'highlight shAlias ctermfg=6 guifg=' . s:turquoise
-exec 'highlight shCommandSub ctermfg=fg guifg=fg'
-exec 'highlight shLoop ctermfg=5 guifg=' . s:violet
-exec 'highlight shSetList ctermfg=6 guifg=' . s:turquoise
-exec 'highlight shShellVariables ctermfg=14 guifg=' . s:lime
-exec 'highlight shStatement ctermfg=fg guifg=fg'
-exec 'highlight shVariable ctermfg=6 guifg=' . s:turquoise
+highlight! link shAlias MoonflyTurquoise
+highlight! link shCommandSub MoonflyReset
+highlight! link shLoop MoonflyViolet
+highlight! link shSetList MoonflyTurquoise
+highlight! link shShellVariables MoonflyLime
+highlight! link shStatement MoonflyReset
+highlight! link shVariable MoonflyTurquoise
 
 " TypeScript (leafgarland/typescript-vim)
-exec 'highlight typescriptDOMObjects ctermfg=4 guifg=' . s:blue
-exec 'highlight typescriptFuncComma ctermfg=251 guifg=' . s:white
-exec 'highlight typescriptFuncKeyword ctermfg=14 guifg=' . s:lime
-exec 'highlight typescriptGlobalObjects ctermfg=4 guifg=' . s:blue
-exec 'highlight typescriptIdentifier ctermfg=2 guifg=' . s:green
-exec 'highlight typescriptNull ctermfg=2 guifg=' . s:green
-exec 'highlight typescriptOpSymbols ctermfg=5 guifg=' . s:violet
-exec 'highlight typescriptOperator ctermfg=9 guifg=' . s:crimson
-exec 'highlight typescriptParens ctermfg=251 guifg=' . s:white
-exec 'highlight typescriptReserved ctermfg=5 guifg=' . s:violet
-exec 'highlight typescriptStorageClass ctermfg=14 guifg=' . s:lime
+highlight! link typescriptDOMObjects MoonflyBlue
+highlight! link typescriptFuncComma MoonflyWhite
+highlight! link typescriptFuncKeyword MoonflyLime
+highlight! link typescriptGlobalObjects MoonflyBlue
+highlight! link typescriptIdentifier MoonflyGreen
+highlight! link typescriptNull MoonflyGreen
+highlight! link typescriptOpSymbols MoonflyViolet
+highlight! link typescriptOperator MoonflyCrimson
+highlight! link typescriptParens MoonflyWhite
+highlight! link typescriptReserved MoonflyViolet
+highlight! link typescriptStorageClass MoonflyLime
 
 " TypeScript (HerringtonDarkholme/yats.vim)
-exec 'highlight typeScriptModule ctermfg=4 guifg=' . s:blue
-exec 'highlight typescriptAbstract ctermfg=8 guifg=' . s:coral
-exec 'highlight typescriptArrayMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptArrowFuncArg ctermfg=251 guifg=' . s:white
-exec 'highlight typescriptBOM ctermfg=10 guifg=' . s:emerald
-exec 'highlight typescriptBOMHistoryMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptBOMLocationMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptBOMWindowProp ctermfg=2 guifg=' . s:green
-exec 'highlight typescriptBraces ctermfg=251 guifg=' . s:white
-exec 'highlight typescriptCall ctermfg=251 guifg=' . s:white
-exec 'highlight typescriptClassHeritage ctermfg=10 guifg=' . s:emerald
-exec 'highlight typescriptClassKeyword ctermfg=7 guifg=' . s:orange
-exec 'highlight typescriptClassName ctermfg=10 guifg=' . s:emerald
-exec 'highlight typescriptDecorator ctermfg=14 guifg=' . s:lime
-exec 'highlight typescriptDOMDocMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptDOMEventTargetMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptDOMNodeMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptExceptions ctermfg=9 guifg=' . s:crimson
-exec 'highlight typescriptFuncType ctermfg=251 guifg=' . s:white
-exec 'highlight typescriptMathStaticMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptMethodAccessor ctermfg=5 guifg=' . s:violet
-exec 'highlight typescriptObjectLabel ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptParamImpl ctermfg=251 guifg=' . s:white
-exec 'highlight typescriptStringMethod ctermfg=12 guifg=' . s:sky
-exec 'highlight typescriptTry ctermfg=9 guifg=' . s:crimson
-exec 'highlight typescriptVariable ctermfg=14 guifg=' . s:lime
-exec 'highlight typescriptXHRMethod ctermfg=12 guifg=' . s:sky
+highlight! link typeScriptModule MoonflyBlue
+highlight! link typescriptAbstract MoonflyCoral
+highlight! link typescriptArrayMethod MoonflySky
+highlight! link typescriptArrowFuncArg MoonflyWhite
+highlight! link typescriptBOM MoonflyEmerald
+highlight! link typescriptBOMHistoryMethod MoonflySky
+highlight! link typescriptBOMLocationMethod MoonflySky
+highlight! link typescriptBOMWindowProp MoonflyGreen
+highlight! link typescriptBraces MoonflyWhite
+highlight! link typescriptCall MoonflyWhite
+highlight! link typescriptClassHeritage MoonflyEmerald
+highlight! link typescriptClassKeyword MoonflyOrange
+highlight! link typescriptClassName MoonflyEmerald
+highlight! link typescriptDecorator MoonflyLime
+highlight! link typescriptDOMDocMethod MoonflySky
+highlight! link typescriptDOMEventTargetMethod MoonflySky
+highlight! link typescriptDOMNodeMethod MoonflySky
+highlight! link typescriptExceptions MoonflyCrimson
+highlight! link typescriptFuncType MoonflyWhite
+highlight! link typescriptMathStaticMethod MoonflySky
+highlight! link typescriptMethodAccessor MoonflyViolet
+highlight! link typescriptObjectLabel MoonflySky
+highlight! link typescriptParamImpl MoonflyWhite
+highlight! link typescriptStringMethod MoonflySky
+highlight! link typescriptTry MoonflyCrimson
+highlight! link typescriptVariable MoonflyLime
+highlight! link typescriptXHRMethod MoonflySky
 
 " Vimscript
-exec 'highlight vimBracket ctermfg=12 guifg=' . s:sky
-exec 'highlight vimCommand ctermfg=7 guifg=' . s:orange
-exec 'highlight vimCommentTitle ctermfg=5 guifg=' . s:violet
-exec 'highlight vimEnvvar ctermfg=9 guifg=' . s:crimson
-exec 'highlight vimFuncName ctermfg=12 guifg=' . s:sky
-exec 'highlight vimFuncSID ctermfg=12 guifg=' . s:sky
-exec 'highlight vimFunction ctermfg=12 guifg=' . s:sky
-exec 'highlight vimNotation ctermfg=12 guifg=' . s:sky
-exec 'highlight vimOption ctermfg=10 guifg=' . s:emerald
-exec 'highlight vimParenSep ctermfg=251 guifg=' . s:white
-exec 'highlight vimSep ctermfg=251 guifg=' . s:white
-exec 'highlight vimUserFunc ctermfg=12 guifg=' . s:sky
+highlight! link vimBracket MoonflySky
+highlight! link vimCommand MoonflyOrange
+highlight! link vimCommentTitle MoonflyViolet
+highlight! link vimEnvvar MoonflyCrimson
+highlight! link vimFuncName MoonflySky
+highlight! link vimFuncSID MoonflySky
+highlight! link vimFunction MoonflySky
+highlight! link vimNotation MoonflySky
+highlight! link vimOption MoonflyEmerald
+highlight! link vimParenSep MoonflyWhite
+highlight! link vimSep MoonflyWhite
+highlight! link vimUserFunc MoonflySky
 
 " XML
-exec 'highlight xmlAttrib ctermfg=14 guifg=' . s:lime
-exec 'highlight xmlEndTag ctermfg=4 guifg=' . s:blue
-exec 'highlight xmlTag ctermfg=14 guifg=' . s:lime
-exec 'highlight xmlTagName ctermfg=4 guifg=' . s:blue
+highlight! link xmlAttrib MoonflyLime
+highlight! link xmlEndTag MoonflyBlue
+highlight! link xmlTag MoonflyLime
+highlight! link xmlTagName MoonflyBlue
+
+" Git commits
+highlight! link gitCommitBranch MoonflySky
+highlight! link gitCommitDiscardedFile MoonflyCrimson
+highlight! link gitCommitDiscardedType MoonflySky
+highlight! link gitCommitHeader MoonflyPurple
+highlight! link gitCommitSelectedFile MoonflyEmerald
+highlight! link gitCommitSelectedType MoonflySky
+highlight! link gitCommitUntrackedFile MoonflyCranberry
+highlight! link gitEmail MoonflyBlue
+
+" Tagbar plugin
+highlight! link TagbarFoldIcon MoonflyGrey247
+highlight! link TagbarVisibilityPublic MoonflyLime
+highlight! link TagbarVisibilityProtected MoonflyLime
+highlight! link TagbarVisibilityPrivate MoonflyLime
+highlight! link TagbarKind MoonflyEmerald
+
+" NERDTree plugin
+highlight! link NERDTreeClosable MoonflyGreen
+highlight! link NERDTreeCWD MoonflyPurple
+highlight! link NERDTreeDir MoonflySky
+highlight! link NERDTreeDirSlash MoonflyCranberry
+highlight! link NERDTreeExecFile MoonflyWheat
+highlight! link NERDTreeFile MoonflyWhite
+highlight! link NERDTreeHelp MoonflyGrey247
+highlight! link NERDTreeLinkDir MoonflyBlue
+highlight! link NERDTreeLinkFile MoonflyBlue
+highlight! link NERDTreeLinkTarget MoonflyTurquoise
+highlight! link NERDTreeOpenable MoonflyGreen
+highlight! link NERDTreePart MoonflyGrey0
+highlight! link NERDTreePartFile MoonflyGrey0
+highlight! link NERDTreeUp MoonflyBlue
+
+" NERDTree Git plugin
+highlight! link NERDTreeGitStatusDirDirty MoonflyWheat
+highlight! link NERDTreeGitStatusModified MoonflyCrimson
+highlight! link NERDTreeGitStatusRenamed MoonflySky
+highlight! link NERDTreeGitStatusStaged MoonflySky
+highlight! link NERDTreeGitStatusUntracked MoonflyRed
+
+" vimfiler plugin
+highlight! link vimfilerClosedFile MoonflyBlue
+highlight! link vimfilerMarkedFile MoonflyOrange
+highlight! link vimfilerNonMark MoonflyGreen
+highlight! link vimfilerNormalFile MoonflyWhite
+highlight! link vimfilerOpenedFile MoonflyBlue
+highlight! link vimfilerROFile MoonflyGrey246
+
+" fern.vim plugin
+highlight! link FernBranchSymbol MoonflyGreen
+highlight! link FernBranchText MoonflyBlue
+highlight! link FernMarkedLine MoonflyCoral
+highlight! link FernMarkedText MoonflyCoral
+highlight! link FernRootSymbol MoonflyPurple
+highlight! link FernRootText MoonflyPurple
+
+" fern-git-status.vim plugin
+highlight! link FernGitStatusBracket MoonflyGrey246
+highlight! link FernGitStatusIndex MoonflyEmerald
+highlight! link FernGitStatusWorktree MoonflyCrimson
+
+" Git commit diffs
+highlight! link diffAdded MoonflyGreen
+highlight! link diffChanged MoonflyCrimson
+highlight! link diffIndexLine MoonflyCrimson
+highlight! link diffLine MoonflySky
+highlight! link diffRemoved MoonflyRed
+highlight! link diffSubname MoonflySky
+
+" Misc stylings
+highlight! link bufExplorerHelp MoonflyGrey247
+highlight! link bufExplorerSortBy MoonflyGrey247
+highlight! link CleverFDefaultLabel MoonflyCrimson
+highlight! link CtrlPMatch MoonflyPurple
+highlight! link Directory MoonflyEmerald
+highlight! link HighlightedyankRegion MoonflyGrey0
+highlight! link jsonKeyword MoonflySky
+highlight! link netrwClassify MoonflyCranberry
+highlight! link netrwDir MoonflySky
+highlight! link netrwExe MoonflyWheat
+highlight! link tagName MoonflyTurquoise
+highlight! link Cheat40Header MoonflyBlue
+highlight! link Beacon MoonflyWhite
+if g:moonflyUnderlineMatchParen
+    exec 'highlight MatchWord cterm=underline gui=underline guisp=' . s:coral
+else
+    highlight! link MatchWord MoonflyCoral
+endif
+exec 'highlight snipLeadingSpaces ctermbg=bg ctermfg=fg guibg=bg guifg=fg'
+exec 'highlight MatchWordCur ctermbg=bg guibg=bg'
 
 " vimdiff/nvim -d
 exec 'highlight DiffAdd ctermbg=10 ctermfg=bg guibg=' . s:emerald . ' guifg=bg'
 exec 'highlight DiffChange ctermbg=236 guibg=' . s:grey236
 exec 'highlight DiffDelete ctermbg=236 ctermfg=9 guibg=' . s:grey236 . ' guifg=' . s:crimson ' gui=none'
 exec 'highlight DiffText ctermbg=4 ctermfg=bg guibg=' . s:blue . ' guifg=bg gui=none'
-
-" Git commits
-exec 'highlight gitCommitBranch ctermfg=12 guifg=' . s:sky
-exec 'highlight gitCommitDiscardedFile ctermfg=9 guifg=' . s:crimson
-exec 'highlight gitCommitDiscardedType ctermfg=12 guifg=' . s:sky
-exec 'highlight gitCommitHeader ctermfg=13 guifg=' . s:purple
-exec 'highlight gitCommitSelectedFile ctermfg=10 guifg=' . s:emerald
-exec 'highlight gitCommitSelectedType ctermfg=12 guifg=' . s:sky
-exec 'highlight gitCommitUntrackedFile ctermfg=15 guifg=' . s:cranberry
-exec 'highlight gitEmail ctermfg=4 guifg=' . s:blue
-
-" Tagbar plugin
-exec 'highlight TagbarFoldIcon ctermfg=247 guifg=' . s:grey247
-exec 'highlight TagbarVisibilityPublic ctermfg=14 guifg=' . s:lime
-exec 'highlight TagbarVisibilityProtected ctermfg=14 guifg=' . s:lime
-exec 'highlight TagbarVisibilityPrivate ctermfg=14 guifg=' . s:lime
-exec 'highlight TagbarKind ctermfg=10 guifg=' . s:emerald
-
-" NERDTree plugin
-exec 'highlight NERDTreeClosable ctermfg=2 guifg=' . s:green
-exec 'highlight NERDTreeCWD ctermfg=13 guifg=' . s:purple
-exec 'highlight NERDTreeDir ctermfg=12 guifg=' . s:sky
-exec 'highlight NERDTreeDirSlash ctermfg=15 guifg=' . s:cranberry
-exec 'highlight NERDTreeExecFile ctermfg=11 guifg=' . s:wheat
-exec 'highlight NERDTreeFile ctermfg=251 guifg=' . s:white
-exec 'highlight NERDTreeHelp ctermfg=247 guifg=' . s:grey247
-exec 'highlight NERDTreeLinkDir ctermfg=4 guifg=' . s:blue
-exec 'highlight NERDTreeLinkFile ctermfg=4 guifg=' . s:blue
-exec 'highlight NERDTreeLinkTarget ctermfg=6 guifg=' . s:turquoise
-exec 'highlight NERDTreeOpenable ctermfg=2 guifg=' . s:green
-exec 'highlight NERDTreePart ctermfg=0 guifg=' . s:grey0
-exec 'highlight NERDTreePartFile ctermfg=0 guifg=' . s:grey0
-exec 'highlight NERDTreeUp ctermfg=4 guifg=' . s:blue
-
-" NERDTree Git plugin
-exec 'highlight NERDTreeGitStatusDirDirty ctermfg=11 guifg=' . s:wheat
-exec 'highlight NERDTreeGitStatusModified ctermfg=9 guifg=' . s:crimson
-exec 'highlight NERDTreeGitStatusRenamed ctermfg=12 guifg=' . s:sky
-exec 'highlight NERDTreeGitStatusStaged ctermfg=12 guifg=' . s:sky
-exec 'highlight NERDTreeGitStatusUntracked ctermfg=1 guifg=' . s:red
-
-" vimfiler plugin
-exec 'highlight vimfilerClosedFile ctermfg=4 guifg=' . s:blue
-exec 'highlight vimfilerMarkedFile ctermfg=7 guifg=' . s:orange
-exec 'highlight vimfilerNonMark ctermfg=2 guifg=' . s:green
-exec 'highlight vimfilerNormalFile ctermfg=251 guifg=' . s:white
-exec 'highlight vimfilerOpenedFile ctermfg=4 guifg=' . s:blue
-exec 'highlight vimfilerROFile ctermfg=246 guifg=' . s:grey246
-
-" fern.vim plugin
-exec 'highlight FernBranchSymbol ctermfg=2 guifg=' . s:green
-exec 'highlight FernBranchText ctermfg=4 guifg=' . s:blue
-exec 'highlight FernMarkedLine ctermfg=8 guifg=' . s:coral
-exec 'highlight FernMarkedText ctermfg=8 guifg=' . s:coral
-exec 'highlight FernRootSymbol ctermfg=13 guifg=' . s:purple
-exec 'highlight FernRootText ctermfg=13 guifg=' . s:purple
-
-" fern-git-status.vim plugin
-exec 'highlight FernGitStatusBracket ctermfg=246 guifg=' . s:grey246
-exec 'highlight FernGitStatusIndex ctermfg=10 guifg=' . s:emerald
-exec 'highlight FernGitStatusWorktree ctermfg=9 guifg=' . s:crimson
 
 " Neomake plugin
 if g:moonflyUndercurls
@@ -731,31 +768,3 @@ let g:fzf_colors = {
   \  'spinner': ['fg', 'Type'],
   \  'header':  ['fg', 'CursorLineNr']
   \}
-
-" Misc languages and plugins
-exec 'highlight bufExplorerHelp ctermfg=247 guifg=' . s:grey247
-exec 'highlight bufExplorerSortBy ctermfg=247 guifg=' . s:grey247
-exec 'highlight CleverFDefaultLabel ctermfg=9 guifg=' . s:crimson
-exec 'highlight CtrlPMatch ctermfg=13 guifg=' . s:purple
-exec 'highlight Directory ctermfg=10 guifg=' . s:emerald
-exec 'highlight HighlightedyankRegion ctermbg=0 guibg=' . s:grey0
-exec 'highlight jsonKeyword ctermfg=12 guifg=' . s:sky
-exec 'highlight netrwClassify ctermfg=15 guifg=' . s:cranberry
-exec 'highlight netrwDir ctermfg=12 guifg=' . s:sky
-exec 'highlight netrwExe ctermfg=11 guifg=' . s:wheat
-exec 'highlight snipLeadingSpaces ctermbg=bg ctermfg=fg guibg=bg guifg=fg'
-exec 'highlight tagName ctermfg=6 guifg=' . s:turquoise
-exec 'highlight diffAdded ctermfg=2 guifg=' . s:green
-exec 'highlight diffChanged ctermfg=9 guifg=' . s:crimson
-exec 'highlight diffIndexLine ctermfg=9 guifg=' . s:crimson
-exec 'highlight diffLine ctermfg=12 guifg=' . s:sky
-exec 'highlight diffRemoved ctermfg=1 guifg=' . s:red
-exec 'highlight diffSubname ctermfg=12 guifg=' . s:sky
-if g:moonflyUnderlineMatchParen
-    exec 'highlight MatchWord cterm=underline gui=underline guisp=' . s:coral
-else
-    exec 'highlight MatchWord ctermfg=8 guifg=' . s:coral
-endif
-exec 'highlight MatchWordCur ctermbg=bg guibg=bg'
-exec 'highlight Cheat40Header ctermfg=4 guifg=' . s:blue
-exec 'highlight Beacon ctermbg=251 guibg=' . s:white
