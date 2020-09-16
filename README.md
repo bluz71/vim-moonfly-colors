@@ -80,6 +80,7 @@ Plugins explicity styled
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [Neomake](https://github.com/neomake/neomake)
+- [Signify](https://github.com/mhinz/vim-signify)
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [clever-f](https://github.com/rhysd/clever-f.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)

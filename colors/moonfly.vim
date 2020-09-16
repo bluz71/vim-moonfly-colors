@@ -27,10 +27,10 @@ let g:moonflyUndercurls          = get(g:, 'moonflyUndercurls', 1)
 let g:moonflyItalics             = get(g:, 'moonflyItalics', 1)
 let g:moonflyFloatingFZF         = get(g:, 'moonflyFloatingFZF', 0)
 
-" Background and foreground.
+" Background and foreground
 let s:black       = '#080808' " black       = 232
 let s:white       = '#c6c6c6' " white       = 251
-" Variations of charcoal-grey.
+" Variations of charcoal-grey
 let s:grey0       = '#373c40' " grey0       = 0
 let s:grey253     = '#dadada' " grey253     = 253
 let s:grey249     = '#b2b2b2' " grey249     = 249
@@ -43,7 +43,7 @@ let s:grey236     = '#303030' " grey236     = 236
 let s:grey235     = '#262626' " grey235     = 235
 let s:grey234     = '#1c1c1c' " grey234     = 234
 let s:grey233     = '#121212' " grey233     = 233
-" Core theme colors.
+" Core theme colors
 let s:wheat       = '#bfbf97' " wheat       = 11
 let s:yellow      = '#e3c78a' " yellow      = 3
 let s:orange      = '#de935f' " orange      = 7
@@ -60,7 +60,7 @@ let s:violet      = '#d183e8' " violet      = 5
 let s:crimson     = '#ff5189' " crimson     = 9
 let s:red         = '#ff5454' " red         = 1
 
-" Specify the the colors used by the inbuilt terminal of Neovim and Vim.
+" Specify the the colors used by the inbuilt terminal of Neovim and Vim
 if g:moonflyTerminalColors
     if has('nvim')
         let g:terminal_color_0  = '#373c40'
@@ -89,53 +89,53 @@ if g:moonflyTerminalColors
     endif
 endif
 
-" Background and text.
+" Background and text
 exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg ctermfg=247 guifg=' . s:grey247 . ' gui=none'
 
-" Comments.
+" Comments
 if g:moonflyItalics
     exec 'highlight Comment ctermfg=246 guifg=' . s:grey246 . ' gui=italic'
 else
     exec 'highlight Comment ctermfg=246 guifg=' . s:grey246
 endif
 
-" Functions.
+" Functions
 exec 'highlight Function ctermfg=12 guifg=' . s:sky
 
-" Strings.
+" Strings
 exec 'highlight String ctermfg=11 guifg=' . s:wheat
 
-" Booleans.
+" Booleans
 exec 'highlight Boolean ctermfg=8 guifg=' . s:coral
 
-" Identifiers.
+" Identifiers
 exec 'highlight Identifier ctermfg=6 cterm=none guifg=' . s:turquoise
 
-" Color of titles.
+" Color of titles
 exec 'highlight Title ctermfg=7 guifg=' . s:orange . ' gui=none'
 
-" const, static.
+" const, static
 exec 'highlight StorageClass ctermfg=8 guifg=' . s:coral
 
-" void, intptr_t.
+" void, intptr_t
 exec 'highlight Type ctermfg=10 guifg=' . s:emerald . ' gui=none'
 
-" Numbers.
+" Numbers
 exec 'highlight Constant ctermfg=13 guifg=' . s:purple
 
-" Character constants.
+" Character constants
 exec 'highlight Character ctermfg=13 guifg=' . s:purple
 
-" Exceptions.
+" Exceptions
 exec 'highlight Exception ctermfg=9 guifg=' . s:crimson
 
-" ifdef/endif.
+" ifdef/endif
 exec 'highlight PreProc ctermfg=15 guifg=' . s:cranberry
 
-" Status, split and tab lines.
+" Status, split and tab lines
 exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
 exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
@@ -145,7 +145,7 @@ exec 'highlight TablineFill ctermbg=236 ctermfg=236 cterm=none guibg=' . s:grey2
 exec 'highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
 
-" case in switch statement.
+" case in switch statement
 exec 'highlight Label ctermfg=6 guifg=' . s:turquoise
 
 " end-of-line '$', end-of-file '~'
@@ -154,40 +154,40 @@ exec 'highlight NonText ctermfg=7 guifg=' . s:orange . ' gui=none'
 " sizeof
 exec 'highlight Operator ctermfg=15 guifg=' . s:cranberry
 
-" for, while.
+" for, while
 exec 'highlight Repeat ctermfg=5 guifg=' . s:violet
 
-" Search.
+" Search
 exec 'highlight Search ctermbg=bg ctermfg=8 cterm=reverse guibg=bg guifg=' . s:coral . ' gui=reverse'
 exec 'highlight IncSearch ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
 
-" '\n' sequences.
+" '\n' sequences
 exec 'highlight Special ctermfg=15 guifg=' . s:cranberry
 
-" if, else.
+" if, else
 exec 'highlight Statement ctermfg=5 guifg=' . s:violet . ' gui=none'
 
-" Visual selection.
+" Visual selection
 exec 'highlight Visual ctermbg=0 guibg=' . s:grey0
 exec 'highlight VisualNOS ctermbg=0 ctermfg=fg cterm=none guibg=' . s:grey0 . ' guifg=fg gui=none'
 exec 'highlight VisualInDiff ctermbg=0 ctermfg=251 guibg=' . s:grey0 . ' guifg=' . s:white
 
-" Errors, warnings and whitespace-eol.
+" Errors, warnings and whitespace-eol
 exec 'highlight Error ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 exec 'highlight ErrorMsg ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 exec 'highlight WarningMsg ctermbg=bg ctermfg=7 guibg=bg guifg=' . s:orange
 
-" struct, union, enum, typedef.
+" struct, union, enum, typedef
 exec 'highlight Structure ctermfg=4 guifg=' . s:blue
 
-" Auto-text-completion menu.
+" Auto-text-completion menu
 exec 'highlight Pmenu ctermbg=235 ctermfg=fg guibg=' . s:grey235 . ' guifg=fg'
 exec 'highlight PmenuSel ctermbg=2 ctermfg=236 guibg=' . s:green . ' guifg=' . s:grey236
 exec 'highlight PmenuSbar ctermbg=235 guibg=' . s:grey235
 exec 'highlight PmenuThumb ctermbg=244 guibg=' . s:grey244
 exec 'highlight WildMenu ctermbg=2 ctermfg=236 guibg=' . s:green . ' guifg=' . s:grey236
 
-" Spelling errors.
+" Spelling errors
 if g:moonflyUndercurls
     exec 'highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg gui=undercurl guisp=' . s:red
     exec 'highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg gui=undercurl guisp=' . s:blue
@@ -200,7 +200,7 @@ else
     exec 'highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=' . s:sky . ' gui=underline guisp=' . s:sky
 endif
 
-" Misc.
+" Misc
 exec 'highlight Question ctermfg=14 guifg=' . s:lime . ' gui=none'
 exec 'highlight MoreMsg ctermfg=1 guifg=' . s:red . ' gui=none'
 exec 'highlight LineNr ctermbg=bg ctermfg=241 guibg=bg guifg=' . s:grey241
@@ -228,17 +228,17 @@ exec 'highlight Underlined ctermfg=10 cterm=none guifg=' . s:emerald . ' gui=non
 exec 'highlight QuickFixLine ctermbg=237 cterm=none guibg=' . s:grey237
 exec 'highlight Delimiter ctermfg=251 guifg=' . s:white
 
-" Neovim only highlight groups.
+" Neovim only highlight groups
 exec 'highlight Whitespace ctermfg=235 guifg=' . s:grey235
 exec 'highlight TermCursor ctermbg=247 ctermfg=bg cterm=none guibg=' . s:grey247 . ' guifg=bg gui=none'
 
-" Color column (after line 80).
+" Color column (after line 80)
 exec 'highlight ColorColumn ctermbg=233 guibg=' . s:grey233
 
-" Conceal color, as used by indentLine plugin.
+" Conceal color, as used by indentLine plugin
 exec 'highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=' . s:grey235
 
-" Custom moonfly highlight groups.
+" Custom moonfly highlight groups
 exec 'highlight MoonflyReset ctermfg=fg guifg=fg'
 exec 'highlight MoonflyWhite ctermfg=251 guifg=' . s:white
 exec 'highlight MoonflyGrey0 ctermfg=0 guifg=' . s:grey0
@@ -260,7 +260,7 @@ exec 'highlight MoonflyViolet ctermfg=5 guifg=' . s:violet
 exec 'highlight MoonflyCrimson ctermfg=9 guifg=' . s:crimson
 exec 'highlight MoonflyRed ctermfg=1 guifg=' . s:red
 
-" Neovim Treesitter.
+" Neovim Treesitter
 highlight! link TSAnnotation MoonflyViolet
 highlight! link TSConstBuiltin MoonflyGreen
 highlight! link TSConstMacro MoonflyViolet
@@ -746,6 +746,11 @@ exec 'highlight GitGutterAdd ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
 exec 'highlight GitGutterChange ctermbg=bg ctermfg=13 guibg=bg guifg=' . s:purple
 exec 'highlight GitGutterChangeDelete ctermbg=bg ctermfg=8 guibg=bg guifg=' . s:coral
 exec 'highlight GitGutterDelete ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
+
+" Signify plugin
+exec 'highlight SignifySignAdd ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
+exec 'highlight SignifySignChange ctermbg=bg ctermfg=13 guibg=bg guifg=' . s:purple
+exec 'highlight SignifySignDelete ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 
 " FZF plugin
 exec 'highlight fzf1 ctermfg=9 ctermbg=236 guifg=' . s:crimson . ' guibg=' . s:grey236
