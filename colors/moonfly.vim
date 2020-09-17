@@ -12,20 +12,22 @@ if exists('syntax_on')
 endif
 let g:colors_name='moonfly'
 
-" * By default do not color the cursor.
-" * By default use the moonfly color palette in the `:terminal`
-" * By default do not underline matching parentheses.
-" * By default do use undercurls in GUI versions of Vim, including terminal Vim
-"     with termguicolors set.
-" * By default do use italics in GUI versions of Vim, including terminal Vim
-"     with termguicolors set.
-" * By default do not style fzf for display in floating window.
-let g:moonflyCursorColor         = get(g:, 'moonflyCursorColor', 0)
-let g:moonflyTerminalColors      = get(g:, 'moonflyTerminalColors', 1)
+" By default do not color the cursor.
+let g:moonflyCursorColor = get(g:, 'moonflyCursorColor', 0)
+
+" By default use the moonfly color palette in the `:terminal`
+let g:moonflyTerminalColors = get(g:, 'moonflyTerminalColors', 1)
+
+" By default do not underline matching parentheses.
 let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', 0)
-let g:moonflyUndercurls          = get(g:, 'moonflyUndercurls', 1)
-let g:moonflyItalics             = get(g:, 'moonflyItalics', 1)
-let g:moonflyFloatingFZF         = get(g:, 'moonflyFloatingFZF', 0)
+
+" By default do use undercurls in GUI versions of Vim, including terminal Vim
+" with termguicolors set.
+let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', 1)
+
+" By default do use italics in GUI versions of Vim, including terminal Vim
+" with termguicolors set.
+let g:moonflyItalics = get(g:, 'moonflyItalics', 1)
 
 " Background and foreground
 let s:black       = '#080808' " black       = 232
@@ -244,6 +246,7 @@ exec 'highlight MoonflyWhite ctermfg=251 guifg=' . s:white
 exec 'highlight MoonflyGrey0 ctermfg=0 guifg=' . s:grey0
 exec 'highlight MoonflyGrey247 ctermfg=247 guifg=' . s:grey247
 exec 'highlight MoonflyGrey246 ctermfg=246 guifg=' . s:grey246
+exec 'highlight MoonflyGrey241 ctermfg=241 guifg=' . s:grey241
 exec 'highlight MoonflyWheat ctermfg=11 guifg=' . s:wheat
 exec 'highlight MoonflyYellow ctermfg=3 guifg=' . s:yellow
 exec 'highlight MoonflyOrange ctermfg=7 guifg=' . s:orange
@@ -259,6 +262,10 @@ exec 'highlight MoonflyCranberry ctermfg=15 guifg=' . s:cranberry
 exec 'highlight MoonflyViolet ctermfg=5 guifg=' . s:violet
 exec 'highlight MoonflyCrimson ctermfg=9 guifg=' . s:crimson
 exec 'highlight MoonflyRed ctermfg=1 guifg=' . s:red
+exec 'highlight MoonflyWhiteDiagnostic ctermbg=bg ctermfg=251 guibg=bg guifg=' . s:white
+exec 'highlight MoonflyYellowDiagnostic ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
+exec 'highlight MoonflySkyDiagnostic ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
+exec 'highlight MoonflyRedDiagnostic ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 
 " Neovim Treesitter
 highlight! link TSAnnotation MoonflyViolet
@@ -521,7 +528,7 @@ highlight! link rustStructure MoonflyViolet
 highlight! link rustTrait MoonflyEmerald
 highlight! link rustType MoonflyEmerald
 
-" Scala
+" Scala, note link highlighting does not work (I don't know why)
 exec 'highlight scalaCapitalWord ctermfg=4 guifg=' . s:blue
 exec 'highlight scalaCommentCodeBlock ctermfg=247 guifg=' . s:grey247
 exec 'highlight scalaInstanceDeclaration ctermfg=6 guifg=' . s:turquoise
@@ -709,10 +716,11 @@ else
     exec 'highlight NeomakeInfo ctermbg=bg guibg=bg'
     exec 'highlight NeomakeMessage ctermbg=bg guibg=bg'
 endif
-exec 'highlight NeomakeErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
-exec 'highlight NeomakeWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
-exec 'highlight NeomakeInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
-exec 'highlight NeomakeMessageSign ctermbg=bg ctermfg=251 guibg=bg guifg=' . s:white
+
+highlight! link NeomakeErrorSign MoonflyRedDiagnostic
+highlight! link NeomakeWarningSign MoonflyYellowDiagnostic
+highlight! link NeomakeInfoSign MoonflySkyDiagnostic
+highlight! link NeomakeMessageSign MoonflyWhiteDiagnostic
 
 " ALE plugin
 if g:moonflyUndercurls
@@ -724,22 +732,22 @@ else
     exec 'highlight ALEWarning ctermbg=bg guibg=bg'
     exec 'highlight ALEInfo ctermbg=bg guibg=bg'
 endif
-exec 'highlight ALEVirtualTextError ctermfg=241 guifg=' . s:grey241
-exec 'highlight ALEErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
-exec 'highlight ALEVirtualTextWarning ctermfg=241 guifg=' . s:grey241
-exec 'highlight ALEWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
-exec 'highlight ALEVirtualTextInfo ctermfg=241 guifg=' . s:grey241
-exec 'highlight ALEInfoSign ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
+highlight! link ALEVirtualTextError MoonflyGrey241
+highlight! link ALEErrorSign MoonflyRedDiagnostic
+highlight! link ALEVirtualTextWarning MoonflyGrey241
+highlight! link ALEWarningSign MoonflyYellowDiagnostic
+highlight! link ALEVirtualTextInfo MoonflyGrey241
+highlight! link ALEInfoSign MoonflySkyDiagnostic
 
 " Neovim LSP diagnostics
-exec 'highlight LspDiagnosticsError ctermfg=241 guifg=' . s:grey241
-exec 'highlight LspDiagnosticsErrorSign ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
-exec 'highlight LspDiagnosticsWarning ctermfg=241 guifg=' . s:grey241
-exec 'highlight LspDiagnosticsWarningSign ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
-exec 'highlight LspDiagnosticsInformation ctermfg=241 guifg=' . s:grey241
-exec 'highlight LspDiagnosticsInformationSign ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
-exec 'highlight LspDiagnosticsHint ctermfg=241 guifg=' . s:grey241
-exec 'highlight LspDiagnosticsHintSign ctermbg=bg ctermfg=6 guibg=bg guifg=' . s:turquoise
+highlight! link LspDiagnosticsError MoonflyGrey241
+highlight! link LspDiagnosticsErrorSign MoonflyRedDiagnostic
+highlight! link LspDiagnosticsWarning MoonflyGrey241
+highlight! link LspDiagnosticsWarningSign MoonflyYellowDiagnostic
+highlight! link LspDiagnosticsInformation MoonflyGrey241
+highlight! link LspDiagnosticsInformationSign MoonflySkyDiagnostic
+highlight! link LspDiagnosticsHint MoonflyGrey241
+highlight! link LspDiagnosticsHintSign MoonflyWhiteDiagnostic
 
 " GitGutter plugin
 exec 'highlight GitGutterAdd ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
