@@ -262,10 +262,13 @@ exec 'highlight MoonflyCranberry ctermfg=15 guifg=' . s:cranberry
 exec 'highlight MoonflyViolet ctermfg=5 guifg=' . s:violet
 exec 'highlight MoonflyCrimson ctermfg=9 guifg=' . s:crimson
 exec 'highlight MoonflyRed ctermfg=1 guifg=' . s:red
-exec 'highlight MoonflyWhiteDiagnostic ctermbg=bg ctermfg=251 guibg=bg guifg=' . s:white
-exec 'highlight MoonflyYellowDiagnostic ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
-exec 'highlight MoonflySkyDiagnostic ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
-exec 'highlight MoonflyRedDiagnostic ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
+exec 'highlight MoonflyWhiteAlert ctermbg=bg ctermfg=251 guibg=bg guifg=' . s:white
+exec 'highlight MoonflyYellowAlert ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
+exec 'highlight MoonflyCoralAlert ctermbg=bg ctermfg=8 guibg=bg guifg=' . s:coral
+exec 'highlight MoonflyEmeraldAlert ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
+exec 'highlight MoonflyPurpleAlert ctermbg=bg ctermfg=13 guibg=bg guifg=' . s:purple
+exec 'highlight MoonflySkyAlert ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
+exec 'highlight MoonflyRedAlert ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 
 " Neovim Treesitter
 highlight! link TSAnnotation MoonflyViolet
@@ -717,10 +720,10 @@ else
     exec 'highlight NeomakeMessage ctermbg=bg guibg=bg'
 endif
 
-highlight! link NeomakeErrorSign MoonflyRedDiagnostic
-highlight! link NeomakeWarningSign MoonflyYellowDiagnostic
-highlight! link NeomakeInfoSign MoonflySkyDiagnostic
-highlight! link NeomakeMessageSign MoonflyWhiteDiagnostic
+highlight! link NeomakeErrorSign MoonflyRedAlert
+highlight! link NeomakeWarningSign MoonflyYellowAlert
+highlight! link NeomakeInfoSign MoonflySkyAlert
+highlight! link NeomakeMessageSign MoonflyWhiteAlert
 
 " ALE plugin
 if g:moonflyUndercurls
@@ -733,32 +736,32 @@ else
     exec 'highlight ALEInfo ctermbg=bg guibg=bg'
 endif
 highlight! link ALEVirtualTextError MoonflyGrey241
-highlight! link ALEErrorSign MoonflyRedDiagnostic
+highlight! link ALEErrorSign MoonflyRedAlert
 highlight! link ALEVirtualTextWarning MoonflyGrey241
-highlight! link ALEWarningSign MoonflyYellowDiagnostic
+highlight! link ALEWarningSign MoonflyYellowAlert
 highlight! link ALEVirtualTextInfo MoonflyGrey241
-highlight! link ALEInfoSign MoonflySkyDiagnostic
+highlight! link ALEInfoSign MoonflySkyAlert
 
 " Neovim LSP diagnostics
 highlight! link LspDiagnosticsError MoonflyGrey241
-highlight! link LspDiagnosticsErrorSign MoonflyRedDiagnostic
+highlight! link LspDiagnosticsErrorSign MoonflyRedAlert
 highlight! link LspDiagnosticsWarning MoonflyGrey241
-highlight! link LspDiagnosticsWarningSign MoonflyYellowDiagnostic
+highlight! link LspDiagnosticsWarningSign MoonflyYellowAlert
 highlight! link LspDiagnosticsInformation MoonflyGrey241
-highlight! link LspDiagnosticsInformationSign MoonflySkyDiagnostic
+highlight! link LspDiagnosticsInformationSign MoonflySkyAlert
 highlight! link LspDiagnosticsHint MoonflyGrey241
-highlight! link LspDiagnosticsHintSign MoonflyWhiteDiagnostic
+highlight! link LspDiagnosticsHintSign MoonflyWhiteAlert
 
 " GitGutter plugin
-exec 'highlight GitGutterAdd ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
-exec 'highlight GitGutterChange ctermbg=bg ctermfg=13 guibg=bg guifg=' . s:purple
-exec 'highlight GitGutterChangeDelete ctermbg=bg ctermfg=8 guibg=bg guifg=' . s:coral
-exec 'highlight GitGutterDelete ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
+highlight! link GitGutterAdd MoonflyEmeraldAlert
+highlight! link GitGutterChange MoonflyPurpleAlert
+highlight! link GitGutterChangeDelete MoonflyCoralAlert
+highlight! link GitGutterDelete MoonflyRedAlert
 
 " Signify plugin
-exec 'highlight SignifySignAdd ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
-exec 'highlight SignifySignChange ctermbg=bg ctermfg=13 guibg=bg guifg=' . s:purple
-exec 'highlight SignifySignDelete ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
+highlight! link SignifySignAdd MoonflyEmeraldAlert
+highlight! link SignifySignChange MoonflyPurpleAlert
+highlight! link SignifySignDelete MoonflyRedAlert
 
 " FZF plugin
 exec 'highlight fzf1 ctermfg=9 ctermbg=236 guifg=' . s:crimson . ' guibg=' . s:grey236
