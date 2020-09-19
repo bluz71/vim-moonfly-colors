@@ -282,6 +282,8 @@ highlight! link TSInclude MoonflyCranberry
 highlight! link TSKeywordOperator MoonflyViolet
 highlight! link TSParameter MoonflyWhite
 highlight! link TSPunctSpecial MoonflyCranberry
+highlight! link TSTag MoonflyBlue
+highlight! link TSTagDelimiter MoonflyLime
 highlight! link TSVariableBuiltin MoonflyLime
 
 " C/C++
