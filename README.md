@@ -17,20 +17,10 @@ time, primarily with regard to language and plugin theming.
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
 interest.
 
-Primary Colors
---------------
+Color Palette
+-------------
 
-| Normal     | Color                                                       | Bright      | Color                                                        |
-| ---------- | ----------------------------------------------------------- | ----------- | ------------------------------------------------------------ |
-| Background | ![background](https://placehold.it/64/080808/000000?text=+) | Foreground  | ![foreground](https://placehold.it/64/b2b2b2/000000?text=+)  |
-| Grey       | ![grey](https://placehold.it/64/373c40/000000?text=+)       | Coral       | ![coral](https://placehold.it/64/f09479/000000?text=+)       |
-| Red        | ![red](https://placehold.it/64/ff5454/000000?text=+)        | Crimson     | ![crimson](https://placehold.it/64/ff5189/000000?text=+)     |
-| Green      | ![green](https://placehold.it/64/8cc85f/000000?text=+)      | Emerald     | ![emerald](https://placehold.it/64/42cf89/000000?text=+)     |
-| Yellow     | ![yellow](https://placehold.it/64/e3c78a/000000?text=+)     | Wheat       | ![wheat](https://placehold.it/64/bfbf97/000000?text=+)       |
-| Blue       | ![blue](https://placehold.it/64/80a0ff/000000?text=+)       | Sky         | ![sky](https://placehold.it/64/78c2ff/000000?text=+)  |
-| Violet     | ![violet](https://placehold.it/64/d183e8/000000?text=+)     | Purple      | ![purple](https://placehold.it/64/ae81ff/000000?text=+)      |
-| Turquoise  | ![turquoise](https://placehold.it/64/79dac8/000000?text=+)  | Lime        | ![lime](https://placehold.it/64/85dc85/000000?text=+) |
-| Orange     | ![orange](https://placehold.it/64/de935f/000000?text=+)     | Cranberry   | ![cranberry](https://placehold.it/64/e2637f/000000?text=+)      |
+![palette](https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/moonfly-palette.png)
 
 Screenshots
 -----------
@@ -298,7 +288,7 @@ if exists('&cursorlineopt')
     set cursorline
 endif
 
-function! RelativeNumberActivity(active)
+function! RelativeNumberActivity(active) abort
     if a:active == v:true
         setlocal relativenumber
         if exists('&cursorlineopt')
