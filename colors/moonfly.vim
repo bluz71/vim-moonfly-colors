@@ -62,7 +62,7 @@ let s:violet      = '#d183e8' " violet      = 5
 let s:crimson     = '#ff5189' " crimson     = 9
 let s:red         = '#ff5454' " red         = 1
 
-" Specify the the colors used by the inbuilt terminal of Neovim and Vim
+" Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:moonflyTerminalColors
     if has('nvim')
         let g:terminal_color_0  = '#373c40'
