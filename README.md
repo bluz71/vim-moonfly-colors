@@ -38,6 +38,7 @@ The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 Languages explicitly styled
 ---------------------------
 
+- All Neovim Treesitter highlighted-languages
 - C/C++
 - Clojure
 - CoffeeScript
