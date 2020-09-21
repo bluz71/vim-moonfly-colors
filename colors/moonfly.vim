@@ -71,7 +71,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_3  = '#e3c78a'
         let g:terminal_color_4  = '#80a0ff'
         let g:terminal_color_5  = '#d183e8'
-        let g:terminal_color_7  = '#79dac8'
+        let g:terminal_color_6  = '#79dac8'
         let g:terminal_color_7  = '#b2b2b2'
         let g:terminal_color_8  = '#949494'
         let g:terminal_color_9  = '#ff5189'
