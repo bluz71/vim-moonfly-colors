@@ -300,7 +300,8 @@ highlight! link cppExceptions MoonflyLime
 highlight! link cppModifier MoonflyViolet
 highlight! link cppOperator MoonflyGreen
 highlight! link cppStatement MoonflyTurquoise
-highlight! link cppSTLconstant MoonflySky
+highlight! link cppSTLconstant MoonflyBlue
+highlight! link cppSTLnamespace MoonflyBlue
 highlight! link cppStructure MoonflyViolet
 
 " C#
@@ -524,7 +525,7 @@ highlight! link rustKeyword MoonflyViolet
 highlight! link rustLifetime MoonflyViolet
 highlight! link rustMacro MoonflyGreen
 highlight! link rustMacroVariable MoonflyViolet
-highlight! link rustModPath MoonflySky
+highlight! link rustModPath MoonflyBlue
 highlight! link rustObsoleteExternMod MoonflyCranberry
 highlight! link rustObsoleteStorage MoonflyCranberry
 highlight! link rustReservedKeyword MoonflyCranberry
