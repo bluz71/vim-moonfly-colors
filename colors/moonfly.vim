@@ -281,6 +281,7 @@ highlight! link TSFuncBuiltin MoonflySky
 highlight! link TSFuncMacro MoonflySky
 highlight! link TSInclude MoonflyCranberry
 highlight! link TSKeywordOperator MoonflyViolet
+highlight! link TSNamespace MoonflyBlue
 highlight! link TSParameter MoonflyWhite
 highlight! link TSPunctSpecial MoonflyCranberry
 highlight! link TSTag MoonflyBlue
