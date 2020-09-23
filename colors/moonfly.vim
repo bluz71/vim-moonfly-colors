@@ -52,7 +52,7 @@ let s:orange      = '#de935f' " orange      = 7
 let s:coral       = '#f09479' " coral       = 8
 let s:lime        = '#85dc85' " lime        = 14
 let s:green       = '#8cc85f' " green       = 2
-let s:emerald     = '#42cf89' " emerald     = 10
+let s:emerald     = '#36c692' " emerald     = 10
 let s:blue        = '#80a0ff' " blue        = 4
 let s:sky         = '#78c2ff' " sky         = 12
 let s:turquoise   = '#79dac8' " turquoise   = 6
@@ -75,7 +75,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_7  = '#b2b2b2'
         let g:terminal_color_8  = '#949494'
         let g:terminal_color_9  = '#ff5189'
-        let g:terminal_color_10 = '#42cf89'
+        let g:terminal_color_10 = '#36c692'
         let g:terminal_color_11 = '#bfbf97'
         let g:terminal_color_12 = '#78c2ff'
         let g:terminal_color_13 = '#ae81ff'
@@ -85,7 +85,7 @@ if g:moonflyTerminalColors
         let g:terminal_ansi_colors = [
                     \ '#373c40', '#ff5454', '#8cc85f', '#e3c78a',
                     \ '#80a0ff', '#d183e8', '#79dac8', '#b2b2b2',
-                    \ '#949494', '#ff5189', '#42cf89', '#bfbf97',
+                    \ '#949494', '#ff5189', '#36c692', '#bfbf97',
                     \ '#78c2ff', '#ae81ff', '#85dc85', '#dadada'
                     \]
     endif
