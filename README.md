@@ -268,50 +268,6 @@ The terminal should then be configured with the following _moonfly_ colors:
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
 | Color 16       | White (bright)  | `#e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
 
-Tip: Relative Number Column Highlighting only for the Active Window
--------------------------------------------------------------------
-
-Historically, when `relativenumber` was set whilst `cursorline` was not set,
-Vim would automatically highlight the cursor line in the number column with
-the `CursorLineNR` highlight group. However, newer versions of Vim no longer
-do that by default, not unless `cursorline` is set and the new `cursorlineopt`
-option is also set accordingly.
-
-At the same time I also like disabling `relativenumber` for inactive windows.
-
-To achieve all that please add something similar to the following to your
-_vimrc_:
-
-```viml
-set relativenumber
-if exists('&cursorlineopt')
-    set cursorlineopt=number
-    set cursorline
-endif
-
-function! RelativeNumberActivity(active) abort
-    if a:active == v:true
-        setlocal relativenumber
-        if exists('&cursorlineopt')
-            setlocal cursorline
-        endif
-    else
-        setlocal norelativenumber
-        if exists('&cursorlineopt')
-            setlocal nocursorline
-        endif
-    endif
-endfunction
-
-augroup CustomWindowActivity
-    autocmd!
-    autocmd WinEnter * call RelativeNumberActivity(v:true)
-    autocmd WinLeave * call RelativeNumberActivity(v:false)
-augroup END
-```
-
-Feel free to change, or ignore, per your needs.
-
 License
 -------
 
