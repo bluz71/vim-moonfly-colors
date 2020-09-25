@@ -30,37 +30,37 @@ let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', 1)
 let g:moonflyItalics = get(g:, 'moonflyItalics', 1)
 
 " Background and foreground
-let s:black       = '#080808' " black       = 232
-let s:white       = '#c6c6c6' " white       = 251
+let s:black     = '#080808' " black       = 232
+let s:white     = '#c6c6c6' " white       = 251
 " Variations of charcoal-grey
-let s:grey0       = '#373c40' " grey0       = 0
-let s:grey253     = '#dadada' " grey253     = 253
-let s:grey249     = '#b2b2b2' " grey249     = 249
-let s:grey247     = '#9e9e9e' " grey247     = 247
-let s:grey246     = '#949494' " grey246     = 246
-let s:grey244     = '#808080' " grey244     = 244
-let s:grey241     = '#626262' " grey241     = 241
-let s:grey237     = '#3a3a3a' " grey237     = 237
-let s:grey236     = '#303030' " grey236     = 236
-let s:grey235     = '#262626' " grey235     = 235
-let s:grey234     = '#1c1c1c' " grey234     = 234
-let s:grey233     = '#121212' " grey233     = 233
+let s:grey0     = '#373c40' " grey0       = 0
+let s:grey253   = '#dadada' " grey253     = 253
+let s:grey249   = '#b2b2b2' " grey249     = 249
+let s:grey247   = '#9e9e9e' " grey247     = 247
+let s:grey246   = '#949494' " grey246     = 246
+let s:grey244   = '#808080' " grey244     = 244
+let s:grey241   = '#626262' " grey241     = 241
+let s:grey237   = '#3a3a3a' " grey237     = 237
+let s:grey236   = '#303030' " grey236     = 236
+let s:grey235   = '#262626' " grey235     = 235
+let s:grey234   = '#1c1c1c' " grey234     = 234
+let s:grey233   = '#121212' " grey233     = 233
 " Core theme colors
-let s:wheat       = '#bfbf97' " wheat       = 11
-let s:yellow      = '#e3c78a' " yellow      = 3
-let s:orange      = '#de935f' " orange      = 7
-let s:coral       = '#f09479' " coral       = 8
-let s:lime        = '#85dc85' " lime        = 14
-let s:green       = '#8cc85f' " green       = 2
-let s:emerald     = '#36c692' " emerald     = 10
-let s:blue        = '#80a0ff' " blue        = 4
-let s:sky         = '#78c2ff' " sky         = 12
-let s:turquoise   = '#79dac8' " turquoise   = 6
-let s:purple      = '#ae81ff' " purple      = 13
-let s:cranberry   = '#e2637f' " cranberry   = 15
-let s:violet      = '#d183e8' " violet      = 5
-let s:crimson     = '#ff5189' " crimson     = 9
-let s:red         = '#ff5454' " red         = 1
+let s:wheat     = '#bfbf97' " wheat       = 11
+let s:yellow    = '#e3c78a' " yellow      = 3
+let s:orange    = '#de935f' " orange      = 7
+let s:coral     = '#f09479' " coral       = 8
+let s:lime      = '#85dc85' " lime        = 14
+let s:green     = '#8cc85f' " green       = 2
+let s:emerald   = '#36c692' " emerald     = 10
+let s:blue      = '#80a0ff' " blue        = 4
+let s:sky       = '#78c2ff' " sky         = 12
+let s:turquoise = '#79dac8' " turquoise   = 6
+let s:purple    = '#ae81ff' " purple      = 13
+let s:cranberry = '#e2637f' " cranberry   = 15
+let s:violet    = '#d183e8' " violet      = 5
+let s:crimson   = '#ff5189' " crimson     = 9
+let s:red       = '#ff5454' " red         = 1
 
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:moonflyTerminalColors
