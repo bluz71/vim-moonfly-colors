@@ -150,9 +150,9 @@ let g:moonflyUndercurls = 0
 ```
 
 The `g:moonflyItalics` option specifies whether to use italics for comments and
-certain HTML elements in all versions of Vim, including terminal Vim. By default
-this option is **enabled**. If you do not like the appearance of italics then
-add the following to your _vimrc_:
+certain HTML elements in GUI versions of Vim. By default this option is
+**enabled**. If you do not like the appearance of italics then add the following
+to your _vimrc_:
 
 ```viml
 let g:moonflyItalics = 0
