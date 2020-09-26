@@ -25,8 +25,7 @@ let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', 0)
 " with termguicolors set.
 let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', 1)
 
-" By default do use italics in GUI versions of Vim, including terminal Vim
-" with termguicolors set.
+" By default do use italics in all versions of Vim, including terminal Vim.
 let g:moonflyItalics = get(g:, 'moonflyItalics', 1)
 
 " Background and foreground
@@ -99,7 +98,7 @@ exec 'highlight ModeMsg ctermfg=247 guifg=' . s:grey247 . ' gui=none'
 
 " Comments
 if g:moonflyItalics
-    exec 'highlight Comment ctermfg=246 guifg=' . s:grey246 . ' gui=italic'
+    exec 'highlight Comment ctermfg=246 cterm=italic guifg=' . s:grey246 . ' gui=italic'
 else
     exec 'highlight Comment ctermfg=246 guifg=' . s:grey246
 endif
@@ -405,10 +404,10 @@ highlight! link htmlTagN MoonflyBlue
 highlight! link htmlTagName MoonflyBlue
 highlight! link htmlUnderline MoonflyWhite
 if g:moonflyItalics
-    exec 'highlight htmlBoldItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
-    exec 'highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
-    exec 'highlight htmlItalic ctermfg=247 guifg=' . s:grey247 . ' gui=italic'
-    exec 'highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=' . s:black . ' guifg=' . s:grey247 . ' gui=italic'
+    exec 'highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=italic guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
+    exec 'highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 cterm=italic guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
+    exec 'highlight htmlItalic ctermfg=247 cterm=italic guifg=' . s:grey247 . ' gui=italic'
+    exec 'highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 cterm=italic guibg=' . s:black . ' guifg=' . s:grey247 . ' gui=italic'
 else
     exec 'highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=none guibg=' . s:black . ' guifg=' . s:coral ' gui=none'
     exec 'highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral
