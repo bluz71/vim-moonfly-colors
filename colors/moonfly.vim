@@ -484,8 +484,8 @@ highlight! link pythonRun MoonflySky
 highlight! link pythonStatement MoonflyViolet
 
 " Ruby
+exec 'highlight rspecGroupMethods ctermfg=12 guifg=' . s:sky
 highlight! link erubyDelimiter MoonflyCrimson
-highlight! link rspecGroupMethods MoonflyBlue
 highlight! link rubyAccess MoonflyYellow
 highlight! link rubyAssertion MoonflySky
 highlight! link rubyAttribute MoonflySky
