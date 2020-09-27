@@ -271,6 +271,7 @@ exec 'highlight MoonflyRedAlert ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 
 " Neovim Treesitter
 highlight! link TSAnnotation MoonflyViolet
+highlight! link TSAttribute MoonflySky
 highlight! link TSConstant MoonflyPurple
 highlight! link TSConstBuiltin MoonflyGreen
 highlight! link TSConstMacro MoonflyViolet
