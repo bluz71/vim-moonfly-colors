@@ -51,7 +51,7 @@ Languages explicitly styled
 - Java
 - [JavaScript](https://github.com/pangloss/vim-javascript)
 - Lua
-- [Markdown](https://github.com/plasticboy/vim-markdown)
+- Markdown
 - PHP
 - PureScript
 - Python

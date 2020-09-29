@@ -463,6 +463,11 @@ highlight! link mkdLineBreak NormalNC
 highlight! link mkdListItem MoonflyBlue
 highlight! link mkdURL MoonflyPurple
 
+" Markdown, 'tpope/vim-markdown' plugin
+highlight! link markdownCode MoonflyWheat
+highlight! link markdownCodeDelimiter MoonflyWheat
+highlight! link markdownUrl MoonflyPurple
+
 " PHP
 highlight! link phpClass MoonflyEmerald
 highlight! link phpClasses MoonflyBlue
