@@ -458,15 +458,17 @@ highlight! link luaBuiltin MoonflyGreen
 highlight! link luaFuncCall MoonflySky
 highlight! link luaSpecialTable MoonflySky
 
+" Markdown, 'tpope/vim-markdown' plugin
+highlight! link markdownBold MoonflyYellow
+highlight! link markdownCode MoonflyWheat
+highlight! link markdownCodeDelimiter MoonflyWheat
+highlight! link markdownH1 MoonflyOrange
+highlight! link markdownUrl MoonflyPurple
+
 " Markdown, 'plasticboy/vim-markdown' plugin
 highlight! link mkdLineBreak NormalNC
 highlight! link mkdListItem MoonflyBlue
 highlight! link mkdURL MoonflyPurple
-
-" Markdown, 'tpope/vim-markdown' plugin
-highlight! link markdownCode MoonflyWheat
-highlight! link markdownCodeDelimiter MoonflyWheat
-highlight! link markdownUrl MoonflyPurple
 
 " PHP
 highlight! link phpClass MoonflyEmerald
