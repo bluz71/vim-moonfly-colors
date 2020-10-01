@@ -462,10 +462,12 @@ highlight! link luaSpecialTable MoonflySky
 highlight! link markdownBold MoonflyYellow
 highlight! link markdownCode MoonflyWheat
 highlight! link markdownCodeDelimiter MoonflyWheat
+highlight! link markdownError NormalNC
 highlight! link markdownH1 MoonflyOrange
 highlight! link markdownUrl MoonflyPurple
 
 " Markdown, 'plasticboy/vim-markdown' plugin
+highlight! link mkdDelimiter MoonflyWhite
 highlight! link mkdLineBreak NormalNC
 highlight! link mkdListItem MoonflyBlue
 highlight! link mkdURL MoonflyPurple
