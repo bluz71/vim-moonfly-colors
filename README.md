@@ -166,7 +166,7 @@ colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
 Neovim, on such terminals, support true colors when `set termguicolors` is
 enabled.
 
-A list of common terminals that support true colors:
+A list of prevalent terminals that support true colors:
 
 - [iTerm2](http://www.iterm2.com)
 - [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
@@ -177,15 +177,12 @@ A list of common terminals that support true colors:
 - [PuTTY](https://putty.org)
 - [mintty](https://mintty.github.io)
 
-:bomb: _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
-colors.
-
 On terminals that support true colors, and when `termguicolors` is set, the
 _moonfly_ color scheme will not require any terminal configuration to emit the
 correct theme colors.
 
 For the true color _moonfly_ color scheme to display correctly inside _tmux_
-the following setting will be required in _~/.tmux.conf_:
+the following setting will usually be required in _~/.tmux.conf_:
 
 ```
 set -ga terminal-overrides ',xterm-256color:Tc'
