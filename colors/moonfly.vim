@@ -757,14 +757,29 @@ highlight! link ALEVirtualTextInfo MoonflyGrey241
 highlight! link ALEInfoSign MoonflySkyAlert
 
 " Neovim LSP diagnostics
-highlight! link LspDiagnosticsError MoonflyGrey241
-highlight! link LspDiagnosticsErrorSign MoonflyRedAlert
-highlight! link LspDiagnosticsWarning MoonflyGrey241
-highlight! link LspDiagnosticsWarningSign MoonflyYellowAlert
-highlight! link LspDiagnosticsInformation MoonflyGrey241
-highlight! link LspDiagnosticsInformationSign MoonflySkyAlert
-highlight! link LspDiagnosticsHint MoonflyGrey241
-highlight! link LspDiagnosticsHintSign MoonflyWhiteAlert
+if g:moonflyUndercurls
+     exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red
+     exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow
+     exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky
+     exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white
+else
+    exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red
+    exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=underline guisp=' . s:blue
+    exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow
+    exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg e guibg=bg gui=underline guisp=' . s:sky
+endif
+highlight! link LspDiagnosticsVirtualTextError MoonflyGrey241
+highlight! link LspDiagnosticsSignError MoonflyRedAlert
+highlight! link LspDiagnosticsFloatingError MoonflyRed
+highlight! link LspDiagnosticsVirtualTextWarning MoonflyGrey241
+highlight! link LspDiagnosticsSignWarning MoonflyYellowAlert
+highlight! link LspDiagnosticsFloatingWarning MoonflyYellow
+highlight! link LspDiagnosticsVirtualTextInformation MoonflyGrey241
+highlight! link LspDiagnosticsSignInformation MoonflySkyAlert
+highlight! link LspDiagnosticsFloatingInformation MoonflySky
+highlight! link LspDiagnosticsVirtualTextHint MoonflyGrey241
+highlight! link LspDiagnosticsSignHint MoonflyWhiteAlert
+highlight! link LspDiagnosticsFloatingHint MoonflyWhite
 
 " GitGutter plugin
 highlight! link GitGutterAdd MoonflyEmeraldAlert
