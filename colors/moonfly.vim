@@ -766,7 +766,7 @@ else
     exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red
     exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=underline guisp=' . s:blue
     exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow
-    exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg e guibg=bg gui=underline guisp=' . s:sky
+    exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:sky
 endif
 highlight! link LspDiagnosticsVirtualTextError MoonflyGrey241
 highlight! link LspDiagnosticsSignError MoonflyRedAlert
