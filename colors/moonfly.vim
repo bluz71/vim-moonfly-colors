@@ -814,3 +814,14 @@ let g:fzf_colors = {
   \  'spinner': ['fg', 'Type'],
   \  'header':  ['fg', 'CursorLineNr']
   \}
+
+" barbar.nvim plugin
+exec 'highlight BufferCurrent      ctermbg=234 ctermfg=251 guibg=' . s:grey234 . ' guifg=' . s:white
+exec 'highlight BufferCurrentMod   ctermbg=234 ctermfg=11  guibg=' . s:grey234 . ' guifg=' . s:wheat
+exec 'highlight BufferCurrentSign  ctermbg=234 ctermfg=4   guibg=' . s:grey234 . ' guifg=' . s:blue
+exec 'highlight BufferVisible      ctermbg=234 ctermfg=246 guibg=' . s:grey234 . ' guifg=' . s:grey246
+exec 'highlight BufferVisibleMod   ctermbg=234 ctermfg=11  guibg=' . s:grey234 . ' guifg=' . s:wheat
+exec 'highlight BufferVisibleSign  ctermbg=234 ctermfg=246 guibg=' . s:grey234 . ' guifg=' . s:grey246
+exec 'highlight BufferInactive     ctermbg=236 ctermfg=246 guibg=' . s:grey236 . ' guifg=' . s:grey246
+exec 'highlight BufferInactiveMod  ctermbg=236 ctermfg=11  guibg=' . s:grey236 . ' guifg=' . s:wheat
+exec 'highlight BufferInactiveSign ctermbg=236 ctermfg=247 guibg=' . s:grey236 . ' guifg=' . s:grey247

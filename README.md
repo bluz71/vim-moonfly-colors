@@ -65,17 +65,18 @@ Plugins explicity styled
 ------------------------
 
 - [ALE](https://github.com/w0rp/ale)
+- [barbar.nvim](https://github.com/romgrk/barbar.nvim)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
+- [clever-f](https://github.com/rhysd/clever-f.vim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [fern.vim](https://github.com/lambdalisue/fern.vim)
+- [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
-- [NERDTree](https://github.com/scrooloose/nerdtree)
+- [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 - [Neomake](https://github.com/neomake/neomake)
+- [NERDTree](https://github.com/scrooloose/nerdtree)
 - [Signify](https://github.com/mhinz/vim-signify)
 - [Tagbar](https://github.com/majutsushi/tagbar)
-- [clever-f](https://github.com/rhysd/clever-f.vim)
-- [fzf.vim](https://github.com/junegunn/fzf.vim)
-- [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 - [vimfiler](https://github.com/Shougo/vimfiler.vim)
 
 Installation
