@@ -339,8 +339,9 @@ highlight! link crystalPseudoVariable MoonflyGreen
 highlight! link crystalSharpBang MoonflyGrey247
 highlight! link crystalStringDelimiter MoonflyWheat
 
-" CSS
+" CSS/SCSS
 highlight! link cssIdentifier MoonflyYellow
+highlight! link scssSelectorName MoonflyBlue
 
 " Dart
 highlight! link dartMetadata MoonflyLime
