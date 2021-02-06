@@ -95,9 +95,9 @@ endif
 
 " Background and text
 if g:moonflyTransparent
-  exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
-else
   exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=NONE' . s:black . ' guifg=' . s:white
+else
+  exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
 endif
 
 " Color of mode text, -- INSERT --
