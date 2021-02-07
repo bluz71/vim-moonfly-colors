@@ -159,9 +159,10 @@ to your _vimrc_:
 let g:moonflyItalics = 0
 ```
 
-The `g:moonflyTransparent` option specifies whether to use an opaque or transparent
-background for Vim. By default this option is **disabled**. If you would like a
-transparent background then add the following to your *vimrc*:
+The `g:moonflyTransparent` option specifies whether to use an opaque or
+transparent background in GUI versions of Vim. By default this option is
+**disabled**. If you would like a transparent background then add the following
+to your _vimrc_:
 
 ```viml
 let g:moonflyTransparent = 1
@@ -175,7 +176,7 @@ colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
 Neovim, on such terminals, support true colors when `set termguicolors` is
 enabled.
 
-A list of prevalent terminals that support true colors:
+A list of popular terminals that support true colors:
 
 - [iTerm2](http://www.iterm2.com)
 - [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
