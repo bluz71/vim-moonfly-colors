@@ -95,7 +95,7 @@ endif
 
 " Background and text
 if g:moonflyTransparent
-    exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=none' . ' guifg=' . s:white
+    exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=NONE' . ' guifg=' . s:white
 else
     exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
 endif
