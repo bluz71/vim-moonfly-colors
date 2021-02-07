@@ -159,6 +159,14 @@ to your _vimrc_:
 let g:moonflyItalics = 0
 ```
 
+The `g:moonflyTransparent` option specifies whether to use an opaque or transparent
+background for Vim. By default this option is **disabled**. If you would like a
+transparent background then add the following to your *vimrc*:
+
+```viml
+let g:moonflyTransparent = 1
+```
+
 True Color Terminals
 --------------------
 

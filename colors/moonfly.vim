@@ -28,6 +28,9 @@ let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', 1)
 " By default do use italics in GUI versions of Vim.
 let g:moonflyItalics = get(g:, 'moonflyItalics', 1)
 
+" By default do not use transparent background
+let g:moonflyTransparent = get(g:, 'moonflyTransparent', 0)
+
 " Background and foreground
 let s:black     = '#080808' " black       = 232
 let s:white     = '#c6c6c6' " white       = 251
@@ -91,7 +94,11 @@ if g:moonflyTerminalColors
 endif
 
 " Background and text
-exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
+if g:moonflyTransparent
+  exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=NONE' . s:black . ' guifg=' . s:white
+else
+  exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
+endif
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg ctermfg=247 guifg=' . s:grey247 . ' gui=none'
