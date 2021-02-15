@@ -224,7 +224,7 @@ exec 'highlight CursorLine ctermbg=234 cterm=none guibg=' . s:grey234
 exec 'highlight Folded ctermbg=234 ctermfg=14 guibg=' . s:grey234 . ' guifg='. s:lime
 exec 'highlight FoldColumn ctermbg=236 ctermfg=14 guibg=' . s:grey236 . ' guifg=' . s:lime
 exec 'highlight SignColumn ctermbg=bg ctermfg=14 guibg=bg guifg=' . s:lime
-exec 'highlight Todo ctermbg=3 ctermfg=bg guibg=' . s:yellow . ' guifg=bg'
+exec 'highlight Todo ctermbg=3 ctermfg=232 guibg=' . s:yellow . ' guifg=' . s:black
 exec 'highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
 if g:moonflyUnderlineMatchParen
     exec 'highlight MatchParen ctermbg=bg ctermfg=8 cterm=underline guibg=bg guifg=' . s:coral . ' gui=underline'
