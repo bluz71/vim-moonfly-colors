@@ -283,7 +283,6 @@ highlight! link TSConstant MoonflyPurple
 highlight! link TSConstBuiltin MoonflyGreen
 highlight! link TSConstMacro MoonflyViolet
 highlight! link TSConstructor MoonflyEmerald
-highlight! link TSError MoonflyRed
 highlight! link TSFuncBuiltin MoonflySky
 highlight! link TSFuncMacro MoonflySky
 highlight! link TSInclude MoonflyCranberry
@@ -291,6 +290,7 @@ highlight! link TSKeywordOperator MoonflyViolet
 highlight! link TSNamespace MoonflyBlue
 highlight! link TSParameter MoonflyWhite
 highlight! link TSPunctSpecial MoonflyCranberry
+highlight! link TSSymbol MoonflyPurple
 highlight! link TSTag MoonflyBlue
 highlight! link TSTagDelimiter MoonflyLime
 highlight! link TSVariableBuiltin MoonflyLime
