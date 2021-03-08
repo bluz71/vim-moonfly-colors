@@ -270,7 +270,7 @@ The terminal should then be configured with the following _moonfly_ colors:
 | Color 10       | Red (bright)    | `#ff5189` | ![background](https://placehold.it/32/ff5189/000000?text=+) |
 | Color 11       | Green (bright)  | `#36c692` | ![background](https://placehold.it/32/36c692/000000?text=+) |
 | Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
-| Color 13       | Blue (bright)   | `#78c2ff` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |
+| Color 13       | Blue (bright)   | `#67bbff` | ![background](https://placehold.it/32/67bbff/000000?text=+) |
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
 | Color 16       | White (bright)  | `#e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
