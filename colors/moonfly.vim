@@ -35,7 +35,7 @@ let g:moonflyTransparent = get(g:, 'moonflyTransparent', 0)
 let s:black     = '#080808' " black       = 232
 let s:white     = '#c6c6c6' " white       = 251
 " Variations of charcoal-grey
-let s:grey0     = '#373c40' " grey0       = 0
+let s:grey0     = '#323437' " grey0       = 0
 let s:grey253   = '#dadada' " grey253     = 253
 let s:grey249   = '#b2b2b2' " grey249     = 249
 let s:grey247   = '#9e9e9e' " grey247     = 247
@@ -67,7 +67,7 @@ let s:red       = '#ff5454' " red         = 1
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:moonflyTerminalColors
     if has('nvim')
-        let g:terminal_color_0  = '#373c40'
+        let g:terminal_color_0  = '#323437'
         let g:terminal_color_1  = '#ff5454'
         let g:terminal_color_2  = '#8cc85f'
         let g:terminal_color_3  = '#e3c78a'
@@ -85,7 +85,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_15 = '#dadada'
     else
         let g:terminal_ansi_colors = [
-                    \ '#373c40', '#ff5454', '#8cc85f', '#e3c78a',
+                    \ '#323437', '#ff5454', '#8cc85f', '#e3c78a',
                     \ '#80a0ff', '#d183e8', '#79dac8', '#b2b2b2',
                     \ '#949494', '#ff5189', '#36c692', '#bfbf97',
                     \ '#74b2ff', '#ae81ff', '#85dc85', '#dadada'

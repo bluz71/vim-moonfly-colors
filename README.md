@@ -258,7 +258,7 @@ The terminal should then be configured with the following _moonfly_ colors:
 | Cursor Text    | Cursor Text     | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
 | Selection      | Selection       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
 | Selection Text | Selection Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Color 1        | Black (normal)  | `#373c40` | ![background](https://placehold.it/32/373c40/000000?text=+) |
+| Color 1        | Black (normal)  | `#323437` | ![background](https://placehold.it/32/323437/000000?text=+) |
 | Color 2        | Red (normal)    | `#ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+) |
 | Color 3        | Green (normal)  | `#8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+) |
 | Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+) |
