@@ -227,9 +227,9 @@ exec 'highlight SignColumn ctermbg=bg ctermfg=14 guibg=bg guifg=' . s:lime
 exec 'highlight Todo ctermbg=3 ctermfg=232 guibg=' . s:yellow . ' guifg=' . s:black
 exec 'highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
 if g:moonflyUnderlineMatchParen
-    exec 'highlight MatchParen ctermbg=bg ctermfg=8 cterm=underline guibg=bg guifg=' . s:coral . ' gui=underline'
+    exec 'highlight MatchParen ctermbg=bg cterm=underline guibg=bg gui=underline'
 else
-    exec 'highlight MatchParen ctermbg=bg ctermfg=8 guibg=bg guifg=' . s:coral
+    exec 'highlight MatchParen ctermbg=0 guibg=' . s:grey0
 endif
 exec 'highlight Ignore ctermfg=12 guifg=' . s:sky
 exec 'highlight Underlined ctermfg=10 cterm=none guifg=' . s:emerald . ' gui=none'
