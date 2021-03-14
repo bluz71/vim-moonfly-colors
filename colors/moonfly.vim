@@ -190,10 +190,10 @@ exec 'highlight Structure ctermfg=4 guifg=' . s:blue
 
 " Auto-text-completion menu
 exec 'highlight Pmenu ctermbg=235 ctermfg=fg guibg=' . s:grey235 . ' guifg=fg'
-exec 'highlight PmenuSel ctermbg=2 ctermfg=236 guibg=' . s:green . ' guifg=' . s:grey236
+exec 'highlight PmenuSel ctermbg=11 ctermfg=236 guibg=' . s:wheat . ' guifg=' . s:grey236
 exec 'highlight PmenuSbar ctermbg=235 guibg=' . s:grey235
 exec 'highlight PmenuThumb ctermbg=244 guibg=' . s:grey244
-exec 'highlight WildMenu ctermbg=2 ctermfg=236 guibg=' . s:green . ' guifg=' . s:grey236
+exec 'highlight WildMenu ctermbg=11 ctermfg=236 guibg=' . s:wheat . ' guifg=' . s:grey236
 
 " Spelling errors
 if g:moonflyUndercurls
