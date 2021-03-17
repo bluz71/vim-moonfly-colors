@@ -197,15 +197,15 @@ exec 'highlight WildMenu ctermbg=11 ctermfg=236 guibg=' . s:wheat . ' guifg=' . 
 
 " Spelling errors
 if g:moonflyUndercurls
-    exec 'highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg gui=undercurl guisp=' . s:red
-    exec 'highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg gui=undercurl guisp=' . s:blue
-    exec 'highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg gui=undercurl guisp=' . s:yellow
-    exec 'highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg gui=undercurl guisp=' . s:sky
+    exec 'highlight SpellBad ctermfg=1 cterm=underline gui=undercurl guisp=' . s:red
+    exec 'highlight SpellCap ctermfg=4 cterm=underline gui=undercurl guisp=' . s:blue
+    exec 'highlight SpellRare ctermfg=3 cterm=underline gui=undercurl guisp=' . s:yellow
+    exec 'highlight SpellLocal ctermfg=12 cterm=underline gui=undercurl guisp=' . s:sky
 else
-    exec 'highlight SpellBad ctermbg=bg ctermfg=1 cterm=underline guibg=bg guifg=' . s:red . ' gui=underline guisp=' . s:red
-    exec 'highlight SpellCap ctermbg=bg ctermfg=4 cterm=underline guibg=bg guifg=' . s:blue . ' gui=underline guisp=' . s:blue
-    exec 'highlight SpellRare ctermbg=bg ctermfg=3 cterm=underline guibg=bg guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
-    exec 'highlight SpellLocal ctermbg=bg ctermfg=12 cterm=underline guibg=bg guifg=' . s:sky . ' gui=underline guisp=' . s:sky
+    exec 'highlight SpellBad ctermfg=1 cterm=underline guifg=' . s:red . ' gui=underline guisp=' . s:red
+    exec 'highlight SpellCap ctermfg=4 cterm=underline guifg=' . s:blue . ' gui=underline guisp=' . s:blue
+    exec 'highlight SpellRare ctermfg=3 cterm=underline guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
+    exec 'highlight SpellLocal ctermfg=12 cterm=underline guifg=' . s:sky . ' gui=underline guisp=' . s:sky
 endif
 
 " Misc
