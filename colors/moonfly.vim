@@ -237,7 +237,7 @@ exec 'highlight QuickFixLine ctermbg=237 cterm=none guibg=' . s:grey237
 exec 'highlight Delimiter ctermfg=251 guifg=' . s:white
 
 " Neovim only highlight groups
-exec 'highlight Whitespace ctermfg=0 guifg=' . s:grey0
+exec 'highlight Whitespace ctermfg=235 guifg=' . s:grey235
 exec 'highlight TermCursor ctermbg=247 ctermfg=bg cterm=none guibg=' . s:grey247 . ' guifg=bg gui=none'
 
 " Color column (after line 80)
