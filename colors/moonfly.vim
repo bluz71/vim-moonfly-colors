@@ -800,6 +800,14 @@ highlight! link SignifySignAdd MoonflyEmeraldAlert
 highlight! link SignifySignChange MoonflyPurpleAlert
 highlight! link SignifySignDelete MoonflyRedAlert
 
+" gitsigns.nvim plugin
+highlight! link GitSignsAdd MoonflyEmeraldAlert
+highlight! link GitSignsChange MoonflyPurpleAlert
+highlight! link GitSignsChangeNr MoonflyPurpleAlert
+highlight! link GitSignsChangeLn MoonflyPurpleAlert
+highlight! link GitSignsChangeDelete MoonflyCoralAlert
+highlight! link GitSignsDelete MoonflyRedAlert
+
 " FZF plugin
 exec 'highlight fzf1 ctermfg=9 ctermbg=236 guifg=' . s:crimson . ' guibg=' . s:grey236
 exec 'highlight fzf2 ctermfg=111 ctermbg=236 guifg=' . s:blue . ' guibg=' . s:grey236

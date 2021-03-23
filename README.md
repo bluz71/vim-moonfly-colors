@@ -72,6 +72,7 @@ Plugins explicity styled
 - [fern.vim](https://github.com/lambdalisue/fern.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 - [Neomake](https://github.com/neomake/neomake)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
