@@ -704,7 +704,7 @@ highlight! link FernGitStatusWorktree MoonflyCrimson
 highlight! link bufExplorerHelp MoonflyGrey247
 highlight! link bufExplorerSortBy MoonflyGrey247
 highlight! link CleverFDefaultLabel MoonflyCrimson
-highlight! link CtrlPMatch MoonflyPurple
+highlight! link CtrlPMatch MoonflyCoral
 highlight! link Directory MoonflyEmerald
 highlight! link HighlightedyankRegion MoonflyGrey0
 highlight! link jsonKeyword MoonflySky
@@ -818,10 +818,10 @@ exec 'highlight fzfBorder ctermfg=236 guifg=' . s:grey236
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
   \  'bg':      ['bg', 'Normal'],
-  \  'hl':      ['fg', 'Number'],
+  \  'hl':      ['fg', 'Boolean'],
   \  'fg+':     ['fg', 'fzfFgPlus'],
   \  'bg+':     ['bg', 'Pmenu'],
-  \  'hl+':     ['fg', 'Number'],
+  \  'hl+':     ['fg', 'Boolean'],
   \  'info':    ['fg', 'String'],
   \  'border':  ['fg', 'fzfBorder'],
   \  'prompt':  ['fg', 'fzf2'],
