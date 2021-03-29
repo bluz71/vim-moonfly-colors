@@ -354,7 +354,6 @@ highlight! link scssSelectorName MoonflyBlue
 highlight! link dartMetadata MoonflyLime
 highlight! link dartStorageClass MoonflyViolet
 highlight! link dartTypedef MoonflyViolet
-highlight! link dartUserType MoonflyBlue
 
 " Elixir
 highlight! link eelixirDelimiter MoonflyCrimson
