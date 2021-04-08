@@ -244,7 +244,7 @@ exec 'highlight TermCursor ctermbg=247 ctermfg=bg cterm=none guibg=' . s:grey247
 exec 'highlight ColorColumn ctermbg=233 guibg=' . s:grey233
 
 " Conceal color, as used by indentLine plugin
-exec 'highlight Conceal ctermbg=none ctermfg=235 guibg=none guifg=' . s:grey235
+exec 'highlight Conceal ctermbg=NONE ctermfg=235 guibg=NONE guifg=' . s:grey235
 
 " Custom moonfly highlight groups
 exec 'highlight MoonflyReset ctermfg=fg guifg=fg'
