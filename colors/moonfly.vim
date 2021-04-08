@@ -347,7 +347,14 @@ highlight! link crystalSharpBang MoonflyGrey247
 highlight! link crystalStringDelimiter MoonflyWheat
 
 " CSS/SCSS
+highlight! link cssAttr MoonflyTurquoise
+highlight! link cssClassName MoonflyBlue
+highlight! link cssColor MoonflyTurquoise
 highlight! link cssIdentifier MoonflyYellow
+highlight! link cssProp MoonflyTurquoise
+highlight! link cssValueLength MoonflyCoral
+highlight! link cssValueNumber MoonflyCoral
+highlight! link cssUnitDecorators MoonflyCoral
 highlight! link scssSelectorName MoonflyBlue
 
 " Dart
