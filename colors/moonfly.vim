@@ -31,6 +31,10 @@ let g:moonflyItalics = get(g:, 'moonflyItalics', 1)
 " By default do not use a transparent background in GUI versions of Vim.
 let g:moonflyTransparent = get(g:, 'moonflyTransparent', 0)
 
+" By default do not use a customized 'NormalFloat' highlight group (for Neovim
+" float windows).
+let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', 0)
+
 " Background and foreground
 let s:black     = '#080808' " black       = 232
 let s:white     = '#c6c6c6' " white       = 251
@@ -239,6 +243,10 @@ exec 'highlight Delimiter ctermfg=251 guifg=' . s:white
 " Neovim only highlight groups
 exec 'highlight Whitespace ctermfg=235 guifg=' . s:grey235
 exec 'highlight TermCursor ctermbg=247 ctermfg=bg cterm=none guibg=' . s:grey247 . ' guifg=bg gui=none'
+if g:moonflyNormalFloat
+    exec 'highlight NormalFloat ctermbg=bg ctermfg=249 guibg=bg guifg=' . s:grey249
+endif
+exec 'highlight FloatBorder ctermbg=bg ctermfg=236 guibg=bg guifg=' . s:grey236
 
 " Color column (after line 80)
 exec 'highlight ColorColumn ctermbg=233 guibg=' . s:grey233
