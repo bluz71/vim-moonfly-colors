@@ -283,29 +283,29 @@ The terminal should then be configured with the following _moonfly_ colors:
 
 | Type           | Category        | Value     | Color                                                       |
 |----------------|-----------------|-----------|-------------------------------------------------------------|
-| Background     | Background      | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Foreground     | Foreground      | `#b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
-| Bold           | Bold            | `#eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
-| Cursor         | Cursor          | `#9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+) |
-| Cursor Text    | Cursor Text     | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Selection      | Selection       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
-| Selection Text | Selection Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Color 1        | Black (normal)  | `#323437` | ![background](https://placehold.it/32/323437/000000?text=+) |
-| Color 2        | Red (normal)    | `#ff5454` | ![background](https://placehold.it/32/ff5454/000000?text=+) |
-| Color 3        | Green (normal)  | `#8cc85f` | ![background](https://placehold.it/32/8cc85f/000000?text=+) |
-| Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://placehold.it/32/e3c78a/000000?text=+) |
-| Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://placehold.it/32/80a0ff/000000?text=+) |
-| Color 6        | Purple (normal) | `#d183e8` | ![background](https://placehold.it/32/d183e8/000000?text=+) |
-| Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://placehold.it/32/79dac8/000000?text=+) |
-| Color 8        | White (normal)  | `#de935f` | ![background](https://placehold.it/32/de935f/000000?text=+) |
-| Color 9        | Black (bright)  | `#f09479` | ![background](https://placehold.it/32/f09479/000000?text=+) |
-| Color 10       | Red (bright)    | `#ff5189` | ![background](https://placehold.it/32/ff5189/000000?text=+) |
-| Color 11       | Green (bright)  | `#36c692` | ![background](https://placehold.it/32/36c692/000000?text=+) |
-| Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
-| Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://placehold.it/32/74b2ff/000000?text=+) |
-| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
-| Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
-| Color 16       | White (bright)  | `#e2637f` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
+| Background     | Background      | `#080808` | ![background](https://via.placeholder.com/32/080808?text=+) |
+| Foreground     | Foreground      | `#b2b2b2` | ![background](https://via.placeholder.com/32/b2b2b2?text=+) |
+| Bold           | Bold            | `#eeeeee` | ![background](https://via.placeholder.com/32/eeeeee?text=+) |
+| Cursor         | Cursor          | `#9e9e9e` | ![background](https://via.placeholder.com/32/9e9e9e?text=+) |
+| Cursor Text    | Cursor Text     | `#080808` | ![background](https://via.placeholder.com/32/080808?text=+) |
+| Selection      | Selection       | `#b2ceee` | ![background](https://via.placeholder.com/32/b2ceee?text=+) |
+| Selection Text | Selection Text  | `#080808` | ![background](https://via.placeholder.com/32/080808?text=+) |
+| Color 1        | Black (normal)  | `#323437` | ![background](https://via.placeholder.com/32/323437?text=+) |
+| Color 2        | Red (normal)    | `#ff5454` | ![background](https://via.placeholder.com/32/ff5454?text=+) |
+| Color 3        | Green (normal)  | `#8cc85f` | ![background](https://via.placeholder.com/32/8cc85f?text=+) |
+| Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://via.placeholder.com/32/e3c78a?text=+) |
+| Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://via.placeholder.com/32/80a0ff?text=+) |
+| Color 6        | Purple (normal) | `#d183e8` | ![background](https://via.placeholder.com/32/d183e8?text=+) |
+| Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://via.placeholder.com/32/79dac8?text=+) |
+| Color 8        | White (normal)  | `#de935f` | ![background](https://via.placeholder.com/32/de935f?text=+) |
+| Color 9        | Black (bright)  | `#f09479` | ![background](https://via.placeholder.com/32/f09479?text=+) |
+| Color 10       | Red (bright)    | `#ff5189` | ![background](https://via.placeholder.com/32/ff5189?text=+) |
+| Color 11       | Green (bright)  | `#36c692` | ![background](https://via.placeholder.com/32/36c692?text=+) |
+| Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://via.placeholder.com/32/bfbf97?text=+) |
+| Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://via.placeholder.com/32/74b2ff?text=+) |
+| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://via.placeholder.com/32/ae81ff?text=+) |
+| Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://via.placeholder.com/32/85dc85?text=+) |
+| Color 16       | White (bright)  | `#e2637f` | ![background](https://via.placeholder.com/32/e2637f?text=+) |
 
 License
 -------
