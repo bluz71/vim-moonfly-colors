@@ -32,7 +32,7 @@ let g:moonflyItalics = get(g:, 'moonflyItalics', 1)
 let g:moonflyTransparent = get(g:, 'moonflyTransparent', 0)
 
 " By default do not use a customized 'NormalFloat' highlight group (for Neovim
-" float windows).
+" floating windows).
 let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', 0)
 
 " Background and foreground
