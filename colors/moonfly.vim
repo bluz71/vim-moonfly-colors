@@ -281,7 +281,6 @@ exec 'highlight MoonflyYellowAlert ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yel
 exec 'highlight MoonflyCoralAlert ctermbg=bg ctermfg=8 guibg=bg guifg=' . s:coral
 exec 'highlight MoonflyEmeraldAlert ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
 exec 'highlight MoonflyPurpleAlert ctermbg=bg ctermfg=13 guibg=bg guifg=' . s:purple
-exec 'highlight MoonflyBlueAlert ctermbg=bg ctermfg=4 guibg=bg guifg=' . s:blue
 exec 'highlight MoonflySkyAlert ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
 exec 'highlight MoonflyRedAlert ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 
@@ -806,20 +805,20 @@ highlight! link LspDiagnosticsFloatingHint MoonflyWhite
 
 " GitGutter plugin
 highlight! link GitGutterAdd MoonflyEmeraldAlert
-highlight! link GitGutterChange MoonflyBlueAlert
+highlight! link GitGutterChange MoonflyYellowAlert
 highlight! link GitGutterChangeDelete MoonflyCoralAlert
 highlight! link GitGutterDelete MoonflyRedAlert
 
 " Signify plugin
 highlight! link SignifySignAdd MoonflyEmeraldAlert
-highlight! link SignifySignChange MoonflyBlueAlert
+highlight! link SignifySignChange MoonflyYellowAlert
 highlight! link SignifySignDelete MoonflyRedAlert
 
 " gitsigns.nvim plugin
 highlight! link GitSignsAdd MoonflyEmeraldAlert
-highlight! link GitSignsChange MoonflyBlueAlert
-highlight! link GitSignsChangeNr MoonflyBlueAlert
-highlight! link GitSignsChangeLn MoonflyBlueAlert
+highlight! link GitSignsChange MoonflyYellowAlert
+highlight! link GitSignsChangeNr MoonflyYellowAlert
+highlight! link GitSignsChangeLn MoonflyYellowAlert
 highlight! link GitSignsChangeDelete MoonflyCoralAlert
 highlight! link GitSignsDelete MoonflyRedAlert
 
