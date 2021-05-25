@@ -36,253 +36,253 @@ let g:moonflyTransparent = get(g:, 'moonflyTransparent', 0)
 let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', 0)
 
 " Background and foreground
-let s:black     = '#080808' " black       = 232
-let s:white     = '#c6c6c6' " white       = 251
+let s:black     = { "hex": '#080808', "term": 232 }
+let s:white     = { "hex": '#c6c6c6', "term": 251 }
 " Variations of charcoal-grey
-let s:grey0     = '#323437' " grey0       = 0
-let s:grey253   = '#dadada' " grey253     = 253
-let s:grey249   = '#b2b2b2' " grey249     = 249
-let s:grey247   = '#9e9e9e' " grey247     = 247
-let s:grey246   = '#949494' " grey246     = 246
-let s:grey244   = '#808080' " grey244     = 244
-let s:grey241   = '#626262' " grey241     = 241
-let s:grey237   = '#3a3a3a' " grey237     = 237
-let s:grey236   = '#303030' " grey236     = 236
-let s:grey235   = '#262626' " grey235     = 235
-let s:grey234   = '#1c1c1c' " grey234     = 234
-let s:grey233   = '#121212' " grey233     = 233
+let s:grey0     = { "hex": '#323437', "term": 0   }
+let s:grey253   = { "hex": '#dadada', "term": 253 }
+let s:grey249   = { "hex": '#b2b2b2', "term": 249 }
+let s:grey247   = { "hex": '#9e9e9e', "term": 247 }
+let s:grey246   = { "hex": '#949494', "term": 246 }
+let s:grey244   = { "hex": '#808080', "term": 244 }
+let s:grey241   = { "hex": '#626262', "term": 241 }
+let s:grey237   = { "hex": '#3a3a3a', "term": 237 }
+let s:grey236   = { "hex": '#303030', "term": 236 }
+let s:grey235   = { "hex": '#262626', "term": 235 }
+let s:grey234   = { "hex": '#1c1c1c', "term": 234 }
+let s:grey233   = { "hex": '#121212', "term": 233 }
 " Core theme colors
-let s:wheat     = '#bfbf97' " wheat       = 11
-let s:yellow    = '#e3c78a' " yellow      = 3
-let s:orange    = '#de935f' " orange      = 7
-let s:coral     = '#f09479' " coral       = 8
-let s:lime      = '#85dc85' " lime        = 14
-let s:green     = '#8cc85f' " green       = 2
-let s:emerald   = '#36c692' " emerald     = 10
-let s:blue      = '#80a0ff' " blue        = 4
-let s:sky       = '#74b2ff' " sky         = 12
-let s:turquoise = '#79dac8' " turquoise   = 6
-let s:purple    = '#ae81ff' " purple      = 13
-let s:cranberry = '#e2637f' " cranberry   = 15
-let s:violet    = '#d183e8' " violet      = 5
-let s:crimson   = '#ff5189' " crimson     = 9
-let s:red       = '#ff5454' " red         = 1
+let s:wheat     = { "hex": '#bfbf97', "term": 11  }
+let s:yellow    = { "hex": '#e3c78a', "term": 3   }
+let s:orange    = { "hex": '#de935f', "term": 7   }
+let s:coral     = { "hex": '#f09479', "term": 8   }
+let s:lime      = { "hex": '#85dc85', "term": 14  }
+let s:green     = { "hex": '#8cc85f', "term": 2   }
+let s:emerald   = { "hex": '#36c692', "term": 10  }
+let s:blue      = { "hex": '#80a0ff', "term": 4   }
+let s:sky       = { "hex": '#74b2ff', "term": 12  }
+let s:turquoise = { "hex": '#79dac8', "term": 6   }
+let s:purple    = { "hex": '#ae81ff', "term": 13  }
+let s:cranberry = { "hex": '#e2637f', "term": 15  }
+let s:violet    = { "hex": '#d183e8', "term": 5   }
+let s:crimson   = { "hex": '#ff5189', "term": 9   }
+let s:red       = { "hex": '#ff5454', "term": 1   }
 
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:moonflyTerminalColors
     if has('nvim')
-        let g:terminal_color_0  = '#323437'
-        let g:terminal_color_1  = '#ff5454'
-        let g:terminal_color_2  = '#8cc85f'
-        let g:terminal_color_3  = '#e3c78a'
-        let g:terminal_color_4  = '#80a0ff'
-        let g:terminal_color_5  = '#d183e8'
-        let g:terminal_color_6  = '#79dac8'
-        let g:terminal_color_7  = '#b2b2b2'
-        let g:terminal_color_8  = '#949494'
-        let g:terminal_color_9  = '#ff5189'
-        let g:terminal_color_10 = '#36c692'
-        let g:terminal_color_11 = '#bfbf97'
-        let g:terminal_color_12 = '#74b2ff'
-        let g:terminal_color_13 = '#ae81ff'
-        let g:terminal_color_14 = '#85dc85'
-        let g:terminal_color_15 = '#dadada'
+        let g:terminal_color_0  = s:grey0.hex
+        let g:terminal_color_1  = s:red.hex
+        let g:terminal_color_2  = s:green.hex
+        let g:terminal_color_3  = s:yellow.hex
+        let g:terminal_color_4  = s:blue.hex
+        let g:terminal_color_5  = s:violet.hex
+        let g:terminal_color_6  = s:turquoise.hex
+        let g:terminal_color_7  = s:grey249.hex
+        let g:terminal_color_8  = s:grey246.hex
+        let g:terminal_color_9  = s:crimson.hex
+        let g:terminal_color_10 = s:emerald.hex
+        let g:terminal_color_11 = s:wheat.hex
+        let g:terminal_color_12 = s:sky.hex
+        let g:terminal_color_13 = s:purple.hex
+        let g:terminal_color_14 = s:lime.hex
+        let g:terminal_color_15 = s:grey253.hex
     else
         let g:terminal_ansi_colors = [
-                    \ '#323437', '#ff5454', '#8cc85f', '#e3c78a',
-                    \ '#80a0ff', '#d183e8', '#79dac8', '#b2b2b2',
-                    \ '#949494', '#ff5189', '#36c692', '#bfbf97',
-                    \ '#74b2ff', '#ae81ff', '#85dc85', '#dadada'
+                    \ s:grey0.hex, s:red.hex, s:green.hex, s:yellow.hex,
+                    \ s:blue.hex, s:violet.hex, s:turquoise.hex, s:grey249.hex,
+                    \ s:grey246.hex, s:crimson.hex, s:emerald.hex, s:wheat.hex,
+                    \ s:sky.hex, s:purple.hex, s:lime.hex, s:grey253.hex
                     \]
     endif
 endif
 
 " Background and text
 if g:moonflyTransparent
-    exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=NONE' . ' guifg=' . s:white
+    exec 'highlight Normal ctermbg=' . s:black.term . ' ctermfg=' . s:white.term . ' guibg=NONE guifg=' . s:white.hex
 else
-    exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
+    exec 'highlight Normal ctermbg=' . s:black.term . ' ctermfg=' . s:white.term . ' guibg=' . s:black.hex . ' guifg=' . s:white.hex
 endif
 
 " Color of mode text, -- INSERT --
-exec 'highlight ModeMsg ctermfg=247 guifg=' . s:grey247 . ' gui=none'
+exec 'highlight ModeMsg ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex . ' gui=none'
 
 " Comments
 if g:moonflyItalics
-    exec 'highlight Comment ctermfg=246 guifg=' . s:grey246 . ' gui=italic'
+    exec 'highlight Comment ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex . ' gui=italic'
 else
-    exec 'highlight Comment ctermfg=246 guifg=' . s:grey246
+    exec 'highlight Comment ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex
 endif
 
 " Functions
-exec 'highlight Function ctermfg=12 guifg=' . s:sky
+exec 'highlight Function ctermfg=' . s:sky.term . ' guifg=' . s:sky.hex
 
 " Strings
-exec 'highlight String ctermfg=11 guifg=' . s:wheat
+exec 'highlight String ctermfg=' . s:wheat.term . ' guifg=' . s:wheat.hex
 
 " Booleans
-exec 'highlight Boolean ctermfg=8 guifg=' . s:coral
+exec 'highlight Boolean ctermfg=' . s:coral.term . ' guifg=' . s:coral.hex
 
 " Identifiers
-exec 'highlight Identifier ctermfg=6 cterm=none guifg=' . s:turquoise
+exec 'highlight Identifier ctermfg=' . s:turquoise.term . ' cterm=none guifg=' . s:turquoise.hex
 
 " Color of titles
-exec 'highlight Title ctermfg=7 guifg=' . s:orange . ' gui=none'
+exec 'highlight Title ctermfg=' . s:orange.term . ' guifg=' . s:orange.hex . ' gui=none'
 
 " const, static
-exec 'highlight StorageClass ctermfg=8 guifg=' . s:coral
+exec 'highlight StorageClass ctermfg=' . s:coral.term . ' guifg=' . s:coral.hex
 
 " void, intptr_t
-exec 'highlight Type ctermfg=10 guifg=' . s:emerald . ' gui=none'
+exec 'highlight Type ctermfg=' . s:emerald.term . ' guifg=' . s:emerald.hex . ' gui=none'
 
 " Numbers
-exec 'highlight Constant ctermfg=13 guifg=' . s:purple
+exec 'highlight Constant ctermfg=' . s:purple.term . ' guifg=' . s:purple.hex
 
 " Character constants
-exec 'highlight Character ctermfg=13 guifg=' . s:purple
+exec 'highlight Character ctermfg=' . s:purple.term . ' guifg=' . s:purple.hex
 
 " Exceptions
-exec 'highlight Exception ctermfg=9 guifg=' . s:crimson
+exec 'highlight Exception ctermfg=' . s:crimson.term . ' guifg=' . s:crimson.hex
 
 " ifdef/endif
-exec 'highlight PreProc ctermfg=15 guifg=' . s:cranberry
+exec 'highlight PreProc ctermfg=' . s:cranberry.term . ' guifg=' . s:cranberry.hex
 
 " Status, split and tab lines
-exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
-exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
-exec 'highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
-exec 'highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=' . s:grey236 . ' guifg=' . s:blue . ' gui=none'
-exec 'highlight TablineFill ctermbg=236 ctermfg=236 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
-exec 'highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
+exec 'highlight StatusLine ctermbg=' . s:grey236.term . '  ctermfg=' . s:white.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:white.hex . ' gui=none'
+exec 'highlight StatusLineNC ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex . ' gui=none'
+exec 'highlight VertSplit ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey236.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey236.hex . ' gui=none'
+exec 'highlight Tabline ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex . ' gui=none'
+exec 'highlight TablineSel ctermbg=' . s:grey236.term . ' ctermfg=' . s:blue.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:blue.hex . ' gui=none'
+exec 'highlight TablineFill ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey236.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey236.hex . ' gui=none'
+exec 'highlight StatusLineTerm ctermbg=' . s:grey236.term . ' ctermfg=' . s:white.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:white.hex . ' gui=none'
+exec 'highlight StatusLineTermNC ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex . ' gui=none'
 
 " case in switch statement
-exec 'highlight Label ctermfg=6 guifg=' . s:turquoise
+exec 'highlight Label ctermfg=' . s:turquoise.term . ' guifg=' . s:turquoise.hex
 
 " end-of-line '$', end-of-file '~'
-exec 'highlight NonText ctermfg=7 guifg=' . s:orange . ' gui=none'
+exec 'highlight NonText ctermfg=' . s:orange.term . ' guifg=' . s:orange.hex . ' gui=none'
 
 " sizeof
-exec 'highlight Operator ctermfg=15 guifg=' . s:cranberry
+exec 'highlight Operator ctermfg=' . s:cranberry.term . ' guifg=' . s:cranberry.hex
 
 " for, while
-exec 'highlight Repeat ctermfg=5 guifg=' . s:violet
+exec 'highlight Repeat ctermfg=' . s:violet.term . ' guifg=' . s:violet.hex
 
 " Search
-exec 'highlight Search ctermbg=bg ctermfg=8 cterm=reverse guibg=bg guifg=' . s:coral . ' gui=reverse'
-exec 'highlight IncSearch ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
+exec 'highlight Search ctermbg=bg ctermfg=' . s:coral.term . ' cterm=reverse guibg=bg guifg=' . s:coral.hex . ' gui=reverse'
+exec 'highlight IncSearch ctermbg=bg ctermfg=' . s:yellow.term . ' guibg=bg guifg=' . s:yellow.hex
 
 " '\n' sequences
-exec 'highlight Special ctermfg=15 guifg=' . s:cranberry
+exec 'highlight Special ctermfg=' . s:cranberry.term . ' guifg=' . s:cranberry.hex
 
 " if, else
-exec 'highlight Statement ctermfg=5 guifg=' . s:violet . ' gui=none'
+exec 'highlight Statement ctermfg=' . s:violet.term . ' guifg=' . s:violet.hex . ' gui=none'
 
 " Visual selection
-exec 'highlight Visual ctermbg=0 guibg=' . s:grey0
-exec 'highlight VisualNOS ctermbg=0 ctermfg=fg cterm=none guibg=' . s:grey0 . ' guifg=fg gui=none'
-exec 'highlight VisualInDiff ctermbg=0 ctermfg=251 guibg=' . s:grey0 . ' guifg=' . s:white
+exec 'highlight Visual ctermbg=' . s:grey0.term . ' guibg=' . s:grey0.hex
+exec 'highlight VisualNOS ctermbg=' . s:grey0.term . ' ctermfg=fg cterm=none guibg=' . s:grey0.hex . ' guifg=fg gui=none'
+exec 'highlight VisualInDiff ctermbg=' . s:grey0.term . ' ctermfg=' . s:white.term . ' guibg=' . s:grey0.hex . ' guifg=' . s:white.hex
 
 " Errors, warnings and whitespace-eol
-exec 'highlight Error ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
-exec 'highlight ErrorMsg ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
-exec 'highlight WarningMsg ctermbg=bg ctermfg=7 guibg=bg guifg=' . s:orange
+exec 'highlight Error ctermbg=bg ctermfg=' . s:red.term . ' guibg=bg guifg=' . s:red.hex
+exec 'highlight ErrorMsg ctermbg=bg ctermfg=' . s:red.term . ' guibg=bg guifg=' . s:red.hex
+exec 'highlight WarningMsg ctermbg=bg ctermfg=' . s:orange.term . ' guibg=bg guifg=' . s:orange.hex
 
 " struct, union, enum, typedef
-exec 'highlight Structure ctermfg=4 guifg=' . s:blue
+exec 'highlight Structure ctermfg=' . s:blue.term . ' guifg=' . s:blue.hex
 
 " Auto-text-completion menu
-exec 'highlight Pmenu ctermbg=235 ctermfg=fg guibg=' . s:grey235 . ' guifg=fg'
-exec 'highlight PmenuSel ctermbg=11 ctermfg=236 guibg=' . s:wheat . ' guifg=' . s:grey236
-exec 'highlight PmenuSbar ctermbg=235 guibg=' . s:grey235
-exec 'highlight PmenuThumb ctermbg=244 guibg=' . s:grey244
-exec 'highlight WildMenu ctermbg=11 ctermfg=236 guibg=' . s:wheat . ' guifg=' . s:grey236
+exec 'highlight Pmenu ctermbg=' . s:grey235.term . ' ctermfg=fg guibg=' . s:grey235.hex . ' guifg=fg'
+exec 'highlight PmenuSel ctermbg=' . s:wheat.term . ' ctermfg=' . s:grey236.term . ' guibg=' . s:wheat.hex . ' guifg=' . s:grey236.hex
+exec 'highlight PmenuSbar ctermbg=' . s:grey235.term . ' guibg=' . s:grey235.hex
+exec 'highlight PmenuThumb ctermbg=' . s:grey244.term . ' guibg=' . s:grey244.hex
+exec 'highlight WildMenu ctermbg=' . s:wheat.term . ' ctermfg=' . s:grey236.term . ' guibg=' . s:wheat.hex . ' guifg=' . s:grey236.hex
 
 " Spelling errors
 if g:moonflyUndercurls
-    exec 'highlight SpellBad ctermfg=1 cterm=underline gui=undercurl guisp=' . s:red
-    exec 'highlight SpellCap ctermfg=4 cterm=underline gui=undercurl guisp=' . s:blue
-    exec 'highlight SpellRare ctermfg=3 cterm=underline gui=undercurl guisp=' . s:yellow
-    exec 'highlight SpellLocal ctermfg=12 cterm=underline gui=undercurl guisp=' . s:sky
+    exec 'highlight SpellBad ctermfg=' . s:red.term . ' cterm=underline gui=undercurl guisp=' . s:red.hex
+    exec 'highlight SpellCap ctermfg=' . s:blue.term . ' cterm=underline gui=undercurl guisp=' . s:blue.hex
+    exec 'highlight SpellRare ctermfg=' . s:yellow.term . ' cterm=underline gui=undercurl guisp=' . s:yellow.hex
+    exec 'highlight SpellLocal ctermfg=' . s:sky.term . ' cterm=underline gui=undercurl guisp=' . s:sky.hex
 else
-    exec 'highlight SpellBad ctermfg=1 cterm=underline guifg=' . s:red . ' gui=underline guisp=' . s:red
-    exec 'highlight SpellCap ctermfg=4 cterm=underline guifg=' . s:blue . ' gui=underline guisp=' . s:blue
-    exec 'highlight SpellRare ctermfg=3 cterm=underline guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
-    exec 'highlight SpellLocal ctermfg=12 cterm=underline guifg=' . s:sky . ' gui=underline guisp=' . s:sky
+    exec 'highlight SpellBad ctermfg=' . s:red.term . ' cterm=underline guifg=' . s:red.hex . ' gui=underline guisp=' . s:red.hex
+    exec 'highlight SpellCap ctermfg=' . s:blue.term . ' cterm=underline guifg=' . s:blue.hex . ' gui=underline guisp=' . s:blue.hex
+    exec 'highlight SpellRare ctermfg=' . s:yellow.term . ' cterm=underline guifg=' . s:yellow.hex . ' gui=underline guisp=' . s:yellow.hex
+    exec 'highlight SpellLocal ctermfg=' . s:sky.term . ' cterm=underline guifg=' . s:sky.hex . ' gui=underline guisp=' . s:sky.hex
 endif
 
 " Misc
-exec 'highlight Question ctermfg=14 guifg=' . s:lime . ' gui=none'
-exec 'highlight MoreMsg ctermfg=1 guifg=' . s:red . ' gui=none'
-exec 'highlight LineNr ctermbg=bg ctermfg=241 guibg=bg guifg=' . s:grey241
+exec 'highlight Question ctermfg=' . s:lime.term . ' guifg=' . s:lime.hex . ' gui=none'
+exec 'highlight MoreMsg ctermfg=' . s:red.term . ' guifg=' . s:red.hex . ' gui=none'
+exec 'highlight LineNr ctermbg=bg ctermfg=' . s:grey241.term . ' guibg=bg guifg=' . s:grey241.hex
 if g:moonflyCursorColor
-    exec 'highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=' . s:blue
+    exec 'highlight Cursor ctermfg=bg ctermbg=' . s:blue.term . ' guifg=bg guibg=' . s:blue.hex
 else
-    exec 'highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=' . s:grey247
+    exec 'highlight Cursor ctermfg=bg ctermbg=' . s:grey247.term . ' guifg=bg guibg=' . s:grey247.hex
 endif
-exec 'highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=' . s:grey247
-exec 'highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=' . s:grey234 . ' guifg=' . s:blue . ' gui=none'
-exec 'highlight CursorColumn ctermbg=234 cterm=none guibg=' . s:grey234
-exec 'highlight CursorLine ctermbg=234 cterm=none guibg=' . s:grey234
-exec 'highlight Folded ctermbg=234 ctermfg=14 guibg=' . s:grey234 . ' guifg='. s:lime
-exec 'highlight FoldColumn ctermbg=236 ctermfg=14 guibg=' . s:grey236 . ' guifg=' . s:lime
-exec 'highlight SignColumn ctermbg=bg ctermfg=14 guibg=bg guifg=' . s:lime
-exec 'highlight Todo ctermbg=3 ctermfg=232 guibg=' . s:yellow . ' guifg=' . s:black
-exec 'highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
+exec 'highlight lCursor ctermfg=bg ctermbg=' . s:grey247.term . ' guifg=bg guibg=' . s:grey247.hex
+exec 'highlight CursorLineNr ctermbg=' . s:grey234.term . ' ctermfg=' . s:blue.term . ' cterm=none guibg=' . s:grey234.hex . ' guifg=' . s:blue.hex . ' gui=none'
+exec 'highlight CursorColumn ctermbg=' . s:grey234.term . ' cterm=none guibg=' . s:grey234.hex
+exec 'highlight CursorLine ctermbg=' . s:grey234.term . ' cterm=none guibg=' . s:grey234.hex
+exec 'highlight Folded ctermbg=' . s:grey234.term . ' ctermfg=' . s:lime.term . ' guibg=' . s:grey234.hex . ' guifg='. s:lime.hex
+exec 'highlight FoldColumn ctermbg=' . s:grey236.term . ' ctermfg=' . s:lime.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:lime.hex
+exec 'highlight SignColumn ctermbg=bg ctermfg=' . s:lime.term . ' guibg=bg guifg=' . s:lime.hex
+exec 'highlight Todo ctermbg=' . s:yellow.term . ' ctermfg=' . s:black.term . ' guibg=' . s:yellow.hex . ' guifg=' . s:black.hex
+exec 'highlight SpecialKey ctermbg=bg ctermfg=' . s:sky.term . ' guibg=bg guifg=' . s:sky.hex
 if g:moonflyUnderlineMatchParen
     exec 'highlight MatchParen ctermbg=bg cterm=underline guibg=bg gui=underline'
 else
-    exec 'highlight MatchParen ctermbg=0 guibg=' . s:grey0
+    exec 'highlight MatchParen ctermbg=' . s:grey0.term . ' guibg=' . s:grey0.hex
 endif
-exec 'highlight Ignore ctermfg=12 guifg=' . s:sky
-exec 'highlight Underlined ctermfg=10 cterm=none guifg=' . s:emerald . ' gui=none'
-exec 'highlight QuickFixLine ctermbg=237 cterm=none guibg=' . s:grey237
-exec 'highlight Delimiter ctermfg=251 guifg=' . s:white
+exec 'highlight Ignore ctermfg=' . s:sky.term . ' guifg=' . s:sky.hex
+exec 'highlight Underlined ctermfg=' . s:emerald.term . ' cterm=none guifg=' . s:emerald.hex . ' gui=none'
+exec 'highlight QuickFixLine ctermbg=' . s:grey237.term . ' cterm=none guibg=' . s:grey237.hex
+exec 'highlight Delimiter ctermfg=' . s:white.term . ' guifg=' . s:white.hex
 
 " Neovim only highlight groups
-exec 'highlight Whitespace ctermfg=235 guifg=' . s:grey235
-exec 'highlight TermCursor ctermbg=247 ctermfg=bg cterm=none guibg=' . s:grey247 . ' guifg=bg gui=none'
+exec 'highlight Whitespace ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex
+exec 'highlight TermCursor ctermbg=' . s:grey247.term . ' ctermfg=bg cterm=none guibg=' . s:grey247.hex . ' guifg=bg gui=none'
 if g:moonflyNormalFloat
-    exec 'highlight NormalFloat ctermbg=bg ctermfg=249 guibg=bg guifg=' . s:grey249
+    exec 'highlight NormalFloat ctermbg=bg ctermfg=' . s:grey249.term . ' guibg=bg guifg=' . s:grey249.hex
 endif
-exec 'highlight FloatBorder ctermbg=bg ctermfg=236 guibg=bg guifg=' . s:grey236
+exec 'highlight FloatBorder ctermbg=bg ctermfg=' . s:grey236.term . ' guibg=bg guifg=' . s:grey236.hex
 
 " Color column (after line 80)
-exec 'highlight ColorColumn ctermbg=233 guibg=' . s:grey233
+exec 'highlight ColorColumn ctermbg=' . s:grey233.term . ' guibg=' . s:grey233.hex
 
 " Conceal color, as used by indentLine plugin
-exec 'highlight Conceal ctermbg=NONE ctermfg=235 guibg=NONE guifg=' . s:grey235
+exec 'highlight Conceal ctermbg=NONE ctermfg=' . s:grey235.term . ' guibg=NONE guifg=' . s:grey235.hex
 
 " Custom moonfly highlight groups
 exec 'highlight MoonflyReset ctermfg=fg guifg=fg'
-exec 'highlight MoonflyWhite ctermfg=251 guifg=' . s:white
-exec 'highlight MoonflyGrey0 ctermfg=0 guifg=' . s:grey0
-exec 'highlight MoonflyGrey247 ctermfg=247 guifg=' . s:grey247
-exec 'highlight MoonflyGrey246 ctermfg=246 guifg=' . s:grey246
-exec 'highlight MoonflyGrey241 ctermfg=241 guifg=' . s:grey241
-exec 'highlight MoonflyWheat ctermfg=11 guifg=' . s:wheat
-exec 'highlight MoonflyYellow ctermfg=3 guifg=' . s:yellow
-exec 'highlight MoonflyOrange ctermfg=7 guifg=' . s:orange
-exec 'highlight MoonflyCoral ctermfg=8 guifg=' . s:coral
-exec 'highlight MoonflyLime ctermfg=14 guifg=' . s:lime
-exec 'highlight MoonflyGreen ctermfg=2 guifg=' . s:green
-exec 'highlight MoonflyEmerald ctermfg=10 guifg=' . s:emerald
-exec 'highlight MoonflyBlue ctermfg=4 guifg=' . s:blue
-exec 'highlight MoonflySky ctermfg=12 guifg=' . s:sky
-exec 'highlight MoonflyTurquoise ctermfg=6 guifg=' . s:turquoise
-exec 'highlight MoonflyPurple ctermfg=13 guifg=' . s:purple
-exec 'highlight MoonflyCranberry ctermfg=15 guifg=' . s:cranberry
-exec 'highlight MoonflyViolet ctermfg=5 guifg=' . s:violet
-exec 'highlight MoonflyCrimson ctermfg=9 guifg=' . s:crimson
-exec 'highlight MoonflyRed ctermfg=1 guifg=' . s:red
-exec 'highlight MoonflyWhiteAlert ctermbg=bg ctermfg=251 guibg=bg guifg=' . s:white
-exec 'highlight MoonflyYellowAlert ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
-exec 'highlight MoonflyCoralAlert ctermbg=bg ctermfg=8 guibg=bg guifg=' . s:coral
-exec 'highlight MoonflyEmeraldAlert ctermbg=bg ctermfg=10 guibg=bg guifg=' . s:emerald
-exec 'highlight MoonflyPurpleAlert ctermbg=bg ctermfg=13 guibg=bg guifg=' . s:purple
-exec 'highlight MoonflySkyAlert ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
-exec 'highlight MoonflyRedAlert ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
+exec 'highlight MoonflyWhite ctermfg=' . s:white.term . ' guifg=' . s:white.hex
+exec 'highlight MoonflyGrey0 ctermfg=' . s:grey0.term . ' guifg=' . s:grey0.hex
+exec 'highlight MoonflyGrey247 ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
+exec 'highlight MoonflyGrey246 ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex
+exec 'highlight MoonflyGrey241 ctermfg=' . s:grey241.term . ' guifg=' . s:grey241.hex
+exec 'highlight MoonflyWheat ctermfg=' . s:wheat.term . ' guifg=' . s:wheat.hex
+exec 'highlight MoonflyYellow ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex
+exec 'highlight MoonflyOrange ctermfg=' . s:orange.term . ' guifg=' . s:orange.hex
+exec 'highlight MoonflyCoral ctermfg=' . s:coral.term . ' guifg=' . s:coral.hex
+exec 'highlight MoonflyLime ctermfg=' . s:lime.term . ' guifg=' . s:lime.hex
+exec 'highlight MoonflyGreen ctermfg=' . s:green.term . ' guifg=' . s:green.hex
+exec 'highlight MoonflyEmerald ctermfg=' . s:emerald.term . ' guifg=' . s:emerald.hex
+exec 'highlight MoonflyBlue ctermfg=' . s:blue.term . ' guifg=' . s:blue.hex
+exec 'highlight MoonflySky ctermfg=' . s:sky.term . ' guifg=' . s:sky.hex
+exec 'highlight MoonflyTurquoise ctermfg=' . s:turquoise.term . ' guifg=' . s:turquoise.hex
+exec 'highlight MoonflyPurple ctermfg=' . s:purple.term . ' guifg=' . s:purple.hex
+exec 'highlight MoonflyCranberry ctermfg=' . s:cranberry.term . ' guifg=' . s:cranberry.hex
+exec 'highlight MoonflyViolet ctermfg=' . s:violet.term . ' guifg=' . s:violet.hex
+exec 'highlight MoonflyCrimson ctermfg=' . s:crimson.term . ' guifg=' . s:crimson.hex
+exec 'highlight MoonflyRed ctermfg=' . s:red.term . ' guifg=' . s:red.hex
+exec 'highlight MoonflyWhiteAlert ctermbg=bg ctermfg=' . s:white.term . ' guibg=bg guifg=' . s:white.hex
+exec 'highlight MoonflyYellowAlert ctermbg=bg ctermfg=' . s:yellow.term . ' guibg=bg guifg=' . s:yellow.hex
+exec 'highlight MoonflyCoralAlert ctermbg=bg ctermfg=' . s:coral.term . ' guibg=bg guifg=' . s:coral.hex
+exec 'highlight MoonflyEmeraldAlert ctermbg=bg ctermfg=' . s:emerald.term . ' guibg=bg guifg=' . s:emerald.hex
+exec 'highlight MoonflyPurpleAlert ctermbg=bg ctermfg=' . s:purple.term . ' guibg=bg guifg=' . s:purple.hex
+exec 'highlight MoonflySkyAlert ctermbg=bg ctermfg=' . s:sky.term . ' guibg=bg guifg=' . s:sky.hex
+exec 'highlight MoonflyRedAlert ctermbg=bg ctermfg=' . s:red.term . ' guibg=bg guifg=' . s:red.hex
 
 " Neovim Treesitter
 highlight! link TSAnnotation MoonflyViolet
@@ -427,15 +427,15 @@ highlight! link htmlTagN MoonflyBlue
 highlight! link htmlTagName MoonflyBlue
 highlight! link htmlUnderline MoonflyWhite
 if g:moonflyItalics
-    exec 'highlight htmlBoldItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
-    exec 'highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral . ' gui=italic'
-    exec 'highlight htmlItalic ctermfg=247 guifg=' . s:grey247 . ' gui=italic'
-    exec 'highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=' . s:black . ' guifg=' . s:grey247 . ' gui=italic'
+    exec 'highlight htmlBoldItalic ctermbg=' . s:black.term . ' ctermfg=' . s:coral.term . ' guibg=' . s:black.hex . ' guifg=' . s:coral.hex . ' gui=italic'
+    exec 'highlight htmlBoldUnderlineItalic ctermbg=' . s:black.term . ' ctermfg=' . s:coral.term . ' guibg=' . s:black.hex . ' guifg=' . s:coral.hex . ' gui=italic'
+    exec 'highlight htmlItalic ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex . ' gui=italic'
+    exec 'highlight htmlUnderlineItalic ctermbg=' . s:black.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:black.hex . ' guifg=' . s:grey247.hex . ' gui=italic'
 else
-    exec 'highlight htmlBoldItalic ctermbg=232 ctermfg=8 cterm=none guibg=' . s:black . ' guifg=' . s:coral ' gui=none'
-    exec 'highlight htmlBoldUnderlineItalic ctermbg=232 ctermfg=8 guibg=' . s:black . ' guifg=' . s:coral
-    exec 'highlight htmlItalic ctermfg=247 cterm=none guifg=' . s:grey247 ' gui=none'
-    exec 'highlight htmlUnderlineItalic ctermbg=232 ctermfg=247 guibg=' . s:black . ' guifg=' . s:grey247
+    exec 'highlight htmlBoldItalic ctermbg=' . s:black.term . ' ctermfg=' . s:coral.term . ' cterm=none guibg=' . s:black.hex . ' guifg=' . s:coral.hex ' gui=none'
+    exec 'highlight htmlBoldUnderlineItalic ctermbg=' . s:black.term . ' ctermfg=' . s:coral.term . ' guibg=' . s:black.hex . ' guifg=' . s:coral.hex
+    exec 'highlight htmlItalic ctermfg=' . s:grey247.term . ' cterm=none guifg=' . s:grey247.hex ' gui=none'
+    exec 'highlight htmlUnderlineItalic ctermbg=' . s:black.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:black.hex . ' guifg=' . s:grey247.hex
 endif
 
 " Java
@@ -515,7 +515,7 @@ highlight! link pythonRun MoonflySky
 highlight! link pythonStatement MoonflyViolet
 
 " Ruby
-exec 'highlight rspecGroupMethods ctermfg=12 guifg=' . s:sky
+exec 'highlight rspecGroupMethods ctermfg=' . s:sky.term . ' guifg=' . s:sky.hex
 highlight! link erubyDelimiter MoonflyCrimson
 highlight! link rubyAccess MoonflyYellow
 highlight! link rubyAssertion MoonflySky
@@ -568,11 +568,11 @@ highlight! link rustTrait MoonflyEmerald
 highlight! link rustType MoonflyEmerald
 
 " Scala, note link highlighting does not work (I don't know why)
-exec 'highlight scalaCapitalWord ctermfg=4 guifg=' . s:blue
-exec 'highlight scalaCommentCodeBlock ctermfg=247 guifg=' . s:grey247
-exec 'highlight scalaInstanceDeclaration ctermfg=6 guifg=' . s:turquoise
-exec 'highlight scalaKeywordModifier ctermfg=14 guifg=' . s:lime
-exec 'highlight scalaSpecial ctermfg=9 guifg=' . s:crimson
+exec 'highlight scalaCapitalWord ctermfg=' . s:blue.term . ' guifg=' . s:blue.hex
+exec 'highlight scalaCommentCodeBlock ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
+exec 'highlight scalaInstanceDeclaration ctermfg=' . s:turquoise.term . ' guifg=' . s:turquoise.hex
+exec 'highlight scalaKeywordModifier ctermfg=' . s:lime.term . ' guifg=' . s:lime.hex
+exec 'highlight scalaSpecial ctermfg=' . s:crimson.term . ' guifg=' . s:crimson.hex
 
 " Shell scripts
 highlight! link shAlias MoonflyTurquoise
@@ -730,7 +730,7 @@ highlight! link tagName MoonflyTurquoise
 highlight! link Cheat40Header MoonflyBlue
 highlight! link Beacon MoonflyWhite
 if g:moonflyUnderlineMatchParen
-    exec 'highlight MatchWord cterm=underline gui=underline guisp=' . s:coral
+    exec 'highlight MatchWord cterm=underline gui=underline guisp=' . s:coral.hex
 else
     highlight! link MatchWord MoonflyCoral
 endif
@@ -738,17 +738,17 @@ exec 'highlight snipLeadingSpaces ctermbg=bg ctermfg=fg guibg=bg guifg=fg'
 exec 'highlight MatchWordCur ctermbg=bg guibg=bg'
 
 " vimdiff/nvim -d
-exec 'highlight DiffAdd ctermbg=10 ctermfg=bg guibg=' . s:emerald . ' guifg=bg'
-exec 'highlight DiffChange ctermbg=236 guibg=' . s:grey236
-exec 'highlight DiffDelete ctermbg=236 ctermfg=9 guibg=' . s:grey236 . ' guifg=' . s:crimson ' gui=none'
-exec 'highlight DiffText ctermbg=4 ctermfg=bg guibg=' . s:blue . ' guifg=bg gui=none'
+exec 'highlight DiffAdd ctermbg=' . s:emerald.term . ' ctermfg=bg guibg=' . s:emerald.hex . ' guifg=bg'
+exec 'highlight DiffChange ctermbg=' . s:grey236.term . ' guibg=' . s:grey236.hex
+exec 'highlight DiffDelete ctermbg=' . s:grey236.term . ' ctermfg=' . s:crimson.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:crimson.hex ' gui=none'
+exec 'highlight DiffText ctermbg=' . s:blue.term . ' ctermfg=bg guibg=' . s:blue.hex . ' guifg=bg gui=none'
 
 " Neomake plugin
 if g:moonflyUndercurls
-    exec 'highlight NeomakeError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red
-    exec 'highlight NeomakeWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow
-    exec 'highlight NeomakeInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky
-    exec 'highlight NeomakeMessage ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white
+    exec 'highlight NeomakeError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
+    exec 'highlight NeomakeWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
+    exec 'highlight NeomakeInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
+    exec 'highlight NeomakeMessage ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white.hex
 else
     exec 'highlight NeomakeError ctermbg=bg guibg=bg'
     exec 'highlight NeomakeWarning ctermbg=bg guibg=bg'
@@ -763,9 +763,9 @@ highlight! link NeomakeMessageSign MoonflyWhiteAlert
 
 " ALE plugin
 if g:moonflyUndercurls
-     exec 'highlight ALEError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red
-     exec 'highlight ALEWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow
-     exec 'highlight ALEInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky
+     exec 'highlight ALEError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
+     exec 'highlight ALEWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
+     exec 'highlight ALEInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
 else
     exec 'highlight ALEError ctermbg=bg guibg=bg'
     exec 'highlight ALEWarning ctermbg=bg guibg=bg'
@@ -780,15 +780,15 @@ highlight! link ALEInfoSign MoonflySkyAlert
 
 " Neovim LSP diagnostics
 if g:moonflyUndercurls
-     exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red
-     exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow
-     exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky
-     exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white
+     exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
+     exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
+     exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
+     exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white.hex
 else
-    exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red
-    exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=underline guisp=' . s:blue
-    exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow
-    exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:sky
+    exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red.hex
+    exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=underline guisp=' . s:blue.hex
+    exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow.hex
+    exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:sky.hex
 endif
 highlight! link LspDiagnosticsVirtualTextError MoonflyGrey241
 highlight! link LspDiagnosticsSignError MoonflyRedAlert
@@ -823,12 +823,12 @@ highlight! link GitSignsChangeDelete MoonflyCoralAlert
 highlight! link GitSignsDelete MoonflyRedAlert
 
 " FZF plugin
-exec 'highlight fzf1 ctermfg=9 ctermbg=236 guifg=' . s:crimson . ' guibg=' . s:grey236
-exec 'highlight fzf2 ctermfg=111 ctermbg=236 guifg=' . s:blue . ' guibg=' . s:grey236
-exec 'highlight fzf3 ctermfg=10 ctermbg=236 guifg=' . s:emerald . ' guibg=' . s:grey236
-exec 'highlight fzfNormal ctermfg=249 guifg=' . s:grey249
-exec 'highlight fzfFgPlus ctermfg=253 guifg=' . s:grey253
-exec 'highlight fzfBorder ctermfg=236 guifg=' . s:grey236
+exec 'highlight fzf1 ctermfg=' . s:crimson.term . ' ctermbg=' . s:grey236.term . ' guifg=' . s:crimson.hex . ' guibg=' . s:grey236.hex
+exec 'highlight fzf2 ctermfg=' . s:blue.term . ' ctermbg=' . s:grey236.term . ' guifg=' . s:blue.hex . ' guibg=' . s:grey236.hex
+exec 'highlight fzf3 ctermfg=' . s:emerald.term . ' ctermbg=' . s:grey236.term . ' guifg=' . s:emerald.hex . ' guibg=' . s:grey236.hex
+exec 'highlight fzfNormal ctermfg=' . s:grey249.term . ' guifg=' . s:grey249.hex
+exec 'highlight fzfFgPlus ctermfg=' . s:grey253.term . ' guifg=' . s:grey253.hex
+exec 'highlight fzfBorder ctermfg=' . s:grey236.term . ' guifg=' . s:grey236.hex
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
   \  'bg':      ['bg', 'Normal'],
@@ -846,12 +846,12 @@ let g:fzf_colors = {
   \}
 
 " barbar.nvim plugin
-exec 'highlight BufferCurrent      ctermbg=234 ctermfg=251 guibg=' . s:grey234 . ' guifg=' . s:white
-exec 'highlight BufferCurrentMod   ctermbg=234 ctermfg=11  guibg=' . s:grey234 . ' guifg=' . s:wheat
-exec 'highlight BufferCurrentSign  ctermbg=234 ctermfg=4   guibg=' . s:grey234 . ' guifg=' . s:blue
-exec 'highlight BufferVisible      ctermbg=234 ctermfg=246 guibg=' . s:grey234 . ' guifg=' . s:grey246
-exec 'highlight BufferVisibleMod   ctermbg=234 ctermfg=11  guibg=' . s:grey234 . ' guifg=' . s:wheat
-exec 'highlight BufferVisibleSign  ctermbg=234 ctermfg=246 guibg=' . s:grey234 . ' guifg=' . s:grey246
-exec 'highlight BufferInactive     ctermbg=236 ctermfg=246 guibg=' . s:grey236 . ' guifg=' . s:grey246
-exec 'highlight BufferInactiveMod  ctermbg=236 ctermfg=11  guibg=' . s:grey236 . ' guifg=' . s:wheat
-exec 'highlight BufferInactiveSign ctermbg=236 ctermfg=247 guibg=' . s:grey236 . ' guifg=' . s:grey247
+exec 'highlight BufferCurrent      ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
+exec 'highlight BufferCurrentMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '  guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
+exec 'highlight BufferCurrentSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:blue.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:blue.hex
+exec 'highlight BufferVisible      ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
+exec 'highlight BufferVisibleMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '  guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
+exec 'highlight BufferVisibleSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
+exec 'highlight BufferInactive     ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
+exec 'highlight BufferInactiveMod  ctermbg=' . s:grey236.term . ' ctermfg=' . s:wheat.term . '  guibg=' . s:grey236.hex . ' guifg=' . s:wheat.hex
+exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
