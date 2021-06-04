@@ -73,7 +73,7 @@ Plugins explicity styled
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
+- [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your initialization file)
 - [Neomake](https://github.com/neomake/neomake)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [Signify](https://github.com/mhinz/vim-signify)
@@ -84,14 +84,14 @@ Installation
 ------------
 
 Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
-set the colorscheme in your _vimrc_ file.
+set the colorscheme in your initialization file.
 
 If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
 
-1. Add `Plug 'bluz71/vim-moonfly-colors'` to your _vimrc_
+1. Add `Plug 'bluz71/vim-moonfly-colors'` to your initialization file
 2. Run `:PlugInstall`
-3. Add `colorscheme moonfly` to your _vimrc_, make sure this line appears
-   **after** the _Plug_ declaration.
+3. Add `colorscheme moonfly` to your initialization file, make sure this line
+   appears **after** the _Plug_ declaration.
 
 Status line
 -----------
@@ -99,7 +99,7 @@ Status line
 The _moonfly_ color scheme supports
 [lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
 _moonfly_ lightline colorscheme, after the _lightline.vim_ plugin has been
-installed, please add the following to your _vimrc_:
+installed, please add the following to your initialization file:
 
 ```viml
 let g:lightline = { 'colorscheme': 'moonfly' }
@@ -119,7 +119,7 @@ Options
 
 The `g:moonflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
-then add the following to your _vimrc_:
+then add the following to your initialization file:
 
 ```viml
 let g:moonflyCursorColor = 1
@@ -128,7 +128,7 @@ let g:moonflyCursorColor = 1
 The `g:moonflyTerminalColors` option specifies whether to use the moonfly color
 palette in `:terminal` windows when `termguicolors` is set. By default this
 option is **enabled**. If you prefer not to use the moonfly color palette for
-the first 16 terminal colors then add the following to your _vimrc_:
+the first 16 terminal colors then add the following to your initialization file:
 
 ```viml
 let g:moonflyTerminalColors = 0
@@ -136,7 +136,8 @@ let g:moonflyTerminalColors = 0
 
 The `g:moonflyUnderlineMatchParen` option specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to
-underline matching parentheses then add the following to your _vimrc_:
+underline matching parentheses then add the following to your initialization
+file:
 
 ```viml
 let g:moonflyUnderlineMatchParen = 1
@@ -145,7 +146,7 @@ let g:moonflyUnderlineMatchParen = 1
 The `g:moonflyUndercurls` option specifies whether to use undercurls for
 spelling and linting errors in GUI versions of Vim, including terminal Vim with
 `termguicolors` set. By default this option is **enabled**. If you do not like
-the appearance of undercurls then add the following to your _vimrc_:
+the appearance of undercurls then add the following to your initialization file:
 
 ```viml
 let g:moonflyUndercurls = 0
@@ -154,7 +155,7 @@ let g:moonflyUndercurls = 0
 The `g:moonflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
 **enabled**. If you do not like the appearance of italics then add the following
-to your _vimrc_:
+to your initialization file:
 
 ```viml
 let g:moonflyItalics = 0
@@ -163,7 +164,7 @@ let g:moonflyItalics = 0
 The `g:moonflyTransparent` option specifies whether to use an opaque or
 transparent background in GUI versions of Vim. By default this option is
 **disabled**. If you would like a transparent background then add the following
-to your _vimrc_:
+to your initialization file:
 
 ```viml
 let g:moonflyTransparent = 1
@@ -231,7 +232,7 @@ set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
 Vim, as against Neovim, inside _tmux_, will also require the following setting
-be added to _vimrc:_
+be added to initialization file:
 
 ```viml
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
