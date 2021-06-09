@@ -170,34 +170,30 @@ to your initialization file:
 let g:moonflyTransparent = 1
 ```
 
-The `g:moonflyNormalFloat` option specifies whether to use customised
-background and foreground colors in Neovim floating windows. By default this
-options is **disabled**, hence, Neovim floating windows will usually be styled
-with popup menu colors. If you would like to use moonfly colors instead then add
-the following to your configuration:
+The `g:moonflyNormalFloat` option specifies whether to use moonfly background
+and foreground colors in Neovim floating windows. By default this options is
+**disabled**, hence, Neovim floating windows will usually be styled with popup
+menu colors. If you would like to use moonfly colors instead then add the
+following to your configuration:
 
 ```viml
 let g:moonflyNormalFloat = 1
 ```
 
 :bulb: If the above option is set then it is highly recommended to enable
-floating window borders to distinguish between the edit and floating windows,
-for example:
+floating window borders to distinguish between the edit and floating windows in
+Neovim's LSP client, for example:
 
 ```lua
-  vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-   vim.lsp.handlers.hover, {
-     border = {
-       {'┌', 'FloatBorder'},
-       {'─', 'FloatBorder'},
-       {'┐', 'FloatBorder'},
-       {'│', 'FloatBorder'},
-       {'┘', 'FloatBorder'},
-       {'─', 'FloatBorder'},
-       {'└', 'FloatBorder'},
-       {'│', 'FloatBorder'}
-     }
-   }
+  vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(
+    vim.lsp.handlers.hover, {
+      border = 'single'
+    }
+  )
+  vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
+    vim.lsp.handlers.signatureHelp, {
+      border = 'single'
+    }
   )
 ```
 
