@@ -580,7 +580,6 @@ highlight! link shCommandSub MoonflyReset
 highlight! link shLoop MoonflyViolet
 highlight! link shSetList MoonflyTurquoise
 highlight! link shShellVariables MoonflyLime
-highlight! link shStatement MoonflyReset
 highlight! link shVariable MoonflyTurquoise
 
 " TypeScript (leafgarland/typescript-vim)
