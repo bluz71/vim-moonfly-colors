@@ -727,7 +727,8 @@ highlight! link netrwDir MoonflySky
 highlight! link netrwExe MoonflyWheat
 highlight! link tagName MoonflyTurquoise
 highlight! link Cheat40Header MoonflyBlue
-highlight! link Beacon MoonflyWhite
+highlight! link yamlBlockMappingKey MoonflySky
+highlight! link yamlFlowMappingKey MoonflySky
 if g:moonflyUnderlineMatchParen
     exec 'highlight MatchWord cterm=underline gui=underline guisp=' . s:coral.hex
 else
