@@ -802,6 +802,7 @@ highlight! link LspDiagnosticsFloatingInformation MoonflySky
 highlight! link LspDiagnosticsVirtualTextHint MoonflyGrey241
 highlight! link LspDiagnosticsSignHint MoonflyWhiteAlert
 highlight! link LspDiagnosticsFloatingHint MoonflyWhite
+highlight! link LspSignatureActiveParameter MoonflyGrey0
 
 " GitGutter plugin
 highlight! link GitGutterAdd MoonflyEmeraldAlert
