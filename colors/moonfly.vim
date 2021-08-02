@@ -417,7 +417,7 @@ highlight! link haskellType MoonflySky
 highlight! link haskellWhere MoonflyViolet
 
 " HTML
-highlight! link htmlArg MoonflySky
+highlight! link htmlArg MoonflyTurquoise
 highlight! link htmlLink MoonflyGreen
 highlight! link htmlH1 MoonflyCranberry
 highlight! link htmlH2 MoonflyOrange
