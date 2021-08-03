@@ -6,7 +6,6 @@
 " License: MIT (https://opensource.org/licenses/MIT)
 
 highlight clear
-set background=dark
 if exists('syntax_on')
     syntax reset
 endif
@@ -693,14 +692,6 @@ highlight! link NERDTreeGitStatusRenamed MoonflySky
 highlight! link NERDTreeGitStatusStaged MoonflySky
 highlight! link NERDTreeGitStatusUntracked MoonflyRed
 
-" vimfiler plugin
-highlight! link vimfilerClosedFile MoonflyBlue
-highlight! link vimfilerMarkedFile MoonflyOrange
-highlight! link vimfilerNonMark MoonflyGreen
-highlight! link vimfilerNormalFile MoonflyWhite
-highlight! link vimfilerOpenedFile MoonflyBlue
-highlight! link vimfilerROFile MoonflyGrey246
-
 " fern.vim plugin
 highlight! link FernBranchSymbol MoonflyGreen
 highlight! link FernBranchText MoonflyBlue
@@ -743,24 +734,6 @@ exec 'highlight DiffAdd ctermbg=' . s:emerald.term . ' ctermfg=bg guibg=' . s:em
 exec 'highlight DiffChange ctermbg=' . s:grey236.term . ' guibg=' . s:grey236.hex
 exec 'highlight DiffDelete ctermbg=' . s:grey236.term . ' ctermfg=' . s:crimson.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:crimson.hex ' gui=none'
 exec 'highlight DiffText ctermbg=' . s:blue.term . ' ctermfg=bg guibg=' . s:blue.hex . ' guifg=bg gui=none'
-
-" Neomake plugin
-if g:moonflyUndercurls
-    exec 'highlight NeomakeError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
-    exec 'highlight NeomakeWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
-    exec 'highlight NeomakeInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
-    exec 'highlight NeomakeMessage ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white.hex
-else
-    exec 'highlight NeomakeError ctermbg=bg guibg=bg'
-    exec 'highlight NeomakeWarning ctermbg=bg guibg=bg'
-    exec 'highlight NeomakeInfo ctermbg=bg guibg=bg'
-    exec 'highlight NeomakeMessage ctermbg=bg guibg=bg'
-endif
-
-highlight! link NeomakeErrorSign MoonflyRedAlert
-highlight! link NeomakeWarningSign MoonflyYellowAlert
-highlight! link NeomakeInfoSign MoonflySkyAlert
-highlight! link NeomakeMessageSign MoonflyWhiteAlert
 
 " ALE plugin
 if g:moonflyUndercurls
@@ -857,3 +830,5 @@ exec 'highlight BufferVisibleSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:
 exec 'highlight BufferInactive     ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
 exec 'highlight BufferInactiveMod  ctermbg=' . s:grey236.term . ' ctermfg=' . s:wheat.term . '  guibg=' . s:grey236.hex . ' guifg=' . s:wheat.hex
 exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
+
+set background=dark

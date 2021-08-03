@@ -74,11 +74,9 @@ Plugins explicity styled
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your initialization file)
-- [Neomake](https://github.com/neomake/neomake)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [Signify](https://github.com/mhinz/vim-signify)
 - [Tagbar](https://github.com/majutsushi/tagbar)
-- [vimfiler](https://github.com/Shougo/vimfiler.vim)
 
 Installation
 ------------
