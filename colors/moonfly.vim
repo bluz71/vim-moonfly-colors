@@ -813,6 +813,13 @@ if has('nvim')
     highlight! link LspDiagnosticsFloatingHint MoonflyWhite
     highlight! link LspSignatureActiveParameter MoonflyGrey0
 
+    " nvim-tree.lua plugin
+    highlight! link NvimTreeFolderName MoonflyBlue
+    highlight! link NvimTreeRootFolder MoonflyPurple
+    highlight! link NvimTreeFolderIcon MoonflyGrey247
+    highlight! link NvimTreeSpecialFile MoonflyYellow
+    highlight! link NvimTreeIndentMarker MoonflyGrey247
+
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert
     highlight! link GitSignsChange MoonflyYellowAlert
