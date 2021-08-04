@@ -35,37 +35,37 @@ let g:moonflyTransparent = get(g:, 'moonflyTransparent', 0)
 let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', 0)
 
 " Background and foreground
-let s:black     = { "hex": '#080808', "term": 232 }
-let s:white     = { "hex": '#c6c6c6', "term": 251 }
+let s:black     = {"hex": '#080808', "term": 232}
+let s:white     = {"hex": '#c6c6c6', "term": 251}
 " Variations of charcoal-grey
-let s:grey0     = { "hex": '#323437', "term": 0   }
-let s:grey253   = { "hex": '#dadada', "term": 253 }
-let s:grey249   = { "hex": '#b2b2b2', "term": 249 }
-let s:grey247   = { "hex": '#9e9e9e', "term": 247 }
-let s:grey246   = { "hex": '#949494', "term": 246 }
-let s:grey244   = { "hex": '#808080', "term": 244 }
-let s:grey241   = { "hex": '#626262', "term": 241 }
-let s:grey237   = { "hex": '#3a3a3a', "term": 237 }
-let s:grey236   = { "hex": '#303030', "term": 236 }
-let s:grey235   = { "hex": '#262626', "term": 235 }
-let s:grey234   = { "hex": '#1c1c1c', "term": 234 }
-let s:grey233   = { "hex": '#121212', "term": 233 }
+let s:grey0     = {"hex": '#323437', "term": 0  }
+let s:grey253   = {"hex": '#dadada', "term": 253}
+let s:grey249   = {"hex": '#b2b2b2', "term": 249}
+let s:grey247   = {"hex": '#9e9e9e', "term": 247}
+let s:grey246   = {"hex": '#949494', "term": 246}
+let s:grey244   = {"hex": '#808080', "term": 244}
+let s:grey241   = {"hex": '#626262', "term": 241}
+let s:grey237   = {"hex": '#3a3a3a', "term": 237}
+let s:grey236   = {"hex": '#303030', "term": 236}
+let s:grey235   = {"hex": '#262626', "term": 235}
+let s:grey234   = {"hex": '#1c1c1c', "term": 234}
+let s:grey233   = {"hex": '#121212', "term": 233}
 " Core theme colors
-let s:wheat     = { "hex": '#bfbf97', "term": 11  }
-let s:yellow    = { "hex": '#e3c78a', "term": 3   }
-let s:orange    = { "hex": '#de935f', "term": 7   }
-let s:coral     = { "hex": '#f09479', "term": 8   }
-let s:lime      = { "hex": '#85dc85', "term": 14  }
-let s:green     = { "hex": '#8cc85f', "term": 2   }
-let s:emerald   = { "hex": '#36c692', "term": 10  }
-let s:blue      = { "hex": '#80a0ff', "term": 4   }
-let s:sky       = { "hex": '#74b2ff', "term": 12  }
-let s:turquoise = { "hex": '#79dac8', "term": 6   }
-let s:purple    = { "hex": '#ae81ff', "term": 13  }
-let s:cranberry = { "hex": '#e2637f', "term": 15  }
-let s:violet    = { "hex": '#d183e8', "term": 5   }
-let s:crimson   = { "hex": '#ff5189', "term": 9   }
-let s:red       = { "hex": '#ff5454', "term": 1   }
+let s:wheat     = {"hex": '#bfbf97', "term": 11}
+let s:yellow    = {"hex": '#e3c78a', "term": 3 }
+let s:orange    = {"hex": '#de935f', "term": 7 }
+let s:coral     = {"hex": '#f09479', "term": 8 }
+let s:lime      = {"hex": '#85dc85', "term": 14}
+let s:green     = {"hex": '#8cc85f', "term": 2 }
+let s:emerald   = {"hex": '#36c692', "term": 10}
+let s:blue      = {"hex": '#80a0ff', "term": 4 }
+let s:sky       = {"hex": '#74b2ff', "term": 12}
+let s:turquoise = {"hex": '#79dac8', "term": 6 }
+let s:purple    = {"hex": '#ae81ff', "term": 13}
+let s:cranberry = {"hex": '#e2637f', "term": 15}
+let s:violet    = {"hex": '#d183e8', "term": 5 }
+let s:crimson   = {"hex": '#ff5189', "term": 9 }
+let s:red       = {"hex": '#ff5454', "term": 1 }
 
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:moonflyTerminalColors
@@ -110,6 +110,7 @@ exec 'highlight MoonflyGrey0 ctermfg=' . s:grey0.term . ' guifg=' . s:grey0.hex
 exec 'highlight MoonflyGrey247 ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
 exec 'highlight MoonflyGrey246 ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex
 exec 'highlight MoonflyGrey241 ctermfg=' . s:grey241.term . ' guifg=' . s:grey241.hex
+exec 'highlight MoonflyGrey236 ctermfg=' . s:grey236.term . ' guifg=' . s:grey236.hex
 exec 'highlight MoonflyWheat ctermfg=' . s:wheat.term . ' guifg=' . s:wheat.hex
 exec 'highlight MoonflyYellow ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex
 exec 'highlight MoonflyOrange ctermfg=' . s:orange.term . ' guifg=' . s:orange.hex
@@ -567,7 +568,7 @@ highlight! link rustStructure MoonflyViolet
 highlight! link rustTrait MoonflyEmerald
 highlight! link rustType MoonflyEmerald
 
-" Scala, note link highlighting does not work (I don't know why)
+" Scala (note, link highlighting does not work, I don't know why)
 exec 'highlight scalaCapitalWord ctermfg=' . s:blue.term . ' guifg=' . s:blue.hex
 exec 'highlight scalaCommentCodeBlock ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
 exec 'highlight scalaInstanceDeclaration ctermfg=' . s:turquoise.term . ' guifg=' . s:turquoise.hex
@@ -814,11 +815,16 @@ if has('nvim')
     highlight! link LspSignatureActiveParameter MoonflyGrey0
 
     " nvim-tree.lua plugin
-    highlight! link NvimTreeFolderName MoonflyBlue
-    highlight! link NvimTreeRootFolder MoonflyPurple
     highlight! link NvimTreeFolderIcon MoonflyGrey247
-    highlight! link NvimTreeSpecialFile MoonflyYellow
+    highlight! link NvimTreeFolderName MoonflyBlue
     highlight! link NvimTreeIndentMarker MoonflyGrey247
+    highlight! link NvimTreeRootFolder MoonflyPurple
+    highlight! link NvimTreeSpecialFile MoonflyYellow
+
+    " telescope.nvim plugin
+    highlight! link TelescopeBorder MoonflyGrey236
+    highlight! link TelescopeMatching MoonflyCoral
+    highlight! link TelescopePromptPrefix MoonflyBlue
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert
