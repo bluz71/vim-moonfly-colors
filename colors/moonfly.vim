@@ -636,14 +636,16 @@ highlight! link typescriptXHRMethod MoonflySky
 
 " Vimscript
 highlight! link vimBracket MoonflySky
-highlight! link vimCommand MoonflyOrange
+highlight! link vimCommand MoonflyViolet
 highlight! link vimCommentTitle MoonflyViolet
 highlight! link vimEnvvar MoonflyCrimson
 highlight! link vimFuncName MoonflySky
 highlight! link vimFuncSID MoonflySky
 highlight! link vimFunction MoonflySky
+highlight! link vimHighlight MoonflySky
+highlight! link vimNotFunc MoonflyViolet
 highlight! link vimNotation MoonflySky
-highlight! link vimOption MoonflyEmerald
+highlight! link vimOption MoonflyTurquoise
 highlight! link vimParenSep MoonflyWhite
 highlight! link vimSep MoonflyWhite
 highlight! link vimUserFunc MoonflySky
