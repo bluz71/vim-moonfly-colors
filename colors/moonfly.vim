@@ -356,16 +356,25 @@ highlight! link crystalModule MoonflyBlue
 highlight! link crystalPseudoVariable MoonflyGreen
 highlight! link crystalSharpBang MoonflyGrey247
 highlight! link crystalStringDelimiter MoonflyWheat
+highlight! link sassId MoonflySky
+highlight! link sassIdChar MoonflyViolet
 
 " CSS/SCSS
+highlight! link cssAtRule MoonflyViolet
 highlight! link cssAttr MoonflyTurquoise
-highlight! link cssClassName MoonflyBlue
+highlight! link cssBraces MoonflyReset
+highlight! link cssClassName MoonflyEmerald
+highlight! link cssClassNameDot MoonflyViolet
 highlight! link cssColor MoonflyTurquoise
-highlight! link cssIdentifier MoonflyYellow
+highlight! link cssIdentifier MoonflySky
 highlight! link cssProp MoonflyTurquoise
-highlight! link cssValueLength MoonflyCoral
-highlight! link cssValueNumber MoonflyCoral
-highlight! link cssUnitDecorators MoonflyCoral
+highlight! link cssTagName MoonflyBlue
+highlight! link cssUnitDecorators MoonflyWheat
+highlight! link cssValueLength MoonflyPurple
+highlight! link cssValueNumber MoonflyPurple
+highlight! link sassId MoonflyBlue
+highlight! link sassIdChar MoonflyViolet
+highlight! link sassMedia MoonflyViolet
 highlight! link scssSelectorName MoonflyBlue
 
 " Dart
