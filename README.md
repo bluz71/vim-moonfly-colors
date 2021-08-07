@@ -70,7 +70,7 @@ Plugins explicity styled
 - [clever-f](https://github.com/rhysd/clever-f.vim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [fern.vim](https://github.com/lambdalisue/fern.vim)
-- [fzf.vim](https://github.com/junegunn/fzf.vim)
+- [fzf.vim](https://github.com/junegunn/fzf.vim) (with matching [fly16](https://github.com/bluz71/fly16-bat) bat theme)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [indentLine](https://github.com/Yggdroot/indentLine)
@@ -195,6 +195,9 @@ Neovim's LSP client, for example:
       border = 'single'
     }
   )
+  local opts = {noremap = true, silent = true}
+  vim.api.nvim_buf_set_keymap(0, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
+  vim.api.nvim_buf_set_keymap(0, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
 ```
 
 True Color Terminals
