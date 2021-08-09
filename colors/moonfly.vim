@@ -505,6 +505,8 @@ highlight! link markdownCode MoonflyWheat
 highlight! link markdownCodeDelimiter MoonflyWheat
 highlight! link markdownError NormalNC
 highlight! link markdownH1 MoonflyOrange
+highlight! link markdownHeadingRule MoonflyBlue
+highlight! link markdownItalic MoonflyViolet
 highlight! link markdownUrl MoonflyPurple
 
 " Markdown, 'plasticboy/vim-markdown' plugin
