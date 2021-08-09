@@ -80,7 +80,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_4  = s:blue.hex
         let g:terminal_color_5  = s:violet.hex
         let g:terminal_color_6  = s:turquoise.hex
-        let g:terminal_color_7  = s:grey249.hex
+        let g:terminal_color_7  = s:white.hex
         let g:terminal_color_8  = s:grey246.hex
         let g:terminal_color_9  = s:crimson.hex
         let g:terminal_color_10 = s:emerald.hex
@@ -92,7 +92,7 @@ if g:moonflyTerminalColors
     else
         let g:terminal_ansi_colors = [
                     \ s:grey0.hex, s:red.hex, s:green.hex, s:yellow.hex,
-                    \ s:blue.hex, s:violet.hex, s:turquoise.hex, s:grey249.hex,
+                    \ s:blue.hex, s:violet.hex, s:turquoise.hex, s:white.hex,
                     \ s:grey246.hex, s:crimson.hex, s:emerald.hex, s:wheat.hex,
                     \ s:sky.hex, s:purple.hex, s:lime.hex, s:grey253.hex
                     \]
