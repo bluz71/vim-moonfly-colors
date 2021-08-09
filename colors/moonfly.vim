@@ -846,7 +846,9 @@ if has('nvim')
     " telescope.nvim plugin
     highlight! link TelescopeBorder MoonflyGrey236
     highlight! link TelescopeMatching MoonflyCoral
+    highlight! link TelescopeMultiSelection MoonflyCrimson
     highlight! link TelescopePromptPrefix MoonflyBlue
+    highlight! link TelescopeSelectionCaret MoonflyCrimson
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert
