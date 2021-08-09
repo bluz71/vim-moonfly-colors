@@ -838,8 +838,10 @@ if has('nvim')
     highlight! link NvimTreeFolderIcon MoonflyGrey247
     highlight! link NvimTreeFolderName MoonflyBlue
     highlight! link NvimTreeIndentMarker MoonflyGrey247
+    highlight! link NvimTreeOpenedFolderName MoonflyBlue
     highlight! link NvimTreeRootFolder MoonflyPurple
     highlight! link NvimTreeSpecialFile MoonflyYellow
+    highlight! link NvimTreeWindowPicker DiffText
 
     " telescope.nvim plugin
     highlight! link TelescopeBorder MoonflyGrey236
