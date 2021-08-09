@@ -169,6 +169,14 @@ to your initialization file:
 ```viml
 let g:moonflyTransparent = 1
 ```
+The `g:moonflyVertSplits` option specifies whether to show vertical split
+columns. By default vertical split columns will be visible. If you would like
+vertical split columns to not be visible then add the following to your
+configuration:
+
+```viml
+let g:moonflyVertSplits = 0
+```
 
 The `g:moonflyNormalFloat` option specifies whether to use moonfly background
 and foreground colors in Neovim floating windows. By default this options is
