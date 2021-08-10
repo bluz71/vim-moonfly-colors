@@ -184,7 +184,7 @@ highlight! link PreProc MoonflyCranberry
 highlight! link Label MoonflyTurquoise
 
 " end-of-line '$', end-of-file '~'
-exec 'highlight NonText ctermfg=' . s:orange.term . ' guifg=' . s:orange.hex . ' gui=none'
+exec 'highlight NonText ctermfg=' . s:grey241.term . ' guifg=' . s:grey241.hex . ' gui=none'
 
 " sizeof
 highlight! link Operator MoonflyCranberry
