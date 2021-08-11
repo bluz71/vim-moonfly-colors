@@ -108,6 +108,7 @@ endif
 
 " Custom moonfly highlight groups
 exec 'highlight MoonflyReset ctermfg=fg guifg=fg'
+exec 'highlight MoonflyVisual ctermbg=' . s:grey0.term . ' guibg=' . s:grey0.hex
 exec 'highlight MoonflyWhite ctermfg=' . s:white.term . ' guifg=' . s:white.hex
 exec 'highlight MoonflyGrey0 ctermfg=' . s:grey0.term . ' guifg=' . s:grey0.hex
 exec 'highlight MoonflyGrey247 ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
@@ -220,7 +221,7 @@ else
 end
 
 " Visual selection
-exec 'highlight Visual ctermbg=' . s:grey0.term . ' guibg=' . s:grey0.hex
+highlight! link Visual MoonflyVisual
 exec 'highlight VisualNOS ctermbg=' . s:grey0.term . ' ctermfg=fg cterm=none guibg=' . s:grey0.hex . ' guifg=fg gui=none'
 exec 'highlight VisualInDiff ctermbg=' . s:grey0.term . ' ctermfg=' . s:white.term . ' guibg=' . s:grey0.hex . ' guifg=' . s:white.hex
 
@@ -270,7 +271,7 @@ exec 'highlight SpecialKey ctermbg=bg ctermfg=' . s:sky.term . ' guibg=bg guifg=
 if g:moonflyUnderlineMatchParen
     exec 'highlight MatchParen ctermbg=bg cterm=underline guibg=bg gui=underline'
 else
-    exec 'highlight MatchParen ctermbg=' . s:grey0.term . ' guibg=' . s:grey0.hex
+    highlight! link MatchParen MoonflyVisual
 endif
 exec 'highlight Ignore ctermfg=' . s:sky.term . ' guifg=' . s:sky.hex
 exec 'highlight Underlined ctermfg=' . s:emerald.term . ' cterm=none guifg=' . s:emerald.hex . ' gui=none'
@@ -849,6 +850,13 @@ if has('nvim')
     highlight! link TelescopeMultiSelection MoonflyCrimson
     highlight! link TelescopePromptPrefix MoonflyBlue
     highlight! link TelescopeSelectionCaret MoonflyCrimson
+
+    " Snap plugin
+    highlight! link SnapBorder MoonflyGrey236
+    highlight! link SnapMultiSelect MoonflyCrimson
+    highlight! link SnapPosition MoonflyCoral
+    highlight! link SnapPrompt MoonflyBlue
+    highlight! link SnapSelect MoonflyVisual
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert

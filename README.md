@@ -77,6 +77,7 @@ Plugins explicity styled
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - [Signify](https://github.com/mhinz/vim-signify)
+- [Snap](https://github.com/camspiers/snap)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
 
