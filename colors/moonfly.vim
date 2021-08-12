@@ -851,13 +851,6 @@ if has('nvim')
     highlight! link TelescopePromptPrefix MoonflyBlue
     highlight! link TelescopeSelectionCaret MoonflyCrimson
 
-    " Snap plugin
-    highlight! link SnapBorder MoonflyGrey236
-    highlight! link SnapMultiSelect MoonflyCrimson
-    highlight! link SnapPosition MoonflyCoral
-    highlight! link SnapPrompt MoonflyBlue
-    highlight! link SnapSelect MoonflyVisual
-
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert
     highlight! link GitSignsChange MoonflyYellowAlert
