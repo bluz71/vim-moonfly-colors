@@ -1,5 +1,8 @@
--- Copyright (c) 2020-2021 bluz71
--- MIT license, see LICENSE for more details.
+-- moonfly color scheme for lualine
+--
+-- URL:     github.com/bluz71/vim-moonfly-colors
+-- License: MIT (https://opensource.org/licenses/MIT)
+
 -- LuaFormatter off
 local colors = {
   color3   = '#303030',
@@ -10,6 +13,7 @@ local colors = {
   color1   = '#ff5189',
   color2   = '#c6c6c6',
 }
+
 -- LuaFormatter on
 return {
   replace = {
