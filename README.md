@@ -83,117 +83,200 @@ Plugins explicity styled
 Installation
 ------------
 
-Use your favoured plugin manager to install **bluz71/vim-moonfly-colors** then
-set the colorscheme in your initialization file.
+Install the **bluz71/vim-moonfly-colors** colorscheme with your preferred plugin
+manager.
 
-If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
+[vim-plug](https://github.com/junegunn/vim-plug):
 
-1. Add `Plug 'bluz71/vim-moonfly-colors'` to your initialization file
-2. Run `:PlugInstall`
-3. Add `colorscheme moonfly` to your initialization file, make sure this line
-   appears **after** the _Plug_ declaration.
+```viml
+Plug 'bluz71/vim-moonfly-colors'
+```
 
-Status line
------------
+[packer.nvim](https://github.com/wbthomason/packer.nvim):
 
-The _moonfly_ color scheme supports
-[lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
-_moonfly_ lightline colorscheme, after the _lightline.vim_ plugin has been
-installed, please add the following to your initialization file:
+```lua
+use 'bluz71/vim-moonfly-colors'
+```
+
+Usage
+-----
+
+Enable the colorscheme after the plugin declaration.
+
+```viml
+" Vimscript initialization file
+colorscheme moonfly
+```
+
+```lua
+-- Lua initialization file
+vim.cmd [[colorscheme moonfly]]
+```
+
+Statusline
+----------
+
+- The _moonfly_ color scheme supports
+  [lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
+  _moonfly_ lightline colorscheme please add the following to your
+  initialization file:
 
 ```viml
 let g:lightline = { 'colorscheme': 'moonfly' }
 ```
 
-The _moonfly_ color scheme supports
-[vim-airline](https://github.com/vim-airline/vim-airline). With modern versions
-of _vim-airline_ the _moonfly_ theme will be automatically loaded.
+- The _moonfly_ color scheme supports
+  [vim-airline](https://github.com/vim-airline/vim-airline). Modern versions of
+  _vim-airline_ the _moonfly_ theme will be automatically loaded.
 
-The _moonfly_ color scheme supports
-[lualine.nvim](https://github.com/hoob3rt/lualine.nvim). To enable the
-_moonfly_ theme please add the following to your initialization file:
+- The _moonfly_ color scheme supports
+  [lualine.nvim](https://github.com/hoob3rt/lualine.nvim). To enable the
+  _moonfly_ theme please add the following to your initialization file:
 
 ```lua
 require('lualine').setup({options = {theme = 'moonfly'}})
 ```
 
-Alternatively,
-[vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
-available for those that just want a simple yet informative _moonfly_ themed
-status line.
+- Lastly,
+  [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
+  available for those that just want a simple yet informative _moonfly_ themed
+  status line.
 
 Options
 -------
 
-The `g:moonflyCursorColor` option specifies whether to color the cursor or not.
+The `moonflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
 then add the following to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyCursorColor = 1
 ```
 
-The `g:moonflyTerminalColors` option specifies whether to use the moonfly color
+```lua
+-- Lua initialization file
+vim.g.moonflyCursorColor = 1
+```
+
+---
+
+The `moonflyTerminalColors` option specifies whether to use the moonfly color
 palette in `:terminal` windows when `termguicolors` is set. By default this
 option is **enabled**. If you prefer not to use the moonfly color palette for
 the first 16 terminal colors then add the following to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyTerminalColors = 0
 ```
 
-The `g:moonflyUnderlineMatchParen` option specifies whether to underline
+```lua
+-- Lua initialization file
+vim.g.moonflyTerminalColors = 0
+```
+
+---
+
+The `moonflyUnderlineMatchParen` option specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to
 underline matching parentheses then add the following to your initialization
 file:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyUnderlineMatchParen = 1
 ```
 
-The `g:moonflyUndercurls` option specifies whether to use undercurls for
+```lua
+-- Lua initialization file
+vuim.g.moonflyUnderlineMatchParen = 1
+```
+
+---
+
+The `moonflyUndercurls` option specifies whether to use undercurls for
 spelling and linting errors in GUI versions of Vim, including terminal Vim with
 `termguicolors` set. By default this option is **enabled**. If you do not like
 the appearance of undercurls then add the following to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyUndercurls = 0
 ```
 
-The `g:moonflyItalics` option specifies whether to use italics for comments and
+```lua
+-- Lua initialization file
+vim.g.moonflyUndercurls = 0
+```
+
+---
+
+The `moonflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
 **enabled**. If you do not like the appearance of italics then add the following
 to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyItalics = 0
 ```
 
-The `g:moonflyTransparent` option specifies whether to use an opaque or
+```lua
+-- Lua initialization file
+vim.g.moonflyItalics = 0
+```
+
+---
+
+The `moonflyTransparent` option specifies whether to use an opaque or
 transparent background in GUI versions of Vim. By default this option is
 **disabled**. If you would like a transparent background then add the following
 to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyTransparent = 1
 ```
-The `g:moonflyVertSplits` option specifies whether to show vertical split
+
+```lua
+-- Lua initialization file
+vim.g.moonflyTransparent = 1
+```
+
+---
+
+The `moonflyVertSplits` option specifies whether to show vertical split
 columns. By default vertical split columns will be visible. If you would like
 vertical split columns to not be visible then add the following to your
 configuration:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyVertSplits = 0
 ```
 
-The `g:moonflyNormalFloat` option specifies whether to use moonfly background
+```lua
+-- Lua initialization file
+vim.g.moonflyVertSplits = 0
+```
+
+---
+
+The `moonflyNormalFloat` option specifies whether to use moonfly background
 and foreground colors in Neovim floating windows. By default this options is
 **disabled**, hence, Neovim floating windows will usually be styled with popup
 menu colors. If you would like to use moonfly colors instead then add the
 following to your configuration:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyNormalFloat = 1
+```
+
+```lua
+-- Lua initialization file
+vim.g.moonflyNormalFloat = 1
 ```
 
 :bulb: If the above option is set then it is highly recommended to enable
