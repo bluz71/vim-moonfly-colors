@@ -190,7 +190,7 @@ let g:moonflyUnderlineMatchParen = 1
 
 ```lua
 -- Lua initialization file
-vuim.g.moonflyUnderlineMatchParen = 1
+vim.g.moonflyUnderlineMatchParen = 1
 ```
 
 ---
