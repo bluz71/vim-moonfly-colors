@@ -718,10 +718,10 @@ highlight! link NERDTreeGitStatusStaged MoonflySky
 highlight! link NERDTreeGitStatusUntracked MoonflyRed
 
 " fern.vim plugin
-highlight! link FernBranchSymbol MoonflyGreen
+highlight! link FernBranchSymbol MoonflyYellow
 highlight! link FernBranchText MoonflyBlue
-highlight! link FernMarkedLine MoonflyCoral
-highlight! link FernMarkedText MoonflyCoral
+highlight! link FernMarkedLine MoonflyCrimson
+highlight! link FernMarkedText MoonflyCrimson
 highlight! link FernRootSymbol MoonflyPurple
 highlight! link FernRootText MoonflyPurple
 
