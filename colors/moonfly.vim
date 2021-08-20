@@ -697,7 +697,7 @@ highlight! link TagbarVisibilityPrivate MoonflyLime
 highlight! link TagbarKind MoonflyEmerald
 
 " NERDTree plugin
-highlight! link NERDTreeClosable MoonflyGreen
+highlight! link NERDTreeClosable MoonflyEmerald
 highlight! link NERDTreeCWD MoonflyPurple
 highlight! link NERDTreeDir MoonflySky
 highlight! link NERDTreeDirSlash MoonflyCranberry
@@ -707,7 +707,7 @@ highlight! link NERDTreeHelp MoonflyGrey247
 highlight! link NERDTreeLinkDir MoonflyBlue
 highlight! link NERDTreeLinkFile MoonflyBlue
 highlight! link NERDTreeLinkTarget MoonflyTurquoise
-highlight! link NERDTreeOpenable MoonflyGreen
+highlight! link NERDTreeOpenable MoonflyEmerald
 highlight! link NERDTreePart MoonflyGrey0
 highlight! link NERDTreePartFile MoonflyGrey0
 highlight! link NERDTreeUp MoonflyBlue
