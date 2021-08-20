@@ -230,7 +230,7 @@ vim.g.moonflyVertSplits = 0
 ---
 
 The `moonflyNormalFloat` option specifies whether to use moonfly background
-and foreground colors in Neovim floating windows. By default this options is
+and foreground colors in Neovim floating windows. By default this option is
 **disabled**, hence, Neovim floating windows will usually be styled with popup
 menu colors. If you would like to use moonfly colors instead then add the
 following to your configuration:
