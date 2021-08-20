@@ -17,11 +17,6 @@ time, primarily with regard to language and plugin theming.
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
 interest.
 
-Color Palette
--------------
-
-![palette](https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/moonfly-palette.png)
-
 Screenshots
 -----------
 
