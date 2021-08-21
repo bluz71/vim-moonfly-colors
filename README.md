@@ -341,7 +341,7 @@ with a modern version of Vim or Neovim with `termguicolors` set.
 If that is not possible, then the [terminal
 emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
 for 256 colors, which usually means setting the terminal's type to
-**xterm-256color**, or **screen-256color** when used inside
+`xterm-256color`, or `screen-256color` when used inside
 [tmux](https://tmux.github.io/).
 
 The terminal should then be configured with the following _moonfly_ colors:
