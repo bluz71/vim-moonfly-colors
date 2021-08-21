@@ -1,7 +1,7 @@
 ![moonfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/moonfly.png)
 ==========
 
-_moonfly_ is a dark color scheme for Vim & Neovim inspired by:
+_moonfly_ is a dark colorscheme for Vim & Neovim inspired by:
 
 - [One Dark](https://github.com/atom/atom/tree/master/packages/one-dark-syntax)
 - [monokai](https://monokai.pro)
@@ -81,7 +81,7 @@ vim.cmd [[colorscheme moonfly]]
 Statusline
 ----------
 
-- The _moonfly_ color scheme supports
+- The _moonfly_ colorscheme supports
   [lightline](https://github.com/itchyny/lightline.vim). To enable the _moonfly_
   lightline colorscheme please add the following to your initialization file:
 
@@ -89,11 +89,11 @@ Statusline
 let g:lightline = { 'colorscheme': 'moonfly' }
 ```
 
-- The _moonfly_ color scheme supports
+- The _moonfly_ colorscheme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). For modern versions
   of _vim-airline_ the _moonfly_ theme will automatically be loaded.
 
-- The _moonfly_ color scheme supports
+- The _moonfly_ colorscheme supports
   [lualine](https://github.com/hoob3rt/lualine.nvim). To enable the _moonfly_
   theme please add the following to your initialization file:
 
@@ -283,10 +283,10 @@ A list of popular terminals that support true colors:
 - [mintty](https://mintty.github.io)
 
 On terminals that support true colors, and when `termguicolors` is set, the
-_moonfly_ color scheme will not require any terminal configuration to emit the
+_moonfly_ colorscheme will not require any terminal configuration to emit the
 correct theme colors.
 
-For the true color _moonfly_ color scheme to display correctly inside _tmux_
+For the true color _moonfly_ colorscheme to display correctly inside _tmux_
 the following setting will usually be required in _~/.tmux.conf_:
 
 ```
@@ -309,7 +309,7 @@ _moonfly_ with `termguicolors` (`cterm` users should refer to the next section
 and not use these terminal themes):
 
 - _iTerm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
-  color scheme.
+  colorscheme.
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
@@ -329,7 +329,7 @@ and not use these terminal themes):
 256 Color Terminals
 -------------------
 
-The _moonfly_ color scheme, when used absent `termguicolors`, **requires** the
+The _moonfly_ colorscheme, when used absent `termguicolors`, **requires** the
 host terminal be configured with a specific color palette. In that case the
 legacy _moonfly_ `cterm` 256 color terminal theme will be used.
 
