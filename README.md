@@ -360,15 +360,15 @@ The terminal should then be configured with the following _moonfly_ colors:
 | Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://via.placeholder.com/32/80a0ff?text=+) |
 | Color 6        | Purple (normal) | `#d183e8` | ![background](https://via.placeholder.com/32/d183e8?text=+) |
 | Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://via.placeholder.com/32/79dac8?text=+) |
-| Color 8        | White (normal)  | `#c6c6c6` | ![background](https://via.placeholder.com/32/c6c6c6?text=+) |
-| Color 9        | Black (bright)  | `#949494` | ![background](https://via.placeholder.com/32/949494?text=+) |
+| Color 8        | White (normal)  | `#de935f` | ![background](https://via.placeholder.com/32/de935f?text=+) |
+| Color 9        | Black (bright)  | `#f09479` | ![background](https://via.placeholder.com/32/f09479?text=+) |
 | Color 10       | Red (bright)    | `#ff5189` | ![background](https://via.placeholder.com/32/ff5189?text=+) |
 | Color 11       | Green (bright)  | `#36c692` | ![background](https://via.placeholder.com/32/36c692?text=+) |
 | Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://via.placeholder.com/32/bfbf97?text=+) |
 | Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://via.placeholder.com/32/74b2ff?text=+) |
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://via.placeholder.com/32/ae81ff?text=+) |
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://via.placeholder.com/32/85dc85?text=+) |
-| Color 16       | White (bright)  | `#dadada` | ![background](https://via.placeholder.com/32/dadada?text=+) |
+| Color 16       | White (bright)  | `#e2637f` | ![background](https://via.placeholder.com/32/e2637f?text=+) |
 
 License
 -------
