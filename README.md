@@ -3,9 +3,8 @@
 
 _moonfly_ is a dark colorscheme for Vim & Neovim inspired by:
 
+- [Monokai](https://monokai.pro)
 - [One Dark](https://github.com/atom/atom/tree/master/packages/one-dark-syntax)
-- [monokai](https://monokai.pro)
-- [xoria256](https://github.com/vim-scripts/xoria256.vim)
 
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
