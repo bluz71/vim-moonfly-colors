@@ -7,9 +7,6 @@ _moonfly_ is a dark color scheme for Vim & Neovim inspired by:
 - [monokai](https://monokai.pro)
 - [xoria256](https://github.com/vim-scripts/xoria256.vim)
 
-Be aware, the _moonfly_ color scheme does incrementally change from time to
-time, primarily with regard to language and plugin theming.
-
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
 interest.
@@ -94,7 +91,7 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 
 - The _moonfly_ color scheme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). For modern versions
-  of _vim-airline_ the _moonfly_ theme will be automatically loaded.
+  of _vim-airline_ the _moonfly_ theme will automatically be loaded.
 
 - The _moonfly_ color scheme supports
   [lualine](https://github.com/hoob3rt/lualine.nvim). To enable the _moonfly_
@@ -104,10 +101,10 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 require('lualine').setup({options = {theme = 'moonfly'}})
 ```
 
-- Lastly,
+- Lastly, my own
   [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
-  available for those that just want a simple yet informative _moonfly_ themed
-  status line.
+  available for those that just want a very simple yet informative _moonfly_
+  themed status line.
 
 :wrench: Options
 ----------------
