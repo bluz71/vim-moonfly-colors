@@ -293,7 +293,7 @@ the following setting will usually be required in _~/.tmux.conf_:
 set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
-Vim, as against Neovim, inside _tmux_, will also require the following setting
+Vim, as against Neovim, inside _tmux_, will also require the following settings
 be added to the `~/.vimrc` file:
 
 ```viml
@@ -333,8 +333,8 @@ The _moonfly_ colorscheme, when used absent `termguicolors`, **requires** the
 host terminal be configured with a specific color palette. In that case the
 legacy _moonfly_ `cterm` 256 color terminal theme will be used.
 
-:bell: Nowadays it is strongly recommened to use a true color terminal with a
-modern version of Vim or Neovim with `termguicolors` set.
+:bangbang: Nowadays it is **strongly** recommended to use a true color terminal
+with a modern version of Vim or Neovim with `termguicolors` set.
 
 If that is not possible, then the [terminal
 emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
