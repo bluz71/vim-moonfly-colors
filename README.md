@@ -1,14 +1,11 @@
 ![moonfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/moonfly.png)
 ==========
 
-_moonfly_ is a dark color scheme for Vim and Neovim that has taken inspiration
-from:
+_moonfly_ is a dark color scheme for Vim & Neovim inspired by:
 
-- [sunburst](http://vimcolors.com/177/Sunburst/dark)
+- [One Dark](https://github.com/atom/atom/tree/master/packages/one-dark-syntax)
+- [monokai](https://monokai.pro)
 - [xoria256](https://github.com/vim-scripts/xoria256.vim)
-- [One Dark](https://github.com/atom/one-dark-syntax)
-- [One](https://github.com/rakr/vim-one)
-- [monokai](https://atom.io/themes/monokai)
 
 Be aware, the _moonfly_ color scheme does incrementally change from time to
 time, primarily with regard to language and plugin theming.
@@ -30,50 +27,26 @@ Screenshots
 
 The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 
-Languages explicitly styled
----------------------------
-
-- All Neovim Treesitter highlighted-languages
-- C/C++
-- Clojure
-- CoffeeScript
-- Crystal
-- Elixir
-- Elm
-- Dart
-- Go
-- Haskell
-- Java
-- [JavaScript](https://github.com/pangloss/vim-javascript)
-- Lua
-- Markdown
-- PHP
-- PureScript
-- Python
-- Ruby
-- Rust
-- Scala
-- Shell
-- [TypeScript](https://github.com/HerringtonDarkholme/yats.vim)
-
-Plugins explicity styled
-------------------------
+Styled Plugins
+--------------
 
 - [ALE](https://github.com/w0rp/ale)
 - [barbar.nvim](https://github.com/romgrk/barbar.nvim)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 - [clever-f](https://github.com/rhysd/clever-f.vim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
-- [fern.vim](https://github.com/lambdalisue/fern.vim)
+- [Fern](https://github.com/lambdalisue/fern.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim) (with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
-- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [indentLine](https://github.com/Yggdroot/indentLine)
+- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [lightline](https://github.com/itchyny/lightline.vim)
+- [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
-- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Signify](https://github.com/mhinz/vim-signify)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
+- [vim-airline](https://github.com/vim-airline/vim-airline)
 
 Installation
 ------------
@@ -112,9 +85,8 @@ Statusline
 ----------
 
 - The _moonfly_ color scheme supports
-  [lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
-  _moonfly_ lightline colorscheme please add the following to your
-  initialization file:
+  [lightline](https://github.com/itchyny/lightline.vim). To enable the _moonfly_
+  lightline colorscheme please add the following to your initialization file:
 
 ```viml
 let g:lightline = { 'colorscheme': 'moonfly' }
@@ -125,8 +97,8 @@ let g:lightline = { 'colorscheme': 'moonfly' }
   of _vim-airline_ the _moonfly_ theme will be automatically loaded.
 
 - The _moonfly_ color scheme supports
-  [lualine.nvim](https://github.com/hoob3rt/lualine.nvim). To enable the
-  _moonfly_ theme please add the following to your initialization file:
+  [lualine](https://github.com/hoob3rt/lualine.nvim). To enable the _moonfly_
+  theme please add the following to your initialization file:
 
 ```lua
 require('lualine').setup({options = {theme = 'moonfly'}})
@@ -137,8 +109,8 @@ require('lualine').setup({options = {theme = 'moonfly'}})
   available for those that just want a simple yet informative _moonfly_ themed
   status line.
 
-Options
--------
+:wrench: Options
+----------------
 
 The `moonflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
@@ -298,7 +270,7 @@ True Color Terminals
 --------------------
 
 Many modern terminals support [24-bit true
-colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
+colors](https://gist.github.com/XVilka/8346728). Current versions of Vim &
 Neovim, on such terminals, support true colors when `set termguicolors` is
 enabled.
 
@@ -325,7 +297,7 @@ set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
 Vim, as against Neovim, inside _tmux_, will also require the following setting
-be added to initialization file:
+be added to the `~/.vimrc` file:
 
 ```viml
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -342,6 +314,13 @@ and not use these terminal themes):
 - _iTerm2_ users on macOS can import [this](terminal_themes/moonfly.itermcolors)
   color scheme.
 
+- [Alacritty](https://github.com/alacritty/alacritty) users can copy
+  [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
+  configuration.
+
+- [kitty](https://sw.kovidgoyal.net/kitty) users can use
+  [this](terminal_themes/kitty-theme.conf) theme.
+
 - _Gnome Terminal_ users can run
   [this](terminal_themes/gnome-terminal-moonfly.sh) script to create a _Moonfly_
   profile. Before executing the script, please install the `dconf-cli` command
@@ -349,13 +328,6 @@ and not use these terminal themes):
   apt install dconf-cli`. After executing the script, please set the _cursor_
   and _selection_ colors by hand, with the appropriate color values listed
   above, in `Preferences` / `Moonfly` / `Colors`.
-
-- [Alacritty](https://github.com/alacritty/alacritty) users can copy
-  [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
-  configuration.
-
-- [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](terminal_themes/kitty-theme.conf) theme.
 
 256 Color Terminals
 -------------------
@@ -391,15 +363,15 @@ The terminal should then be configured with the following _moonfly_ colors:
 | Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://via.placeholder.com/32/80a0ff?text=+) |
 | Color 6        | Purple (normal) | `#d183e8` | ![background](https://via.placeholder.com/32/d183e8?text=+) |
 | Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://via.placeholder.com/32/79dac8?text=+) |
-| Color 8        | White (normal)  | `#de935f` | ![background](https://via.placeholder.com/32/de935f?text=+) |
-| Color 9        | Black (bright)  | `#f09479` | ![background](https://via.placeholder.com/32/f09479?text=+) |
+| Color 8        | White (normal)  | `#c6c6c6` | ![background](https://via.placeholder.com/32/c6c6c6?text=+) |
+| Color 9        | Black (bright)  | `#949494` | ![background](https://via.placeholder.com/32/949494?text=+) |
 | Color 10       | Red (bright)    | `#ff5189` | ![background](https://via.placeholder.com/32/ff5189?text=+) |
 | Color 11       | Green (bright)  | `#36c692` | ![background](https://via.placeholder.com/32/36c692?text=+) |
 | Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://via.placeholder.com/32/bfbf97?text=+) |
 | Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://via.placeholder.com/32/74b2ff?text=+) |
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://via.placeholder.com/32/ae81ff?text=+) |
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://via.placeholder.com/32/85dc85?text=+) |
-| Color 16       | White (bright)  | `#e2637f` | ![background](https://via.placeholder.com/32/e2637f?text=+) |
+| Color 16       | White (bright)  | `#dadada` | ![background](https://via.placeholder.com/32/dadada?text=+) |
 
 License
 -------

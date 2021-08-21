@@ -1,7 +1,5 @@
 " Dark Vim/Neovim color scheme.
 "
-" Note: Inspiration taken from: monokai, sunburst xoria256 and One Dark themes.
-"
 " URL:     github.com/bluz71/vim-moonfly-colors
 " License: MIT (https://opensource.org/licenses/MIT)
 
