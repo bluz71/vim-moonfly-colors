@@ -24,9 +24,11 @@ Screenshots
 
 The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 
-Styled Plugins
---------------
+Styled Features & Plugins
+-------------------------
 
+- [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [Neovim LSP Diagnostics](https://neovim.io/doc/user/lsp.html)
 - [ALE](https://github.com/w0rp/ale)
 - [barbar.nvim](https://github.com/romgrk/barbar.nvim)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
