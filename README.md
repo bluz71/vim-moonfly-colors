@@ -327,23 +327,7 @@ and not use these terminal themes):
   and _selection_ colors by hand, with the appropriate color values listed
   above, in `Preferences` / `Moonfly` / `Colors`.
 
-256 Color Terminals
--------------------
-
-The _moonfly_ colorscheme, when used absent `termguicolors`, **requires** the
-host terminal be configured with a specific color palette. In that case the
-legacy _moonfly_ `cterm` 256 color terminal theme will be used.
-
-:bangbang: Nowadays it is **strongly** recommended to use a true color terminal
-with a modern version of Vim or Neovim with `termguicolors` set.
-
-If that is not possible, then the [terminal
-emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
-for 256 colors, which usually means setting the terminal's type to
-`xterm-256color`, or `screen-256color` when used inside
-[tmux](https://tmux.github.io/).
-
-The terminal should then be configured with the following _moonfly_ colors:
+For other terminals please configure appropriately with the following colors:
 
 | Type           | Category        | Value     | Color                                                       |
 |----------------|-----------------|-----------|-------------------------------------------------------------|
@@ -361,15 +345,59 @@ The terminal should then be configured with the following _moonfly_ colors:
 | Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://via.placeholder.com/32/80a0ff?text=+) |
 | Color 6        | Purple (normal) | `#d183e8` | ![background](https://via.placeholder.com/32/d183e8?text=+) |
 | Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://via.placeholder.com/32/79dac8?text=+) |
-| Color 8        | White (normal)  | `#de935f` | ![background](https://via.placeholder.com/32/de935f?text=+) |
-| Color 9        | Black (bright)  | `#f09479` | ![background](https://via.placeholder.com/32/f09479?text=+) |
+| Color 8        | White (normal)  | `#c6c6c6` | ![background](https://via.placeholder.com/32/c6c6c6?text=+) |
+| Color 9        | Black (bright)  | `#949494` | ![background](https://via.placeholder.com/32/949494?text=+) |
 | Color 10       | Red (bright)    | `#ff5189` | ![background](https://via.placeholder.com/32/ff5189?text=+) |
 | Color 11       | Green (bright)  | `#36c692` | ![background](https://via.placeholder.com/32/36c692?text=+) |
 | Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://via.placeholder.com/32/bfbf97?text=+) |
 | Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://via.placeholder.com/32/74b2ff?text=+) |
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://via.placeholder.com/32/ae81ff?text=+) |
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://via.placeholder.com/32/85dc85?text=+) |
-| Color 16       | White (bright)  | `#e2637f` | ![background](https://via.placeholder.com/32/e2637f?text=+) |
+| Color 16       | White (bright)  | `#dadada` | ![background](https://via.placeholder.com/32/dadada?text=+) |
+
+:tv: Legacy 256 Color Terminals
+-------------------------------
+
+The _moonfly_ colorscheme, when used absent `termguicolors`, **requires** the
+host terminal be configured with a specific color palette. In that case the
+legacy _moonfly_ `cterm` 256 color terminal theme will be used.
+
+:bangbang: Nowadays it is **strongly** recommended to use a true color terminal
+with a modern version of Vim or Neovim with `termguicolors` set.
+
+If that is not possible, then the [terminal
+emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
+for 256 colors, which usually means setting the terminal's type to
+`xterm-256color`, or `screen-256color` when used inside
+[tmux](https://tmux.github.io/).
+
+The terminal should then be configured with the following _moonfly_ colors:
+
+```
+Background:               #080808
+Foreground:               #b2b2b2
+Bold:                     #eeeeee
+Cursor:                   #9e9e9e
+Cursor Text:              #080808
+Selection:                #b2ceee
+Selection Text:           #080808
+Color 1 (Black):          #323437
+Color 2 (Red):            #ff5454
+Color 3 (Green):          #8cc85f
+Color 4 (Yellow):         #e3c78a
+Color 5 (Blue):           #80a0ff
+Color 6 (Purple):         #d183e8
+Color 7 (Cyan):           #79dac8
+Color 8 (White):          #de935f
+Color 9 (Bright Black):   #f09479
+Color 10 (Bright Red):    #ff5189
+Color 11 (Bright Green):  #36c692
+Color 12 (Bright Yellow): #bfbf97
+Color 13 (Bright Blue):   #74b2ff
+Color 14 (Bright Purple): #ae81ff
+Color 15 (Bright Cyan):   #85dc85
+Color 16 (Bright White):  #e2637f
+```
 
 License
 -------
