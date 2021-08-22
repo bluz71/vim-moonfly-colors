@@ -869,6 +869,12 @@ if has('nvim')
     highlight! link GitSignsChangeDelete MoonflyCoralAlert
     highlight! link GitSignsDelete MoonflyRedAlert
 
+    " Hop plugin
+    highlight! link HopNextKey MoonflyCoral
+    highlight! link HopNextKey1 MoonflyBlue
+    highlight! link HopNextKey2 MoonflyCrimson
+    highlight! link HopUnmatched MoonflyGrey247
+
     " barbar.nvim plugin
     exec 'highlight BufferCurrent      ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
     exec 'highlight BufferCurrentMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '  guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex

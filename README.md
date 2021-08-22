@@ -37,6 +37,7 @@ Styled Features & Plugins
 - [fzf.vim](https://github.com/junegunn/fzf.vim) (with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [Hop](https://github.com/phaazon/hop.nvim)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
