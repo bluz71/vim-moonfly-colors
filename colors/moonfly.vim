@@ -870,7 +870,7 @@ if has('nvim')
     highlight! link GitSignsDelete MoonflyRedAlert
 
     " Hop plugin
-    highlight! link HopNextKey MoonflyCoral
+    highlight! link HopNextKey MoonflyVisual
     highlight! link HopNextKey1 MoonflyBlue
     highlight! link HopNextKey2 MoonflyCrimson
     highlight! link HopUnmatched MoonflyGrey247
