@@ -838,14 +838,18 @@ if has('nvim')
     highlight! link LspDiagnosticsFloatingHint MoonflyWhite
     highlight! link LspSignatureActiveParameter MoonflyGrey0
 
-    " nvim-tree.lua plugin
-    highlight! link NvimTreeFolderIcon MoonflyGrey247
+    " NvimTree plugin
+    highlight! link NvimTreeFolderIcon MoonflyBlue
     highlight! link NvimTreeFolderName MoonflyBlue
-    highlight! link NvimTreeIndentMarker MoonflyGrey247
+    highlight! link NvimTreeIndentMarker MoonflyGrey236
     highlight! link NvimTreeOpenedFolderName MoonflyBlue
     highlight! link NvimTreeRootFolder MoonflyPurple
     highlight! link NvimTreeSpecialFile MoonflyYellow
-    highlight! link NvimTreeWindowPicker DiffText
+    highlight! link NvimTreeWindowPicker DiffChange
+    exec 'highlight NvimTreeExecFile ctermfg=' . s:green.term . ' guifg=' . s:green.hex . ' gui=none'
+    exec 'highlight NvimTreeImageFile ctermfg=' . s:violet.term . ' guifg=' . s:violet.hex . ' gui=none'
+    exec 'highlight NvimTreeOpenedFile ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex . ' gui=none'
+    exec 'highlight NvimTreeSymlink ctermfg=' . s:turquoise.term . ' guifg=' . s:turquoise.hex . ' gui=none'
 
     " Telescope plugin
     highlight! link TelescopeBorder MoonflyGrey236
