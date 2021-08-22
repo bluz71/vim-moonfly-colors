@@ -875,7 +875,7 @@ if has('nvim')
     highlight! link HopNextKey2 MoonflyCrimson
     highlight! link HopUnmatched MoonflyGrey247
 
-    " barbar.nvim plugin
+    " Barbar plugin
     exec 'highlight BufferCurrent      ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
     exec 'highlight BufferCurrentMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '  guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
     exec 'highlight BufferCurrentSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:blue.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:blue.hex
