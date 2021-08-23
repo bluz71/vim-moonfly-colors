@@ -720,7 +720,7 @@ highlight! link NERDTreeGitStatusUntracked MoonflyRed
 " fern.vim plugin
 highlight! link FernBranchSymbol MoonflyEmerald
 highlight! link FernBranchText MoonflyBlue
-highlight! link FernMarkedLine MoonflyCrimson
+highlight! link FernMarkedLine MoonflyYellow
 highlight! link FernMarkedText MoonflyCrimson
 highlight! link FernRootSymbol MoonflyPurple
 highlight! link FernRootText MoonflyPurple
@@ -870,7 +870,7 @@ if has('nvim')
     highlight! link GitSignsDelete MoonflyRedAlert
 
     " Hop plugin
-    highlight! link HopNextKey MoonflyVisual
+    highlight! link HopNextKey MoonflyYellow
     highlight! link HopNextKey1 MoonflyBlue
     highlight! link HopNextKey2 MoonflyCrimson
     highlight! link HopUnmatched MoonflyGrey247
