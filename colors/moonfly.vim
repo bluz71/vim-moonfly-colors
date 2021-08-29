@@ -857,11 +857,12 @@ if has('nvim')
     highlight! link TelescopeMatching MoonflyCoral
     highlight! link TelescopeMultiSelection MoonflyCrimson
     highlight! link TelescopeNormal MoonflyGrey249
-    highlight! link TelescopePreviewDate MoonflyWhite
+    highlight! link TelescopePreviewDate MoonflyGrey246
     highlight! link TelescopePreviewGroup MoonflyGrey246
     highlight! link TelescopePreviewLink MoonflyTurquoise
     highlight! link TelescopePreviewMatch MoonflyVisual
     highlight! link TelescopePreviewRead MoonflyOrange
+    highlight! link TelescopePreviewSize MoonflyEmerald
     highlight! link TelescopePreviewUser MoonflyGrey246
     highlight! link TelescopePromptPrefix MoonflyBlue
     highlight! link TelescopeResultsDiffAdd MoonflyGreen
