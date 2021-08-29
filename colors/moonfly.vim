@@ -736,7 +736,7 @@ highlight! link bufExplorerHelp MoonflyGrey247
 highlight! link bufExplorerSortBy MoonflyGrey247
 highlight! link CleverFDefaultLabel MoonflyCrimson
 highlight! link CtrlPMatch MoonflyCoral
-highlight! link Directory MoonflyEmerald
+highlight! link Directory MoonflyBlue
 highlight! link HighlightedyankRegion MoonflyGrey0
 highlight! link jsonKeyword MoonflySky
 highlight! link jsonQuote MoonflyWhite
@@ -857,7 +857,12 @@ if has('nvim')
     highlight! link TelescopeMatching MoonflyCoral
     highlight! link TelescopeMultiSelection MoonflyCrimson
     highlight! link TelescopeNormal MoonflyGrey249
+    highlight! link TelescopePreviewDate MoonflyWhite
+    highlight! link TelescopePreviewGroup MoonflyGrey246
+    highlight! link TelescopePreviewLink MoonflyTurquoise
     highlight! link TelescopePreviewMatch MoonflyVisual
+    highlight! link TelescopePreviewRead MoonflyOrange
+    highlight! link TelescopePreviewUser MoonflyGrey246
     highlight! link TelescopePromptPrefix MoonflyBlue
     highlight! link TelescopeResultsDiffAdd MoonflyGreen
     highlight! link TelescopeResultsDiffChange MoonflyRed
