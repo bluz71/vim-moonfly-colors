@@ -278,7 +278,8 @@ endif
 exec 'highlight Ignore ctermfg=' . s:sky.term . ' guifg=' . s:sky.hex
 exec 'highlight Underlined ctermfg=' . s:emerald.term . ' cterm=none guifg=' . s:emerald.hex . ' gui=none'
 exec 'highlight QuickFixLine ctermbg=' . s:grey237.term . ' cterm=none guibg=' . s:grey237.hex
-exec 'highlight Delimiter ctermfg=' . s:white.term . ' guifg=' . s:white.hex
+highlight! link Delimiter MoonflyWhite
+highlight! link qfFileName MoonflyEmerald
 
 " Color column (after line 80)
 exec 'highlight ColorColumn ctermbg=' . s:grey233.term . ' guibg=' . s:grey233.hex
