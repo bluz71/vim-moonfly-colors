@@ -812,6 +812,9 @@ let g:fzf_colors = {
   \  'header':  ['fg', 'CursorLineNr']
   \}
 
+" Coc plugin
+highlight! link CocUnusedHighlight MoonflyWhite
+
 if has('nvim')
     " Neovim LSP diagnostics
     if g:moonflyUndercurls
