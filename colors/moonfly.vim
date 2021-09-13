@@ -317,6 +317,8 @@ if has('nvim')
     highlight! link TSTagDelimiter MoonflyLime
     highlight! link TSVariableBuiltin MoonflyLime
     highlight! link bashTSParameter MoonflyTurquoise
+    highlight! link yamlTSField MoonflySky
+    highlight! link yamlTSPunctDelimiter MoonflyCranberry
 endif
 
 " C/C++
