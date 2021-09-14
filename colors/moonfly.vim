@@ -892,17 +892,17 @@ if has('nvim')
     highlight! link HopUnmatched MoonflyGrey247
 
     " Barbar plugin
-    exec 'highlight BufferCurrent      ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . '     guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
-    exec 'highlight BufferCurrentIndex ctermbg=' . s:grey234.term . ' ctermfg=' . s:cranberry.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:cranberry.hex
-    exec 'highlight BufferCurrentMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '     guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
-    exec 'highlight BufferCurrentSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:blue.term . '      guibg=' . s:grey234.hex . ' guifg=' . s:blue.hex
-    exec 'highlight BufferVisible      ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight BufferVisibleIndex ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight BufferVisibleMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '     guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
-    exec 'highlight BufferVisibleSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight BufferInactive     ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . '   guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight BufferInactiveMod  ctermbg=' . s:grey236.term . ' ctermfg=' . s:wheat.term . '     guibg=' . s:grey236.hex . ' guifg=' . s:wheat.hex
-    exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . '   guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
+    exec 'highlight BufferCurrent      ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
+    exec 'highlight BufferCurrentIndex ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
+    exec 'highlight BufferCurrentMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
+    exec 'highlight BufferCurrentSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:blue.term . '    guibg=' . s:grey234.hex . ' guifg=' . s:blue.hex
+    exec 'highlight BufferVisible      ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
+    exec 'highlight BufferVisibleIndex ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
+    exec 'highlight BufferVisibleMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
+    exec 'highlight BufferVisibleSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
+    exec 'highlight BufferInactive     ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
+    exec 'highlight BufferInactiveMod  ctermbg=' . s:grey236.term . ' ctermfg=' . s:wheat.term . '   guibg=' . s:grey236.hex . ' guifg=' . s:wheat.hex
+    exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
 endif
 
 set background=dark
