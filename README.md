@@ -127,57 +127,6 @@ vim.g.moonflyCursorColor = 1
 
 ---
 
-The `moonflyTerminalColors` option specifies whether to use the moonfly color
-palette in `:terminal` windows when `termguicolors` is set. By default this
-option is **enabled**. If you prefer not to use the moonfly color palette for
-the first 16 terminal colors then add the following to your initialization file:
-
-```viml
-" Vimscript initialization file
-let g:moonflyTerminalColors = 0
-```
-
-```lua
--- Lua initialization file
-vim.g.moonflyTerminalColors = 0
-```
-
----
-
-The `moonflyUnderlineMatchParen` option specifies whether to underline
-matching parentheses. By default this option is **disabled**. If you want to
-underline matching parentheses then add the following to your initialization
-file:
-
-```viml
-" Vimscript initialization file
-let g:moonflyUnderlineMatchParen = 1
-```
-
-```lua
--- Lua initialization file
-vim.g.moonflyUnderlineMatchParen = 1
-```
-
----
-
-The `moonflyUndercurls` option specifies whether to use undercurls for
-spelling and linting errors in GUI versions of Vim, including terminal Vim with
-`termguicolors` set. By default this option is **enabled**. If you do not like
-the appearance of undercurls then add the following to your initialization file:
-
-```viml
-" Vimscript initialization file
-let g:moonflyUndercurls = 0
-```
-
-```lua
--- Lua initialization file
-vim.g.moonflyUndercurls = 0
-```
-
----
-
 The `moonflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
 **enabled**. If you do not like the appearance of italics then add the following
@@ -191,40 +140,6 @@ let g:moonflyItalics = 0
 ```lua
 -- Lua initialization file
 vim.g.moonflyItalics = 0
-```
-
----
-
-The `moonflyTransparent` option specifies whether to use an opaque or
-transparent background in GUI versions of Vim. By default this option is
-**disabled**. If you would like a transparent background then add the following
-to your initialization file:
-
-```viml
-" Vimscript initialization file
-let g:moonflyTransparent = 1
-```
-
-```lua
--- Lua initialization file
-vim.g.moonflyTransparent = 1
-```
-
----
-
-The `moonflyVertSplits` option specifies whether to show vertical split
-columns. By default vertical split columns will be visible. If you would like
-vertical split columns to not be visible then add the following to your
-configuration:
-
-```viml
-" Vimscript initialization file
-let g:moonflyVertSplits = 0
-```
-
-```lua
--- Lua initialization file
-vim.g.moonflyVertSplits = 0
 ```
 
 ---
@@ -263,6 +178,91 @@ Neovim's LSP client, for example:
   local opts = {noremap = true, silent = true}
   vim.api.nvim_buf_set_keymap(0, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
   vim.api.nvim_buf_set_keymap(0, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
+```
+
+---
+
+The `moonflyTerminalColors` option specifies whether to use the moonfly color
+palette in `:terminal` windows when `termguicolors` is set. By default this
+option is **enabled**. If you prefer not to use the moonfly color palette for
+the first 16 terminal colors then add the following to your initialization file:
+
+```viml
+" Vimscript initialization file
+let g:moonflyTerminalColors = 0
+```
+
+```lua
+-- Lua initialization file
+vim.g.moonflyTerminalColors = 0
+```
+
+---
+
+The `moonflyTransparent` option specifies whether to use an opaque or
+transparent background in GUI versions of Vim. By default this option is
+**disabled**. If you would like a transparent background then add the following
+to your initialization file:
+
+```viml
+" Vimscript initialization file
+let g:moonflyTransparent = 1
+```
+
+```lua
+-- Lua initialization file
+vim.g.moonflyTransparent = 1
+```
+
+---
+
+The `moonflyUndercurls` option specifies whether to use undercurls for
+spelling and linting errors in GUI versions of Vim, including terminal Vim with
+`termguicolors` set. By default this option is **enabled**. If you do not like
+the appearance of undercurls then add the following to your initialization file:
+
+```viml
+" Vimscript initialization file
+let g:moonflyUndercurls = 0
+```
+
+```lua
+-- Lua initialization file
+vim.g.moonflyUndercurls = 0
+```
+
+---
+
+The `moonflyUnderlineMatchParen` option specifies whether to underline
+matching parentheses. By default this option is **disabled**. If you want to
+underline matching parentheses then add the following to your initialization
+file:
+
+```viml
+" Vimscript initialization file
+let g:moonflyUnderlineMatchParen = 1
+```
+
+```lua
+-- Lua initialization file
+vim.g.moonflyUnderlineMatchParen = 1
+```
+
+---
+
+The `moonflyVertSplits` option specifies whether to show vertical split
+columns. By default vertical split columns will be visible. If you would like
+vertical split columns to not be visible then add the following to your
+configuration:
+
+```viml
+" Vimscript initialization file
+let g:moonflyVertSplits = 0
+```
+
+```lua
+-- Lua initialization file
+vim.g.moonflyVertSplits = 0
 ```
 
 True Color Terminals
