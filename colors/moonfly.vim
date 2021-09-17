@@ -823,7 +823,7 @@ let g:fzf_colors = {
 highlight! link CocUnusedHighlight MoonflyWhite
 
 if has('nvim')
-    " Neovim LSP diagnostics
+    " Neovim 0.5 LSP diagnostics
     if g:moonflyUndercurls
         exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
         exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
@@ -848,6 +848,35 @@ if has('nvim')
     highlight! link LspDiagnosticsSignHint MoonflyWhiteAlert
     highlight! link LspDiagnosticsFloatingHint MoonflyWhite
     highlight! link LspSignatureActiveParameter MoonflyGrey0
+
+    " Neovim 0.6 diagnostic
+    highlight! link DiagnosticError MoonflyRed
+    highlight! link DiagnosticWarn MoonflyYellow
+    highlight! link DiagnosticInfo MoonflySky
+    highlight! link DiagnosticHint MoonflyWhite
+    if g:moonflyUndercurls
+        exec 'highlight DiagnosticUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
+        exec 'highlight DiagnosticUnderlineWarn ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
+        exec 'highlight DiagnosticUnderlineInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
+        exec 'highlight DiagnosticUnderlineHint ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white.hex
+    else
+        exec 'highlight DiagnosticUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red.hex
+        exec 'highlight DiagnosticUnderlineWarn ctermbg=bg guibg=bg gui=underline guisp=' . s:blue.hex
+        exec 'highlight DiagnosticUnderlineInfo ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow.hex
+        exec 'highlight DiagnosticUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:sky.hex
+    endif
+    highlight! link DiagnosticVirtualTextError MoonflyGrey241
+    highlight! link DiagnosticSignError MoonflyRedAlert
+    highlight! link DiagnosticFloatingError MoonflyRed
+    highlight! link DiagnosticVirtualTextWarn MoonflyGrey241
+    highlight! link DiagnosticSignWarn MoonflyYellowAlert
+    highlight! link DiagnosticFloatingWarn MoonflyYellow
+    highlight! link DiagnosticVirtualTextInfo MoonflyGrey241
+    highlight! link DiagnosticSignInfo MoonflySkyAlert
+    highlight! link DiagnosticFloatingInfo MoonflySky
+    highlight! link DiagnosticVirtualTextHint MoonflyGrey241
+    highlight! link DiagnosticSignHint MoonflyWhiteAlert
+    highlight! link DiagnosticFloatingHint MoonflyWhite
 
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon MoonflyBlue
