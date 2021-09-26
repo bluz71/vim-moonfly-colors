@@ -41,6 +41,7 @@ Styled Features & Plugins
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Signify](https://github.com/mhinz/vim-signify)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)

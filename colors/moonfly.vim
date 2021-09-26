@@ -112,6 +112,7 @@ exec 'highlight MoonflyReset ctermfg=fg guifg=fg'
 exec 'highlight MoonflyVisual ctermbg=' . s:grey0.term . ' guibg=' . s:grey0.hex
 exec 'highlight MoonflyWhite ctermfg=' . s:white.term . ' guifg=' . s:white.hex
 exec 'highlight MoonflyGrey0 ctermfg=' . s:grey0.term . ' guifg=' . s:grey0.hex
+exec 'highlight MoonflyGrey253 ctermfg=' . s:grey253.term . ' guifg=' . s:grey253.hex
 exec 'highlight MoonflyGrey249 ctermfg=' . s:grey249.term . ' guifg=' . s:grey249.hex
 exec 'highlight MoonflyGrey247 ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
 exec 'highlight MoonflyGrey246 ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex
@@ -941,6 +942,11 @@ if has('nvim')
     exec 'highlight BufferInactive     ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
     exec 'highlight BufferInactiveMod  ctermbg=' . s:grey236.term . ' ctermfg=' . s:wheat.term . '   guibg=' . s:grey236.hex . ' guifg=' . s:wheat.hex
     exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
+
+    " nvim-cmp plugin
+    highlight! link CmpItemKind MoonflyTurquoise
+    highlight! link CmpItemMenu MoonflyGrey247
+    highlight! link CmpItemAbbrMatchFuzzy MoonflyGrey253
 endif
 
 set background=dark
