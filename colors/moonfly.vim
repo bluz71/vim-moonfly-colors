@@ -43,7 +43,7 @@ let s:black     = {"hex": '#080808', "term": 232}
 let s:white     = {"hex": '#c6c6c6', "term": 251}
 " Variations of charcoal-grey
 let s:grey0     = {"hex": '#323437', "term": 0  }
-let s:grey253   = {"hex": '#dadada', "term": 253}
+let s:grey254   = {"hex": '#e4e4e4', "term": 254}
 let s:grey249   = {"hex": '#b2b2b2', "term": 249}
 let s:grey247   = {"hex": '#9e9e9e', "term": 247}
 let s:grey246   = {"hex": '#949494', "term": 246}
@@ -91,13 +91,13 @@ if g:moonflyTerminalColors
         let g:terminal_color_12 = s:sky.hex
         let g:terminal_color_13 = s:purple.hex
         let g:terminal_color_14 = s:lime.hex
-        let g:terminal_color_15 = s:grey253.hex
+        let g:terminal_color_15 = s:grey254.hex
     else
         let g:terminal_ansi_colors = [
                     \ s:grey0.hex, s:red.hex, s:green.hex, s:yellow.hex,
                     \ s:blue.hex, s:violet.hex, s:turquoise.hex, s:white.hex,
                     \ s:grey246.hex, s:crimson.hex, s:emerald.hex, s:wheat.hex,
-                    \ s:sky.hex, s:purple.hex, s:lime.hex, s:grey253.hex
+                    \ s:sky.hex, s:purple.hex, s:lime.hex, s:grey254.hex
                     \]
     endif
 endif
@@ -114,7 +114,7 @@ exec 'highlight MoonflyReset ctermfg=fg guifg=fg'
 exec 'highlight MoonflyVisual ctermbg=' . s:grey0.term . ' guibg=' . s:grey0.hex
 exec 'highlight MoonflyWhite ctermfg=' . s:white.term . ' guifg=' . s:white.hex
 exec 'highlight MoonflyGrey0 ctermfg=' . s:grey0.term . ' guifg=' . s:grey0.hex
-exec 'highlight MoonflyGrey253 ctermfg=' . s:grey253.term . ' guifg=' . s:grey253.hex
+exec 'highlight MoonflyGrey254 ctermfg=' . s:grey254.term . ' guifg=' . s:grey254.hex
 exec 'highlight MoonflyGrey249 ctermfg=' . s:grey249.term . ' guifg=' . s:grey249.hex
 exec 'highlight MoonflyGrey247 ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
 exec 'highlight MoonflyGrey246 ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex
@@ -804,7 +804,7 @@ exec 'highlight fzf1 ctermfg=' . s:crimson.term . ' ctermbg=' . s:grey236.term .
 exec 'highlight fzf2 ctermfg=' . s:blue.term . ' ctermbg=' . s:grey236.term . ' guifg=' . s:blue.hex . ' guibg=' . s:grey236.hex
 exec 'highlight fzf3 ctermfg=' . s:emerald.term . ' ctermbg=' . s:grey236.term . ' guifg=' . s:emerald.hex . ' guibg=' . s:grey236.hex
 exec 'highlight fzfNormal ctermfg=' . s:grey249.term . ' guifg=' . s:grey249.hex
-exec 'highlight fzfFgPlus ctermfg=' . s:grey253.term . ' guifg=' . s:grey253.hex
+exec 'highlight fzfFgPlus ctermfg=' . s:grey254.term . ' guifg=' . s:grey254.hex
 exec 'highlight fzfBorder ctermfg=' . s:grey236.term . ' guifg=' . s:grey236.hex
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
@@ -916,7 +916,7 @@ if has('nvim')
     highlight! link TelescopeResultsDiffChange MoonflyRed
     highlight! link TelescopeResultsSpecialComment MoonflyGrey241
     highlight! link TelescopeSelectionCaret MoonflyCrimson
-    exec 'highlight TelescopeSelection ctermbg=' . s:grey0.term . ' ctermfg=' . s:grey253.term . ' guibg=' . s:grey0.hex . ' guifg=' . s:grey253.hex
+    exec 'highlight TelescopeSelection ctermbg=' . s:grey0.term . ' ctermfg=' . s:grey254.term . ' guibg=' . s:grey0.hex . ' guifg=' . s:grey254.hex
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert
@@ -948,7 +948,7 @@ if has('nvim')
     " nvim-cmp plugin
     highlight! link CmpItemKind MoonflyTurquoise
     highlight! link CmpItemMenu MoonflyGrey247
-    highlight! link CmpItemAbbrMatchFuzzy MoonflyGrey253
+    highlight! link CmpItemAbbrMatchFuzzy MoonflyGrey254
 endif
 
 set background=dark

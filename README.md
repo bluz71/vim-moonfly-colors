@@ -355,7 +355,7 @@ For other terminals please configure appropriately with the following colors:
 | Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://via.placeholder.com/32/74b2ff?text=+) |
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://via.placeholder.com/32/ae81ff?text=+) |
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://via.placeholder.com/32/85dc85?text=+) |
-| Color 16       | White (bright)  | `#dadada` | ![background](https://via.placeholder.com/32/dadada?text=+) |
+| Color 16       | White (bright)  | `#e4e4e4` | ![background](https://via.placeholder.com/32/e4e4e4?text=+) |
 
 :tv: Legacy 256 Color Terminals
 -------------------------------
