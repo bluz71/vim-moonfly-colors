@@ -70,6 +70,8 @@ let s:cranberry = {"hex": '#e2637f', "term": 15}
 let s:violet    = {"hex": '#d183e8', "term": 5 }
 let s:crimson   = {"hex": '#ff5189', "term": 9 }
 let s:red       = {"hex": '#ff5454', "term": 1 }
+" Extra colors
+let s:spring    = {"hex": '#00875f', "term": 29}
 
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:moonflyTerminalColors
@@ -235,10 +237,10 @@ exec 'highlight WarningMsg ctermbg=bg ctermfg=' . s:orange.term . ' guibg=bg gui
 
 " Auto-text-completion menu
 exec 'highlight Pmenu ctermbg=' . s:grey235.term . ' ctermfg=fg guibg=' . s:grey235.hex . ' guifg=fg'
-exec 'highlight PmenuSel ctermbg=' . s:wheat.term . ' ctermfg=' . s:grey236.term . ' guibg=' . s:wheat.hex . ' guifg=' . s:grey236.hex
+exec 'highlight PmenuSel ctermbg=' . s:spring.term . ' ctermfg=fg guibg=' . s:spring.hex . ' guifg=fg'
 exec 'highlight PmenuSbar ctermbg=' . s:grey235.term . ' guibg=' . s:grey235.hex
 exec 'highlight PmenuThumb ctermbg=' . s:grey244.term . ' guibg=' . s:grey244.hex
-exec 'highlight WildMenu ctermbg=' . s:wheat.term . ' ctermfg=' . s:grey236.term . ' guibg=' . s:wheat.hex . ' guifg=' . s:grey236.hex
+exec 'highlight WildMenu ctermbg=' . s:spring.term . ' ctermfg=fg guibg=' . s:spring.hex . ' guifg=fg'
 
 " Spelling errors
 if g:moonflyUndercurls
