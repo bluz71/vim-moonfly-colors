@@ -244,15 +244,15 @@ exec 'highlight WildMenu ctermbg=' . s:spring.term . ' ctermfg=fg guibg=' . s:sp
 
 " Spelling errors
 if g:moonflyUndercurls
-    exec 'highlight SpellBad ctermfg=' . s:red.term . ' cterm=underline gui=undercurl guisp=' . s:red.hex
-    exec 'highlight SpellCap ctermfg=' . s:blue.term . ' cterm=underline gui=undercurl guisp=' . s:blue.hex
-    exec 'highlight SpellRare ctermfg=' . s:yellow.term . ' cterm=underline gui=undercurl guisp=' . s:yellow.hex
-    exec 'highlight SpellLocal ctermfg=' . s:sky.term . ' cterm=underline gui=undercurl guisp=' . s:sky.hex
+    exec 'highlight SpellBad ctermbg=NONE ctermfg=' . s:red.term . ' cterm=underline guibg=NONE gui=undercurl guisp=' . s:red.hex
+    exec 'highlight SpellCap ctermbg=NONE ctermfg=' . s:blue.term . ' cterm=underline guibg=NONE gui=undercurl guisp=' . s:blue.hex
+    exec 'highlight SpellRare ctermbg=NONE ctermfg=' . s:yellow.term . ' cterm=underline guibg=NONE gui=undercurl guisp=' . s:yellow.hex
+    exec 'highlight SpellLocal ctermbg=NONE ctermfg=' . s:sky.term . ' cterm=underline guibg=NONE gui=undercurl guisp=' . s:sky.hex
 else
-    exec 'highlight SpellBad ctermfg=' . s:red.term . ' cterm=underline guifg=' . s:red.hex . ' gui=underline guisp=' . s:red.hex
-    exec 'highlight SpellCap ctermfg=' . s:blue.term . ' cterm=underline guifg=' . s:blue.hex . ' gui=underline guisp=' . s:blue.hex
-    exec 'highlight SpellRare ctermfg=' . s:yellow.term . ' cterm=underline guifg=' . s:yellow.hex . ' gui=underline guisp=' . s:yellow.hex
-    exec 'highlight SpellLocal ctermfg=' . s:sky.term . ' cterm=underline guifg=' . s:sky.hex . ' gui=underline guisp=' . s:sky.hex
+    exec 'highlight SpellBad ctermbg=NONE ctermfg=' . s:red.term . ' cterm=underline guibg=NONE guifg=' . s:red.hex . ' gui=underline guisp=' . s:red.hex
+    exec 'highlight SpellCap ctermbg=NONE ctermfg=' . s:blue.term . ' cterm=underline guibg=NONE guifg=' . s:blue.hex . ' gui=underline guisp=' . s:blue.hex
+    exec 'highlight SpellRare ctermbg=NONE ctermfg=' . s:yellow.term . ' cterm=underline guibg=NONE guifg=' . s:yellow.hex . ' gui=underline guisp=' . s:yellow.hex
+    exec 'highlight SpellLocal ctermbg=NONE ctermfg=' . s:sky.term . ' cterm=underline guibg=NONE guifg=' . s:sky.hex . ' gui=underline guisp=' . s:sky.hex
 endif
 
 " Misc
@@ -773,13 +773,13 @@ exec 'highlight DiffText ctermbg=' . s:blue.term . ' ctermfg=' . s:black.term . 
 
 " ALE plugin
 if g:moonflyUndercurls
-     exec 'highlight ALEError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
-     exec 'highlight ALEWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
-     exec 'highlight ALEInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
+     exec 'highlight ALEError ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:red.hex
+     exec 'highlight ALEWarning ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:yellow.hex
+     exec 'highlight ALEInfo ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:sky.hex
 else
-    exec 'highlight ALEError ctermbg=bg guibg=bg'
-    exec 'highlight ALEWarning ctermbg=bg guibg=bg'
-    exec 'highlight ALEInfo ctermbg=bg guibg=bg'
+    exec 'highlight ALEError ctermbg=NONE guibg=NONE'
+    exec 'highlight ALEWarning ctermbg=NONE guibg=NONE'
+    exec 'highlight ALEInfo ctermbg=NONE guibg=NONE'
 endif
 highlight! link ALEVirtualTextError MoonflyGrey241
 highlight! link ALEErrorSign MoonflyRedAlert
@@ -833,15 +833,15 @@ if has('nvim-0.6')
     highlight! link DiagnosticInfo MoonflySky
     highlight! link DiagnosticHint MoonflyWhite
     if g:moonflyUndercurls
-        exec 'highlight DiagnosticUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
-        exec 'highlight DiagnosticUnderlineWarn ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
-        exec 'highlight DiagnosticUnderlineInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
-        exec 'highlight DiagnosticUnderlineHint ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white.hex
+        exec 'highlight DiagnosticUnderlineError ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:red.hex
+        exec 'highlight DiagnosticUnderlineWarn ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:yellow.hex
+        exec 'highlight DiagnosticUnderlineInfo ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:sky.hex
+        exec 'highlight DiagnosticUnderlineHint ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:white.hex
     else
-        exec 'highlight DiagnosticUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red.hex
-        exec 'highlight DiagnosticUnderlineWarn ctermbg=bg guibg=bg gui=underline guisp=' . s:blue.hex
-        exec 'highlight DiagnosticUnderlineInfo ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow.hex
-        exec 'highlight DiagnosticUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:sky.hex
+        exec 'highlight DiagnosticUnderlineError ctermbg=NONE guibg=NONE gui=underline guisp=' . s:red.hex
+        exec 'highlight DiagnosticUnderlineWarn ctermbg=NONE guibg=NONE gui=underline guisp=' . s:blue.hex
+        exec 'highlight DiagnosticUnderlineInfo ctermbg=NONE guibg=NONE gui=underline guisp=' . s:yellow.hex
+        exec 'highlight DiagnosticUnderlineHint ctermbg=NONE guibg=NONE gui=underline guisp=' . s:sky.hex
     endif
     highlight! link DiagnosticVirtualTextError MoonflyGrey241
     highlight! link DiagnosticVirtualTextWarn MoonflyGrey241
@@ -859,15 +859,15 @@ if has('nvim-0.6')
 elseif has('nvim-0.5')
     " Neovim 0.5 LSP diagnostics
     if g:moonflyUndercurls
-        exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red.hex
-        exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow.hex
-        exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky.hex
-        exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white.hex
+        exec 'highlight LspDiagnosticsUnderlineError ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:red.hex
+        exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:yellow.hex
+        exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:sky.hex
+        exec 'highlight LspDiagnosticsUnderlineHint ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:white.hex
     else
-        exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red.hex
-        exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=underline guisp=' . s:blue.hex
-        exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow.hex
-        exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:sky.hex
+        exec 'highlight LspDiagnosticsUnderlineError ctermbg=NONE guibg=NONE gui=underline guisp=' . s:red.hex
+        exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=NONE guibg=NONE gui=underline guisp=' . s:blue.hex
+        exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=NONE guibg=NONE gui=underline guisp=' . s:yellow.hex
+        exec 'highlight LspDiagnosticsUnderlineHint ctermbg=NONE guibg=NONE gui=underline guisp=' . s:sky.hex
     endif
     highlight! link LspDiagnosticsVirtualTextWarning MoonflyGrey241
     highlight! link LspDiagnosticsVirtualTextError MoonflyGrey241
