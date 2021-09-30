@@ -175,7 +175,7 @@ highlight! link StorageClass MoonflyCoral
 exec 'highlight Type ctermfg=' . s:emerald.term . ' guifg=' . s:emerald.hex . ' gui=none'
 
 " Numbers
-highlight! link Constant MoonflyPurple
+highlight! link Constant MoonflyOrange
 
 " Character constants
 highlight! link Character MoonflyPurple
@@ -378,8 +378,7 @@ highlight! link crystalModule MoonflyBlue
 highlight! link crystalPseudoVariable MoonflyGreen
 highlight! link crystalSharpBang MoonflyGrey247
 highlight! link crystalStringDelimiter MoonflyWheat
-highlight! link sassId MoonflySky
-highlight! link sassIdChar MoonflyViolet
+highlight! link crystalSymbol MoonflyPurple
 
 " CSS/SCSS
 highlight! link cssAtRule MoonflyViolet
@@ -406,6 +405,7 @@ highlight! link dartTypedef MoonflyViolet
 
 " Elixir
 highlight! link eelixirDelimiter MoonflyCrimson
+highlight! link elixirAtom MoonflyPurple
 highlight! link elixirBlockDefinition MoonflyViolet
 highlight! link elixirDefine MoonflyViolet
 highlight! link elixirDocTest MoonflyGrey247
@@ -570,6 +570,7 @@ highlight! link rubyResponse MoonflySky
 highlight! link rubyRoute MoonflySky
 highlight! link rubySharpBang MoonflyGrey247
 highlight! link rubyStringDelimiter MoonflyWheat
+highlight! link rubySymbol MoonflyPurple
 
 " Rust
 highlight! link rustAssert MoonflyGreen
