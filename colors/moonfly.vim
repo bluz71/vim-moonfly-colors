@@ -950,7 +950,7 @@ if has('nvim')
     highlight! link CmpItemAbbrMatch MoonflyGrey254
     highlight! link CmpItemAbbrMatchFuzzy MoonflyCoral
     highlight! link CmpItemKind MoonflyBlue
-    highlight! link CmpItemMenu MoonflyWhite
+    highlight! link CmpItemMenu MoonflyGrey247
 endif
 
 set background=dark
