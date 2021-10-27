@@ -917,6 +917,7 @@ if has('nvim')
     highlight! link TelescopeResultsDiffChange MoonflyRed
     highlight! link TelescopeResultsSpecialComment MoonflyGrey241
     highlight! link TelescopeSelectionCaret MoonflyCrimson
+    highlight! link TelescopeTitle MoonflyGrey241
     exec 'highlight TelescopeSelection ctermbg=' . s:grey0.term . ' ctermfg=' . s:grey254.term . ' guibg=' . s:grey0.hex . ' guifg=' . s:grey254.hex
 
     " gitsigns.nvim plugin
