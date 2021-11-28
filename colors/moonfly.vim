@@ -288,7 +288,7 @@ highlight! link qfFileName MoonflyEmerald
 exec 'highlight ColorColumn ctermbg=' . s:grey233.term . ' guibg=' . s:grey233.hex
 
 " Conceal color, as used by indentLine plugin
-exec 'highlight Conceal ctermbg=NONE ctermfg=' . s:grey235.term . ' guibg=NONE guifg=' . s:grey235.hex
+exec 'highlight Conceal ctermbg=NONE ctermfg=' . s:grey249.term . ' guibg=NONE guifg=' . s:grey249.hex
 
 " Neovim only highlight groups
 if has('nvim')
@@ -823,8 +823,11 @@ let g:fzf_colors = {
   \  'header':  ['fg', 'CursorLineNr']
   \}
 
-" Coc plugin
-highlight! link CocUnusedHighlight MoonflyWhite
+" indentLine plugin
+if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui') && !exists('g:indentLine_color_term')
+    let g:indentLine_color_term = s:grey235.term
+    let g:indentLine_color_gui = s:grey235.hex
+endif
 
 " Neovim diagnostics
 if has('nvim-0.6')

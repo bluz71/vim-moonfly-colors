@@ -38,6 +38,7 @@ Styled Features & Plugins
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [Hop](https://github.com/phaazon/hop.nvim)
+- [indentLine](https://github.com/Yggdroot/indentLine)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
