@@ -287,7 +287,7 @@ highlight! link qfFileName MoonflyEmerald
 " Color column (after line 80)
 exec 'highlight ColorColumn ctermbg=' . s:grey233.term . ' guibg=' . s:grey233.hex
 
-" Conceal color, as used by indentLine plugin
+" Conceal color
 exec 'highlight Conceal ctermbg=NONE ctermfg=' . s:grey249.term . ' guibg=NONE guifg=' . s:grey249.hex
 
 " Neovim only highlight groups
