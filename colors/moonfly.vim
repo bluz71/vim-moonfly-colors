@@ -956,7 +956,30 @@ if has('nvim')
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch MoonflyGrey254
     highlight! link CmpItemAbbrMatchFuzzy MoonflyCoral
-    highlight! link CmpItemKind MoonflyBlue
+    highlight! link CmpItemKindDefault MoonflyWhite
+    highlight! link CmpItemKindClass MoonflyEmerald
+    highlight! link CmpItemKindColor MoonflyTurquoise
+    highlight! link CmpItemKindConstant MoonflyPurple
+    highlight! link CmpItemKindConstructor MoonflySky
+    highlight! link CmpItemKindEnum MoonflyViolet
+    highlight! link CmpItemKindEnumMember MoonflyTurquoise
+    highlight! link CmpItemKindEvent MoonflyViolet
+    highlight! link CmpItemKindField MoonflyTurquoise
+    highlight! link CmpItemKindFile MoonflyBlue
+    highlight! link CmpItemKindFolder MoonflyBlue
+    highlight! link CmpItemKindFunction MoonflySky
+    highlight! link CmpItemKindInterface MoonflyEmerald
+    highlight! link CmpItemKindKeyword MoonflyViolet
+    highlight! link CmpItemKindMethod MoonflySky
+    highlight! link CmpItemKindModule MoonflyEmerald
+    highlight! link CmpItemKindOperator MoonflyViolet
+    highlight! link CmpItemKindProperty MoonflyTurquoise
+    highlight! link CmpItemKindReference MoonflyTurquoise
+    highlight! link CmpItemKindStruct MoonflyEmerald
+    highlight! link CmpItemKindTypeParameter MoonflyEmerald
+    highlight! link CmpItemKindUnit MoonflyTurquoise
+    highlight! link CmpItemKindValue MoonflyTurquoise
+    highlight! link CmpItemKindVariable MoonflyTurquoise
     highlight! link CmpItemMenu MoonflyGrey247
 endif
 
