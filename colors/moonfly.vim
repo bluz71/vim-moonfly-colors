@@ -55,7 +55,7 @@ let s:grey235   = {"hex": '#262626', "term": 235}
 let s:grey234   = {"hex": '#1c1c1c', "term": 234}
 let s:grey233   = {"hex": '#121212', "term": 233}
 " Core theme colors
-let s:wheat     = {"hex": '#bfbf97', "term": 11}
+let s:khaki     = {"hex": '#c2c292', "term": 11}
 let s:yellow    = {"hex": '#e3c78a', "term": 3 }
 let s:orange    = {"hex": '#de935f', "term": 7 }
 let s:coral     = {"hex": '#f09479', "term": 8 }
@@ -87,7 +87,7 @@ if g:moonflyTerminalColors
         let g:terminal_color_8  = s:grey246.hex
         let g:terminal_color_9  = s:crimson.hex
         let g:terminal_color_10 = s:emerald.hex
-        let g:terminal_color_11 = s:wheat.hex
+        let g:terminal_color_11 = s:khaki.hex
         let g:terminal_color_12 = s:sky.hex
         let g:terminal_color_13 = s:purple.hex
         let g:terminal_color_14 = s:lime.hex
@@ -96,7 +96,7 @@ if g:moonflyTerminalColors
         let g:terminal_ansi_colors = [
                     \ s:grey0.hex, s:red.hex, s:green.hex, s:yellow.hex,
                     \ s:blue.hex, s:violet.hex, s:turquoise.hex, s:white.hex,
-                    \ s:grey246.hex, s:crimson.hex, s:emerald.hex, s:wheat.hex,
+                    \ s:grey246.hex, s:crimson.hex, s:emerald.hex, s:khaki.hex,
                     \ s:sky.hex, s:purple.hex, s:lime.hex, s:grey254.hex
                     \]
     endif
@@ -120,7 +120,7 @@ exec 'highlight MoonflyGrey247 ctermfg=' . s:grey247.term . ' guifg=' . s:grey24
 exec 'highlight MoonflyGrey246 ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex
 exec 'highlight MoonflyGrey241 ctermfg=' . s:grey241.term . ' guifg=' . s:grey241.hex
 exec 'highlight MoonflyGrey236 ctermfg=' . s:grey236.term . ' guifg=' . s:grey236.hex
-exec 'highlight MoonflyWheat ctermfg=' . s:wheat.term . ' guifg=' . s:wheat.hex
+exec 'highlight MoonflyKhaki ctermfg=' . s:khaki.term . ' guifg=' . s:khaki.hex
 exec 'highlight MoonflyYellow ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex
 exec 'highlight MoonflyOrange ctermfg=' . s:orange.term . ' guifg=' . s:orange.hex
 exec 'highlight MoonflyCoral ctermfg=' . s:coral.term . ' guifg=' . s:coral.hex
@@ -157,7 +157,7 @@ endif
 highlight! link Function MoonflySky
 
 " Strings
-highlight! link String MoonflyWheat
+highlight! link String MoonflyKhaki
 
 " Booleans
 highlight! link Boolean MoonflyCoral
@@ -377,7 +377,7 @@ highlight! link crystalInstanceVariable MoonflyLime
 highlight! link crystalModule MoonflyBlue
 highlight! link crystalPseudoVariable MoonflyGreen
 highlight! link crystalSharpBang MoonflyGrey247
-highlight! link crystalStringDelimiter MoonflyWheat
+highlight! link crystalStringDelimiter MoonflyKhaki
 highlight! link crystalSymbol MoonflyPurple
 
 " CSS/SCSS
@@ -390,7 +390,7 @@ highlight! link cssColor MoonflyTurquoise
 highlight! link cssIdentifier MoonflySky
 highlight! link cssProp MoonflyTurquoise
 highlight! link cssTagName MoonflyBlue
-highlight! link cssUnitDecorators MoonflyWheat
+highlight! link cssUnitDecorators MoonflyKhaki
 highlight! link cssValueLength MoonflyPurple
 highlight! link cssValueNumber MoonflyPurple
 highlight! link sassId MoonflyBlue
@@ -415,7 +415,7 @@ highlight! link elixirKernelFunction MoonflyGreen
 highlight! link elixirKeyword MoonflyOrange
 highlight! link elixirModuleDefine MoonflyBlue
 highlight! link elixirPrivateDefine MoonflyViolet
-highlight! link elixirStringDelimiter MoonflyWheat
+highlight! link elixirStringDelimiter MoonflyKhaki
 highlight! link elixirVariable MoonflyTurquoise
 
 " Elm
@@ -516,8 +516,8 @@ highlight! link luaSpecialTable MoonflySky
 
 " Markdown, 'tpope/vim-markdown' plugin
 highlight! link markdownBold MoonflyYellow
-highlight! link markdownCode MoonflyWheat
-highlight! link markdownCodeDelimiter MoonflyWheat
+highlight! link markdownCode MoonflyKhaki
+highlight! link markdownCodeDelimiter MoonflyKhaki
 highlight! link markdownError NormalNC
 highlight! link markdownH1 MoonflyOrange
 highlight! link markdownHeadingRule MoonflyBlue
@@ -569,7 +569,7 @@ highlight! link rubyPseudoVariable MoonflyGreen
 highlight! link rubyResponse MoonflySky
 highlight! link rubyRoute MoonflySky
 highlight! link rubySharpBang MoonflyGrey247
-highlight! link rubyStringDelimiter MoonflyWheat
+highlight! link rubyStringDelimiter MoonflyKhaki
 highlight! link rubySymbol MoonflyPurple
 
 " Rust
@@ -711,7 +711,7 @@ highlight! link NERDTreeClosable MoonflyEmerald
 highlight! link NERDTreeCWD MoonflyPurple
 highlight! link NERDTreeDir MoonflySky
 highlight! link NERDTreeDirSlash MoonflyCranberry
-highlight! link NERDTreeExecFile MoonflyWheat
+highlight! link NERDTreeExecFile MoonflyKhaki
 highlight! link NERDTreeFile MoonflyWhite
 highlight! link NERDTreeHelp MoonflyGrey247
 highlight! link NERDTreeLinkDir MoonflyBlue
@@ -723,7 +723,7 @@ highlight! link NERDTreePartFile MoonflyGrey0
 highlight! link NERDTreeUp MoonflyBlue
 
 " NERDTree Git plugin
-highlight! link NERDTreeGitStatusDirDirty MoonflyWheat
+highlight! link NERDTreeGitStatusDirDirty MoonflyKhaki
 highlight! link NERDTreeGitStatusModified MoonflyCrimson
 highlight! link NERDTreeGitStatusRenamed MoonflySky
 highlight! link NERDTreeGitStatusStaged MoonflySky
@@ -753,7 +753,7 @@ highlight! link jsonKeyword MoonflySky
 highlight! link jsonQuote MoonflyWhite
 highlight! link netrwClassify MoonflyCranberry
 highlight! link netrwDir MoonflySky
-highlight! link netrwExe MoonflyWheat
+highlight! link netrwExe MoonflyKhaki
 highlight! link tagName MoonflyTurquoise
 highlight! link Cheat40Header MoonflyBlue
 highlight! link yamlBlockMappingKey MoonflySky
@@ -943,14 +943,14 @@ if has('nvim')
     " Barbar plugin
     exec 'highlight BufferCurrent      ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
     exec 'highlight BufferCurrentIndex ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
-    exec 'highlight BufferCurrentMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
+    exec 'highlight BufferCurrentMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:khaki.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:khaki.hex
     exec 'highlight BufferCurrentSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:blue.term . '    guibg=' . s:grey234.hex . ' guifg=' . s:blue.hex
     exec 'highlight BufferVisible      ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
     exec 'highlight BufferVisibleIndex ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight BufferVisibleMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:wheat.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:wheat.hex
+    exec 'highlight BufferVisibleMod   ctermbg=' . s:grey234.term . ' ctermfg=' . s:khaki.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:khaki.hex
     exec 'highlight BufferVisibleSign  ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
     exec 'highlight BufferInactive     ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight BufferInactiveMod  ctermbg=' . s:grey236.term . ' ctermfg=' . s:wheat.term . '   guibg=' . s:grey236.hex . ' guifg=' . s:wheat.hex
+    exec 'highlight BufferInactiveMod  ctermbg=' . s:grey236.term . ' ctermfg=' . s:khaki.term . '   guibg=' . s:grey236.hex . ' guifg=' . s:khaki.hex
     exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
 
     " nvim-cmp plugin

@@ -352,7 +352,7 @@ For other terminals please configure appropriately with the following colors:
 | Color 9        | Black (bright)  | `#949494` | ![background](https://via.placeholder.com/32/949494?text=+) |
 | Color 10       | Red (bright)    | `#ff5189` | ![background](https://via.placeholder.com/32/ff5189?text=+) |
 | Color 11       | Green (bright)  | `#36c692` | ![background](https://via.placeholder.com/32/36c692?text=+) |
-| Color 12       | Yellow (bright) | `#bfbf97` | ![background](https://via.placeholder.com/32/bfbf97?text=+) |
+| Color 12       | Yellow (bright) | `#c2c292` | ![background](https://via.placeholder.com/32/c2c292?text=+) |
 | Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://via.placeholder.com/32/74b2ff?text=+) |
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://via.placeholder.com/32/ae81ff?text=+) |
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://via.placeholder.com/32/85dc85?text=+) |
@@ -395,7 +395,7 @@ Color 8 (White):          #de935f
 Color 9 (Bright Black):   #f09479
 Color 10 (Bright Red):    #ff5189
 Color 11 (Bright Green):  #36c692
-Color 12 (Bright Yellow): #bfbf97
+Color 12 (Bright Yellow): #c2c292
 Color 13 (Bright Blue):   #74b2ff
 Color 14 (Bright Purple): #ae81ff
 Color 15 (Bright Cyan):   #85dc85
