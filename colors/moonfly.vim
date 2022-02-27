@@ -324,6 +324,7 @@ if has('nvim')
     highlight! link cssTSType MoonflyBlue
     highlight! link scssTSPunctDelimiter MoonflyCranberry
     highlight! link scssTSType MoonflyBlue
+    highlight! link scssTSVariable MoonflyTurquoise
     highlight! link yamlTSField MoonflySky
     highlight! link yamlTSPunctDelimiter MoonflyCranberry
 endif
