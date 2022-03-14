@@ -956,7 +956,7 @@ if has('nvim')
     exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
 
     " nvim-cmp plugin
-    highlight! link CmpItemAbbrMatch MoonflyGrey254
+    highlight! link CmpItemAbbrMatch MoonflyYellow
     highlight! link CmpItemAbbrMatchFuzzy MoonflyCoral
     highlight! link CmpItemKindDefault MoonflyWhite
     highlight! link CmpItemKindClass MoonflyEmerald
