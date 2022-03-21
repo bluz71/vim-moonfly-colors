@@ -252,19 +252,39 @@ vim.g.moonflyUnderlineMatchParen = 1
 
 ---
 
-The `moonflyVertSplits` option specifies whether to show vertical split
-columns. By default vertical split columns will be visible. If you would like
-vertical split columns to not be visible then add the following to your
+The `moonflyWinSeparator` option specifies the style of window separators:
+
+- `0` will display no window separators
+
+- `1` will display block separators; this is the default
+
+- `2` will diplay line separators
+
+For example, if line separators are desired then add the following to your
 configuration:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyVertSplits = 0
+let g:moonflyWinSeparator = 2
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyVertSplits = 0
+vim.g.moonflyWinSeparator = 2
+```
+
+:gift: If using Neovim 0.7 (or later), the following configuration will improve
+the look of line separators (if option `2` has been chosen) by selecting thicker
+characters for the separators:
+
+```viml
+" Vimscript initialization file
+set fillchars=horiz:━,horizup:┻,horizdown:┳,vert:┃,vertleft:┨,vertright:┣,verthoriz:╋
+```
+
+```lua
+-- Lua initialization file
+vim.opt.fillchars = { horiz = '━', horizup = '┻', horizdown = '┳', vert = '┃', vertleft = '┫', vertright = '┣', verthoriz = '╋', }
 ```
 
 True Color Terminals

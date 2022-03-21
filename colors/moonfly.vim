@@ -36,7 +36,7 @@ let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', 1)
 let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', 0)
 
 " By default do display vertical split columns.
-let g:moonflyVertSplits = get(g:, 'moonflyVertSplits', 1)
+let g:moonflyWinSeparator = get(g:, 'moonflyWinSeparator', 1)
 
 " Background and foreground
 let s:black     = {"hex": '#080808', "term": 232}
@@ -219,10 +219,12 @@ exec 'highlight TablineSel ctermbg=' . s:grey236.term . ' ctermfg=' . s:blue.ter
 exec 'highlight TablineFill ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey236.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey236.hex . ' gui=none'
 exec 'highlight StatusLineTerm ctermbg=' . s:grey236.term . ' ctermfg=' . s:white.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:white.hex . ' gui=none'
 exec 'highlight StatusLineTermNC ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex . ' gui=none'
-if g:moonflyVertSplits
+if g:moonflyWinSeparator == 0
+    exec 'highlight VertSplit ctermbg=' . s:black.term . ' ctermfg=' . s:black.term . ' cterm=none guibg=' . s:black.hex . ' guifg=' . s:black.hex . ' gui=none'
+elseif g:moonflyWinSeparator == 1
     exec 'highlight VertSplit ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey236.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey236.hex . ' gui=none'
 else
-    exec 'highlight VertSplit ctermbg=' . s:black.term . ' ctermfg=' . s:black.term . ' cterm=none guibg=' . s:black.hex . ' guifg=' . s:black.hex . ' gui=none'
+    exec 'highlight VertSplit ctermbg=NONE ctermfg=' . s:grey236.term . ' cterm=none guibg=NONE guifg=' . s:grey236.hex . ' gui=none'
 end
 
 " Visual selection
@@ -300,6 +302,7 @@ if has('nvim')
         exec 'highlight NormalFloat ctermbg=' . s:grey234.term . ' ctermfg=fg guibg=' . s:grey234.hex . ' guifg=fg'
     endif
     exec 'highlight FloatBorder ctermbg=bg ctermfg=' . s:grey236.term . ' guibg=bg guifg=' . s:grey236.hex
+    highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
     highlight! link TSAnnotation MoonflyViolet
