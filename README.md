@@ -10,7 +10,6 @@ _moonfly_ is a dark colorscheme for Vim & Neovim inspired by:
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
 interest.
 
-
 Screenshots
 -----------
 
@@ -423,12 +422,12 @@ Color 15 (Bright Cyan):   #85dc85
 Color 16 (Bright White):  #e2637f
 ```
 
-License
--------
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 Sponsor
 -------
 
 [![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/bluz71)
+
+License
+-------
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
