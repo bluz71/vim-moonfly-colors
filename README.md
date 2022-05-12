@@ -169,17 +169,17 @@ Neovim's LSP client, for example:
 ```lua
   vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(
     vim.lsp.handlers.hover, {
-      border = 'single'
+      border = "single"
     }
   )
   vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
     vim.lsp.handlers.signatureHelp, {
-      border = 'single'
+      border = "single"
     }
   )
-  local opts = {noremap = true, silent = true}
-  vim.api.nvim_buf_set_keymap(0, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
-  vim.api.nvim_buf_set_keymap(0, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
+  vim.diagnostic.config({ float = { border = "single" } })
+  vim.keymap.set("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>")
+  vim.keymap.set("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
 ```
 
 ---
