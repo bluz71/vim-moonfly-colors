@@ -302,6 +302,8 @@ if has('nvim')
         exec 'highlight NormalFloat ctermbg=' . s:grey234.term . ' ctermfg=fg guibg=' . s:grey234.hex . ' guifg=fg'
     endif
     exec 'highlight FloatBorder ctermbg=bg ctermfg=' . s:grey236.term . ' guibg=bg guifg=' . s:grey236.hex
+    exec 'highlight WinBar ctermbg=' . s:grey235.term . '  ctermfg=' . s:white.term . ' cterm=none guibg=' . s:grey235.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight WinBarNC ctermbg=' . s:grey235.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey235.hex . ' guifg=' . s:grey247.hex . ' gui=none'
     highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
