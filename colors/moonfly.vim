@@ -829,6 +829,14 @@ let g:fzf_colors = {
   \  'header':  ['fg', 'CursorLineNr']
   \}
 
+" mistfly-statusline plugin
+exec 'highlight MistflyNormal ctermbg=' . s:blue.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:blue.hex . ' guifg=' . s:grey234.hex
+exec 'highlight MistflyInsert ctermbg=' . s:white.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:white.hex . ' guifg=' . s:grey234.hex
+exec 'highlight MistflyVisual ctermbg=' . s:purple.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:purple.hex . ' guifg=' . s:grey234.hex
+exec 'highlight MistflyReplace ctermbg=' . s:crimson.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:crimson.hex . ' guifg=' . s:grey234.hex
+exec 'highlight MistflyEmphasis ctermbg=' . s:grey236.term . ' ctermfg=' . s:blue.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:blue.hex
+exec 'highlight MistflyNotification ctermbg=' . s:grey236.term . ' ctermfg=' . s:crimson.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:crimson.hex
+
 " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
 highlight! link CocUnusedHighlight MoonflyGrey249
 
