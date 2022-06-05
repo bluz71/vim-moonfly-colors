@@ -106,8 +106,8 @@ require('lualine').setup({options = {theme = 'moonfly'}})
 ```
 
 - Lastly, my own
-  [vim-mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) is
-  available for those that just want a very simple yet informative statusline.
+  [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) is
+  available for those that want a simple yet informative statusline.
 
 :wrench: Options
 ----------------
