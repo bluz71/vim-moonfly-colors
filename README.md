@@ -1,27 +1,13 @@
 ![moonfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/moonfly.png)
 ==========
 
-_moonfly_ is a dark colorscheme for Vim & Neovim inspired by:
+_moonfly_ is a dark colorscheme for Vim & Neovim.
 
-- [Monokai](https://monokai.pro)
-- [One Dark](https://github.com/atom/atom/tree/master/packages/one-dark-syntax)
+![screenshot](https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/moonfly-screenshot.png)
 
 :point_right: I maintain another dark Vim theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
 interest.
-
-Screenshots
------------
-
-### Ruby
-
-<img width="800" alt="ruby" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/ruby_moonfly.png">
-
-### JavaScript
-
-<img width="800" alt="javascript" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/moonfly/javascript_moonfly.png">
-
-The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 
 Styled Features & Plugins
 -------------------------
