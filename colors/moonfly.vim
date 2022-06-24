@@ -748,6 +748,15 @@ highlight! link FernGitStatusBracket MoonflyGrey246
 highlight! link FernGitStatusIndex MoonflyEmerald
 highlight! link FernGitStatusWorktree MoonflyCrimson
 
+" Glyph palette
+highlight! link GlyphPalette1 MoonflyCranberry
+highlight! link GlyphPalette2 MoonflyEmerald
+highlight! link GlyphPalette3 MoonflyYellow
+highlight! link GlyphPalette4 MoonflyBlue
+highlight! link GlyphPalette6 MoonflyTurquoise
+highlight! link GlyphPalette7 MoonflyWhite
+highlight! link GlyphPalette9 MoonflyCrimson
+
 " Misc stylings
 highlight! link bufExplorerHelp MoonflyGrey247
 highlight! link bufExplorerSortBy MoonflyGrey247
