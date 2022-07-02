@@ -15,29 +15,34 @@ Screenshot
 Styled Features & Plugins
 -------------------------
 
-- [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [Neovim Diagnostic](https://neovim.io/doc/user/diagnostic.html)
+Vim & Neovim compatible:
+
 - [ALE](https://github.com/dense-analysis/ale)
-- [Barbar](https://github.com/romgrk/barbar.nvim)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 - [clever-f](https://github.com/rhysd/clever-f.vim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [Fern](https://github.com/lambdalisue/fern.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim) (with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
-- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
-- [Hop](https://github.com/phaazon/hop.nvim)
 - [indentLine](https://github.com/Yggdroot/indentLine)
-- [Indent BlankLine](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lightline](https://github.com/itchyny/lightline.vim)
-- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Signify](https://github.com/mhinz/vim-signify)
-- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
+
+Neovim-only:
+
+- [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [Neovim Diagnostic](https://neovim.io/doc/user/diagnostic.html)
+- [Barbar](https://github.com/romgrk/barbar.nvim)
+- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [Hop](https://github.com/phaazon/hop.nvim)
+- [Indent BlankLine](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 Installation
 ------------
