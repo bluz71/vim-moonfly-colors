@@ -119,6 +119,7 @@ exec 'highlight MoonflyGrey249 ctermfg=' . s:grey249.term . ' guifg=' . s:grey24
 exec 'highlight MoonflyGrey247 ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex
 exec 'highlight MoonflyGrey246 ctermfg=' . s:grey246.term . ' guifg=' . s:grey246.hex
 exec 'highlight MoonflyGrey241 ctermfg=' . s:grey241.term . ' guifg=' . s:grey241.hex
+exec 'highlight MoonflyGrey235 ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex
 exec 'highlight MoonflyGrey236 ctermfg=' . s:grey236.term . ' guifg=' . s:grey236.hex
 exec 'highlight MoonflyKhaki ctermfg=' . s:khaki.term . ' guifg=' . s:khaki.hex
 exec 'highlight MoonflyYellow ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex
@@ -929,6 +930,16 @@ if has('nvim')
     exec 'highlight NvimTreeImageFile ctermfg=' . s:violet.term . ' guifg=' . s:violet.hex . ' gui=none'
     exec 'highlight NvimTreeOpenedFile ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex . ' gui=none'
     exec 'highlight NvimTreeSymlink ctermfg=' . s:turquoise.term . ' guifg=' . s:turquoise.hex . ' gui=none'
+
+    " Neo-tree plugin
+    highlight! link NeoTreeDimText MoonflyGrey235
+    highlight! link NeoTreeDotfile MoonflyGrey236
+    highlight! link NeoTreeGitConflict MoonflyCrimson
+    highlight! link NeoTreeGitModified MoonflyViolet
+    highlight! link NeoTreeGitUntracked MoonflyGrey241
+    highlight! link NeoTreeMessage MoonflyGrey247
+    highlight! link NeoTreeModified MoonflyYellow
+    highlight! link NeoTreeRootName MoonflyPurple
 
     " Telescope plugin
     highlight! link TelescopeBorder MoonflyGrey236
