@@ -1027,6 +1027,58 @@ if has('nvim')
     exec 'highlight IndentBlanklineChar ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceChar ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceCharBlankline ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex . ' gui=nocombine'
+
+    " Mini
+    highlight! link MiniCompletionActiveParameter MoonflyVisual
+
+    highlight MiniCursorword gui=underline
+    highlight MiniCursorwordCurrent gui=underline
+
+    highlight! link MiniIndentscopeSymbol MoonflyWhite
+    highlight MiniIndentscopePrefix gui=nocombine
+
+    highlight! link MiniJump SpellRare
+
+    exec 'highlight MiniJump2dSpot ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex . ' gui=bold,nocombine'
+
+    highlight MiniStarterCurrent gui=nocombine
+    highlight! link MiniStarterFooter Title
+    highlight! link MiniStarterHeader Title
+    highlight! link MiniStarterInactive Comment
+    highlight! link MiniStarterItem Normal
+    highlight! link MiniStarterItemBullet Delimiter
+    highlight! link MiniStarterItemPrefix MoonflyYellow
+    highlight! link MiniStarterSection MoonflyCranberry
+    highlight! link MiniStarterQuery MoonflySky
+
+    exec 'highlight MiniStatuslineDevinfo     ctermbg=' . s:grey241.term   . ' ctermfg=' . s:white.term   . ' cterm=none guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight MiniStatuslineFileinfo    ctermbg=' . s:grey241.term   . ' ctermfg=' . s:white.term   . ' cterm=none guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight MiniStatuslineFilename    ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex . ' gui=none'
+    exec 'highlight MiniStatuslineInactive    ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex   . ' guifg=' . s:grey247.hex
+    exec 'highlight MiniStatuslineModeCommand ctermbg=' . s:yellow.term    . ' ctermfg=' . s:grey234.term . ' guibg=' . s:yellow.hex    . ' guifg=' . s:grey234.hex . ' gui=bold'
+    exec 'highlight MiniStatuslineModeInsert  ctermbg=' . s:white.term     . ' ctermfg=' . s:grey234.term . ' guibg=' . s:white.hex     . ' guifg=' . s:grey234.hex . ' gui=bold'
+    exec 'highlight MiniStatuslineModeNormal  ctermbg=' . s:blue.term      . ' ctermfg=' . s:grey234.term . ' guibg=' . s:blue.hex      . ' guifg=' . s:grey234.hex . ' gui=bold'
+    exec 'highlight MiniStatuslineModeOther   ctermbg=' . s:turquoise.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:turquoise.hex . ' guifg=' . s:grey234.hex . ' gui=bold'
+    exec 'highlight MiniStatuslineModeReplace ctermbg=' . s:crimson.term   . ' ctermfg=' . s:grey234.term . ' guibg=' . s:crimson.hex   . ' guifg=' . s:grey234.hex . ' gui=bold'
+    exec 'highlight MiniStatuslineModeVisual  ctermbg=' . s:purple.term    . ' ctermfg=' . s:grey234.term . ' guibg=' . s:purple.hex    . ' guifg=' . s:grey234.hex . ' gui=bold'
+
+    highlight! link MiniSurround IncSearch
+
+    exec 'highlight MiniTablineCurrent         ctermbg=' . s:grey234.term . ' ctermfg=' . s:white.term   . '   guibg=' . s:grey234.hex . ' guifg=' . s:white.hex
+
+    highlight! link MiniTablineFill TabLineFill
+    exec 'highlight MiniTablineHidden          ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg='   . s:grey236.hex . ' guifg=' . s:grey246.hex
+    exec 'highlight MiniTablineModifiedCurrent ctermbg=' . s:grey234.term . ' ctermfg=' . s:khaki.term   . '   guibg=' . s:grey234.hex . ' guifg=' . s:khaki.hex
+    exec 'highlight MiniTablineModifiedHidden  ctermbg=' . s:grey236.term . ' ctermfg=' . s:khaki.term   . '   guibg=' . s:grey236.hex . ' guifg=' . s:khaki.hex
+    exec 'highlight MiniTablineModifiedVisible ctermbg=' . s:grey234.term . ' ctermfg=' . s:khaki.term   . '   guibg=' . s:grey234.hex . ' guifg=' . s:khaki.hex
+    exec 'highlight MiniTablineTabpagesection ctermbg=' . s:black.term . ' ctermfg=' . s:coral.term . ' cterm=reverse,bold guibg=' . s:black.hex . ' guifg=' . s:coral.hex . ' gui=reverse,bold'
+    exec 'highlight MiniTablineVisible         ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg='   . s:grey234.hex . ' guifg=' . s:grey246.hex
+
+    exec 'highlight MiniTestEmphasis cterm=bold gui=bold'
+    exec 'highlight MiniTestFail ctermfg=' . s:red.term . ' cterm=bold guifg=' . s:red.hex  . ' gui=bold'
+    exec 'highlight MiniTestPass ctermfg=' . s:green.term . ' cterm=bold guifg=' . s:green.hex  . ' gui=bold'
+
+    exec 'highlight MiniTrailspace ctermbg=' . s:red.term . ' guibg=' . s:red.hex
 endif
 
 set background=dark
