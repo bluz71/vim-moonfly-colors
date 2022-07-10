@@ -1074,7 +1074,7 @@ if has('nvim')
     highlight! link MiniTestFail MoonflyRed
     highlight! link MiniTestPass MoonflyGreen
     highlight! link MiniTrailspace MoonflyCrimsonMode
-    exec 'highlight MiniJump2dSpot ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex . ' gui=nocombine'
+    exec 'highlight MiniJump2dSpot ctermfg=' . s:yellow.term . ' cterm=underline,nocombine guifg=' . s:yellow.hex . ' gui=underline,nocombine'
     exec 'highlight MiniStatuslineFilename ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
     exec 'highlight MiniStatuslineInactive ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex   . ' guifg=' . s:grey247.hex
     exec 'highlight MiniTablineHidden ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg='   . s:grey236.hex . ' guifg=' . s:grey246.hex
