@@ -1055,8 +1055,6 @@ if has('nvim')
     highlight! link MiniStarterItemPrefix MoonflyYellow
     highlight! link MiniStarterQuery MoonflySky
     highlight! link MiniStarterSection MoonflyCrimson
-    highlight! link MiniStatuslineDevinfo MoonflyVisual
-    highlight! link MiniStatuslineFileinfo MoonflyVisual
     highlight! link MiniStatuslineModeCommand MoonflyEmeraldMode
     highlight! link MiniStatuslineModeInsert MoonflyWhiteMode
     highlight! link MiniStatuslineModeNormal MoonflyBlueMode
@@ -1075,6 +1073,8 @@ if has('nvim')
     highlight! link MiniTestPass MoonflyGreen
     highlight! link MiniTrailspace MoonflyCrimsonMode
     exec 'highlight MiniJump2dSpot ctermfg=' . s:yellow.term . ' cterm=underline,nocombine guifg=' . s:yellow.hex . ' gui=underline,nocombine'
+    exec 'highlight MiniStatuslineDevinfo ctermbg=' . s:grey241.term   . ' ctermfg=' . s:white.term   . ' cterm=none guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight MiniStatuslineFileinfo ctermbg=' . s:grey241.term   . ' ctermfg=' . s:white.term   . ' cterm=none guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
     exec 'highlight MiniStatuslineFilename ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
     exec 'highlight MiniStatuslineInactive ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex   . ' guifg=' . s:grey247.hex
     exec 'highlight MiniTablineHidden ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg='   . s:grey236.hex . ' guifg=' . s:grey246.hex
