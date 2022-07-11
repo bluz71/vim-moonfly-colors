@@ -150,8 +150,8 @@ exec 'highlight MoonflyBlueMode ctermbg=' . s:blue.term . ' ctermfg=' . s:grey23
 exec 'highlight MoonflyWhiteMode ctermbg=' . s:white.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:white.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyPurpleMode ctermbg=' . s:purple.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:purple.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyCrimsonMode ctermbg=' . s:crimson.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:crimson.hex . ' guifg=' . s:grey234.hex
-exec 'highlight MoonflyEmeraldMode ctermbg=' . s:emerald.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:emerald.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyYellowMode ctermbg=' . s:yellow.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:yellow.hex . ' guifg=' . s:grey234.hex
+exec 'highlight MoonflyTurquoiseMode ctermbg=' . s:turquoise.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:turquoise.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyWhiteLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:white.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:grey254.hex
 exec 'highlight MoonflyYellowLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:yellow.hex
 exec 'highlight MoonflyYellowLine ctermbg=' . s:grey234.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:yellow.hex
@@ -857,6 +857,7 @@ let g:fzf_colors = {
 highlight! link MistflyNormal MoonflyBlueMode
 highlight! link MistflyInsert MoonflyWhiteMode
 highlight! link MistflyVisual MoonflyPurpleMode
+highlight! link MistflyCommand MoonflyYellowMode
 highlight! link MistflyReplace MoonflyCrimsonMode
 highlight! link MistflyEmphasis MoonflyBlueLine
 exec 'highlight MistflyDiscreet ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
@@ -1059,10 +1060,10 @@ if has('nvim')
     highlight! link MiniStarterItemPrefix MoonflyYellow
     highlight! link MiniStarterQuery MoonflySky
     highlight! link MiniStarterSection MoonflyCrimson
-    highlight! link MiniStatuslineModeCommand MoonflyEmeraldMode
+    highlight! link MiniStatuslineModeCommand MoonflyYellowMode
     highlight! link MiniStatuslineModeInsert MoonflyWhiteMode
     highlight! link MiniStatuslineModeNormal MoonflyBlueMode
-    highlight! link MiniStatuslineModeOther MoonflyYellowMode
+    highlight! link MiniStatuslineModeOther MoonflyTurquoiseMode
     highlight! link MiniStatuslineModeReplace MoonflyCrimsonMode
     highlight! link MiniStatuslineModeVisual MoonflyPurpleMode
     highlight! link MiniSurround IncSearch
