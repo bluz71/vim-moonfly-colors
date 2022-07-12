@@ -5,37 +5,49 @@
 
 -- LuaFormatter off
 local colors = {
-  color3   = '#303030',
-  color6   = '#9e9e9e',
-  color7   = '#80a0ff',
-  color8   = '#ae81ff',
-  color0   = '#1c1c1c',
-  color1   = '#ff5189',
-  color2   = '#c6c6c6',
+  -- StatusLine background color.
+  color0 = '#303030',
+
+  -- Mode colors.
+  color1 = '#80a0ff',
+  color2 = '#c6c6c6',
+  color3 = '#ae81ff',
+  color4 = '#e3c78a',
+  color5 = '#ff5189',
+
+  -- Mode text color.
+  color6 = '#1c1c1c',
+
+  -- StatusLineNC foreground.
+  color7 = '#9e9e9e',
 }
 
 -- LuaFormatter on
 return {
-  replace = {
-    a = {fg = colors.color0, bg = colors.color1, gui = 'bold'},
-    b = {fg = colors.color2, bg = colors.color3}
-  },
-  inactive = {
-    a = {fg = colors.color6, bg = colors.color3, gui = 'bold'},
-    b = {fg = colors.color6, bg = colors.color3},
-    c = {fg = colors.color6, bg = colors.color3}
-  },
   normal = {
-    a = {fg = colors.color0, bg = colors.color7, gui = 'bold'},
-    b = {fg = colors.color2, bg = colors.color3},
-    c = {fg = colors.color2, bg = colors.color3}
-  },
-  visual = {
-    a = {fg = colors.color0, bg = colors.color8, gui = 'bold'},
-    b = {fg = colors.color2, bg = colors.color3}
+    a = {fg = colors.color6, bg = colors.color1},
+    b = {fg = colors.color1, bg = colors.color0},
+    c = {fg = colors.color2, bg = colors.color0}
   },
   insert = {
-    a = {fg = colors.color0, bg = colors.color2, gui = 'bold'},
-    b = {fg = colors.color2, bg = colors.color3}
-  }
+    a = {fg = colors.color6, bg = colors.color2},
+    b = {fg = colors.color2, bg = colors.color0}
+  },
+  visual = {
+    a = {fg = colors.color6, bg = colors.color3},
+    b = {fg = colors.color3, bg = colors.color0}
+  },
+  command = {
+    a = {fg = colors.color6, bg = colors.color4},
+    b = {fg = colors.color4, bg = colors.color0}
+  },
+  replace = {
+    a = {fg = colors.color6, bg = colors.color5},
+    b = {fg = colors.color5, bg = colors.color0}
+  },
+  inactive = {
+    a = {fg = colors.color7, bg = colors.color0},
+    b = {fg = colors.color7, bg = colors.color0},
+    c = {fg = colors.color7, bg = colors.color0}
+  },
 }
