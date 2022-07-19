@@ -91,16 +91,12 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 ```
 
 - The _moonfly_ colorscheme supports
-  [vim-airline](https://github.com/vim-airline/vim-airline). For modern versions
-  of _vim-airline_ the _moonfly_ theme will automatically be loaded.
+  [vim-airline](https://github.com/vim-airline/vim-airline). The _moonfly_ theme
+  will automatically load once vim-airline starts.
 
 - The _moonfly_ colorscheme supports
-  [lualine](https://github.com/nvim-lualine/lualine.nvim). To enable the
-  _moonfly_ theme please add the following to your initialization file:
-
-```lua
-require('lualine').setup({options = {theme = 'moonfly'}})
-```
+  [lualine](https://github.com/nvim-lualine/lualine.nvim). The
+  _moonfly_ theme will load once Lualine starts.
 
 - Lastly, my own
   [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) is
