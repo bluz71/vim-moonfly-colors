@@ -1,0 +1,29 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "schemes":
+    [
+        {
+            "name": "moonfly",
+            "background": "#080808",
+            "foreground": "#b2b2b2",
+            "cursorColor": "#9e9e9e",
+            "selectionBackground": "#b2ceee",
+            "black": "#323437",
+            "red": "#ff5454",
+            "green": "#8cc85f",
+            "yellow": "#e3c78a",
+            "blue": "#80a0ff",
+            "purple": "#d183e8",
+            "cyan": "#79dac8",
+            "white": "#c6c6c6",
+            "brightBlack": "#949494",
+            "brightRed": "#ff5189",
+            "brightGreen": "#36c692",
+            "brightYellow": "#c2c292",
+            "brightBlue": "#74b2ff",
+            "brightPurple": "#ae81ff",
+            "brightCyan": "#85dc85",
+            "brightWhite": "#e4e4e4"
+        }
+    ]
+}
