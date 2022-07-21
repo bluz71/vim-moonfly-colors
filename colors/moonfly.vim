@@ -147,7 +147,7 @@ exec 'highlight MoonflyRedAlert ctermbg=bg ctermfg=' . s:red.term . ' guibg=bg g
 exec 'highlight MoonflyUnderline cterm=underline gui=underline'
 exec 'highlight MoonflyNoCombine cterm=nocombine gui=nocombine'
 exec 'highlight MoonflyBlueMode ctermbg=' . s:blue.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:blue.hex . ' guifg=' . s:grey234.hex
-exec 'highlight MoonflyWhiteMode ctermbg=' . s:white.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:white.hex . ' guifg=' . s:grey234.hex
+exec 'highlight MoonflyEmeraldMode ctermbg=' . s:emerald.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:emerald.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyPurpleMode ctermbg=' . s:purple.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:purple.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyCrimsonMode ctermbg=' . s:crimson.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:crimson.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyYellowMode ctermbg=' . s:yellow.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:yellow.hex . ' guifg=' . s:grey234.hex
@@ -855,7 +855,7 @@ let g:fzf_colors = {
 
 " mistfly-statusline plugin
 highlight! link MistflyNormal MoonflyBlueMode
-highlight! link MistflyInsert MoonflyWhiteMode
+highlight! link MistflyInsert MoonflyEmeraldMode
 highlight! link MistflyVisual MoonflyPurpleMode
 highlight! link MistflyCommand MoonflyYellowMode
 highlight! link MistflyReplace MoonflyCrimsonMode
@@ -1060,7 +1060,7 @@ if has('nvim')
     highlight! link MiniStarterQuery MoonflySky
     highlight! link MiniStarterSection MoonflyCrimson
     highlight! link MiniStatuslineModeCommand MoonflyYellowMode
-    highlight! link MiniStatuslineModeInsert MoonflyWhiteMode
+    highlight! link MiniStatuslineModeInsert MoonflyEmeraldMode
     highlight! link MiniStatuslineModeNormal MoonflyBlueMode
     highlight! link MiniStatuslineModeOther MoonflyTurquoiseMode
     highlight! link MiniStatuslineModeReplace MoonflyCrimsonMode
