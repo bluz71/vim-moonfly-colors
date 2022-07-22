@@ -859,8 +859,6 @@ highlight! link MistflyInsert MoonflyEmeraldMode
 highlight! link MistflyVisual MoonflyPurpleMode
 highlight! link MistflyCommand MoonflyYellowMode
 highlight! link MistflyReplace MoonflyCrimsonMode
-highlight! link MistflyEmphasis MoonflyBlueLine
-exec 'highlight MistflyNotification ctermbg=' . s:grey236.term . ' ctermfg=' . s:crimson.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:crimson.hex
 
 " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
 highlight! link CocUnusedHighlight MoonflyGrey249
