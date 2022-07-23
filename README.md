@@ -36,6 +36,7 @@ Neovim-only:
 - [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [Neovim Diagnostic](https://neovim.io/doc/user/diagnostic.html)
 - [Barbar](https://github.com/romgrk/barbar.nvim)
+- [Bufferline](https://github.com/akinsho/bufferline.nvim)
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [Hop](https://github.com/phaazon/hop.nvim)
 - [Indent BlankLine](https://github.com/lukas-reineke/indent-blankline.nvim)

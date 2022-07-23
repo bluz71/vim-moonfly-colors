@@ -146,17 +146,23 @@ exec 'highlight MoonflySkyAlert ctermbg=bg ctermfg=' . s:sky.term . ' guibg=bg g
 exec 'highlight MoonflyRedAlert ctermbg=bg ctermfg=' . s:red.term . ' guibg=bg guifg=' . s:red.hex
 exec 'highlight MoonflyUnderline cterm=underline gui=underline'
 exec 'highlight MoonflyNoCombine cterm=nocombine gui=nocombine'
+" Statusline helper colors.
 exec 'highlight MoonflyBlueMode ctermbg=' . s:blue.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:blue.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyEmeraldMode ctermbg=' . s:emerald.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:emerald.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyPurpleMode ctermbg=' . s:purple.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:purple.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyCrimsonMode ctermbg=' . s:crimson.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:crimson.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyYellowMode ctermbg=' . s:yellow.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:yellow.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyTurquoiseMode ctermbg=' . s:turquoise.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:turquoise.hex . ' guifg=' . s:grey234.hex
-exec 'highlight MoonflyWhiteLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:white.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:grey254.hex
-exec 'highlight MoonflyYellowLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:yellow.hex
-exec 'highlight MoonflyYellowLine ctermbg=' . s:grey234.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:yellow.hex
-exec 'highlight MoonflyGrey246Line ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
+" Tabline helper colors.
 exec 'highlight MoonflyBlueLine ctermbg=' . s:grey236.term . ' ctermfg=' . s:blue.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:blue.hex
+exec 'highlight MoonflyBlueLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:blue.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:blue.hex
+exec 'highlight MoonflyEmeraldLine ctermbg=' . s:grey236.term . ' ctermfg=' . s:emerald.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:emerald.hex
+exec 'highlight MoonflyEmeraldLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:emerald.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:emerald.hex
+exec 'highlight MoonflyGrey246Line ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
+exec 'highlight MoonflyGrey247Line ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
+exec 'highlight MoonflyWhiteLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:grey254.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:grey254.hex
+exec 'highlight MoonflyYellowLine ctermbg=' . s:grey234.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:yellow.hex
+exec 'highlight MoonflyYellowLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:yellow.hex
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex . ' gui=none'
@@ -1006,6 +1012,26 @@ if has('nvim')
     exec 'highlight BufferInactive ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
     exec 'highlight BufferInactiveMod ctermbg=' . s:grey236.term . ' ctermfg=' . s:yellow.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:yellow.hex
     exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
+
+    " Bufferline plugin
+    exec 'highlight BufferLineFill ctermbg=bg ctermfg=bg guibg=bg guifg=bg'
+    highlight! link BufferLineBackground MoonflyGrey246Line
+    highlight! link BufferLineBuffer BufferLineBackground
+    highlight! link BufferLineBufferSelected MoonflyWhiteLineActive
+    highlight! link BufferLineBufferVisible MoonflyGrey247Line
+    highlight! link BufferLineCloseButton BufferLineBackground
+    highlight! link BufferLineCloseButtonSelected MoonflyBlueLineActive
+    highlight! link BufferLineCloseButtonVisible MoonflyGrey247Line
+    highlight! link BufferLineIndicatorSelected MoonflyBlueLineActive
+    highlight! link BufferLineIndicatorVisible MoonflyGrey247Line
+    highlight! link BufferLineModified BufferLineBackground
+    highlight! link BufferLineModifiedSelected MoonflyEmeraldLineActive
+    highlight! link BufferLineModifiedVisible MoonflyEmeraldLine
+    highlight! link BufferLineSeparator BufferLineFill
+    highlight! link BufferLineSeparatorSelected BufferLineFill
+    highlight! link BufferLineTab BufferLineBackground
+    highlight! link BufferLineTabClose MoonflyBlueLine
+    highlight! link BufferLineTabSelected MoonflyBlueLineActive
 
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch MoonflyYellow
