@@ -298,8 +298,8 @@ True Color Terminals
 
 Many modern terminals support [24-bit true
 colors](https://gist.github.com/XVilka/8346728). Current versions of Vim &
-Neovim, on such terminals, support true colors when `set termguicolors` is
-enabled.
+Neovim, on such terminals, support true colors when the `termguicolors` option
+is enabled.
 
 A list of popular terminals that support true colors:
 
@@ -362,31 +362,31 @@ and not use these terminal themes):
 
 For other terminals please configure appropriately with the following colors:
 
-| Type           | Category        | Value     | Color                                                       |
-|----------------|-----------------|-----------|-------------------------------------------------------------|
-| Background     | Background      | `#080808` | ![background](https://place-hold.it/32/080808?text=+) |
-| Foreground     | Foreground      | `#b2b2b2` | ![background](https://place-hold.it/32/b2b2b2?text=+) |
-| Bold           | Bold            | `#eeeeee` | ![background](https://place-hold.it/32/eeeeee?text=+) |
-| Cursor         | Cursor          | `#9e9e9e` | ![background](https://place-hold.it/32/9e9e9e?text=+) |
-| Cursor Text    | Cursor Text     | `#080808` | ![background](https://place-hold.it/32/080808?text=+) |
-| Selection      | Selection       | `#b2ceee` | ![background](https://place-hold.it/32/b2ceee?text=+) |
-| Selection Text | Selection Text  | `#080808` | ![background](https://place-hold.it/32/080808?text=+) |
-| Color 1        | Black (normal)  | `#323437` | ![background](https://place-hold.it/32/323437?text=+) |
-| Color 2        | Red (normal)    | `#ff5454` | ![background](https://place-hold.it/32/ff5454?text=+) |
-| Color 3        | Green (normal)  | `#8cc85f` | ![background](https://place-hold.it/32/8cc85f?text=+) |
-| Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://place-hold.it/32/e3c78a?text=+) |
-| Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://place-hold.it/32/80a0ff?text=+) |
-| Color 6        | Purple (normal) | `#d183e8` | ![background](https://place-hold.it/32/d183e8?text=+) |
-| Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://place-hold.it/32/79dac8?text=+) |
-| Color 8        | White (normal)  | `#c6c6c6` | ![background](https://place-hold.it/32/c6c6c6?text=+) |
-| Color 9        | Black (bright)  | `#949494` | ![background](https://place-hold.it/32/949494?text=+) |
-| Color 10       | Red (bright)    | `#ff5189` | ![background](https://place-hold.it/32/ff5189?text=+) |
-| Color 11       | Green (bright)  | `#36c692` | ![background](https://place-hold.it/32/36c692?text=+) |
-| Color 12       | Yellow (bright) | `#c2c292` | ![background](https://place-hold.it/32/c2c292?text=+) |
-| Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://place-hold.it/32/74b2ff?text=+) |
-| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://place-hold.it/32/ae81ff?text=+) |
-| Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://place-hold.it/32/85dc85?text=+) |
-| Color 16       | White (bright)  | `#e4e4e4` | ![background](https://place-hold.it/32/e4e4e4?text=+) |
+| Type           | Category        | Value     | Color
+|----------------|-----------------|-----------|------------------------------------------------------
+| Background     | Background      | `#080808` | ![background](https://place-hold.it/32/080808?text=+)
+| Foreground     | Foreground      | `#b2b2b2` | ![background](https://place-hold.it/32/b2b2b2?text=+)
+| Bold           | Bold            | `#eeeeee` | ![background](https://place-hold.it/32/eeeeee?text=+)
+| Cursor         | Cursor          | `#9e9e9e` | ![background](https://place-hold.it/32/9e9e9e?text=+)
+| Cursor Text    | Cursor Text     | `#080808` | ![background](https://place-hold.it/32/080808?text=+)
+| Selection      | Selection       | `#b2ceee` | ![background](https://place-hold.it/32/b2ceee?text=+)
+| Selection Text | Selection Text  | `#080808` | ![background](https://place-hold.it/32/080808?text=+)
+| Color 1        | Black (normal)  | `#323437` | ![background](https://place-hold.it/32/323437?text=+)
+| Color 2        | Red (normal)    | `#ff5454` | ![background](https://place-hold.it/32/ff5454?text=+)
+| Color 3        | Green (normal)  | `#8cc85f` | ![background](https://place-hold.it/32/8cc85f?text=+)
+| Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://place-hold.it/32/e3c78a?text=+)
+| Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://place-hold.it/32/80a0ff?text=+)
+| Color 6        | Purple (normal) | `#d183e8` | ![background](https://place-hold.it/32/d183e8?text=+)
+| Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://place-hold.it/32/79dac8?text=+)
+| Color 8        | White (normal)  | `#c6c6c6` | ![background](https://place-hold.it/32/c6c6c6?text=+)
+| Color 9        | Black (bright)  | `#949494` | ![background](https://place-hold.it/32/949494?text=+)
+| Color 10       | Red (bright)    | `#ff5189` | ![background](https://place-hold.it/32/ff5189?text=+)
+| Color 11       | Green (bright)  | `#36c692` | ![background](https://place-hold.it/32/36c692?text=+)
+| Color 12       | Yellow (bright) | `#c2c292` | ![background](https://place-hold.it/32/c2c292?text=+)
+| Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://place-hold.it/32/74b2ff?text=+)
+| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://place-hold.it/32/ae81ff?text=+)
+| Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://place-hold.it/32/85dc85?text=+)
+| Color 16       | White (bright)  | `#e4e4e4` | ![background](https://place-hold.it/32/e4e4e4?text=+)
 
 :tv: Legacy 256 Color Terminals
 -------------------------------
