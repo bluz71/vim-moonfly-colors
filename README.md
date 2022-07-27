@@ -108,14 +108,14 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 
 | Option | Default State
 |--------|--------------
-| [moonflyCursorColor](https://github.com/bluz71/vim-moonfly-colors#moonflyCursorColor)                 | Disabled
-| [moonflyItalics](https://github.com/bluz71/vim-moonfly-colors#moonflyItalics)                         | Enabled
-| [moonflyNormalFloat](https://github.com/bluz71/vim-moonfly-colors#moonflyNormalFloat)                 | Disabled
-| [moonflyTerminalColors](https://github.com/bluz71/vim-moonfly-colors#moonflyTerminalColors)           | Enabled
-| [moonflyTransparent](https://github.com/bluz71/vim-moonfly-colors#moonflyTransparent)                 | Disabled
-| [moonflyUndercurls](https://github.com/bluz71/vim-moonfly-colors#moonflyUndercurls)                   | Enabled
-| [moonflyUnderlineMatchParen](https://github.com/bluz71/vim-moonfly-colors#moonflyUnderlineMatchParen) | Disabled
-| [moonflyWinSeparator](https://github.com/bluz71/vim-moonfly-colors#moonflyWinSeparator)               | `1`
+| [moonflyCursorColor](https://github.com/bluz71/vim-moonfly-colors#moonflycursorcolor)                 | Disabled
+| [moonflyItalics](https://github.com/bluz71/vim-moonfly-colors#moonflyitalics)                         | Enabled
+| [moonflyNormalFloat](https://github.com/bluz71/vim-moonfly-colors#moonflynormalfloat)                 | Disabled
+| [moonflyTerminalColors](https://github.com/bluz71/vim-moonfly-colors#moonflyterminalcolors)           | Enabled
+| [moonflyTransparent](https://github.com/bluz71/vim-moonfly-colors#moonflytransparent)                 | Disabled
+| [moonflyUndercurls](https://github.com/bluz71/vim-moonfly-colors#moonflyundercurls)                   | Enabled
+| [moonflyUnderlineMatchParen](https://github.com/bluz71/vim-moonfly-colors#moonflyunderlinematchparen) | Disabled
+| [moonflyWinSeparator](https://github.com/bluz71/vim-moonfly-colors#moonflywinseparator)               | `1`
 
 ---
 
