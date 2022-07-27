@@ -106,6 +106,21 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 :wrench: Options
 ----------------
 
+| Option | Default State
+|--------|--------------
+| [moonflyCursorColor](https://github.com/bluz71/vim-moonfly-colors#moonflyCursorColor)                 | Disabled
+| [moonflyItalics](https://github.com/bluz71/vim-moonfly-colors#moonflyItalics)                         | Enabled
+| [moonflyNormalFloat](https://github.com/bluz71/vim-moonfly-colors#moonflyNormalFloat)                 | Disabled
+| [moonflyTerminalColors](https://github.com/bluz71/vim-moonfly-colors#moonflyTerminalColors)           | Enabled
+| [moonflyTransparent](https://github.com/bluz71/vim-moonfly-colors#moonflyTransparent)                 | Disabled
+| [moonflyUndercurls](https://github.com/bluz71/vim-moonfly-colors#moonflyUndercurls)                   | Enabled
+| [moonflyUnderlineMatchParen](https://github.com/bluz71/vim-moonfly-colors#moonflyUnderlineMatchParen) | Disabled
+| [moonflyWinSeparator](https://github.com/bluz71/vim-moonfly-colors#moonflyWinSeparator)               | `1`
+
+---
+
+### moonflyCursorColor
+
 The `moonflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
 then add the following to your initialization file:
@@ -121,6 +136,8 @@ vim.g.moonflyCursorColor = 1
 ```
 
 ---
+
+### moonflyItalics
 
 The `moonflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
@@ -138,6 +155,8 @@ vim.g.moonflyItalics = 0
 ```
 
 ---
+
+### moonflyNormalFloat
 
 The `moonflyNormalFloat` option specifies whether to use moonfly background
 and foreground colors in Neovim floating windows. By default this option is
@@ -190,6 +209,8 @@ require('cmp').setup({
 
 ---
 
+### moonflyTerminalColors
+
 The `moonflyTerminalColors` option specifies whether to use the moonfly color
 palette in `:terminal` windows when `termguicolors` is set. By default this
 option is **enabled**. If you prefer not to use the moonfly color palette for
@@ -206,6 +227,8 @@ vim.g.moonflyTerminalColors = 0
 ```
 
 ---
+
+### moonflyTransparent
 
 The `moonflyTransparent` option specifies whether to use an opaque or
 transparent background in GUI versions of Vim. By default this option is
@@ -224,6 +247,8 @@ vim.g.moonflyTransparent = 1
 
 ---
 
+### moonflyUndercurls
+
 The `moonflyUndercurls` option specifies whether to use undercurls for
 spelling and linting errors in GUI versions of Vim, including terminal Vim with
 `termguicolors` set. By default this option is **enabled**. If you do not like
@@ -241,6 +266,8 @@ vim.g.moonflyUndercurls = 0
 
 ---
 
+### moonflyUnderlineMatchParen
+
 The `moonflyUnderlineMatchParen` option specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to
 underline matching parentheses then add the following to your initialization
@@ -257,6 +284,8 @@ vim.g.moonflyUnderlineMatchParen = 1
 ```
 
 ---
+
+### moonflyWinSeparator
 
 The `moonflyWinSeparator` option specifies the style of window separators:
 
