@@ -13,27 +13,27 @@ endif
 let g:colors_name='moonfly'
 
 " By default do not color the cursor.
-let g:moonflyCursorColor = get(g:, 'moonflyCursorColor', 0)
+let g:moonflyCursorColor = get(g:, 'moonflyCursorColor', v:false)
 
 " By default do use italics in GUI versions of Vim.
-let g:moonflyItalics = get(g:, 'moonflyItalics', 1)
+let g:moonflyItalics = get(g:, 'moonflyItalics', v:true)
 
 " By default do not use a customized 'NormalFloat' highlight group (for Neovim
 " floating windows).
-let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', 0)
+let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', v:false)
 
 " By default use the moonfly color palette in the `:terminal`
-let g:moonflyTerminalColors = get(g:, 'moonflyTerminalColors', 1)
+let g:moonflyTerminalColors = get(g:, 'moonflyTerminalColors', v:true)
 
 " By default do not use a transparent background in GUI versions of Vim.
-let g:moonflyTransparent = get(g:, 'moonflyTransparent', 0)
+let g:moonflyTransparent = get(g:, 'moonflyTransparent', v:false)
 
 " By default do use undercurls in GUI versions of Vim, including terminal Vim
 " with termguicolors set.
-let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', 1)
+let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', v:true)
 
 " By default do not underline matching parentheses.
-let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', 0)
+let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', v:false)
 
 " By default do display vertical split columns.
 let g:moonflyWinSeparator = get(g:, 'moonflyWinSeparator', 1)

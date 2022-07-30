@@ -93,7 +93,7 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 
 - The _moonfly_ colorscheme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). The _moonfly_ theme
-  will automatically load once vim-airline starts.
+  will load once vim-airline starts.
 
 - The _moonfly_ colorscheme supports
   [lualine](https://github.com/nvim-lualine/lualine.nvim). The
@@ -127,12 +127,12 @@ then add the following to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyCursorColor = 1
+let g:moonflyCursorColor = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyCursorColor = 1
+vim.g.moonflyCursorColor = true
 ```
 
 ---
@@ -146,12 +146,12 @@ to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyItalics = 0
+let g:moonflyItalics = v:false
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyItalics = 0
+vim.g.moonflyItalics = false
 ```
 
 ---
@@ -166,12 +166,12 @@ following to your configuration:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyNormalFloat = 1
+let g:moonflyNormalFloat = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyNormalFloat = 1
+vim.g.moonflyNormalFloat = true
 ```
 
 :bulb: If the above option is set then it is highly recommended to enable
@@ -218,12 +218,12 @@ the first 16 terminal colors then add the following to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyTerminalColors = 0
+let g:moonflyTerminalColors = v:false
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyTerminalColors = 0
+vim.g.moonflyTerminalColors = false
 ```
 
 ---
@@ -237,12 +237,12 @@ to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyTransparent = 1
+let g:moonflyTransparent = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyTransparent = 1
+vim.g.moonflyTransparent = true
 ```
 
 ---
@@ -256,12 +256,12 @@ the appearance of undercurls then add the following to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyUndercurls = 0
+let g:moonflyUndercurls = v:false
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyUndercurls = 0
+vim.g.moonflyUndercurls = false
 ```
 
 ---
@@ -275,12 +275,12 @@ file:
 
 ```viml
 " Vimscript initialization file
-let g:moonflyUnderlineMatchParen = 1
+let g:moonflyUnderlineMatchParen = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.moonflyUnderlineMatchParen = 1
+vim.g.moonflyUnderlineMatchParen = true
 ```
 
 ---
