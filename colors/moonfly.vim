@@ -315,7 +315,7 @@ exec 'highlight Conceal ctermbg=NONE ctermfg=' . s:grey249.term . ' guibg=NONE g
 
 " Neovim only highlight groups
 if has('nvim')
-    exec 'highlight Whitespace ctermfg=' . s:grey241.term . ' guifg=' . s:grey241.hex
+    exec 'highlight Whitespace ctermfg=' . s:grey0.term . ' guifg=' . s:grey0.hex
     exec 'highlight TermCursor ctermbg=' . s:grey247.term . ' ctermfg=bg cterm=none guibg=' . s:grey247.hex . ' guifg=bg gui=none'
     if g:moonflyNormalFloat
         exec 'highlight NormalFloat ctermbg=bg ctermfg=' . s:grey249.term . ' guibg=bg guifg=' . s:grey249.hex
