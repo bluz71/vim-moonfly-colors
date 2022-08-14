@@ -1107,6 +1107,12 @@ if has('nvim')
     exec 'highlight MiniStatuslineInactive ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex   . ' guifg=' . s:grey247.hex
     exec 'highlight MiniTablineHidden ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg='   . s:grey236.hex . ' guifg=' . s:grey246.hex
     exec 'highlight MiniTablineModifiedHidden ctermbg=' . s:grey236.term . ' ctermfg=' . s:yellow.term   . ' guibg=' . s:grey236.hex . ' guifg=' . s:yellow.hex
+
+    " Dashboard plugin
+    highlight! link DashboardCenter MoonflyViolet
+    highlight! link DashboardFooter MoonflyCoral
+    highlight! link DashboardHeader MoonflyBlue
+    highlight! link DashboardShortCut MoonflyTurquoise
 endif
 
 set background=dark
