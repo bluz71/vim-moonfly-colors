@@ -338,7 +338,7 @@ if has('nvim')
     highlight! link TSFuncMacro MoonflySky
     highlight! link TSInclude MoonflyCranberry
     highlight! link TSKeywordOperator MoonflyViolet
-    highlight! link TSNamespace MoonflyBlue
+    highlight! link TSNamespace MoonflyTurquoise
     highlight! link TSParameter MoonflyWhite
     highlight! link TSPunctSpecial MoonflyCranberry
     highlight! link TSSymbol MoonflyPurple
