@@ -351,6 +351,7 @@ if has('nvim')
     highlight! link scssTSPunctDelimiter MoonflyCranberry
     highlight! link scssTSType MoonflyBlue
     highlight! link scssTSVariable MoonflyTurquoise
+    highlight! link vimTSVariable MoonflyTurquoise
     highlight! link yamlTSField MoonflySky
     highlight! link yamlTSPunctDelimiter MoonflyCranberry
 endif
@@ -1036,7 +1037,7 @@ if has('nvim')
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch MoonflyYellow
     highlight! link CmpItemAbbrMatchFuzzy MoonflyCoral
-    highlight! link CmpItemKindDefault MoonflyWhite
+    highlight! link CmpItemKind MoonflyWhite
     highlight! link CmpItemKindClass MoonflyEmerald
     highlight! link CmpItemKindColor MoonflyTurquoise
     highlight! link CmpItemKindConstant MoonflyPurple
@@ -1055,7 +1056,9 @@ if has('nvim')
     highlight! link CmpItemKindOperator MoonflyViolet
     highlight! link CmpItemKindProperty MoonflyTurquoise
     highlight! link CmpItemKindReference MoonflyTurquoise
+    highlight! link CmpItemKindSnippet MoonflyGreen
     highlight! link CmpItemKindStruct MoonflyEmerald
+    highlight! link CmpItemKindText MoonflyGrey249
     highlight! link CmpItemKindTypeParameter MoonflyEmerald
     highlight! link CmpItemKindUnit MoonflyTurquoise
     highlight! link CmpItemKindValue MoonflyTurquoise
