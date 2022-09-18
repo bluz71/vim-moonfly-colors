@@ -295,7 +295,7 @@ exec 'highlight CursorLine ctermbg=' . s:grey234.term . ' cterm=none guibg=' . s
 exec 'highlight Folded ctermbg=' . s:grey234.term . ' ctermfg=' . s:lime.term . ' guibg=' . s:grey234.hex . ' guifg='. s:lime.hex
 exec 'highlight FoldColumn ctermbg=' . s:grey236.term . ' ctermfg=' . s:lime.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:lime.hex
 exec 'highlight SignColumn ctermbg=bg ctermfg=' . s:lime.term . ' guibg=bg guifg=' . s:lime.hex
-exec 'highlight Todo ctermbg=' . s:yellow.term . ' ctermfg=' . s:black.term . ' guibg=' . s:yellow.hex . ' guifg=' . s:black.hex
+exec 'highlight Todo ctermbg=' . s:grey235.term . ' ctermfg=' . s:yellow.term . ' guibg=' . s:grey235.hex . ' guifg=' . s:yellow.hex
 exec 'highlight SpecialKey ctermbg=bg ctermfg=' . s:sky.term . ' guibg=bg guifg=' . s:sky.hex
 if g:moonflyUnderlineMatchParen
     exec 'highlight MatchParen ctermbg=bg cterm=underline guibg=bg gui=underline'
