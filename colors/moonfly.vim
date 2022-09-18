@@ -985,6 +985,7 @@ if has('nvim')
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert
     highlight! link GitSignsAddLn MoonflyGreen
+    highlight! link GitSignsAddPreview MoonflyEmeraldLine
     highlight! link GitSignsChange MoonflyYellowAlert
     highlight! link GitSignsChangeDelete MoonflyCoralAlert
     highlight! link GitSignsChangeLn MoonflyYellow
