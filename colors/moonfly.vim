@@ -220,7 +220,8 @@ highlight! link Operator MoonflyCranberry
 highlight! link Repeat MoonflyViolet
 
 " Search
-exec 'highlight Search ctermbg=' . s:coral.term . ' ctermfg=bg cterm=none guibg=' . s:coral.hex . ' guifg=bg gui=none'
+exec 'highlight Search ctermbg=' . s:grey241.term . ' ctermfg=' . s:grey254.term . ' cterm=none guibg=' . s:grey241.hex . ' guifg=' . s:grey254.hex . ' gui=none'
+exec 'highlight CurSearch ctermbg=' . s:coral.term . ' ctermfg=bg cterm=none guibg=' . s:coral.hex . ' guifg=bg gui=none'
 exec 'highlight IncSearch ctermbg=' . s:yellow.term . ' ctermfg=bg cterm=none guibg=' . s:yellow.hex . ' guifg=bg gui=none'
 
 " '\n' sequences
