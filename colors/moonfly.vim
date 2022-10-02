@@ -3,12 +3,10 @@
 " URL:     github.com/bluz71/vim-moonfly-colors
 " License: MIT (https://opensource.org/licenses/MIT)
 
-" Clear highlights and reset syntax only when changing colorschemes.
-if exists('g:colors_name')
-    highlight clear
-    if exists('syntax_on')
-        syntax reset
-    endif
+" Clear highlights and reset syntax.
+highlight clear
+if exists('syntax_on')
+    syntax reset
 endif
 let g:colors_name='moonfly'
 
@@ -1038,24 +1036,8 @@ if has('nvim')
     exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
 
     " Bufferline plugin
-    exec 'highlight BufferLineFill ctermbg=bg ctermfg=bg guibg=bg guifg=bg'
-    highlight! link BufferLineBackground MoonflyGrey246Line
-    highlight! link BufferLineBuffer BufferLineBackground
-    highlight! link BufferLineBufferSelected MoonflyWhiteLineActive
-    highlight! link BufferLineBufferVisible MoonflyGrey247Line
-    highlight! link BufferLineCloseButton BufferLineBackground
-    highlight! link BufferLineCloseButtonSelected MoonflyBlueLineActive
-    highlight! link BufferLineCloseButtonVisible MoonflyGrey247Line
-    highlight! link BufferLineIndicatorSelected MoonflyBlueLineActive
-    highlight! link BufferLineIndicatorVisible MoonflyGrey247Line
-    highlight! link BufferLineModified BufferLineBackground
-    highlight! link BufferLineModifiedSelected MoonflyEmeraldLineActive
-    highlight! link BufferLineModifiedVisible MoonflyEmeraldLine
-    highlight! link BufferLineSeparator BufferLineFill
-    highlight! link BufferLineSeparatorSelected BufferLineFill
-    highlight! link BufferLineTab BufferLineBackground
-    highlight! link BufferLineTabClose MoonflyBlueLine
-    highlight! link BufferLineTabSelected MoonflyBlueLineActive
+    exec 'highlight BufferLineTabSelected guifg=' . s:blue.hex
+    exec 'highlight BufferLineIndicatorSelected guifg=' . s:blue.hex
 
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch MoonflyYellow
