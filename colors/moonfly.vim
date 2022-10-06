@@ -1121,6 +1121,23 @@ if has('nvim')
     highlight! link DashboardFooter MoonflyCoral
     highlight! link DashboardHeader MoonflyBlue
     highlight! link DashboardShortCut MoonflyTurquoise
+
+    " nvim-notify
+    highlight! link NotifyERRORBorder FloatBorder
+    highlight! link NotifyWARNBorder FloatBorder
+    highlight! link NotifyINFOBorder FloatBorder
+    highlight! link NotifyDEBUGBorder FloatBorder
+    highlight! link NotifyTRACEBorder FloatBorder
+    highlight! link NotifyERRORIcon MoonflyRed
+    highlight! link NotifyWARNIcon MoonflyYellow
+    highlight! link NotifyINFOIcon MoonflyBlue
+    highlight! link NotifyDEBUGIcon MoonflyGrey246
+    highlight! link NotifyTRACEIcon MoonflyPurple
+    highlight! link NotifyERRORTitle MoonflyRed
+    highlight! link NotifyWARNTitle MoonflyYellow
+    highlight! link NotifyINFOTitle MoonflyBlue
+    highlight! link NotifyDEBUGTitle MoonflyGrey246
+    highlight! link NotifyTRACETitle MoonflyPurple
 endif
 
 set background=dark

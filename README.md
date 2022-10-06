@@ -45,6 +45,7 @@ Neovim-only:
 - [Mini](https://github.com/echasnovski/mini.nvim)
 - [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
