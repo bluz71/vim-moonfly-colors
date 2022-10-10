@@ -863,7 +863,7 @@ exec 'highlight MatchWordCur ctermbg=bg guibg=bg'
 " vimdiff/nvim -d
 exec 'highlight DiffAdd ctermbg=' . s:emerald.term . ' ctermfg=' . s:black.term . ' guibg=' . s:emerald.hex . ' guifg=' . s:black.hex
 exec 'highlight DiffChange ctermbg=' . s:grey236.term . ' guibg=' . s:grey236.hex
-exec 'highlight DiffDelete ctermbg=' . s:grey236.term . ' ctermfg=' . s:crimson.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:crimson.hex ' gui=none'
+exec 'highlight DiffDelete ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey241.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey241.hex ' gui=none'
 exec 'highlight DiffText ctermbg=' . s:blue.term . ' ctermfg=' . s:black.term . ' guibg=' . s:blue.hex . ' guifg=' . s:black.hex . ' gui=none'
 
 " ALE plugin
