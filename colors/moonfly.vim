@@ -162,6 +162,10 @@ exec 'highlight MoonflyWhiteLineActive ctermbg=' . s:grey238.term . ' ctermfg=' 
 exec 'highlight MoonflyYellowLine ctermbg=' . s:grey234.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:yellow.hex
 exec 'highlight MoonflyYellowLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:yellow.hex
 
+"----------------------------------------------------------------------- 
+" Core styling
+"----------------------------------------------------------------------- 
+
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg ctermfg=' . s:grey247.term . ' guifg=' . s:grey247.hex . ' gui=none'
 
@@ -407,9 +411,15 @@ if has('nvim')
     highlight! link LspSignatureActiveParameter MoonflyVisual
 endif
 
-" Neovim 0.8 provides builtin Treesitter support for C, Lua and Vimscript,
-" hence, only setup old-school regex highlight groups for Vim and Neovim
-" versions prior to 0.8.
+"----------------------------------------------------------------------- 
+" Language styling
+"----------------------------------------------------------------------- 
+
+" Neovim 0.8 provides builtin Treesitter support for C, Lua and Vimscript.
+" Likewise, common languages, such as C++, JavaScript, Python and others, now
+" have mature Treesitter support via the nvim-treesitter plugin. Hence, only
+" setup old-school regex highlight groups for Vim and Neovim versions prior to
+" 0.8.
 if !has('nvim-0.8')
     " C
     highlight! link cDefine MoonflyViolet
@@ -417,33 +427,6 @@ if !has('nvim-0.8')
     highlight! link cStatement MoonflyViolet
     highlight! link cStructure MoonflyCoral
 
-    " Lua
-    highlight! link luaBraces MoonflyCranberry
-    highlight! link luaBuiltin MoonflyGreen
-    highlight! link luaFuncCall MoonflySky
-    highlight! link luaSpecialTable MoonflySky
-
-    " Vimscript
-    highlight! link vimBracket MoonflySky
-    highlight! link vimCommand MoonflyViolet
-    highlight! link vimCommentTitle MoonflyViolet
-    highlight! link vimEnvvar MoonflyCrimson
-    highlight! link vimFuncName MoonflySky
-    highlight! link vimFuncSID MoonflySky
-    highlight! link vimFunction MoonflySky
-    highlight! link vimHighlight MoonflySky
-    highlight! link vimNotFunc MoonflyViolet
-    highlight! link vimNotation MoonflySky
-    highlight! link vimOption MoonflyTurquoise
-    highlight! link vimParenSep MoonflyWhite
-    highlight! link vimSep MoonflyWhite
-    highlight! link vimUserFunc MoonflySky
-endif
-
-" With Neovim 0.6 (and later) it is best to use the Nvim Treesitter plugin to
-" style the most common languages, hence, only setup old-school regex highlight
-" groups for Vim and Neovim versions prior to 0.6.
-if !has('nvim-0.6')
     " C++
     highlight! link cppAccess MoonflyLime
     highlight! link cppCast MoonflyTurquoise
@@ -515,6 +498,12 @@ if !has('nvim-0.6')
     highlight! link jsxComponentName MoonflyBlue
     highlight! link jsxOpenPunct MoonflyLime
     highlight! link jsxTagName MoonflyBlue
+
+    " Lua
+    highlight! link luaBraces MoonflyCranberry
+    highlight! link luaBuiltin MoonflyGreen
+    highlight! link luaFuncCall MoonflySky
+    highlight! link luaSpecialTable MoonflySky
 
     " Python
     highlight! link pythonBuiltin MoonflyBlue
@@ -618,6 +607,22 @@ if !has('nvim-0.6')
     highlight! link typescriptTry MoonflyCrimson
     highlight! link typescriptVariable MoonflyLime
     highlight! link typescriptXHRMethod MoonflySky
+
+    " Vimscript
+    highlight! link vimBracket MoonflySky
+    highlight! link vimCommand MoonflyViolet
+    highlight! link vimCommentTitle MoonflyViolet
+    highlight! link vimEnvvar MoonflyCrimson
+    highlight! link vimFuncName MoonflySky
+    highlight! link vimFuncSID MoonflySky
+    highlight! link vimFunction MoonflySky
+    highlight! link vimHighlight MoonflySky
+    highlight! link vimNotFunc MoonflyViolet
+    highlight! link vimNotation MoonflySky
+    highlight! link vimOption MoonflyTurquoise
+    highlight! link vimParenSep MoonflyWhite
+    highlight! link vimSep MoonflyWhite
+    highlight! link vimUserFunc MoonflySky
 endif
 
 " Clojure
@@ -772,6 +777,10 @@ highlight! link xmlEndTag MoonflyBlue
 highlight! link xmlTag MoonflyLime
 highlight! link xmlTagName MoonflyBlue
 
+"----------------------------------------------------------------------- 
+" Plugin styling
+"----------------------------------------------------------------------- 
+
 " Git commits
 highlight! link gitCommitBranch MoonflySky
 highlight! link gitCommitDiscardedFile MoonflyCrimson
@@ -842,7 +851,7 @@ highlight! link GlyphPalette6 MoonflyTurquoise
 highlight! link GlyphPalette7 MoonflyWhite
 highlight! link GlyphPalette9 MoonflyCrimson
 
-" Misc stylings
+" Misc items
 highlight! link bufExplorerHelp MoonflyGrey247
 highlight! link bufExplorerSortBy MoonflyGrey247
 highlight! link CleverFDefaultLabel MoonflyCrimson
