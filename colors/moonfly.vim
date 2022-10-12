@@ -151,16 +151,14 @@ exec 'highlight MoonflyPurpleMode ctermbg=' . s:purple.term . ' ctermfg=' . s:gr
 exec 'highlight MoonflyCrimsonMode ctermbg=' . s:crimson.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:crimson.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyYellowMode ctermbg=' . s:yellow.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:yellow.hex . ' guifg=' . s:grey234.hex
 exec 'highlight MoonflyTurquoiseMode ctermbg=' . s:turquoise.term . ' ctermfg=' . s:grey234.term . ' guibg=' . s:turquoise.hex . ' guifg=' . s:grey234.hex
-" Tabline helper colors.
+" Generic line helper colors.
 exec 'highlight MoonflyBlueLine ctermbg=' . s:grey236.term . ' ctermfg=' . s:blue.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:blue.hex
-exec 'highlight MoonflyBlueLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:blue.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:blue.hex
 exec 'highlight MoonflyEmeraldLine ctermbg=' . s:grey236.term . ' ctermfg=' . s:emerald.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:emerald.hex
-exec 'highlight MoonflyEmeraldLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:emerald.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:emerald.hex
 exec 'highlight MoonflyGrey246Line ctermbg=' . s:grey234.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:grey246.hex
-exec 'highlight MoonflyGrey247Line ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
-exec 'highlight MoonflyWhiteLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:grey254.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:grey254.hex
-exec 'highlight MoonflyYellowLine ctermbg=' . s:grey234.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey234.hex . ' guifg=' . s:yellow.hex
-exec 'highlight MoonflyYellowLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:yellow.term . '   guibg=' . s:grey238.hex . ' guifg=' . s:yellow.hex
+exec 'highlight MoonflyWhiteLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:grey254.term . ' guibg=' . s:grey238.hex . ' guifg=' . s:grey254.hex
+exec 'highlight MoonflyYellowLine ctermbg=' . s:grey234.term . ' ctermfg=' . s:yellow.term . ' guibg=' . s:grey234.hex . ' guifg=' . s:yellow.hex
+exec 'highlight MoonflyYellowLineActive ctermbg=' . s:grey238.term . ' ctermfg=' . s:yellow.term . ' guibg=' . s:grey238.hex . ' guifg=' . s:yellow.hex
+exec 'highlight MoonflyCrimsonLine ctermbg=' . s:grey236.term . ' ctermfg=' . s:crimson.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:crimson.hex
 
 "----------------------------------------------------------------------- 
 " Core styling
@@ -325,16 +323,16 @@ exec 'highlight DiffText ctermbg=' . s:blue.term . ' ctermfg=' . s:black.term . 
 
 " Neovim only highlight groups
 if has('nvim')
-    exec 'highlight Whitespace ctermfg=' . s:grey0.term . ' guifg=' . s:grey0.hex
-    exec 'highlight TermCursor ctermbg=' . s:grey247.term . ' ctermfg=bg cterm=none guibg=' . s:grey247.hex . ' guifg=bg gui=none'
+    exec 'highlight Whitespace guifg=' . s:grey0.hex
+    exec 'highlight TermCursor guibg=' . s:grey247.hex . ' guifg=bg gui=none'
     if g:moonflyNormalFloat
-        exec 'highlight NormalFloat ctermbg=bg ctermfg=' . s:grey249.term . ' guibg=bg guifg=' . s:grey249.hex
+        exec 'highlight NormalFloat guibg=bg guifg=' . s:grey249.hex
     else
-        exec 'highlight NormalFloat ctermbg=' . s:grey234.term . ' ctermfg=fg guibg=' . s:grey234.hex . ' guifg=fg'
+        exec 'highlight NormalFloat guibg=' . s:grey234.hex . ' guifg=fg'
     endif
-    exec 'highlight FloatBorder ctermbg=bg ctermfg=' . s:grey236.term . ' guibg=bg guifg=' . s:grey236.hex
-    exec 'highlight WinBar ctermbg=' . s:grey235.term . '  ctermfg=' . s:white.term . ' cterm=none guibg=' . s:grey235.hex . ' guifg=' . s:white.hex . ' gui=none'
-    exec 'highlight WinBarNC ctermbg=' . s:grey235.term . ' ctermfg=' . s:grey247.term . ' cterm=none guibg=' . s:grey235.hex . ' guifg=' . s:grey247.hex . ' gui=none'
+    exec 'highlight FloatBorder guibg=bg guifg=' . s:grey236.hex
+    exec 'highlight WinBar guibg=' . s:grey235.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight WinBarNC guibg=' . s:grey235.hex . ' guifg=' . s:grey247.hex . ' gui=none'
     highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
@@ -386,15 +384,15 @@ if has('nvim')
     highlight! link DiagnosticInfo MoonflySky
     highlight! link DiagnosticHint MoonflyWhite
     if g:moonflyUndercurls
-        exec 'highlight DiagnosticUnderlineError ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:red.hex
-        exec 'highlight DiagnosticUnderlineWarn ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:yellow.hex
-        exec 'highlight DiagnosticUnderlineInfo ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:sky.hex
-        exec 'highlight DiagnosticUnderlineHint ctermbg=NONE guibg=NONE gui=undercurl guisp=' . s:white.hex
+        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=undercurl guisp=' . s:red.hex
+        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=undercurl guisp=' . s:yellow.hex
+        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=undercurl guisp=' . s:sky.hex
+        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white.hex
     else
-        exec 'highlight DiagnosticUnderlineError ctermbg=NONE guibg=NONE gui=underline guisp=' . s:red.hex
-        exec 'highlight DiagnosticUnderlineWarn ctermbg=NONE guibg=NONE gui=underline guisp=' . s:blue.hex
-        exec 'highlight DiagnosticUnderlineInfo ctermbg=NONE guibg=NONE gui=underline guisp=' . s:yellow.hex
-        exec 'highlight DiagnosticUnderlineHint ctermbg=NONE guibg=NONE gui=underline guisp=' . s:sky.hex
+        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=underline guisp=' . s:red.hex
+        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=underline guisp=' . s:blue.hex
+        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=underline guisp=' . s:yellow.hex
+        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=underline guisp=' . s:sky.hex
     endif
     highlight! link DiagnosticVirtualTextError MoonflyGrey241
     highlight! link DiagnosticVirtualTextWarn MoonflyGrey241
@@ -952,10 +950,10 @@ if has('nvim')
     highlight! link NvimTreeRootFolder MoonflyPurple
     highlight! link NvimTreeSpecialFile MoonflyYellow
     highlight! link NvimTreeWindowPicker DiffChange
-    exec 'highlight NvimTreeExecFile ctermfg=' . s:green.term . ' guifg=' . s:green.hex . ' gui=none'
-    exec 'highlight NvimTreeImageFile ctermfg=' . s:violet.term . ' guifg=' . s:violet.hex . ' gui=none'
-    exec 'highlight NvimTreeOpenedFile ctermfg=' . s:yellow.term . ' guifg=' . s:yellow.hex . ' gui=none'
-    exec 'highlight NvimTreeSymlink ctermfg=' . s:turquoise.term . ' guifg=' . s:turquoise.hex . ' gui=none'
+    exec 'highlight NvimTreeExecFile guifg=' . s:green.hex . ' gui=none'
+    exec 'highlight NvimTreeImageFile guifg=' . s:violet.hex . ' gui=none'
+    exec 'highlight NvimTreeOpenedFile guifg=' . s:yellow.hex . ' gui=none'
+    exec 'highlight NvimTreeSymlink guifg=' . s:turquoise.hex . ' gui=none'
 
     " Neo-tree plugin
     highlight! link NeoTreeDimText MoonflyGrey235
@@ -986,7 +984,7 @@ if has('nvim')
     highlight! link TelescopeResultsSpecialComment MoonflyGrey241
     highlight! link TelescopeSelectionCaret MoonflyCrimson
     highlight! link TelescopeTitle MoonflyGrey241
-    exec 'highlight TelescopeSelection ctermbg=' . s:grey0.term . ' ctermfg=' . s:grey254.term . ' guibg=' . s:grey0.hex . ' guifg=' . s:grey254.hex
+    exec 'highlight TelescopeSelection guibg=' . s:grey0.hex . ' guifg=' . s:grey254.hex
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd MoonflyEmeraldAlert
@@ -998,9 +996,11 @@ if has('nvim')
     highlight! link GitSignsChangeNr MoonflyYellowAlert
     highlight! link GitSignsDelete MoonflyRedAlert
     highlight! link GitSignsDeleteLn MoonflyRed
-    exec 'highlight GitSignsAddInline ctermbg=' . s:green.term . ' ctermfg=' . s:black.term . ' guibg=' . s:green.hex . ' guifg=' . s:black.hex
-    exec 'highlight GitSignsChangeInline ctermbg=' . s:yellow.term . ' ctermfg=' . s:black.term . ' guibg=' . s:yellow.hex . ' guifg=' . s:black.hex
-    exec 'highlight GitSignsDeleteInline ctermbg=' . s:red.term . ' ctermfg=' . s:black.term . ' guibg=' . s:red.hex . ' guifg=' . s:black.hex
+    highlight! link GitSignsDeletePreview MoonflyCrimsonLine
+    highlight! link GitSignsDeleteVirtLn MoonflyCrimsonLine
+    exec 'highlight GitSignsAddInline guibg=' . s:green.hex . ' guifg=' . s:black.hex
+    exec 'highlight GitSignsChangeInline guibg=' . s:yellow.hex . ' guifg=' . s:black.hex
+    exec 'highlight GitSignsDeleteInline guibg=' . s:red.hex . ' guifg=' . s:black.hex
 
     " Hop plugin
     highlight! link HopCursor IncSearch
@@ -1018,10 +1018,10 @@ if has('nvim')
     highlight! link BufferVisibleIndex MoonflyGrey246Line
     highlight! link BufferVisibleMod MoonflyYellowLine
     highlight! link BufferVisibleSign MoonflyGrey246Line
-    exec 'highlight BufferCurrentSign ctermbg=' . s:grey238.term . ' ctermfg=' . s:blue.term . ' guibg=' . s:grey238.hex . ' guifg=' . s:blue.hex
-    exec 'highlight BufferInactive ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight BufferInactiveMod ctermbg=' . s:grey236.term . ' ctermfg=' . s:yellow.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:yellow.hex
-    exec 'highlight BufferInactiveSign ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
+    exec 'highlight BufferCurrentSign guibg=' . s:grey238.hex . ' guifg=' . s:blue.hex
+    exec 'highlight BufferInactive guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
+    exec 'highlight BufferInactiveMod guibg=' . s:grey236.hex . ' guifg=' . s:yellow.hex
+    exec 'highlight BufferInactiveSign guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
 
     " Bufferline plugin
     exec 'highlight BufferLineTabSelected guifg=' . s:blue.hex
@@ -1059,9 +1059,9 @@ if has('nvim')
     highlight! link CmpItemMenu MoonflyGrey247
 
     " Indent Blankline plugin
-    exec 'highlight IndentBlanklineChar ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex . ' gui=nocombine'
-    exec 'highlight IndentBlanklineSpaceChar ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex . ' gui=nocombine'
-    exec 'highlight IndentBlanklineSpaceCharBlankline ctermfg=' . s:grey235.term . ' guifg=' . s:grey235.hex . ' gui=nocombine'
+    exec 'highlight IndentBlanklineChar guifg=' . s:grey235.hex . ' gui=nocombine'
+    exec 'highlight IndentBlanklineSpaceChar guifg=' . s:grey235.hex . ' gui=nocombine'
+    exec 'highlight IndentBlanklineSpaceCharBlankline guifg=' . s:grey235.hex . ' gui=nocombine'
 
     " Mini.nvim plugin
     highlight! link MiniCompletionActiveParameter MoonflyVisual
@@ -1096,13 +1096,13 @@ if has('nvim')
     highlight! link MiniTestFail MoonflyRed
     highlight! link MiniTestPass MoonflyGreen
     highlight! link MiniTrailspace MoonflyCrimsonMode
-    exec 'highlight MiniJump2dSpot ctermfg=' . s:yellow.term . ' cterm=underline,nocombine guifg=' . s:yellow.hex . ' gui=underline,nocombine'
-    exec 'highlight MiniStatuslineDevinfo ctermbg=' . s:grey241.term   . ' ctermfg=' . s:white.term   . ' cterm=none guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
-    exec 'highlight MiniStatuslineFileinfo ctermbg=' . s:grey241.term   . ' ctermfg=' . s:white.term   . ' cterm=none guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
-    exec 'highlight MiniStatuslineFilename ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
-    exec 'highlight MiniStatuslineInactive ctermbg=' . s:grey236.term   . ' ctermfg=' . s:grey247.term . ' guibg=' . s:grey236.hex   . ' guifg=' . s:grey247.hex
-    exec 'highlight MiniTablineHidden ctermbg=' . s:grey236.term . ' ctermfg=' . s:grey246.term . ' guibg='   . s:grey236.hex . ' guifg=' . s:grey246.hex
-    exec 'highlight MiniTablineModifiedHidden ctermbg=' . s:grey236.term . ' ctermfg=' . s:yellow.term   . ' guibg=' . s:grey236.hex . ' guifg=' . s:yellow.hex
+    exec 'highlight MiniJump2dSpot guifg=' . s:yellow.hex . ' gui=underline,nocombine'
+    exec 'highlight MiniStatuslineDevinfo guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight MiniStatuslineFileinfo guibg=' . s:grey241.hex . ' guifg=' . s:white.hex . ' gui=none'
+    exec 'highlight MiniStatuslineFilename guibg=' . s:grey236.hex . ' guifg=' . s:grey247.hex
+    exec 'highlight MiniStatuslineInactive guibg=' . s:grey236.hex   . ' guifg=' . s:grey247.hex
+    exec 'highlight MiniTablineHidden guibg=' . s:grey236.hex . ' guifg=' . s:grey246.hex
+    exec 'highlight MiniTablineModifiedHidden guibg=' . s:grey236.hex . ' guifg=' . s:yellow.hex
 
     " Dashboard plugin
     highlight! link DashboardCenter MoonflyViolet
