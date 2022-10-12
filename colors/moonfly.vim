@@ -981,6 +981,7 @@ if has('nvim')
     highlight! link TelescopePromptPrefix MoonflyBlue
     highlight! link TelescopeResultsDiffAdd MoonflyGreen
     highlight! link TelescopeResultsDiffChange MoonflyRed
+    highlight! link TelescopeResultsDiffDelete MoonflyCrimsonLine
     highlight! link TelescopeResultsSpecialComment MoonflyGrey241
     highlight! link TelescopeSelectionCaret MoonflyCrimson
     highlight! link TelescopeTitle MoonflyGrey241
