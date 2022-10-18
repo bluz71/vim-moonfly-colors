@@ -336,27 +336,28 @@ if has('nvim')
     highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
-    highlight! link TSAnnotation MoonflyViolet
-    highlight! link TSAttribute MoonflySky
-    highlight! link TSConstant MoonflyTurquoise
-    highlight! link TSConstBuiltin MoonflyGreen
-    highlight! link TSConstMacro MoonflyViolet
-    highlight! link TSConstructor MoonflyEmerald
-    highlight! link TSDanger Todo
-    highlight! link TSFuncBuiltin MoonflySky
-    highlight! link TSFuncMacro MoonflySky
-    highlight! link TSInclude MoonflyCranberry
-    highlight! link TSKeywordOperator MoonflyViolet
-    highlight! link TSNamespace MoonflyTurquoise
-    highlight! link TSParameter MoonflyWhite
-    highlight! link TSPunctSpecial MoonflyCranberry
-    highlight! link TSSymbol MoonflyPurple
-    highlight! link TSTag MoonflyBlue
-    highlight! link TSTagDelimiter MoonflyLime
-    highlight! link TSVariableBuiltin MoonflyLime
     if has('nvim-0.8')
+        highlight! link @annotation MoonflyViolet
+        highlight! link @attribute MoonflySky
+        highlight! link @constant MoonflyTurquoise
+        highlight! link @constant.builtin MoonflyGreen
+        highlight! link @constant.macro MoonflyViolet
+        highlight! link @constructor MoonflyEmerald
+        highlight! link @danger Todo
+        highlight! link @function.builtin MoonflySky
+        highlight! link @function.macro MoonflySky
+        highlight! link @include MoonflyCranberry
+        highlight! link @keyword.operator MoonflyViolet
+        highlight! link @namespace MoonflyTurquoise
+        highlight! link @parameter MoonflyWhite
+        highlight! link @punctuation.special MoonflyCranberry
+        highlight! link @symbol MoonflyPurple
+        highlight! link @tag MoonflyBlue
+        highlight! link @tag.delimiter MoonflyLime
+        highlight! link @variable.builtin MoonflyLime
+        " Language specific overrides.
         highlight! link @parameter.bash MoonflyTurquoise
-        highlight! link @punctDelimiter.css MoonflyCranberry
+        highlight! link @punctuation.delimiter.css MoonflyCranberry
         highlight! link @type.css MoonflyBlue
         highlight! link @punctuation.delimiter.scss MoonflyCranberry
         highlight! link @type.scss MoonflyBlue
@@ -366,6 +367,25 @@ if has('nvim')
         highlight! link @field.yaml MoonflyBlue
         highlight! link @punctuation.delimiter.yaml MoonflyCranberry
     else
+        highlight! link TSAnnotation MoonflyViolet
+        highlight! link TSAttribute MoonflySky
+        highlight! link TSConstant MoonflyTurquoise
+        highlight! link TSConstBuiltin MoonflyGreen
+        highlight! link TSConstMacro MoonflyViolet
+        highlight! link TSConstructor MoonflyEmerald
+        highlight! link TSDanger Todo
+        highlight! link TSFuncBuiltin MoonflySky
+        highlight! link TSFuncMacro MoonflySky
+        highlight! link TSInclude MoonflyCranberry
+        highlight! link TSKeywordOperator MoonflyViolet
+        highlight! link TSNamespace MoonflyTurquoise
+        highlight! link TSParameter MoonflyWhite
+        highlight! link TSPunctSpecial MoonflyCranberry
+        highlight! link TSSymbol MoonflyPurple
+        highlight! link TSTag MoonflyBlue
+        highlight! link TSTagDelimiter MoonflyLime
+        highlight! link TSVariableBuiltin MoonflyLime
+        " Language specific overrides.
         highlight! link bashTSParameter MoonflyTurquoise
         highlight! link cssTSPunctDelimiter MoonflyCranberry
         highlight! link cssTSType MoonflyBlue
