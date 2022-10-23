@@ -49,6 +49,40 @@ Neovim-only:
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
+:zap: Requirements
+------------------
+
+_moonfly_ is now a **GUI-only** colorscheme.
+
+A GUI client, such as Gvim, or a modern terminal version of Vim or Neovim with
+the `termguicolors` option enabled in a true-color terminal, is required.
+Details about true-color terminals are [listed
+here](https://github.com/bluz71/vim-moonfly-colors#true-color-terminals).
+
+_moonfly_ previously did support the 256 color `cterm` version of Vim. However,
+the `termguicolors` option is now well established and true-colors
+terminals are ubiquitous; such terminal emulators being:
+[iTerm2](https://iterm2.com),
+[Alacritty](https://github.com/alacritty/alacritty), [Windows
+Terminal](https://github.com/microsoft/terminal), and
+[kitty](https://sw.kovidgoyal.net/kitty/index.html).
+
+Note however, _moonfly_ still supports the `cterm` legacy version of this plugin
+via the legacy `cterm-compat` branch. That legacy version can be installed with
+your preferred plugin manager.
+
+[vim-plug](https://github.com/junegunn/vim-plug):
+
+```viml
+Plug 'bluz71/vim-moonfly-colors', { 'branch': 'cterm-compat' }
+```
+
+[packer.nvim](https://github.com/wbthomason/packer.nvim):
+
+```lua
+use { 'bluz71/vim-moonfly-colors', branch = 'cterm-compat' }
+```
+
 Installation
 ------------
 
@@ -418,50 +452,6 @@ For other terminals please configure appropriately with the following colors:
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://place-hold.it/32/ae81ff?text=+)
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://place-hold.it/32/85dc85?text=+)
 | Color 16       | White (bright)  | `#e4e4e4` | ![background](https://place-hold.it/32/e4e4e4?text=+)
-
-:tv: Legacy 256 Color Terminals
--------------------------------
-
-The _moonfly_ colorscheme, when used absent `termguicolors`, **requires** the
-host terminal be configured with a specific color palette. In that case the
-legacy _moonfly_ `cterm` 256 color terminal theme will be used.
-
-:bangbang: Nowadays it is **strongly** recommended to use a true color terminal
-with a modern version of Vim or Neovim with `termguicolors` set.
-
-If that is not possible, then the [terminal
-emulator](https://en.wikipedia.org/wiki/Terminal_emulator) must be configured
-for 256 colors, which usually means setting the terminal's type to
-`xterm-256color`, or `screen-256color` when used inside
-[tmux](https://tmux.github.io/).
-
-The terminal should then be configured with the following _moonfly_ colors:
-
-```
-Background:               #080808
-Foreground:               #b2b2b2
-Bold:                     #eeeeee
-Cursor:                   #9e9e9e
-Cursor Text:              #080808
-Selection:                #b2ceee
-Selection Text:           #080808
-Color 1 (Black):          #323437
-Color 2 (Red):            #ff5454
-Color 3 (Green):          #8cc85f
-Color 4 (Yellow):         #e3c78a
-Color 5 (Blue):           #80a0ff
-Color 6 (Purple):         #d183e8
-Color 7 (Cyan):           #79dac8
-Color 8 (White):          #de935f
-Color 9 (Bright Black):   #f09479
-Color 10 (Bright Red):    #ff5189
-Color 11 (Bright Green):  #36c692
-Color 12 (Bright Yellow): #c2c292
-Color 13 (Bright Blue):   #74b2ff
-Color 14 (Bright Purple): #ae81ff
-Color 15 (Bright Cyan):   #85dc85
-Color 16 (Bright White):  #e2637f
-```
 
 Sponsor
 -------
