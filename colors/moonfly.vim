@@ -160,9 +160,9 @@ exec 'highlight MoonflyYellowLine guibg=' . s:grey234 . ' guifg=' . s:yellow
 exec 'highlight MoonflyYellowLineActive guibg=' . s:grey238 . ' guifg=' . s:yellow
 exec 'highlight MoonflyCrimsonLine guibg=' . s:grey236 . ' guifg=' . s:crimson
 
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 " Core styling
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:grey247 . ' gui=none'
@@ -429,9 +429,9 @@ if has('nvim')
     highlight! link LspSignatureActiveParameter MoonflyVisual
 endif
 
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 " Language styling
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 
 " Neovim 0.8 provides builtin Treesitter support for C, Lua and Vimscript.
 " Likewise, common languages, such as C++, JavaScript, Python and others, now
@@ -795,9 +795,9 @@ highlight! link xmlEndTag MoonflyBlue
 highlight! link xmlTag MoonflyLime
 highlight! link xmlTagName MoonflyBlue
 
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 " Plugin styling
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 
 " Git commits
 highlight! link gitCommitBranch MoonflySky
