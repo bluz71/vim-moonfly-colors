@@ -886,6 +886,7 @@ if has('nvim')
     highlight! link NeoTreeGitConflict MoonflyCrimson
     highlight! link NeoTreeGitModified MoonflyViolet
     highlight! link NeoTreeGitUntracked MoonflyGrey241
+    highlight! link NeoTreeGitAdded MoonflyGreen
     highlight! link NeoTreeMessage MoonflyGrey247
     highlight! link NeoTreeModified MoonflyYellow
     highlight! link NeoTreeRootName MoonflyPurple
