@@ -144,14 +144,14 @@ exec 'highlight MoonflySkyAlert guibg=bg guifg=' . s:sky
 exec 'highlight MoonflyRedAlert guibg=bg guifg=' . s:red
 exec 'highlight MoonflyUnderline gui=underline'
 exec 'highlight MoonflyNoCombine gui=nocombine'
-" Statusline helper colors.
+" Statusline helper colors
 exec 'highlight MoonflyBlueMode guibg=' . s:blue . ' guifg=' . s:grey234
 exec 'highlight MoonflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:grey234
 exec 'highlight MoonflyPurpleMode guibg=' . s:purple . ' guifg=' . s:grey234
 exec 'highlight MoonflyCrimsonMode guibg=' . s:crimson . ' guifg=' . s:grey234
 exec 'highlight MoonflyYellowMode guibg=' . s:yellow . ' guifg=' . s:grey234
 exec 'highlight MoonflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:grey234
-" Generic line helper colors.
+" Generic line helper colors
 exec 'highlight MoonflyBlueLine guibg=' . s:grey236 . ' guifg=' . s:blue
 exec 'highlight MoonflyEmeraldLine guibg=' . s:grey236 . ' guifg=' . s:emerald
 exec 'highlight MoonflyGrey246Line guibg=' . s:grey234 . ' guifg=' . s:grey246
@@ -159,6 +159,15 @@ exec 'highlight MoonflyWhiteLineActive guibg=' . s:grey238 . ' guifg=' . s:grey2
 exec 'highlight MoonflyYellowLine guibg=' . s:grey234 . ' guifg=' . s:yellow
 exec 'highlight MoonflyYellowLineActive guibg=' . s:grey238 . ' guifg=' . s:yellow
 exec 'highlight MoonflyCrimsonLine guibg=' . s:grey236 . ' guifg=' . s:crimson
+" Diagnostic helper colors
+exec 'highlight MoonflyDiagnosticUndercurlError gui=undercurl guisp=' . s:red
+exec 'highlight MoonflyDiagnosticUndercurlWarn gui=undercurl guisp=' . s:yellow
+exec 'highlight MoonflyDiagnosticUndercurlInfo gui=undercurl guisp=' . s:sky
+exec 'highlight MoonflyDiagnosticUndercurlHint gui=undercurl guisp=' . s:white
+exec 'highlight MoonflyDiagnosticUnderlineError gui=underline guisp=' . s:red
+exec 'highlight MoonflyDiagnosticUnderlineWarn gui=underline guisp=' . s:blue
+exec 'highlight MoonflyDiagnosticUnderlineInfo gui=underline guisp=' . s:yellow
+exec 'highlight MoonflyDiagnosticUnderlineHint gui=underline guisp=' . s:sky
 
 "-----------------------------------------------------------------------
 " Core styling
@@ -321,112 +330,9 @@ exec 'highlight DiffChange guibg=' . s:grey236
 exec 'highlight DiffDelete guibg=' . s:grey236 . ' guifg=' . s:grey241 ' gui=none'
 exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
-" Neovim only highlight groups
+" Neovim-only core highlight groups
 if has('nvim')
-    exec 'highlight Whitespace guifg=' . s:grey0
-    exec 'highlight TermCursor guibg=' . s:grey247 . ' guifg=bg gui=none'
-    if g:moonflyNormalFloat
-        exec 'highlight NormalFloat guibg=bg guifg=' . s:grey249
-    else
-        exec 'highlight NormalFloat guibg=' . s:grey234 . ' guifg=fg'
-    endif
-    exec 'highlight FloatBorder guibg=bg guifg=' . s:grey236
-    exec 'highlight WinBar guibg=' . s:grey235 . ' guifg=' . s:white . ' gui=none'
-    exec 'highlight WinBarNC guibg=' . s:grey235 . ' guifg=' . s:grey247 . ' gui=none'
-    highlight! link WinSeparator VertSplit
-
-    " Neovim Treesitter
-    if has('nvim-0.8')
-        highlight! link @annotation MoonflyViolet
-        highlight! link @attribute MoonflySky
-        highlight! link @constant MoonflyTurquoise
-        highlight! link @constant.builtin MoonflyGreen
-        highlight! link @constant.macro MoonflyViolet
-        highlight! link @constructor MoonflyEmerald
-        highlight! link @danger Todo
-        highlight! link @function.builtin MoonflySky
-        highlight! link @function.macro MoonflySky
-        highlight! link @include MoonflyCranberry
-        highlight! link @keyword.operator MoonflyViolet
-        highlight! link @namespace MoonflyTurquoise
-        highlight! link @parameter MoonflyWhite
-        highlight! link @punctuation.special MoonflyCranberry
-        highlight! link @symbol MoonflyPurple
-        highlight! link @tag MoonflyBlue
-        highlight! link @tag.delimiter MoonflyLime
-        highlight! link @variable.builtin MoonflyLime
-        " Language specific overrides.
-        highlight! link @parameter.bash MoonflyTurquoise
-        highlight! link @punctuation.delimiter.css MoonflyCranberry
-        highlight! link @type.css MoonflyBlue
-        highlight! link @punctuation.delimiter.scss MoonflyCranberry
-        highlight! link @type.scss MoonflyBlue
-        highlight! link @variable.scss MoonflyTurquoise
-        highlight! link @variable.vim MoonflyTurquoise
-        highlight! link @variable.builtin.vim MoonflyEmerald
-        highlight! link @field.yaml MoonflyBlue
-        highlight! link @punctuation.delimiter.yaml MoonflyCranberry
-    else
-        highlight! link TSAnnotation MoonflyViolet
-        highlight! link TSAttribute MoonflySky
-        highlight! link TSConstant MoonflyTurquoise
-        highlight! link TSConstBuiltin MoonflyGreen
-        highlight! link TSConstMacro MoonflyViolet
-        highlight! link TSConstructor MoonflyEmerald
-        highlight! link TSDanger Todo
-        highlight! link TSFuncBuiltin MoonflySky
-        highlight! link TSFuncMacro MoonflySky
-        highlight! link TSInclude MoonflyCranberry
-        highlight! link TSKeywordOperator MoonflyViolet
-        highlight! link TSNamespace MoonflyTurquoise
-        highlight! link TSParameter MoonflyWhite
-        highlight! link TSPunctSpecial MoonflyCranberry
-        highlight! link TSSymbol MoonflyPurple
-        highlight! link TSTag MoonflyBlue
-        highlight! link TSTagDelimiter MoonflyLime
-        highlight! link TSVariableBuiltin MoonflyLime
-        " Language specific overrides.
-        highlight! link bashTSParameter MoonflyTurquoise
-        highlight! link cssTSPunctDelimiter MoonflyCranberry
-        highlight! link cssTSType MoonflyBlue
-        highlight! link scssTSPunctDelimiter MoonflyCranberry
-        highlight! link scssTSType MoonflyBlue
-        highlight! link scssTSVariable MoonflyTurquoise
-        highlight! link vimTSVariable MoonflyTurquoise
-        highlight! link vimTSVariableBuiltin MoonflyEmerald
-        highlight! link yamlTSField MoonflySky
-        highlight! link yamlTSPunctDelimiter MoonflyCranberry
-    endif
-
-    " Neovim Diagnostic
-    highlight! link DiagnosticError MoonflyRed
-    highlight! link DiagnosticWarn MoonflyYellow
-    highlight! link DiagnosticInfo MoonflySky
-    highlight! link DiagnosticHint MoonflyWhite
-    if g:moonflyUndercurls
-        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=undercurl guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=undercurl guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=undercurl guisp=' . s:sky
-        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white
-    else
-        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=underline guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=underline guisp=' . s:blue
-        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=underline guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=underline guisp=' . s:sky
-    endif
-    highlight! link DiagnosticVirtualTextError MoonflyGrey241
-    highlight! link DiagnosticVirtualTextWarn MoonflyGrey241
-    highlight! link DiagnosticVirtualTextInfo MoonflyGrey241
-    highlight! link DiagnosticVirtualTextHint MoonflyGrey241
-    highlight! link DiagnosticSignError MoonflyRedAlert
-    highlight! link DiagnosticSignWarn MoonflyYellowAlert
-    highlight! link DiagnosticSignInfo MoonflySkyAlert
-    highlight! link DiagnosticSignHint MoonflyWhiteAlert
-    highlight! link DiagnosticFloatingError MoonflyRed
-    highlight! link DiagnosticFloatingWarn MoonflyYellow
-    highlight! link DiagnosticFloatingInfo MoonflySky
-    highlight! link DiagnosticFloatingHint MoonflyWhite
-    highlight! link LspSignatureActiveParameter MoonflyVisual
+    lua require("moonfly").core()
 endif
 
 "-----------------------------------------------------------------------
@@ -895,13 +801,13 @@ exec 'highlight MatchWordCur guibg=bg'
 
 " ALE plugin
 if g:moonflyUndercurls
-     exec 'highlight ALEError guibg=NONE gui=undercurl guisp=' . s:red
-     exec 'highlight ALEWarning guibg=NONE gui=undercurl guisp=' . s:yellow
-     exec 'highlight ALEInfo guibg=NONE gui=undercurl guisp=' . s:sky
+    highlight! link ALEError MoonflyDiagnosticUndercurlError
+    highlight! link ALEWarning MoonflyDiagnosticUndercurlWarn
+    highlight! link ALEInfo MoonflyDiagnosticUndercurlInfo
 else
-    exec 'highlight ALEError guibg=NONE'
-    exec 'highlight ALEWarning guibg=NONE'
-    exec 'highlight ALEInfo guibg=NONE'
+    highlight! link ALEError MoonflyDiagnosticUnderlineError
+    highlight! link ALEWarning MoonflyDiagnosticUnderlineWarn
+    highlight! link ALEInfo MoonflyDiagnosticUnderlineInfo
 endif
 highlight! link ALEVirtualTextError MoonflyGrey241
 highlight! link ALEErrorSign MoonflyRedAlert
