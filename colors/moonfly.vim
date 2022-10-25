@@ -883,10 +883,10 @@ if has('nvim')
     " Neo-tree plugin
     highlight! link NeoTreeDimText MoonflyGrey235
     highlight! link NeoTreeDotfile MoonflyGrey236
+    highlight! link NeoTreeGitAdded MoonflyGreen
     highlight! link NeoTreeGitConflict MoonflyCrimson
     highlight! link NeoTreeGitModified MoonflyViolet
     highlight! link NeoTreeGitUntracked MoonflyGrey241
-    highlight! link NeoTreeGitAdded MoonflyGreen
     highlight! link NeoTreeMessage MoonflyGrey247
     highlight! link NeoTreeModified MoonflyYellow
     highlight! link NeoTreeRootName MoonflyPurple
