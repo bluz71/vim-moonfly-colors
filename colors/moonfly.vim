@@ -331,8 +331,79 @@ exec 'highlight DiffDelete guibg=' . s:grey236 . ' guifg=' . s:grey241 ' gui=non
 exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
 " Neovim-only core highlight groups
-if has('nvim')
+if has('nvim-0.8')
     lua require("moonfly").core()
+elseif has('nvim-0.7')
+    exec 'highlight Whitespace guifg=' . s:grey0
+    exec 'highlight TermCursor guibg=' . s:grey247 . ' guifg=bg gui=none'
+    if g:moonflyNormalFloat
+        exec 'highlight NormalFloat guibg=bg guifg=' . s:grey249
+    else
+        exec 'highlight NormalFloat guibg=' . s:grey234 . ' guifg=fg'
+    endif
+    exec 'highlight FloatBorder guibg=bg guifg=' . s:grey236
+    highlight! link WinSeparator VertSplit
+
+    " Neovim Treesitter
+    highlight! link TSAnnotation MoonflyViolet
+    highlight! link TSAttribute MoonflySky
+    highlight! link TSConstant MoonflyTurquoise
+    highlight! link TSConstBuiltin MoonflyGreen
+    highlight! link TSConstMacro MoonflyViolet
+    highlight! link TSConstructor MoonflyEmerald
+    highlight! link TSDanger Todo
+    highlight! link TSFuncBuiltin MoonflySky
+    highlight! link TSFuncMacro MoonflySky
+    highlight! link TSInclude MoonflyCranberry
+    highlight! link TSKeywordOperator MoonflyViolet
+    highlight! link TSNamespace MoonflyTurquoise
+    highlight! link TSParameter MoonflyWhite
+    highlight! link TSPunctSpecial MoonflyCranberry
+    highlight! link TSSymbol MoonflyPurple
+    highlight! link TSTag MoonflyBlue
+    highlight! link TSTagDelimiter MoonflyLime
+    highlight! link TSVariableBuiltin MoonflyLime
+    " Language specific overrides.
+    highlight! link bashTSParameter MoonflyTurquoise
+    highlight! link cssTSPunctDelimiter MoonflyCranberry
+    highlight! link cssTSType MoonflyBlue
+    highlight! link scssTSPunctDelimiter MoonflyCranberry
+    highlight! link scssTSType MoonflyBlue
+    highlight! link scssTSVariable MoonflyTurquoise
+    highlight! link vimTSVariable MoonflyTurquoise
+    highlight! link vimTSVariableBuiltin MoonflyEmerald
+    highlight! link yamlTSField MoonflySky
+    highlight! link yamlTSPunctDelimiter MoonflyCranberry
+
+    " Neovim Diagnostic
+    highlight! link DiagnosticError MoonflyRed
+    highlight! link DiagnosticWarn MoonflyYellow
+    highlight! link DiagnosticInfo MoonflySky
+    highlight! link DiagnosticHint MoonflyWhite
+    if g:moonflyUndercurls
+        highlight! link DiagnosticUnderlineError MoonflyDiagnosticUndercurlError
+        highlight! link DiagnosticUnderlineWarn MoonflyDiagnosticUndercurlWarn
+        highlight! link DiagnosticUnderlineInfo MoonflyDiagnosticUndercurlInfo
+        highlight! link DiagnosticUnderlineHint MoonflyDiagnosticUndercurlHint
+    else
+        highlight! link DiagnosticUnderlineError MoonflyDiagnosticUnderlineError
+        highlight! link DiagnosticUnderlineWarn MoonflyDiagnosticUnderlineWarn
+        highlight! link DiagnosticUnderlineInfo MoonflyDiagnosticUnderlineInfo
+        highlight! link DiagnosticUnderlineHint MoonflyDiagnosticUnderlineHint
+    endif
+    highlight! link DiagnosticVirtualTextError MoonflyGrey241
+    highlight! link DiagnosticVirtualTextWarn MoonflyGrey241
+    highlight! link DiagnosticVirtualTextInfo MoonflyGrey241
+    highlight! link DiagnosticVirtualTextHint MoonflyGrey241
+    highlight! link DiagnosticSignError MoonflyRedAlert
+    highlight! link DiagnosticSignWarn MoonflyYellowAlert
+    highlight! link DiagnosticSignInfo MoonflySkyAlert
+    highlight! link DiagnosticSignHint MoonflyWhiteAlert
+    highlight! link DiagnosticFloatingError MoonflyRed
+    highlight! link DiagnosticFloatingWarn MoonflyYellow
+    highlight! link DiagnosticFloatingInfo MoonflySky
+    highlight! link DiagnosticFloatingHint MoonflyWhite
+    highlight! link LspSignatureActiveParameter MoonflyVisual
 endif
 
 "-----------------------------------------------------------------------
