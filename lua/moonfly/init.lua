@@ -42,13 +42,13 @@ local M = {}
 
 M.core = function()
   highlight(0, "Whitespace", { fg = grey0 })
-  highlight(0, "TermCursor", { bg = grey247, fg = "bg" })
+  highlight(0, "TermCursor", { bg = grey247, fg = black })
   if g.moonflyNormalFloat then
-    highlight(0, "NormalFloat", { bg = "bg", fg = grey249 })
+    highlight(0, "NormalFloat", { bg = black, fg = grey249 })
   else
-    highlight(0, "NormalFloat", { bg = grey234, fg = "fg" })
+    highlight(0, "NormalFloat", { bg = grey234, fg = white })
   end
-  highlight(0, "FloatBorder", { bg = "bg", fg = grey236 })
+  highlight(0, "FloatBorder", { bg = black, fg = grey236 })
   highlight(0, "WinBar", { bg = grey235, fg = white })
   highlight(0, "WinBarNC", { bg = grey235, fg = grey247 })
   highlight(0, "WinSeparator", { link = "VertSplit" })
