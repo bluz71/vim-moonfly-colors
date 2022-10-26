@@ -46,7 +46,7 @@ local M = {}
 
 M.core = function()
   highlight(0, "Whitespace", { fg = grey0 })
-  highlight(0, "TermCursor", { bg = grey247, fg = bg })
+  highlight(0, "TermCursor", { bg = grey247, fg = black })
   if g.moonflyNormalFloat then
     highlight(0, "NormalFloat", { bg = bg, fg = grey249 })
   else
