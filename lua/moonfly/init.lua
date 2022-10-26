@@ -5,6 +5,10 @@ local highlight = vim.api.nvim_set_hl
 -- Background and foreground
 local black = "#080808"
 local white = "#c6c6c6"
+local bg = black
+if g.moonflyTransparent then
+  bg = "NONE"
+end
 -- Variations of charcoal-grey
 local grey0 = "#323437"
 local grey254 = "#e4e4e4"
@@ -42,13 +46,13 @@ local M = {}
 
 M.core = function()
   highlight(0, "Whitespace", { fg = grey0 })
-  highlight(0, "TermCursor", { bg = grey247, fg = black })
+  highlight(0, "TermCursor", { bg = grey247, fg = bg })
   if g.moonflyNormalFloat then
-    highlight(0, "NormalFloat", { bg = black, fg = grey249 })
+    highlight(0, "NormalFloat", { bg = bg, fg = grey249 })
   else
     highlight(0, "NormalFloat", { bg = grey234, fg = white })
   end
-  highlight(0, "FloatBorder", { bg = black, fg = grey236 })
+  highlight(0, "FloatBorder", { bg = bg, fg = grey236 })
   highlight(0, "WinBar", { bg = grey235, fg = white })
   highlight(0, "WinBarNC", { bg = grey235, fg = grey247 })
   highlight(0, "WinSeparator", { link = "VertSplit" })
