@@ -937,7 +937,9 @@ if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
 endif
 
 " Neovim only plugins
-if has('nvim')
+if has('nvim-0.7')
+    lua require("moonfly").plugins()
+elseif has('nvim-0.6')
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon MoonflyBlue
     highlight! link NvimTreeFolderName MoonflyBlue
