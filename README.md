@@ -4,7 +4,7 @@
 _moonfly_ is a dark colorscheme for Vim & Neovim.
 
 :point_right: I maintain another dark Vim theme named
-[nightfly](https://github.com/bluz71/vim-nightfly-guicolors) which may be of
+[nightfly](https://github.com/bluz71/vim-nightfly-colors) which may be of
 interest.
 
 Screenshot

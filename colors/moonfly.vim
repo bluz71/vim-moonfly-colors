@@ -928,7 +928,7 @@ highlight! link MistflyVisual MoonflyPurpleMode
 highlight! link MistflyCommand MoonflyYellowMode
 highlight! link MistflyReplace MoonflyCrimsonMode
 
-" Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
+" Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-colors/issues/31)
 highlight! link CocUnusedHighlight MoonflyGrey249
 
 " indentLine plugin
