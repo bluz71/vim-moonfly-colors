@@ -357,6 +357,35 @@ set fillchars=horiz:━,horizup:┻,horizdown:┳,vert:┃,vertleft:┨,vertrigh
 vim.opt.fillchars = { horiz = '━', horizup = '┻', horizdown = '┳', vert = '┃', vertleft = '┫', vertright = '┣', verthoriz = '╋', }
 ```
 
+Overriding Highlights
+---------------------
+
+If a certain highlight of this theme does not suit then it is recommended to use
+an `autocmd` to override that desired highlight.
+
+For example, if one wishes to highlight functions in bold then simply add the
+following to your initialization file:
+
+```viml
+" Vimscript initialization file
+augroup CustomHighlight
+    autocmd!
+    autocmd ColorScheme moonfly highlight Function guifg=#74b2ff gui=bold
+augroup END
+```
+
+```lua
+-- Lua initialization file
+local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "moonfly",
+  callback = function()
+    vim.api.nvim_set_hl(0, "Function", { fg = "#74b2ff", bold = true })
+  end,
+  group = custom_highlight,
+})
+```
+
 True Color Terminals
 --------------------
 
@@ -393,35 +422,6 @@ be added to the `~/.vimrc` file:
 ```viml
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-```
-
-Overriding Highlights
----------------------
-
-If a certain highlight of this theme does not suit then it is recommended to use
-an `autocmd` to override that desired highlight.
-
-For example, if one wishes to highlight functions in bold then simply add the
-following to your initialization file:
-
-```viml
-" Vimscript initialization file
-augroup CustomHighlight
-    autocmd!
-    autocmd ColorScheme moonfly highlight Function guifg=#74b2ff gui=bold
-augroup END
-```
-
-```lua
--- Lua initialization file
-local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
-vim.api.nvim_create_autocmd("ColorScheme", {
-  pattern = "moonfly",
-  callback = function()
-    vim.api.nvim_set_hl(0, "Function", { fg = "#74b2ff", bold = true })
-  end,
-  group = custom_highlight,
-})
 ```
 
 Terminal Themes
