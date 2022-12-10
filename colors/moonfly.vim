@@ -802,7 +802,7 @@ highlight! link TagbarVisibilityPrivate MoonflyLime
 highlight! link TagbarKind MoonflyEmerald
 
 " NERDTree plugin
-highlight! link NERDTreeClosable MoonflyEmerald
+highlight! link NERDTreeClosable MoonflyGrey247
 highlight! link NERDTreeCWD MoonflyPurple
 highlight! link NERDTreeDir MoonflySky
 highlight! link NERDTreeDirSlash MoonflyCranberry
@@ -812,7 +812,7 @@ highlight! link NERDTreeHelp MoonflyGrey247
 highlight! link NERDTreeLinkDir MoonflyBlue
 highlight! link NERDTreeLinkFile MoonflyBlue
 highlight! link NERDTreeLinkTarget MoonflyTurquoise
-highlight! link NERDTreeOpenable MoonflyEmerald
+highlight! link NERDTreeOpenable MoonflyGrey247
 highlight! link NERDTreePart MoonflyGrey0
 highlight! link NERDTreePartFile MoonflyGrey0
 highlight! link NERDTreeUp MoonflyBlue
@@ -825,7 +825,7 @@ highlight! link NERDTreeGitStatusStaged MoonflySky
 highlight! link NERDTreeGitStatusUntracked MoonflyRed
 
 " fern.vim plugin
-highlight! link FernBranchSymbol MoonflyEmerald
+highlight! link FernBranchSymbol MoonflyGrey247
 highlight! link FernBranchText MoonflyBlue
 highlight! link FernMarkedLine MoonflyVisual
 highlight! link FernMarkedText MoonflyCrimson
