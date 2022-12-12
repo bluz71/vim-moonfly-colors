@@ -510,7 +510,6 @@ if !has('nvim-0.8')
     highlight! link pythonStatement MoonflyViolet
 
     " Ruby
-    highlight! link erubyDelimiter MoonflyCrimson
     highlight! link rubyAccess MoonflyYellow
     highlight! link rubyAssertion MoonflySky
     highlight! link rubyAttribute MoonflySky
@@ -852,6 +851,7 @@ highlight! link bufExplorerSortBy MoonflyGrey247
 highlight! link CleverFDefaultLabel MoonflyCrimson
 highlight! link CtrlPMatch MoonflyCoral
 highlight! link Directory MoonflyBlue
+highlight! link erubyDelimiter MoonflyCrimson
 highlight! link HighlightedyankRegion MoonflyGrey0
 highlight! link jsonKeyword MoonflySky
 highlight! link jsonQuote MoonflyWhite
