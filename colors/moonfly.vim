@@ -118,7 +118,7 @@ exec 'highlight MoonflyGrey249 guifg=' . s:grey249
 exec 'highlight MoonflyGrey247 guifg=' . s:grey247
 exec 'highlight MoonflyGrey246 guifg=' . s:grey246
 exec 'highlight MoonflyGrey241 guifg=' . s:grey241
-exec 'highlight MoonflyGrey237 guifg=' . s:grey237
+exec 'highlight MoonflyGrey238 guifg=' . s:grey238
 exec 'highlight MoonflyGrey236 guifg=' . s:grey236
 exec 'highlight MoonflyGrey235 guifg=' . s:grey235
 exec 'highlight MoonflyKhaki guifg=' . s:khaki
@@ -944,7 +944,7 @@ elseif has('nvim-0.6')
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon MoonflyBlue
     highlight! link NvimTreeFolderName MoonflyBlue
-    highlight! link NvimTreeIndentMarker MoonflyGrey236
+    highlight! link NvimTreeIndentMarker MoonflyGrey238
     highlight! link NvimTreeOpenedFolderName MoonflyBlue
     highlight! link NvimTreeRootFolder MoonflyPurple
     highlight! link NvimTreeSpecialFile MoonflyYellow
@@ -955,11 +955,11 @@ elseif has('nvim-0.6')
     exec 'highlight NvimTreeSymlink guifg=' . s:turquoise . ' gui=none'
 
     " Neo-tree plugin
-    highlight! link NeoTreeDimText MoonflyGrey235
+    highlight! link NeoTreeDimText MoonflyGrey238
     highlight! link NeoTreeDotfile MoonflyGrey236
     highlight! link NeoTreeGitAdded MoonflyGreen
     highlight! link NeoTreeGitConflict MoonflyCrimson
-    highlight! link NeoTreeGitModified MoonflyViolet
+    highlight! link NeoTreeGitModified MoonflyYellow
     highlight! link NeoTreeGitUntracked MoonflyGrey241
     highlight! link NeoTreeMessage MoonflyGrey247
     highlight! link NeoTreeModified MoonflyYellow
