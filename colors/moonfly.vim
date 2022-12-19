@@ -47,6 +47,7 @@ let s:grey247   = '#9e9e9e'
 let s:grey246   = '#949494'
 let s:grey244   = '#808080'
 let s:grey241   = '#626262'
+let s:grey239   = '#4e4e4e'
 let s:grey238   = '#444444'
 let s:grey237   = '#3a3a3a'
 let s:grey236   = '#303030'
@@ -118,6 +119,7 @@ exec 'highlight MoonflyGrey249 guifg=' . s:grey249
 exec 'highlight MoonflyGrey247 guifg=' . s:grey247
 exec 'highlight MoonflyGrey246 guifg=' . s:grey246
 exec 'highlight MoonflyGrey241 guifg=' . s:grey241
+exec 'highlight MoonflyGrey239 guifg=' . s:grey239
 exec 'highlight MoonflyGrey238 guifg=' . s:grey238
 exec 'highlight MoonflyGrey236 guifg=' . s:grey236
 exec 'highlight MoonflyGrey235 guifg=' . s:grey235
@@ -825,8 +827,8 @@ highlight! link NERDTreeGitStatusStaged MoonflySky
 highlight! link NERDTreeGitStatusUntracked MoonflyRed
 
 " fern.vim plugin
-highlight! link FernBranchSymbol MoonflyGrey238
-highlight! link FernLeafSymbol MoonflyGrey238
+highlight! link FernBranchSymbol MoonflyGrey239
+highlight! link FernLeafSymbol MoonflyGrey239
 highlight! link FernBranchText MoonflyBlue
 highlight! link FernMarkedLine MoonflyVisual
 highlight! link FernMarkedText MoonflyCrimson

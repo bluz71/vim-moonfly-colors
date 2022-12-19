@@ -145,7 +145,7 @@ M.plugins = function()
   -- NvimTree plugin
   highlight(0, "NvimTreeFolderIcon", { link = "MoonflyBlue" })
   highlight(0, "NvimTreeFolderName", { link = "MoonflyBlue" })
-  highlight(0, "NvimTreeIndentMarker", { link = "MoonflyGrey238" })
+  highlight(0, "NvimTreeIndentMarker", { link = "MoonflyGrey239" })
   highlight(0, "NvimTreeOpenedFolderName", { link = "MoonflyBlue" })
   highlight(0, "NvimTreeRootFolder", { link = "MoonflyPurple" })
   highlight(0, "NvimTreeSpecialFile", { link = "MoonflyYellow" })
@@ -158,7 +158,7 @@ M.plugins = function()
   highlight(0, "NvimTreeSymlink", { fg = turquoise })
 
   -- Neo-tree plugin
-  highlight(0, "NeoTreeDimText", { link = "MoonflyGrey238" })
+  highlight(0, "NeoTreeDimText", { link = "MoonflyGrey239" })
   highlight(0, "NeoTreeDotfile", { link = "MoonflyGrey236" })
   highlight(0, "NeoTreeGitAdded", { link = "MoonflyGreen" })
   highlight(0, "NeoTreeGitConflict", { link = "MoonflyCrimson" })
