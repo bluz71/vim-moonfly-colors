@@ -947,7 +947,7 @@ elseif has('nvim-0.6')
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon MoonflyBlue
     highlight! link NvimTreeFolderName MoonflyBlue
-    highlight! link NvimTreeIndentMarker MoonflyGrey238
+    highlight! link NvimTreeIndentMarker MoonflyGrey239
     highlight! link NvimTreeOpenedFolderName MoonflyBlue
     highlight! link NvimTreeRootFolder MoonflyPurple
     highlight! link NvimTreeSpecialFile MoonflyYellow
@@ -958,7 +958,7 @@ elseif has('nvim-0.6')
     exec 'highlight NvimTreeSymlink guifg=' . s:turquoise . ' gui=none'
 
     " Neo-tree plugin
-    highlight! link NeoTreeDimText MoonflyGrey238
+    highlight! link NeoTreeDimText MoonflyGrey239
     highlight! link NeoTreeDotfile MoonflyGrey236
     highlight! link NeoTreeGitAdded MoonflyGreen
     highlight! link NeoTreeGitConflict MoonflyCrimson
