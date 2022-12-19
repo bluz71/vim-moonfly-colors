@@ -28,6 +28,7 @@ local khaki = "#c2c292"
 local yellow = "#e3c78a"
 local orange = "#de935f"
 local coral = "#f09479"
+local orchid = '#e196a2'
 local lime = "#85dc85"
 local green = "#8cc85f"
 local emerald = "#36c692"
@@ -73,7 +74,7 @@ M.core = function()
   highlight(0, "@keyword.operator", { link = "MoonflyViolet" })
   highlight(0, "@namespace", { link = "MoonflyTurquoise" })
   highlight(0, "@none", {})
-  highlight(0, "@parameter", { link = "MoonflyWhite" })
+  highlight(0, "@parameter", { link = "MoonflyOrchid" })
   highlight(0, "@punctuation.special", { link = "MoonflyCranberry" })
   highlight(0, "@string.regex", { link = "MoonflyTurquoise" })
   highlight(0, "@symbol", { link = "MoonflyPurple" })
@@ -97,6 +98,7 @@ M.core = function()
   highlight(0, "@text.underline", { underline = true })
   highlight(0, "@text.uri", { link = "MoonflyPurple" })
   highlight(0, "@text.warning", { link = "MoonflyYellowAlert" })
+  highlight(0, "@variable", { link = "MoonflyWhite" })
   highlight(0, "@variable.builtin", { link = "MoonflyLime" })
   -- Language specific overrides.
   highlight(0, "@parameter.bash", { link = "MoonflyTurquoise" })
