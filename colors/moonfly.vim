@@ -195,7 +195,7 @@ highlight! link Function MoonflySky
 highlight! link String MoonflyKhaki
 
 " Booleans
-highlight! link Boolean MoonflyCoral
+highlight! link Boolean MoonflyCranberry
 
 " Identifiers
 exec 'highlight Identifier guifg=' . s:turquoise
