@@ -37,7 +37,7 @@ local sky = "#74b2ff"
 local turquoise = "#79dac8"
 local purple = "#ae81ff"
 local cranberry = "#e65e72"
-local violet = "#d183e8"
+local violet = "#cf87e8"
 local crimson = "#ff5189"
 local red = "#ff5454"
 -- Extra colors

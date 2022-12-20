@@ -68,7 +68,7 @@ let s:sky       = '#74b2ff'
 let s:turquoise = '#79dac8'
 let s:purple    = '#ae81ff'
 let s:cranberry = '#e65e72'
-let s:violet    = '#d183e8'
+let s:violet    = '#cf87e8'
 let s:crimson   = '#ff5189'
 let s:red       = '#ff5454'
 " Extra colors

@@ -469,7 +469,7 @@ For other terminals please configure appropriately with the following colors:
 | Color 3        | Green (normal)  | `#8cc85f` | ![background](https://place-hold.it/32/8cc85f?text=+)
 | Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://place-hold.it/32/e3c78a?text=+)
 | Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://place-hold.it/32/80a0ff?text=+)
-| Color 6        | Purple (normal) | `#d183e8` | ![background](https://place-hold.it/32/d183e8?text=+)
+| Color 6        | Purple (normal) | `#cf87e8` | ![background](https://place-hold.it/32/cf87e8?text=+)
 | Color 7        | Cyan (normal)   | `#79dac8` | ![background](https://place-hold.it/32/79dac8?text=+)
 | Color 8        | White (normal)  | `#c6c6c6` | ![background](https://place-hold.it/32/c6c6c6?text=+)
 | Color 9        | Black (bright)  | `#949494` | ![background](https://place-hold.it/32/949494?text=+)
