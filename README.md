@@ -83,6 +83,12 @@ Plug 'bluz71/vim-moonfly-colors', { 'branch': 'cterm-compat' }
 use { 'bluz71/vim-moonfly-colors', branch = 'cterm-compat' }
 ```
 
+[lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{ 'bluz71/vim-moonfly-colors', lazy = true },
+```
+
 Installation
 ------------
 
