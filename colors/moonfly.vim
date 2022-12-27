@@ -902,6 +902,7 @@ highlight! link GitGutterDelete MoonflyRedAlert
 " Signify plugin
 highlight! link SignifySignAdd MoonflyEmeraldAlert
 highlight! link SignifySignChange MoonflyYellowAlert
+highlight! link SignifySignChangeDelete MoonflyCoralAlert
 highlight! link SignifySignDelete MoonflyRedAlert
 
 " FZF plugin
