@@ -44,6 +44,7 @@ Neovim-only:
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [Hop](https://github.com/phaazon/hop.nvim)
 - [Indent BlankLine](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [Mini](https://github.com/echasnovski/mini.nvim)
 - [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)

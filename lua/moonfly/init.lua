@@ -17,6 +17,7 @@ local grey247 = "#9e9e9e"
 local grey246 = "#949494"
 local grey244 = "#808080"
 local grey241 = "#626262"
+local grey239 = '#4e4e4e'
 local grey238 = "#444444"
 local grey237 = "#3a3a3a"
 local grey236 = "#303030"
@@ -335,6 +336,22 @@ M.plugins = function()
   highlight(0, "NotifyINFOTitle", { link = "MoonflyBlue" })
   highlight(0, "NotifyDEBUGTitle", { link = "MoonflyGrey246" })
   highlight(0, "NotifyTRACETitle", { link = "MoonflyPurple" })
+
+  -- lazy.nvim
+  highlight(0, "LazyCommit", { link = "MoonflyEmerald" })
+  highlight(0, "LazyCommitType", { link = "MoonflyViolet" })
+  highlight(0, "LazyH1", { link = "MoonflyBlueMode" })
+  highlight(0, "LazyProgressDone", { link = "MoonflyBlue" })
+  highlight(0, "LazyProgressTodo", { link = "MoonflyGrey0" })
+  highlight(0, "LazyReasonCmd", { link = "MoonflyGreen" })
+  highlight(0, "LazyReasonPlugin", { link = "MoonflyOrchid" })
+  highlight(0, "LazyReasonRuntime", { link = "MoonflyViolet" })
+  highlight(0, "LazySpecial", { link = "MoonflyBlue" })
+  highlight(0, "LazyButton", { bg = grey235, fg = white })
+  highlight(0, "LazyButtonActive", { bg = grey239, fg = grey254 })
+  if g.moonflyNormalFloat ~= true then
+    highlight(0, "LazyNormal", { bg = grey233, fg = white })
+  end
 end
 
 return M
