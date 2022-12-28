@@ -46,6 +46,7 @@ Neovim-only:
 - [Indent BlankLine](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lazy.nvim](https://github.com/folke/lazy.nvim)
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)
 - [Mini](https://github.com/echasnovski/mini.nvim)
 - [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)

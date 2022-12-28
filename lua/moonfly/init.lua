@@ -352,6 +352,22 @@ M.plugins = function()
   if g.moonflyNormalFloat ~= true then
     highlight(0, "LazyNormal", { bg = grey233, fg = white })
   end
+
+  -- mason.nvim
+  highlight(0, "MasonError", { link = "MoonflyRed" })
+  highlight(0, "MasonHeader", { link = "MoonflyBlueMode" })
+  highlight(0, "MasonHeaderSecondary", { link = "MoonflyBlueMode" })
+  highlight(0, "MasonHeading", { link = "MoonflyGrey254" })
+  highlight(0, "MasonHighlight", { link = "MoonflyBlue" })
+  highlight(0, "MasonHighlightBlock", { link = "MoonflyBlueMode" })
+  highlight(0, "MasonHighlightBlockBold", { link = "MoonflyBlueMode" })
+  highlight(0, "MasonHighlightBlockBoldSecondary", { link = "MoonflyEmeraldMode" })
+  highlight(0, "MasonHighlightBlockSecondary", { link = "MoonflyEmeraldMode" })
+  highlight(0, "MasonHighlightSecondary", { link = "MoonflyEmerald" })
+  highlight(0, "MasonLink", { link = "MoonflyPurple" })
+  highlight(0, "MasonMuted", { link = "MoonflyGrey241" })
+  highlight(0, "MasonMutedBlock", { bg = grey235, fg = white })
+  highlight(0, "MasonMutedBlockBold", { bg = grey235, fg = grey254 })
 end
 
 return M
