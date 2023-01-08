@@ -368,6 +368,13 @@ M.plugins = function()
   highlight(0, "MasonMuted", { link = "MoonflyGrey241" })
   highlight(0, "MasonMutedBlock", { bg = grey235, fg = white })
   highlight(0, "MasonMutedBlockBold", { bg = grey235, fg = grey254 })
+
+  -- linefly plugin
+  highlight(0, "LineflyNormal", { link = "MoonflyBlueMode" })
+  highlight(0, "LineflyInsert", { link = "MoonflyEmeraldMode" })
+  highlight(0, "LineflyVisual", { link = "MoonflyPurpleMode" })
+  highlight(0, "LineflyCommand", { link = "MoonflyYellowMode" })
+  highlight(0, "LineflyReplace", { link = "MoonflyCrimsonMode" })
 end
 
 return M
