@@ -1,0 +1,144 @@
+*moonfly* A dark charcoal theme for classic Vim & modern Neovim.
+
+OPTIONS                                                       *moonfly-options*
+
+Default option values:
+>
+  let g:moonflyCursorColor = v:false
+  let g:moonflyItalics = v:true
+  let g:moonflyNormalFloat = v:false
+  let g:moonflyTerminalColors = v:true
+  let g:moonflyTransparent = v:false
+  let g:moonflyUndercurls = v:true
+  let g:moonflyUnderlineMatchParen = v:false
+  let g:moonflyWinSeparator = 1
+<
+------------------------------------------------------------------------------
+moonflyCursorColor~                                     *g:moonflyCursorColor*
+
+The `moonflyCursorColor` option specifies whether to color the cursor or not.
+By default the cursor will NOT be colored. If you prefer a colored cursor then
+add the following to your initialization file:
+
+>
+  " Vimscript initialization file
+  let g:moonflyCursorColor = v:true
+
+  -- Lua initialization file
+  vim.g.moonflyCursorColor = true
+<
+------------------------------------------------------------------------------
+moonflyItalics~                                             *g:moonflyItalics*
+
+The `moonflyItalics` option specifies whether to use italics for comments and
+certain HTML elements in GUI versions of Vim. By default this option is
+enabled. If you do not like the appearance of italics then add the following
+to your initialization file:
+
+>
+  " Vimscript initialization file
+  let g:moonflyItalics = v:false
+
+  -- Lua initialization file
+  vim.g.moonflyItalics = false
+<
+------------------------------------------------------------------------------
+moonflyNormalFloat~                                     *g:moonflyNormalFloat*
+
+The `moonflyNormalFloat` option specifies whether to use moonfly background
+and foreground colors in Neovim floating windows. By default this option is
+disabled, hence, Neovim floating windows will usually be styled with popup
+menu colors. If you would like to use moonfly colors instead then add the
+following to your configuration:
+
+>
+  " Vimscript initialization file
+  let g:moonflyNormalFloat = v:true
+
+  -- Lua initialization file
+  vim.g.moonflyNormalFloat = true
+<
+------------------------------------------------------------------------------
+moonflyTerminalColors~                               *g:moonflyTerminalColors*
+
+The `moonflyTerminalColors` option specifies whether to use the moonfly color
+palette in `:terminal` windows when `termguicolors` is set. By default this
+option is enabled. If you prefer not to use the moonfly color palette for the
+first 16 terminal colors then add the following to your initialization file:
+
+>
+  " Vimscript initialization file
+  let g:moonflyTerminalColors = v:false
+
+  -- Lua initialization file
+  vim.g.moonflyTerminalColors = false
+<
+------------------------------------------------------------------------------
+moonflyTransparent~                                     *g:moonflyTransparent*
+
+The `moonflyTransparent` option specifies whether to use an opaque or
+transparent background in GUI versions of Vim. By default this option is
+disabled. If you would like a transparent background then add the following to
+your initialization file:
+
+>
+  " Vimscript initialization file
+  let g:moonflyTransparent = v:true
+
+  -- Lua initialization file
+  vim.g.moonflyTransparent = true
+<
+------------------------------------------------------------------------------
+moonflyUndercurls~                                       *g:moonflyUndercurls*
+
+The `moonflyUndercurls` option specifies whether to use undercurls for
+spelling and linting errors in GUI versions of Vim, including terminal Vim
+with `termguicolors` set. By default this option is enabled. If you do not
+like the appearance of undercurls then add the following to your
+initialization file:
+
+>
+  " Vimscript initialization file
+  let g:moonflyUndercurls = v:false
+
+  -- Lua initialization file
+  vim.g.moonflyUndercurls = false
+<
+------------------------------------------------------------------------------
+moonflyUnderlineMatchParen~                     *g:moonflyUnderlineMatchParen*
+
+The `moonflyUnderlineMatchParen` option specifies whether to underline
+matching parentheses. By default this option is disabled. If you want to
+underline matching parentheses then add the following to your initialization
+file:
+
+>
+  " Vimscript initialization file
+  let g:moonflyUnderlineMatchParen = v:true
+
+  -- Lua initialization file
+  vim.g.moonflyUnderlineMatchParen = true
+<
+------------------------------------------------------------------------------
+moonflyWinSeparator~                                   *g:moonflyWinSeparator*
+
+The `moonflyWinSeparator` option specifies the style of window separators:
+
+- `0` will display no window separators
+
+- `1` will display block separators; this is the default
+
+- `2` will diplay line separators
+
+For example, if line separators are desired then add the following to your
+configuration:
+
+>
+  " Vimscript initialization file
+  let g:moonflyWinSeparator = 2
+
+  -- Lua initialization file
+  vim.g.moonflyWinSeparator = 2
+<
+
+vim:tw=78:ts=8:noet:ft=help:norl:
