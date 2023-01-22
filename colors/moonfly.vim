@@ -858,6 +858,8 @@ highlight! link CleverFDefaultLabel MoonflyCrimson
 highlight! link CtrlPMatch MoonflyCoral
 highlight! link Directory MoonflyBlue
 highlight! link erubyDelimiter MoonflyCrimson
+highlight! link helpHeadline MoonflyBlue
+highlight! link helpSectionDelim MoonflyBlue
 highlight! link HighlightedyankRegion MoonflyGrey0
 highlight! link jsonKeyword MoonflySky
 highlight! link jsonQuote MoonflyWhite
