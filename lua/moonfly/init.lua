@@ -330,7 +330,7 @@ M.plugins = function()
   highlight(0, "DashboardHeader", { link = "MoonflyBlue" })
   highlight(0, "DashboardShortCut", { link = "MoonflyTurquoise" })
 
-  -- nvim-notify
+  -- nvim-notify plugin
   highlight(0, "NotifyERRORBorder", { link = "FloatBorder" })
   highlight(0, "NotifyWARNBorder", { link = "FloatBorder" })
   highlight(0, "NotifyINFOBorder", { link = "FloatBorder" })
@@ -347,7 +347,7 @@ M.plugins = function()
   highlight(0, "NotifyDEBUGTitle", { link = "MoonflyGrey246" })
   highlight(0, "NotifyTRACETitle", { link = "MoonflyPurple" })
 
-  -- lazy.nvim
+  -- lazy.nvim plugin
   highlight(0, "LazyCommit", { link = "MoonflyEmerald" })
   highlight(0, "LazyCommitType", { link = "MoonflyViolet" })
   highlight(0, "LazyH1", { link = "MoonflyBlueMode" })
@@ -363,7 +363,7 @@ M.plugins = function()
     highlight(0, "LazyNormal", { bg = grey233, fg = white })
   end
 
-  -- mason.nvim
+  -- mason.nvim plugin
   highlight(0, "MasonError", { link = "MoonflyRed" })
   highlight(0, "MasonHeader", { link = "MoonflyBlueMode" })
   highlight(0, "MasonHeaderSecondary", { link = "MoonflyBlueMode" })
@@ -385,6 +385,33 @@ M.plugins = function()
   highlight(0, "LineflyVisual", { link = "MoonflyPurpleMode" })
   highlight(0, "LineflyCommand", { link = "MoonflyYellowMode" })
   highlight(0, "LineflyReplace", { link = "MoonflyCrimsonMode" })
+
+  -- lspsaga.nvim plugin
+  highlight(0, "TitleString", { link = "MoonflyBlue" })
+  highlight(0, "TitleIcon", { link = "MoonflyBlue" })
+  highlight(0, "TitleSymbol", { link = "MoonflyBlue" })
+  highlight(0, "SagaBorder", { link = "FloatBorder" })
+  highlight(0, "SagaNormal", { link = "Normal" })
+  highlight(0, "SagaExpand", { link = "MoonflyCranberry" })
+  highlight(0, "SagaCollapse", { link = "MoonflyCranberry" })
+  highlight(0, "SagaBeacon", { link = "MoonflyPurpleMode" })
+  highlight(0, "ActionPreviewTitle", { link = "MoonflyBlue" })
+  highlight(0, "CodeActionText", { link = "MoonflyYellow" })
+  highlight(0, "CodeActionConceal", { link = "MoonflyGreen" })
+  highlight(0, "FinderSelection", { link = "MoonflyTurquoise" })
+  highlight(0, "FinderFileName", { link = "MoonflyWhite" })
+  highlight(0, "FinderIcon", { link = "MoonflyTurquoise" })
+  highlight(0, "FinderType", { link = "MoonflyViolet" })
+  highlight(0, "FinderSpinnerTitle", { link = "MoonflyPurple" })
+  highlight(0, "FinderSpinner", { link = "MoonflyPurple" })
+  highlight(0, "FinderVirtText", { link = "MoonflyRed" })
+  highlight(0, "RenameNormal", { link = "MoonflyOrange" })
+  highlight(0, "DiagnosticSource", { link = "MoonflyGrey241" })
+  highlight(0, "DiagnosticPos", { link = "MoonflyBlue" })
+  highlight(0, "CallHierarchyIcon", { link = "MoonflyViolet" })
+  highlight(0, "CallHierarchyTitle", { link = "MoonflyCranberry" })
+  highlight(0, "SagaShadow", { link = "Normal" })
+  highlight(0, "OutlineIndent", { link = "MoonflyPurple" })
 end
 
 return M

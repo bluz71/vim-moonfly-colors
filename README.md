@@ -45,6 +45,7 @@ Neovim-only:
 - [Hop](https://github.com/phaazon/hop.nvim)
 - [Indent BlankLine](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [mason.nvim](https://github.com/williamboman/mason.nvim)
 - [Mini](https://github.com/echasnovski/mini.nvim)
