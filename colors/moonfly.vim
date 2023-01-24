@@ -445,6 +445,21 @@ if !has('nvim-0.8')
     highlight! link csStorage MoonflyViolet
     highlight! link csXmlTag MoonflyBlue
 
+    " Elixir
+    highlight! link eelixirDelimiter MoonflyCrimson
+    highlight! link elixirAtom MoonflyPurple
+    highlight! link elixirBlockDefinition MoonflyViolet
+    highlight! link elixirDefine MoonflyViolet
+    highlight! link elixirDocTest MoonflyGrey247
+    highlight! link elixirExUnitAssert MoonflyLime
+    highlight! link elixirExUnitMacro MoonflySky
+    highlight! link elixirKernelFunction MoonflyGreen
+    highlight! link elixirKeyword MoonflyOrange
+    highlight! link elixirModuleDefine MoonflyBlue
+    highlight! link elixirPrivateDefine MoonflyViolet
+    highlight! link elixirStringDelimiter MoonflyKhaki
+    highlight! link elixirVariable MoonflyTurquoise
+
     " Go
     highlight! link goBuiltins MoonflySky
     highlight! link goConditional MoonflyViolet
@@ -565,6 +580,13 @@ if !has('nvim-0.8')
     highlight! link rustTrait MoonflyEmerald
     highlight! link rustType MoonflyEmerald
 
+    " Scala (note, link highlighting does not work, I don't know why)
+    exec 'highlight scalaCapitalWord guifg=' . s:blue
+    exec 'highlight scalaCommentCodeBlock guifg=' . s:grey247
+    exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
+    exec 'highlight scalaKeywordModifier guifg=' . s:lime
+    exec 'highlight scalaSpecial guifg=' . s:crimson
+
     " TypeScript (leafgarland/typescript-vim)
     highlight! link typescriptDOMObjects MoonflyBlue
     highlight! link typescriptFuncComma MoonflyWhite
@@ -677,21 +699,6 @@ highlight! link dartMetadata MoonflyLime
 highlight! link dartStorageClass MoonflyViolet
 highlight! link dartTypedef MoonflyViolet
 
-" Elixir
-highlight! link eelixirDelimiter MoonflyCrimson
-highlight! link elixirAtom MoonflyPurple
-highlight! link elixirBlockDefinition MoonflyViolet
-highlight! link elixirDefine MoonflyViolet
-highlight! link elixirDocTest MoonflyGrey247
-highlight! link elixirExUnitAssert MoonflyLime
-highlight! link elixirExUnitMacro MoonflySky
-highlight! link elixirKernelFunction MoonflyGreen
-highlight! link elixirKeyword MoonflyOrange
-highlight! link elixirModuleDefine MoonflyBlue
-highlight! link elixirPrivateDefine MoonflyViolet
-highlight! link elixirStringDelimiter MoonflyKhaki
-highlight! link elixirVariable MoonflyTurquoise
-
 " Elm
 highlight! link elmLetBlockDefinition MoonflyLime
 highlight! link elmTopLevelDecl MoonflyCoral
@@ -754,13 +761,6 @@ highlight! link phpType MoonflyViolet
 " PureScript
 highlight! link purescriptClass MoonflyOrange
 highlight! link purescriptModuleParams MoonflyCoral
-
-" Scala (note, link highlighting does not work, I don't know why)
-exec 'highlight scalaCapitalWord guifg=' . s:blue
-exec 'highlight scalaCommentCodeBlock guifg=' . s:grey247
-exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
-exec 'highlight scalaKeywordModifier guifg=' . s:lime
-exec 'highlight scalaSpecial guifg=' . s:crimson
 
 " Shell scripts
 highlight! link shAlias MoonflyTurquoise
