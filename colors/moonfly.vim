@@ -158,12 +158,16 @@ exec 'highlight MoonflyYellowMode guibg=' . s:yellow . ' guifg=' . s:grey234
 exec 'highlight MoonflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:grey234
 " Generic line helper colors
 exec 'highlight MoonflyBlueLine guibg=' . s:grey236 . ' guifg=' . s:blue
+exec 'highlight MoonflyCrimsonLine guibg=' . s:grey236 . ' guifg=' . s:crimson
 exec 'highlight MoonflyEmeraldLine guibg=' . s:grey236 . ' guifg=' . s:emerald
 exec 'highlight MoonflyGrey246Line guibg=' . s:grey234 . ' guifg=' . s:grey246
-exec 'highlight MoonflyWhiteLineActive guibg=' . s:grey238 . ' guifg=' . s:grey254
+exec 'highlight MoonflyRedLine guibg=' . s:grey236 . ' guifg=' . s:red
+exec 'highlight MoonflyWhiteLine guibg=' . s:grey236 . ' guifg=' . s:white
 exec 'highlight MoonflyYellowLine guibg=' . s:grey234 . ' guifg=' . s:yellow
+exec 'highlight MoonflyBlueLineActive guibg=' . s:grey238 . ' guifg=' . s:blue
+exec 'highlight MoonflyRedLineActive guibg=' . s:grey238 . ' guifg=' . s:red
+exec 'highlight MoonflyWhiteLineActive guibg=' . s:grey238 . ' guifg=' . s:grey254
 exec 'highlight MoonflyYellowLineActive guibg=' . s:grey238 . ' guifg=' . s:yellow
-exec 'highlight MoonflyCrimsonLine guibg=' . s:grey236 . ' guifg=' . s:crimson
 " Diagnostic helper colors
 exec 'highlight MoonflyDiagnosticUndercurlError gui=undercurl guisp=' . s:red
 exec 'highlight MoonflyDiagnosticUndercurlWarn gui=undercurl guisp=' . s:yellow
