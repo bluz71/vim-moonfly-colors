@@ -949,19 +949,6 @@ endif
 if has('nvim-0.7')
     lua require("moonfly").plugins()
 elseif has('nvim-0.6')
-    " NvimTree plugin
-    highlight! link NvimTreeFolderIcon MoonflyBlue
-    highlight! link NvimTreeFolderName MoonflyBlue
-    highlight! link NvimTreeIndentMarker MoonflyGrey239
-    highlight! link NvimTreeOpenedFolderName MoonflyBlue
-    highlight! link NvimTreeRootFolder MoonflyPurple
-    highlight! link NvimTreeSpecialFile MoonflyYellow
-    highlight! link NvimTreeWindowPicker DiffChange
-    exec 'highlight NvimTreeExecFile guifg=' . s:green . ' gui=none'
-    exec 'highlight NvimTreeImageFile guifg=' . s:violet . ' gui=none'
-    exec 'highlight NvimTreeOpenedFile guifg=' . s:yellow . ' gui=none'
-    exec 'highlight NvimTreeSymlink guifg=' . s:turquoise . ' gui=none'
-
     " Neo-tree plugin
     highlight! link NeoTreeDimText MoonflyGrey239
     highlight! link NeoTreeDotfile MoonflyGrey236
@@ -973,68 +960,12 @@ elseif has('nvim-0.6')
     highlight! link NeoTreeModified MoonflyYellow
     highlight! link NeoTreeRootName MoonflyPurple
 
-    " Telescope plugin
-    highlight! link TelescopeBorder MoonflyGrey236
-    highlight! link TelescopeMatching MoonflyCoral
-    highlight! link TelescopeMultiIcon MoonflyCrimson
-    highlight! link TelescopeMultiSelection MoonflyEmerald
-    highlight! link TelescopeNormal MoonflyGrey249
-    highlight! link TelescopePreviewDate MoonflyGrey246
-    highlight! link TelescopePreviewGroup MoonflyGrey246
-    highlight! link TelescopePreviewLink MoonflyTurquoise
-    highlight! link TelescopePreviewMatch MoonflyVisual
-    highlight! link TelescopePreviewRead MoonflyOrange
-    highlight! link TelescopePreviewSize MoonflyEmerald
-    highlight! link TelescopePreviewUser MoonflyGrey246
-    highlight! link TelescopePromptPrefix MoonflyBlue
-    highlight! link TelescopeResultsDiffAdd MoonflyGreen
-    highlight! link TelescopeResultsDiffChange MoonflyRed
-    highlight! link TelescopeResultsDiffDelete MoonflyCrimsonLine
-    highlight! link TelescopeResultsSpecialComment MoonflyGrey241
-    highlight! link TelescopeSelectionCaret MoonflyCrimson
-    highlight! link TelescopeTitle MoonflyGrey241
-    exec 'highlight TelescopeSelection guibg=' . s:grey0 . ' guifg=' . s:grey254
-
-    " gitsigns.nvim plugin
-    highlight! link GitSignsAdd MoonflyEmeraldAlert
-    highlight! link GitSignsAddLn MoonflyGreen
-    highlight! link GitSignsAddPreview MoonflyEmeraldLine
-    highlight! link GitSignsChange MoonflyYellowAlert
-    highlight! link GitSignsChangeDelete MoonflyCoralAlert
-    highlight! link GitSignsChangeLn MoonflyYellow
-    highlight! link GitSignsChangeNr MoonflyYellowAlert
-    highlight! link GitSignsDelete MoonflyRedAlert
-    highlight! link GitSignsDeleteLn MoonflyRed
-    highlight! link GitSignsDeletePreview MoonflyCrimsonLine
-    highlight! link GitSignsDeleteVirtLn MoonflyCrimsonLine
-    exec 'highlight GitSignsAddInline guibg=' . s:green . ' guifg=' . s:black
-    exec 'highlight GitSignsChangeInline guibg=' . s:yellow . ' guifg=' . s:black
-    exec 'highlight GitSignsDeleteInline guibg=' . s:red . ' guifg=' . s:black
-
     " Hop plugin
     highlight! link HopCursor IncSearch
     highlight! link HopNextKey MoonflyYellow
     highlight! link HopNextKey1 MoonflyBlue
     highlight! link HopNextKey2 MoonflyCrimson
     highlight! link HopUnmatched MoonflyGrey247
-
-    " Barbar plugin
-    highlight! link BufferCurrent MoonflyWhiteLineActive
-    highlight! link BufferCurrentIndex MoonflyWhiteLineActive
-    highlight! link BufferCurrentMod MoonflyYellowLineActive
-    highlight! link BufferTabpages MoonflyBlueLine
-    highlight! link BufferVisible MoonflyGrey246Line
-    highlight! link BufferVisibleIndex MoonflyGrey246Line
-    highlight! link BufferVisibleMod MoonflyYellowLine
-    highlight! link BufferVisibleSign MoonflyGrey246Line
-    exec 'highlight BufferCurrentSign guibg=' . s:grey238 . ' guifg=' . s:blue
-    exec 'highlight BufferInactive guibg=' . s:grey236 . ' guifg=' . s:grey246
-    exec 'highlight BufferInactiveMod guibg=' . s:grey236 . ' guifg=' . s:yellow
-    exec 'highlight BufferInactiveSign guibg=' . s:grey236 . ' guifg=' . s:grey247
-
-    " Bufferline plugin
-    exec 'highlight BufferLineTabSelected guifg=' . s:blue
-    exec 'highlight BufferLineIndicatorSelected guifg=' . s:blue
 
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch MoonflyYellow
@@ -1071,70 +1002,6 @@ elseif has('nvim-0.6')
     exec 'highlight IndentBlanklineChar guifg=' . s:grey235 . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceChar guifg=' . s:grey235 . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceCharBlankline guifg=' . s:grey235 . ' gui=nocombine'
-
-    " Mini.nvim plugin
-    highlight! link MiniCompletionActiveParameter MoonflyVisual
-    highlight! link MiniCursorword MoonflyUnderline
-    highlight! link MiniCursorwordCurrent MoonflyUnderline
-    highlight! link MiniIndentscopePrefix MoonflyNoCombine
-    highlight! link MiniIndentscopeSymbol MoonflyWhite
-    highlight! link MiniJump SpellRare
-    highlight! link MiniStarterCurrent MoonflyNoCombine
-    highlight! link MiniStarterFooter Title
-    highlight! link MiniStarterHeader MoonflyViolet
-    highlight! link MiniStarterInactive Comment
-    highlight! link MiniStarterItem Normal
-    highlight! link MiniStarterItemBullet Delimiter
-    highlight! link MiniStarterItemPrefix MoonflyYellow
-    highlight! link MiniStarterQuery MoonflySky
-    highlight! link MiniStarterSection MoonflyCrimson
-    highlight! link MiniStatuslineModeCommand MoonflyYellowMode
-    highlight! link MiniStatuslineModeInsert MoonflyEmeraldMode
-    highlight! link MiniStatuslineModeNormal MoonflyBlueMode
-    highlight! link MiniStatuslineModeOther MoonflyTurquoiseMode
-    highlight! link MiniStatuslineModeReplace MoonflyCrimsonMode
-    highlight! link MiniStatuslineModeVisual MoonflyPurpleMode
-    highlight! link MiniSurround IncSearch
-    highlight! link MiniTablineCurrent MoonflyWhiteLineActive
-    highlight! link MiniTablineFill TabLineFill
-    highlight! link MiniTablineModifiedCurrent MoonflyYellowLineActive
-    highlight! link MiniTablineModifiedVisible MoonflyYellowLine
-    highlight! link MiniTablineTabpagesection MoonflyBlueMode
-    highlight! link MiniTablineVisible MoonflyGrey246Line
-    highlight! link MiniTestEmphasis MoonflyUnderline
-    highlight! link MiniTestFail MoonflyRed
-    highlight! link MiniTestPass MoonflyGreen
-    highlight! link MiniTrailspace MoonflyCrimsonMode
-    exec 'highlight MiniJump2dSpot guifg=' . s:yellow . ' gui=underline,nocombine'
-    exec 'highlight MiniStatuslineDevinfo guibg=' . s:grey241 . ' guifg=' . s:white . ' gui=none'
-    exec 'highlight MiniStatuslineFileinfo guibg=' . s:grey241 . ' guifg=' . s:white . ' gui=none'
-    exec 'highlight MiniStatuslineFilename guibg=' . s:grey236 . ' guifg=' . s:grey247
-    exec 'highlight MiniStatuslineInactive guibg=' . s:grey236   . ' guifg=' . s:grey247
-    exec 'highlight MiniTablineHidden guibg=' . s:grey236 . ' guifg=' . s:grey246
-    exec 'highlight MiniTablineModifiedHidden guibg=' . s:grey236 . ' guifg=' . s:yellow
-
-    " Dashboard plugin
-    highlight! link DashboardCenter MoonflyViolet
-    highlight! link DashboardFooter MoonflyCoral
-    highlight! link DashboardHeader MoonflyBlue
-    highlight! link DashboardShortCut MoonflyTurquoise
-
-    " nvim-notify
-    highlight! link NotifyERRORBorder FloatBorder
-    highlight! link NotifyWARNBorder FloatBorder
-    highlight! link NotifyINFOBorder FloatBorder
-    highlight! link NotifyDEBUGBorder FloatBorder
-    highlight! link NotifyTRACEBorder FloatBorder
-    highlight! link NotifyERRORIcon MoonflyRed
-    highlight! link NotifyWARNIcon MoonflyYellow
-    highlight! link NotifyINFOIcon MoonflyBlue
-    highlight! link NotifyDEBUGIcon MoonflyGrey246
-    highlight! link NotifyTRACEIcon MoonflyPurple
-    highlight! link NotifyERRORTitle MoonflyRed
-    highlight! link NotifyWARNTitle MoonflyYellow
-    highlight! link NotifyINFOTitle MoonflyBlue
-    highlight! link NotifyDEBUGTitle MoonflyGrey246
-    highlight! link NotifyTRACETitle MoonflyPurple
 endif
 
 set background=dark
