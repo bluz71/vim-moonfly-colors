@@ -16,7 +16,7 @@ local grey247 = "#9e9e9e"
 local grey246 = "#949494"
 local grey244 = "#808080"
 local grey241 = "#626262"
-local grey239 = '#4e4e4e'
+local grey239 = "#4e4e4e"
 local grey238 = "#444444"
 local grey237 = "#3a3a3a"
 local grey236 = "#303030"
@@ -28,7 +28,7 @@ local khaki = "#c2c292"
 local yellow = "#e3c78a"
 local orange = "#de935f"
 local coral = "#f09479"
-local orchid = '#e196a2'
+local orchid = "#e196a2"
 local lime = "#85dc85"
 local green = "#8cc85f"
 local emerald = "#36c692"
@@ -232,7 +232,7 @@ M.plugins = function()
   highlight(0, "BufferCurrent", { link = "MoonflyWhiteLineActive" })
   highlight(0, "BufferCurrentIndex", { link = "MoonflyWhiteLineActive" })
   highlight(0, "BufferCurrentMod", { link = "MoonflyYellowLineActive" })
-  highlight(0, "BufferCurrentSign", { link = "MoonflyBlueLineActive"  })
+  highlight(0, "BufferCurrentSign", { link = "MoonflyBlueLineActive" })
   highlight(0, "BufferCurrentERROR", { link = "MoonflyRedLineActive" })
   highlight(0, "BufferCurrentWARN", { link = "MoonflyYellowLineActive" })
   highlight(0, "BufferCurrentINFO", { link = "MoonflyBlueLineActive" })
@@ -242,17 +242,17 @@ M.plugins = function()
   highlight(0, "BufferVisibleIndex", { link = "MoonflyGrey246Line" })
   highlight(0, "BufferVisibleMod", { link = "MoonflyYellowLine" })
   highlight(0, "BufferVisibleSign", { link = "MoonflyGrey246Line" })
-  highlight(0, "BufferVisibleERROR", { link = "MoonflyRedLine" })
-  highlight(0, "BufferVisibleWARN", { link = "MoonflyYellowLine" })
-  highlight(0, "BufferVisibleINFO", { link = "MoonflyBlueLine" })
-  highlight(0, "BufferVisibleHINT", { link = "MoonflyWhiteLine" })
+  highlight(0, "BufferVisibleERROR", { bg = grey234, fg = red })
+  highlight(0, "BufferVisibleWARN", { bg = grey234, fg = yellow })
+  highlight(0, "BufferVisibleINFO", { bg = grey234, fg = blue })
+  highlight(0, "BufferVisibleHINT", { bg = grey234, fg = white })
   highlight(0, "BufferInactive", { bg = grey236, fg = grey246 })
   highlight(0, "BufferInactiveMod", { bg = grey236, fg = yellow })
   highlight(0, "BufferInactiveSign", { bg = grey236, fg = grey247 })
-  highlight(0, "BufferInactiveERROR", {bg = grey236, fg = red})
-  highlight(0, "BufferInactiveWARN", {bg = grey236, fg = yellow})
-  highlight(0, "BufferInactiveINFO", {bg = grey236, fg = blue})
-  highlight(0, "BufferInactiveHINT", {bg = grey236, fg = white})
+  highlight(0, "BufferInactiveERROR", { bg = grey236, fg = red })
+  highlight(0, "BufferInactiveWARN", { bg = grey236, fg = yellow })
+  highlight(0, "BufferInactiveINFO", { bg = grey236, fg = blue })
+  highlight(0, "BufferInactiveHINT", { bg = grey236, fg = white })
   highlight(0, "BufferAlternate", { link = "BufferCurrent" })
   highlight(0, "BufferAlternateIndex", { link = "BufferCurrentIndex" })
   highlight(0, "BufferAlternateMod", { link = "BufferCurrentMod" })
