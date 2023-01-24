@@ -1,4 +1,3 @@
-local fn = vim.fn
 local g = vim.g
 local highlight = vim.api.nvim_set_hl
 
