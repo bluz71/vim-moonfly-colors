@@ -157,7 +157,6 @@ exec 'highlight MoonflyCrimsonMode guibg=' . s:crimson . ' guifg=' . s:grey234
 exec 'highlight MoonflyYellowMode guibg=' . s:yellow . ' guifg=' . s:grey234
 exec 'highlight MoonflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:grey234
 " Generic line helper colors
-exec 'highlight MoonflyBlueLine guibg=' . s:grey236 . ' guifg=' . s:blue
 exec 'highlight MoonflyCrimsonLine guibg=' . s:grey236 . ' guifg=' . s:crimson
 exec 'highlight MoonflyEmeraldLine guibg=' . s:grey236 . ' guifg=' . s:emerald
 exec 'highlight MoonflyGrey246Line guibg=' . s:grey234 . ' guifg=' . s:grey246
