@@ -65,31 +65,8 @@ the `termguicolors` option enabled in a true-color terminal, is required.
 Details about true-color terminals are [listed
 here](https://github.com/bluz71/vim-moonfly-colors#true-color-terminals).
 
-_moonfly_ previously did support the 256 color `cterm` version of Vim. However,
-the `termguicolors` option is now well established and true-colors terminals are
-ubiquitous.
-
-Note however, _moonfly_ still supports the `cterm` legacy version of this plugin
-via the legacy `cterm-compat` branch. That legacy version can be installed with
-your preferred plugin manager.
-
-[vim-plug](https://github.com/junegunn/vim-plug):
-
-```viml
-Plug 'bluz71/vim-moonfly-colors', { 'branch': 'cterm-compat' }
-```
-
-[packer.nvim](https://github.com/wbthomason/packer.nvim):
-
-```lua
-use { 'bluz71/vim-moonfly-colors', branch = 'cterm-compat' }
-```
-
-[lazy.nvim](https://github.com/folke/lazy.nvim):
-
-```lua
-{ 'bluz71/vim-moonfly-colors', lazy = true, priority = 1000 },
-```
+_moonfly_ explicitly no longer supports the 256 color `cterm` version of Vim or
+Neovim except via the legacy `cterm-compat` branch.
 
 Installation
 ------------
@@ -106,7 +83,13 @@ Plug 'bluz71/vim-moonfly-colors'
 [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'bluz71/vim-moonfly-colors'
+use { "bluz71/vim-moonfly-colors", as "moonfly" }
+```
+
+[lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{ "bluz71/vim-nightfly-colors", name = "moonfly", lazy = true, priority = 1000 },
 ```
 
 Usage
