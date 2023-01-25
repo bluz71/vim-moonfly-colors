@@ -150,7 +150,14 @@ M.core = function()
   highlight(0, "DiagnosticFloatingWarn", { link = "MoonflyYellow" })
   highlight(0, "DiagnosticFloatingInfo", { link = "MoonflySky" })
   highlight(0, "DiagnosticFloatingHint", { link = "MoonflyWhite" })
-  highlight(0, "LspSignatureActiveParameter", { link = "MoonflyVisual" })
+
+  -- Neovim LSP
+  highlight(0, "LspCodeLens", { link = "MoonflyGrey241" })
+  highlight(0, "LspCodeLensSeparator", { link = "MoonflyGrey241" })
+  highlight(0, "LspReferenceText", { link = "MoonflyVisual" })
+  highlight(0, "LspReferenceRead", { link = "MoonflyVisual" })
+  highlight(0, "LspReferenceWrite", { link = "MoonflyVisual" })
+  highlight(0, "LspSignatureActiveParameter", { bg = grey236 })
 end
 
 M.plugins = function()
