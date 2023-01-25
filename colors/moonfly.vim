@@ -236,8 +236,8 @@ highlight! link Repeat MoonflyViolet
 
 " Search
 exec 'highlight Search cterm=none guibg=' . s:grey241 . ' guifg=' . s:grey254 . ' gui=none'
-exec 'highlight CurSearch cterm=none guibg=' . s:coral . ' guifg=bg gui=none'
-exec 'highlight IncSearch cterm=none guibg=' . s:yellow . ' guifg=bg gui=none'
+exec 'highlight CurSearch cterm=none guibg=' . s:coral . ' guifg=' . s:black . ' gui=none'
+exec 'highlight IncSearch cterm=none guibg=' . s:yellow . ' guifg=' . s:black . ' gui=none'
 
 " '\n' sequences
 highlight! link Special MoonflyCranberry
