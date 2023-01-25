@@ -41,6 +41,7 @@ let s:black     = '#080808'
 let s:white     = '#c6c6c6'
 " Variations of charcoal-grey
 let s:grey0     = '#323437'
+let s:grey1     = '#373c4d'
 let s:grey254   = '#e4e4e4'
 let s:grey249   = '#b2b2b2'
 let s:grey247   = '#9e9e9e'
@@ -235,7 +236,7 @@ highlight! link Operator MoonflyCranberry
 highlight! link Repeat MoonflyViolet
 
 " Search
-exec 'highlight Search cterm=none guibg=' . s:grey241 . ' guifg=' . s:grey254 . ' gui=none'
+exec 'highlight Search cterm=none guibg=' . s:grey1 . ' guifg=' . s:grey254 . ' gui=none'
 exec 'highlight CurSearch cterm=none guibg=' . s:coral . ' guifg=' . s:black . ' gui=none'
 exec 'highlight IncSearch cterm=none guibg=' . s:yellow . ' guifg=' . s:black . ' gui=none'
 
