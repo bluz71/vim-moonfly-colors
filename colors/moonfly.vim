@@ -114,6 +114,7 @@ endif
 " Custom moonfly highlight groups
 exec 'highlight MoonflyReset guifg=fg'
 exec 'highlight MoonflyVisual guibg=' . s:grey0
+exec 'highlight MoonflyVisualGrey1 guibg=' . s:grey1
 exec 'highlight MoonflyWhite guifg=' . s:white
 exec 'highlight MoonflyGrey0 guifg=' . s:grey0
 exec 'highlight MoonflyGrey254 guifg=' . s:grey254

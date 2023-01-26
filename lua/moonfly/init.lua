@@ -224,9 +224,9 @@ M.plugins = function()
   highlight(0, "GitSignsDeletePreview", { link = "MoonflyCrimsonLine" })
   highlight(0, "GitSignsDeleteVirtLn", { link = "MoonflyCrimsonLine" })
   highlight(0, "GitSignsUntracked", { link = "MoonflyGrey241" })
-  highlight(0, "GitSignsAddInline", { bg = green, fg = black })
-  highlight(0, "GitSignsChangeInline", { bg = yellow, fg = black })
-  highlight(0, "GitSignsDeleteInline", { bg = red, fg = black })
+  highlight(0, "GitSignsAddInline", { link = "MoonflyVisualGrey1" })
+  highlight(0, "GitSignsChangeInline", { link = "MoonflyVisualGrey1" })
+  highlight(0, "GitSignsDeleteInline", { link = "MoonflyVisualGrey1" } )
 
   -- Hop plugin
   highlight(0, "HopCursor", { link = "IncSearch" })
