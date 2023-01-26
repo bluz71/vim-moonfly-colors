@@ -145,8 +145,8 @@ exec 'highlight MoonflyWhiteAlert guibg=bg guifg=' . s:white
 exec 'highlight MoonflyYellowAlert guibg=bg guifg=' . s:yellow
 exec 'highlight MoonflyCoralAlert guibg=bg guifg=' . s:coral
 exec 'highlight MoonflyEmeraldAlert guibg=bg guifg=' . s:emerald
-exec 'highlight MoonflyPurpleAlert guibg=bg guifg=' . s:purple
 exec 'highlight MoonflySkyAlert guibg=bg guifg=' . s:sky
+exec 'highlight MoonflyBlueAlert guibg=bg guifg=' . s:blue
 exec 'highlight MoonflyRedAlert guibg=bg guifg=' . s:red
 exec 'highlight MoonflyUnderline gui=underline'
 exec 'highlight MoonflyNoCombine gui=nocombine'
@@ -899,13 +899,13 @@ highlight! link ALEInfoSign MoonflySkyAlert
 
 " GitGutter plugin
 highlight! link GitGutterAdd MoonflyEmeraldAlert
-highlight! link GitGutterChange MoonflyYellowAlert
+highlight! link GitGutterChange MoonflyBlueAlert
 highlight! link GitGutterChangeDelete MoonflyCoralAlert
 highlight! link GitGutterDelete MoonflyRedAlert
 
 " Signify plugin
 highlight! link SignifySignAdd MoonflyEmeraldAlert
-highlight! link SignifySignChange MoonflyYellowAlert
+highlight! link SignifySignChange MoonflyBlueAlert
 highlight! link SignifySignChangeDelete MoonflyCoralAlert
 highlight! link SignifySignDelete MoonflyRedAlert
 
