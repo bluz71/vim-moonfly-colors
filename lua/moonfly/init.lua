@@ -10,6 +10,7 @@ if g.moonflyTransparent then
 end
 -- Variations of charcoal-grey
 local grey0 = "#323437"
+local grey1 = '#373c4d'
 local grey254 = "#e4e4e4"
 local grey249 = "#b2b2b2"
 local grey247 = "#9e9e9e"
@@ -212,21 +213,26 @@ M.plugins = function()
   highlight(0, "TelescopeSelection", { bg = grey0, fg = grey254 })
 
   -- gitsigns.nvim plugin
+  --   sign column
   highlight(0, "GitSignsAdd", { link = "MoonflyEmeraldAlert" })
-  highlight(0, "GitSignsAddLn", { link = "MoonflyGreen" })
-  highlight(0, "GitSignsAddPreview", { link = "MoonflyEmeraldLine" })
   highlight(0, "GitSignsChange", { link = "MoonflySkyAlert" })
   highlight(0, "GitSignsChangeDelete", { link = "MoonflyCoralAlert" })
-  highlight(0, "GitSignsChangeLn", { link = "MoonflySky" })
-  highlight(0, "GitSignsChangeNr", { link = "MoonflySkyAlert" })
   highlight(0, "GitSignsDelete", { link = "MoonflyRedAlert" })
-  highlight(0, "GitSignsDeleteLn", { link = "MoonflyRed" })
+  highlight(0, "GitSignsUntracked", { link = "MoonflyGrey241" })
+  --   line highlights
+  highlight(0, "GitSignsAddLn", { bg = grey235 })
+  highlight(0, "GitSignsChangeLn", { bg = grey234 })
+  --   word diff
+  highlight(0, "GitSignsAddLnInline", { bg = grey1 })
+  highlight(0, "GitSignsChangeLnInline", { bg = grey1 })
+  --   word diff in preview
+  highlight(0, "GitSignsAddInline", { bg = green, fg = black })
+  highlight(0, "GitSignsChangeInline", { bg = yellow, fg = black })
+  highlight(0, "GitSignsDeleteInline", { bg = red, fg = black })
+  --   misc
+  highlight(0, "GitSignsAddPreview", { link = "MoonflyEmeraldLine" })
   highlight(0, "GitSignsDeletePreview", { link = "MoonflyCrimsonLine" })
   highlight(0, "GitSignsDeleteVirtLn", { link = "MoonflyCrimsonLine" })
-  highlight(0, "GitSignsUntracked", { link = "MoonflyGrey241" })
-  highlight(0, "GitSignsAddInline", { link = "MoonflyVisualGrey1" })
-  highlight(0, "GitSignsChangeInline", { link = "MoonflyVisualGrey1" })
-  highlight(0, "GitSignsDeleteInline", { link = "MoonflyVisualGrey1" } )
 
   -- Hop plugin
   highlight(0, "HopCursor", { link = "IncSearch" })
