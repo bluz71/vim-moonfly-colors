@@ -142,6 +142,7 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 | [moonflyTransparent](https://github.com/bluz71/vim-moonfly-colors#moonflytransparent)                 | Disabled
 | [moonflyUndercurls](https://github.com/bluz71/vim-moonfly-colors#moonflyundercurls)                   | Enabled
 | [moonflyUnderlineMatchParen](https://github.com/bluz71/vim-moonfly-colors#moonflyunderlinematchparen) | Disabled
+| [moonflyVirtualTextColor](https://github.com/bluz71/vim-moonfly-colors#moonflyvirtualtextcolor)       | Disabled
 | [moonflyWinSeparator](https://github.com/bluz71/vim-moonfly-colors#moonflywinseparator)               | `1`
 
 ---
@@ -308,6 +309,25 @@ let g:moonflyUnderlineMatchParen = v:true
 ```lua
 -- Lua initialization file
 vim.g.moonflyUnderlineMatchParen = true
+```
+
+---
+
+### moonflyVirtualTextColor
+
+The `moonflyVirtualTextColor` option specifies whether to display diagnostic
+virtual text in color. By default this option is **disabled**. If you want to
+display diagnostic virtual text in color then add the following to your
+initialization file:
+
+```viml
+" Vimscript initialization file
+let g:moonflyVirtualTextColor = v:true
+```
+
+```lua
+-- Lua initialization file
+vim.g.moonflyVirtualTextColor = true
 ```
 
 ---

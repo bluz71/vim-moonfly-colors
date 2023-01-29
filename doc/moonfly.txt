@@ -120,6 +120,21 @@ file:
   vim.g.moonflyUnderlineMatchParen = true
 <
 ------------------------------------------------------------------------------
+moonflyVirtualTextColor~                           *g:moonflyVirtualTextColor*
+
+The `moonflyVirtualTextColor` option specifies whether to display diagnostic
+virtual text in color. By default this option is **disabled**. If you want to
+display diagnostic virtual text in color then add the following to your
+initialization file:
+
+>
+  " Vimscript initialization file
+  let g:moonflyVirtualTextColor = v:true
+
+  -- Lua initialization file
+  vim.g.moonflyVirtualTextColor = true
+<
+------------------------------------------------------------------------------
 moonflyWinSeparator~                                   *g:moonflyWinSeparator*
 
 The `moonflyWinSeparator` option specifies the style of window separators:

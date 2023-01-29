@@ -139,10 +139,17 @@ M.core = function()
     highlight(0, "DiagnosticUnderlineInfo", { link = "MoonflyDiagnosticUnderlineInfo" })
     highlight(0, "DiagnosticUnderlineHint", { link = "MoonflyDiagnosticUnderlineHint" })
   end
-  highlight(0, "DiagnosticVirtualTextError", { link = "MoonflyGrey241" })
-  highlight(0, "DiagnosticVirtualTextWarn", { link = "MoonflyGrey241" })
-  highlight(0, "DiagnosticVirtualTextInfo", { link = "MoonflyGrey241" })
-  highlight(0, "DiagnosticVirtualTextHint", { link = "MoonflyGrey241" })
+  if g.moonflyVirtualTextColor then
+    highlight(0, "DiagnosticVirtualTextError", { link = "MoonflyDiagnosticVirtualTextError" })
+    highlight(0, "DiagnosticVirtualTextWarn", { link = "MoonflyDiagnosticVirtualTextWarn" })
+    highlight(0, "DiagnosticVirtualTextInfo", { link = "MoonflyDiagnosticVirtualTextInfo" })
+    highlight(0, "DiagnosticVirtualTextHint", { link = "MoonflyDiagnosticVirtualTextHint" })
+  else
+    highlight(0, "DiagnosticVirtualTextError", { link = "MoonflyGrey241" })
+    highlight(0, "DiagnosticVirtualTextWarn", { link = "MoonflyGrey241" })
+    highlight(0, "DiagnosticVirtualTextInfo", { link = "MoonflyGrey241" })
+    highlight(0, "DiagnosticVirtualTextHint", { link = "MoonflyGrey241" })
+  end
   highlight(0, "DiagnosticSignError", { link = "MoonflyRedAlert" })
   highlight(0, "DiagnosticSignWarn", { link = "MoonflyYellowAlert" })
   highlight(0, "DiagnosticSignInfo", { link = "MoonflySkyAlert" })

@@ -10,30 +10,14 @@ if exists('syntax_on')
 endif
 let g:colors_name='moonfly'
 
-" By default do not color the cursor.
 let g:moonflyCursorColor = get(g:, 'moonflyCursorColor', v:false)
-
-" By default do use italics in GUI versions of Vim.
 let g:moonflyItalics = get(g:, 'moonflyItalics', v:true)
-
-" By default do not use a customized 'NormalFloat' highlight group (for Neovim
-" floating windows).
 let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', v:false)
-
-" By default use the moonfly color palette in the `:terminal`
 let g:moonflyTerminalColors = get(g:, 'moonflyTerminalColors', v:true)
-
-" By default do not use a transparent background in GUI versions of Vim.
 let g:moonflyTransparent = get(g:, 'moonflyTransparent', v:false)
-
-" By default do use undercurls in GUI versions of Vim, including terminal Vim
-" with termguicolors set.
 let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', v:true)
-
-" By default do not underline matching parentheses.
 let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', v:false)
-
-" By default do display vertical split columns.
+let g:moonflyVirtualTextColor =  get(g:, 'moonflyVirtualTextColor', v:false)
 let g:moonflyWinSeparator = get(g:, 'moonflyWinSeparator', 1)
 
 " Background and foreground
@@ -141,6 +125,7 @@ exec 'highlight MoonflyCranberry guifg=' . s:cranberry
 exec 'highlight MoonflyViolet guifg=' . s:violet
 exec 'highlight MoonflyCrimson guifg=' . s:crimson
 exec 'highlight MoonflyRed guifg=' . s:red
+" Misc helpers
 exec 'highlight MoonflyWhiteAlert guibg=bg guifg=' . s:white
 exec 'highlight MoonflyYellowAlert guibg=bg guifg=' . s:yellow
 exec 'highlight MoonflyCoralAlert guibg=bg guifg=' . s:coral
@@ -171,9 +156,13 @@ exec 'highlight MoonflyDiagnosticUndercurlWarn gui=undercurl guisp=' . s:yellow
 exec 'highlight MoonflyDiagnosticUndercurlInfo gui=undercurl guisp=' . s:sky
 exec 'highlight MoonflyDiagnosticUndercurlHint gui=undercurl guisp=' . s:white
 exec 'highlight MoonflyDiagnosticUnderlineError gui=underline guisp=' . s:red
-exec 'highlight MoonflyDiagnosticUnderlineWarn gui=underline guisp=' . s:blue
-exec 'highlight MoonflyDiagnosticUnderlineInfo gui=underline guisp=' . s:yellow
-exec 'highlight MoonflyDiagnosticUnderlineHint gui=underline guisp=' . s:sky
+exec 'highlight MoonflyDiagnosticUnderlineWarn gui=underline guisp=' . s:yellow
+exec 'highlight MoonflyDiagnosticUnderlineInfo gui=underline guisp=' . s:sky
+exec 'highlight MoonflyDiagnosticUnderlineHint gui=underline guisp=' . s:white
+exec 'highlight MoonflyDiagnosticVirtualTextError guibg=' . s:grey234 . ' guifg=' . s:red
+exec 'highlight MoonflyDiagnosticVirtualTextWarn guibg=' . s:grey234 . ' guifg=' . s:yellow
+exec 'highlight MoonflyDiagnosticVirtualTextInfo guibg=' . s:grey234 . ' guifg=' . s:sky
+exec 'highlight MoonflyDiagnosticVirtualTextHint guibg=' . s:grey234 . ' guifg=' . s:white
 
 "-----------------------------------------------------------------------
 " Core styling
@@ -830,8 +819,9 @@ highlight! link NERDTreeGitStatusStaged MoonflySky
 highlight! link NERDTreeGitStatusUntracked MoonflyRed
 
 " fern.vim plugin
-highlight! link FernBranchSymbol MoonflyGrey239
-highlight! link FernLeafSymbol MoonflyGrey239
+highlight! link FernBranchSymbol MoonflyGrey241
+highlight! link FernLeafSymbol MoonflyBlue
+highlight! link FernLeaderSymbol MoonflyGrey239
 highlight! link FernBranchText MoonflyBlue
 highlight! link FernMarkedLine MoonflyVisual
 highlight! link FernMarkedText MoonflyCrimson
@@ -889,12 +879,18 @@ else
     highlight! link ALEWarning MoonflyDiagnosticUnderlineWarn
     highlight! link ALEInfo MoonflyDiagnosticUnderlineInfo
 endif
-highlight! link ALEVirtualTextError MoonflyGrey241
-highlight! link ALEErrorSign MoonflyRedAlert
-highlight! link ALEVirtualTextWarning MoonflyGrey241
 highlight! link ALEWarningSign MoonflyYellowAlert
-highlight! link ALEVirtualTextInfo MoonflyGrey241
+highlight! link ALEErrorSign MoonflyRedAlert
 highlight! link ALEInfoSign MoonflySkyAlert
+if g:moonflyVirtualTextColor
+    highlight! link ALEVirtualTextError MoonflyDiagnosticVirtualTextError
+    highlight! link ALEVirtualTextWarning MoonflyDiagnosticVirtualTextWarn
+    highlight! link ALEVirtualTextInfo MoonflyDiagnosticVirtualTextInfo
+else
+    highlight! link ALEVirtualTextError MoonflyGrey241
+    highlight! link ALEVirtualTextWarning MoonflyGrey241
+    highlight! link ALEVirtualTextInfo MoonflyGrey241
+endif
 
 " GitGutter plugin
 highlight! link GitGutterAdd MoonflyEmeraldAlert
