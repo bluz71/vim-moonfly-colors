@@ -89,7 +89,7 @@ use { "bluz71/vim-moonfly-colors", as = "moonfly" }
 [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-{ "bluz71/vim-nightfly-colors", name = "moonfly", lazy = true, priority = 1000 },
+{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = true, priority = 1000 },
 ```
 
 Usage
