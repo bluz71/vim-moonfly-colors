@@ -198,7 +198,7 @@ M.plugins = function()
   highlight(0, "NeoTreeNormal", { bg = grey233, fg = white })
 
   -- Telescope plugin
-  highlight(0, "TelescopeBorder", { link = "MoonflyGrey236" })
+  highlight(0, "TelescopeBorder", { link = "FloatBorder" })
   highlight(0, "TelescopeMatching", { link = "MoonflyCoral" })
   highlight(0, "TelescopeMultiIcon", { link = "MoonflyCrimson" })
   highlight(0, "TelescopeMultiSelection", { link = "MoonflyEmerald" })
@@ -451,6 +451,15 @@ M.plugins = function()
   highlight(0, "CallHierarchyTitle", { link = "MoonflyCranberry" })
   highlight(0, "SagaShadow", { link = "Normal" })
   highlight(0, "OutlineIndent", { link = "MoonflyPurple" })
+
+  -- Noice plugin
+  highlight(0, "NoiceCmdlinePopup", { link = "MoonflyGrey244" })
+  highlight(0, "NoiceCmdlinePopupBorder", { link = "MoonflyGrey238" })
+  highlight(0, "NoiceCmdlinePopupBorderSearch", { link = "MoonflyGrey238" })
+  highlight(0, "NoiceCmdlinePrompt", { link = "MoonflyBlue" })
+  highlight(0, "NoiceCompletionItemKindDefault", { link = "MoonflyTurquoise" })
+  highlight(0, "NoiceConfirmBorder", { link = "MoonflyBlue" })
+  highlight(0, "NoiceFormatTitle", { link = "MoonflyCranberry" })
 end
 
 return M
