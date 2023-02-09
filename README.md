@@ -78,7 +78,7 @@ manager.
 [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plug 'bluz71/vim-moonfly-colors', , { 'as': 'moonfly' }
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 ```
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim):
