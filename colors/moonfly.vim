@@ -911,13 +911,14 @@ exec 'highlight fzf3 guifg=' . s:emerald . ' guibg=' . s:grey236
 exec 'highlight fzfNormal guifg=' . s:grey249
 exec 'highlight fzfFgPlus guifg=' . s:grey254
 exec 'highlight fzfBorder guifg=' . s:grey236
+exec 'highlight fzfSubstring guifg=' . s:coral
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
   \  'bg':      ['bg', 'Normal'],
-  \  'hl':      ['fg', 'Boolean'],
+  \  'hl':      ['fg', 'fzfSubstring'],
   \  'fg+':     ['fg', 'fzfFgPlus'],
   \  'bg+':     ['bg', 'Pmenu'],
-  \  'hl+':     ['fg', 'Boolean'],
+  \  'hl+':     ['fg', 'fzfSubstring'],
   \  'info':    ['fg', 'String'],
   \  'border':  ['fg', 'fzfBorder'],
   \  'prompt':  ['fg', 'fzf2'],
