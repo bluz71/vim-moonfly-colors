@@ -52,6 +52,7 @@ Neovim-only:
 - [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [Noice](https://github.com/folke/noice.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-navic](https://github.com/SmiteshP/nvim-navic)
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)

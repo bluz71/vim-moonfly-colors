@@ -10,7 +10,7 @@ if g.moonflyTransparent then
 end
 -- Variations of charcoal-grey
 local grey0 = "#323437"
-local grey1 = '#373c4d'
+local grey1 = "#373c4d"
 local grey254 = "#e4e4e4"
 local grey249 = "#b2b2b2"
 local grey247 = "#9e9e9e"
@@ -468,6 +468,35 @@ M.plugins = function()
   highlight(0, "NoiceCompletionItemKindDefault", { link = "MoonflyTurquoise" })
   highlight(0, "NoiceConfirmBorder", { link = "MoonflyBlue" })
   highlight(0, "NoiceFormatTitle", { link = "MoonflyCranberry" })
+
+  -- nvim-navic plugin
+  highlight(0, "NavicText", { bg = grey236, fg = grey249 })
+  highlight(0, "NavicSeparator", { bg = grey236, fg = white })
+  highlight(0, "NavicIconsOperator", { bg = grey236, fg = cranberry })
+  highlight(0, "NavicIconsBoolean", { link = "NavicIconsOperator" })
+  highlight(0, "NavicIconsClass", { bg = grey236, fg = emerald })
+  highlight(0, "NavicIconsConstant", { bg = grey236, fg = orange })
+  highlight(0, "NavicIconsConstructor", { bg = grey236, fg = sky })
+  highlight(0, "NavicIconsEnum", { bg = grey236, fg = violet })
+  highlight(0, "NavicIconsEnumMember", { bg = grey236, fg = turquoise })
+  highlight(0, "NavicIconsEvent", { link = "NavicIconsConstant" })
+  highlight(0, "NavicIconsField", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsFile", { bg = grey236, fg = blue })
+  highlight(0, "NavicIconsFunction", { link = "NavicIconsConstructor" })
+  highlight(0, "NavicIconsInterface", { link = "NavicIconsEnum" })
+  highlight(0, "NavicIconsKey", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsMethod", { link = "NavicIconsConstructor" })
+  highlight(0, "NavicIconsModule", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsNamespace", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsNull", { bg = grey236, fg = green })
+  highlight(0, "NavicIconsNumber", { link = "NavicIconsConstant" })
+  highlight(0, "NavicIconsObject", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsPackage", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsProperty", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsString", { bg = grey236, fg = khaki })
+  highlight(0, "NavicIconsStruct", { link = "NavicIconsClass" })
+  highlight(0, "NavicIconsTypeParameter", { link = "NavicIconsEnumMember" })
+  highlight(0, "NavicIconsVariable", { link = "NavicIconsEnumMember" })
 end
 
 return M
