@@ -131,10 +131,9 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 - My [linefly](https://github.com/bluz71/nvim-linefly) `statusline` plugin
   supports the _moonfly_ theme.
 
-- Lastly, my other
+- Lastly, my legacy
   [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) plugin
-  is available for those that want a simple, fast and informative statusline for
-  Vim or legacy Neovim.
+  also supports the _moonfly_ theme.
 
 :wrench: Options
 ----------------
