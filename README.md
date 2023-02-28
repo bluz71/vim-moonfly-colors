@@ -112,25 +112,29 @@ vim.cmd [[colorscheme moonfly]]
 Statusline
 ----------
 
-- The _moonfly_ colorscheme supports
+- The _moonfly_ theme supports
   [lightline](https://github.com/itchyny/lightline.vim). To enable the _moonfly_
-  lightline colorscheme please add the following to your initialization file:
+  lightline theme please add the following to your initialization file:
 
 ```viml
 let g:lightline = { 'colorscheme': 'moonfly' }
 ```
 
-- The _moonfly_ colorscheme supports
+- The _moonfly_ theme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). The _moonfly_ theme
   will load once vim-airline starts.
 
-- The _moonfly_ colorscheme supports
+- The _moonfly_ theme supports
   [lualine](https://github.com/nvim-lualine/lualine.nvim). The
   _moonfly_ theme will load once Lualine starts.
 
-- Lastly, my own
-  [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) is
-  available for those that want a simple, fast and informative statusline.
+- My [linefly](https://github.com/bluz71/nvim-linefly) `statusline` plugin
+  supports the _moonfly_ theme.
+
+- Lastly, my other
+  [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) plugin
+  is available for those that want a simple, fast and informative statusline for
+  Vim or legacy Neovim.
 
 :wrench: Options
 ----------------
