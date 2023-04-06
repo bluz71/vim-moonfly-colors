@@ -46,6 +46,44 @@ local spring = "#00875f"
 
 local M = {}
 
+M.palette = {
+  black = black,
+  white = white,
+  bg = bg,
+  grey0 = grey0,
+  grey1 = grey1,
+  grey254 = grey254,
+  grey249 = grey249,
+  grey247 = grey247,
+  grey246 = grey246,
+  grey244 = grey244,
+  grey241 = grey241,
+  grey239 = grey239,
+  grey238 = grey238,
+  grey237 = grey237,
+  grey236 = grey236,
+  grey235 = grey235,
+  grey234 = grey234,
+  grey233 = grey233,
+  khaki = khaki,
+  yellow = yellow,
+  orange = orange,
+  coral = coral,
+  orchid = orchid,
+  lime = lime,
+  green = green,
+  emerald = emerald,
+  blue = blue,
+  sky = sky,
+  turquoise = turquoise,
+  purple = purple,
+  cranberry = cranberry,
+  violet = violet,
+  crimson = crimson,
+  red = red,
+  spring = spring,
+}
+
 M.core = function()
   highlight(0, "Whitespace", { fg = grey0 })
   highlight(0, "TermCursor", { bg = grey247, fg = black })
