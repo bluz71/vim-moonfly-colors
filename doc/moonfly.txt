@@ -154,7 +154,6 @@ configuration:
 
   -- Lua initialization file
   vim.g.moonflyWinSeparator = 2
-<
 ------------------------------------------------------------------------------
 moonflyPalette~                                              *moonfly.palette*
 
