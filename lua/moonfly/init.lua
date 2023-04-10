@@ -508,9 +508,10 @@ M.style = function()
   highlight(0, "markdownCode", { link = "MoonflyKhaki" })
   highlight(0, "markdownCodeDelimiter", { link = "MoonflyKhaki" })
   highlight(0, "markdownError", { link = "NormalNC" })
-  highlight(0, "markdownH1", { link = "MoonflyOrange" })
-  highlight(0, "markdownHeadingRule", { link = "MoonflyBlue" })
-  highlight(0, "markdownItalic", { link = "MoonflyViolet" })
+  highlight(0, "markdownH1", { link = "MoonflyBlue" })
+  highlight(0, "markdownH2", { link = "MoonflyBlue" })
+  highlight(0, "markdownHeadingRule", { link = "MoonflyCranberry" })
+  highlight(0, "markdownItalic", { link = "MoonflyOrchid" })
   highlight(0, "markdownUrl", { link = "MoonflyPurple" })
 
   -- Markdown, 'plasticboy/vim-markdown' plugin

@@ -454,9 +454,10 @@ function! moonfly#Style() abort
     highlight! link markdownCode MoonflyKhaki
     highlight! link markdownCodeDelimiter MoonflyKhaki
     highlight! link markdownError NormalNC
-    highlight! link markdownH1 MoonflyOrange
-    highlight! link markdownHeadingRule MoonflyBlue
-    highlight! link markdownItalic MoonflyViolet
+    highlight! link markdownH1 MoonflyBlue
+    highlight! link markdownH2 MoonflyBlue
+    highlight! link markdownHeadingRule MoonflyCranberry
+    highlight! link markdownItalic MoonflyOrchid
     highlight! link markdownUrl MoonflyPurple
 
     " Markdown, 'plasticboy/vim-markdown' plugin
