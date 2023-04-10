@@ -33,6 +33,7 @@ Neovim-only:
 
 - [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [Neovim Diagnostic](https://neovim.io/doc/user/diagnostic.html)
+- [Neovim LSP Semantic Highlights](https://neovim.io/doc/user/lsp.html#lsp-semantic-highlight)
 - [Barbar](https://github.com/romgrk/barbar.nvim)
 - [Bufferline](https://github.com/akinsho/bufferline.nvim)
 - [Dashboard](https://github.com/glepnir/dashboard-nvim)

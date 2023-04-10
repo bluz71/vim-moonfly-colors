@@ -427,7 +427,7 @@ M.style = function()
   highlight(0, "@field.yaml", { link = "MoonflyBlue" })
   highlight(0, "@punctuation.delimiter.yaml", { link = "MoonflyCranberry" })
 
-  -- Neovim LSP semantic tokens.
+  -- Neovim LSP semantic highlights.
   highlight(0, "@lsp.mod.deprecated", { link = "@constant" })
   highlight(0, "@lsp.mod.readonly", { link = "@constant" })
   highlight(0, "@lsp.mod.typeHint", { link = "@type" })
