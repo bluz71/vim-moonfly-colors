@@ -3,8 +3,8 @@
 
 _moonfly_ is a dark charcoal theme for modern Neovim and classic Vim.
 
-Note, _moonfly_ is a multi-implemented theme; native Lua is used for all Neovim
-highlights whilst legacy Vimscript is used for Vim highlights.
+Note, all _moonfly_ highlights in Neovim are implemented in Lua, whilst
+highlights in Vim are implemented in legacy Vimscript.
 
 :point_right: I maintain another dark theme named
 [nightfly](https://github.com/bluz71/vim-nightfly-colors) which may be of
