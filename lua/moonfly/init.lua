@@ -362,7 +362,7 @@ M.style = function()
   highlight(0, "healthHeadingChar", { link = "MoonflyBlue" })
   highlight(0, "helpHeader", { link = "MoonflyTurquoise" })
 
-  -- Neovim Treesitter
+  -- Neovim Tree-sitter
   highlight(0, "@annotation", { link = "MoonflyViolet" })
   highlight(0, "@attribute", { link = "MoonflySky" })
   highlight(0, "@constant", { link = "MoonflyTurquoise" })

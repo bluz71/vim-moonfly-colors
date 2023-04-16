@@ -31,7 +31,7 @@ Neovim & Vim compatible:
 
 Neovim-only:
 
-- [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [Neovim Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [Neovim Diagnostic](https://neovim.io/doc/user/diagnostic.html)
 - [Neovim LSP Semantic Highlights](https://neovim.io/doc/user/lsp.html#lsp-semantic-highlight)
 - [Barbar](https://github.com/romgrk/barbar.nvim)
