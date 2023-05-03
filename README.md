@@ -18,17 +18,6 @@ Screenshot
 Styled Features & Plugins
 -------------------------
 
-Neovim & Vim compatible:
-
-- [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
-- [clever-f](https://github.com/rhysd/clever-f.vim)
-- [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
-- [Fern](https://github.com/lambdalisue/fern.vim)
-- [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
-- [lightline](https://github.com/itchyny/lightline.vim)
-- [Tagbar](https://github.com/majutsushi/tagbar)
-- [vim-airline](https://github.com/vim-airline/vim-airline)
-
 Neovim-only:
 
 - [Neovim Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -52,6 +41,17 @@ Neovim-only:
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+
+Neovim & Vim compatible:
+
+- [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
+- [clever-f](https://github.com/rhysd/clever-f.vim)
+- [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+- [Fern](https://github.com/lambdalisue/fern.vim)
+- [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
+- [lightline](https://github.com/itchyny/lightline.vim)
+- [Tagbar](https://github.com/majutsushi/tagbar)
+- [vim-airline](https://github.com/vim-airline/vim-airline)
 
 Vim-only:
 
