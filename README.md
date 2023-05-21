@@ -478,7 +478,7 @@ For other terminals please configure appropriately with the following colors:
 | Type           | Category        | Value     | Color
 |----------------|-----------------|-----------|------------------------------------------------------
 | Background     | Background      | `#080808` | ![background](https://place-hold.it/32/080808?text=+)
-| Foreground     | Foreground      | `#b2b2b2` | ![background](https://place-hold.it/32/b2b2b2?text=+)
+| Foreground     | Foreground      | `#bdbdbd` | ![background](https://place-hold.it/32/bdbdbd?text=+)
 | Bold           | Bold            | `#eeeeee` | ![background](https://place-hold.it/32/eeeeee?text=+)
 | Cursor         | Cursor          | `#9e9e9e` | ![background](https://place-hold.it/32/9e9e9e?text=+)
 | Cursor Text    | Cursor Text     | `#080808` | ![background](https://place-hold.it/32/080808?text=+)

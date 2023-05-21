@@ -5,7 +5,7 @@ colors:
   # Default colors
   primary:
     background:        '#080808'
-    foreground:        '#b2b2b2'
+    foreground:        '#bdbdbd'
     bright_foreground: '#eeeeee'
 
   # Cursor colors
