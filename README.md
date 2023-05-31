@@ -444,34 +444,33 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 ```
 
-Terminal Themes
----------------
+Extra Themes
+------------
 
-A collection of _moonfly_-flavoured terminal themes are provided for those using
-_moonfly_ with `termguicolors` (`cterm` users should refer to the next section
-and not use these terminal themes):
-
-- _iTerm2_ users on macOS can import [this](extras/moonfly.itermcolors)
-  colorscheme.
+A collection of _moonfly_-flavoured themes are provided for those using
+_moonfly_:
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](extras/alacritty.yml) theme into their `alacritty.yml`
-  configuration.
+  configuration
+
+- [kitty](https://sw.kovidgoyal.net/kitty) users can use
+  [this](extras/kitty-theme.conf) theme
+
+- [fish](https://fishshell.com) users can use [this](extras/moonfly.fish) theme
+
+- _iTerm2_ users on macOS can import [this](extras/moonfly.itermcolors)
+  colorscheme
 
 - [Windows Terminal](https://github.com/microsoft/terminal) users can copy
   [this](extras/windows-terminal-settings.json) theme into their `settings.json`
-  configuration.
-
-- [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](extras/kitty-theme.conf) theme.
+  configuration
 
 - _Gnome Terminal_ users can run
   [this](extras/gnome-terminal-moonfly.sh) script to create a _Moonfly_
-  profile. Before executing the script, please install the `dconf-cli` command
-  line utility for modern versions of Gnome (3.28 and later), for example `sudo
-  apt install dconf-cli`. After executing the script, please set the _cursor_
+  profile. After executing the script, please set the _cursor_
   and _selection_ colors by hand, with the appropriate color values listed
-  above, in `Preferences` / `Moonfly` / `Colors`.
+  below, in `Preferences` / `Moonfly` / `Colors`.
 
 For other terminals please configure appropriately with the following colors:
 
