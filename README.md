@@ -466,9 +466,7 @@ A collection of _moonfly_-flavoured themes are provided:
   configuration
 
 - _Gnome Terminal_ users can run [this](extras/gnome-terminal-moonfly.sh) script
-  to create a _Moonfly_ profile. After executing the script, please set the
-  _cursor_ and _selection_ colors by hand, with the appropriate color values
-  listed below, in `Preferences` / `Moonfly` / `Colors`.
+  to create a _Moonfly_ profile.
 
 For other terminals please configure appropriately with the following colors:
 
