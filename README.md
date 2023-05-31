@@ -447,8 +447,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 Extra Themes
 ------------
 
-A collection of _moonfly_-flavoured themes are provided for those using
-_moonfly_:
+A collection of _moonfly_-flavoured themes are provided:
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](extras/alacritty.yml) theme into their `alacritty.yml`
@@ -466,11 +465,10 @@ _moonfly_:
   [this](extras/windows-terminal-settings.json) theme into their `settings.json`
   configuration
 
-- _Gnome Terminal_ users can run
-  [this](extras/gnome-terminal-moonfly.sh) script to create a _Moonfly_
-  profile. After executing the script, please set the _cursor_
-  and _selection_ colors by hand, with the appropriate color values listed
-  below, in `Preferences` / `Moonfly` / `Colors`.
+- _Gnome Terminal_ users can run [this](extras/gnome-terminal-moonfly.sh) script
+  to create a _Moonfly_ profile. After executing the script, please set the
+  _cursor_ and _selection_ colors by hand, with the appropriate color values
+  listed below, in `Preferences` / `Moonfly` / `Colors`.
 
 For other terminals please configure appropriately with the following colors:
 
