@@ -540,12 +540,14 @@ function! moonfly#Style() abort
     exec 'highlight scalaKeywordModifier guifg=' . s:lime
     exec 'highlight scalaSpecial guifg=' . s:crimson
 
-    " Shell scripts
+    " Shell
     highlight! link shAlias MoonflyTurquoise
     highlight! link shCommandSub MoonflyWhite
+    highlight! link shCtrlSeq MoonflyKhaki
     highlight! link shLoop MoonflyViolet
+    highlight! link shRange MoonflyWhite
     highlight! link shSetList MoonflyTurquoise
-    highlight! link shShellVariables MoonflyLime
+    highlight! link shShellVariables MoonflyTurquoise
     highlight! link shVariable MoonflyTurquoise
 
     " TypeScript (leafgarland/typescript-vim)

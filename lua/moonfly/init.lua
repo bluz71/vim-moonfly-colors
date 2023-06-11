@@ -536,6 +536,16 @@ M.style = function()
   highlight(0, "mkdListItem", { link = "MoonflyBlue" })
   highlight(0, "mkdURL", { link = "MoonflyPurple" })
 
+  -- Shell
+  highlight(0, "shAlias", { link = "MoonflyTurquoise" })
+  highlight(0, "shCommandSub", { link = "MoonflyWhite" })
+  highlight(0, "shCtrlSeq", { link = "MoonflyKhaki" })
+  highlight(0, "shLoop", { link = "MoonflyViolet" })
+  highlight(0, "shRange", { link = "MoonflyWhite" })
+  highlight(0, "shSetList", { link = "MoonflyTurquoise" })
+  highlight(0, "shShellVariables", { link = "MoonflyTurquoise" })
+  highlight(0, "shVariable", { link = "MoonflyTurquoise" })
+
   -- XML
   highlight(0, "xmlAttrib", { link = "MoonflyLime" })
   highlight(0, "xmlEndTag", { link = "MoonflyBlue" })
