@@ -22,7 +22,7 @@ set -g fish_color_redirection 8cc85f
 set -g fish_color_search_match --background=323437
 set -g fish_color_selection --background=323437
 set -g fish_color_status ff5454
-set -g fish_color_user 87d7af
+set -g fish_color_user 36c692
 set -g fish_color_valid_path
 
 # Completion pager colors.
