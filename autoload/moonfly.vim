@@ -716,6 +716,8 @@ function! moonfly#Style() abort
     endif
     exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
     exec 'highlight MatchWordCur guibg=bg'
+    highlight! link fishVariable MoonflyTurquoise
+    highlight! link fishInnerVariable MoonflyTurquoise
 
     " ALE plugin
     if g:moonflyUndercurls
