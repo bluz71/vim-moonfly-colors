@@ -16,7 +16,7 @@ set -g fish_color_match c6c6c6 --background=323437
 set -g fish_color_normal bdbdbd
 set -g fish_color_operator e65e72
 set -g fish_color_option bdbdbd
-set -g fish_color_param e196a2
+set -g fish_color_param 61d5ae
 set -g fish_color_quote c2c292
 set -g fish_color_redirection 8cc85f
 set -g fish_color_search_match --background=323437
