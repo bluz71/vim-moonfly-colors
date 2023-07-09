@@ -418,7 +418,6 @@ is enabled.
 A list of popular terminals that support true colors:
 
 - [iTerm2](http://www.iterm2.com)
-- [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
 - [Windows Terminal](https://github.com/Microsoft/Terminal)
 - [Alacritty](https://github.com/alacritty/alacritty)
 - [kitty](https://sw.kovidgoyal.net/kitty/index.html)
@@ -465,9 +464,6 @@ A collection of _moonfly_-flavoured themes are provided:
 - [Windows Terminal](https://github.com/microsoft/terminal) users can copy
   [this](extras/windows-terminal-settings.json) theme into their `settings.json`
   configuration
-
-- _Gnome Terminal_ users can run [this](extras/gnome-terminal-moonfly.sh) script
-  to create a _Moonfly_ profile.
 
 For other terminals please configure appropriately with the following colors:
 
