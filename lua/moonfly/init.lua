@@ -993,6 +993,15 @@ M.style = function()
   highlight(0, "NavicIconsStruct", { link = "NavicIconsClass" })
   highlight(0, "NavicIconsTypeParameter", { link = "NavicIconsEnumMember" })
   highlight(0, "NavicIconsVariable", { link = "NavicIconsEnumMember" })
+
+  -- Rainbow Delimiters
+  highlight(0, "RainbowDelimiterRed", { link = "MoonflyRed" })
+  highlight(0, "RainbowDelimiterYellow", { link = "MoonflyYellow" })
+  highlight(0, "RainbowDelimiterBlue", { link = "MoonflyBlue" })
+  highlight(0, "RainbowDelimiterOrange", { link = "MoonflyOrange" })
+  highlight(0, "RainbowDelimiterGreen", { link = "MoonflyGreen" })
+  highlight(0, "RainbowDelimiterViolet", { link = "MoonflyViolet" })
+  highlight(0, "RainbowDelimiterCyan", { link = "MoonflyTurquoise" })
 end
 
 return M
