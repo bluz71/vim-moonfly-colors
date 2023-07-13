@@ -411,6 +411,11 @@ M.style = function()
   -- Language specific Tree-sitter overrides.
   highlight(0, "@punctuation.delimiter.astro", { link = "MoonflyCranberry" })
   highlight(0, "@text.title.astro", { link = "MoonflyViolet" })
+  if g.moonflyItalics then
+    highlight(0, "@text.uri.astro", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.astro", { link = "MoonflyViolet" })
+  end
   highlight(0, "@parameter.bash", { link = "MoonflyTurquoise" })
   highlight(0, "@punctuation.delimiter.css", { link = "MoonflyCranberry" })
   highlight(0, "@keyword.gitcommit", { link = "MoonflySky" })
@@ -436,6 +441,11 @@ M.style = function()
   highlight(0, "@variable.vim", { link = "MoonflyTurquoise" })
   highlight(0, "@variable.builtin.vim", { link = "MoonflyEmerald" })
   highlight(0, "@text.title.vue", { link = "MoonflyViolet" })
+  if g.moonflyItalics then
+    highlight(0, "@text.uri.vue", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.vue", { link = "MoonflyViolet" })
+  end
   highlight(0, "@field.yaml", { link = "MoonflyBlue" })
   highlight(0, "@punctuation.delimiter.yaml", { link = "MoonflyCranberry" })
 
