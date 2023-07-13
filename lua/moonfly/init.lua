@@ -428,6 +428,11 @@ M.style = function()
   highlight(0, "@punctuation.delimiter.scss", { link = "MoonflyCranberry" })
   highlight(0, "@variable.scss", { link = "MoonflyTurquoise" })
   highlight(0, "@text.title.svelte", { link = "MoonflyViolet" })
+  if g.moonflyItalics then
+    highlight(0, "@text.uri.svelte", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.svelte", { link = "MoonflyViolet" })
+  end
   highlight(0, "@variable.vim", { link = "MoonflyTurquoise" })
   highlight(0, "@variable.builtin.vim", { link = "MoonflyEmerald" })
   highlight(0, "@text.title.vue", { link = "MoonflyViolet" })
