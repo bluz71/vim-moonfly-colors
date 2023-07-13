@@ -419,6 +419,11 @@ M.style = function()
   highlight(0, "@text.uri.gitcommit", { link = "MoonflyEmerald" })
   highlight(0, "@text.title.help", { link = "MoonflySky" })
   highlight(0, "@text.title.html", { link = "MoonflyViolet" })
+  if g.moonflyItalics then
+    highlight(0, "@text.uri.html", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.html", { link = "MoonflyViolet" })
+  end
   highlight(0, "@storageclass.rust", { link = "MoonflyViolet" })
   highlight(0, "@punctuation.delimiter.scss", { link = "MoonflyCranberry" })
   highlight(0, "@variable.scss", { link = "MoonflyTurquoise" })
