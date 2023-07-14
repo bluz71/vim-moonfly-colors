@@ -409,45 +409,36 @@ M.style = function()
   highlight(0, "@variable", { link = "MoonflyWhite" })
   highlight(0, "@variable.builtin", { link = "MoonflyLime" })
   -- Language specific Tree-sitter overrides.
-  highlight(0, "@punctuation.delimiter.astro", { link = "MoonflyCranberry" })
-  highlight(0, "@text.title.astro", { link = "MoonflyViolet" })
-  if g.moonflyItalics then
-    highlight(0, "@text.uri.astro", { fg = violet, italic = true })
-  else
-    highlight(0, "@text.uri.astro", { link = "MoonflyViolet" })
-  end
-  highlight(0, "@parameter.bash", { link = "MoonflyTurquoise" })
-  highlight(0, "@punctuation.delimiter.css", { link = "MoonflyCranberry" })
+  highlight(0, "@field.yaml", { link = "MoonflyBlue" })
   highlight(0, "@keyword.gitcommit", { link = "MoonflySky" })
+  highlight(0, "@parameter.bash", { link = "MoonflyTurquoise" })
+  highlight(0, "@punctuation.delimiter.astro", { link = "MoonflyCranberry" })
+  highlight(0, "@punctuation.delimiter.css", { link = "MoonflyCranberry" })
+  highlight(0, "@punctuation.delimiter.scss", { link = "MoonflyCranberry" })
+  highlight(0, "@punctuation.delimiter.yaml", { link = "MoonflyCranberry" })
+  highlight(0, "@storageclass.rust", { link = "MoonflyViolet" })
   highlight(0, "@text.reference.gitcommit", { link = "MoonflyBlue" })
+  highlight(0, "@text.title.astro", { link = "MoonflyViolet" })
   highlight(0, "@text.title.gitcommit", { link = "MoonflyViolet" })
-  highlight(0, "@text.uri.gitcommit", { link = "MoonflyEmerald" })
   highlight(0, "@text.title.help", { link = "MoonflySky" })
   highlight(0, "@text.title.html", { link = "MoonflyViolet" })
-  if g.moonflyItalics then
-    highlight(0, "@text.uri.html", { fg = violet, italic = true })
-  else
-    highlight(0, "@text.uri.html", { link = "MoonflyViolet" })
-  end
-  highlight(0, "@storageclass.rust", { link = "MoonflyViolet" })
-  highlight(0, "@punctuation.delimiter.scss", { link = "MoonflyCranberry" })
-  highlight(0, "@variable.scss", { link = "MoonflyTurquoise" })
   highlight(0, "@text.title.svelte", { link = "MoonflyViolet" })
-  if g.moonflyItalics then
-    highlight(0, "@text.uri.svelte", { fg = violet, italic = true })
-  else
-    highlight(0, "@text.uri.svelte", { link = "MoonflyViolet" })
-  end
-  highlight(0, "@variable.vim", { link = "MoonflyTurquoise" })
-  highlight(0, "@variable.builtin.vim", { link = "MoonflyEmerald" })
   highlight(0, "@text.title.vue", { link = "MoonflyViolet" })
+  highlight(0, "@text.uri.gitcommit", { link = "MoonflyEmerald" })
   if g.moonflyItalics then
+    highlight(0, "@text.uri.astro", { fg = violet, italic = true })
+    highlight(0, "@text.uri.html", { fg = violet, italic = true })
+    highlight(0, "@text.uri.svelte", { fg = violet, italic = true })
     highlight(0, "@text.uri.vue", { fg = violet, italic = true })
   else
+    highlight(0, "@text.uri.astro", { link = "MoonflyViolet" })
+    highlight(0, "@text.uri.html", { link = "MoonflyViolet" })
+    highlight(0, "@text.uri.svelte", { link = "MoonflyViolet" })
     highlight(0, "@text.uri.vue", { link = "MoonflyViolet" })
   end
-  highlight(0, "@field.yaml", { link = "MoonflyBlue" })
-  highlight(0, "@punctuation.delimiter.yaml", { link = "MoonflyCranberry" })
+  highlight(0, "@variable.scss", { link = "MoonflyTurquoise" })
+  highlight(0, "@variable.vim", { link = "MoonflyTurquoise" })
+  highlight(0, "@variable.builtin.vim", { link = "MoonflyEmerald" })
 
   -- Neovim LSP semantic highlights.
   highlight(0, "@lsp.mod.deprecated", { link = "@constant" })
