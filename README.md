@@ -35,6 +35,7 @@ Neovim-only:
 - [mason.nvim](https://github.com/williamboman/mason.nvim)
 - [Mini](https://github.com/echasnovski/mini.nvim)
 - [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [Neogit](https://github.com/NeogitOrg/neogit)
 - [Noice](https://github.com/folke/noice.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [nvim-navic](https://github.com/SmiteshP/nvim-navic)

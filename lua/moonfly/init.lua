@@ -1013,6 +1013,15 @@ M.style = function()
   highlight(0, "RainbowDelimiterGreen", { link = "MoonflyGreen" })
   highlight(0, "RainbowDelimiterViolet", { link = "MoonflyViolet" })
   highlight(0, "RainbowDelimiterCyan", { link = "MoonflyTurquoise" })
+
+  -- Neogit
+  highlight(0, "NeogitBranch", { link = "MoonflySky" })
+  highlight(0, "NeogitDiffAddHighlight", { link = "MoonflyEmeraldLine" })
+  highlight(0, "NeogitDiffContextHighlight", { bg = grey234 })
+  highlight(0, "NeogitDiffDeleteHighlight", { link = "MoonflyCrimsonLine" })
+  highlight(0, "NeogitHunkHeader", { link = "Pmenu" })
+  highlight(0, "NeogitHunkHeaderHighlight", { link = "MoonflyBlueLineActive" })
+  highlight(0, "NeogitRemote", { link = "MoonflyPurple" })
 end
 
 return M
