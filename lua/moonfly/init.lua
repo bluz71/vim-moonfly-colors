@@ -481,6 +481,8 @@ M.style = function()
   highlight(0, "@lsp.typemod.variable.static", { link = "@constant" })
   -- Language specific LSP semantic overrides.
   highlight(0, "@lsp.type.macro.rust", { link = "@function" })
+  highlight(0, "@lsp.type.parameter.dockerfile", { link = "@property" })
+  highlight(0, "@lsp.type.variable.dockerfile", { link = "@function" })
 
   -- Neovim Diagnostic
   highlight(0, "DiagnosticError", { link = "MoonflyRed" })
