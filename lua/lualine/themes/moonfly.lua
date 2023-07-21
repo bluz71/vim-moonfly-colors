@@ -28,28 +28,28 @@ local colors = {
 -- LuaFormatter on
 return {
   normal = {
-    a = {fg = colors.color6, bg = colors.color1},
+    a = {fg = colors.color6, bg = colors.color1, gui = 'bold'},
     b = {fg = colors.color1, bg = colors.color0},
     c = {fg = colors.color8, bg = colors.color0}
   },
   insert = {
-    a = {fg = colors.color6, bg = colors.color2},
+    a = {fg = colors.color6, bg = colors.color2, gui = 'bold'},
     b = {fg = colors.color2, bg = colors.color0}
   },
   visual = {
-    a = {fg = colors.color6, bg = colors.color3},
+    a = {fg = colors.color6, bg = colors.color3, gui = 'bold'},
     b = {fg = colors.color3, bg = colors.color0}
   },
   command = {
-    a = {fg = colors.color6, bg = colors.color4},
+    a = {fg = colors.color6, bg = colors.color4, gui = 'bold'},
     b = {fg = colors.color4, bg = colors.color0}
   },
   replace = {
-    a = {fg = colors.color6, bg = colors.color5},
+    a = {fg = colors.color6, bg = colors.color5, gui = 'bold'},
     b = {fg = colors.color5, bg = colors.color0}
   },
   inactive = {
-    a = {fg = colors.color7, bg = colors.color0},
+    a = {fg = colors.color7, bg = colors.color0, gui = 'bold'},
     b = {fg = colors.color7, bg = colors.color0},
     c = {fg = colors.color7, bg = colors.color0}
   },
