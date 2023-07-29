@@ -70,12 +70,6 @@ function! moonfly#Style() abort
     exec 'highlight MoonflyViolet guifg=' . s:violet
     exec 'highlight MoonflyCrimson guifg=' . s:crimson
     exec 'highlight MoonflyRed guifg=' . s:red
-    " Misc helpers
-    exec 'highlight MoonflyYellowAlert guibg=bg guifg=' . s:yellow
-    exec 'highlight MoonflyCoralAlert guibg=bg guifg=' . s:coral
-    exec 'highlight MoonflyEmeraldAlert guibg=bg guifg=' . s:emerald
-    exec 'highlight MoonflySkyAlert guibg=bg guifg=' . s:sky
-    exec 'highlight MoonflyRedAlert guibg=bg guifg=' . s:red
     " Statusline helper colors
     exec 'highlight MoonflyBlueMode guibg=' . s:blue . ' guifg=' . s:grey234
     exec 'highlight MoonflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:grey234
@@ -729,9 +723,9 @@ function! moonfly#Style() abort
         highlight! link ALEWarning MoonflyDiagnosticUnderlineWarn
         highlight! link ALEInfo MoonflyDiagnosticUnderlineInfo
     endif
-    highlight! link ALEWarningSign MoonflyYellowAlert
-    highlight! link ALEErrorSign MoonflyRedAlert
-    highlight! link ALEInfoSign MoonflySkyAlert
+    highlight! link ALEWarningSign MoonflyYellow
+    highlight! link ALEErrorSign MoonflyRed
+    highlight! link ALEInfoSign MoonflySky
     if g:moonflyVirtualTextColor
         highlight! link ALEVirtualTextError MoonflyDiagnosticVirtualTextError
         highlight! link ALEVirtualTextWarning MoonflyDiagnosticVirtualTextWarn
@@ -743,16 +737,16 @@ function! moonfly#Style() abort
     endif
 
     " GitGutter plugin
-    highlight! link GitGutterAdd MoonflyEmeraldAlert
-    highlight! link GitGutterChange MoonflySkyAlert
-    highlight! link GitGutterChangeDelete MoonflyCoralAlert
-    highlight! link GitGutterDelete MoonflyRedAlert
+    highlight! link GitGutterAdd MoonflyEmerald
+    highlight! link GitGutterChange MoonflySky
+    highlight! link GitGutterChangeDelete MoonflyCoral
+    highlight! link GitGutterDelete MoonflyRed
 
     " Signify plugin
-    highlight! link SignifySignAdd MoonflyEmeraldAlert
-    highlight! link SignifySignChange MoonflySkyAlert
-    highlight! link SignifySignChangeDelete MoonflyCoralAlert
-    highlight! link SignifySignDelete MoonflyRedAlert
+    highlight! link SignifySignAdd MoonflyEmerald
+    highlight! link SignifySignChange MoonflySky
+    highlight! link SignifySignChangeDelete MoonflyCoral
+    highlight! link SignifySignDelete MoonflyRed
 
     " FZF plugin
     exec 'highlight fzf1 guifg=' . s:crimson . ' guibg=' . s:grey236
