@@ -24,7 +24,6 @@ Neovim-only:
 - [Neovim Diagnostic](https://neovim.io/doc/user/diagnostic.html)
 - [Neovim LSP Semantic Highlights](https://neovim.io/doc/user/lsp.html#lsp-semantic-highlight)
 - [Barbar](https://github.com/romgrk/barbar.nvim)
-- [Bufferline](https://github.com/akinsho/bufferline.nvim)
 - [Dashboard](https://github.com/glepnir/dashboard-nvim)
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [Hop](https://github.com/phaazon/hop.nvim)
