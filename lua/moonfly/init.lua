@@ -681,7 +681,7 @@ M.style = function()
   -------------------------------------------------------------------------
 
   -- NvimTree plugin
-  highlight(0, "NvimTreeFolderIcon", { link = "MoonflyBlue" })
+  highlight(0, "NvimTreeFolderIcon", { link = "MoonflyGrey241" })
   highlight(0, "NvimTreeFolderName", { link = "MoonflyBlue" })
   highlight(0, "NvimTreeIndentMarker", { link = "MoonflyGrey239" })
   highlight(0, "NvimTreeOpenedFolderName", { link = "MoonflyBlue" })
@@ -691,26 +691,21 @@ M.style = function()
   highlight(0, "NvimTreeCursorLine", { bg = grey235 })
   highlight(0, "NvimTreeExecFile", { fg = green })
   highlight(0, "NvimTreeImageFile", { fg = violet })
-  if g.moonflyTransparent ~= true then
-    highlight(0, "NvimTreeNormal", { bg = grey233, fg = white })
-  end
   highlight(0, "NvimTreeOpenedFile", { fg = yellow })
   highlight(0, "NvimTreeSymlink", { fg = turquoise })
 
   -- Neo-tree plugin
   highlight(0, "NeoTreeDimText", { link = "MoonflyGrey239" })
+  highlight(0, "NeoTreeDirectoryIcon", { link = "MoonflyGrey241" })
   highlight(0, "NeoTreeDotfile", { link = "MoonflyGrey236" })
   highlight(0, "NeoTreeGitAdded", { link = "MoonflyGreen" })
   highlight(0, "NeoTreeGitConflict", { link = "MoonflyCrimson" })
-  highlight(0, "NeoTreeGitModified", { link = "MoonflyYellow" })
+  highlight(0, "NeoTreeGitModified", { link = "MoonflyTurquoise" })
   highlight(0, "NeoTreeGitUntracked", { link = "MoonflyGrey241" })
   highlight(0, "NeoTreeMessage", { link = "MoonflyGrey247" })
   highlight(0, "NeoTreeModified", { link = "MoonflyYellow" })
   highlight(0, "NeoTreeRootName", { link = "MoonflyPurple" })
   highlight(0, "NeoTreeCursorLine", { bg = grey235 })
-  if g.moonflyTransparent ~= true then
-    highlight(0, "NeoTreeNormal", { bg = grey233, fg = white })
-  end
 
   -- Telescope plugin
   highlight(0, "TelescopeBorder", { link = "FloatBorder" })
