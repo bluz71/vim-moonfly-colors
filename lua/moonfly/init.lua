@@ -698,9 +698,11 @@ M.style = function()
   highlight(0, "NvimTreeSymlink", { fg = turquoise })
 
   -- Neo-tree plugin
+  highlight(0, "NeoTreeCursorLine", { bg = grey235 })
   highlight(0, "NeoTreeDimText", { link = "MoonflyGrey239" })
   highlight(0, "NeoTreeDirectoryIcon", { link = "MoonflyGrey241" })
   highlight(0, "NeoTreeDotfile", { link = "MoonflyGrey236" })
+  highlight(0, "NeoTreeFloatTitle", { bg = grey236, fg = white })
   highlight(0, "NeoTreeGitAdded", { link = "MoonflyGreen" })
   highlight(0, "NeoTreeGitConflict", { link = "MoonflyCrimson" })
   highlight(0, "NeoTreeGitModified", { link = "MoonflyTurquoise" })
@@ -708,7 +710,7 @@ M.style = function()
   highlight(0, "NeoTreeMessage", { link = "MoonflyGrey247" })
   highlight(0, "NeoTreeModified", { link = "MoonflyYellow" })
   highlight(0, "NeoTreeRootName", { link = "MoonflyPurple" })
-  highlight(0, "NeoTreeCursorLine", { bg = grey235 })
+  highlight(0, "NeoTreeTitleBar", { bg = grey236, fg = white })
 
   -- Telescope plugin
   highlight(0, "TelescopeBorder", { link = "FloatBorder" })
