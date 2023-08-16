@@ -591,7 +591,7 @@ M.style = function()
   highlight(0, "TagbarKind", { link = "MoonflyEmerald" })
 
   -- fern.vim plugin
-  highlight(0, "FernBranchSymbol", { link = "MoonflyGrey241" })
+  highlight(0, "FernBranchSymbol", { link = "MoonflyGrey246" })
   highlight(0, "FernLeafSymbol", { link = "MoonflyBlue" })
   highlight(0, "FernLeaderSymbol", { link = "MoonflyGrey239" })
   highlight(0, "FernBranchText", { link = "MoonflyBlue" })
@@ -681,7 +681,7 @@ M.style = function()
   -------------------------------------------------------------------------
 
   -- NvimTree plugin
-  highlight(0, "NvimTreeFolderIcon", { link = "MoonflyGrey241" })
+  highlight(0, "NvimTreeFolderIcon", { link = "MoonflyGrey246" })
   highlight(0, "NvimTreeFolderName", { link = "MoonflyBlue" })
   highlight(0, "NvimTreeIndentMarker", { link = "MoonflyGrey239" })
   highlight(0, "NvimTreeOpenedFolderName", { link = "MoonflyBlue" })
@@ -700,7 +700,7 @@ M.style = function()
   -- Neo-tree plugin
   highlight(0, "NeoTreeCursorLine", { bg = grey235 })
   highlight(0, "NeoTreeDimText", { link = "MoonflyGrey239" })
-  highlight(0, "NeoTreeDirectoryIcon", { link = "MoonflyGrey241" })
+  highlight(0, "NeoTreeDirectoryIcon", { link = "MoonflyGrey246" })
   highlight(0, "NeoTreeDotfile", { link = "MoonflyGrey246" })
   highlight(0, "NeoTreeFloatTitle", { bg = grey236, fg = white })
   highlight(0, "NeoTreeGitAdded", { link = "MoonflyGreen" })
