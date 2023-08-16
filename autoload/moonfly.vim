@@ -52,6 +52,7 @@ function! moonfly#Style() abort
     exec 'highlight MoonflyGrey241 guifg=' . s:grey241
     exec 'highlight MoonflyGrey239 guifg=' . s:grey239
     exec 'highlight MoonflyGrey238 guifg=' . s:grey238
+    exec 'highlight MoonflyGrey237 guifg=' . s:grey237
     exec 'highlight MoonflyGrey236 guifg=' . s:grey236
     exec 'highlight MoonflyGrey235 guifg=' . s:grey235
     exec 'highlight MoonflyKhaki guifg=' . s:khaki
@@ -663,7 +664,7 @@ function! moonfly#Style() abort
     " fern.vim plugin
     highlight! link FernBranchSymbol MoonflyGrey246
     highlight! link FernLeafSymbol MoonflyBlue
-    highlight! link FernLeaderSymbol MoonflyGrey239
+    highlight! link FernLeaderSymbol MoonflyGrey237
     highlight! link FernBranchText MoonflyBlue
     highlight! link FernMarkedLine MoonflyVisual
     highlight! link FernMarkedText MoonflyCrimson
