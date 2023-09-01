@@ -44,6 +44,8 @@ local crimson = "#ff5189"
 local red = "#ff5454"
 -- Extra colors
 local spring = "#00875f"
+local mineral = "#314940"
+local bay = "#4d5d8d"
 
 local M = {}
 
@@ -268,7 +270,6 @@ M.style = function()
   -- Visual selection
   highlight(0, "Visual", { link = "MoonflyVisual" })
   highlight(0, "VisualNOS", { bg = grey0, fg = white })
-  highlight(0, "VisualInDiff", { bg = grey0, fg = white })
 
   -- Errors, warnings and whitespace-eol
   highlight(0, "Error", { bg = bg, fg = red })
@@ -331,10 +332,10 @@ M.style = function()
   highlight(0, "Conceal", { bg = none, fg = grey249 })
 
   -- nvim -d
-  highlight(0, "DiffAdd", { bg = emerald, fg = black })
+  highlight(0, "DiffAdd", { bg = mineral })
   highlight(0, "DiffChange", { bg = grey236 })
   highlight(0, "DiffDelete", { bg = grey236, fg = grey241 })
-  highlight(0, "DiffText", { bg = blue, fg = black })
+  highlight(0, "DiffText", { bg = bay })
 
   -------------------------------------------------------------------------
   -- Neovim standard styling

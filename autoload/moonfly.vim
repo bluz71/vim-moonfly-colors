@@ -36,6 +36,8 @@ let s:crimson   = '#ff5189'
 let s:red       = '#ff5454'
 " Extra colors
 let s:spring    = '#00875f'
+let s:mineral   = '#314940'
+let s:bay       = '#4d5d8d'
 
 function! moonfly#Style() abort
     "-----------------------------------------------------------------------
@@ -198,7 +200,6 @@ function! moonfly#Style() abort
     " Visual selection
     highlight! link Visual MoonflyVisual
     exec 'highlight VisualNOS guibg=' . s:grey0 . ' guifg=fg gui=none'
-    exec 'highlight VisualInDiff guibg=' . s:grey0 . ' guifg=' . s:white
 
     " Errors, warnings and whitespace-eol
     exec 'highlight Error guibg=bg guifg=' . s:red
@@ -261,10 +262,10 @@ function! moonfly#Style() abort
     exec 'highlight Conceal guibg=NONE guifg=' . s:grey249
 
     " vimdiff -d
-    exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=' . s:black
+    exec 'highlight DiffAdd guibg=' . s:mineral
     exec 'highlight DiffChange guibg=' . s:grey236
     exec 'highlight DiffDelete guibg=' . s:grey236 . ' guifg=' . s:grey241 . ' gui=none'
-    exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
+    exec 'highlight DiffText guibg=' . s:bay
 
     "-----------------------------------------------------------------------
     " Language styling
