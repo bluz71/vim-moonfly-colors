@@ -80,22 +80,16 @@ Installation
 Install the **bluz71/vim-moonfly-colors** colorscheme with your preferred plugin
 manager.
 
-[vim-plug](https://github.com/junegunn/vim-plug):
-
-```viml
-Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
-```
-
-[packer.nvim](https://github.com/wbthomason/packer.nvim):
-
-```lua
-use { "bluz71/vim-moonfly-colors", as = "moonfly" }
-```
-
 [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+```
+
+[vim-plug](https://github.com/junegunn/vim-plug):
+
+```viml
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 ```
 
 Usage
