@@ -453,13 +453,13 @@ function! moonfly#Style() abort
     highlight! link markdownH1 MoonflyEmerald
     highlight! link markdownH2 MoonflyBlue
     highlight! link markdownH3 MoonflyTurquoise
-    highlight! link markdownH3Delimiter MoonflyBlue
+    highlight! link markdownH3Delimiter MoonflyCrimson
     highlight! link markdownH4 MoonflyOrange
-    highlight! link markdownH4Delimiter MoonflyBlue
+    highlight! link markdownH4Delimiter MoonflyCrimson
     highlight! link markdownH5 MoonflySky
-    highlight! link markdownH5Delimiter MoonflyBlue
-    highlight! link markdownH6 MoonflyCrimson
-    highlight! link markdownH6Delimiter MoonflyBlue
+    highlight! link markdownH5Delimiter MoonflyCrimson
+    highlight! link markdownH6 MoonflyViolet
+    highlight! link markdownH6Delimiter MoonflyCrimson
     highlight! link markdownHeadingRule MoonflyCranberry
     highlight! link markdownItalic MoonflyOrchid
     highlight! link markdownUrl MoonflyPurple
