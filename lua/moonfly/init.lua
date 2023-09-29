@@ -850,7 +850,7 @@ M.style = function()
   highlight(0, "CmpItemKindVariable", { link = "MoonflyTurquoise" })
   highlight(0, "CmpItemMenu", { link = "MoonflyGrey247" })
 
-  -- Indent Blankline plugin
+  -- Indent Blankline plugin v2 & earlier
   highlight(0, "IndentBlanklineChar", { fg = grey235, nocombine = true })
   highlight(0, "IndentBlanklineSpaceChar", { fg = grey235, nocombine = true })
   highlight(0, "IndentBlanklineSpaceCharBlankline", { fg = grey235, nocombine = true })
@@ -860,6 +860,9 @@ M.style = function()
   highlight(0, "IndentBlanklineIndent3", { link = "MoonflyTurquoise" })
   highlight(0, "IndentBlanklineIndent2", { link = "MoonflyYellow" })
   highlight(0, "IndentBlanklineIndent1", { link = "MoonflyCrimson" })
+  -- Indent Blankline plugin v3 & later
+  highlight(0, "IblIndent", { fg = grey235, nocombine = true })
+  highlight(0, "IblWhitespace", { fg = grey235, nocombine = true })
 
   -- Mini.nvim plugin
   highlight(0, "MiniCompletionActiveParameter", { link = "MoonflyVisual" })
