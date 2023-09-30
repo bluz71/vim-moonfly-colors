@@ -701,6 +701,8 @@ function! moonfly#Style() abort
     highlight! link CtrlPMatch MoonflyCoral
     highlight! link Directory MoonflyBlue
     highlight! link erubyDelimiter MoonflyCrimson
+    highlight! link helpCommand MoonflySky
+    highlight! link helpExample MoonflyGreen
     highlight! link helpHeadline MoonflyBlue
     highlight! link helpSectionDelim MoonflyBlue
     highlight! link HighlightedyankRegion MoonflyGrey0
