@@ -382,7 +382,7 @@ function! moonfly#Style() abort
     highlight! link haskellWhere MoonflyViolet
 
     " Help
-    highlight! link helpCommand MoonflySky
+    highlight! link helpCommand MoonflyOrchid
     highlight! link helpExample MoonflyGreen
     highlight! link helpHeadline MoonflyBlue
     highlight! link helpHyperTextEntry MoonflyTurquoise
