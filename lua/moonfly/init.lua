@@ -403,6 +403,7 @@ M.style = function()
   highlight(0, "@punctuation.delimiter.yaml", { link = "MoonflyCranberry" })
   highlight(0, "@punctuation.special.markdown", { link = "MoonflySky" })
   highlight(0, "@storageclass.rust", { link = "MoonflyViolet" })
+  highlight(0, "@text.literal.vimdoc", { link = "MoonflyOrchid" })
   highlight(0, "@text.literal.block.vimdoc", { link = "MoonflyGreen" })
   highlight(0, "@text.reference.gitcommit", { link = "MoonflyBlue" })
   highlight(0, "@text.title.1.markdown", { link = "MoonflyEmerald" })
@@ -545,6 +546,13 @@ M.style = function()
   -- Legacy language styling
   -------------------------------------------------------------------------
 
+  -- Help
+  highlight(0, "helpCommand", { link = "MoonflySky" })
+  highlight(0, "helpExample", { link = "MoonflyGreen" })
+  highlight(0, "helpHeadline", { link = "MoonflyBlue" })
+  highlight(0, "helpHyperTextEntry", { link = "MoonflyTurquoise" })
+  highlight(0, "helpSectionDelim", { link = "MoonflyBlue" })
+
   -- Markdown, 'tpope/vim-markdown' plugin
   highlight(0, "markdownBold", { link = "MoonflyYellow" })
   highlight(0, "markdownCode", { link = "MoonflyKhaki" })
@@ -638,10 +646,6 @@ M.style = function()
   highlight(0, "CtrlPMatch", { link = "MoonflyCoral" })
   highlight(0, "Directory", { link = "MoonflyBlue" })
   highlight(0, "erubyDelimiter", { link = "MoonflyCrimson" })
-  highlight(0, "helpCommand", { link = "MoonflySky" })
-  highlight(0, "helpExample", { link = "MoonflyGreen" })
-  highlight(0, "helpHeadline", { link = "MoonflyBlue" })
-  highlight(0, "helpSectionDelim", { link = "MoonflyBlue" })
   highlight(0, "jsonKeyword", { link = "MoonflySky" })
   highlight(0, "jsonQuote", { link = "MoonflyWhite" })
   highlight(0, "netrwClassify", { link = "MoonflyCranberry" })

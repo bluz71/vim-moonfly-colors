@@ -381,6 +381,13 @@ function! moonfly#Style() abort
     highlight! link haskellType MoonflySky
     highlight! link haskellWhere MoonflyViolet
 
+    " Help
+    highlight! link helpCommand MoonflySky
+    highlight! link helpExample MoonflyGreen
+    highlight! link helpHeadline MoonflyBlue
+    highlight! link helpHyperTextEntry MoonflyTurquoise
+    highlight! link helpSectionDelim MoonflyBlue
+
     " HTML
     highlight! link htmlArg MoonflyTurquoise
     highlight! link htmlLink MoonflyGreen
@@ -701,10 +708,6 @@ function! moonfly#Style() abort
     highlight! link CtrlPMatch MoonflyCoral
     highlight! link Directory MoonflyBlue
     highlight! link erubyDelimiter MoonflyCrimson
-    highlight! link helpCommand MoonflySky
-    highlight! link helpExample MoonflyGreen
-    highlight! link helpHeadline MoonflyBlue
-    highlight! link helpSectionDelim MoonflyBlue
     highlight! link HighlightedyankRegion MoonflyGrey0
     highlight! link jsonKeyword MoonflySky
     highlight! link jsonQuote MoonflyWhite
