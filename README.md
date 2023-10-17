@@ -88,7 +88,7 @@ manager.
 
 [vim-plug](https://github.com/junegunn/vim-plug):
 
-```viml
+```vim
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 ```
 
@@ -97,7 +97,7 @@ Usage
 
 Enable the colorscheme after the plugin declaration.
 
-```viml
+```vim
 " Vimscript initialization file
 colorscheme moonfly
 ```
@@ -114,7 +114,7 @@ Statusline
   [lightline](https://github.com/itchyny/lightline.vim). To enable the _moonfly_
   lightline theme please add the following to your initialization file:
 
-```viml
+```vim
 let g:lightline = { 'colorscheme': 'moonfly' }
 ```
 
@@ -156,7 +156,7 @@ The `moonflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
 then add the following to your initialization file:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyCursorColor = v:true
 ```
@@ -175,7 +175,7 @@ certain HTML elements in GUI versions of Vim. By default this option is
 **enabled**. If you do not like the appearance of italics then add the following
 to your initialization file:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyItalics = v:false
 ```
@@ -195,7 +195,7 @@ and foreground colors in Neovim floating windows. By default this option is
 menu colors. If you would like to use moonfly colors instead then add the
 following to your configuration:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyNormalFloat = v:true
 ```
@@ -247,7 +247,7 @@ palette in `:terminal` windows when `termguicolors` is set. By default this
 option is **enabled**. If you prefer not to use the moonfly color palette for
 the first 16 terminal colors then add the following to your initialization file:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyTerminalColors = v:false
 ```
@@ -266,7 +266,7 @@ transparent background in GUI versions of Vim. By default this option is
 **disabled**. If you would like a transparent background then add the following
 to your initialization file:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyTransparent = v:true
 ```
@@ -285,7 +285,7 @@ spelling and linting errors in GUI versions of Vim, including terminal Vim with
 `termguicolors` set. By default this option is **enabled**. If you do not like
 the appearance of undercurls then add the following to your initialization file:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyUndercurls = v:false
 ```
@@ -304,7 +304,7 @@ matching parentheses. By default this option is **disabled**. If you want to
 underline matching parentheses then add the following to your initialization
 file:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyUnderlineMatchParen = v:true
 ```
@@ -323,7 +323,7 @@ virtual text in color. By default this option is **disabled**. If you want to
 display diagnostic virtual text in color then add the following to your
 initialization file:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyVirtualTextColor = v:true
 ```
@@ -348,7 +348,7 @@ The `moonflyWinSeparator` option specifies the style of window separators:
 For example, if line separators are desired then add the following to your
 configuration:
 
-```viml
+```vim
 " Vimscript initialization file
 let g:moonflyWinSeparator = 2
 ```
@@ -362,7 +362,7 @@ vim.g.moonflyWinSeparator = 2
 the look of line separators (if option `2` has been chosen) by selecting thicker
 characters for the separators:
 
-```viml
+```vim
 " Vimscript initialization file
 set fillchars=horiz:━,horizup:┻,horizdown:┳,vert:┃,vertleft:┨,vertright:┣,verthoriz:╋
 ```
@@ -381,7 +381,7 @@ an `autocmd` to override that desired highlight.
 For example, if one wishes to highlight functions in bold then simply add the
 following to your initialization file prior to setting the colorscheme:
 
-```viml
+```vim
 " Vimscript initialization file
 augroup CustomHighlight
     autocmd!
@@ -433,7 +433,7 @@ set -ga terminal-overrides ',xterm-256color:Tc'
 Vim, as against Neovim, inside _tmux_, will also require the following settings
 be added to the `~/.vimrc` file:
 
-```viml
+```vim
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 ```
