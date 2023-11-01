@@ -794,8 +794,9 @@ function! moonfly#Style() abort
     highlight! link MistflyCommand MoonflyYellowMode
     highlight! link MistflyReplace MoonflyCrimsonMode
 
-    " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-colors/issues/31)
+    " Coc plugin
     highlight! link CocUnusedHighlight MoonflyGrey249
+    exec 'highlight CocInlayHint guibg=' . s:grey234 . ' guifg=' . s:grey246
 
     " indentLine plugin
     if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
