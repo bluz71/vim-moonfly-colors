@@ -86,6 +86,18 @@ manager.
 { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 ```
 
+[packer.nvim](https://github.com/wbthomason/packer.nvim):
+
+```lua
+use {
+  'bluz71/vim-moonfly-colors',
+  as = 'moonfly',
+  config = function()
+    vim.cmd('colorscheme moonfly')
+  end
+}
+```
+
 [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
