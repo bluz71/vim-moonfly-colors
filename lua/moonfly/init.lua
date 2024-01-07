@@ -434,6 +434,7 @@ M.style = function()
     highlight(0, "@text.uri.svelte", { link = "MoonflyViolet" })
     highlight(0, "@text.uri.vue", { link = "MoonflyViolet" })
   end
+  highlight(0, "@type.toml", { link = "MoonflyBlue" })
   highlight(0, "@variable.scss", { link = "MoonflyTurquoise" })
   highlight(0, "@variable.vim", { link = "MoonflyTurquoise" })
   highlight(0, "@variable.builtin.vim", { link = "MoonflyEmerald" })
