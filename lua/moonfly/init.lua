@@ -997,6 +997,7 @@ M.style = function()
   -- lazy.nvim plugin
   highlight(0, "LazyCommit", { link = "MoonflyEmerald" })
   highlight(0, "LazyCommitType", { link = "MoonflyViolet" })
+  highlight(0, "LazyDimmed", { fg = grey246 })
   highlight(0, "LazyH1", { link = "MoonflyBlueMode" })
   highlight(0, "LazyProgressDone", { link = "MoonflyBlue" })
   highlight(0, "LazyProgressTodo", { link = "MoonflyGrey0" })
