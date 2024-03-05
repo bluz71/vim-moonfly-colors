@@ -26,7 +26,7 @@ local grey235 = "#262626"
 local grey234 = "#1c1c1c"
 local grey233 = "#121212"
 -- Core theme colors
-local khaki = "#c2c292"
+local khaki = "#c6c684"
 local yellow = "#e3c78a"
 local orange = "#de935f"
 local coral = "#f09479"

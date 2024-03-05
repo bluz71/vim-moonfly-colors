@@ -482,7 +482,7 @@ For other terminals please configure appropriately with the following colors:
 | Color 9        | Black (bright)  | `#949494` | ![background](https://place-hold.it/32/949494?text=+)
 | Color 10       | Red (bright)    | `#ff5189` | ![background](https://place-hold.it/32/ff5189?text=+)
 | Color 11       | Green (bright)  | `#36c692` | ![background](https://place-hold.it/32/36c692?text=+)
-| Color 12       | Yellow (bright) | `#c2c292` | ![background](https://place-hold.it/32/c2c292?text=+)
+| Color 12       | Yellow (bright) | `#c6c684` | ![background](https://place-hold.it/32/c6c684?text=+)
 | Color 13       | Blue (bright)   | `#74b2ff` | ![background](https://place-hold.it/32/74b2ff?text=+)
 | Color 14       | Purple (bright) | `#ae81ff` | ![background](https://place-hold.it/32/ae81ff?text=+)
 | Color 15       | Cyan (bright)   | `#85dc85` | ![background](https://place-hold.it/32/85dc85?text=+)

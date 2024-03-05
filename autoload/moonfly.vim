@@ -18,7 +18,7 @@ let s:grey235   = '#262626'
 let s:grey234   = '#1c1c1c'
 let s:grey233   = '#121212'
 " Core theme colors
-let s:khaki     = '#c2c292'
+let s:khaki     = '#c6c684'
 let s:yellow    = '#e3c78a'
 let s:orange    = '#de935f'
 let s:coral     = '#f09479'

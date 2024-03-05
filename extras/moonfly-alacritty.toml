@@ -9,7 +9,7 @@ green = "#36c692"
 magenta = "#ae81ff"
 red = "#ff5189"
 white = "#e4e4e4"
-yellow = "#c2c292"
+yellow = "#c6c684"
 
 [colors.cursor]
 cursor = "#8e8e8e"
