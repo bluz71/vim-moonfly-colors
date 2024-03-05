@@ -46,6 +46,7 @@ local red = "#ff5454"
 local spring = "#00875f"
 local mineral = "#314940"
 local bay = "#4d5d8d"
+local perano = "#adadf3"
 
 local M = {}
 
@@ -85,6 +86,9 @@ M.palette = {
   crimson = crimson,
   red = red,
   spring = spring,
+  mineral = mineral,
+  bay = bay,
+  perano = perano,
 }
 
 M.style = function()
@@ -403,6 +407,7 @@ M.style = function()
   highlight(0, "@type.qualifier", { link = "MoonflyViolet" })
   highlight(0, "@variable", { link = "MoonflyWhite" })
   highlight(0, "@variable.builtin", { link = "MoonflyGreen" })
+  highlight(0, "@variable.member", { fg = perano })
   highlight(0, "@variable.parameter", { link = "MoonflyOrchid" })
 
   -- Neovim LEGACY Tree-sitter (Neovim 0.8, 0.9)
