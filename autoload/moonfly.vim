@@ -66,12 +66,13 @@ function! moonfly#Style() abort
     exec 'highlight MoonflyLime guifg=' . s:lime
     exec 'highlight MoonflyGreen guifg=' . s:green
     exec 'highlight MoonflyEmerald guifg=' . s:emerald
+    exec 'highlight MoonflyTurquoise guifg=' . s:turquoise
     exec 'highlight MoonflyBlue guifg=' . s:blue
     exec 'highlight MoonflySky guifg=' . s:sky
-    exec 'highlight MoonflyTurquoise guifg=' . s:turquoise
+    exec 'highlight MoonflyLavender guifg=' . s:lavender
     exec 'highlight MoonflyPurple guifg=' . s:purple
-    exec 'highlight MoonflyCranberry guifg=' . s:cranberry
     exec 'highlight MoonflyViolet guifg=' . s:violet
+    exec 'highlight MoonflyCranberry guifg=' . s:cranberry
     exec 'highlight MoonflyCrimson guifg=' . s:crimson
     exec 'highlight MoonflyRed guifg=' . s:red
     " Statusline helper colors
