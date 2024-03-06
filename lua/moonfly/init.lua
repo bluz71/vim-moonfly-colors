@@ -34,19 +34,19 @@ local orchid = "#e196a2"
 local lime = "#85dc85"
 local green = "#8cc85f"
 local emerald = "#36c692"
+local turquoise = "#79dac8"
 local blue = "#80a0ff"
 local sky = "#74b2ff"
-local turquoise = "#79dac8"
+local lavender = "#adadf3"
 local purple = "#ae81ff"
-local cranberry = "#e65e72"
 local violet = "#cf87e8"
+local cranberry = "#e65e72"
 local crimson = "#ff5189"
 local red = "#ff5454"
 -- Extra colors
 local spring = "#00875f"
 local mineral = "#314940"
 local bay = "#4d5d8d"
-local perano = "#adadf3"
 
 local M = {}
 
@@ -77,18 +77,18 @@ M.palette = {
   lime = lime,
   green = green,
   emerald = emerald,
+  turquoise = turquoise,
   blue = blue,
   sky = sky,
-  turquoise = turquoise,
+  lavender = lavender,
   purple = purple,
-  cranberry = cranberry,
   violet = violet,
+  cranberry = cranberry,
   crimson = crimson,
   red = red,
   spring = spring,
   mineral = mineral,
   bay = bay,
-  perano = perano,
 }
 
 M.style = function()
@@ -407,7 +407,7 @@ M.style = function()
   highlight(0, "@type.qualifier", { link = "MoonflyViolet" })
   highlight(0, "@variable", { link = "MoonflyWhite" })
   highlight(0, "@variable.builtin", { link = "MoonflyGreen" })
-  highlight(0, "@variable.member", { fg = perano })
+  highlight(0, "@variable.member", { fg = lavender })
   highlight(0, "@variable.parameter", { link = "MoonflyOrchid" })
 
   -- Neovim LEGACY Tree-sitter (Neovim 0.8, 0.9)
