@@ -200,7 +200,7 @@ M.style = function()
   highlight(0, "Title", { fg = orange })
 
   -- const, static
-  highlight(0, "StorageClass", { link = "MoonflyCoral" })
+  highlight(0, "StorageClass", { link = "MoonflyViolet" })
 
   -- void, intptr_t
   highlight(0, "Type", { fg = emerald })

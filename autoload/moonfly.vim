@@ -139,7 +139,7 @@ function! moonfly#Style() abort
     exec 'highlight Title guifg=' . s:orange . ' gui=none'
 
     " const, static
-    highlight! link StorageClass MoonflyCoral
+    highlight! link StorageClass MoonflyViolet
 
     " void, intptr_t
     exec 'highlight Type guifg=' . s:emerald . ' gui=none'
@@ -273,14 +273,8 @@ function! moonfly#Style() abort
     " Language styling
     "-----------------------------------------------------------------------
 
-    " C
-    highlight! link cDefine MoonflyViolet
-    highlight! link cPreCondit MoonflyViolet
-    highlight! link cStatement MoonflyViolet
-    highlight! link cStructure MoonflyCoral
-
     " C++
-    highlight! link cppAccess MoonflyLime
+    highlight! link cppAccess MoonflyViolet
     highlight! link cppCast MoonflyTurquoise
     highlight! link cppCustomClass MoonflyTurquoise
     highlight! link cppExceptions MoonflyLime
@@ -292,8 +286,7 @@ function! moonfly#Style() abort
     highlight! link cppStructure MoonflyViolet
 
     " C#
-    highlight! link csModifier MoonflyLime
-    highlight! link csPrecondit MoonflyViolet
+    highlight! link csModifier MoonflyViolet
     highlight! link csStorage MoonflyViolet
     highlight! link csXmlTag MoonflyBlue
 
@@ -315,19 +308,17 @@ function! moonfly#Style() abort
 
     " CSS/SCSS
     highlight! link cssAtRule MoonflyViolet
-    highlight! link cssAttr MoonflyTurquoise
+    highlight! link cssAttr MoonflyGreen
     highlight! link cssBraces MoonflyWhite
     highlight! link cssClassName MoonflyEmerald
     highlight! link cssClassNameDot MoonflyViolet
     highlight! link cssColor MoonflyTurquoise
     highlight! link cssIdentifier MoonflySky
-    highlight! link cssProp MoonflyTurquoise
+    highlight! link cssProp MoonflyLavender
     highlight! link cssTagName MoonflyBlue
     highlight! link cssUnitDecorators MoonflyKhaki
-    highlight! link cssValueLength MoonflyPurple
-    highlight! link cssValueNumber MoonflyPurple
-    highlight! link sassId MoonflyBlue
-    highlight! link sassIdChar MoonflyViolet
+    highlight! link sassId MoonflyEmerald
+    highlight! link sassIdChar MoonflyCranberry
     highlight! link sassMedia MoonflyViolet
     highlight! link scssSelectorName MoonflyBlue
 
@@ -393,9 +384,10 @@ function! moonfly#Style() abort
     " HTML
     highlight! link htmlArg MoonflyTurquoise
     highlight! link htmlLink MoonflyGreen
+    highlight! link htmlEndTag MoonflyPurple
     highlight! link htmlH1 MoonflyCranberry
     highlight! link htmlH2 MoonflyOrange
-    highlight! link htmlEndTag MoonflyPurple
+    highlight! link htmlSpecialTagName MoonflyBlue
     highlight! link htmlTag MoonflyLime
     highlight! link htmlTagN MoonflyBlue
     highlight! link htmlTagName MoonflyBlue
@@ -415,7 +407,6 @@ function! moonfly#Style() abort
     " Java
     highlight! link javaAnnotation MoonflyLime
     highlight! link javaBraces MoonflyWhite
-    highlight! link javaClassDecl MoonflyYellow
     highlight! link javaCommentTitle MoonflyGrey247
     highlight! link javaConstant MoonflySky
     highlight! link javaDebug MoonflySky
@@ -517,7 +508,7 @@ function! moonfly#Style() abort
     highlight! link rubySymbol MoonflyPurple
 
     " Rust
-    highlight! link rustAssert MoonflyGreen
+    highlight! link rustAssert MoonflyTurquoise
     highlight! link rustAttribute MoonflyWhite
     highlight! link rustCharacterInvalid MoonflyCranberry
     highlight! link rustCharacterInvalidUnicode MoonflyCranberry
@@ -539,7 +530,7 @@ function! moonfly#Style() abort
     highlight! link rustObsoleteExternMod MoonflyCranberry
     highlight! link rustObsoleteStorage MoonflyCranberry
     highlight! link rustReservedKeyword MoonflyCranberry
-    highlight! link rustSelf MoonflyTurquoise
+    highlight! link rustSelf MoonflyGreen
     highlight! link rustSigil MoonflyTurquoise
     highlight! link rustStorage MoonflyViolet
     highlight! link rustStructure MoonflyViolet
@@ -616,7 +607,7 @@ function! moonfly#Style() abort
     highlight! link vimHighlight MoonflySky
     highlight! link vimNotFunc MoonflyViolet
     highlight! link vimNotation MoonflySky
-    highlight! link vimOption MoonflyTurquoise
+    highlight! link vimOption MoonflyEmerald
     highlight! link vimParenSep MoonflyWhite
     highlight! link vimSep MoonflyWhite
     highlight! link vimUserFunc MoonflySky
