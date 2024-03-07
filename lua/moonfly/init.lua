@@ -469,7 +469,7 @@ M.style = function()
   highlight(0, "@markup.heading.markdown", { link = "MoonflySky" })
   highlight(0, "@markup.link.gitcommit", { link = "MoonflyBlue" })
   highlight(0, "@markup.link.url.gitcommit", { link = "MoonflyEmerald" })
-  if g.nightflyItalics then
+  if g.moonflyItalics then
     highlight(0, "@markup.link.url.astro", { fg = violet, italic = true })
     highlight(0, "@markup.link.url.html", { fg = violet, italic = true })
     highlight(0, "@markup.link.url.svelte", { fg = violet, italic = true })
