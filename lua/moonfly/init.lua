@@ -449,6 +449,7 @@ M.style = function()
   highlight(0, "@text.warning", { link = "@comment.warning" })
 
   -- Language specific Tree-sitter overrides.
+  highlight(0, "@function.macro.vim", { link = "MoonflySky" })
   highlight(0, "@keyword.gitcommit", { link = "MoonflySky" })
   highlight(0, "@keyword.storage.rust", { link = "MoonflyViolet" })
   highlight(0, "@markup.heading.1.markdown", { link = "MoonflyEmerald" })
