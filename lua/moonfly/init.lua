@@ -12,19 +12,19 @@ end
 -- Variations of charcoal-grey
 local grey0 = "#323437"
 local grey1 = "#373c4d"
-local grey254 = "#e4e4e4"
-local grey249 = "#b2b2b2"
-local grey247 = "#9e9e9e"
-local grey246 = "#949494"
-local grey244 = "#808080"
-local grey241 = "#626262"
-local grey239 = "#4e4e4e"
-local grey238 = "#444444"
-local grey237 = "#3a3a3a"
-local grey236 = "#303030"
-local grey235 = "#262626"
-local grey234 = "#1c1c1c"
-local grey233 = "#121212"
+local grey254 = "#e4e4e4" -- grey89
+local grey249 = "#b2b2b2" -- grey70
+local grey247 = "#9e9e9e" -- grey62
+local grey246 = "#949494" -- grey58
+local grey244 = "#808080" -- grey50
+local grey241 = "#626262" -- grey39
+local grey239 = "#4e4e4e" -- grey30
+local grey238 = "#444444" -- grey27
+local grey237 = "#3a3a3a" -- grey23
+local grey236 = "#2e2e2e" -- grey18
+local grey235 = "#262626" -- grey15
+local grey234 = "#1c1c1c" -- grey11
+local grey233 = "#121212" -- grey7
 -- Core theme colors
 local khaki = "#c6c684"
 local yellow = "#e3c78a"
