@@ -500,7 +500,6 @@ function! moonfly#Style() abort
     highlight! link rubyAttribute MoonflySky
     highlight! link rubyBlockParameter MoonflyGreen
     highlight! link rubyCallback MoonflySky
-    highlight! link rubyClassName MoonflyEmerald
     highlight! link rubyDefine MoonflyViolet
     highlight! link rubyEntities MoonflySky
     highlight! link rubyExceptional MoonflyCoral
