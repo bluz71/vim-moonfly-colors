@@ -1176,6 +1176,20 @@ M.style = function()
 
   -- arrow.nvim
   highlight(0, "ArrowCurrentFile", { link = "MoonflyEmerald" })
+
+  -- NvCheatsheet.nvim
+  highlight(0, "NvChSection", { link = "Pmenu" })
+  highlight(0, "NvChAsciiHeader", { link = "Directory" })
+  highlight(0, "NvCheatsheetWhite", { bg = white, fg = grey11 })
+  highlight(0, "NvCheatsheetGray", { bg = grey70, fg = grey11 })
+  highlight(0, "NvCheatsheetBlue", { link = "MoonflyBlueMode" })
+  highlight(0, "NvCheatsheetCyan", { link = "MoonflyTurquoiseMode" })
+  highlight(0, "NvCheatsheetRed", { link = "MoonflyCrimsonMode" })
+  highlight(0, "NvCheatsheetGreen", { link = "MoonflyEmeraldMode" })
+  highlight(0, "NvCheatsheetYellow", { link = "MoonflyYellowMode" })
+  highlight(0, "NvCheatsheetOrange", { bg = coral, fg = grey11 })
+  highlight(0, "NvCheatsheetPurple", { link = "MoonflyPurpleMode" })
+  highlight(0, "NvCheatsheetMagenta", { bg = violet, fg = grey11 })
 end
 
 return M

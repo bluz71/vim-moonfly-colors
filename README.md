@@ -40,6 +40,7 @@ Neovim-only:
 - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 - [nvim-navic](https://github.com/SmiteshP/nvim-navic)
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [NvCheatsheet.nvim](https://github.com/smartinellimarco/nvcheatsheet.nvim)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Rainbow Delimiters](https://github.com/HiPhish/rainbow-delimiters.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
