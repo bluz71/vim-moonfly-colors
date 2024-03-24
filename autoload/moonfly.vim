@@ -452,6 +452,13 @@ function! moonfly#Style() abort
     highlight! link luaSpecialTable MoonflySky
     highlight! link luaSpecialValue MoonflySky
 
+    " Man
+    highlight! link manHeader MoonflyEmerald
+    highlight! link manOptionDesc MoonflyOrchid
+    highlight! link manReference MoonflyGreen
+    highlight! link manSectionHeading MoonflyBlue
+    highlight! link manSubHeading MoonflyTurquoise
+
     " Markdown, 'tpope/vim-markdown' plugin
     highlight! link markdownBold MoonflyYellow
     highlight! link markdownCode MoonflyKhaki
