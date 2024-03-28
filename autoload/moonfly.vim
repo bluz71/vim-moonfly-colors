@@ -475,7 +475,11 @@ function! moonfly#Style() abort
     highlight! link markdownH6 MoonflyViolet
     highlight! link markdownH6Delimiter MoonflyCrimson
     highlight! link markdownHeadingRule MoonflyCranberry
-    highlight! link markdownItalic MoonflyOrchid
+    if g:moonflyItalics
+        exec 'highlight markdownItalic guifg=' . s:orchid . ' gui=italic'
+    else
+        highlight! link markdownItalic MoonflyOrchid
+    endif
     highlight! link markdownUrl MoonflyPurple
 
     " Markdown, 'plasticboy/vim-markdown' plugin

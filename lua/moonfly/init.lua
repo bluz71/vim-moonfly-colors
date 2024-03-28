@@ -647,7 +647,11 @@ M.style = function()
   highlight(0, "markdownH2", { link = "MoonflyBlue" })
   highlight(0, "markdownH3", { link = "MoonflyTurquoise" })
   highlight(0, "markdownHeadingRule", { link = "MoonflyCranberry" })
-  highlight(0, "markdownItalic", { link = "MoonflyOrchid" })
+  if g.moonflyItalics then
+    highlight(0, "markdownItalic", { fg = orchid, italic = true })
+  else
+    highlight(0, "markdownItalic", { link = "MoonflyOrchid" })
+  end
   highlight(0, "markdownUrl", { link = "MoonflyPurple" })
 
   -- Man
