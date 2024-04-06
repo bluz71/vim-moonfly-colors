@@ -22,7 +22,7 @@ local colors = {
   color7 = '#9e9e9e',
 
   -- Normal text color.
-  color2 = '#c6c6c6',
+  color8 = '#c6c6c6',
 }
 
 -- LuaFormatter on
