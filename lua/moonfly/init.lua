@@ -814,7 +814,7 @@ M.style = function()
   highlight(0, "NvimTreeExecFile", { fg = green })
   highlight(0, "NvimTreeImageFile", { fg = violet })
   if g.moonflyTransparent ~= true and g.moonflyNormalFloat ~= true then
-    highlight(0, "NormalFloat", { bg = bg, fg = grey70 })
+    highlight(0, "NvimTreeNormalFloat", { bg = bg, fg = grey70 })
   end
   highlight(0, "NvimTreeOpenedFile", { fg = yellow })
   highlight(0, "NvimTreeSymlink", { fg = turquoise })
