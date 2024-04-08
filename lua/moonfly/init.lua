@@ -451,6 +451,7 @@ M.style = function()
   -- Language specific Tree-sitter overrides.
   highlight(0, "@function.macro.vim", { link = "MoonflySky" })
   highlight(0, "@keyword.gitcommit", { link = "MoonflySky" })
+  highlight(0, "@keyword.import.rust", { link = "@keyword" })
   highlight(0, "@keyword.storage.rust", { link = "MoonflyViolet" })
   highlight(0, "@markup.heading.1.markdown", { link = "MoonflyEmerald" })
   highlight(0, "@markup.heading.1.marker.markdown", { link = "MoonflyCrimson" })
@@ -497,6 +498,7 @@ M.style = function()
 
   -- Language specific LEGACY Tree-sitter overrides (Neovim 0.8, 0.9).
   highlight(0, "@field.yaml", { link = "@variable.member.yaml" })
+  highlight(0, "@include.rust", { link = "@keyword.import.rust" })
   highlight(0, "@parameter.bash", { link = "@variable.parameter.bash" })
   highlight(0, "@storageclass.rust", { link = "@keyword.storage.rust" })
   highlight(0, "@text.literal.block.vimdoc", { link = "@markup.raw.block.vimdoc" })
@@ -551,7 +553,11 @@ M.style = function()
   highlight(0, "@lsp.type.string", { link = "@string" })
   highlight(0, "@lsp.type.struct", { link = "@type" })
   highlight(0, "@lsp.type.typeAlias", { link = "@type.definition" })
-  highlight(0, "@lsp.type.unresolvedReference", { link = "@error" })
+  if g.moonflyUndercurls then
+    highlight(0, "@lsp.type.unresolvedReference", { undercurl = true, sp = red })
+  else
+    highlight(0, "@lsp.type.unresolvedReference", { underline = true, sp = red })
+  end
   highlight(0, "@lsp.type.variable", { link = "@variable" })
   highlight(0, "@lsp.typemod.class.defaultLibrary", { link = "@type" })
   highlight(0, "@lsp.typemod.enum.defaultLibrary", { link = "@type" })
@@ -570,6 +576,7 @@ M.style = function()
   highlight(0, "@lsp.typemod.variable.readonly", { link = "@variable" })
   highlight(0, "@lsp.typemod.variable.static", { link = "@constant" })
   -- Language specific LSP semantic overrides.
+  highlight(0, "@lsp.type.decorator.rust", { link = "@function.macro" })
   highlight(0, "@lsp.type.macro.rust", { link = "@function.macro" })
   highlight(0, "@lsp.type.parameter.dockerfile", { link = "@property" })
   highlight(0, "@lsp.type.variable.dockerfile", { link = "@function" })
