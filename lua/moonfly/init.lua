@@ -558,7 +558,7 @@ M.style = function()
   else
     highlight(0, "@lsp.type.unresolvedReference", { underline = true, sp = red })
   end
-  highlight(0, "@lsp.type.variable", { link = "@variable" })
+  highlight(0, "@lsp.type.variable", {}) -- Use fallback Tree-sitter style for this Semantic Token
   highlight(0, "@lsp.typemod.class.defaultLibrary", { link = "@type" })
   highlight(0, "@lsp.typemod.enum.defaultLibrary", { link = "@type" })
   highlight(0, "@lsp.typemod.enumMember.defaultLibrary", { link = "@constant.builtin" })
