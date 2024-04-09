@@ -449,6 +449,7 @@ M.style = function()
   highlight(0, "@text.warning", { link = "@comment.warning" })
 
   -- Language specific Tree-sitter overrides.
+  highlight(0, "@attribute.zig", { link = "MoonflyViolet" })
   highlight(0, "@function.macro.vim", { link = "MoonflySky" })
   highlight(0, "@keyword.gitcommit", { link = "MoonflySky" })
   highlight(0, "@keyword.import.rust", { link = "@keyword" })
@@ -529,10 +530,10 @@ M.style = function()
   -- Neovim LSP semantic highlights.
   highlight(0, "@lsp.type.boolean", { link = "@boolean" })
   highlight(0, "@lsp.type.builtinConstant", { link = "@constant.builtin" })
-  highlight(0, "@lsp.type.builtinType", { link = "@type" })
+  highlight(0, "@lsp.type.builtinType", { link = "@type.builtin" })
   highlight(0, "@lsp.type.class", { link = "@type" })
   highlight(0, "@lsp.type.enum", { link = "@type" })
-  highlight(0, "@lsp.type.enumMember", { link = "@property" })
+  highlight(0, "@lsp.type.enumMember", { link = "@constant" })
   highlight(0, "@lsp.type.escapeSequence", { link = "@string.escape" })
   highlight(0, "@lsp.type.formatSpecifier", { link = "@punctuation.special" })
   highlight(0, "@lsp.type.generic", { link = "@variable" })
@@ -573,6 +574,7 @@ M.style = function()
   highlight(0, "@lsp.typemod.variable.static", { link = "@constant" })
   -- Language specific LSP semantic overrides.
   highlight(0, "@lsp.type.decorator.rust", { link = "@function.macro" })
+  highlight(0, "@lsp.type.namespace.ruby", {})
   highlight(0, "@lsp.type.parameter.dockerfile", { link = "@property" })
   highlight(0, "@lsp.type.variable.dockerfile", { link = "@function" })
 
