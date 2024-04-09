@@ -539,10 +539,11 @@ M.style = function()
   highlight(0, "@lsp.type.interface", { link = "@type" })
   highlight(0, "@lsp.type.keyword", { link = "@keyword" })
   highlight(0, "@lsp.type.lifetime", { link = "@storageclass" })
+  highlight(0, "@lsp.type.macro", {}) -- Use fallback Tree-sitter style for this Semantic Token
   highlight(0, "@lsp.type.magicFunction", { link = "@function" })
   highlight(0, "@lsp.type.namespace", { link = "@namespace" })
   highlight(0, "@lsp.type.number", { link = "@number" })
-  highlight(0, "@lsp.type.operator", { link = "@operator" })
+  highlight(0, "@lsp.type.operator", {}) -- Use fallback Tree-sitter style for this Semantic Token
   highlight(0, "@lsp.type.parameter", { link = "@parameter" })
   highlight(0, "@lsp.type.property", { link = "@property" })
   highlight(0, "@lsp.type.selfKeyword", { link = "@variable.builtin" })
@@ -572,7 +573,6 @@ M.style = function()
   highlight(0, "@lsp.typemod.variable.static", { link = "@constant" })
   -- Language specific LSP semantic overrides.
   highlight(0, "@lsp.type.decorator.rust", { link = "@function.macro" })
-  highlight(0, "@lsp.type.macro.rust", { link = "@function.macro" })
   highlight(0, "@lsp.type.parameter.dockerfile", { link = "@property" })
   highlight(0, "@lsp.type.variable.dockerfile", { link = "@function" })
 
