@@ -461,6 +461,20 @@ A collection of _moonfly_-flavoured themes are provided:
   [this](extras/windows-terminal-settings.json) theme into their `settings.json`
   configuration
 
+- [WezTerm](https://wezfurlong.org/wezterm) users can copy
+  [this](extras/moonfly-wezterm.toml) theme into the `colors` directory and
+  then specify it though:
+
+  ```lua
+  config.color_scheme = "moonfly"
+  ```
+  
+  The `colors` directory is in one of these places:
+  * `$XDG_CONFIG_HOME/wezterm/colors` (X11/Wayland)
+  * `$HOME/.config/wezterm/` (Windows)
+  * The same directory as the wezterm.exe binary
+  * Any directory configured in `config.color_scheme_dirs`
+
 For other terminals please configure appropriately with the following colors:
 
 | Type           | Category        | Value     | Color
