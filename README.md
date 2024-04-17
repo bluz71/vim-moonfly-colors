@@ -450,7 +450,7 @@ A collection of _moonfly_-flavoured themes are provided:
   configuration
 
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](extras/kitty-theme.conf) theme
+  [this](extras/moonfly-kitty.conf) theme
 
 - [WezTerm](https://wezfurlong.org/wezterm) users can copy
   [this](extras/moonfly-wezterm.toml) theme into the
@@ -462,7 +462,7 @@ A collection of _moonfly_-flavoured themes are provided:
   colorscheme
 
 - [Windows Terminal](https://github.com/microsoft/terminal) users can copy
-  [this](extras/windows-terminal-settings.json) theme into their `settings.json`
+  [this](extras/moonfly-windows-terminal.json) theme into their `settings.json`
   configuration
 
 - [fish](https://fishshell.com) shell users can use [this](extras/moonfly.fish) theme
