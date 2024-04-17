@@ -411,16 +411,6 @@ colors](https://gist.github.com/XVilka/8346728). Current versions of Vim &
 Neovim, on such terminals, support true colors when the `termguicolors` option
 is enabled.
 
-A list of popular terminals that support true colors:
-
-- [iTerm2](http://www.iterm2.com)
-- [Windows Terminal](https://github.com/Microsoft/Terminal)
-- [Alacritty](https://github.com/alacritty/alacritty)
-- [kitty](https://sw.kovidgoyal.net/kitty/index.html)
-- [konsole](https://konsole.kde.org)
-- [PuTTY](https://putty.org)
-- [mintty](https://mintty.github.io)
-
 On terminals that support true colors, and when `termguicolors` is set, the
 _moonfly_ colorscheme will not require any terminal configuration to emit the
 correct theme colors.
