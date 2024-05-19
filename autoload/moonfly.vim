@@ -480,13 +480,13 @@ function! moonfly#Style() abort
     else
         highlight! link markdownItalic MoonflyOrchid
     endif
-    highlight! link markdownUrl MoonflyPurple
+    exec 'highlight markdownUrl guifg=' . s:purple. ' cterm=underline gui=underline guisp=' . s:grey50
 
     " Markdown, 'plasticboy/vim-markdown' plugin
     highlight! link mkdDelimiter MoonflyWhite
     highlight! link mkdLineBreak NormalNC
     highlight! link mkdListItem MoonflyBlue
-    highlight! link mkdURL MoonflyPurple
+    highlight! link mkdURL markdownUrl
 
     " PHP
     highlight! link phpClass MoonflyEmerald
