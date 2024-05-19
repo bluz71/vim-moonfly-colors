@@ -413,7 +413,7 @@ M.style = function()
   highlight(0, "@variable.member", { link = "MoonflyLavender" })
   highlight(0, "@variable.parameter", { link = "MoonflyOrchid" })
 
-  -- Neovim LEGACY Tree-sitter (Neovim 0.8, 0.9)
+  -- Neovim LEGACY Tree-sitter (Neovim 0.9)
   highlight(0, "@conditional", { link = "@keyword.conditional" })
   highlight(0, "@define", { link = "@keyword.directive.define" })
   highlight(0, "@error", { link = "MoonflyRed" })
@@ -492,7 +492,7 @@ M.style = function()
   highlight(0, "@variable.scss", { link = "MoonflyTurquoise" })
   highlight(0, "@variable.vim", { link = "MoonflyTurquoise" })
 
-  -- Language specific LEGACY Tree-sitter overrides (Neovim 0.8, 0.9).
+  -- Language specific LEGACY Tree-sitter overrides (Neovim 0.9).
   highlight(0, "@field.yaml", { link = "@variable.member.yaml" })
   highlight(0, "@include.rust", { link = "@keyword.import.rust" })
   highlight(0, "@parameter.bash", { link = "@variable.parameter.bash" })

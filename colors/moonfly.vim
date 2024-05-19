@@ -3,9 +3,9 @@
 " URL:     github.com/bluz71/vim-moonfly-colors
 " License: MIT (https://opensource.org/licenses/MIT)
 
-if has('nvim') && !has('nvim-0.8')
+if has('nvim') && !has('nvim-0.9')
     lua vim.api.nvim_echo({
-        \ { "moonfly requires Neovim 0.8 or later.\n", "WarningMsg" },
+        \ { "moonfly requires Neovim 0.9 or later.\n", "WarningMsg" },
         \ { "Please use the moonfly 'legacy' branch if you can't upgrade Neovim.\n", "Normal"} },
         \ false, {})
     finish
