@@ -442,6 +442,19 @@ function! moonfly#Style() abort
     highlight! link jsxOpenPunct MoonflyLime
     highlight! link jsxTagName MoonflyBlue
 
+    " LaTeX
+    highlight! link texBeginEndName MoonflyEmerald
+    highlight! link texCite MoonflyGreen
+    highlight! link texDocType MoonflyCranberry
+    highlight! link texDocTypeArgs MoonflyOrchid
+    highlight! link texInputFile String
+    highlight! link texMathZoneC MoonflySky
+    highlight! link texMathZoneX MoonflySky
+    highlight! link texRefZone MoonflyGreen
+    highlight! link texSection MoonflyLavender
+    highlight! link texTypeStyle MoonflyYellow
+    highlight! link texZone MoonflyLavender
+
     " Lua
     highlight! link luaBraces MoonflyEmerald
     highlight! link luaBuiltin MoonflyGreen
