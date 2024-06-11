@@ -783,25 +783,23 @@ M.style = function()
   highlight(0, "fishVariable", { link = "MoonflyTurquoise" })
 
   -- FZF plugin
-  highlight(0, "fzf1", { fg = crimson, bg = grey18 })
-  highlight(0, "fzf2", { fg = blue, bg = grey18 })
-  highlight(0, "fzf3", { fg = emerald, bg = grey18 })
-  highlight(0, "fzfNormal", { fg = grey70 })
-  highlight(0, "fzfFgPlus", { fg = grey89 })
-  highlight(0, "fzfBorder", { fg = grey18 })
-  highlight(0, "fzfSubstring", { fg = coral })
+  highlight(0, "FzfBorder", { fg = grey18 })
+  highlight(0, "FzfFgPlus", { fg = grey89 })
+  highlight(0, "FzfNormal", { fg = grey70 })
+  highlight(0, "FzfPrompt", { fg = blue, bg = grey18 })
+  highlight(0, "FzfSubstring", { fg = coral })
   g.fzf_colors = {
-    ["fg"] = { "fg", "fzfNormal" },
+    ["fg"] = { "fg", "FzfNormal" },
     ["bg"] = { "bg", "Normal" },
-    ["hl"] = { "fg", "fzfSubstring" },
-    ["fg+"] = { "fg", "fzfFgPlus" },
+    ["hl"] = { "fg", "FzfSubstring" },
+    ["fg+"] = { "fg", "FzfFgPlus" },
     ["bg+"] = { "bg", "Pmenu" },
-    ["hl+"] = { "fg", "fzfSubstring" },
+    ["hl+"] = { "fg", "FzfSubstring" },
     ["info"] = { "fg", "String" },
-    ["border"] = { "fg", "fzfBorder" },
-    ["prompt"] = { "fg", "fzf2" },
+    ["border"] = { "fg", "FzfBorder" },
+    ["prompt"] = { "fg", "FzfPrompt" },
     ["pointer"] = { "fg", "Exception" },
-    ["marker"] = { "fg", "StorageClass" },
+    ["marker"] = { "fg", "FzfSubstring" },
     ["spinner"] = { "fg", "Type" },
     ["header"] = { "fg", "CursorLineNr" },
   }
@@ -1220,6 +1218,25 @@ M.style = function()
   highlight(0, "NvCheatsheetOrange", { bg = coral, fg = grey11 })
   highlight(0, "NvCheatsheetPurple", { link = "MoonflyPurpleMode" })
   highlight(0, "NvCheatsheetMagenta", { bg = violet, fg = grey11 })
+
+  -- fzf-lua
+  highlight(0, "FzfLuaBorder", { link = "FloatBorder" })
+  highlight(0, "FzfLuaBufFlagAlt", { link = "MoonflyTurquoise" })
+  highlight(0, "FzfLuaBufFlagCur", { link = "MoonflyOrange" })
+  highlight(0, "FzfLuaBufNr", { link = "MoonflyKhaki" })
+  highlight(0, "FzfLuaFzfHeader", { link = "MoonflyBlue" })
+  highlight(0, "FzfLuaFzfInfo", { link = "String" })
+  highlight(0, "FzfLuaFzfMarker", { link = "MoonflyCoral" })
+  highlight(0, "FzfLuaFzfPointer", { link = "MoonflyCrimson" })
+  highlight(0, "FzfLuaFzfPrompt", { link = "MoonflyBlue" })
+  highlight(0, "FzfLuaFzfSpinner", { link = "MoonflyEmerald" })
+  highlight(0, "FzfLuaHeaderBind", { link = "MoonflyGreen" })
+  highlight(0, "FzfLuaHeaderText", { link = "MoonflyTurquoise" })
+  highlight(0, "FzfLuaLiveSym", { link = "MoonflyGreen" })
+  highlight(0, "FzfLuaPathColNr", { link = "MoonflySky" })
+  highlight(0, "FzfLuaTabMarker", { link = "MoonflyKhaki" })
+  highlight(0, "FzfLuaTabTitle", { link = "MoonflySky" })
+  highlight(0, "FzfLuaTitle", { link = "FloatTitle" })
 end
 
 return M
