@@ -637,6 +637,17 @@ M.style = function()
   -- Legacy language styling
   -------------------------------------------------------------------------
 
+  -- CSV
+  highlight(0, "csvCol0", { link = "MoonflyRed" })
+  highlight(0, "csvCol1", { link = "MoonflyOrange" })
+  highlight(0, "csvCol2", { link = "MoonflyYellow" })
+  highlight(0, "csvCol3", { link = "MoonflyGreen" })
+  highlight(0, "csvCol4", { link = "MoonflyTurquoise" })
+  highlight(0, "csvCol5", { link = "MoonflyBlue" })
+  highlight(0, "csvCol6", { link = "MoonflyPurple" })
+  highlight(0, "csvCol7", { link = "MoonflyViolet" })
+  highlight(0, "csvCol8", { link = "MoonflyLavender" })
+
   -- Help
   highlight(0, "helpCommand", { link = "MoonflyOrchid" })
   highlight(0, "helpExample", { link = "MoonflyGreen" })

@@ -326,6 +326,17 @@ function! moonfly#Style() abort
     highlight! link sassMedia MoonflyViolet
     highlight! link scssSelectorName MoonflyEmerald
 
+    " CSV
+    highlight! link csvCol0 MoonflyRed
+    highlight! link csvCol1 MoonflyOrange
+    highlight! link csvCol2 MoonflyYellow
+    highlight! link csvCol3 MoonflyGreen
+    highlight! link csvCol4 MoonflyTurquoise
+    highlight! link csvCol5 MoonflyBlue
+    highlight! link csvCol6 MoonflyPurple
+    highlight! link csvCol7 MoonflyViolet
+    highlight! link csvCol8 MoonflyLavender
+
     " Dart
     highlight! link dartTypedef MoonflyViolet
 
