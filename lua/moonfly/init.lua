@@ -880,8 +880,9 @@ M.style = function()
   --   sign column
   highlight(0, "GitSignsAdd", { link = "MoonflyEmerald" })
   highlight(0, "GitSignsChange", { link = "MoonflySky" })
-  highlight(0, "GitSignsChangeDelete", { link = "MoonflyCoral" })
+  highlight(0, "GitSignsChangedelete", { link = "MoonflyCoral" })
   highlight(0, "GitSignsDelete", { link = "MoonflyRed" })
+  highlight(0, "GitSignsTopdelete", { link = "MoonflyRed" })
   highlight(0, "GitSignsUntracked", { link = "MoonflyGrey39" })
   --   line highlights
   highlight(0, "GitSignsAddLn", { bg = grey15 })
