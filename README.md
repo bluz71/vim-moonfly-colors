@@ -404,6 +404,28 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 })
 ```
 
+Palette & Custom Colors (Neovim Only)
+-------------------------------------
+
+The `palette` field returns a table of internal theme colors; useful for
+constructing custom statuslines and the like.
+
+```lua
+require("moonfly").palette
+```
+
+Meanwhile the `custom_colors` function allows customization of individual theme
+colors. This needs to occur prior to invoking the colorscheme. The full list of
+available colors is provided by the `palette` field.
+
+```lua
+  require("moonfly").custom_colors({
+    bg = "#121212",
+    violet = "#ff74b8",
+  })
+  vim.cmd([[colorscheme moonfly]])
+```
+
 True Color Terminals
 --------------------
 

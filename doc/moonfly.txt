@@ -159,11 +159,29 @@ configuration:
 moonflyPalette~                                              *moonfly.palette*
 
 The `palette` field returns a table of internal theme colors; useful for
-constructing custom statuslines and the like. Note, this is only available in
-Neovim.
+constructing custom statuslines and the like.
+
+Note, this field is only available in Neovim.
 
 >lua
   require("moonfly").palette
+<
+
+------------------------------------------------------------------------------
+custom_colors~                                         *moonfly.custom_colors*
+
+The `custom_colors` function allows customization of individual theme colors.
+This needs to occur prior to invoking the colorscheme. The full list of
+available theme colors is provided by the `palette` field.
+
+Note, this function is only available in Neovim.
+
+>lua
+  require("moonfly").custom_colors({
+    bg = "#121212",
+    violet = "#ff74b8",
+  })
+  vim.cmd([[colorscheme moonfly]])
 <
 
 vim:tw=78:ts=8:noet:ft=help:norl:

@@ -1240,4 +1240,47 @@ M.style = function()
   highlight(0, "FzfLuaTitle", { link = "FloatTitle" })
 end
 
+-- User customization of theme colors.
+--
+M.custom_colors = function(colors)
+  black = colors.black and colors.black or M.palette.black
+  white = colors.white and colors.white or M.palette.white
+  bg = colors.bg and colors.bg or M.palette.bg
+  grey0 = colors.grey0 and colors.grey0 or M.palette.grey0
+  grey1 = colors.grey1 and colors.grey1 or M.palette.grey1
+  grey89 = colors.grey89 and colors.grey89 or M.palette.grey89
+  grey70 = colors.grey70 and colors.grey70 or M.palette.grey70
+  grey62 = colors.grey62 and colors.grey62 or M.palette.grey62
+  grey58 = colors.grey58 and colors.grey58 or M.palette.grey58
+  grey50 = colors.grey50 and colors.grey50 or M.palette.grey50
+  grey39 = colors.grey39 and colors.grey39 or M.palette.grey39
+  grey30 = colors.grey30 and colors.grey30 or M.palette.grey30
+  grey27 = colors.grey27 and colors.grey27 or M.palette.grey27
+  grey23 = colors.grey23 and colors.grey23 or M.palette.grey23
+  grey18 = colors.grey18 and colors.grey18 or M.palette.grey18
+  grey15 = colors.grey15 and colors.grey15 or M.palette.grey15
+  grey11 = colors.grey11 and colors.grey11 or M.palette.grey11
+  grey7 = colors.grey7 and colors.grey7 or M.palette.grey7
+  khaki = colors.khaki and colors.khaki or M.palette.khaki
+  yellow = colors.yellow and colors.yellow or M.palette.yellow
+  orange = colors.orange and colors.orange or M.palette.orange
+  coral = colors.coral and colors.coral or M.palette.coral
+  orchid = colors.orchid and colors.orchid or M.palette.orchid
+  lime = colors.lime and colors.lime or M.palette.lime
+  green = colors.green and colors.green or M.palette.green
+  emerald = colors.emerald and colors.emerald or M.palette.emerald
+  turquoise = colors.turquoise and colors.turquoise or M.palette.turquoise
+  blue = colors.blue and colors.blue or M.palette.blue
+  sky = colors.sky and colors.sky or M.palette.sky
+  lavender = colors.lavender and colors.lavender or M.palette.lavender
+  purple = colors.purple and colors.purple or M.palette.purple
+  violet = colors.violet and colors.violet or M.palette.violet
+  cranberry = colors.cranberry and colors.cranberry or M.palette.cranberry
+  crimson = colors.crimson and colors.crimson or M.palette.crimson
+  red = colors.red and colors.red or M.palette.red
+  spring = colors.spring and colors.spring or M.palette.spring
+  mineral = colors.mineral and colors.mineral or M.palette.mineral
+  bay = colors.bay and colors.bay or M.palette.bay
+end
+
 return M
