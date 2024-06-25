@@ -50,6 +50,7 @@ Neovim & Vim compatible:
 
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 - [clever-f](https://github.com/rhysd/clever-f.vim)
+- [Coc.nvim](https://github.com/neoclide/coc.nvim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [Fern](https://github.com/lambdalisue/fern.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)

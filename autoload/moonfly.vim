@@ -672,6 +672,18 @@ function! moonfly#Style() abort
     " Plugin styling
     "-----------------------------------------------------------------------
 
+    " Coc
+    highlight! link CocSemTypeClass MoonflyEmerald
+    highlight! link CocSemTypeEnumMember MoonflyTurquoise
+    highlight! link CocSemTypeNamespace MoonflyTurquoise
+    highlight! link CocSemTypeParameter MoonflyOrchid
+    highlight! link CocSemTypeProperty MoonflyLavender
+    highlight! link CocSemTypeRegexp MoonflyTurquoise
+    highlight! link CocSemTypeStruct MoonflyEmerald
+    highlight! link CocSemTypeTypeParameter MoonflyOrchid
+    highlight! link CocUnusedHighlight MoonflyGrey70
+    exec 'highlight CocInlayHint guibg=' . s:grey11 . ' guifg=' . s:grey58
+
     " Git commits
     highlight! link gitCommitBranch MoonflySky
     highlight! link gitCommitDiscardedFile MoonflyCrimson
