@@ -681,6 +681,7 @@ function! moonfly#Style() abort
     highlight! link CocSemTypeRegexp MoonflyTurquoise
     highlight! link CocSemTypeStruct MoonflyEmerald
     highlight! link CocSemTypeTypeParameter MoonflyOrchid
+    highlight! link CocSemTypeBuiltin MoonflyCranberry
     highlight! link CocUnusedHighlight MoonflyGrey70
     exec 'highlight CocInlayHint guibg=' . s:grey11 . ' guifg=' . s:grey58
 
