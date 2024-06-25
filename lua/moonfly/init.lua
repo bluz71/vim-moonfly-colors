@@ -833,6 +833,7 @@ M.style = function()
   highlight(0, "CocSemTypeRegexp", { link = "MoonflyTurquoise" })
   highlight(0, "CocSemTypeStruct", { link = "MoonflyEmerald" })
   highlight(0, "CocSemTypeTypeParameter", { link = "MoonflyOrchid" })
+  highlight(0, "CocSemTypeBuiltin", { link = "MoonflyCranberry" })
   highlight(0, "CocUnusedHighlight", { link = "MoonflyGrey70" })
 
   -------------------------------------------------------------------------
