@@ -253,7 +253,7 @@ function! moonfly#Style() abort
     endif
     highlight! link Ignore MoonflySky
     exec 'highlight Underlined guifg=' . s:emerald . ' gui=none'
-    exec 'highlight QuickFixLine guibg=' . s:grey23
+    exec 'highlight QuickFixLine guibg=' . s:grey15
     highlight! link Delimiter MoonflyWhite
     highlight! link qfFileName MoonflyEmerald
 
