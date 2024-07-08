@@ -280,13 +280,13 @@ M.style = function()
   -- Spelling errors
   if g.moonflyUndercurls then
     highlight(0, "SpellBad", { bg = none, undercurl = true, sp = red })
-    highlight(0, "SpellCap", { bg = none, undercurl = true, sp = blue })
-    highlight(0, "SpellRare", { bg = none, undercurl = true, sp = yellow })
+    highlight(0, "SpellCap", { bg = none, undercurl = true, sp = yellow })
+    highlight(0, "SpellRare", { bg = none, undercurl = true, sp = green })
     highlight(0, "SpellLocal", { bg = none, undercurl = true, sp = sky })
   else
     highlight(0, "SpellBad", { bg = none, fg = red, underline = true, sp = red })
-    highlight(0, "SpellCap", { bg = none, fg = blue, underline = true, sp = blue })
-    highlight(0, "SpellRare", { bg = none, fg = yellow, underline = true, sp = yellow })
+    highlight(0, "SpellCap", { bg = none, fg = yellow, underline = true, sp = yellow })
+    highlight(0, "SpellRare", { bg = none, fg = green, underline = true, sp = green })
     highlight(0, "SpellLocal", { bg = none, fg = sky, underline = true, sp = sky })
   end
 
