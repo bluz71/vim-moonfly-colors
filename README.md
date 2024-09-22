@@ -70,14 +70,11 @@ Vim-only:
 :zap: Requirements
 ------------------
 
-_moonfly_ is now a **GUI-only** colorscheme.
+_moonfly_ is a **GUI-only** colorscheme.
 
 A GUI client or a modern terminal version of Vim or Neovim in a true-color
 terminal is required. Details about true-color terminals are [listed
 here](https://github.com/bluz71/vim-moonfly-colors#true-color-terminals).
-
-_moonfly_ explicitly no longer supports the 256 color `cterm` version of Vim or
-Neovim except via the legacy `cterm-compat` branch.
 
 Installation
 ------------
@@ -458,31 +455,20 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 Extra Themes
 ------------
 
-A collection of _moonfly_-flavoured themes are provided:
+A collection of _moonfly_-flavoured extra themes are provided:
 
-- [Alacritty](https://github.com/alacritty/alacritty) users can copy
-  [this](extras/moonfly-alacritty.toml) theme into their `alacritty.toml`
-  configuration
+| Program                                                   | Extra
+|-----------------------------------------------------------|----------------------------------------------------------------
+| [Alacritty](https://github.com/alacritty/alacritty)       | [extras/alacritty](extras/moonfly-alacritty.toml)
+| [kitty](https://sw.kovidgoyal.net/kitty)                  | [extras/kitty](extras/moonfly-kitty.conf)
+| [WezTerm](https://wezfurlong.org/wezterm)                 | [extras/wezterm](extras/moonfly-wezterm.toml)
+| [iTerm2](https://iterm2.com)                              | [extras/iterm2](extras/moonfly.itermcolors)
+| [Windows Terminal](https://github.com/microsoft/terminal) | [extras/windows-terminal](extras/moonfly-windows-terminal.json)
+| [fish](https://fishshell.com)                             | [extras/fish](extras/moonfly.fish)
+| [tmux](https://github.com/tmux/tmux)                      | [extras/tmux](extras/moonfly.tmux)
 
-- [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](extras/moonfly-kitty.conf) theme
-
-- [WezTerm](https://wezfurlong.org/wezterm) users can copy
-  [this](extras/moonfly-wezterm.toml) theme into the
-  [`colors`](https://wezfurlong.org/wezterm/config/appearance.html#defining-a-color-scheme-in-a-separate-file)
-  directory and then select the _moonfly_ `color_scheme` in their
-  `wezterm.lua` configuration
-
-- _iTerm2_ users on macOS can import [this](extras/moonfly.itermcolors)
-  colorscheme
-
-- [Windows Terminal](https://github.com/microsoft/terminal) users can copy
-  [this](extras/moonfly-windows-terminal.json) theme into their `settings.json`
-  configuration
-
-- [fish](https://fishshell.com) shell users can use [this](extras/moonfly.fish) theme
-
-For other terminals please configure appropriately with the following colors:
+Terminal Colors
+---------------
 
 | Type           | Category        | Value     | Color
 |----------------|-----------------|-----------|------------------------------------------------------
