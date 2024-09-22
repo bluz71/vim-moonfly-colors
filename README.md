@@ -457,15 +457,16 @@ Extra Themes
 
 A collection of _moonfly_-flavoured extra themes are provided:
 
-| Program                                                   | Extra
-|-----------------------------------------------------------|----------------------------------------------------------------
-| [Alacritty](https://github.com/alacritty/alacritty)       | [extras/alacritty](extras/moonfly-alacritty.toml)
-| [kitty](https://sw.kovidgoyal.net/kitty)                  | [extras/kitty](extras/moonfly-kitty.conf)
-| [WezTerm](https://wezfurlong.org/wezterm)                 | [extras/wezterm](extras/moonfly-wezterm.toml)
-| [iTerm2](https://iterm2.com)                              | [extras/iterm2](extras/moonfly.itermcolors)
-| [Windows Terminal](https://github.com/microsoft/terminal) | [extras/windows-terminal](extras/moonfly-windows-terminal.json)
-| [fish](https://fishshell.com)                             | [extras/fish](extras/moonfly.fish)
-| [tmux](https://github.com/tmux/tmux)                      | [extras/tmux](extras/moonfly.tmux)
+| Program                                                    | Extra
+|------------------------------------------------------------|----------------------------------------------------------------
+| [Alacritty](https://github.com/alacritty/alacritty)        | [extras/alacritty](extras/moonfly-alacritty.toml)
+| [fish](https://fishshell.com)                              | [extras/fish](extras/moonfly.fish)
+| [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/moonfly.itermcolors)
+| [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/moonfly-kitty.conf)
+| [tmux](https://github.com/tmux/tmux)                       | [extras/tmux](extras/moonfly.tmux)
+| [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/moonfly-wezterm.toml)
+| [Windows Terminal](https://github.com/microsoft/terminal)  | [extras/windows-terminal](extras/moonfly-windows-terminal.json)
+| [Xresources](https://wiki.archlinux.org/title/X_resources) | [extras/Xresources](extras/moonfly.Xresources)
 
 Terminal Colors
 ---------------
