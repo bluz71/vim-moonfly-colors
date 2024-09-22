@@ -455,7 +455,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 Extra Themes
 ------------
 
-A collection of _moonfly_-flavoured extra themes are provided:
+A collection of _moonfly_-flavoured extra themes:
 
 | Program                                                    | Extra
 |------------------------------------------------------------|----------------------------------------------------------------
