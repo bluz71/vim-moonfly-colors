@@ -3,15 +3,18 @@
 # Upstream: github.com/bluz71/vim-moonfly-colors
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --color bg:#080808 \
   --color bg+:#262626 \
-  --color fg+:#dadada \
-  --color hl:#f09479 \
-  --color hl+:#f09479 \
-  --color border:#303030 \
-  --color info:#cfcfb0 \
+  --color border:#2e2e2e \
+  --color fg:#b2b2b2 \
+  --color fg+:#e4e4e4 \
+  --color gutter:#080808 \
   --color header:#80a0ff \
-  --color spinner:#36c692 \
-  --color prompt:#87afff \
+  --color hl+:#f09479 \
+  --color hl:#f09479 \
+  --color info:#cfcfb0 \
+  --color marker:#f09479 \
   --color pointer:#ff5189 \
-  --color marker:#f09479
+  --color prompt:#80a0ff \
+  --color spinner:#36c692
 "
