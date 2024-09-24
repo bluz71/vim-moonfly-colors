@@ -1,3 +1,10 @@
+# moonfly theme for WezTerm
+#
+# Upstream: github.com/bluz71/vim-moonfly-colors
+#
+# Usage: copy this theme into the colors directory and then select the moonfly
+# 'color_scheme' in your 'wezterm.lua' configuration.
+
 [metadata]
 name = "moonfly"
 origin_url = "https://github.com/bluz71/vim-moonfly-colors"

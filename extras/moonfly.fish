@@ -1,3 +1,7 @@
+# moonfly theme for the Fish shell
+#
+# Upstream: github.com/bluz71/vim-moonfly-colors
+
 # Syntax highlighting colors.
 set -g fish_color_autosuggestion 626262
 set -g fish_color_cancel 626262

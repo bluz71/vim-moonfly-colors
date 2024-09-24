@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
-# moonfly theme
+# moonfly theme for tmux
+#
+# Upstream: github.com/bluz71/vim-moonfly-colors
 
 # Set status line, windows, pane and message colors.
 set -g message-style "bg=#1c1c1c,fg=#9c9c9c"

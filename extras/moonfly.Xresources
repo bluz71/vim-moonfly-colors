@@ -1,3 +1,7 @@
+! moonfly theme for Xresources
+!
+! Upstream: github.com/bluz71/vim-moonfly-colors
+
 *background: #080808
 *foreground: #bdbdbd
 
