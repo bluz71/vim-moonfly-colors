@@ -1,3 +1,7 @@
+# moonfly theme for fzf
+#
+# Upstream: github.com/bluz71/vim-moonfly-colors
+
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color bg+:#262626 \
   --color fg+:#dadada \
