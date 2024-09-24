@@ -3,7 +3,7 @@
 # moonfly theme
 
 # Set status line, windows, pane and message colors.
-set -g message-style "bg=#1c1c1c,fg=#a8a8a8"
+set -g message-style "bg=#1c1c1c,fg=#9c9c9c"
 set -g pane-active-border-style "bg=#080808,fg=#80a0ff"
 set -g pane-border-style "bg=#080808,fg=#303030"
 set -g status-style "bg=#1c1c1c,fg=#9c9c9c"
