@@ -1,0 +1,19 @@
+// moonfly theme for Zellij
+//
+// Upstream: github.com/bluz71/vim-moonfly-colors
+
+themes {
+    moonfly {
+        bg "#080808"
+        fg "#bdbdbd"
+        black "#1c1c1c"
+        red "#e65e72"
+        green "#8cc85f"
+        yellow "#e3c78a"
+        blue "#80a0ff"
+        magenta "#cf87e8"
+        cyan "#79dac8"
+        white "#c6c6c6"
+        orange "#f78c6c"
+    }
+}
