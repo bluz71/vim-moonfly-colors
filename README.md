@@ -460,7 +460,7 @@ A collection of _moonfly_-flavoured extras for various terminals and tools:
 | Program                                                    | Extra
 |------------------------------------------------------------|----------------------------------------------------------------
 | [Alacritty](https://github.com/alacritty/alacritty)        | [extras/alacritty](extras/moonfly-alacritty.toml)
-| [fish](https://fishshell.com)                              | [extras/fish](extras/moonfly.fish)
+| [Fish Shell](https://fishshell.com)                        | [extras/fish](extras/moonfly.fish)
 | [fzf](https://junegunn.github.io/fzf)                      | [extras/fzf](extras/moonfly-fzf.sh)
 | [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/moonfly.itermcolors)
 | [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/moonfly-kitty.conf)
