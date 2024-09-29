@@ -54,7 +54,7 @@ Neovim & Vim compatible:
 - [Coc.nvim](https://github.com/neoclide/coc.nvim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [Fern](https://github.com/lambdalisue/fern.vim)
-- [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
+- [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) `bat` theme)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
@@ -460,10 +460,12 @@ A collection of _moonfly_-flavoured extras for various terminals and tools:
 | Program                                                    | Extra
 |------------------------------------------------------------|----------------------------------------------------------------
 | [Alacritty](https://github.com/alacritty/alacritty)        | [extras/alacritty](extras/moonfly-alacritty.toml)
+| [bat](https://github.com/sharkdp/bat)                      | [fly16](https://github.com/bluz71/fly16-bat)
 | [Fish Shell](https://fishshell.com)                        | [extras/fish](extras/moonfly.fish)
 | [fzf](https://junegunn.github.io/fzf)                      | [extras/fzf](extras/moonfly-fzf.sh)
 | [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/moonfly.itermcolors)
 | [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/moonfly-kitty.conf)
+| [Starship](https://starship.rs/)                           | [extras/starship](extras/moonfly-starship.toml)
 | [tmux](https://github.com/tmux/tmux)                       | [extras/tmux](extras/moonfly.tmux)
 | [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/moonfly-wezterm.toml)
 | [Windows Terminal](https://github.com/microsoft/terminal)  | [extras/windows-terminal](extras/moonfly-windows-terminal.json)
