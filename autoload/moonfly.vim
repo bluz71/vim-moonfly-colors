@@ -36,7 +36,6 @@ let s:cranberry = '#e65e72'
 let s:crimson   = '#ff5189'
 let s:red       = '#ff5454'
 " Extra colors
-let s:spring    = '#00875f'
 let s:mineral   = '#314940'
 let s:bay       = '#4d5d8d'
 
@@ -210,10 +209,10 @@ function! moonfly#Style() abort
 
     " Auto-text-completion menu
     exec 'highlight Pmenu guibg=' . s:grey15 . ' guifg=fg'
-    exec 'highlight PmenuSel guibg=' . s:spring . ' guifg=' . s:grey89
+    exec 'highlight PmenuSel guibg=' . s:bay . ' guifg=' . s:grey89
     exec 'highlight PmenuSbar guibg=' . s:grey15
     exec 'highlight PmenuThumb guibg=' . s:grey50
-    exec 'highlight WildMenu guibg=' . s:spring . ' guifg=' . s:grey89
+    exec 'highlight WildMenu guibg=' . s:bay . ' guifg=' . s:grey89
 
     " Spelling errors
     if g:moonflyUndercurls

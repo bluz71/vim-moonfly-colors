@@ -44,7 +44,6 @@ local cranberry = "#e65e72"
 local crimson = "#ff5189"
 local red = "#ff5454"
 -- Extra colors
-local spring = "#00875f"
 local mineral = "#314940"
 local bay = "#4d5d8d"
 
@@ -86,7 +85,6 @@ M.palette = {
   cranberry = cranberry,
   crimson = crimson,
   red = red,
-  spring = spring,
   mineral = mineral,
   bay = bay,
 }
@@ -272,10 +270,10 @@ M.style = function()
 
   -- Auto-text-completion menu
   highlight(0, "Pmenu", { bg = grey15, fg = white })
-  highlight(0, "PmenuSel", { bg = spring, fg = grey89 })
+  highlight(0, "PmenuSel", { bg = bay, fg = grey89 })
   highlight(0, "PmenuSbar", { link = "MoonflyCurrentLine" })
   highlight(0, "PmenuThumb", { bg = grey50 })
-  highlight(0, "WildMenu", { bg = spring, fg = grey89 })
+  highlight(0, "WildMenu", { bg = bay, fg = grey89 })
 
   -- Spelling errors
   if g.moonflyUndercurls then
@@ -1039,7 +1037,7 @@ M.style = function()
   highlight(0, "BlinkCmpLabelMatch", { link = "CmpItemAbbrMatch" })
   highlight(0, "BlinkCmpMenu", { link = "NormalFloat" })
   highlight(0, "BlinkCmpMenuBorder", { link = "FloatBorder" })
-  highlight(0, "BlinkCmpMenuSelection", { bg = bay, fg = grey89 })
+  highlight(0, "BlinkCmpMenuSelection", { link = "PmenuSel" })
 
   -- Indent Blankline plugin v3 & later
   highlight(0, "IblIndent", { fg = grey15, nocombine = true })
@@ -1416,7 +1414,6 @@ M.custom_colors = function(colors)
   cranberry = colors.cranberry and colors.cranberry or M.palette.cranberry
   crimson = colors.crimson and colors.crimson or M.palette.crimson
   red = colors.red and colors.red or M.palette.red
-  spring = colors.spring and colors.spring or M.palette.spring
   mineral = colors.mineral and colors.mineral or M.palette.mineral
   bay = colors.bay and colors.bay or M.palette.bay
 end
