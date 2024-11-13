@@ -471,6 +471,7 @@ A collection of _moonfly_-flavoured extras for various terminals and tools:
 | [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/moonfly-wezterm.toml)
 | [Windows Terminal](https://github.com/microsoft/terminal)  | [extras/windows-terminal](extras/moonfly-windows-terminal.json)
 | [Xresources](https://wiki.archlinux.org/title/X_resources) | [extras/Xresources](extras/moonfly.Xresources)
+| [Yazi](https://yazi-rs.github.io)                          | [moonfly.yazi](https://github.com/tkapias/moonfly.yazi)
 | [Zellij](https://zellij.dev)                               | [extras/zellij](extras/moonfly-zellij.kdl)
 
 Terminal Colors
