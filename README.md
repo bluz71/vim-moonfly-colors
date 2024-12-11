@@ -46,6 +46,7 @@ Neovim-only:
 - [NvCheatsheet.nvim](https://github.com/smartinellimarco/nvcheatsheet.nvim)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Rainbow Delimiters](https://github.com/HiPhish/rainbow-delimiters.nvim)
+- [snacks.nvim](https://github.com/folke/snacks.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 Neovim & Vim compatible:
