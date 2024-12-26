@@ -671,6 +671,29 @@ function! moonfly#Style() abort
     " Plugin styling
     "-----------------------------------------------------------------------
 
+    " ALE plugin
+    if g:moonflyUndercurls
+        highlight! link ALEError MoonflyDiagnosticUndercurlError
+        highlight! link ALEWarning MoonflyDiagnosticUndercurlWarn
+        highlight! link ALEInfo MoonflyDiagnosticUndercurlInfo
+    else
+        highlight! link ALEError MoonflyDiagnosticUnderlineError
+        highlight! link ALEWarning MoonflyDiagnosticUnderlineWarn
+        highlight! link ALEInfo MoonflyDiagnosticUnderlineInfo
+    endif
+    highlight! link ALEWarningSign MoonflyYellow
+    highlight! link ALEErrorSign MoonflyRed
+    highlight! link ALEInfoSign MoonflySky
+    if g:moonflyVirtualTextColor
+        highlight! link ALEVirtualTextError MoonflyDiagnosticVirtualTextError
+        highlight! link ALEVirtualTextWarning MoonflyDiagnosticVirtualTextWarn
+        highlight! link ALEVirtualTextInfo MoonflyDiagnosticVirtualTextInfo
+    else
+        highlight! link ALEVirtualTextError MoonflyGrey39
+        highlight! link ALEVirtualTextWarning MoonflyGrey39
+        highlight! link ALEVirtualTextInfo MoonflyGrey39
+    endif
+
     " Coc
     highlight! link CocSemTypeBuiltin MoonflyCranberry
     highlight! link CocSemTypeClass MoonflyEmerald
@@ -683,6 +706,21 @@ function! moonfly#Style() abort
     highlight! link CocSemTypeTypeParameter MoonflyOrchid
     highlight! link CocUnusedHighlight MoonflyGrey70
     exec 'highlight CocInlayHint guibg=' . s:grey11 . ' guifg=' . s:grey58
+
+    " fern.vim plugin
+    highlight! link FernBranchSymbol MoonflyGrey58
+    highlight! link FernLeafSymbol MoonflyBlue
+    highlight! link FernLeaderSymbol MoonflyGrey23
+    highlight! link FernBranchText MoonflyBlue
+    highlight! link FernMarkedLine MoonflyVisual
+    highlight! link FernMarkedText MoonflyCrimson
+    highlight! link FernRootSymbol MoonflyPurple
+    highlight! link FernRootText MoonflyPurple
+
+    " fern-git-status.vim plugin
+    highlight! link FernGitStatusBracket MoonflyGrey58
+    highlight! link FernGitStatusIndex MoonflyEmerald
+    highlight! link FernGitStatusWorktree MoonflyCrimson
 
     " Git commits
     highlight! link gitCommitBranch MoonflySky
@@ -702,12 +740,32 @@ function! moonfly#Style() abort
     highlight! link diffRemoved MoonflyRed
     highlight! link diffSubname MoonflySky
 
-    " Tagbar plugin
-    highlight! link TagbarFoldIcon MoonflyGrey62
-    highlight! link TagbarVisibilityPublic MoonflyLime
-    highlight! link TagbarVisibilityProtected MoonflyLime
-    highlight! link TagbarVisibilityPrivate MoonflyLime
-    highlight! link TagbarKind MoonflyEmerald
+    " GitGutter plugin
+    highlight! link GitGutterAdd MoonflyEmerald
+    highlight! link GitGutterChange MoonflySky
+    highlight! link GitGutterChangeDelete MoonflyCoral
+    highlight! link GitGutterDelete MoonflyRed
+
+    " Glyph palette
+    highlight! link GlyphPalette1 MoonflyCranberry
+    highlight! link GlyphPalette2 MoonflyEmerald
+    highlight! link GlyphPalette3 MoonflyYellow
+    highlight! link GlyphPalette4 MoonflyBlue
+    highlight! link GlyphPalette6 MoonflyTurquoise
+    highlight! link GlyphPalette7 MoonflyWhite
+    highlight! link GlyphPalette9 MoonflyCrimson
+
+    " indentLine plugin
+    if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
+        let g:indentLine_color_gui = s:grey15
+    endif
+
+    " mistfly-statusline plugin
+    highlight! link MistflyNormal MoonflyBlueMode
+    highlight! link MistflyInsert MoonflyEmeraldMode
+    highlight! link MistflyVisual MoonflyPurpleMode
+    highlight! link MistflyCommand MoonflyYellowMode
+    highlight! link MistflyReplace MoonflyCrimsonMode
 
     " NERDTree plugin
     highlight! link NERDTreeClosable MoonflyGrey58
@@ -731,30 +789,6 @@ function! moonfly#Style() abort
     highlight! link NERDTreeGitStatusRenamed MoonflySky
     highlight! link NERDTreeGitStatusStaged MoonflySky
     highlight! link NERDTreeGitStatusUntracked MoonflyRed
-
-    " fern.vim plugin
-    highlight! link FernBranchSymbol MoonflyGrey58
-    highlight! link FernLeafSymbol MoonflyBlue
-    highlight! link FernLeaderSymbol MoonflyGrey23
-    highlight! link FernBranchText MoonflyBlue
-    highlight! link FernMarkedLine MoonflyVisual
-    highlight! link FernMarkedText MoonflyCrimson
-    highlight! link FernRootSymbol MoonflyPurple
-    highlight! link FernRootText MoonflyPurple
-
-    " fern-git-status.vim plugin
-    highlight! link FernGitStatusBracket MoonflyGrey58
-    highlight! link FernGitStatusIndex MoonflyEmerald
-    highlight! link FernGitStatusWorktree MoonflyCrimson
-
-    " Glyph palette
-    highlight! link GlyphPalette1 MoonflyCranberry
-    highlight! link GlyphPalette2 MoonflyEmerald
-    highlight! link GlyphPalette3 MoonflyYellow
-    highlight! link GlyphPalette4 MoonflyBlue
-    highlight! link GlyphPalette6 MoonflyTurquoise
-    highlight! link GlyphPalette7 MoonflyWhite
-    highlight! link GlyphPalette9 MoonflyCrimson
 
     " Misc items
     highlight! link bufExplorerHelp MoonflyGrey62
@@ -784,40 +818,18 @@ function! moonfly#Style() abort
     highlight! link fishParameter MoonflyTurquoise
     highlight! link fishVariable MoonflyTurquoise
 
-    " ALE plugin
-    if g:moonflyUndercurls
-        highlight! link ALEError MoonflyDiagnosticUndercurlError
-        highlight! link ALEWarning MoonflyDiagnosticUndercurlWarn
-        highlight! link ALEInfo MoonflyDiagnosticUndercurlInfo
-    else
-        highlight! link ALEError MoonflyDiagnosticUnderlineError
-        highlight! link ALEWarning MoonflyDiagnosticUnderlineWarn
-        highlight! link ALEInfo MoonflyDiagnosticUnderlineInfo
-    endif
-    highlight! link ALEWarningSign MoonflyYellow
-    highlight! link ALEErrorSign MoonflyRed
-    highlight! link ALEInfoSign MoonflySky
-    if g:moonflyVirtualTextColor
-        highlight! link ALEVirtualTextError MoonflyDiagnosticVirtualTextError
-        highlight! link ALEVirtualTextWarning MoonflyDiagnosticVirtualTextWarn
-        highlight! link ALEVirtualTextInfo MoonflyDiagnosticVirtualTextInfo
-    else
-        highlight! link ALEVirtualTextError MoonflyGrey39
-        highlight! link ALEVirtualTextWarning MoonflyGrey39
-        highlight! link ALEVirtualTextInfo MoonflyGrey39
-    endif
-
-    " GitGutter plugin
-    highlight! link GitGutterAdd MoonflyEmerald
-    highlight! link GitGutterChange MoonflySky
-    highlight! link GitGutterChangeDelete MoonflyCoral
-    highlight! link GitGutterDelete MoonflyRed
-
     " Signify plugin
     highlight! link SignifySignAdd MoonflyEmerald
     highlight! link SignifySignChange MoonflySky
     highlight! link SignifySignChangeDelete MoonflyCoral
     highlight! link SignifySignDelete MoonflyRed
+
+    " Tagbar plugin
+    highlight! link TagbarFoldIcon MoonflyGrey62
+    highlight! link TagbarVisibilityPublic MoonflyLime
+    highlight! link TagbarVisibilityProtected MoonflyLime
+    highlight! link TagbarVisibilityPrivate MoonflyLime
+    highlight! link TagbarKind MoonflyEmerald
 
     " FZF plugin
     exec 'highlight FzfBorder guifg=' . s:grey18
@@ -841,20 +853,4 @@ function! moonfly#Style() abort
       \  'header':  ['fg', 'CursorLineNr'],
       \  'gutter':  ['bg', 'Normal']
       \}
-
-    " mistfly-statusline plugin
-    highlight! link MistflyNormal MoonflyBlueMode
-    highlight! link MistflyInsert MoonflyEmeraldMode
-    highlight! link MistflyVisual MoonflyPurpleMode
-    highlight! link MistflyCommand MoonflyYellowMode
-    highlight! link MistflyReplace MoonflyCrimsonMode
-
-    " Coc plugin
-    highlight! link CocUnusedHighlight MoonflyGrey70
-    exec 'highlight CocInlayHint guibg=' . s:grey11 . ' guifg=' . s:grey58
-
-    " indentLine plugin
-    if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
-        let g:indentLine_color_gui = s:grey15
-    endif
 endfunction
