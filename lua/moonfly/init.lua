@@ -721,129 +721,6 @@ M.style = function()
   highlight(0, "xmlTagName", { link = "MoonflyBlue" })
 
   -------------------------------------------------------------------------
-  -- Legacy plugin styling
-  -------------------------------------------------------------------------
-
-  -- Git commits
-  highlight(0, "gitCommitBranch", { link = "MoonflySky" })
-  highlight(0, "gitCommitDiscardedFile", { link = "MoonflyCrimson" })
-  highlight(0, "gitCommitDiscardedType", { link = "MoonflySky" })
-  highlight(0, "gitCommitHeader", { link = "MoonflyPurple" })
-  highlight(0, "gitCommitSelectedFile", { link = "MoonflyEmerald" })
-  highlight(0, "gitCommitSelectedType", { link = "MoonflySky" })
-  highlight(0, "gitCommitUntrackedFile", { link = "MoonflyCranberry" })
-  highlight(0, "gitEmail", { link = "MoonflyBlue" })
-
-  -- Git commit diffs
-  highlight(0, "diffAdded", { link = "MoonflyGreen" })
-  highlight(0, "diffChanged", { link = "MoonflyCrimson" })
-  highlight(0, "diffIndexLine", { link = "MoonflyCrimson" })
-  highlight(0, "diffLine", { link = "MoonflySky" })
-  highlight(0, "diffRemoved", { link = "MoonflyRed" })
-  highlight(0, "diffSubname", { link = "MoonflySky" })
-
-  -- Tagbar plugin
-  highlight(0, "TagbarFoldIcon", { link = "MoonflyGrey62" })
-  highlight(0, "TagbarVisibilityPublic", { link = "MoonflyLime" })
-  highlight(0, "TagbarVisibilityProtected", { link = "MoonflyLime" })
-  highlight(0, "TagbarVisibilityPrivate", { link = "MoonflyLime" })
-  highlight(0, "TagbarKind", { link = "MoonflyEmerald" })
-
-  -- fern.vim plugin
-  highlight(0, "FernBranchSymbol", { link = "MoonflyGrey58" })
-  highlight(0, "FernLeafSymbol", { link = "MoonflyBlue" })
-  highlight(0, "FernLeaderSymbol", { link = "MoonflyGrey23" })
-  highlight(0, "FernBranchText", { link = "MoonflyBlue" })
-  highlight(0, "FernMarkedLine", { link = "MoonflyVisual" })
-  highlight(0, "FernMarkedText", { link = "MoonflyCrimson" })
-  highlight(0, "FernRootSymbol", { link = "MoonflyPurple" })
-  highlight(0, "FernRootText", { link = "MoonflyPurple" })
-
-  -- fern-git-status.vim plugin
-  highlight(0, "FernGitStatusBracket", { link = "MoonflyGrey58" })
-  highlight(0, "FernGitStatusIndex", { link = "MoonflyEmerald" })
-  highlight(0, "FernGitStatusWorktree", { link = "MoonflyCrimson" })
-
-  -- Glyph palette
-  highlight(0, "GlyphPalette1", { link = "MoonflyCranberry" })
-  highlight(0, "GlyphPalette2", { link = "MoonflyEmerald" })
-  highlight(0, "GlyphPalette3", { link = "MoonflyYellow" })
-  highlight(0, "GlyphPalette4", { link = "MoonflyBlue" })
-  highlight(0, "GlyphPalette6", { link = "MoonflyTurquoise" })
-  highlight(0, "GlyphPalette7", { link = "MoonflyWhite" })
-  highlight(0, "GlyphPalette9", { link = "MoonflyCrimson" })
-
-  -- Misc items
-  highlight(0, "bufExplorerHelp", { link = "MoonflyGrey62" })
-  highlight(0, "bufExplorerSortBy", { link = "MoonflyGrey62" })
-  highlight(0, "CleverFDefaultLabel", { link = "MoonflyCrimson" })
-  highlight(0, "CtrlPMatch", { link = "MoonflyCoral" })
-  highlight(0, "Directory", { link = "MoonflyBlue" })
-  highlight(0, "erubyDelimiter", { link = "MoonflyCrimson" })
-  highlight(0, "jsonKeyword", { link = "MoonflySky" })
-  highlight(0, "jsonQuote", { link = "MoonflyWhite" })
-  highlight(0, "netrwClassify", { link = "MoonflyCranberry" })
-  highlight(0, "netrwDir", { link = "MoonflySky" })
-  highlight(0, "netrwExe", { link = "MoonflyKhaki" })
-  highlight(0, "tagName", { link = "MoonflyTurquoise" })
-  highlight(0, "Cheat40Header", { link = "MoonflyBlue" })
-  highlight(0, "yamlBlockMappingKey", { link = "MoonflySky" })
-  highlight(0, "yamlFlowMappingKey", { link = "MoonflySky" })
-  if g.moonflyUnderlineMatchParen then
-    highlight(0, "MatchWord", { underline = true, sp = coral })
-  else
-    highlight(0, "MatchWord", { link = "MoonflyCoral" })
-  end
-  highlight(0, "snipLeadingSpaces", { bg = bg, fg = white })
-  highlight(0, "MatchWordCur", { bg = bg })
-  highlight(0, "fishInnerVariable", { link = "MoonflyTurquoise" })
-  highlight(0, "fishParameter", { link = "MoonflyTurquoise" })
-  highlight(0, "fishVariable", { link = "MoonflyTurquoise" })
-
-  -- FZF plugin
-  highlight(0, "FzfBorder", { fg = grey18 })
-  highlight(0, "FzfFgPlus", { fg = grey89 })
-  highlight(0, "FzfNormal", { fg = grey70 })
-  highlight(0, "FzfPrompt", { fg = blue, bg = grey18 })
-  highlight(0, "FzfSubstring", { fg = coral })
-  g.fzf_colors = {
-    ["fg"] = { "fg", "FzfNormal" },
-    ["bg"] = { "bg", "Normal" },
-    ["hl"] = { "fg", "FzfSubstring" },
-    ["fg+"] = { "fg", "FzfFgPlus" },
-    ["bg+"] = { "bg", "Pmenu" },
-    ["hl+"] = { "fg", "FzfSubstring" },
-    ["info"] = { "fg", "String" },
-    ["border"] = { "fg", "FzfBorder" },
-    ["prompt"] = { "fg", "FzfPrompt" },
-    ["pointer"] = { "fg", "Exception" },
-    ["marker"] = { "fg", "FzfSubstring" },
-    ["spinner"] = { "fg", "Type" },
-    ["header"] = { "fg", "CursorLineNr" },
-    ["gutter"] = { "bg", "Normal" },
-  }
-
-  -- mistfly-statusline plugin
-  highlight(0, "MistflyNormal", { link = "MoonflyBlueMode" })
-  highlight(0, "MistflyInsert", { link = "MoonflyEmeraldMode" })
-  highlight(0, "MistflyVisual", { link = "MoonflyPurpleMode" })
-  highlight(0, "MistflyCommand", { link = "MoonflyYellowMode" })
-  highlight(0, "MistflyReplace", { link = "MoonflyCrimsonMode" })
-
-  -- Coc plugin
-  highlight(0, "CocInlayHint", { link = "LspInlayHint" })
-  highlight(0, "CocSemTypeBuiltin", { link = "MoonflyCranberry" })
-  highlight(0, "CocSemTypeClass", { link = "MoonflyEmerald" })
-  highlight(0, "CocSemTypeEnumMember", { link = "MoonflyTurquoise" })
-  highlight(0, "CocSemTypeNamespace", { link = "MoonflyTurquoise" })
-  highlight(0, "CocSemTypeParameter", { link = "MoonflyOrchid" })
-  highlight(0, "CocSemTypeProperty", { link = "MoonflyLavender" })
-  highlight(0, "CocSemTypeRegexp", { link = "MoonflyTurquoise" })
-  highlight(0, "CocSemTypeStruct", { link = "MoonflyEmerald" })
-  highlight(0, "CocSemTypeTypeParameter", { link = "MoonflyOrchid" })
-  highlight(0, "CocUnusedHighlight", { link = "MoonflyGrey70" })
-
-  -------------------------------------------------------------------------
   -- Neovim plugin styling
   -------------------------------------------------------------------------
 
@@ -1411,6 +1288,115 @@ M.style = function()
   highlight(0, "TelescopeSelectionCaret", { link = "MoonflyCrimson" })
   highlight(0, "TelescopeTitle", { link = "MoonflyGrey39" })
   highlight(0, "TelescopeSelection", { bg = grey0, fg = grey89 })
+
+  -------------------------------------------------------------------------
+  -- Legacy plugin styling
+  -------------------------------------------------------------------------
+
+  -- Coc plugin
+  highlight(0, "CocInlayHint", { link = "LspInlayHint" })
+  highlight(0, "CocSemTypeBuiltin", { link = "MoonflyCranberry" })
+  highlight(0, "CocSemTypeClass", { link = "MoonflyEmerald" })
+  highlight(0, "CocSemTypeEnumMember", { link = "MoonflyTurquoise" })
+  highlight(0, "CocSemTypeNamespace", { link = "MoonflyTurquoise" })
+  highlight(0, "CocSemTypeParameter", { link = "MoonflyOrchid" })
+  highlight(0, "CocSemTypeProperty", { link = "MoonflyLavender" })
+  highlight(0, "CocSemTypeRegexp", { link = "MoonflyTurquoise" })
+  highlight(0, "CocSemTypeStruct", { link = "MoonflyEmerald" })
+  highlight(0, "CocSemTypeTypeParameter", { link = "MoonflyOrchid" })
+  highlight(0, "CocUnusedHighlight", { link = "MoonflyGrey70" })
+
+  -- fern.vim plugin
+  highlight(0, "FernBranchSymbol", { link = "MoonflyGrey58" })
+  highlight(0, "FernLeafSymbol", { link = "MoonflyBlue" })
+  highlight(0, "FernLeaderSymbol", { link = "MoonflyGrey23" })
+  highlight(0, "FernBranchText", { link = "MoonflyBlue" })
+  highlight(0, "FernMarkedLine", { link = "MoonflyVisual" })
+  highlight(0, "FernMarkedText", { link = "MoonflyCrimson" })
+  highlight(0, "FernRootSymbol", { link = "MoonflyPurple" })
+  highlight(0, "FernRootText", { link = "MoonflyPurple" })
+
+  -- fern-git-status.vim plugin
+  highlight(0, "FernGitStatusBracket", { link = "MoonflyGrey58" })
+  highlight(0, "FernGitStatusIndex", { link = "MoonflyEmerald" })
+  highlight(0, "FernGitStatusWorktree", { link = "MoonflyCrimson" })
+
+  -- Git commits
+  highlight(0, "gitCommitBranch", { link = "MoonflySky" })
+  highlight(0, "gitCommitDiscardedFile", { link = "MoonflyCrimson" })
+  highlight(0, "gitCommitDiscardedType", { link = "MoonflySky" })
+  highlight(0, "gitCommitHeader", { link = "MoonflyPurple" })
+  highlight(0, "gitCommitSelectedFile", { link = "MoonflyEmerald" })
+  highlight(0, "gitCommitSelectedType", { link = "MoonflySky" })
+  highlight(0, "gitCommitUntrackedFile", { link = "MoonflyCranberry" })
+  highlight(0, "gitEmail", { link = "MoonflyBlue" })
+
+  -- Git commit diffs
+  highlight(0, "diffAdded", { link = "MoonflyGreen" })
+  highlight(0, "diffChanged", { link = "MoonflyCrimson" })
+  highlight(0, "diffIndexLine", { link = "MoonflyCrimson" })
+  highlight(0, "diffLine", { link = "MoonflySky" })
+  highlight(0, "diffRemoved", { link = "MoonflyRed" })
+  highlight(0, "diffSubname", { link = "MoonflySky" })
+
+  -- Glyph palette
+  highlight(0, "GlyphPalette1", { link = "MoonflyCranberry" })
+  highlight(0, "GlyphPalette2", { link = "MoonflyEmerald" })
+  highlight(0, "GlyphPalette3", { link = "MoonflyYellow" })
+  highlight(0, "GlyphPalette4", { link = "MoonflyBlue" })
+  highlight(0, "GlyphPalette6", { link = "MoonflyTurquoise" })
+  highlight(0, "GlyphPalette7", { link = "MoonflyWhite" })
+  highlight(0, "GlyphPalette9", { link = "MoonflyCrimson" })
+
+  -- Misc items
+  highlight(0, "bufExplorerHelp", { link = "MoonflyGrey62" })
+  highlight(0, "bufExplorerSortBy", { link = "MoonflyGrey62" })
+  highlight(0, "CleverFDefaultLabel", { link = "MoonflyCrimson" })
+  highlight(0, "CtrlPMatch", { link = "MoonflyCoral" })
+  highlight(0, "Directory", { link = "MoonflyBlue" })
+  highlight(0, "erubyDelimiter", { link = "MoonflyCrimson" })
+  highlight(0, "jsonKeyword", { link = "MoonflySky" })
+  highlight(0, "jsonQuote", { link = "MoonflyWhite" })
+  highlight(0, "netrwClassify", { link = "MoonflyCranberry" })
+  highlight(0, "netrwDir", { link = "MoonflySky" })
+  highlight(0, "netrwExe", { link = "MoonflyKhaki" })
+  highlight(0, "tagName", { link = "MoonflyTurquoise" })
+  highlight(0, "Cheat40Header", { link = "MoonflyBlue" })
+  highlight(0, "yamlBlockMappingKey", { link = "MoonflySky" })
+  highlight(0, "yamlFlowMappingKey", { link = "MoonflySky" })
+  if g.moonflyUnderlineMatchParen then
+    highlight(0, "MatchWord", { underline = true, sp = coral })
+  else
+    highlight(0, "MatchWord", { link = "MoonflyCoral" })
+  end
+  highlight(0, "snipLeadingSpaces", { bg = bg, fg = white })
+  highlight(0, "MatchWordCur", { bg = bg })
+  highlight(0, "fishInnerVariable", { link = "MoonflyTurquoise" })
+  highlight(0, "fishParameter", { link = "MoonflyTurquoise" })
+  highlight(0, "fishVariable", { link = "MoonflyTurquoise" })
+
+  -- FZF plugin
+  highlight(0, "FzfBorder", { fg = grey18 })
+  highlight(0, "FzfFgPlus", { fg = grey89 })
+  highlight(0, "FzfNormal", { fg = grey70 })
+  highlight(0, "FzfPrompt", { fg = blue, bg = grey18 })
+  highlight(0, "FzfSubstring", { fg = coral })
+  g.fzf_colors = {
+    ["fg"] = { "fg", "FzfNormal" },
+    ["bg"] = { "bg", "Normal" },
+    ["hl"] = { "fg", "FzfSubstring" },
+    ["fg+"] = { "fg", "FzfFgPlus" },
+    ["bg+"] = { "bg", "Pmenu" },
+    ["hl+"] = { "fg", "FzfSubstring" },
+    ["info"] = { "fg", "String" },
+    ["border"] = { "fg", "FzfBorder" },
+    ["prompt"] = { "fg", "FzfPrompt" },
+    ["pointer"] = { "fg", "Exception" },
+    ["marker"] = { "fg", "FzfSubstring" },
+    ["spinner"] = { "fg", "Type" },
+    ["header"] = { "fg", "CursorLineNr" },
+    ["gutter"] = { "bg", "Normal" },
+  }
 end
 
 -- User customization of theme colors.

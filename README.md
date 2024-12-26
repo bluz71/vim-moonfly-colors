@@ -58,7 +58,6 @@ Neovim & Vim compatible:
 - [Fern](https://github.com/lambdalisue/fern.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) `bat` theme)
 - [lightline](https://github.com/itchyny/lightline.vim)
-- [Tagbar](https://github.com/majutsushi/tagbar)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 
 Vim-only:
@@ -68,6 +67,7 @@ Vim-only:
 - [indentLine](https://github.com/Yggdroot/indentLine)
 - [NERDTree](https://github.com/preservim/nerdtree)
 - [Signify](https://github.com/mhinz/vim-signify)
+- [Tagbar](https://github.com/majutsushi/tagbar)
 
 :zap: Requirements
 ------------------
