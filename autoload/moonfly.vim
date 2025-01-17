@@ -798,8 +798,9 @@ function! moonfly#Style() abort
     highlight! link Directory MoonflyBlue
     highlight! link erubyDelimiter MoonflyCrimson
     highlight! link HighlightedyankRegion MoonflyGrey0
-    highlight! link jsonKeyword MoonflySky
+    highlight! link jsonKeyword MoonflyLavender
     highlight! link jsonQuote MoonflyWhite
+    highlight! link jsonString MoonflyLime
     highlight! link netrwClassify MoonflyCranberry
     highlight! link netrwDir MoonflySky
     highlight! link netrwExe MoonflyKhaki
