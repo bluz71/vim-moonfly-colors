@@ -242,6 +242,16 @@ require('cmp').setup({
 })
 ```
 
+:bulb: Similarly [blink.cmp](https://github.com/Saghen/blink.cmp)] may be configured like so:
+```lua
+local winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel"
+require("blink.cmp").setup({
+  completion = {
+    menu = { winhighlight = winhighlight },
+    documentation = { window = { winhighlight = winhighlight } },
+  },
+})```
+
 ---
 
 ### moonflyTerminalColors
