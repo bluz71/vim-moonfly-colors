@@ -36,6 +36,10 @@ return {
     a = {fg = colors.color6, bg = colors.color2},
     b = {fg = colors.color2, bg = colors.color0}
   },
+  terminal = {
+    a = { fg = colors.color6, bg = colors.color2 },
+    b = { fg = colors.color2, bg = colors.color0 }
+  },
   visual = {
     a = {fg = colors.color6, bg = colors.color3},
     b = {fg = colors.color3, bg = colors.color0}
