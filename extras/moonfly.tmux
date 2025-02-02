@@ -19,4 +19,4 @@ setw -g window-status-format " #I  #W #[fg=#e65e72]#{?window_flags,#{window_f
 set -g status-left "#[fg=#f09479]⠶ #[fg=#80a0ff]#S@#h "
 if-shell '[[ $(uname) = Darwin ]]' \
     'set -g status-right "%a %d %b  #[fg=#80a0ff]%I:%M%p"' \
-    'set -g status-right "%a %d %b  #[fg=#80a0ff]%I:%M%P"' \
+    'set -g status-right "%a %d %b  #[fg=#80a0ff]%I:%M%P"'
