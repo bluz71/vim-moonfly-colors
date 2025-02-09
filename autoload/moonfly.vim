@@ -240,6 +240,7 @@ function! moonfly#Style() abort
     exec 'highlight CursorLineNr cterm=none guibg=' . s:grey11 . ' guifg=' . s:blue . ' gui=none'
     exec 'highlight CursorColumn guibg=' . s:grey11
     exec 'highlight CursorLine cterm=none guibg=' . s:grey11
+    highlight! link CursorLineSign CursorLine
     exec 'highlight Folded guibg=' . s:grey11 . ' guifg='. s:lime
     exec 'highlight FoldColumn guibg=' . s:grey18 . ' guifg=' . s:lime
     exec 'highlight SignColumn guibg=bg guifg=' . s:lime
