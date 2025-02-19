@@ -1253,6 +1253,9 @@ M.style = function()
   highlight(0, "SnacksDashboardHeader", { link = "MoonflyBlue" })
   highlight(0, "SnacksDashboardIcon", { link = "MoonflySky" })
   highlight(0, "SnacksDashboardSpecial", { link = "MoonflyViolet" })
+  --   indent
+  highlight(0, "SnacksIndent", { link = "IblIndent" })
+  highlight(0, "SnacksIndentScope", { link = "IblScope" })
   --   notifier
   highlight(0, "SnacksNotifierInfo", { link = "DiagnosticInfo" })
   highlight(0, "SnacksNotifierWarn", { link = "DiagnosticWarn" })
@@ -1274,6 +1277,13 @@ M.style = function()
   highlight(0, "SnacksBorderTitleDebug", { link = "FloatBorder" })
   highlight(0, "SnacksBorderTitleError", { link = "FloatBorder" })
   highlight(0, "SnacksBorderTitleTrace", { link = "FloatBorder" })
+  --   picker
+  highlight(0, "SnacksPickerCursorLine", { link = "Normal" })
+  highlight(0, "SnacksPickerDir", { fg = "grey50" })
+  highlight(0, "SnacksPickerInputBorder", { link = "MoonflyBlue" })
+  highlight(0, "SnacksPickerListCursorLine", { link = "MoonflyVisual" })
+  highlight(0, "SnacksPickerMatch", { link = "MoonflyCoral" })
+  highlight(0, "SnacksPickerTitle", { link = "TelescopeTitle" })
 
   -- Telescope plugin
   highlight(0, "TelescopeBorder", { link = "FloatBorder" })
