@@ -1278,12 +1278,15 @@ M.style = function()
   highlight(0, "SnacksBorderTitleError", { link = "FloatBorder" })
   highlight(0, "SnacksBorderTitleTrace", { link = "FloatBorder" })
   --   picker
+  highlight(0, "SnacksPicker", { link = "Normal" })
   highlight(0, "SnacksPickerCursorLine", { link = "Normal" })
   highlight(0, "SnacksPickerDir", { fg = "grey50" })
   highlight(0, "SnacksPickerInputBorder", { link = "MoonflyBlue" })
   highlight(0, "SnacksPickerListCursorLine", { link = "MoonflyVisual" })
   highlight(0, "SnacksPickerMatch", { link = "MoonflyCoral" })
-  highlight(0, "SnacksPickerTitle", { link = "TelescopeTitle" })
+  highlight(0, "SnacksPickerPrompt", { link = "MoonflyBlue" })
+  highlight(0, "SnacksPickerSelected", { link = "MoonflyCrimson" })
+  highlight(0, "SnacksPickerTitle", { link = "MoonflyGrey39" })
 
   -- Telescope plugin
   highlight(0, "TelescopeBorder", { link = "FloatBorder" })
@@ -1384,7 +1387,7 @@ M.style = function()
   else
     highlight(0, "MatchWord", { link = "MoonflyCoral" })
   end
-  highlight(0, "snipLeadingSpaces", { bg = bg, fg = white })
+  highlight(0, "snipLeadingSpaces", { link = "Normal" })
   highlight(0, "MatchWordCur", { bg = bg })
   highlight(0, "fishInnerVariable", { link = "MoonflyTurquoise" })
   highlight(0, "fishParameter", { link = "MoonflyTurquoise" })
