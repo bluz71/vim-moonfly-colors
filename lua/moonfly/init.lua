@@ -1300,7 +1300,7 @@ M.style = function()
   highlight(0, "SnacksPickerRow", { link = "MoonflyLavender" })
   highlight(0, "SnacksPickerSelected", { link = "MoonflyCrimson" })
   highlight(0, "SnacksPickerTitle", { link = "MoonflyGrey39" })
-  highlight(0, "SnacksPickerTree", { link = "MoonflyGrey39" })
+  highlight(0, "SnacksPickerTree", { link = "MoonflyGrey23" })
   highlight(0, "SnacksPickerUndoAdded", { link = "diffAdded" })
   highlight(0, "SnacksPickerUndoRemoved", { link = "diffRemoved" })
 
