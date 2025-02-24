@@ -46,6 +46,7 @@ local red = "#ff5454"
 -- Extra colors
 local mineral = "#314940"
 local bay = "#4d5d8d"
+local slate = "#748999"
 
 local M = {}
 
@@ -87,6 +88,7 @@ M.palette = {
   red = red,
   mineral = mineral,
   bay = bay,
+  slate = slate,
 }
 
 M.style = function()
@@ -869,7 +871,7 @@ M.style = function()
 
   -- Indent Blankline plugin
   highlight(0, "IblIndent", { fg = grey15, nocombine = true })
-  highlight(0, "IblScope", { fg = violet, nocombine = true })
+  highlight(0, "IblScope", { fg = slate, nocombine = true })
   highlight(0, "IblWhitespace", { fg = grey15, nocombine = true })
 
   -- lazy.nvim plugin
@@ -1473,6 +1475,7 @@ M.custom_colors = function(colors)
   red = colors.red and colors.red or M.palette.red
   mineral = colors.mineral and colors.mineral or M.palette.mineral
   bay = colors.bay and colors.bay or M.palette.bay
+  slate = colors.slate and colors.slate or M.slate.bay
 end
 
 return M
