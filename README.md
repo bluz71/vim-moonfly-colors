@@ -232,13 +232,11 @@ be configured as follows for nicer bordered display when `g:nightflyNormalFloat`
 is enabled:
 
 ```lua
-local winhighlight = {
-  winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel",
-}
-require('cmp').setup({
+local cmp = require("cmp")
+cmp.setup({
   window = {
-    completion = cmp.config.window.bordered(winhighlight),
-    documentation = cmp.config.window.bordered(winhighlight),
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
   }
 })
 ```
@@ -247,11 +245,10 @@ require('cmp').setup({
 completion plugin instead:
 
 ```lua
-local winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel"
 require("blink.cmp").setup({
   completion = {
-    menu = { winhighlight = winhighlight },
-    documentation = { window = { winhighlight = winhighlight } },
+    menu = { border = "single" },
+    documentation = { window = { border = "single" } },
   },
 })
 ```
