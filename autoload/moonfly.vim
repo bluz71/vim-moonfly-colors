@@ -707,6 +707,11 @@ function! moonfly#Style() abort
     highlight! link CocSemTypeTypeParameter MoonflyOrchid
     highlight! link CocUnusedHighlight MoonflyGrey70
     exec 'highlight CocInlayHint guibg=' . s:grey11 . ' guifg=' . s:grey58
+    "   Coc virtual text
+    highlight! link CocErrorVirtualText MoonflyDiagnosticVirtualTextError
+    highlight! link CocWarningVirtualText MoonflyDiagnosticVirtualTextWarn
+    highlight! link CocInfoVirtualText MoonflyDiagnosticVirtualTextInfo
+    highlight! link CocHintVirtualText MoonflyDiagnosticVirtualTextInfo
 
     " fern.vim plugin
     highlight! link FernBranchSymbol MoonflyGrey58
