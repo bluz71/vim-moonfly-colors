@@ -87,9 +87,17 @@ function! moonfly#Style() abort
     exec 'highlight MoonflyDiagnosticUnderlineError gui=underline guisp=' . s:red
     exec 'highlight MoonflyDiagnosticUnderlineWarn gui=underline guisp=' . s:yellow
     exec 'highlight MoonflyDiagnosticUnderlineInfo gui=underline guisp=' . s:sky
-    exec 'highlight MoonflyDiagnosticVirtualTextError guibg=' . s:grey11 . ' guifg=' . s:red
-    exec 'highlight MoonflyDiagnosticVirtualTextWarn guibg=' . s:grey11 . ' guifg=' . s:yellow
-    exec 'highlight MoonflyDiagnosticVirtualTextInfo guibg=' . s:grey11 . ' guifg=' . s:sky
+    if g:moonflyVirtualTextColor
+        exec 'highlight MoonflyDiagnosticVirtualTextError guibg=' . s:grey11 . ' guifg=' . s:red
+        exec 'highlight MoonflyDiagnosticVirtualTextWarn guibg=' . s:grey11 . ' guifg=' . s:yellow
+        exec 'highlight MoonflyDiagnosticVirtualTextInfo guibg=' . s:grey11 . ' guifg=' . s:sky
+        exec 'highlight MoonflyDiagnosticVirtualTextHint guibg=' . s:grey11 . ' guifg=' . s:turquoise
+    else
+        highlight! link MoonflyDiagnosticVirtualTextError MoonflyGrey39
+        highlight! link MoonflyDiagnosticVirtualTextWarn MoonflyGrey39
+        highlight! link MoonflyDiagnosticVirtualTextInfo MoonflyGrey39
+        highlight! link MoonflyDiagnosticVirtualTextHint MoonflyGrey39
+    endif
 
     "-----------------------------------------------------------------------
     " Standard styling
@@ -685,15 +693,9 @@ function! moonfly#Style() abort
     highlight! link ALEWarningSign MoonflyYellow
     highlight! link ALEErrorSign MoonflyRed
     highlight! link ALEInfoSign MoonflySky
-    if g:moonflyVirtualTextColor
-        highlight! link ALEVirtualTextError MoonflyDiagnosticVirtualTextError
-        highlight! link ALEVirtualTextWarning MoonflyDiagnosticVirtualTextWarn
-        highlight! link ALEVirtualTextInfo MoonflyDiagnosticVirtualTextInfo
-    else
-        highlight! link ALEVirtualTextError MoonflyGrey39
-        highlight! link ALEVirtualTextWarning MoonflyGrey39
-        highlight! link ALEVirtualTextInfo MoonflyGrey39
-    endif
+    highlight! link ALEVirtualTextError MoonflyDiagnosticVirtualTextError
+    highlight! link ALEVirtualTextWarning MoonflyDiagnosticVirtualTextWarn
+    highlight! link ALEVirtualTextInfo MoonflyDiagnosticVirtualTextInfo
 
     " Coc
     highlight! link CocSemTypeBuiltin MoonflyCranberry
@@ -711,7 +713,7 @@ function! moonfly#Style() abort
     highlight! link CocErrorVirtualText MoonflyDiagnosticVirtualTextError
     highlight! link CocWarningVirtualText MoonflyDiagnosticVirtualTextWarn
     highlight! link CocInfoVirtualText MoonflyDiagnosticVirtualTextInfo
-    highlight! link CocHintVirtualText MoonflyDiagnosticVirtualTextInfo
+    highlight! link CocHintVirtualText MoonflyDiagnosticVirtualTextHint
 
     " fern.vim plugin
     highlight! link FernBranchSymbol MoonflyGrey58
