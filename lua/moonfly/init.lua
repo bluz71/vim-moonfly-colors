@@ -1477,7 +1477,7 @@ M.custom_colors = function(colors)
   red = colors.red and colors.red or M.palette.red
   mineral = colors.mineral and colors.mineral or M.palette.mineral
   bay = colors.bay and colors.bay or M.palette.bay
-  slate = colors.slate and colors.slate or M.slate.bay
+  slate = colors.slate and colors.slate or M.palette.slate
 end
 
 return M
