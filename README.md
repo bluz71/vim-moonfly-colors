@@ -211,46 +211,10 @@ let g:moonflyNormalFloat = v:true
 
 :bulb: If the above option is set then it is highly recommended to enable
 floating window borders to distinguish between the edit and floating windows in
-Neovim's LSP client, for example:
+Neovim:
 
 ```lua
-  vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(
-    vim.lsp.handlers.hover, {
-      border = "single"
-    }
-  )
-  vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
-    vim.lsp.handlers.signatureHelp, {
-      border = "single"
-    }
-  )
-  vim.diagnostic.config({ float = { border = "single" } })
-```
-
-:bulb: The [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion plugin may
-be configured as follows for nicer bordered display when `g:nightflyNormalFloat`
-is enabled:
-
-```lua
-local cmp = require("cmp")
-cmp.setup({
-  window = {
-    completion = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
-  }
-})
-```
-
-:bulb: Similarly, if using the [blink.cmp](https://github.com/Saghen/blink.cmp)
-completion plugin instead:
-
-```lua
-require("blink.cmp").setup({
-  completion = {
-    menu = { border = "single" },
-    documentation = { window = { border = "single" } },
-  },
-})
+vim.o.winborder = "single"
 ```
 
 ---
