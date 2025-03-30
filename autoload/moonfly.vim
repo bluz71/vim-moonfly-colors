@@ -34,7 +34,7 @@ let s:purple    = '#ae81ff'
 let s:violet    = '#cf87e8'
 let s:cranberry = '#e65e72'
 let s:crimson   = '#ff5189'
-let s:red       = '#ff5454'
+let s:red       = '#ff5d5d'
 " Extra colors
 let s:mineral   = '#314940'
 let s:bay       = '#4d5d8d'

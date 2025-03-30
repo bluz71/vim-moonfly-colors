@@ -43,7 +43,7 @@ local purple = "#ae81ff"
 local violet = "#cf87e8"
 local cranberry = "#e65e72"
 local crimson = "#ff5189"
-local red = "#ff5454"
+local red = "#ff5d5d"
 -- Extra colors
 local mineral = "#314940"
 local bay = "#4d5d8d"

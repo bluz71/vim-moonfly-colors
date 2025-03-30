@@ -464,7 +464,7 @@ Terminal Colors
 | Selection      | Selection       | `#b2ceee` | ![background](https://place-hold.it/32/b2ceee?text=+)
 | Selection Text | Selection Text  | `#080808` | ![background](https://place-hold.it/32/080808?text=+)
 | Color 1        | Black (normal)  | `#323437` | ![background](https://place-hold.it/32/323437?text=+)
-| Color 2        | Red (normal)    | `#ff5454` | ![background](https://place-hold.it/32/ff5454?text=+)
+| Color 2        | Red (normal)    | `#ff5d5d` | ![background](https://place-hold.it/32/ff5d5d?text=+)
 | Color 3        | Green (normal)  | `#8cc85f` | ![background](https://place-hold.it/32/8cc85f?text=+)
 | Color 4        | Yellow (normal) | `#e3c78a` | ![background](https://place-hold.it/32/e3c78a?text=+)
 | Color 5        | Blue (normal)   | `#80a0ff` | ![background](https://place-hold.it/32/80a0ff?text=+)

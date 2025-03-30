@@ -1,1 +1,1 @@
-convert -size 100x200 xc:"#ff5454" xc:"#8cc85f" xc:"#e3c78a" xc:"#80a0ff" xc:"#cf87e8" xc:"#79dac8" xc:"#e65e72" xc:"#36c692" xc:"#c6c684" xc:"#74b2ff" xc:"#ae81ff" xc:"#f09479" +append moonfly-palette.png
+convert -size 100x200 xc:"#ff5d5d" xc:"#8cc85f" xc:"#e3c78a" xc:"#80a0ff" xc:"#cf87e8" xc:"#79dac8" xc:"#e65e72" xc:"#36c692" xc:"#c6c684" xc:"#74b2ff" xc:"#ae81ff" xc:"#f09479" +append moonfly-palette.png
