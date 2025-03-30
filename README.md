@@ -150,6 +150,7 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 | [moonflyUndercurls](https://github.com/bluz71/vim-moonfly-colors#moonflyundercurls)                   | Enabled
 | [moonflyUnderlineMatchParen](https://github.com/bluz71/vim-moonfly-colors#moonflyunderlinematchparen) | Disabled
 | [moonflyVirtualTextColor](https://github.com/bluz71/vim-moonfly-colors#moonflyvirtualtextcolor)       | Disabled
+| [moonflySpellErrorColor](https://github.com/bluz71/vim-moonfly-colors#moonflyspellerrorcolor)         | Enabled
 | [moonflyWinSeparator](https://github.com/bluz71/vim-moonfly-colors#moonflywinseparator)               | `1`
 
 ---
@@ -310,6 +311,25 @@ vim.g.moonflyVirtualTextColor = true
 ```vim
 " Vimscript initialization file
 let g:moonflyVirtualTextColor = v:true
+```
+
+---
+
+### moonflySpellErrorColor
+
+The `moonflySpellErrorColor` option specifies whether to display spelling
+errors in color. By default this option is **enabled**. Note, if undercurls are
+enabled, then this option is ignored. If you prefer not to display spelling
+errors in color then add the following to your initialization file:
+
+```lua
+-- Lua initialization file
+vim.g.moonflySpellErrorColor = false
+```
+
+```vim
+" Vimscript initialization file
+let g:moonflySpellErrorColor = v:false
 ```
 
 ---

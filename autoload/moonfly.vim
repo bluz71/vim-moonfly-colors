@@ -228,11 +228,16 @@ function! moonfly#Style() abort
         exec 'highlight SpellCap ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:yellow
         exec 'highlight SpellRare ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:green
         exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:sky
-    else
+    elseif g:moonflySpellErrorColor
         exec 'highlight SpellBad ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:red . ' gui=underline guisp=' . s:red
         exec 'highlight SpellCap ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
         exec 'highlight SpellRare ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:green . ' gui=underline guisp=' . s:green
         exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:sky . ' gui=underline guisp=' . s:sky
+    else
+        exec 'highlight SpellBad ctermbg=NONE cterm=underline guibg=NONE gui=underline guisp=' . s:red
+        exec 'highlight SpellCap ctermbg=NONE cterm=underline guibg=NONE gui=underline guisp=' . s:yellow
+        exec 'highlight SpellRare ctermbg=NONE cterm=underline guibg=NONE gui=underline guisp=' . s:green
+        exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE gui=underline guisp=' . s:sky
     endif
 
     " Misc

@@ -29,6 +29,7 @@ let g:moonflyTransparent = get(g:, 'moonflyTransparent', v:false)
 let g:moonflyUndercurls = get(g:, 'moonflyUndercurls', v:true)
 let g:moonflyUnderlineMatchParen = get(g:, 'moonflyUnderlineMatchParen', v:false)
 let g:moonflyVirtualTextColor =  get(g:, 'moonflyVirtualTextColor', v:false)
+let g:moonflySpellErrorColor =  get(g:, 'moonflySpellErrorColor', v:true)
 let g:moonflyWinSeparator = get(g:, 'moonflyWinSeparator', 1)
 
 if has('nvim')
