@@ -11,6 +11,7 @@ Default option values:
   let g:moonflyTransparent = v:false
   let g:moonflyUndercurls = v:true
   let g:moonflyUnderlineMatchParen = v:false
+  let g:moonflyVirtualTextColor = v:false
   let g:moonflyWinSeparator = 1
 <
 ------------------------------------------------------------------------------
