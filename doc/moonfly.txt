@@ -1,6 +1,6 @@
 *moonfly* A dark charcoal theme for classic Vim & modern Neovim.
 
-OPTIONS                                                       *moonfly-options*
+OPTIONS                                                      *moonfly-options*
 
 Default option values:
 >
