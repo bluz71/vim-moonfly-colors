@@ -1,7 +1,7 @@
 " Dark Vim/Neovim color scheme.
 "
-" URL:     github.com/bluz71/vim-moonfly-colors
-" License: MIT (https://opensource.org/licenses/MIT)
+" URL:      github.com/bluz71/vim-moonfly-colors
+" License:  MIT (https://opensource.org/licenses/MIT)
 
 if has('nvim') && !has('nvim-0.9')
     lua vim.api.nvim_echo({
