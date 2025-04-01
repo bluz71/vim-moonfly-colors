@@ -1,7 +1,7 @@
 " moonfly color scheme for lightline (github.com/itchyny/lightline.vim).
 "
-" URL:     github.com/bluz71/vim-moonfly-colors
-" License: MIT (https://opensource.org/licenses/MIT)
+" URL:      github.com/bluz71/vim-moonfly-colors
+" License:  MIT (https://opensource.org/licenses/MIT)
 
 let s:white   = ['#c6c6c6', 251]
 let s:grey62  = ['#9e9e9e', 247]

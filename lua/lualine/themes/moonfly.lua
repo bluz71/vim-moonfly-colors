@@ -1,7 +1,7 @@
 -- moonfly color scheme for lualine
 --
--- URL:     github.com/bluz71/vim-moonfly-colors
--- License: MIT (https://opensource.org/licenses/MIT)
+-- URL:      github.com/bluz71/vim-moonfly-colors
+-- License:  MIT (https://opensource.org/licenses/MIT)
 
 -- LuaFormatter off
 local colors = {
