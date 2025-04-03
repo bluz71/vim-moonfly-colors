@@ -128,7 +128,7 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 
 - The _moonfly_ theme supports
   [lualine](https://github.com/nvim-lualine/lualine.nvim). The
-  _moonfly_ theme will load once Lualine starts.
+  _moonfly_ theme will load once lualine starts.
 
 - My [linefly](https://github.com/bluz71/nvim-linefly) `statusline` plugin
   supports the _moonfly_ theme.
@@ -408,15 +408,14 @@ True Color Terminals
 
 Many modern terminals support [24-bit true
 colors](https://gist.github.com/XVilka/8346728). Current versions of Vim &
-Neovim, on such terminals, support true colors when the `termguicolors` option
+Neovim on such terminals support true colors when the `termguicolors` option
 is enabled.
 
 On terminals that support true colors, and when `termguicolors` is set, the
-_moonfly_ colorscheme will not require any terminal configuration to emit the
-correct theme colors.
+_moonfly_ colorscheme will emit the correct theme colors.
 
-For the true color _moonfly_ colorscheme to display correctly inside _tmux_
-the following setting will usually be required in _~/.tmux.conf_:
+For the _moonfly_ colorscheme to display correctly inside _tmux_ the following
+setting will usually be required in _~/.tmux.conf_:
 
 ```
 set -ga terminal-overrides ',xterm-256color:Tc'
