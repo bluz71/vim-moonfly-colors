@@ -262,7 +262,8 @@ let g:moonflyTransparent = v:true
 The `moonflyUndercurls` option specifies whether to use undercurls for
 spelling and linting errors in GUI versions of Vim, including terminal Vim with
 `termguicolors` set. By default this option is **enabled**. If you do not like
-the appearance of undercurls then add the following to your initialization file:
+the appearance of undercurls then add the following to your initialization file
+to use underlines instead:
 
 ```lua
 -- Lua initialization file
