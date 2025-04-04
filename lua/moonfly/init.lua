@@ -271,6 +271,7 @@ M.style = function()
   -- Visual selection
   highlight(0, "Visual", { link = "MoonflyVisual" })
   highlight(0, "VisualNOS", { bg = grey0, fg = white })
+  highlight(0, "VisualNonText", { bg = grey0, fg = grey39 })
 
   -- Errors, warnings and whitespace-eol
   highlight(0, "Error", { bg = bg, fg = red })
