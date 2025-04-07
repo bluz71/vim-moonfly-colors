@@ -18,6 +18,7 @@ local grey62 = "#9e9e9e"
 local grey58 = "#949494"
 local grey50 = "#808080"
 local grey39 = "#626262"
+local grey35 = "#585858"
 local grey30 = "#4e4e4e"
 local grey27 = "#444444"
 local grey23 = "#3a3a3a"
@@ -63,6 +64,7 @@ M.palette = {
   grey58 = grey58,
   grey50 = grey50,
   grey39 = grey39,
+  grey35 = grey35,
   grey30 = grey30,
   grey27 = grey27,
   grey23 = grey23,
@@ -106,6 +108,7 @@ M.style = function()
   highlight(0, "MoonflyGrey62", { fg = grey62 })
   highlight(0, "MoonflyGrey58", { fg = grey58 })
   highlight(0, "MoonflyGrey39", { fg = grey39 })
+  highlight(0, "MoonflyGrey35", { fg = grey35 })
   highlight(0, "MoonflyGrey30", { fg = grey30 })
   highlight(0, "MoonflyGrey27", { fg = grey27 })
   highlight(0, "MoonflyGrey23", { fg = grey23 })
@@ -353,6 +356,7 @@ M.style = function()
     highlight(0, "NormalFloat", { bg = grey11, fg = white })
   end
   highlight(0, "FloatBorder", { bg = bg, fg = grey18 })
+  highlight(0, "FloatBorder2", { bg = bg, fg = grey35 })
   highlight(0, "FloatTitle", { bg = grey23, fg = white })
   highlight(0, "WinBar", { bg = grey15, fg = white })
   highlight(0, "WinBarNC", { bg = grey15, fg = grey62 })
@@ -1384,6 +1388,7 @@ M.custom_colors = function(colors)
   grey58 = colors.grey58 and colors.grey58 or M.palette.grey58
   grey50 = colors.grey50 and colors.grey50 or M.palette.grey50
   grey39 = colors.grey39 and colors.grey39 or M.palette.grey39
+  grey35 = colors.grey35 and colors.grey35 or M.palette.grey35
   grey30 = colors.grey30 and colors.grey30 or M.palette.grey30
   grey27 = colors.grey27 and colors.grey27 or M.palette.grey27
   grey23 = colors.grey23 and colors.grey23 or M.palette.grey23
