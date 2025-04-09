@@ -1,4 +1,4 @@
-*moonfly* A dark charcoal theme for classic Vim & modern Neovim.
+*moonfly* A dark charcoal theme for classic Vim & modern Neovim
 
 OPTIONS                                                      *moonfly-options*
 
