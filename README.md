@@ -72,10 +72,10 @@ Vim-only:
 :zap: Requirements
 ------------------
 
-_moonfly_ is a **GUI-only** colorscheme.
+_moonfly_ is a **true-color-only** colorscheme.
 
-A GUI client or a modern terminal version of Vim or Neovim in a true-color
-terminal is required. Details about true-color terminals are [listed
+An up-to-date version of Vim or Neovim in a true-color terminal or a GUI client
+(such as gVim ) is required. Details about true-color terminals are [listed
 here](https://github.com/bluz71/vim-moonfly-colors#true-color-terminals).
 
 Installation
