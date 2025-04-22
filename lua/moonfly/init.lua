@@ -3,8 +3,8 @@ local highlight = vim.api.nvim_set_hl
 
 local none = "NONE"
 -- Background and foreground
-local black = "#080808"
-local white = "#c6c6c6"
+local black = "#000000"
+local white = "#dadada"
 local bg = black
 if g.moonflyTransparent then
   bg = none
@@ -12,7 +12,7 @@ end
 -- Variations of charcoal-grey
 local grey0 = "#323437"
 local grey1 = "#373c4d"
-local grey89 = "#e4e4e4"
+local grey89 = "#d0d0d0"
 local grey70 = "#b2b2b2"
 local grey62 = "#9e9e9e"
 local grey58 = "#949494"
@@ -143,14 +143,14 @@ M.style = function()
   highlight(0, "MoonflyYellowMode", { bg = yellow, fg = grey11 })
   highlight(0, "MoonflyTurquoiseMode", { bg = turquoise, fg = grey11 })
   -- Generic line helper colors
-  highlight(0, "MoonflyCurrentLine", { bg = grey15 })
-  highlight(0, "MoonflyCrimsonLine", { bg = grey18, fg = crimson })
-  highlight(0, "MoonflyEmeraldLine", { bg = grey18, fg = emerald })
-  highlight(0, "MoonflyBlueLineActive", { bg = grey27, fg = blue })
-  highlight(0, "MoonflyRedLineActive", { bg = grey27, fg = red })
-  highlight(0, "MoonflyTurquoiseLineActive", { bg = grey27, fg = turquoise })
-  highlight(0, "MoonflyWhiteLineActive", { bg = grey27, fg = grey89 })
-  highlight(0, "MoonflyYellowLineActive", { bg = grey27, fg = yellow })
+  highlight(0, "MoonflyCurrentLine", { bg = grey18 })
+  highlight(0, "MoonflyCrimsonLine", { bg = grey23, fg = crimson })
+  highlight(0, "MoonflyEmeraldLine", { bg = grey23, fg = emerald })
+  highlight(0, "MoonflyBlueLineActive", { bg = grey30, fg = blue })
+  highlight(0, "MoonflyRedLineActive", { bg = grey30, fg = red })
+  highlight(0, "MoonflyTurquoiseLineActive", { bg = grey30, fg = turquoise })
+  highlight(0, "MoonflyWhiteLineActive", { bg = grey30, fg = grey89 })
+  highlight(0, "MoonflyYellowLineActive", { bg = grey30, fg = yellow })
   highlight(0, "MoonflyGrey58Row", { bg = grey11, fg = grey58 })
   highlight(0, "MoonflyRedRow", { bg = grey11, fg = red })
   highlight(0, "MoonflyYellowRow", { bg = grey11, fg = yellow })
@@ -186,13 +186,13 @@ M.style = function()
   highlight(0, "Normal", { bg = bg, fg = white })
 
   -- Color of mode text, -- INSERT --
-  highlight(0, "ModeMsg", { fg = grey62 })
+  highlight(0, "ModeMsg", { fg = white })
 
   -- Comments
   if g.moonflyItalics then
-    highlight(0, "Comment", { fg = grey58, italic = true })
+    highlight(0, "Comment", { fg = grey70, italic = true })
   else
-    highlight(0, "Comment", { link = "MoonflyGrey58" })
+    highlight(0, "Comment", { fg = grey70 })
   end
 
   -- Functions
@@ -241,9 +241,9 @@ M.style = function()
   highlight(0, "Repeat", { link = "MoonflyViolet" })
 
   -- Search
-  highlight(0, "Search", { bg = grey1, fg = grey89 })
+  highlight(0, "Search", { bg = yellow, fg = black })
   highlight(0, "CurSearch", { bg = coral, fg = black })
-  highlight(0, "IncSearch", { bg = yellow, fg = black })
+  highlight(0, "IncSearch", { bg = green, fg = black })
 
   -- '\n' sequences
   highlight(0, "Special", { link = "MoonflyCranberry" })
@@ -255,38 +255,38 @@ M.style = function()
   highlight(0, "Structure", { link = "MoonflyBlue" })
 
   -- Status, split and tab lines
-  highlight(0, "StatusLine", { bg = grey18, fg = white })
-  highlight(0, "StatusLineNC", { bg = grey18, fg = grey62 })
-  highlight(0, "Tabline", { bg = grey18, fg = grey62 })
+  highlight(0, "StatusLine", { bg = grey23, fg = white })
+  highlight(0, "StatusLineNC", { bg = grey18, fg = grey70 })
+  highlight(0, "Tabline", { bg = grey18, fg = grey70 })
   highlight(0, "TablineSel", { bg = grey11, fg = blue })
   highlight(0, "TablineSelSymbol", { link = "MoonflyEmeraldRow" })
   highlight(0, "TablineFill", { bg = grey18, fg = grey18 })
-  highlight(0, "StatusLineTerm", { bg = grey18, fg = white })
-  highlight(0, "StatusLineTermNC", { bg = grey18, fg = grey62 })
+  highlight(0, "StatusLineTerm", { bg = grey23, fg = white })
+  highlight(0, "StatusLineTermNC", { bg = grey18, fg = grey70 })
   if g.moonflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })
   elseif g.moonflyWinSeparator == 1 then
-    highlight(0, "VertSplit", { bg = grey18, fg = grey18 })
+    highlight(0, "VertSplit", { bg = grey23, fg = grey23 })
   else
-    highlight(0, "VertSplit", { bg = none, fg = grey18 })
+    highlight(0, "VertSplit", { bg = none, fg = grey30 })
   end
 
   -- Visual selection
-  highlight(0, "Visual", { link = "MoonflyVisual" })
-  highlight(0, "VisualNOS", { bg = grey0, fg = white })
-  highlight(0, "VisualNonText", { bg = grey0, fg = grey39 })
+  highlight(0, "Visual", { bg = grey30, fg = none })
+  highlight(0, "VisualNOS", { bg = grey30, fg = none })
+  highlight(0, "VisualNonText", { bg = grey30, fg = grey58 })
 
   -- Errors, warnings and whitespace-eol
-  highlight(0, "Error", { bg = bg, fg = red })
-  highlight(0, "ErrorMsg", { bg = bg, fg = red })
-  highlight(0, "WarningMsg", { bg = bg, fg = orange })
+  highlight(0, "Error", { bg = bg, fg = red, bold = true })
+  highlight(0, "ErrorMsg", { bg = bg, fg = red, bold = true })
+  highlight(0, "WarningMsg", { bg = bg, fg = orange, bold = true })
 
   -- Auto-text-completion menu
-  highlight(0, "Pmenu", { bg = grey15, fg = white })
-  highlight(0, "PmenuSel", { bg = bay, fg = grey89 })
+  highlight(0, "Pmenu", { bg = grey7, fg = white })
+  highlight(0, "PmenuSel", { bg = bay, fg = white })
   highlight(0, "PmenuSbar", { link = "MoonflyCurrentLine" })
-  highlight(0, "PmenuThumb", { bg = grey50 })
-  highlight(0, "WildMenu", { bg = bay, fg = grey89 })
+  highlight(0, "PmenuThumb", { bg = grey58 })
+  highlight(0, "WildMenu", { bg = bay, fg = white })
 
   -- Spelling errors
   if g.moonflyUndercurls then
@@ -304,26 +304,26 @@ M.style = function()
   -- Misc
   highlight(0, "Question", { fg = lime })
   highlight(0, "MoreMsg", { fg = red })
-  highlight(0, "LineNr", { bg = bg, fg = grey39 })
+  highlight(0, "LineNr", { bg = bg, fg = grey58 })
   if g.moonflyCursorColor then
-    highlight(0, "Cursor", { fg = bg, bg = blue })
+    highlight(0, "Cursor", { fg = black, bg = blue })
   else
-    highlight(0, "Cursor", { fg = bg, bg = grey62 })
+    highlight(0, "Cursor", { fg = black, bg = white })
   end
-  highlight(0, "lCursor", { fg = bg, bg = grey62 })
-  highlight(0, "CursorLineNr", { bg = grey11, fg = blue })
-  highlight(0, "CursorColumn", { bg = grey11 })
-  highlight(0, "CursorLine", { bg = grey11 })
+  highlight(0, "lCursor", { fg = black, bg = white })
+  highlight(0, "CursorLineNr", { bg = grey15, fg = yellow, bold = true })
+  highlight(0, "CursorColumn", { bg = grey18 })
+  highlight(0, "CursorLine", { bg = grey18 })
   highlight(0, "CursorLineSign", { link = "CursorLine" })
-  highlight(0, "Folded", { bg = grey11, fg = lime })
+  highlight(0, "Folded", { bg = grey18, fg = lime })
   highlight(0, "FoldColumn", { bg = grey18, fg = lime })
   highlight(0, "SignColumn", { bg = bg, fg = lime })
-  highlight(0, "Todo", { bg = grey15, fg = yellow })
+  highlight(0, "Todo", { bg = grey18, fg = yellow, bold = true })
   highlight(0, "SpecialKey", { bg = bg, fg = sky })
   if g.moonflyUnderlineMatchParen then
-    highlight(0, "MatchParen", { bg = bg, underline = true })
+    highlight(0, "MatchParen", { bg = grey23, underline = true })
   else
-    highlight(0, "MatchParen", { link = "MoonflyVisual" })
+    highlight(0, "MatchParen", { bg = grey30, fg = white })
   end
   highlight(0, "Ignore", { link = "MoonflySky" })
   highlight(0, "Underlined", { fg = emerald })
@@ -333,33 +333,32 @@ M.style = function()
   highlight(0, "qfLineNr", { link = "MoonflyGrey39" })
 
   -- Color column (after line 80)
-  highlight(0, "ColorColumn", { bg = grey7 })
+  highlight(0, "ColorColumn", { bg = grey11 })
 
   -- Conceal color
   highlight(0, "Conceal", { bg = none, fg = grey70 })
 
   -- nvim -d
-  highlight(0, "DiffAdd", { bg = mineral })
-  highlight(0, "DiffChange", { bg = grey18 })
-  highlight(0, "DiffDelete", { bg = grey18, fg = grey39 })
-  highlight(0, "DiffText", { bg = bay })
+  highlight(0, "DiffAdd", { bg = "#294929" })
+  highlight(0, "DiffChange", { bg = "#4a4a00" })
+  highlight(0, "DiffDelete", { bg = "#492929", fg = grey39 })
+  highlight(0, "DiffText", { bg = "#00469d" })
 
   -------------------------------------------------------------------------
   -- Neovim standard styling
   -------------------------------------------------------------------------
 
-  highlight(0, "Whitespace", { fg = grey0 })
-  highlight(0, "TermCursor", { bg = grey62, fg = black })
+  highlight(0, "Whitespace", { fg = grey30 })
+  highlight(0, "TermCursor", { bg = white, fg = black })
   if g.moonflyNormalFloat then
-    highlight(0, "NormalFloat", { bg = bg, fg = grey70 })
+    highlight(0, "NormalFloat", { bg = grey11, fg = white })
   else
     highlight(0, "NormalFloat", { bg = grey11, fg = white })
   end
-  highlight(0, "FloatBorder", { bg = bg, fg = grey18 })
-  highlight(0, "FloatBorder2", { bg = bg, fg = grey35 })
+  highlight(0, "FloatBorder", { bg = grey11, fg = grey39 })
   highlight(0, "FloatTitle", { bg = grey23, fg = white })
-  highlight(0, "WinBar", { bg = grey15, fg = white })
-  highlight(0, "WinBarNC", { bg = grey15, fg = grey62 })
+  highlight(0, "WinBar", { bg = grey18, fg = white })
+  highlight(0, "WinBarNC", { bg = grey15, fg = grey70 })
   highlight(0, "WinSeparator", { link = "VertSplit" })
 
   -- Neovim check-health
@@ -550,38 +549,38 @@ M.style = function()
     highlight(0, "DiagnosticUnderlineOk", { underline = true, sp = emerald })
   end
   if g.moonflyVirtualTextColor then
-    highlight(0, "DiagnosticVirtualTextError", { link = "MoonflyRedRow" })
-    highlight(0, "DiagnosticVirtualTextWarn", { link = "MoonflyYellowRow" })
-    highlight(0, "DiagnosticVirtualTextInfo", { link = "MoonflySkyRow" })
-    highlight(0, "DiagnosticVirtualTextHint", { link = "MoonflyTurquoiseRow" })
-    highlight(0, "DiagnosticVirtualTextOk", { link = "MoonflyEmeraldRow" })
+    highlight(0, "DiagnosticVirtualTextError", { bg = "#3a1212", fg = red })
+    highlight(0, "DiagnosticVirtualTextWarn", { bg = "#3a3012", fg = yellow })
+    highlight(0, "DiagnosticVirtualTextInfo", { bg = "#103a4a", fg = sky })
+    highlight(0, "DiagnosticVirtualTextHint", { bg = "#1a3a2a", fg = turquoise })
+    highlight(0, "DiagnosticVirtualTextOk", { bg = "#1a3a1a", fg = emerald })
   else
-    highlight(0, "DiagnosticVirtualTextError", { link = "MoonflyGrey39" })
-    highlight(0, "DiagnosticVirtualTextWarn", { link = "MoonflyGrey39" })
-    highlight(0, "DiagnosticVirtualTextInfo", { link = "MoonflyGrey39" })
-    highlight(0, "DiagnosticVirtualTextHint", { link = "MoonflyGrey39" })
-    highlight(0, "DiagnosticVirtualTextOk", { link = "MoonflyGrey39" })
+    highlight(0, "DiagnosticVirtualTextError", { fg = red })
+    highlight(0, "DiagnosticVirtualTextWarn", { fg = yellow })
+    highlight(0, "DiagnosticVirtualTextInfo", { fg = sky })
+    highlight(0, "DiagnosticVirtualTextHint", { fg = turquoise })
+    highlight(0, "DiagnosticVirtualTextOk", { fg = emerald })
   end
-  highlight(0, "DiagnosticSignError", { link = "MoonflyRed" })
-  highlight(0, "DiagnosticSignWarn", { link = "MoonflyYellow" })
-  highlight(0, "DiagnosticSignInfo", { link = "MoonflySky" })
-  highlight(0, "DiagnosticSignHint", { link = "MoonflyTurquoise" })
-  highlight(0, "DiagnosticSignOk", { link = "MoonflyEmerald" })
-  highlight(0, "DiagnosticFloatingError", { link = "MoonflyRed" })
-  highlight(0, "DiagnosticFloatingWarn", { link = "MoonflyYellow" })
-  highlight(0, "DiagnosticFloatingInfo", { link = "MoonflySky" })
-  highlight(0, "DiagnosticFloatingHint", { link = "MoonflyTurquoise" })
-  highlight(0, "DiagnosticFloatingOk", { link = "MoonflyEmerald" })
+  highlight(0, "DiagnosticSignError", { bg = grey11, fg = red, bold = true })
+  highlight(0, "DiagnosticSignWarn", { bg = grey11, fg = yellow, bold = true })
+  highlight(0, "DiagnosticSignInfo", { bg = grey11, fg = sky, bold = true })
+  highlight(0, "DiagnosticSignHint", { bg = grey11, fg = turquoise, bold = true })
+  highlight(0, "DiagnosticSignOk", { bg = grey11, fg = emerald, bold = true })
+  highlight(0, "DiagnosticFloatingError", { fg = red, bold = true })
+  highlight(0, "DiagnosticFloatingWarn", { fg = yellow, bold = true })
+  highlight(0, "DiagnosticFloatingInfo", { fg = sky })
+  highlight(0, "DiagnosticFloatingHint", { fg = turquoise })
+  highlight(0, "DiagnosticFloatingOk", { fg = emerald })
 
   -- Neovim LSP
-  highlight(0, "LspCodeLens", { link = "MoonflyGrey39" })
-  highlight(0, "LspCodeLensSeparator", { link = "MoonflyGrey39" })
-  highlight(0, "LspInfoBorder", { link = "FloatBorder" })
-  highlight(0, "LspInlayHint", { link = "MoonflyGrey58Row" })
-  highlight(0, "LspReferenceText", { link = "MoonflyVisual" })
-  highlight(0, "LspReferenceRead", { link = "MoonflyVisual" })
-  highlight(0, "LspReferenceWrite", { link = "MoonflyVisual" })
-  highlight(0, "LspSignatureActiveParameter", { bg = grey18 })
+  highlight(0, "LspCodeLens", { fg = grey58 })
+  highlight(0, "LspCodeLensSeparator", { fg = grey50 })
+  highlight(0, "LspInfoBorder", { bg = grey11, fg = grey58 })
+  highlight(0, "LspInlayHint", { fg = grey62, bg = grey11 })
+  highlight(0, "LspReferenceText", { bg = grey27 })
+  highlight(0, "LspReferenceRead", { bg = grey27 })
+  highlight(0, "LspReferenceWrite", { bg = grey27, fg = white })
+  highlight(0, "LspSignatureActiveParameter", { bg = grey23, fg = yellow, bold = true })
 
   -------------------------------------------------------------------------
   -- Legacy language styling
