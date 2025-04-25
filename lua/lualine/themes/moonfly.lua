@@ -6,7 +6,7 @@
 local colors = {
   -- StatusLine background colors.
   color_bg1 = "#2e2e2e",
-  color_bg2 = "#121212",
+  color_bg2 = "#131313",
 
   -- Mode colors.
   color1 = "#80a0ff",
