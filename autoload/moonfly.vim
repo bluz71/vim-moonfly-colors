@@ -14,6 +14,7 @@ let s:grey30    = '#4e4e4e'
 let s:grey27    = '#444444'
 let s:grey23    = '#3a3a3a'
 let s:grey18    = '#2e2e2e'
+let s:grey16    = '#292929'
 let s:grey15    = '#262626'
 let s:grey11    = '#1c1c1c'
 let s:grey7     = '#121212'
@@ -196,10 +197,10 @@ function! moonfly#Style() abort
         exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey15 . ' guifg=' . s:white . ' gui=none'
         exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey15 . ' guifg=' . s:grey62 . ' gui=none'
     else
-        exec 'highlight StatusLine cterm=none guibg=' . s:grey18 . ' guifg=' . s:white . ' gui=none'
-        exec 'highlight StatusLineNC cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
-        exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey18 . ' guifg=' . s:white . ' gui=none'
-        exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
+        exec 'highlight StatusLine cterm=none guibg=' . s:grey16 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineNC cterm=none guibg=' . s:grey16 . ' guifg=' . s:grey62 . ' gui=none'
+        exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey16 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey16 . ' guifg=' . s:grey62 . ' gui=none'
     endif
     exec 'highlight Tabline cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
     exec 'highlight TablineSel cterm=none guibg=' . s:grey7 . ' guifg=' . s:blue . ' gui=none'
@@ -212,9 +213,9 @@ function! moonfly#Style() abort
     if g:moonflyWinSeparator == 0
         exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'
     elseif g:moonflyWinSeparator == 1
-        exec 'highlight VertSplit cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey18 . ' gui=none'
+        exec 'highlight VertSplit cterm=none guibg=' . s:grey16 . ' guifg=' . s:grey16 . ' gui=none'
     else
-        exec 'highlight VertSplit guibg=NONE guifg=' . s:grey18 . ' gui=none'
+        exec 'highlight VertSplit guibg=NONE guifg=' . s:grey16 . ' gui=none'
     end
 
     " Visual selection

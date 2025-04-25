@@ -23,6 +23,7 @@ local grey30 = "#4e4e4e"
 local grey27 = "#444444"
 local grey23 = "#3a3a3a"
 local grey18 = "#2e2e2e"
+local grey16 = "#292929"
 local grey15 = "#262626"
 local grey11 = "#1c1c1c"
 local grey7 = "#121212"
@@ -69,6 +70,7 @@ M.palette = {
   grey27 = grey27,
   grey23 = grey23,
   grey18 = grey18,
+  grey16 = grey16,
   grey15 = grey15,
   grey11 = grey11,
   grey7 = grey7,
@@ -261,10 +263,10 @@ M.style = function()
     highlight(0, "StatusLineTerm", { bg = grey15, fg = white })
     highlight(0, "StatusLineTermNC", { bg = grey15, fg = grey62 })
   else
-    highlight(0, "StatusLine", { bg = grey18, fg = white })
-    highlight(0, "StatusLineNC", { bg = grey18, fg = grey62 })
-    highlight(0, "StatusLineTerm", { bg = grey18, fg = white })
-    highlight(0, "StatusLineTermNC", { bg = grey18, fg = grey62 })
+    highlight(0, "StatusLine", { bg = grey16, fg = white })
+    highlight(0, "StatusLineNC", { bg = grey16, fg = grey62 })
+    highlight(0, "StatusLineTerm", { bg = grey16, fg = white })
+    highlight(0, "StatusLineTermNC", { bg = grey16, fg = grey62 })
   end
   highlight(0, "Tabline", { bg = grey18, fg = grey62 })
   highlight(0, "TablineSel", { bg = grey7, fg = blue })
@@ -277,9 +279,9 @@ M.style = function()
   if g.moonflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })
   elseif g.moonflyWinSeparator == 1 then
-    highlight(0, "VertSplit", { bg = grey18, fg = grey18 })
+    highlight(0, "VertSplit", { bg = grey16, fg = grey16 })
   else
-    highlight(0, "VertSplit", { bg = none, fg = grey18 })
+    highlight(0, "VertSplit", { bg = none, fg = grey16 })
   end
 
   -- Visual selection
@@ -1406,6 +1408,7 @@ M.custom_colors = function(colors)
   grey27 = colors.grey27 and colors.grey27 or M.palette.grey27
   grey23 = colors.grey23 and colors.grey23 or M.palette.grey23
   grey18 = colors.grey18 and colors.grey18 or M.palette.grey18
+  grey16 = colors.grey16 and colors.grey16 or M.palette.grey16
   grey15 = colors.grey15 and colors.grey15 or M.palette.grey15
   grey11 = colors.grey11 and colors.grey11 or M.palette.grey11
   grey7 = colors.grey7 and colors.grey7 or M.palette.grey7
