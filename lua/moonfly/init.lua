@@ -255,14 +255,25 @@ M.style = function()
   highlight(0, "Structure", { link = "MoonflyBlue" })
 
   -- Status, split and tab lines
-  highlight(0, "StatusLine", { bg = grey18, fg = white })
-  highlight(0, "StatusLineNC", { bg = grey18, fg = grey62 })
+  if g.moonflyTransparent == true then
+    highlight(0, "StatusLine", { bg = grey15, fg = white })
+    highlight(0, "StatusLineNC", { bg = grey15, fg = grey62 })
+    highlight(0, "StatusLineTerm", { bg = grey15, fg = white })
+    highlight(0, "StatusLineTermNC", { bg = grey15, fg = grey62 })
+  else
+    highlight(0, "StatusLine", { bg = grey18, fg = white })
+    highlight(0, "StatusLineNC", { bg = grey18, fg = grey62 })
+    highlight(0, "StatusLineTerm", { bg = grey18, fg = white })
+    highlight(0, "StatusLineTermNC", { bg = grey18, fg = grey62 })
+  end
   highlight(0, "Tabline", { bg = grey18, fg = grey62 })
   highlight(0, "TablineSel", { bg = grey11, fg = blue })
   highlight(0, "TablineSelSymbol", { link = "MoonflyEmeraldRow" })
-  highlight(0, "TablineFill", { bg = grey18, fg = grey18 })
-  highlight(0, "StatusLineTerm", { bg = grey18, fg = white })
-  highlight(0, "StatusLineTermNC", { bg = grey18, fg = grey62 })
+  if g.moonflyTransparent == true then
+    highlight(0, "TablineFill", { fg = grey18 })
+  else
+    highlight(0, "TablineFill", { bg = grey18, fg = grey18 })
+  end
   if g.moonflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })
   elseif g.moonflyWinSeparator == 1 then
