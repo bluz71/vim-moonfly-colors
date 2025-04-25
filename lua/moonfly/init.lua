@@ -267,12 +267,12 @@ M.style = function()
     highlight(0, "StatusLineTermNC", { bg = grey18, fg = grey62 })
   end
   highlight(0, "Tabline", { bg = grey18, fg = grey62 })
-  highlight(0, "TablineSel", { bg = grey11, fg = blue })
-  highlight(0, "TablineSelSymbol", { link = "MoonflyEmeraldRow" })
+  highlight(0, "TablineSel", { bg = grey7, fg = blue })
+  highlight(0, "TablineSelSymbol", { bg = grey7, fg = emerald })
   if g.moonflyTransparent == true then
     highlight(0, "TablineFill", { fg = grey18 })
   else
-    highlight(0, "TablineFill", { bg = grey18, fg = grey18 })
+    highlight(0, "TablineFill", { bg = grey7, fg = grey18 })
   end
   if g.moonflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })

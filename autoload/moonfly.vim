@@ -202,12 +202,12 @@ function! moonfly#Style() abort
         exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
     endif
     exec 'highlight Tabline cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
-    exec 'highlight TablineSel cterm=none guibg=' . s:grey11 . ' guifg=' . s:blue . ' gui=none'
-    exec 'highlight TablineSelSymbol cterm=none guibg=' . s:grey11 . ' guifg=' . s:emerald . ' gui=none'
+    exec 'highlight TablineSel cterm=none guibg=' . s:grey7 . ' guifg=' . s:blue . ' gui=none'
+    exec 'highlight TablineSelSymbol cterm=none guibg=' . s:grey7 . ' guifg=' . s:emerald . ' gui=none'
     if g:moonflyTransparent
         exec 'highlight TablineFill cterm=none guifg=' . s:grey18 . ' gui=none'
     else
-        exec 'highlight TablineFill cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey18 . ' gui=none'
+        exec 'highlight TablineFill cterm=none guibg=' . s:grey7 . ' guifg=' . s:grey18 . ' gui=none'
     endif
     if g:moonflyWinSeparator == 0
         exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'
