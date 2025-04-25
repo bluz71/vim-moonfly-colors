@@ -190,14 +190,25 @@ function! moonfly#Style() abort
     highlight! link Structure MoonflyBlue
 
     " Status, split and tab lines
-    exec 'highlight StatusLine cterm=none guibg=' . s:grey18 . ' guifg=' . s:white . ' gui=none'
-    exec 'highlight StatusLineNC cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
+    if g:moonflyTransparent
+        exec 'highlight StatusLine cterm=none guibg=' . s:grey15 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineNC cterm=none guibg=' . s:grey15 . ' guifg=' . s:grey62 . ' gui=none'
+        exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey15 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey15 . ' guifg=' . s:grey62 . ' gui=none'
+    else
+        exec 'highlight StatusLine cterm=none guibg=' . s:grey18 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineNC cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
+        exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey18 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
+    endif
     exec 'highlight Tabline cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
     exec 'highlight TablineSel cterm=none guibg=' . s:grey11 . ' guifg=' . s:blue . ' gui=none'
     exec 'highlight TablineSelSymbol cterm=none guibg=' . s:grey11 . ' guifg=' . s:emerald . ' gui=none'
-    exec 'highlight TablineFill cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey18 . ' gui=none'
-    exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey18 . ' guifg=' . s:white . ' gui=none'
-    exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
+    if g:moonflyTransparent
+        exec 'highlight TablineFill cterm=none guifg=' . s:grey18 . ' gui=none'
+    else
+        exec 'highlight TablineFill cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey18 . ' gui=none'
+    endif
     if g:moonflyWinSeparator == 0
         exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'
     elseif g:moonflyWinSeparator == 1
