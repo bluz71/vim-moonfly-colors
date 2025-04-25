@@ -56,8 +56,6 @@ function! moonfly#Style() abort
     exec 'highlight MoonflyGrey30 guifg=' . s:grey30
     exec 'highlight MoonflyGrey27 guifg=' . s:grey27
     exec 'highlight MoonflyGrey23 guifg=' . s:grey23
-    exec 'highlight MoonflyGrey18 guifg=' . s:grey18
-    exec 'highlight MoonflyGrey15 guifg=' . s:grey15
     exec 'highlight MoonflyKhaki guifg=' . s:khaki
     exec 'highlight MoonflyYellow guifg=' . s:yellow
     exec 'highlight MoonflyOrange guifg=' . s:orange
@@ -202,7 +200,7 @@ function! moonfly#Style() abort
         exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey16 . ' guifg=' . s:white . ' gui=none'
         exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey16 . ' guifg=' . s:grey62 . ' gui=none'
     endif
-    exec 'highlight Tabline cterm=none guibg=' . s:grey18 . ' guifg=' . s:grey62 . ' gui=none'
+    exec 'highlight Tabline cterm=none guibg=' . s:grey16 . ' guifg=' . s:grey62 . ' gui=none'
     exec 'highlight TablineSel cterm=none guibg=' . s:grey7 . ' guifg=' . s:blue . ' gui=none'
     exec 'highlight TablineSelSymbol cterm=none guibg=' . s:grey7 . ' guifg=' . s:emerald . ' gui=none'
     if g:moonflyTransparent
@@ -262,7 +260,7 @@ function! moonfly#Style() abort
     exec 'highlight CursorLine cterm=none guibg=' . s:grey11
     highlight! link CursorLineSign CursorLine
     exec 'highlight Folded guibg=' . s:grey11 . ' guifg='. s:lime
-    exec 'highlight FoldColumn guibg=' . s:grey18 . ' guifg=' . s:lime
+    exec 'highlight FoldColumn guibg=' . s:grey16 . ' guifg=' . s:lime
     exec 'highlight SignColumn guibg=bg guifg=' . s:lime
     exec 'highlight Todo guibg=' . s:grey15 . ' guifg=' . s:yellow
     exec 'highlight SpecialKey guibg=bg guifg=' . s:sky
