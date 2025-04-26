@@ -190,10 +190,10 @@ function! moonfly#Style() abort
 
     " Status, split and tab lines
     if g:moonflyTransparent
-        exec 'highlight StatusLine cterm=none guibg=' . s:grey15 . ' guifg=' . s:white . ' gui=none'
-        exec 'highlight StatusLineNC cterm=none guibg=' . s:grey15 . ' guifg=' . s:grey62 . ' gui=none'
-        exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey15 . ' guifg=' . s:white . ' gui=none'
-        exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey15 . ' guifg=' . s:grey62 . ' gui=none'
+        exec 'highlight StatusLine cterm=none guibg=' . s:grey11 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineNC cterm=none guibg=' . s:grey11 . ' guifg=' . s:grey62 . ' gui=none'
+        exec 'highlight StatusLineTerm cterm=none guibg=' . s:grey11 . ' guifg=' . s:white . ' gui=none'
+        exec 'highlight StatusLineTermNC cterm=none guibg=' . s:grey11 . ' guifg=' . s:grey62 . ' gui=none'
     else
         exec 'highlight StatusLine cterm=none guibg=' . s:grey16 . ' guifg=' . s:white . ' gui=none'
         exec 'highlight StatusLineNC cterm=none guibg=' . s:grey16 . ' guifg=' . s:grey62 . ' gui=none'

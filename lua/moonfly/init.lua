@@ -256,10 +256,10 @@ M.style = function()
 
   -- Status, split and tab lines
   if g.moonflyTransparent == true then
-    highlight(0, "StatusLine", { bg = grey15, fg = white })
-    highlight(0, "StatusLineNC", { bg = grey15, fg = grey62 })
-    highlight(0, "StatusLineTerm", { bg = grey15, fg = white })
-    highlight(0, "StatusLineTermNC", { bg = grey15, fg = grey62 })
+    highlight(0, "StatusLine", { bg = grey11, fg = white })
+    highlight(0, "StatusLineNC", { bg = grey11, fg = grey62 })
+    highlight(0, "StatusLineTerm", { bg = grey11, fg = white })
+    highlight(0, "StatusLineTermNC", { bg = grey11, fg = grey62 })
   else
     highlight(0, "StatusLine", { bg = grey16, fg = white })
     highlight(0, "StatusLineNC", { bg = grey16, fg = grey62 })
@@ -369,8 +369,13 @@ M.style = function()
   highlight(0, "FloatBorder", { bg = bg, fg = grey18 })
   highlight(0, "FloatBorder2", { bg = bg, fg = grey35 })
   highlight(0, "FloatTitle", { bg = grey23, fg = white })
-  highlight(0, "WinBar", { bg = grey15, fg = white })
-  highlight(0, "WinBarNC", { bg = grey15, fg = grey62 })
+  if g.moonflyTransparent then
+    highlight(0, "WinBar", { fg = white })
+    highlight(0, "WinBarNC", { fg = grey62 })
+  else
+    highlight(0, "WinBar", { bg = grey15, fg = white })
+    highlight(0, "WinBarNC", { bg = grey15, fg = grey62 })
+  end
   highlight(0, "WinSeparator", { link = "VertSplit" })
 
   -- Neovim check-health
