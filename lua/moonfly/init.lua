@@ -272,7 +272,7 @@ M.style = function()
   if g.moonflyTransparent == true then
     highlight(0, "TablineFill", { fg = grey18 })
   else
-    highlight(0, "TablineFill", { bg = grey7, fg = grey18 })
+    highlight(0, "TablineFill", { bg = grey11, fg = grey18 })
   end
   if g.moonflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })

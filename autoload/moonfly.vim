@@ -206,7 +206,7 @@ function! moonfly#Style() abort
     if g:moonflyTransparent
         exec 'highlight TablineFill cterm=none guifg=' . s:grey18 . ' gui=none'
     else
-        exec 'highlight TablineFill cterm=none guibg=' . s:grey7 . ' guifg=' . s:grey18 . ' gui=none'
+        exec 'highlight TablineFill cterm=none guibg=' . s:grey11 . ' guifg=' . s:grey18 . ' gui=none'
     endif
     if g:moonflyWinSeparator == 0
         exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'
