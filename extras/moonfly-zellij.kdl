@@ -14,7 +14,7 @@ themes {
         }
         text_selected {
             base 189 189 189
-            background 78 78 78
+            background 64 64 64
             emphasis_0 247 140 108
             emphasis_1 121 218 200
             emphasis_2 140 200 95
@@ -23,18 +23,18 @@ themes {
         ribbon_selected {
             base 8 8 8
             background 140 200 95
-            emphasis_0 230 94 114
-            emphasis_1 247 140 108
-            emphasis_2 207 135 232
-            emphasis_3 128 160 255
+            emphasis_0 216 51 75
+            emphasis_1 132 105 100
+            emphasis_2 171 101 217
+            emphasis_3 89 138 255
         }
         ribbon_unselected {
             base 8 8 8
             background 198 198 198
-            emphasis_0 230 94 114
-            emphasis_1 136 136 136
-            emphasis_2 128 160 255
-            emphasis_3 207 135 232
+            emphasis_0 216 51 75
+            emphasis_1 108 108 108
+            emphasis_2 89 138 255
+            emphasis_3 171 101 217
         }
         table_title {
             base 140 200 95
@@ -46,7 +46,7 @@ themes {
         }
         table_cell_selected {
             base 189 189 189
-            background 78 78 78
+            background 64 64 64
             emphasis_0 247 140 108
             emphasis_1 121 218 200
             emphasis_2 140 200 95
@@ -62,7 +62,7 @@ themes {
         }
         list_selected {
             base 189 189 189
-            background 78 78 78
+            background 64 64 64
             emphasis_0 247 140 108
             emphasis_1 121 218 200
             emphasis_2 140 200 95
@@ -111,14 +111,14 @@ themes {
         multiplayer_user_colors {
             player_1 207 135 232
             player_2 128 160 255
-            player_3 140 200 95
+            player_3 0
             player_4 227 199 138
             player_5 121 218 200
-            player_6 247 140 108
+            player_6 0
             player_7 230 94 114
-            player_8 198 198 198
-            player_9 28 28 28
-            player_10 189 189 189
+            player_8 0
+            player_9 0
+            player_10 0
         }
     }
 }
