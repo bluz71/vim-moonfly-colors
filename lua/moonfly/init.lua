@@ -51,9 +51,7 @@ local mineral = "#314940"
 local bay = "#4d5d8d"
 local slate = "#748999"
 
-local M = {}
-
-local function build_palette()
+local moonfly_palette = function()
   return {
     black = black,
     white = white,
@@ -99,7 +97,9 @@ local function build_palette()
   }
 end
 
-M.palette = build_palette()
+local M = {}
+
+M.palette = moonfly_palette()
 
 M.style = function()
   -------------------------------------------------------------------------
@@ -1439,9 +1439,9 @@ M.custom_colors = function(colors)
   mineral = colors.mineral and colors.mineral or M.palette.mineral
   bay = colors.bay and colors.bay or M.palette.bay
   slate = colors.slate and colors.slate or M.palette.slate
-  
-  -- Rebuild the palette with updated colors
-  M.palette = build_palette()
+
+  -- Rebuild the palette with custom colors.
+  M.palette = moonfly_palette()
 end
 
 return M
