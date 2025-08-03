@@ -53,49 +53,53 @@ local slate = "#748999"
 
 local M = {}
 
-M.palette = {
-  black = black,
-  white = white,
-  bg = bg,
-  grey0 = grey0,
-  grey1 = grey1,
-  grey89 = grey89,
-  grey70 = grey70,
-  grey62 = grey62,
-  grey58 = grey58,
-  grey50 = grey50,
-  grey39 = grey39,
-  grey35 = grey35,
-  grey30 = grey30,
-  grey27 = grey27,
-  grey23 = grey23,
-  grey18 = grey18,
-  grey16 = grey16,
-  grey15 = grey15,
-  grey11 = grey11,
-  grey7 = grey7,
-  red = red,
-  crimson = crimson,
-  cranberry = cranberry,
-  coral = coral,
-  cinnamon = cinnamon,
-  orchid = orchid,
-  orange = orange,
-  yellow = yellow,
-  khaki = khaki,
-  lime = lime,
-  green = green,
-  emerald = emerald,
-  turquoise = turquoise,
-  sky = sky,
-  blue = blue,
-  lavender = lavender,
-  violet = violet,
-  purple = purple,
-  mineral = mineral,
-  bay = bay,
-  slate = slate,
-}
+local function build_palette()
+  return {
+    black = black,
+    white = white,
+    bg = bg,
+    grey0 = grey0,
+    grey1 = grey1,
+    grey89 = grey89,
+    grey70 = grey70,
+    grey62 = grey62,
+    grey58 = grey58,
+    grey50 = grey50,
+    grey39 = grey39,
+    grey35 = grey35,
+    grey30 = grey30,
+    grey27 = grey27,
+    grey23 = grey23,
+    grey18 = grey18,
+    grey16 = grey16,
+    grey15 = grey15,
+    grey11 = grey11,
+    grey7 = grey7,
+    red = red,
+    crimson = crimson,
+    cranberry = cranberry,
+    coral = coral,
+    cinnamon = cinnamon,
+    orchid = orchid,
+    orange = orange,
+    yellow = yellow,
+    khaki = khaki,
+    lime = lime,
+    green = green,
+    emerald = emerald,
+    turquoise = turquoise,
+    sky = sky,
+    blue = blue,
+    lavender = lavender,
+    violet = violet,
+    purple = purple,
+    mineral = mineral,
+    bay = bay,
+    slate = slate,
+  }
+end
+
+M.palette = build_palette()
 
 M.style = function()
   -------------------------------------------------------------------------
@@ -1435,6 +1439,9 @@ M.custom_colors = function(colors)
   mineral = colors.mineral and colors.mineral or M.palette.mineral
   bay = colors.bay and colors.bay or M.palette.bay
   slate = colors.slate and colors.slate or M.palette.slate
+  
+  -- Rebuild the palette with updated colors
+  M.palette = build_palette()
 end
 
 return M
