@@ -225,7 +225,7 @@ function! moonfly#Style() abort
     exec 'highlight ErrorMsg guibg=bg guifg=' . s:red
     exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
-    " Auto-text-completion menu
+    " Completions
     exec 'highlight Pmenu guibg=' . s:grey15 . ' guifg=fg'
     exec 'highlight PmenuSel guibg=' . s:bay . ' guifg=' . s:grey89
     exec 'highlight PmenuSbar guibg=' . s:grey15

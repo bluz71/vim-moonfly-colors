@@ -295,7 +295,9 @@ M.style = function()
   highlight(0, "ErrorMsg", { bg = bg, fg = red })
   highlight(0, "WarningMsg", { bg = bg, fg = orange })
 
-  -- Auto-text-completion menu
+  -- Completions
+  highlight(0, "ComplHint", { link = "MoonflyGrey39" })
+  highlight(0, "ComplHintMore", { link = "MoonflySky" })
   highlight(0, "Pmenu", { bg = grey15, fg = white })
   highlight(0, "PmenuSel", { bg = bay, fg = grey89 })
   highlight(0, "PmenuSbar", { link = "MoonflyCurrentLine" })
@@ -345,8 +347,6 @@ M.style = function()
   highlight(0, "Delimiter", { link = "MoonflyWhite" })
   highlight(0, "qfFileName", { link = "MoonflyEmerald" })
   highlight(0, "qfLineNr", { link = "MoonflyGrey39" })
-  highlight(0, "ComplHint", { link = "MoonflyGrey39" })
-  highlight(0, "ComplHintMore", { link = "MoonflyLavender" })
 
   -- Color column (after line 80)
   highlight(0, "ColorColumn", { bg = grey7 })
