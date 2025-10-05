@@ -39,6 +39,7 @@ let s:purple    = '#ae81ff'
 " Extra colors
 let s:mineral   = '#314940'
 let s:bay       = '#4d5d8d'
+let s:haze      = '#8d9fad'
 
 function! moonfly#Style() abort
     "-----------------------------------------------------------------------
@@ -259,9 +260,9 @@ function! moonfly#Style() abort
     exec 'highlight CursorColumn guibg=' . s:grey11
     exec 'highlight CursorLine cterm=none guibg=' . s:grey11
     highlight! link CursorLineSign CursorLine
-    exec 'highlight Folded guibg=' . s:grey11 . ' guifg='. s:lime
-    exec 'highlight FoldColumn guibg=' . s:grey16 . ' guifg=' . s:lime
-    exec 'highlight SignColumn guibg=bg guifg=' . s:lime
+    exec 'highlight Folded guibg=' . s:grey11 . ' guifg='. s:haze
+    exec 'highlight FoldColumn guibg=bg guifg=' . s:haze
+    exec 'highlight SignColumn guibg=bg guifg=' . s:haze
     exec 'highlight Todo guibg=' . s:grey15 . ' guifg=' . s:yellow
     exec 'highlight SpecialKey guibg=bg guifg=' . s:sky
     if g:moonflyUnderlineMatchParen

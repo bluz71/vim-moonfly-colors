@@ -50,6 +50,7 @@ local purple = "#ae81ff"
 local mineral = "#314940"
 local bay = "#4d5d8d"
 local slate = "#748999"
+local haze = "#8a9fad"
 
 local moonfly_palette = function()
   return {
@@ -94,6 +95,7 @@ local moonfly_palette = function()
     mineral = mineral,
     bay = bay,
     slate = slate,
+    haze = haze,
   }
 end
 
@@ -331,9 +333,9 @@ M.style = function()
   highlight(0, "CursorColumn", { bg = grey11 })
   highlight(0, "CursorLine", { bg = grey11 })
   highlight(0, "CursorLineSign", { link = "CursorLine" })
-  highlight(0, "Folded", { bg = grey11, fg = lime })
-  highlight(0, "FoldColumn", { bg = grey16, fg = lime })
-  highlight(0, "SignColumn", { bg = bg, fg = lime })
+  highlight(0, "Folded", { bg = grey11, fg = haze })
+  highlight(0, "FoldColumn", { bg = bg, fg = haze })
+  highlight(0, "SignColumn", { bg = bg, fg = haze })
   highlight(0, "Todo", { bg = grey15, fg = yellow })
   highlight(0, "SpecialKey", { bg = bg, fg = sky })
   if g.moonflyUnderlineMatchParen then
@@ -1449,6 +1451,7 @@ M.custom_colors = function(colors)
   mineral = colors.mineral and colors.mineral or M.palette.mineral
   bay = colors.bay and colors.bay or M.palette.bay
   slate = colors.slate and colors.slate or M.palette.slate
+  haze = colors.haze and colors.haze or M.palette.haze
 
   -- Rebuild the palette with custom colors.
   M.palette = moonfly_palette()
