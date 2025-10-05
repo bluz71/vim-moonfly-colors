@@ -50,7 +50,7 @@ local purple = "#ae81ff"
 local mineral = "#314940"
 local bay = "#4d5d8d"
 local slate = "#748999"
-local haze = "#8a9fad"
+local haze = "#88a2b7"
 
 local moonfly_palette = function()
   return {

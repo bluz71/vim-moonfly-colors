@@ -39,7 +39,7 @@ let s:purple    = '#ae81ff'
 " Extra colors
 let s:mineral   = '#314940'
 let s:bay       = '#4d5d8d'
-let s:haze      = '#8d9fad'
+let s:haze      = '#88a2b7'
 
 function! moonfly#Style() abort
     "-----------------------------------------------------------------------
