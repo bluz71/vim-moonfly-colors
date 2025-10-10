@@ -230,6 +230,7 @@ function! moonfly#Style() abort
 
     " Completions
     exec 'highlight Pmenu guibg=' . s:grey13 . ' guifg=fg'
+    exec 'highlight PmenuBorder guibg=' . s:grey13 . ' guifg=' . s:grey27
     exec 'highlight PmenuSel guibg=' . s:bay . ' guifg=' . s:grey89
     exec 'highlight PmenuSbar guibg=' . s:grey13
     exec 'highlight PmenuThumb guibg=' . s:grey35
