@@ -25,6 +25,7 @@ local grey23 = "#3a3a3a"
 local grey18 = "#2e2e2e"
 local grey16 = "#292929"
 local grey15 = "#262626"
+local grey13 = "#212121"
 local grey11 = "#1c1c1c"
 local grey7 = "#121212"
 -- Core theme colors
@@ -72,6 +73,7 @@ local moonfly_palette = function()
     grey18 = grey18,
     grey16 = grey16,
     grey15 = grey15,
+    grey13 = grey13,
     grey11 = grey11,
     grey7 = grey7,
     red = red,
@@ -300,10 +302,10 @@ M.style = function()
   -- Completions
   highlight(0, "ComplHint", { link = "MoonflyGrey39" })
   highlight(0, "ComplHintMore", { link = "MoonflySky" })
-  highlight(0, "Pmenu", { bg = grey15, fg = white })
+  highlight(0, "Pmenu", { bg = grey13, fg = white })
   highlight(0, "PmenuSel", { bg = bay, fg = grey89 })
-  highlight(0, "PmenuSbar", { link = "MoonflyCurrentLine" })
-  highlight(0, "PmenuThumb", { bg = grey50 })
+  highlight(0, "PmenuSbar", { bg = grey13 })
+  highlight(0, "PmenuThumb", { bg = grey35 })
   highlight(0, "WildMenu", { bg = bay, fg = grey89 })
 
   -- Spelling errors
@@ -1428,6 +1430,7 @@ M.custom_colors = function(colors)
   grey18 = colors.grey18 and colors.grey18 or M.palette.grey18
   grey16 = colors.grey16 and colors.grey16 or M.palette.grey16
   grey15 = colors.grey15 and colors.grey15 or M.palette.grey15
+  grey13 = colors.grey13 and colors.grey13 or M.palette.grey13
   grey11 = colors.grey11 and colors.grey11 or M.palette.grey11
   grey7 = colors.grey7 and colors.grey7 or M.palette.grey7
   red = colors.red and colors.red or M.palette.red

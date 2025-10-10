@@ -10,12 +10,14 @@ let s:grey62    = '#9e9e9e'
 let s:grey58    = '#949494'
 let s:grey50    = '#808080'
 let s:grey39    = '#626262'
+let s:grey35    = '#585858'
 let s:grey30    = '#4e4e4e'
 let s:grey27    = '#444444'
 let s:grey23    = '#3a3a3a'
 let s:grey18    = '#2e2e2e'
 let s:grey16    = '#292929'
 let s:grey15    = '#262626'
+let s:grey13    = '#212121'
 let s:grey11    = '#1c1c1c'
 let s:grey7     = '#121212'
 " Core theme colors
@@ -227,10 +229,10 @@ function! moonfly#Style() abort
     exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
     " Completions
-    exec 'highlight Pmenu guibg=' . s:grey15 . ' guifg=fg'
+    exec 'highlight Pmenu guibg=' . s:grey13 . ' guifg=fg'
     exec 'highlight PmenuSel guibg=' . s:bay . ' guifg=' . s:grey89
-    exec 'highlight PmenuSbar guibg=' . s:grey15
-    exec 'highlight PmenuThumb guibg=' . s:grey50
+    exec 'highlight PmenuSbar guibg=' . s:grey13
+    exec 'highlight PmenuThumb guibg=' . s:grey35
     exec 'highlight WildMenu guibg=' . s:bay . ' guifg=' . s:grey89
 
     " Spelling errors
