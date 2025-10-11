@@ -229,8 +229,13 @@ function! moonfly#Style() abort
     exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
     " Completions
-    exec 'highlight Pmenu guibg=' . s:grey13 . ' guifg=fg'
-    exec 'highlight PmenuBorder guibg=' . s:grey13 . ' guifg=' . s:grey27
+    if g:moonflyNormalPmenu
+        exec 'highlight Pmenu guibg=bg guifg=' . s:grey70
+        exec 'highlight PmenuBorder guibg=bg guifg=' . s:grey18
+    else
+        exec 'highlight Pmenu guibg=' . s:grey13 . ' guifg=fg'
+        exec 'highlight PmenuBorder guibg=' . s:grey13 . ' guifg=' . s:grey27
+    endif
     exec 'highlight PmenuSel guibg=' . s:bay . ' guifg=' . s:grey89
     exec 'highlight PmenuSbar guibg=' . s:grey13
     exec 'highlight PmenuThumb guibg=' . s:grey35

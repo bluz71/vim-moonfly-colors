@@ -153,6 +153,7 @@ let g:lightline = { 'colorscheme': 'moonfly' }
 |--------|--------------
 | [moonflyCursorColor](https://github.com/bluz71/vim-moonfly-colors#moonflycursorcolor)                 | Disabled
 | [moonflyItalics](https://github.com/bluz71/vim-moonfly-colors#moonflyitalics)                         | Enabled
+| [moonflyNormalPmenu](https://github.com/bluz71/vim-moonfly-colors#moonflynormalpmenu)                 | Disabled
 | [moonflyNormalFloat](https://github.com/bluz71/vim-moonfly-colors#moonflynormalfloat)                 | Disabled
 | [moonflyTerminalColors](https://github.com/bluz71/vim-moonfly-colors#moonflyterminalcolors)           | Enabled
 | [moonflyTransparent](https://github.com/bluz71/vim-moonfly-colors#moonflytransparent)                 | Disabled
@@ -196,6 +197,33 @@ vim.g.moonflyItalics = false
 ```vim
 " Vimscript initialization file
 let g:moonflyItalics = v:false
+```
+
+---
+
+### moonflyNormalPmenu
+
+The `moonflyNormalPmenu` option specifies whether to use moonfly background and
+foreground colors in the popup menu. By default this option is **disabled**,
+hence, the popup menu will usually be styled with contrasting popup menu colors.
+If you would like to use moonfly colors instead then add the following to your
+configuration:
+
+```lua
+-- Lua initialization file
+vim.g.moonflyNormalPmenu = true
+```
+
+```vim
+" Vimscript initialization file
+let g:moonflyNormalPmenu = v:true
+```
+
+:bulb: If the above option is set then it is highly recommended to enable the
+popup menu border to distinguish between the edit window and popup menu:
+
+```lua
+vim.o.pumborder = "single"
 ```
 
 ---

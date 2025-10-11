@@ -302,8 +302,13 @@ M.style = function()
   -- Completions
   highlight(0, "ComplHint", { link = "MoonflyGrey39" })
   highlight(0, "ComplHintMore", { link = "MoonflySky" })
-  highlight(0, "Pmenu", { bg = grey13, fg = white })
-  highlight(0, "PmenuBorder", { bg = grey13, fg = grey27 })
+  if g.moonflyNormalPmenu then
+    highlight(0, "Pmenu", { bg = bg, fg = grey70 })
+    highlight(0, "PmenuBorder", { bg = bg, fg = grey18 })
+  else
+    highlight(0, "Pmenu", { bg = grey13, fg = white })
+    highlight(0, "PmenuBorder", { bg = grey13, fg = grey27 })
+  end
   highlight(0, "PmenuSel", { bg = bay, fg = grey89 })
   highlight(0, "PmenuSbar", { bg = grey13 })
   highlight(0, "PmenuThumb", { bg = grey35 })
@@ -372,11 +377,11 @@ M.style = function()
   highlight(0, "Whitespace", { fg = grey0 })
   highlight(0, "TermCursor", { bg = grey62, fg = black })
   if g.moonflyNormalFloat then
-    highlight(0, "FloatBorder", { bg = bg, fg = grey18 })
     highlight(0, "NormalFloat", { bg = bg, fg = grey70 })
+    highlight(0, "FloatBorder", { bg = bg, fg = grey18 })
   else
-    highlight(0, "FloatBorder", { bg = grey13, fg = grey27 })
     highlight(0, "NormalFloat", { bg = grey13, fg = white })
+    highlight(0, "FloatBorder", { bg = grey13, fg = grey27 })
   end
   highlight(0, "FloatBorderTransparent", { bg = bg, fg = grey18 })
   highlight(0, "FloatTitle", { bg = grey23, fg = white })

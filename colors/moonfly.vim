@@ -15,6 +15,7 @@ let g:colors_name = 'moonfly'
 " Define theme options.
 let g:moonflyCursorColor = get(g:, 'moonflyCursorColor', v:false)
 let g:moonflyItalics = get(g:, 'moonflyItalics', v:true)
+let g:moonflyNormalPmenu = get(g:, 'moonflyNormalPmenu', v:false)
 let g:moonflyNormalFloat = get(g:, 'moonflyNormalFloat', v:false)
 let g:moonflyTerminalColors = get(g:, 'moonflyTerminalColors', v:true)
 let g:moonflyTransparent = get(g:, 'moonflyTransparent', v:false)

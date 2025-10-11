@@ -6,6 +6,7 @@ Default option values:
 >
   let g:moonflyCursorColor = v:false
   let g:moonflyItalics = v:true
+  let g:moonflyNormalPmenu = v:false
   let g:moonflyNormalFloat = v:false
   let g:moonflyTerminalColors = v:true
   let g:moonflyTransparent = v:false
@@ -40,6 +41,21 @@ to your initialization file:
 
   " Vimscript initialization file
   let g:moonflyItalics = v:false
+<
+------------------------------------------------------------------------------
+moonflyNormalPmenu~                                     *g:moonflyNormalPmenu*
+
+The `moonflyNormalPmenu` option specifies whether to use moonfly background
+and foreground colors in the popup menu. By default this option is disabled,
+hence, the popup menu will usually be styled with contrasting popup menu
+colors. If you would like to use moonfly colors instead then add the following
+to your configuration:
+>
+  -- Lua initialization file
+  vim.g.moonflyNormalPmenu = true
+
+  " Vimscript initialization file
+  let g:moonflyNormalPmenu = v:true
 <
 ------------------------------------------------------------------------------
 moonflyNormalFloat~                                     *g:moonflyNormalFloat*
