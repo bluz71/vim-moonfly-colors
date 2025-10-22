@@ -2,8 +2,8 @@
 #
 # Upstream: github.com/bluz71/vim-moonfly-colors
 #
-# Usage: copy this theme into the colors directory and then select the moonfly
-# 'color_scheme' in your 'wezterm.lua' configuration.
+# Usage: copy this theme into the `~/.config/wezterm/colors` directory, then
+# select the moonfly 'color_scheme' in your 'wezterm.lua' configuration.
 
 [metadata]
 name = "moonfly"

@@ -1,6 +1,10 @@
 # moonfly theme for Alacritty
 #
 # Upstream: github.com/bluz71/vim-moonfly-colors
+#
+# Usage: copy this theme into the `~/.config/alacritty/themes` directory, then
+# import it in your `~/.config/alacritty/alacritty.toml` configuration file as
+# follows: import = ["~/.config/alacritty/themes/moonfly.toml"].
 
 [colors]
 draw_bold_text_with_bright_colors = true
