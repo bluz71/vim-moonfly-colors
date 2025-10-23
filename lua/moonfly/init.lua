@@ -464,9 +464,8 @@ M.style = function()
   highlight(0, "@variable.parameter", { link = "MoonflyOrchid" })
 
   -- Language specific Tree-sitter overrides.
-  highlight(0, "@attribute.bind.html", { link = "MoonflySky" })
-  highlight(0, "@attribute.directive.value.html", { link = "MoonflyLavender" })
-  highlight(0, "@attribute.on.html", { link = "MoonflyEmerald" })
+  highlight(0, "@attribute.bind.html", { link = "MoonflyEmerald" })
+  highlight(0, "@attribute.on.html", { link = "MoonflyOrchid" })
   highlight(0, "@attribute.zig", { link = "MoonflyViolet" })
   highlight(0, "@character.special.vim", { link = "MoonflySky" })
   highlight(0, "@function.macro.vim", { link = "MoonflySky" })
