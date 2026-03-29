@@ -1,0 +1,244 @@
+// moonfly theme for opencode
+//
+// Upstream: github.com/bluz71/vim-moonfly-colors
+//
+// Usage: copy this theme into the `~/.config/opencode/themes/` directory, then
+// use it in `~/.config/opencode/tui.json` by setting "theme": "moonfly-opencode".
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "bg": "#080808",
+    "fg": "#bdbdbd",
+    "fgBold": "#eeeeee",
+    "cursor": "#9e9e9e",
+    "cursorText": "#080808",
+    "selection": "#b2ceee",
+    "selectionText": "#080808",
+
+    "black": "#16161e",
+    "red": "#ff5d5d",
+    "green": "#8cc85f",
+    "yellow": "#e3c78a",
+    "blue": "#80a0ff",
+    "purple": "#cf87e8",
+    "cyan": "#79dac8",
+    "white": "#c6c6c6",
+
+    "brightBlack": "#949494",
+    "brightRed": "#ff5189",
+    "brightGreen": "#36c692",
+    "brightYellow": "#c6c684",
+    "brightBlue": "#74b2ff",
+    "brightPurple": "#ae81ff",
+    "brightCyan": "#85dc85",
+    "brightWhite": "#e4e4e4"
+  },
+  "theme": {
+    "primary": {
+      "dark": "brightBlue",
+      "light": "brightBlue"
+    },
+    "secondary": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "accent": {
+      "dark": "purple",
+      "light": "purple"
+    },
+    "error": {
+      "dark": "red",
+      "light": "red"
+    },
+    "warning": {
+      "dark": "yellow",
+      "light": "yellow"
+    },
+    "success": {
+      "dark": "green",
+      "light": "green"
+    },
+    "info": {
+      "dark": "cyan",
+      "light": "cyan"
+    },
+
+    "text": {
+      "dark": "fg",
+      "light": "fg"
+    },
+    "textMuted": {
+      "dark": "brightBlack",
+      "light": "brightBlack"
+    },
+
+    "background": {
+      "dark": "bg",
+      "light": "bg"
+    },
+    "backgroundPanel": {
+      "dark": "black",
+      "light": "black"
+    },
+    "backgroundElement": {
+      "dark": "black",
+      "light": "black"
+    },
+
+    "border": {
+      "dark": "brightBlack",
+      "light": "brightBlack"
+    },
+    "borderActive": {
+      "dark": "brightBlue",
+      "light": "brightBlue"
+    },
+    "borderSubtle": {
+      "dark": "black",
+      "light": "black"
+    },
+
+    "diffAdded": {
+      "dark": "green",
+      "light": "green"
+    },
+    "diffRemoved": {
+      "dark": "red",
+      "light": "red"
+    },
+    "diffContext": {
+      "dark": "brightBlack",
+      "light": "brightBlack"
+    },
+    "diffHunkHeader": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "diffHighlightAdded": {
+      "dark": "brightGreen",
+      "light": "brightGreen"
+    },
+    "diffHighlightRemoved": {
+      "dark": "brightRed",
+      "light": "brightRed"
+    },
+    "diffAddedBg": {
+      "dark": "#132018",
+      "light": "#132018"
+    },
+    "diffRemovedBg": {
+      "dark": "#241316",
+      "light": "#241316"
+    },
+    "diffContextBg": {
+      "dark": "bg",
+      "light": "bg"
+    },
+    "diffLineNumber": {
+      "dark": "brightBlack",
+      "light": "brightBlack"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#132018",
+      "light": "#132018"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#241316",
+      "light": "#241316"
+    },
+
+    "markdownText": {
+      "dark": "fg",
+      "light": "fg"
+    },
+    "markdownHeading": {
+      "dark": "brightWhite",
+      "light": "brightWhite"
+    },
+    "markdownLink": {
+      "dark": "brightBlue",
+      "light": "brightBlue"
+    },
+    "markdownLinkText": {
+      "dark": "cyan",
+      "light": "cyan"
+    },
+    "markdownCode": {
+      "dark": "green",
+      "light": "green"
+    },
+    "markdownBlockQuote": {
+      "dark": "brightBlack",
+      "light": "brightBlack"
+    },
+    "markdownEmph": {
+      "dark": "yellow",
+      "light": "yellow"
+    },
+    "markdownStrong": {
+      "dark": "fgBold",
+      "light": "fgBold"
+    },
+    "markdownHorizontalRule": {
+      "dark": "black",
+      "light": "black"
+    },
+    "markdownListItem": {
+      "dark": "purple",
+      "light": "purple"
+    },
+    "markdownListEnumeration": {
+      "dark": "brightPurple",
+      "light": "brightPurple"
+    },
+    "markdownImage": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "markdownImageText": {
+      "dark": "cyan",
+      "light": "cyan"
+    },
+    "markdownCodeBlock": {
+      "dark": "fg",
+      "light": "fg"
+    },
+
+    "syntaxComment": {
+      "dark": "brightBlack",
+      "light": "brightBlack"
+    },
+    "syntaxKeyword": {
+      "dark": "purple",
+      "light": "purple"
+    },
+    "syntaxFunction": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "syntaxVariable": {
+      "dark": "fg",
+      "light": "fg"
+    },
+    "syntaxString": {
+      "dark": "green",
+      "light": "green"
+    },
+    "syntaxNumber": {
+      "dark": "yellow",
+      "light": "yellow"
+    },
+    "syntaxType": {
+      "dark": "cyan",
+      "light": "cyan"
+    },
+    "syntaxOperator": {
+      "dark": "brightWhite",
+      "light": "brightWhite"
+    },
+    "syntaxPunctuation": {
+      "dark": "fg",
+      "light": "fg"
+    }
+  }
+}
