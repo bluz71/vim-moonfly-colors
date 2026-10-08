@@ -1,0 +1,14 @@
+# moonfly theme for ripgrep
+#
+# Upstream: github.com/bluz71/vim-moonfly-colors
+#
+# Usage: copy this file to `~/.config/ripgrep/config` (or any path of your
+# choosing), then set the `RIPGREP_CONFIG_PATH` environment variable to point
+# at it.
+
+--colors=path:fg:111
+--colors=line:fg:180
+--colors=column:fg:116
+--colors=match:fg:176
+--colors=match:style:bold
+--colors=highlight:fg:251
